@@ -57,23 +57,51 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         ctx.drawImage(originalImage, 0, 0);
 
-        // Convert
-        const dataUrl = canvas.toDataURL(format, 0.9); // 0.9 quality for lossy formats
+        const downloadBox = document.getElementById('download-box');
+        const base64Box = document.getElementById('base64-box');
+        const base64Result = document.getElementById('base64Result');
 
-        // Setup download
-        downloadLink.href = dataUrl;
+        if (format === 'base64') {
+            const dataUrl = canvas.toDataURL('image/png'); // Default to PNG for base64
+            base64Result.value = dataUrl;
+            downloadBox.classList.add('d-none');
+            base64Box.classList.remove('d-none');
+        } else {
+            // Convert to byte stream format
+            const dataUrl = canvas.toDataURL(format, 0.9); // 0.9 quality for lossy formats
 
-        // Determine extension
-        let ext = 'png';
-        if (format === 'image/jpeg') ext = 'jpg';
-        if (format === 'image/webp') ext = 'webp';
+            // Setup download
+            downloadLink.href = dataUrl;
 
-        let newName = originalFile.name.substring(0, originalFile.name.lastIndexOf('.')) || originalFile.name;
-        downloadLink.download = `${newName}-converted.${ext}`;
+            // Determine extension
+            let ext = 'png';
+            if (format === 'image/jpeg') ext = 'jpg';
+            if (format === 'image/webp') ext = 'webp';
+
+            let newName = originalFile.name.substring(0, originalFile.name.lastIndexOf('.')) || originalFile.name;
+            downloadLink.download = `${newName}-converted.${ext}`;
+
+            downloadBox.classList.remove('d-none');
+            base64Box.classList.add('d-none');
+        }
 
         resultArea.classList.remove('d-none');
         resultArea.scrollIntoView({ behavior: 'smooth' });
     });
+
+    const copyBtn = document.getElementById('copyBtn');
+    if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+            const base64Result = document.getElementById('base64Result');
+            base64Result.select();
+            document.execCommand('copy');
+            const originalText = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<i class="bi bi-check me-1"></i> Copied!';
+            setTimeout(() => {
+                copyBtn.innerHTML = originalText;
+            }, 2000);
+        });
+    }
 
     function formatBytes(bytes, decimals = 2) {
         if (bytes === 0) return '0 Bytes';

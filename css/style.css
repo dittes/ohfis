@@ -1,16 +1,24 @@
 :root {
     /* Brand Colors */
-    --primary-color: #4f46e5; /* Indigo 600 */
-    --primary-hover: #4338ca; /* Indigo 700 */
-    --secondary-color: #64748b; /* Slate 500 */
-    --accent-color: #0ea5e9; /* Sky 500 */
-    
+    --primary-color: #4f46e5;
+    /* Indigo 600 */
+    --primary-hover: #4338ca;
+    /* Indigo 700 */
+    --secondary-color: #64748b;
+    /* Slate 500 */
+    --accent-color: #0ea5e9;
+    /* Sky 500 */
+
     /* Neutral Colors / Dark Mode Ready */
-    --bg-body: #f8fafc; /* Slate 50 */
+    --bg-body: #f8fafc;
+    /* Slate 50 */
     --bg-surface: #ffffff;
-    --text-main: #1e293b; /* Slate 800 */
-    --text-muted: #64748b; /* Slate 500 */
-    --border-color: #e2e8f0; /* Slate 200 */
+    --text-main: #1e293b;
+    /* Slate 800 */
+    --text-muted: #64748b;
+    /* Slate 500 */
+    --border-color: #e2e8f0;
+    /* Slate 200 */
 
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
@@ -32,7 +40,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     font-weight: 700;
     color: var(--text-main);
@@ -151,4 +164,27 @@ footer {
 
 .footer-link:hover {
     color: var(--primary-color);
+}
+
+/* Utilities Overrides to prevent Bootstrap Blue */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
