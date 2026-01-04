@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Encoder / Decoder | Developer Tools | OHFIS</title>
+    <meta name="description"
+        content="Free online URL Encoder and Decoder. Convert text to URL-safe format and vice versa.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <i class="bi bi-box-seam-fill me-2"></i>OHFIS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#calculators">Calculators</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#text-tools">Text Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#pdf-tools">PDF Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#date-tools">Date Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#dev-tools">Dev Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#image-tools">Image Tools</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="input-group input-group-sm">
+                             <span class="input-group-text bg-light border-end-0"><i class="bi bi-search small"></i></span>
+                             <input type="text" class="form-control bg-light border-start-0 ps-0 tool-search-input" placeholder="Search..." aria-label="Search" style="max-width: 150px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3">URL Encoder / Decoder</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Encode text to be URL-safe or decode URL-encoded strings back to text.
+            </p>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active px-4" id="pills-encode-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-encode" type="button" role="tab">Encode</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link px-4" id="pills-decode-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-decode" type="button" role="tab">Decode</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- Encode Section -->
+                            <div class="tab-pane fade show active" id="pills-encode" role="tabpanel">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputText" class="form-label fw-semibold">Text to Encode</label>
+                                        <textarea class="form-control font-monospace bg-light" id="inputText" rows="10"
+                                            placeholder="Paste URL or text here..."></textarea>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <button class="btn btn-outline-secondary btn-sm"
+                                                id="clearEncodeInput">Clear</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="encodedOutput" class="form-label fw-semibold">URL Encoded
+                                            Output</label>
+                                        <textarea class="form-control font-monospace" id="encodedOutput" rows="10"
+                                            readonly placeholder="Result (e.g. Hello%20World)"></textarea>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <button class="btn btn-primary btn-sm" id="copyEncoded"><i
+                                                    class="bi bi-clipboard me-1"></i> Copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Decode Section -->
+                            <div class="tab-pane fade" id="pills-decode" role="tabpanel">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputUrl" class="form-label fw-semibold">Text to Decode</label>
+                                        <textarea class="form-control font-monospace bg-light" id="inputUrl" rows="10"
+                                            placeholder="Paste encoded text here..."></textarea>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <button class="btn btn-outline-secondary btn-sm"
+                                                id="clearDecodeInput">Clear</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="decodedOutput" class="form-label fw-semibold">Decoded Text</label>
+                                        <textarea class="form-control font-monospace" id="decodedOutput" rows="10"
+                                            readonly placeholder="Result..."></textarea>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <button class="btn btn-primary btn-sm" id="copyDecoded"><i
+                                                    class="bi bi-clipboard me-1"></i> Copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="decodeError" class="alert alert-danger mt-3 d-none">
+                                    <i class="bi bi-exclamation-triangle-fill me-2"></i> Invalid URL encoding.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container text-center py-4 border-top">
+            <p class="text-muted small mb-0">&copy; 2025 OHFIS. <a href="../../index.html">Home</a></p>
+            <div class="mt-2">
+                <a href="../../terms.html" class="text-decoration-none text-muted small me-2">Privacy & Terms</a>
+                <a href="../../imprint.html" class="text-decoration-none text-muted small">Imprint</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Encoder / Decoder | Developer Tools | OHFIS</title>
+    <meta name="description"
+        content="Online Base64 encoder and decoder. Convert text to Base64 or decode Base64 strings back to text instantly.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <i class="bi bi-box-seam-fill me-2"></i>OHFIS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                                    <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#calculators">Calculators</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#text-tools">Text Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#pdf-tools">PDF Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#date-tools">Date Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#dev-tools">Dev Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#image-tools">Image Tools</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="input-group input-group-sm">
+                             <span class="input-group-text bg-light border-end-0"><i class="bi bi-search small"></i></span>
+                             <input type="text" class="form-control bg-light border-start-0 ps-0 tool-search-input" placeholder="Search..." aria-label="Search" style="max-width: 150px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                    </li>
+                </ul>
+            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3">Base64 Converter</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Easily encode text to Base64 format or decode Base64 strings back to plain text.
+            </p>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+
+                        <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active px-4" id="pills-encode-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-encode" type="button" role="tab">Encode</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link px-4" id="pills-decode-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-decode" type="button" role="tab">Decode</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- Encode Section -->
+                            <div class="tab-pane fade show active" id="pills-encode" role="tabpanel">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputText" class="form-label fw-semibold">Text to Encode</label>
+                                        <textarea class="form-control font-monospace bg-light" id="inputText" rows="10"
+                                            placeholder="Type or paste text here..."></textarea>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <button class="btn btn-outline-secondary btn-sm"
+                                                id="clearEncodeInput">Clear</button>
+                                            <span class="text-muted small" id="encodeInputCount">0 chars</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="encodedOutput" class="form-label fw-semibold">Base64 Output</label>
+                                        <textarea class="form-control font-monospace" id="encodedOutput" rows="10"
+                                            readonly placeholder="Result will appear here..."></textarea>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <button class="btn btn-primary btn-sm" id="copyEncoded"><i
+                                                    class="bi bi-clipboard me-1"></i> Copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Decode Section -->
+                            <div class="tab-pane fade" id="pills-decode" role="tabpanel">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputBase64" class="form-label fw-semibold">Base64 to Decode</label>
+                                        <textarea class="form-control font-monospace bg-light" id="inputBase64"
+                                            rows="10" placeholder="Paste Base64 string here..."></textarea>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <button class="btn btn-outline-secondary btn-sm"
+                                                id="clearDecodeInput">Clear</button>
+                                            <span class="text-muted small" id="decodeInputCount">0 chars</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="decodedOutput" class="form-label fw-semibold">Decoded Text</label>
+                                        <textarea class="form-control font-monospace" id="decodedOutput" rows="10"
+                                            readonly placeholder="Result will appear here..."></textarea>
+                                        <div class="d-flex justify-content-end mt-2">
+                                            <button class="btn btn-primary btn-sm" id="copyDecoded"><i
+                                                    class="bi bi-clipboard me-1"></i> Copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="decodeError" class="alert alert-danger mt-3 d-none">
+                                    <i class="bi bi-exclamation-triangle-fill me-2"></i> Invalid Base64 input.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+                <article class="prose">
+                    <h3>About Base64 Encoding</h3>
+                    <p>Base64 is a binary-to-text encoding scheme that represents binary data in an ASCII string format
+                        by translating it into a radix-64 representation.</p>
+                    <p>It is commonly used to encode data that needs to be stored and transferred over media that are
+                        designed to deal with textual data. This ensures that the data remains intact without
+                        modification during transport.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container text-center py-4 border-top">
+            <p class="text-muted small mb-0">&copy; 2025 OHFIS. <a href="../../index.html">Home</a></p>
+            <div class="mt-2">
+                <a href="../../terms.html" class="text-decoration-none text-muted small me-2">Privacy & Terms</a>
+                <a href="../../imprint.html" class="text-decoration-none text-muted small">Imprint</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

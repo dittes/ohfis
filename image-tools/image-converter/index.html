@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remove Line Breaks | Text Formatter | OHFIS</title>
+    <title>Image Converter | Convert JPG, PNG, WEBP | OHFIS</title>
     <meta name="description"
-        content="Free tool to remove line breaks from text. Replace newlines with spaces, commas, or nothing.">
+        content="Free online image converter. Convert images to PNG, JPG, or WEBP formats instantly. No upload required.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
@@ -21,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
                     <li class="nav-item"><a class="nav-link" href="../../index.html#calculators">Calculators</a></li>
                     <li class="nav-item"><a class="nav-link" href="../../index.html#text-tools">Text Tools</a></li>
@@ -40,65 +40,72 @@
                     </li>
                 </ul>
             </div>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
-
     <section class="bg-light py-5">
         <div class="container text-center">
-            <h1 class="fw-bold mb-3">Remove Line Breaks</h1>
+            <h1 class="fw-bold mb-3">Image Converter</h1>
             <p class="lead text-muted mx-auto" style="max-width: 600px;">
-                Quickly fix text copied from PDFs or emails by removing unwanted line breaks.
+                Convert your images to different formats securely in your browser.
             </p>
         </div>
     </section>
 
     <div class="container py-5">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-lg-8">
                 <div class="card shadow-sm border-0">
                     <div class="card-body p-4 p-md-5">
+                        <div class="text-center mb-4">
+                            <label for="imageInput"
+                                class="form-label btn btn-outline-primary btn-lg px-5 py-4 border-2 border-dashed w-100">
+                                <i class="bi bi-cloud-upload display-4 d-block mb-3"></i>
+                                <span class="d-block fw-bold display-6 mb-1">Upload Image</span>
+                                <span class="small text-muted">Supports JPG, PNG, WEBP</span>
+                                <input class="form-control d-none" type="file" id="imageInput" accept="image/*">
+                            </label>
+                        </div>
 
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <label class="form-label fw-bold">Input Text</label>
-                                <textarea id="input" class="form-control" rows="10"
-                                    placeholder="Paste your text with line breaks here..."></textarea>
+                        <div id="conversion-area" class="d-none">
+                            <div class="card bg-light border-0 mb-4">
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="me-3">
+                                        <img id="image-preview" src="" alt="Preview" class="rounded"
+                                            style="max-width: 80px; max-height: 80px; object-fit: cover;">
+                                    </div>
+                                    <div class="flex-grow-1 overflow-hidden">
+                                        <h6 class="mb-1 text-truncate" id="file-name">filename.jpg</h6>
+                                        <div class="small text-muted" id="file-size">0 KB</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <label class="form-label fw-bold">Result</label>
-                                <textarea id="output" class="form-control bg-light" rows="10" readonly></textarea>
+
+                            <div class="row g-3 align-items-end">
+                                <div class="col-md-8">
+                                    <label for="formatSelect" class="form-label fw-bold">Convert to:</label>
+                                    <select class="form-select form-select-lg" id="formatSelect">
+                                        <option value="image/png">PNG</option>
+                                        <option value="image/jpeg">JPG</option>
+                                        <option value="image/webp">WEBP</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <button id="convertBtn" class="btn btn-primary btn-lg w-100">
+                                        Convert <i class="bi bi-arrow-right-circle ms-1"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="bg-light p-3 rounded mt-4">
-                            <div class="d-flex flex-wrap align-items-center gap-3">
-                                <span class="fw-bold small text-uppercase text-muted">Replace with:</span>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="mode" id="mode-space"
-                                        value="space" checked>
-                                    <label class="form-check-label" for="mode-space">Space</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="mode" id="mode-comma"
-                                        value="comma">
-                                    <label class="form-check-label" for="mode-comma">Comma</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="mode" id="mode-none"
-                                        value="none">
-                                    <label class="form-check-label" for="mode-none">Nothing (Join)</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="mode" id="mode-p" value="p">
-                                    <label class="form-check-label" for="mode-p">Paragraph Tags &lt;p&gt;</label>
-                                </div>
-
-                                <button id="convert-btn" class="btn btn-primary ms-auto px-4">Remove Line
-                                    Breaks</button>
+                        <div id="result-area" class="mt-4 d-none text-center">
+                            <hr class="my-4">
+                            <div class="alert alert-success d-inline-block px-4 py-3">
+                                <i class="bi bi-check-circle-fill me-2"></i> Conversion Complete!
+                            </div>
+                            <div class="mt-3">
+                                <a id="downloadLink" href="#" class="btn btn-success btn-lg px-5" download>
+                                    <i class="bi bi-download me-2"></i> Download Image
+                                </a>
                             </div>
                         </div>
 
@@ -121,7 +128,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../js/search.js"></script>
-    <script src="../../js/cookie-consent.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -12,6 +12,8 @@ const toolsIndex = [
     { name: "Body Fat Percentage Calculator", url: "/calculators/body-fat-calculator/", keywords: "navy method waist hip neck" },
     { name: "Percentage Calculator", url: "/calculators/percentage-calculator/", keywords: "math percent increase change" },
     { name: "Random Number Generator", url: "/calculators/random-number-generator/", keywords: "rng random dice chance" },
+    { name: "Age Calculator", url: "/calculators/age-calculator/", keywords: "birthday years months days" },
+    { name: "Date Difference Calculator", url: "/calculators/date-difference/", keywords: "days between dates duration range time" },
     // Text Utilities
     { name: "Word Counter", url: "/text-utilities/word-counter/", keywords: "character count sentence text write" },
     { name: "Character Counter", url: "/text-utilities/character-counter/", keywords: "letters density twitter sms limit" },
@@ -22,8 +24,14 @@ const toolsIndex = [
     // Document Converters
     { name: "Word to PDF", url: "/document-converters/word-to-pdf/", keywords: "doc docx pdf convert" },
     { name: "PDF to Word", url: "/document-converters/pdf-to-word/", keywords: "pdf doc docx convert edit" },
+    // Developer Tools
+    { name: "JSON Formatter", url: "/developer-tools/json-formatter/", keywords: "json pretty print lint validate" },
+    { name: "Base64 Converter", url: "/developer-tools/base64-converter/", keywords: "base64 encode decode string" },
+    { name: "URL Encoder", url: "/developer-tools/url-encoder/", keywords: "url encode decode escape safe string" },
     // Image Tools
     { name: "Image Resizer", url: "/image-tools/image-resizer/", keywords: "resize scale dimension pixel" },
+    { name: "Image Converter", url: "/image-tools/image-converter/", keywords: "png jpg webp convert format" },
+    { name: "Image Compressor", url: "/image-tools/image-compressor/", keywords: "compress optimize reduce size" },
     // Placeholder for future tools (to enable search discovery even before implementation if desired, or just add as we go)
 ];
 

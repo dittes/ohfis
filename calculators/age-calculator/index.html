@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Counter | OHFIS</title>
+    <title>Age Calculator | OHFIS</title>
     <meta name="description"
-        content="Free Character Counter. Count characters with and without spaces, words, sentences, and paragraphs in real-time.">
+        content="Free Age Calculator. Calculate your exact age in years, months, and days. Find out how many days you've been alive.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
@@ -48,80 +48,69 @@
 
     <section class="bg-light py-5">
         <div class="container text-center">
-            <h1 class="fw-bold mb-3">Character Counter</h1>
+            <h1 class="fw-bold mb-3">Age Calculator</h1>
             <p class="lead text-muted mx-auto" style="max-width: 600px;">
-                Instant character density and counts for your social media posts, essays, and more.
+                Calculate exact age and potential upcoming birthdays.
             </p>
         </div>
     </section>
 
     <div class="container py-5">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-lg-8">
                 <div class="card shadow-sm border-0">
                     <div class="card-body p-4 p-md-5">
-                        <textarea id="text-input" class="form-control mb-4" rows="10"
-                            placeholder="Type or paste your text here to start counting matching characters..."></textarea>
+                        <form id="ageForm">
+                            <div class="mb-4 text-center">
+                                <label for="dob" class="form-label fw-bold display-6">Date of Birth</label>
+                                <input type="date" class="form-control form-control-lg text-center mx-auto" id="dob"
+                                    style="max-width: 300px;" required>
+                            </div>
+                            <div class="mb-3 text-center">
+                                <label for="targetDate" class="form-label text-muted small">Calculate age as of
+                                    (Optional, defaults to today)</label>
+                                <input type="date" class="form-control form-control-sm text-center mx-auto"
+                                    id="targetDate" style="max-width: 200px;">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 btn-lg">Calculate Age</button>
+                        </form>
 
-                        <div class="row g-3 text-center">
-                            <div class="col-6 col-md-3">
-                                <div class="bg-light p-3 rounded h-100">
-                                    <div class="display-6 fw-bold text-primary" id="char-count">0</div>
-                                    <div class="text-muted small text-uppercase fw-bold">Characters</div>
-                                </div>
+                        <div id="result-container" class="mt-4 d-none">
+                            <div class="text-center p-4 bg-light rounded-3 mb-4">
+                                <div class="text-muted text-uppercase fw-bold small">Your Age</div>
+                                <div class="display-3 fw-bold text-primary mb-2" id="age-main">--</div>
+                                <div class="lead text-muted" id="age-details">--</div>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <div class="bg-light p-3 rounded h-100">
-                                    <div class="display-6 fw-bold text-primary" id="char-no-space-count">0</div>
-                                    <div class="text-muted small text-uppercase fw-bold">w/o Spaces</div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="bg-light p-3 rounded h-100">
-                                    <div class="display-6 fw-bold" id="word-count">0</div>
-                                    <div class="text-muted small text-uppercase fw-bold">Words</div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="bg-light p-3 rounded h-100">
-                                    <div class="display-6 fw-bold" id="line-count">0</div>
-                                    <div class="text-muted small text-uppercase fw-bold">Lines</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Social Media Limits -->
-                <div class="mt-4 row g-3">
-                    <div class="col-md-4">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center">
-                                <i class="bi bi-twitter me-2"></i>Twitter (280)
-                                <div class="progress mt-2" style="height: 5px;">
-                                    <div class="progress-bar" id="twitter-prog" role="progressbar" style="width: 0%">
+                            <div class="row g-3 text-center">
+                                <div class="col-6 col-md-3">
+                                    <div class="p-3 border rounded h-100">
+                                        <div class="fw-bold fs-5" id="total-months">--</div>
+                                        <div class="small text-muted">Months</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="p-3 border rounded h-100">
+                                        <div class="fw-bold fs-5" id="total-weeks">--</div>
+                                        <div class="small text-muted">Weeks</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="p-3 border rounded h-100">
+                                        <div class="fw-bold fs-5" id="total-days">--</div>
+                                        <div class="small text-muted">Days</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="p-3 border rounded h-100">
+                                        <div class="fw-bold fs-5" id="total-hours">--</div>
+                                        <div class="small text-muted">Hours</div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center">
-                                <i class="bi bi-card-text me-2"></i>SMS (160)
-                                <div class="progress mt-2" style="height: 5px;">
-                                    <div class="progress-bar" id="sms-prog" role="progressbar" style="width: 0%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center">
-                                <i class="bi bi-google me-2"></i>SEO Title (~60)
-                                <div class="progress mt-2" style="height: 5px;">
-                                    <div class="progress-bar" id="seo-prog" role="progressbar" style="width: 0%"></div>
-                                </div>
+                            <div class="mt-4 text-center">
+                                <span class="badge bg-success rounded-pill px-3 py-2" id="next-bday">Next Birthday:
+                                    --</span>
                             </div>
                         </div>
                     </div>

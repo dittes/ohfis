@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorem Ipsum Generator | Placeholder Text | OHFIS</title>
+    <title>Date Difference Calculator | Days Between Dates | OHFIS</title>
     <meta name="description"
-        content="Free Lorem Ipsum Generator. Create placeholder text for your designs. Generate paragraphs, sentences, or words.">
+        content="Calculate the number of days, weeks, and months between two dates. Free online date duration calculator.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
@@ -21,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
                     <li class="nav-item"><a class="nav-link" href="../../index.html#calculators">Calculators</a></li>
                     <li class="nav-item"><a class="nav-link" href="../../index.html#text-tools">Text Tools</a></li>
@@ -40,60 +40,77 @@
                     </li>
                 </ul>
             </div>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
-
     <section class="bg-light py-5">
         <div class="container text-center">
-            <h1 class="fw-bold mb-3">Lorem Ipsum Generator</h1>
+            <h1 class="fw-bold mb-3">Date Difference Calculator</h1>
             <p class="lead text-muted mx-auto" style="max-width: 600px;">
-                Generate standard placeholder text for your layout and design projects.
+                Calculate the duration between two dates in days, weeks, and months.
             </p>
         </div>
     </section>
 
     <div class="container py-5">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-lg-8">
                 <div class="card shadow-sm border-0">
                     <div class="card-body p-4 p-md-5">
-                        <form id="loremForm">
-                            <div class="row g-3 mb-4 align-items-end justify-content-center">
-                                <div class="col-auto">
-                                    <label class="form-label fw-bold">Generate</label>
-                                    <input type="number" class="form-control" id="count" value="3" min="1" max="100"
-                                        style="width: 100px;">
+                        <form id="dateDiffForm">
+                            <div class="row g-4 mb-4">
+                                <div class="col-md-6">
+                                    <label for="startDate" class="form-label fw-bold">Start Date</label>
+                                    <input type="date" class="form-control form-control-lg" id="startDate" required>
                                 </div>
-                                <div class="col-auto">
-                                    <label class="form-label fw-bold">Type</label>
-                                    <select class="form-select" id="type" style="width: 150px;">
-                                        <option value="paragraphs">Paragraphs</option>
-                                        <option value="sentences">Sentences</option>
-                                        <option value="words">Words</option>
-                                    </select>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="checkbox" id="start-lorem" checked>
-                                        <label class="form-check-label" for="start-lorem">Start with "Lorem
-                                            ipsum..."</label>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <button type="submit" class="btn btn-primary px-4">Generate</button>
+                                <div class="col-md-6">
+                                    <label for="endDate" class="form-label fw-bold">End Date</label>
+                                    <input type="date" class="form-control form-control-lg" id="endDate" required>
                                 </div>
                             </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="includeEndDay">
+                                <label class="form-check-label" for="includeEndDay">
+                                    Include end date in calculation (add 1 day)
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 btn-lg">Calculate Duration</button>
                         </form>
 
-                        <div class="position-relative">
-                            <textarea id="output" class="form-control bg-light" rows="12" readonly></textarea>
-                            <button id="copy-btn"
-                                class="btn btn-sm btn-outline-secondary position-absolute top-0 end-0 m-3">
-                                <i class="bi bi-clipboard"></i> Copy
-                            </button>
+                        <div id="result-container" class="mt-4 d-none">
+                            <hr class="my-4">
+                            <div class="text-center">
+                                <h6 class="text-uppercase text-muted fw-bold small mb-3">Total Duration</h6>
+                                <div class="display-3 fw-bold text-primary mb-2">
+                                    <span id="diff-days">--</span> <span class="fs-4 text-muted">days</span>
+                                </div>
+
+                                <div class="row justify-content-center mt-4 g-3">
+                                    <div class="col-4">
+                                        <div class="p-3 bg-light rounded">
+                                            <div class="fw-bold fs-5" id="diff-years">0</div>
+                                            <div class="small text-muted">Years</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="p-3 bg-light rounded">
+                                            <div class="fw-bold fs-5" id="diff-months">0</div>
+                                            <div class="small text-muted">Months</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="p-3 bg-light rounded">
+                                            <div class="fw-bold fs-5" id="diff-weeks">0</div>
+                                            <div class="small text-muted">Weeks</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 text-muted small">
+                                    <i class="bi bi-info-circle me-1"></i>
+                                    <span id="alternative-reading">--</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,7 +131,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../js/search.js"></script>
-    <script src="../../js/cookie-consent.js"></script>
     <script src="script.js"></script>
 </body>
 
