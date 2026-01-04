@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://ohfis.com/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://ohfis.com/imprint.html</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://ohfis.com/terms.html</loc>
+        <priority>0.5</priority>
+    </url>
+    <!-- Calculators -->
+    <url><loc>https://ohfis.com/calculators/bmi-calculator/</loc></url>
+    <url><loc>https://ohfis.com/calculators/loan-calculator/</loc></url>
+    <url><loc>https://ohfis.com/calculators/mortgage-calculator/</loc></url>
+    <url><loc>https://ohfis.com/calculators/compound-interest-calculator/</loc></url>
+    <url><loc>https://ohfis.com/calculators/simple-interest-calculator/</loc></url>
+    <url><loc>https://ohfis.com/calculators/investment-return-calculator/</loc></url>
+    <url><loc>https://ohfis.com/calculators/vat-calculator/</loc></url>
+    <url><loc>https://ohfis.com/calculators/bmr-calculator/</loc></url>
+    <url><loc>https://ohfis.com/calculators/calorie-calculator/</loc></url>
+    <url><loc>https://ohfis.com/calculators/body-fat-calculator/</loc></url>
+    <url><loc>https://ohfis.com/calculators/percentage-calculator/</loc></url>
+    <url><loc>https://ohfis.com/calculators/random-number-generator/</loc></url>
+    <!-- Text Utilities -->
+    <url><loc>https://ohfis.com/text-utilities/word-counter/</loc></url>
+    <url><loc>https://ohfis.com/text-utilities/case-converter/</loc></url>
+    <url><loc>https://ohfis.com/text-utilities/character-counter/</loc></url>
+    <url><loc>https://ohfis.com/text-utilities/text-cleaner/</loc></url>
+    <url><loc>https://ohfis.com/text-utilities/lorem-ipsum-generator/</loc></url>
+    <url><loc>https://ohfis.com/text-utilities/remove-line-breaks/</loc></url>
+    <!-- Image Tools -->
+    <url><loc>https://ohfis.com/image-tools/image-resizer/</loc></url>
+    <!-- Document Converters -->
+    <url><loc>https://ohfis.com/document-converters/word-to-pdf/</loc></url>
+    <url><loc>https://ohfis.com/document-converters/pdf-to-word/</loc></url>
+</urlset>

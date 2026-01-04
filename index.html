@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OHFIS | Online Calculators, Converters & Tools for Office</title>
+    <meta name="description"
+        content="Free online office tools including calculators, PDF converters, image tools, and text utilities. No login required.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="bi bi-box-seam-fill me-2"></i>OHFIS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#calculators">Calculators</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#converters">Converters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pdf-tools">PDF Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#text-tools">Text Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#image-tools">Image Tools</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4 fw-bold mb-3">Your Everyday Office Toolkit</h1>
+                <p class="lead text-muted mb-4">A complete suite of free online tools for work. Calculators, converters,
+                    PDF utilities, and more—instant and secure.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <div class="input-group mb-3" style="max-width: 500px;">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control border-start-0 ps-0 tool-search-input"
+                            placeholder="Search for a tool..." aria-label="Search">
+                        <button class="btn btn-primary" type="button">Find Tool</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Categories -->
+    <div class="container pb-5">
+
+        <!-- Financial Calculators -->
+        <section id="calculators" class="mb-5">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <h3 class="mb-0">Financial Calculators</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/loan-calculator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-bank"></i></div>
+                            <div class="tool-title">Loan Calculator</div>
+                            <div class="tool-desc">Estimate monthly loan payments and interest.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/mortgage-calculator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-house-door"></i></div>
+                            <div class="tool-title">Mortgage Calc</div>
+                            <div class="tool-desc">Plan your home loan and amortization.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/compound-interest-calculator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                            <div class="tool-title">Compound Interest</div>
+                            <div class="tool-desc">See how your investments grow over time.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/vat-calculator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-receipt"></i></div>
+                            <div class="tool-title">VAT / Sales Tax</div>
+                            <div class="tool-desc">Add or remove tax from your prices.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/simple-interest-calculator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-percent"></i></div>
+                            <div class="tool-title">Simple Interest</div>
+                            <div class="tool-desc">Calculate interest without compounding.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/investment-return-calculator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-piggy-bank"></i></div>
+                            <div class="tool-title">Investment Return</div>
+                            <div class="tool-desc">Project your wealth accumulation.</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Health & Math -->
+        <section id="health-math" class="mb-5">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <h3 class="mb-0">Health & Math Tools</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/bmi-calculator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-heart-pulse"></i></div>
+                            <div class="tool-title">BMI Calculator</div>
+                            <div class="tool-desc">Check your Body Mass Index health score.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/bmr-calculator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-fire"></i></div>
+                            <div class="tool-title">BMR Calculator</div>
+                            <div class="tool-desc">Find your Basal Metabolic Rate calories.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/calorie-calculator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-activity"></i></div>
+                            <div class="tool-title">Calorie Calculator</div>
+                            <div class="tool-desc">Daily calorie needs for weight loss/gain.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/body-fat-calculator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-person-check"></i></div>
+                            <div class="tool-title">Body Fat %</div>
+                            <div class="tool-desc">Estimate body fat using tape measurements.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/percentage-calculator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-pie-chart"></i></div>
+                            <div class="tool-title">Percentage Calc</div>
+                            <div class="tool-desc">Solve percentage change and fractions.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="calculators/random-number-generator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-dice-5"></i></div>
+                            <div class="tool-title">Random Number</div>
+                            <div class="tool-desc">Generate true random numbers instantly.</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Text Tools -->
+        <section id="text-tools" class="mb-5">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <h3 class="mb-0">Text Utilities</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="text-utilities/word-counter/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-fonts"></i></div>
+                            <div class="tool-title">Word Counter</div>
+                            <div class="tool-desc">Count words, characters, and sentences.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="text-utilities/character-counter/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-123"></i></div>
+                            <div class="tool-title">Character Count</div>
+                            <div class="tool-desc">Check tweet length and density.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="text-utilities/text-cleaner/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-eraser"></i></div>
+                            <div class="tool-title">Text Cleaner</div>
+                            <div class="tool-desc">Remove formatting, spaces, and HTML.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="text-utilities/case-converter/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-type"></i></div>
+                            <div class="tool-title">Case Converter</div>
+                            <div class="tool-desc">Uppercase, Lowercase, and Title Case.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="text-utilities/lorem-ipsum-generator/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-justify-left"></i></div>
+                            <div class="tool-title">Lorem Ipsum</div>
+                            <div class="tool-desc">Generate dummy text for designs.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="text-utilities/remove-line-breaks/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-text-wrap"></i></div>
+                            <div class="tool-title">Remove Breaks</div>
+                            <div class="tool-desc">Fix line breaks from PDFs and emails.</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PDF & Image Tools -->
+        <section id="pdf-tools" class="mb-5">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <h3 class="mb-0">PDF & Image Tools</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="document-converters/word-to-pdf/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-file-earmark-pdf"></i></div>
+                            <div class="tool-title">Word to PDF</div>
+                            <div class="tool-desc">Convert docs to secure PDF files.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="document-converters/pdf-to-word/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-file-earmark-word"></i></div>
+                            <div class="tool-title">PDF to Word</div>
+                            <div class="tool-desc">Edit PDF content in Word format.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="image-tools/image-resizer/index.html" class="text-decoration-none">
+                        <div class="tool-card">
+                            <div class="tool-icon"><i class="bi bi-aspect-ratio"></i></div>
+                            <div class="tool-title">Image Resizer</div>
+                            <div class="tool-desc">Resize images pixels or percentage.</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-box-seam-fill me-2"></i>OHFIS</h5>
+                    <p class="text-muted small">Your simplified digital office. Free tools for everyone.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">Calculators</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">BMI Calculator</a></li>
+                        <li><a href="#" class="footer-link">Loan Calculator</a></li>
+                        <li><a href="#" class="footer-link">Percentage Calc</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">Tools</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">PDF Tools</a></li>
+                        <li><a href="#" class="footer-link">Image Resizer</a></li>
+                        <li><a href="#" class="footer-link">Word Counter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold mb-3">Legal</h6>
+                    <ul class="list-unstyled d-flex gap-3">
+                        <li><a href="terms.html" class="footer-link">Privacy & Terms</a></li>
+                        <li><a href="imprint.html" class="footer-link">Imprint</a></li>
+                    </ul>
+                    <p class="text-muted small mt-3">&copy; 2025 OHFIS. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/cookie-consent.js"></script>
+</body>
+
+</html>

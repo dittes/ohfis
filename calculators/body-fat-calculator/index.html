@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Fat Percentage Calculator | OHFIS</title>
+    <meta name="description"
+        content="Calculate body fat percentage based on body measurements using the US Navy method.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <i class="bi bi-box-seam-fill me-2"></i>OHFIS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#calculators">Calculators</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#converters">Converters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#pdf-tools">PDF Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#text-tools">Text Tools</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-light border-end-0"><i
+                                    class="bi bi-search small"></i></span>
+                            <input type="text" class="form-control bg-light border-start-0 ps-0 tool-search-input"
+                                placeholder="Search..." aria-label="Search" style="max-width: 150px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3">Body Fat Percentage Calculator</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Estimate your body fat percentage using body measurements.
+            </p>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row g-5">
+                            <div class="col-lg-6">
+                                <form id="bfForm">
+                                    <div class="mb-4">
+                                        <label class="form-label fw-semibold d-block">Gender</label>
+                                        <div class="btn-group w-100" role="group">
+                                            <input type="radio" class="btn-check" name="gender" id="male" value="male"
+                                                checked>
+                                            <label class="btn btn-outline-primary" for="male">Male</label>
+                                            <input type="radio" class="btn-check" name="gender" id="female"
+                                                value="female">
+                                            <label class="btn btn-outline-primary" for="female">Female</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-2 mb-3">
+                                        <div class="col-6">
+                                            <label class="form-label small">Age</label>
+                                            <input type="number" class="form-control" id="age" value="30" required>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label small">Weight (kg)</label>
+                                            <input type="number" class="form-control" id="weight" placeholder="e.g. 80"
+                                                required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label small">Height (cm)</label>
+                                        <input type="number" class="form-control" id="height" value="175" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label small">Neck Circumference (cm)</label>
+                                        <input type="number" class="form-control" id="neck" placeholder="e.g. 38"
+                                            required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label small">Waist Circumference (cm)</label>
+                                        <input type="number" class="form-control" id="waist" placeholder="e.g. 85"
+                                            required>
+                                        <div class="form-text">Measure at navel level</div>
+                                    </div>
+
+                                    <div class="mb-4 d-none" id="hip-group">
+                                        <label class="form-label small">Hip Circumference (cm)</label>
+                                        <input type="number" class="form-control" id="hip" placeholder="e.g. 95">
+                                        <div class="form-text">Measure at widest point</div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary w-100 btn-lg mt-2">Calculate Body
+                                        Fat</button>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div id="result-container" class="w-100 d-none text-center">
+                                    <h6 class="text-uppercase text-muted fw-bold small mb-2">Estimated Body Fat</h6>
+                                    <div class="display-3 fw-bold text-primary mb-3">
+                                        <span id="bf-value">--</span><span class="fs-1">%</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center gap-3 mt-3">
+                                        <div class="px-3 py-2 bg-light rounded text-center">
+                                            <div class="small text-muted text-uppercase fw-bold">Fat Mass</div>
+                                            <div class="fw-bold" id="fat-mass">-- kg</div>
+                                        </div>
+                                        <div class="px-3 py-2 bg-light rounded text-center">
+                                            <div class="small text-muted text-uppercase fw-bold">Lean Mass</div>
+                                            <div class="fw-bold" id="lean-mass">-- kg</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="alert alert-info mt-4 mb-0 small text-start">
+                                        <i class="bi bi-info-circle-fill me-2"></i> Based on US Navy Method. For general
+                                        reference only.
+                                    </div>
+                                </div>
+                                <div id="placeholder" class="text-center w-100 text-muted">
+                                    Enter your measurements to see the estimate.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+                <article class="prose">
+                    <h3>How it's calculated</h3>
+                    <p>The US Navy Body Fat Calculator uses body circumferences (waist, neck, and height for men; plus
+                        hips for women) to estimate body density and fat percentage.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container text-center py-4 border-top">
+            <p class="text-muted small mb-0">&copy; 2025 OHFIS. <a href="../../index.html">Home</a></p>
+            <div class="mt-2">
+                <a href="../../terms.html" class="text-decoration-none text-muted small me-2">Privacy & Terms</a>
+                <a href="../../imprint.html" class="text-decoration-none text-muted small">Imprint</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script src="../../js/cookie-consent.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

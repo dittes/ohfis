@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator - Calculate Monthly Payments | OHFIS</title>
+    <meta name="description"
+        content="Free online Loan Calculator. Estimate your monthly loan payments, total interest, and amortization for mortgages, auto loans, or personal loans.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <i class="bi bi-box-seam-fill me-2"></i>OHFIS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#calculators">Calculators</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#converters">Converters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#pdf-tools">PDF Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#text-tools">Text Tools</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-light border-end-0"><i
+                                    class="bi bi-search small"></i></span>
+                            <input type="text" class="form-control bg-light border-start-0 ps-0 tool-search-input"
+                                placeholder="Search..." aria-label="Search" style="max-width: 150px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3">Loan Calculator</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Plan your finances by calculating monthly payments for mortgages, auto loans, or personal loans.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tool Interface -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row g-5">
+                            <!-- Inputs -->
+                            <div class="col-md-6">
+                                <form id="loanForm">
+                                    <div class="mb-4">
+                                        <label for="amount" class="form-label fw-semibold">Loan Amount</label>
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-text">$</span>
+                                            <input type="number" class="form-control" id="amount"
+                                                placeholder="e.g. 250000" min="0" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="rate" class="form-label fw-semibold">Interest Rate (%)</label>
+                                        <div class="input-group input-group-lg">
+                                            <input type="number" class="form-control" id="rate" placeholder="e.g. 4.5"
+                                                step="0.01" min="0" required>
+                                            <span class="input-group-text">%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="term" class="form-label fw-semibold">Loan Term</label>
+                                        <div class="row g-2">
+                                            <div class="col-8">
+                                                <input type="number" class="form-control form-control-lg" id="term"
+                                                    placeholder="e.g. 30" min="0" required>
+                                            </div>
+                                            <div class="col-4">
+                                                <select class="form-select form-select-lg" id="term-unit">
+                                                    <option value="years">Years</option>
+                                                    <option value="months">Months</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary w-100 btn-lg mt-2">Calculate
+                                        Payment</button>
+                                </form>
+                            </div>
+
+                            <!-- Results -->
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div id="result-placeholder" class="text-center w-100 text-muted py-5">
+                                    <i class="bi bi-calculator display-4 mb-3 d-block op-50"></i>
+                                    Enter your loan details to see the breakdown.
+                                </div>
+
+                                <div id="result-container" class="w-100 d-none">
+                                    <div class="text-center mb-4">
+                                        <div class="text-muted small text-uppercase fw-bold mb-1">Monthly Payment</div>
+                                        <div class="display-3 fw-bold text-primary" id="monthly-payment">--</div>
+                                    </div>
+
+                                    <div class="bg-light p-4 rounded-3">
+                                        <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                                            <span class="text-muted">Total Principal</span>
+                                            <span class="fw-semibold" id="total-principal">--</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+                                            <span class="text-muted">Total Interest</span>
+                                            <span class="fw-semibold text-danger" id="total-interest">--</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="fw-bold">Total Cost</span>
+                                            <span class="fw-bold fs-5" id="total-cost">--</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO Content / FAQ -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+                <article class="prose">
+                    <h3>How to Calculate Loan Payments</h3>
+                    <p>The formula for calculating a fixed-rate loan payment is commonly known as the amortization
+                        formula. It determines the correct monthly payment so that at the end of the loan term, the
+                        balance is exactly zero.</p>
+                    <p>Understanding your monthly payment helps you budget effectively, whether you are buying a home, a
+                        car, or taking out a personal loan. Adjusting the loan term can significantly change both your
+                        monthly payment and the total interest paid over the life of the loan.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container text-center py-4 border-top">
+            <p class="text-muted small mb-0">&copy; 2025 OHFIS. <a href="../../index.html">Home</a></p>
+            <div class="mt-2">
+                <a href="../../terms.html" class="text-decoration-none text-muted small me-2">Privacy & Terms</a>
+                <a href="../../imprint.html" class="text-decoration-none text-muted small">Imprint</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script src="../../js/cookie-consent.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

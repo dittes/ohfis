@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator - Calculate Body Mass Index | OHFIS</title>
+    <meta name="description"
+        content="Free online BMI Calculator. Calculate your Body Mass Index instantly to check if you are in a healthy weight range.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <i class="bi bi-box-seam-fill me-2"></i>OHFIS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#calculators">Calculators</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#converters">Converters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#pdf-tools">PDF Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#text-tools">Text Tools</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-light border-end-0"><i
+                                    class="bi bi-search small"></i></span>
+                            <input type="text" class="form-control bg-light border-start-0 ps-0 tool-search-input"
+                                placeholder="Search..." aria-label="Search" style="max-width: 150px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3">BMI Calculator</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Calculate your Body Mass Index (BMI) to determine if you are in a healthy weight range.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tool Interface -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4 p-md-5">
+                        <form id="bmiForm">
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold">Unit System</label>
+                                <div class="btn-group w-100" role="group">
+                                    <input type="radio" class="btn-check" name="unit" id="metric" value="metric"
+                                        checked>
+                                    <label class="btn btn-outline-primary" for="metric">Metric (kg/cm)</label>
+                                    <input type="radio" class="btn-check" name="unit" id="imperial" value="imperial">
+                                    <label class="btn btn-outline-primary" for="imperial">Imperial (lbs/ft)</label>
+                                </div>
+                            </div>
+
+                            <!-- Metric Inputs -->
+                            <div id="metric-inputs">
+                                <div class="mb-3">
+                                    <label for="height-cm" class="form-label">Height (cm)</label>
+                                    <input type="number" class="form-control form-control-lg" id="height-cm"
+                                        placeholder="e.g. 175" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="weight-kg" class="form-label">Weight (kg)</label>
+                                    <input type="number" class="form-control form-control-lg" id="weight-kg"
+                                        placeholder="e.g. 70" required>
+                                </div>
+                            </div>
+
+                            <!-- Imperial Inputs (Hidden by default) -->
+                            <div id="imperial-inputs" class="d-none">
+                                <div class="row g-2 mb-3">
+                                    <label class="form-label">Height</label>
+                                    <div class="col-6">
+                                        <input type="number" class="form-control form-control-lg" id="height-ft"
+                                            placeholder="Feet">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="number" class="form-control form-control-lg" id="height-in"
+                                            placeholder="Inches">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="weight-lbs" class="form-label">Weight (lbs)</label>
+                                    <input type="number" class="form-control form-control-lg" id="weight-lbs"
+                                        placeholder="e.g. 150">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 btn-lg mt-3">Calculate BMI</button>
+                        </form>
+
+                        <!-- Result Section -->
+                        <div id="result" class="mt-4 p-4 bg-light rounded-3 d-none text-center">
+                            <h5 class="text-muted mb-2">Your BMI is</h5>
+                            <div class="display-4 fw-bold text-primary mb-2" id="bmi-value">--</div>
+                            <div class="badge bg-secondary fs-6 px-3 py-2 rounded-pill" id="bmi-category">--</div>
+                            <p class="small text-muted mt-3 mb-0">
+                                Normal range: 18.5 - 24.9
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO Content / FAQ -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+                <article class="prose">
+                    <h3>What is BMI?</h3>
+                    <p>Body Mass Index (BMI) is a simple calculation using a person's height and weight. The formula is
+                        BMI = kg/m<sup>2</sup> where kg is a person's weight in kilograms and m<sup>2</sup> is their
+                        height in meters squared. A BMI of 25.0 or more is overweight, while the healthy range is 18.5
+                        to 24.9.</p>
+
+                    <h4 class="mt-4">BMI Categories</h4>
+                    <table class="table table-bordered mt-3">
+                        <thead class="table-light">
+                            <tr>
+                                <th>BMI Range</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 – 24.9</td>
+                                <td>Normal Weight</td>
+                            </tr>
+                            <tr>
+                                <td>25.0 – 29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 and Above</td>
+                                <td>Obesity</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container text-center py-4 border-top">
+            <p class="text-muted small mb-0">&copy; 2025 OHFIS. <a href="../../index.html">Home</a> | <a
+                    href="../../terms.html">Deep Links</a> is not correct but we use absolute or relative correctly.</p>
+            <div class="mt-2">
+                <a href="../../terms.html" class="text-decoration-none text-muted small me-2">Privacy & Terms</a>
+                <a href="../../imprint.html" class="text-decoration-none text-muted small">Imprint</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script src="../../js/cookie-consent.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

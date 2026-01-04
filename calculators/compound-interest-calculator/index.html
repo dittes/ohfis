@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator | Investment Growth | OHFIS</title>
+    <meta name="description"
+        content="Free Compound Interest Calculator. Visualize how your investments grow over time with the power of compound interest.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <i class="bi bi-box-seam-fill me-2"></i>OHFIS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#calculators">Calculators</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#converters">Converters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#pdf-tools">PDF Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#text-tools">Text Tools</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-light border-end-0"><i
+                                    class="bi bi-search small"></i></span>
+                            <input type="text" class="form-control bg-light border-start-0 ps-0 tool-search-input"
+                                placeholder="Search..." aria-label="Search" style="max-width: 150px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3">Compound Interest Calculator</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                See how small regular contributions can grow into significant wealth over time.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tool Interface -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row g-5">
+                            <!-- Inputs -->
+                            <div class="col-md-6">
+                                <form id="ciForm">
+                                    <div class="mb-3">
+                                        <label for="principal" class="form-label fw-semibold">Initial Investment</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">$</span>
+                                            <input type="number" class="form-control" id="principal"
+                                                placeholder="e.g. 5000" min="0" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="monthly-contribution" class="form-label fw-semibold">Monthly
+                                            Contribution</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">$</span>
+                                            <input type="number" class="form-control" id="monthly-contribution"
+                                                placeholder="e.g. 100" min="0">
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-2 mb-3">
+                                        <div class="col-6">
+                                            <label for="rate" class="form-label fw-semibold">Interest Rate (%)</label>
+                                            <input type="number" class="form-control" id="rate" placeholder="e.g. 7"
+                                                step="0.1" required>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="years" class="form-label fw-semibold">Years to Grow</label>
+                                            <input type="number" class="form-control" id="years" placeholder="e.g. 10"
+                                                min="1" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="frequency" class="form-label fw-semibold">Compounding
+                                            Frequency</label>
+                                        <select class="form-select" id="frequency">
+                                            <option value="1">Annually (Once a year)</option>
+                                            <option value="2">Semi-Annually (Twice a year)</option>
+                                            <option value="4">Quarterly (4 times a year)</option>
+                                            <option value="12" selected>Monthly (12 times a year)</option>
+                                            <option value="365">Daily (365 times a year)</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success w-100 btn-lg mt-2">Calculate
+                                        Growth</button>
+                                </form>
+                            </div>
+
+                            <!-- Results -->
+                            <div class="col-md-6 d-flex align-items-stretch">
+                                <div
+                                    class="w-100 bg-light rounded-3 p-4 d-flex flex-column justify-content-center text-center">
+
+                                    <div id="result-placeholder" class="text-muted">
+                                        <i class="bi bi-graph-up-arrow display-4 mb-3 d-block opacity-50"></i>
+                                        Result breakdown will appear here.
+                                    </div>
+
+                                    <div id="result-container" class="d-none w-100">
+                                        <h6 class="text-uppercase text-muted fw-bold small mb-2">Future Value</h6>
+                                        <div class="display-4 fw-bold text-success mb-4" id="future-value">--</div>
+
+                                        <div class="d-flex justify-content-between border-top py-2">
+                                            <span class="text-muted">Total Contributions</span>
+                                            <span class="fw-semibold" id="total-contributions">--</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between border-top py-2">
+                                            <span class="text-muted">Total Interest Earned</span>
+                                            <span class="fw-semibold text-success" id="total-interest">--</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO Content / FAQ -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+                <article class="prose">
+                    <h3>The Power of Compound Interest</h3>
+                    <p>Albert Einstein famously called compound interest the "eighth wonder of the world." It allows
+                        your money to grow exponentially because you earn interest not just on your initial principal,
+                        but also on the accumulated interest from previous periods.</p>
+                    <p>Start early and contribute regularly to maximize the effect. Even small monthly additions can
+                        lead to massive differences over 20 or 30 years.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container text-center py-4 border-top">
+            <p class="text-muted small mb-0">&copy; 2025 OHFIS. <a href="../../index.html">Home</a></p>
+            <div class="mt-2">
+                <a href="../../terms.html" class="text-decoration-none text-muted small me-2">Privacy & Terms</a>
+                <a href="../../imprint.html" class="text-decoration-none text-muted small">Imprint</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script src="../../js/cookie-consent.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator | Estimate Monthly Payments | OHFIS</title>
+    <meta name="description"
+        content="Free Mortgage Calculator. Estimate your monthly mortgage payments, including principal and interest. Plan your home purchase effectively.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <i class="bi bi-box-seam-fill me-2"></i>OHFIS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#calculators">Calculators</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#converters">Converters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#pdf-tools">PDF Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#text-tools">Text Tools</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-light border-end-0"><i
+                                    class="bi bi-search small"></i></span>
+                            <input type="text" class="form-control bg-light border-start-0 ps-0 tool-search-input"
+                                placeholder="Search..." aria-label="Search" style="max-width: 150px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3">Mortgage Calculator</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Calculate your monthly mortgage payments and visualize interest costs over time.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tool Interface -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row g-5">
+                            <!-- Inputs -->
+                            <div class="col-md-6">
+                                <form id="mortgageForm">
+                                    <div class="mb-4">
+                                        <label for="amount" class="form-label fw-semibold">Home Price / Loan
+                                            Amount</label>
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-text">$</span>
+                                            <input type="number" class="form-control" id="amount"
+                                                placeholder="e.g. 300000" min="0" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-md-6">
+                                            <label for="rate" class="form-label fw-semibold">Interest Rate (%)</label>
+                                            <input type="number" class="form-control form-control-lg" id="rate"
+                                                placeholder="e.g. 3.5" step="0.01" min="0" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="term" class="form-label fw-semibold">Term (Years)</label>
+                                            <input type="number" class="form-control form-control-lg" id="term"
+                                                placeholder="e.g. 30" min="1" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="down-payment" class="form-label fw-semibold">Down Payment
+                                            (Optional)</label>
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-text">$</span>
+                                            <input type="number" class="form-control" id="down-payment"
+                                                placeholder="e.g. 60000" min="0">
+                                        </div>
+                                        <div class="form-text">If entering Home Price above, subtracts from principal.
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary w-100 btn-lg mt-2">Calculate
+                                        Mortgage</button>
+                                </form>
+                            </div>
+
+                            <!-- Results -->
+                            <div class="col-md-6 d-flex align-items-stretch">
+                                <div
+                                    class="w-100 bg-secondary bg-opacity-10 rounded-3 p-4 d-flex flex-column justify-content-center text-center position-relative">
+
+                                    <div id="result-placeholder" class="text-muted">
+                                        <i class="bi bi-house-door display-4 mb-3 d-block opacity-50"></i>
+                                        Enter details to see your payment breakdown
+                                    </div>
+
+                                    <div id="result-container" class="d-none w-100">
+                                        <h6 class="text-uppercase text-muted fw-bold small mb-2">Monthly Payment</h6>
+                                        <div class="display-3 fw-bold text-primary mb-4" id="monthly-payment">--</div>
+
+                                        <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                            <span class="text-muted">Total Principal</span>
+                                            <span class="fw-semibold" id="total-principal">--</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                                            <span class="text-muted">Total Interest</span>
+                                            <span class="fw-semibold text-danger" id="total-interest">--</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between pt-1">
+                                            <span class="fw-bold">Total Cost</span>
+                                            <span class="fw-bold" id="total-cost">--</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO Content / FAQ -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+                <article class="prose">
+                    <h3>Understanding Your Mortgage</h3>
+                    <p>A mortgage is likely the biggest financial commitment you'll make. A small difference in interest
+                        rates or loan terms can mean thousands of dollars saved or lost over the life of the loan.</p>
+                    <p>Use this calculator to test different scenarios:
+                    <ul>
+                        <li><strong>Shorter Term:</strong> Higher monthly payments, but significantly less interest
+                            paid.</li>
+                        <li><strong>Larger Down Payment:</strong> Reduces the principal and lowers monthly costs.</li>
+                        <li><strong>Interest Rate:</strong> See how current market rates affect your affordability.</li>
+                    </ul>
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container text-center py-4 border-top">
+            <p class="text-muted small mb-0">&copy; 2025 OHFIS. <a href="../../index.html">Home</a></p>
+            <div class="mt-2">
+                <a href="../../terms.html" class="text-decoration-none text-muted small me-2">Privacy & Terms</a>
+                <a href="../../imprint.html" class="text-decoration-none text-muted small">Imprint</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script src="../../js/cookie-consent.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Return Calculator | OHFIS</title>
+    <meta name="description" content="Calculate the expected return on your investments over time with contributions.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <i class="bi bi-box-seam-fill me-2"></i>OHFIS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#calculators">Calculators</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#converters">Converters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#pdf-tools">PDF Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#text-tools">Text Tools</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-light border-end-0"><i
+                                    class="bi bi-search small"></i></span>
+                            <input type="text" class="form-control bg-light border-start-0 ps-0 tool-search-input"
+                                placeholder="Search..." aria-label="Search" style="max-width: 150px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3">Investment Return Calculator</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Plan your financial future by estimating investment growth over time.
+            </p>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row g-5">
+                            <div class="col-md-6">
+                                <form id="invForm">
+                                    <div class="mb-3">
+                                        <label for="initial" class="form-label fw-semibold">Starting Amount</label>
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-text">$</span>
+                                            <input type="number" class="form-control" id="initial" placeholder="0"
+                                                min="0" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="contribution" class="form-label fw-semibold">Additional
+                                            Contribution</label>
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-text">$</span>
+                                            <input type="number" class="form-control" id="contribution" placeholder="0"
+                                                min="0">
+                                            <select class="form-select" id="contrib-freq" style="max-width: 120px;">
+                                                <option value="month">/ Month</option>
+                                                <option value="year">/ Year</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-2 mb-3">
+                                        <div class="col-6">
+                                            <label class="form-label fw-semibold">Return Rate %</label>
+                                            <input type="number" class="form-control form-control-lg" id="rate"
+                                                placeholder="e.g. 7" step="0.1" required>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label fw-semibold">Years</label>
+                                            <input type="number" class="form-control form-control-lg" id="years"
+                                                placeholder="10" min="1" required>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success w-100 btn-lg mt-3">Calculate
+                                        Return</button>
+                                </form>
+                            </div>
+
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div id="result-container" class="w-100 d-none">
+                                    <div class="text-center mb-4">
+                                        <h6 class="text-uppercase text-muted fw-bold small mb-2">Projected Total</h6>
+                                        <div class="display-3 fw-bold text-success mb-3" id="total-value">--</div>
+                                    </div>
+
+                                    <div class="bg-light p-4 rounded-3">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="text-muted">Total Invested</span>
+                                            <span class="fw-semibold" id="total-invested">--</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between pt-2 border-top">
+                                            <span class="fw-bold">Profit / Interest</span>
+                                            <span class="fw-bold text-success" id="total-profit">--</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="placeholder" class="text-center w-100 text-muted">
+                                    Enter your investment details to see the projection.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+                <article class="prose">
+                    <h3>Estimating Investment Growth</h3>
+                    <p>Uses an annual compounding formula taking into account your initial deposit, regular
+                        contributions at the selected frequency, and an annual expected return rate.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container text-center py-4 border-top">
+            <p class="text-muted small mb-0">&copy; 2025 OHFIS. <a href="../../index.html">Home</a></p>
+            <div class="mt-2">
+                <a href="../../terms.html" class="text-decoration-none text-muted small me-2">Privacy & Terms</a>
+                <a href="../../imprint.html" class="text-decoration-none text-muted small">Imprint</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script src="../../js/cookie-consent.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
