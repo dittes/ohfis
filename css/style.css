@@ -188,3 +188,50 @@ footer {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
+
+/* Search Results Dropdown */
+#search-results-dropdown {
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1050;
+    box-shadow: var(--shadow-lg);
+}
+
+#search-results-dropdown .dropdown-item {
+    border-radius: var(--radius-md);
+    transition: background-color 0.2s;
+}
+
+#search-results-dropdown .dropdown-item:hover {
+    background-color: var(--bg-body);
+}
+
+/* Improved text contrast for descriptive sections */
+.bg-light p.lead,
+.bg-light .text-muted {
+    color: var(--text-main) !important;
+    opacity: 0.8;
+}
+
+/* Prose/Article styling for better readability */
+.prose {
+    color: var(--text-main);
+    line-height: 1.75;
+}
+
+.prose h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.prose p {
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.prose code {
+    background-color: var(--bg-body);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+}

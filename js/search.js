@@ -123,49 +123,32 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             results.forEach(tool => {
                 const a = document.createElement('a');
-                a.href = tool.url; // Relative path adjustment might be needed depending on depth
-                // Quick fix for relative paths: check if we are in a subdir
-                // Ideally, we use absolute paths in the index or handle base URL
-                // For this static site, let's try to infer depth or just use absolute if on domain
-                // We'll stick to the url in index and let the browser handle implicit relative from root or adjust below
-
-                // Absolute path fix for local files vs server:
-                // If running locally without server, paths starting with / might fail.
-                // Assuming standard web server behavior (localhost:3000/), / works.
-                // If file:// protocol, this is tricky. We'll assume relative-safe paths
-                // Or just prepending '../' based on current location.
-
-                // For now, assume relative to root is handled by <base> or standard server.
-                // Let's manually adjust if current path is deep.
-                let finalUrl = tool.url;
-                const depth = window.location.pathname.split('/').length - 2;
-                if (depth > 0 && !tool.url.startsWith('http')) {
-                    // logic to go up levels? 
-                    // actually, let's just make the tool objects use standard root-relative paths
-                    // and rely on a server. If file://, we might need a smart prefixer.
-                    // The user is likely using a dev server.
-                }
-
+                a.href = tool.url;
                 a.className = 'dropdown-item d-flex align-items-center py-2';
                 a.innerHTML = `<i class="bi bi-tools me-2 text-primary opacity-75"></i> <span>${tool.name}</span>`;
-                // Fix path for click
-                a.onclick = (e) => {
-                    // e.preventDefault();
-                    // window.location.href = ...
-                }
                 resultsContainer.appendChild(a);
             });
         }
 
         // Position results below the active input
         const rect = inputEl.getBoundingClientRect();
-        resultsContainer.style.top = (rect.bottom + window.scrollY) + 'px';
-        resultsContainer.style.left = (rect.left + window.scrollX) + 'px';
-        resultsContainer.style.width = rect.width + 'px';
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        // Check if input is inside an input-group and use that for width
+        const inputGroup = inputEl.closest('.input-group');
+        const widthElement = inputGroup || inputEl;
+        const widthRect = widthElement.getBoundingClientRect();
+
+        resultsContainer.style.top = (rect.bottom + scrollTop + 5) + 'px';
+        resultsContainer.style.left = (widthRect.left + scrollLeft) + 'px';
+        resultsContainer.style.width = widthRect.width + 'px';
         resultsContainer.style.display = 'block';
+        resultsContainer.classList.add('show');
     }
 
     function hideResults() {
         resultsContainer.style.display = 'none';
+        resultsContainer.classList.remove('show');
     }
 });
