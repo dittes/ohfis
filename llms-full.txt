@@ -288,6 +288,86 @@ Time zones, working days, timestamps, calendar files and timers. Hub: https://oh
   Enter the first sprint start and the sprint length in working days, and get a calendar of sprints with the planning day at the start, review and retrospective on the last day and any public holidays inside each sprint listed for reference. Copy it into a roadmap or download it as CSV.
   How to use: Enter the start date, sprint length and number of sprints. Optionally choose a country to list public holidays. Copy the table or download it as CSV.
 
+## Business & Finance
+
+Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.com/en/business-finance-tools/
+
+- [Margin vs Markup Calculator](https://ohfis.com/en/margin-markup-calculator/): Convert between gross margin and markup and find the price from cost.
+  Margin and markup both describe profit, but against different bases, and mixing them up is a classic pricing error: a 50% markup gives only a 33% margin. Enter any two of cost, price, margin and markup and see all the others.
+  How to use: Choose which two values you know. Enter them. Read the price, profit, margin and markup.
+- [Compound Interest Calculator with Chart](https://ohfis.com/en/compound-interest-calculator/): Growth chart for a starting amount, monthly savings, rate and time.
+  See how a starting amount and regular deposits grow over time and how much of the final balance is interest. The chart compares your balance with the money you paid in, and the table gives the figures for every year, ready to copy as CSV.
+  How to use: Enter the starting amount, monthly contribution, rate and years. Choose how often interest is compounded. Read the final balance and chart, and copy the table.
+- [SaaS Runway & Burn Rate Calculator](https://ohfis.com/en/saas-runway-calculator/): How many months of cash do you have, with and without revenue growth?
+  Enter your cash, monthly costs and current revenue. The calculator shows your net burn, the runway if nothing changes, and the runway if revenue keeps growing at a monthly rate, plus a chart of the cash balance month by month.
+  How to use: Enter cash, monthly costs, revenue and growth. Read the runway with and without growth. Adjust costs or growth to see how many months you gain.
+- [CAC & LTV Calculator](https://ohfis.com/en/cac-ltv-calculator/): Customer lifetime value, LTV:CAC ratio and payback period for subscription businesses.
+  Is acquiring customers worth what it costs? Enter average revenue per account, gross margin, monthly churn and CAC to see the lifetime value, the LTV:CAC ratio and the number of months until a customer has paid back their acquisition cost.
+  How to use: Enter revenue per account, gross margin, churn and CAC. Read LTV, ratio and payback. Test how lower churn or cheaper acquisition changes the ratio.
+- [Break-Even Analysis Calculator](https://ohfis.com/en/break-even-calculator/): How many units must you sell to cover fixed costs? With chart and margin of safety.
+  Enter fixed costs, the price per unit and the variable cost per unit, and the calculator shows the number of units and the revenue at which you stop losing money, with a chart of revenue against total costs. Add a target profit to see how many more units it takes, and an expected volume to see your margin of safety.
+  How to use: Enter fixed costs, price and variable cost per unit. Optionally add a profit target and expected volume. Read the break-even point and the chart.
+- [VAT Calculator (Net, Gross & VAT Amount)](https://ohfis.com/en/vat-calculator/): Extract VAT from a gross price or add it to a net price.
+  Split a receipt into net amount and VAT, or add VAT to a price. Pick your country to see its current standard and reduced rates, or type any rate, which works equally for GST, sales tax and MwSt.
+  How to use: Enter the amount and choose whether it includes VAT. Pick a country or enter the rate. Copy the net, VAT and gross figures.
+- [NPV & IRR Calculator](https://ohfis.com/en/npv-irr-calculator/): Net present value, internal rate of return and discounted payback of cash flows.
+  Evaluate a project by entering the discount rate and a list of cash flows, with the investment as a negative number first. The result is the net present value (NPV), the internal rate of return (IRR), the discounted payback time and a table of discount factors.
+  How to use: Enter the discount rate. List the cash flows, one per period, investment first. Read NPV, IRR and payback.
+- [Rule of 72 Calculator](https://ohfis.com/en/rule-of-72-calculator/): Estimate how many years it takes for money to double at a given rate.
+  Divide 72 by the annual rate and you get the approximate number of years it takes for an investment to double: at 8% about 9 years. The calculator shows this estimate next to the exact doubling time, the error and a table for common rates.
+  How to use: Enter the annual rate. Read the estimate and the exact value. Use the table to compare other rates.
+- [Tiered & Volume Pricing Calculator](https://ohfis.com/en/tiered-pricing-calculator/): Model graduated and volume discounts and see the price for any quantity.
+  Test a price list before you publish it. Enter tiers as "from quantity, unit price" and a quantity and see the total, the average price per unit, a breakdown by tier and a chart of price against quantity.
+  How to use: Enter the tiers, one per line. Choose graduated or volume pricing and a quantity. Check the breakdown and the chart for odd jumps.
+- [Sales Commission Calculator](https://ohfis.com/en/sales-commission-calculator/): Model tiered commission payouts against a quota.
+  Enter the sales achieved, the quota and your commission bands, and see the payout, the quota attainment and a band-by-band breakdown. Typical plans pay a base rate up to quota and accelerators above it.
+  How to use: Enter sales and quota. Define the bands as "up to % of quota, rate %". Read the commission and the breakdown.
+- [Payment Processing Fee Comparator](https://ohfis.com/en/payment-processing-fee-calculator/): Compare Stripe, PayPal and other fees per payment, per month and per year.
+  Find the cheapest way to get paid. Enter a typical payment and how many you receive per month; the table ranks processors by fee, shows what you actually receive, the effective rate and the yearly cost, and the amount you would need to charge to receive exactly 100.
+  How to use: Enter a typical payment amount and monthly volume. Edit the processor list to your actual rates. Compare effective rates and yearly cost.
+- [Effective Hourly Rate Calculator](https://ohfis.com/en/effective-hourly-rate-calculator/): Your real hourly pay after commuting, unpaid overtime and work costs.
+  A salary of 60,000 for 40 hours sounds like 28.85 an hour, but the hours that the job really takes are more. Enter commuting time, unpaid extra hours, weeks off and work-related costs to see what you earn for every hour you actually spend.
+  How to use: Enter pay, contract hours and weeks off. Add commute, unpaid hours and yearly work costs. Compare the effective and nominal hourly rate.
+- [Salary to Contractor Rate Calculator](https://ohfis.com/en/salary-to-contractor-rate-calculator/): What hourly or day rate matches an employee salary once benefits, downtime and costs are included?
+  Freelancers who simply divide a salary by 2,080 hours undercharge by a third. This calculator adds what an employer pays for you (benefits, pension, insurance), your own business costs, unpaid weeks off and the non-billable time spent on admin and finding clients.
+  How to use: Enter the salary you want to match and the benefits percentage. Add your costs, weeks off and billable share. Use the hourly and day rate as the floor for your pricing.
+- [ROI Calculator](https://ohfis.com/en/roi-calculator/): Return on investment and annualised ROI for campaigns, tools and projects.
+  Compare what you put in with what you got back. Enter the cost and the returned value and optionally the time in years, and the calculator shows the ROI percentage, the net gain and the ROI per year, which makes short and long projects comparable.
+  How to use: Enter the investment and the value returned. Optionally add the number of years. Read the ROI and the yearly equivalent.
+- [Prorated Rent Calculator](https://ohfis.com/en/prorated-rent-calculator/): Charge for a partial first month by actual days, a 30-day month or yearly rent.
+  When a lease or license starts in the middle of the month, only part of the month is charged. Enter the full monthly amount and the start date to get the first-month charge for the days that remain, including the start day.
+  How to use: Enter the full monthly amount and the move-in date. Choose the proration method of your contract. Copy the charge and the daily rate.
+- [Group Bill Splitter by Item](https://ohfis.com/en/bill-splitter/): Split a lunch bill by who ordered what, including tax and tip.
+  Add the people, list each item with its price and tick who shared it (no one ticked means everyone). Tax and tip are added in proportion to what each person ordered, and you get a clear amount per person to copy into the group chat.
+  How to use: Enter the names of the people. Add the items and tick who shared each one. Enter tax and tip and copy the amounts.
+- [Depreciation Schedule Calculator](https://ohfis.com/en/depreciation-schedule-calculator/): Straight-line, declining-balance and sum-of-years depreciation schedules.
+  Enter the cost, the residual value and the useful life, and get a year-by-year schedule with the expense, the accumulated depreciation and the book value, plus a chart. Choose straight line, declining balance (double or another factor) or the sum-of-the-years' digits method.
+  How to use: Enter cost, salvage value and useful life. Choose the method. Copy the schedule or download it as CSV.
+- [Debt Payoff Planner (Snowball vs Avalanche)](https://ohfis.com/en/debt-payoff-planner/): Compare snowball and avalanche payoff for several loans or cards.
+  List your debts with balance, interest rate and minimum payment, enter what you can pay in total each month, and compare the two classic strategies: avalanche (highest interest first) and snowball (smallest balance first). You see the months to debt-free, the total interest and the order in which debts disappear.
+  How to use: Enter each debt on its own line. Enter your monthly payment budget. Compare the two strategies and choose one.
+- [Customer Churn & Retention Calculator](https://ohfis.com/en/churn-calculator/): Project customers and revenue from monthly churn and new sign-ups.
+  A monthly churn of 4% sounds small, but it means almost 40% of customers leave within a year. Enter your customers, revenue per customer, monthly churn and new customers per month to see how the base and the monthly revenue develop, and how long it takes to lose half of a cohort.
+  How to use: Enter customers, revenue per customer and churn. Add new customers per month and the horizon. Read the projection and the annual churn.
+- [Mileage Reimbursement Calculator](https://ohfis.com/en/mileage-reimbursement-calculator/): Calculate trip reimbursement with official per-mile or per-kilometre rates.
+  Enter the distance and choose a rate (IRS business rate, German travel allowance, UK HMRC, Austrian Kilometergeld, and more) or your own rate to get the reimbursement for a trip, optionally as a round trip.
+  How to use: Choose an official rate or enter your own. Enter the distance, and tick round trip if needed. Copy the reimbursement amount.
+- [Tip Calculator & Gratuity Table](https://ohfis.com/en/tip-calculator/): Compare tip rates for a business dinner and split the total.
+  Enter the bill and the number of people to see the tip, total and amount per person for several rates side by side, so you can choose what is appropriate for the service and the country.
+  How to use: Enter the bill and number of people. Edit the list of tip rates if you like. Read the tip, total and share per person.
+- [Working Capital & Current Ratio Calculator](https://ohfis.com/en/working-capital-calculator/): Compute working capital, current ratio, quick ratio and cash ratio.
+  Check whether a business can pay its short-term bills. Enter current assets, current liabilities and the inventory and cash included in the assets to get net working capital and the three standard liquidity ratios.
+  How to use: Enter current assets and liabilities. Add the inventory and cash portions. Read the ratios against your industry's norm.
+- [Price Elasticity of Demand Calculator](https://ohfis.com/en/price-elasticity-calculator/): Estimate how a price change affects quantity and revenue.
+  Enter two price points and the units sold at each and learn whether demand is elastic (customers react strongly) or inelastic (they barely react), and what the change did to revenue.
+  How to use: Enter the old and new price and the units sold at each. Read the elasticity and its type. Compare revenue before and after.
+- [Overhead Cost Allocation Calculator](https://ohfis.com/en/overhead-allocation-calculator/): Allocate shared costs to departments by headcount, floor area or revenue.
+  Rent, utilities and shared software benefit all teams. Enter the total pool and each department's headcount, floor area and revenue, choose the allocation key and see how many costs each department carries.
+  How to use: Enter the cost pool. List departments with headcount, area and revenue. Choose the allocation key and read the shares.
+- [Startup Dilution & Cap Table Calculator](https://ohfis.com/en/startup-dilution-calculator/): See founders' ownership after seed, Series A and later rounds.
+  Enter your funding rounds with the investment and the pre-money valuation and see what the new investors own, how much of the company the founders keep after every round and what that stake is worth at the round's valuation.
+  How to use: Enter each round as name, investment and pre-money valuation. Read the ownership after each round and the chart. Vary valuations to see their effect on dilution.
+
 ## Related sites by the same operator
 
 - [Files Online](https://files-online.com/): More PDF tools and file utilities

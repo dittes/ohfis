@@ -33,7 +33,7 @@ export function h(tag, props = {}, ...kids) {
 }
 
 export const debounce = (fn, ms = 120) => { let id; return (...a) => { clearTimeout(id); id = setTimeout(() => fn(...a), ms); }; };
-export const fmtNum = (n, d = 2) => Number.isFinite(n) ? n.toLocaleString(LANG === 'en' ? 'en-US' : LANG, { maximumFractionDigits: d }) : '–';
+export const fmtNum = (n, d = 2, fixed = false) => Number.isFinite(n) ? n.toLocaleString(LANG === 'en' ? 'en-US' : LANG, { maximumFractionDigits: d, ...(fixed ? { minimumFractionDigits: d } : {}) }) : '–';
 
 export function toast(msg) {
   let box = document.querySelector('.ut-toast');

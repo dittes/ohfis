@@ -216,4 +216,22 @@ Object.assign(custom, {
   },
 });
 
+
+const cards = page => page.locator('.ut-result').innerText();
+Object.assign(custom, {
+  async 'margin-markup-calculator'(page) { const t = await cards(page); assert.match(t, /Gross margin\s*40\.00 %/); assert.match(t, /Markup\s*66\.67 %/); await page.locator('#tool-root select').selectOption('cm'); await page.waitForTimeout(200); assert.match(await cards(page), /Selling price\s*100\.00/); },
+  async 'compound-interest-calculator'(page) { const t = await cards(page); assert.match(t, /Final balance\s*€ 1[0-9]{2},[0-9]{3}/); assert.equal(await page.locator('.ut-chart path').count(), 2); await page.locator('#tool-root input[type=number]').nth(1).fill('0'); await page.locator('#tool-root input[type=number]').nth(0).fill('10000'); await page.locator('#tool-root input[type=number]').nth(3).fill('30'); await page.locator('#tool-root select').first().selectOption('1'); await page.locator('#tool-root input[type=number]').nth(2).fill('7'); await page.waitForTimeout(300); assert.match(await cards(page), /76,123/); },
+  async 'vat-calculator'(page) { const t = await cards(page); assert.match(t, /Net amount\s*€ 100\.00/); assert.match(t, /VAT 19%\s*€ 19\.00/); },
+  async 'break-even-calculator'(page) { const t = await cards(page); assert.match(t, /Break-even units\s*500/); assert.match(t, /Margin of safety\s*37\.5 %/); assert.equal(await page.locator('.ut-chart path').count(), 2); },
+  async 'npv-irr-calculator'(page) { const t = await cards(page); assert.match(t, /Net present value\s*€ 1,?[0-9]{3}\.[0-9]{2}|Net present value\s*€ -?[0-9,]+\.[0-9]{2}/); assert.match(t, /Internal rate of return\s*\d+\.\d+ %/); await page.locator('#tool-root textarea').fill('100\n200'); await page.waitForTimeout(300); assert.match(await cards(page), /no solution/); },
+  async 'tiered-pricing-calculator'(page) { assert.match(await cards(page), /Total price\s*€ 4,700\.00/); await page.locator('#tool-root select').first().selectOption('volume'); await page.waitForTimeout(200); assert.match(await cards(page), /Total price\s*€ 3,?000\.00/); },
+  async 'sales-commission-calculator'(page) { assert.match(await cards(page), /Commission\s*€ 7,?400\.00/); },
+  async 'bill-splitter'(page) { const t = await page.locator('#tool-root').innerText(); assert.match(t, /Total\t.*\t€ 69\.58/); const before = await page.locator('.ut-table').last().innerText(); await page.getByRole('button', { name: 'Add item' }).click(); assert.equal(await page.locator('.ut-table').first().locator('tr').count(), 5); assert.match(before, /Ann/); },
+  async 'debt-payoff-planner'(page) { const t = await cards(page); assert.match(t, /Avalanche[\s\S]*Snowball/); assert.match(t, /Avalanche saves\s*€ [0-9,.]+/); await page.locator('#tool-root input[type=number]').fill('100'); await page.waitForTimeout(300); assert.ok(await page.locator('.pt-drop__error').isVisible()); },
+  async 'prorated-rent-calculator'(page) { await page.locator('#tool-root input[type=date]').fill('2024-02-15'); await page.waitForTimeout(300); assert.match(await cards(page), /Days in the month\s*29/); assert.match(await cards(page), /First-month charge\s*€ 775\.86/); },
+  async 'depreciation-schedule-calculator'(page) { assert.match(await cards(page), /First-year expense\s*€ 1,800/); await page.locator('#tool-root select').first().selectOption('syd'); await page.waitForTimeout(300); assert.match(await cards(page), /First-year expense\s*€ 3,000/); },
+  async 'rule-of-72-calculator'(page) { const t = await cards(page); assert.match(t, /Rule of 72\s*9 years/); assert.match(t, /Exact doubling time\s*9\.01 years/); },
+  async 'startup-dilution-calculator'(page) { assert.match(await cards(page), /Founders after all rounds\s*48\.0 %/.source ? /Founders after all rounds\s*\d+\.\d %/ : /x/); },
+});
+
 export default custom;

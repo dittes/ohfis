@@ -58,5 +58,5 @@ export function calcTool(root, spec) {
   update();
   return { update, values, ctl, get last() { return last; } };
 }
-export const money = (v, cur = '', d = 2) => (Number.isFinite(v) ? (cur ? cur + ' ' : '') + fmtNum(v, d) : '–');
-export const pct = (v, d = 1) => Number.isFinite(v) ? fmtNum(v, d) + ' %' : '–';
+export const money = (v, cur = '', d = 2) => (Number.isFinite(v) ? (cur ? cur + ' ' : '') + fmtNum(v, d, true) : '–');
+export const pct = (v, d = 1) => Number.isFinite(v) ? fmtNum(v, d, true) + ' %' : '–';

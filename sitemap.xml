@@ -1189,6 +1189,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/time-calendar-tools/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/business-finance-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/business-finance-tools/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/business-finance-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/business-finance-tools/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/business-finance-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/business-finance-tools/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/business-finance-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/business-finance-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/business-finance-tools/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/csv-delimiter-converter/</loc>
     <lastmod>2026-11-03</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-delimiter-converter/"/>
@@ -2267,6 +2303,906 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/unpivot-table/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/unpivot-table/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/unpivot-table/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/margin-markup-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/margin-markup-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/margin-markup-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/margin-markup-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/margin-markup-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/margin-markup-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/margin-markup-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/margin-markup-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/margin-markup-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/compound-interest-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/compound-interest-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/compound-interest-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/compound-interest-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/compound-interest-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/compound-interest-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/compound-interest-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/compound-interest-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/compound-interest-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/saas-runway-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/saas-runway-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/saas-runway-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/saas-runway-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/saas-runway-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/saas-runway-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/saas-runway-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/saas-runway-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/saas-runway-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/cac-ltv-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/cac-ltv-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/cac-ltv-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/cac-ltv-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/cac-ltv-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/cac-ltv-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/cac-ltv-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/cac-ltv-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/cac-ltv-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/break-even-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/break-even-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/break-even-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/break-even-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/break-even-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/break-even-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/break-even-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/break-even-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/break-even-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/vat-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/vat-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/vat-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/vat-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/vat-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/vat-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/vat-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vat-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/vat-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/npv-irr-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/npv-irr-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/npv-irr-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/npv-irr-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/npv-irr-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/npv-irr-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/npv-irr-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/npv-irr-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/npv-irr-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/rule-of-72-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rule-of-72-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/rule-of-72-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rule-of-72-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/rule-of-72-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rule-of-72-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/rule-of-72-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rule-of-72-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rule-of-72-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/tiered-pricing-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/tiered-pricing-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/tiered-pricing-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/tiered-pricing-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/tiered-pricing-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/tiered-pricing-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/tiered-pricing-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tiered-pricing-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/tiered-pricing-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/sales-commission-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sales-commission-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/sales-commission-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sales-commission-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/sales-commission-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sales-commission-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/sales-commission-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/sales-commission-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sales-commission-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/payment-processing-fee-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/payment-processing-fee-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/payment-processing-fee-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/payment-processing-fee-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/payment-processing-fee-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/payment-processing-fee-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/payment-processing-fee-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/payment-processing-fee-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/payment-processing-fee-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/effective-hourly-rate-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/effective-hourly-rate-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/effective-hourly-rate-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/effective-hourly-rate-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/effective-hourly-rate-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/effective-hourly-rate-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/effective-hourly-rate-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/effective-hourly-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/effective-hourly-rate-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/salary-to-contractor-rate-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/salary-to-contractor-rate-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/salary-to-contractor-rate-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/salary-to-contractor-rate-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/salary-to-contractor-rate-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/salary-to-contractor-rate-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/salary-to-contractor-rate-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/salary-to-contractor-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/salary-to-contractor-rate-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/roi-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/roi-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/roi-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/roi-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/roi-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/roi-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/roi-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/roi-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/roi-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/prorated-rent-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/prorated-rent-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/prorated-rent-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/prorated-rent-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/prorated-rent-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/prorated-rent-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/prorated-rent-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prorated-rent-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/prorated-rent-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/bill-splitter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/bill-splitter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/bill-splitter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/bill-splitter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/bill-splitter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/bill-splitter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/bill-splitter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/bill-splitter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/bill-splitter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/depreciation-schedule-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/depreciation-schedule-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/depreciation-schedule-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/depreciation-schedule-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/depreciation-schedule-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/depreciation-schedule-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/depreciation-schedule-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/depreciation-schedule-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/depreciation-schedule-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/debt-payoff-planner/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/debt-payoff-planner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/debt-payoff-planner/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/debt-payoff-planner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/debt-payoff-planner/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/debt-payoff-planner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/debt-payoff-planner/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/debt-payoff-planner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/debt-payoff-planner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/churn-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/churn-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/churn-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/churn-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/churn-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/churn-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/churn-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/churn-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/churn-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/mileage-reimbursement-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/mileage-reimbursement-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/mileage-reimbursement-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/mileage-reimbursement-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/mileage-reimbursement-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/mileage-reimbursement-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/mileage-reimbursement-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/mileage-reimbursement-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/mileage-reimbursement-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/tip-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/tip-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/tip-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/tip-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/tip-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/tip-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/tip-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tip-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/tip-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/working-capital-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/working-capital-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/working-capital-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/working-capital-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/working-capital-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/working-capital-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/working-capital-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/working-capital-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/working-capital-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/price-elasticity-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/price-elasticity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/price-elasticity-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/price-elasticity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/price-elasticity-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/price-elasticity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/price-elasticity-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/price-elasticity-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/price-elasticity-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/overhead-allocation-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/overhead-allocation-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/overhead-allocation-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/overhead-allocation-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/overhead-allocation-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/overhead-allocation-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/overhead-allocation-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/overhead-allocation-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/overhead-allocation-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/startup-dilution-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/startup-dilution-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/startup-dilution-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/startup-dilution-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/startup-dilution-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/startup-dilution-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/startup-dilution-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/startup-dilution-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/startup-dilution-calculator/"/>
   </url>
   <url>
     <loc>https://ohfis.com/en/zero-width-character-remover/</loc>

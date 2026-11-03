@@ -132,6 +132,36 @@ Time zones, working days, timestamps, calendar files and timers. Hub: https://oh
 - [World Clock](https://ohfis.com/en/world-clock/): A custom grid of live clocks for your offices and contacts around the world.
 - [Sprint Schedule Generator](https://ohfis.com/en/sprint-schedule-generator/): Lay out sprint dates, planning days and reviews for a quarter or a year.
 
+## Business & Finance
+
+Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.com/en/business-finance-tools/
+
+- [Margin vs Markup Calculator](https://ohfis.com/en/margin-markup-calculator/): Convert between gross margin and markup and find the price from cost.
+- [Compound Interest Calculator with Chart](https://ohfis.com/en/compound-interest-calculator/): Growth chart for a starting amount, monthly savings, rate and time.
+- [SaaS Runway & Burn Rate Calculator](https://ohfis.com/en/saas-runway-calculator/): How many months of cash do you have, with and without revenue growth?
+- [CAC & LTV Calculator](https://ohfis.com/en/cac-ltv-calculator/): Customer lifetime value, LTV:CAC ratio and payback period for subscription businesses.
+- [Break-Even Analysis Calculator](https://ohfis.com/en/break-even-calculator/): How many units must you sell to cover fixed costs? With chart and margin of safety.
+- [VAT Calculator (Net, Gross & VAT Amount)](https://ohfis.com/en/vat-calculator/): Extract VAT from a gross price or add it to a net price.
+- [NPV & IRR Calculator](https://ohfis.com/en/npv-irr-calculator/): Net present value, internal rate of return and discounted payback of cash flows.
+- [Rule of 72 Calculator](https://ohfis.com/en/rule-of-72-calculator/): Estimate how many years it takes for money to double at a given rate.
+- [Tiered & Volume Pricing Calculator](https://ohfis.com/en/tiered-pricing-calculator/): Model graduated and volume discounts and see the price for any quantity.
+- [Sales Commission Calculator](https://ohfis.com/en/sales-commission-calculator/): Model tiered commission payouts against a quota.
+- [Payment Processing Fee Comparator](https://ohfis.com/en/payment-processing-fee-calculator/): Compare Stripe, PayPal and other fees per payment, per month and per year.
+- [Effective Hourly Rate Calculator](https://ohfis.com/en/effective-hourly-rate-calculator/): Your real hourly pay after commuting, unpaid overtime and work costs.
+- [Salary to Contractor Rate Calculator](https://ohfis.com/en/salary-to-contractor-rate-calculator/): What hourly or day rate matches an employee salary once benefits, downtime and costs are included?
+- [ROI Calculator](https://ohfis.com/en/roi-calculator/): Return on investment and annualised ROI for campaigns, tools and projects.
+- [Prorated Rent Calculator](https://ohfis.com/en/prorated-rent-calculator/): Charge for a partial first month by actual days, a 30-day month or yearly rent.
+- [Group Bill Splitter by Item](https://ohfis.com/en/bill-splitter/): Split a lunch bill by who ordered what, including tax and tip.
+- [Depreciation Schedule Calculator](https://ohfis.com/en/depreciation-schedule-calculator/): Straight-line, declining-balance and sum-of-years depreciation schedules.
+- [Debt Payoff Planner (Snowball vs Avalanche)](https://ohfis.com/en/debt-payoff-planner/): Compare snowball and avalanche payoff for several loans or cards.
+- [Customer Churn & Retention Calculator](https://ohfis.com/en/churn-calculator/): Project customers and revenue from monthly churn and new sign-ups.
+- [Mileage Reimbursement Calculator](https://ohfis.com/en/mileage-reimbursement-calculator/): Calculate trip reimbursement with official per-mile or per-kilometre rates.
+- [Tip Calculator & Gratuity Table](https://ohfis.com/en/tip-calculator/): Compare tip rates for a business dinner and split the total.
+- [Working Capital & Current Ratio Calculator](https://ohfis.com/en/working-capital-calculator/): Compute working capital, current ratio, quick ratio and cash ratio.
+- [Price Elasticity of Demand Calculator](https://ohfis.com/en/price-elasticity-calculator/): Estimate how a price change affects quantity and revenue.
+- [Overhead Cost Allocation Calculator](https://ohfis.com/en/overhead-allocation-calculator/): Allocate shared costs to departments by headcount, floor area or revenue.
+- [Startup Dilution & Cap Table Calculator](https://ohfis.com/en/startup-dilution-calculator/): See founders' ownership after seed, Series A and later rounds.
+
 ## Related sites by the same operator
 
 - [Files Online](https://files-online.com/): More PDF tools and file utilities
