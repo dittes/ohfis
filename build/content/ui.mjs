@@ -1,0 +1,51 @@
+// ui.mjs — labels shared by every utility tool. Written to assets/i18n/ut.<lang>.js by build.mjs.
+// [en, de, pl, cs]
+const rows = {
+  copy: ['Copy', 'Kopieren', 'Kopiuj', 'Kopírovat'],
+  copied: ['Copied', 'Kopiert', 'Skopiowano', 'Zkopírováno'],
+  download: ['Download', 'Herunterladen', 'Pobierz', 'Stáhnout'],
+  clear: ['Clear', 'Leeren', 'Wyczyść', 'Vymazat'],
+  input: ['Input', 'Eingabe', 'Dane wejściowe', 'Vstup'],
+  output: ['Result', 'Ergebnis', 'Wynik', 'Výsledek'],
+  sample: ['Sample', 'Beispiel', 'Przykład', 'Ukázka'],
+  pasteHere: ['Paste or type your text here', 'Text hier einfügen oder eintippen', 'Wklej lub wpisz tekst tutaj', 'Vložte nebo napište text sem'],
+  openFile: ['Open file', 'Datei öffnen', 'Otwórz plik', 'Otevřít soubor'],
+  chooseFile: ['Choose file', 'Datei wählen', 'Wybierz plik', 'Vybrat soubor'],
+  lines: ['Lines', 'Zeilen', 'Linie', 'Řádky'],
+  found: ['Found', 'Gefunden', 'Znaleziono', 'Nalezeno'],
+  showingRows: ['Showing {n} of {total} rows', '{n} von {total} Zeilen angezeigt', 'Pokazano {n} z {total} wierszy', 'Zobrazeno {n} z {total} řádků'],
+  generate: ['Generate', 'Erzeugen', 'Generuj', 'Vygenerovat'],
+  reset: ['Reset', 'Zurücksetzen', 'Resetuj', 'Obnovit'],
+  start: ['Start', 'Start', 'Start', 'Start'],
+  stop: ['Stop', 'Stopp', 'Stop', 'Stop'],
+  add: ['Add', 'Hinzufügen', 'Dodaj', 'Přidat'],
+  remove: ['Remove', 'Entfernen', 'Usuń', 'Odebrat'],
+  save: ['Save', 'Speichern', 'Zapisz', 'Uložit'],
+  print: ['Print', 'Drucken', 'Drukuj', 'Tisknout'],
+  preview: ['Preview', 'Vorschau', 'Podgląd', 'Náhled'],
+  dropFiles: ['Drop files here or', 'Dateien hier ablegen oder', 'Upuść pliki tutaj lub', 'Přetáhněte soubory sem nebo'],
+  processing: ['Working…', 'Wird verarbeitet…', 'Przetwarzanie…', 'Zpracovávám…'],
+  error: ['Something went wrong', 'Etwas ist schiefgelaufen', 'Coś poszło nie tak', 'Něco se pokazilo'],
+  result: ['Result', 'Ergebnis', 'Wynik', 'Výsledek'],
+  total: ['Total', 'Gesamt', 'Razem', 'Celkem'],
+};
+const LANGS = ['en', 'de', 'pl', 'cs'];
+export default Object.fromEntries(LANGS.map((l, i) => [l, Object.fromEntries(Object.entries(rows).map(([k, v]) => [k, v[i]]))]));
+
+/** Page-level strings for generated utility pages. [en, de, pl, cs] */
+export const PAGE = {
+  suffix: ['Free Online Tool', 'Kostenlos online', 'Online za darmo', 'Online zdarma'],
+  priv: ['Free, runs in your browser, nothing is uploaded.', 'Kostenlos, läuft im Browser, nichts wird hochgeladen.', 'Za darmo, działa w przeglądarce, nic nie jest przesyłane.', 'Zdarma, běží v prohlížeči, nic se nenahrává.'],
+  howItWorks: ['How {name} works', 'So funktioniert: {name}', 'Jak działa: {name}', 'Jak funguje: {name}'],
+  howToUse: ['How to use it', 'So benutzt du es', 'Jak z tego korzystać', 'Jak to použít'],
+  note: ['', 'Die ausführliche Erklärung ist auf Englisch.', 'Szczegółowe wyjaśnienie jest po angielsku.', 'Podrobné vysvětlení je v angličtině.'],
+  alsoTitle: ['Also useful elsewhere', 'Auch nützlich', 'Przydatne także gdzie indziej', 'Užitečné i jinde'],
+  alsoLede: ['Related tools on our other sites, free and in your browser.', 'Passende Tools auf unseren anderen Seiten, kostenlos und im Browser.', 'Powiązane narzędzia na naszych innych stronach, za darmo i w przeglądarce.', 'Související nástroje na našich dalších webech, zdarma a v prohlížeči.'],
+  browse: ['Browse by category', 'Nach Kategorie stöbern', 'Przeglądaj według kategorii', 'Procházet podle kategorií'],
+  count: ['{n} tools', '{n} Tools', '{n} narzędzi', '{n} nástrojů'],
+  moreTools: ['More tools', 'Weitere Tools', 'Więcej narzędzi', 'Další nástroje'],
+  allIn: ['All {name} →', 'Alle {name} →', 'Wszystkie: {name} →', 'Všechny: {name} →'],
+  pdfShort: ['Merge, split, compress, convert, edit, sign and protect PDFs.', 'PDFs zusammenfügen, teilen, komprimieren, umwandeln, bearbeiten, unterschreiben und schützen.', 'Łącz, dziel, kompresuj, konwertuj, edytuj, podpisuj i zabezpieczaj PDF.', 'Spojujte, dělte, komprimujte, převádějte, upravujte, podepisujte a chraňte PDF.'],
+  loading: ['Loading tool…', 'Tool wird geladen…', 'Ładowanie narzędzia…', 'Načítání nástroje…'],
+  hubLede: ['Every tool runs in your browser. Nothing you paste or open is uploaded.', 'Jedes Tool läuft im Browser. Nichts, was du einfügst oder öffnest, wird hochgeladen.', 'Każde narzędzie działa w przeglądarce. Nic, co wkleisz lub otworzysz, nie jest przesyłane.', 'Každý nástroj běží v prohlížeči. Nic, co vložíte nebo otevřete, se nenahrává.'],
+};

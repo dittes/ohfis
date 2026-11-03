@@ -1,7 +1,7 @@
 // Files Online — Service Worker
 // Cache-first for app shell, network-first for CDN resources.
 
-const CACHE_VERSION = '1ebf320d4f';
+const CACHE_VERSION = '86a1becc34';
 const SHELL_CACHE = `files-online-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `files-online-runtime-${CACHE_VERSION}`;
 
@@ -25,13 +25,23 @@ const SHELL_FILES = [
   "/assets/i18n/routes.de.js",
   "/assets/i18n/routes.en.js",
   "/assets/i18n/routes.pl.js",
+  "/assets/i18n/ut.cs.js",
+  "/assets/i18n/ut.de.js",
+  "/assets/i18n/ut.en.js",
+  "/assets/i18n/ut.pl.js",
   "/assets/js/pdf/lib.js",
   "/assets/js/pdf/main.js",
   "/assets/js/pdf/ops.js",
   "/assets/js/pdf/pages.js",
   "/assets/js/pdf/tools.js",
   "/assets/js/pdf/ui.js",
-  "/assets/js/site.js"
+  "/assets/js/site.js",
+  "/assets/js/tools/kit.js",
+  "/assets/js/tools/lib/diff.js",
+  "/assets/js/tools/lib/dummy.js",
+  "/assets/js/tools/lib/text.js",
+  "/assets/js/tools/main.js",
+  "/assets/js/tools/text.js"
 ];
 
 // Install: pre-cache app shell

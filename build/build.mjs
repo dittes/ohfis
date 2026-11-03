@@ -12,6 +12,9 @@ import {
   sisterUrl, pagePath, toolPath,
 } from './registry.mjs';
 import { ICONS, LOGO, LOGO_SVG } from './icons.mjs';
+import { UCATS, UCAT_ORDER, LINKS, SITES, SITE_NAMES, LI } from './tools/registry.mjs';
+import UTOOLS from './tools/index.mjs';
+import UI, { PAGE } from './content/ui.mjs';
 
 const BUILD = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(BUILD, '..');
@@ -58,6 +61,13 @@ function csp(inlineScripts = [THEME_BOOT]) {
 const iconSvg = (name, cls = 's-card__icon') => `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ICONS.file}</svg>`;
 
 const toolById = id => TOOLS.find(t => t.id === id);
+const utilById = id => UTOOLS.find(t => t.id === id);
+const utilsOf = cat => UTOOLS.filter(t => t.cat === cat);
+const pdfSlugs = new Set(TOOLS.flatMap(t => Object.values(t.slugs)));
+for (const t of UTOOLS) if (pdfSlugs.has(t.id)) throw new Error(`Tool id collides with a PDF tool slug: ${t.id}`);
+const utilPath = (tool, lang) => `/${lang}/${tool.id}/`;
+const hubPath = (cat, lang) => `/${lang}/${UCATS[cat].slug}/`;
+const P = (key, lang, vars) => { let v = PAGE[key][LI[lang]]; if (vars) for (const [k, x] of Object.entries(vars)) v = v.replaceAll(`{${k}}`, x); return v; };
 
 // ─── Shared page parts ────────────────────────────────────────────────────────
 
@@ -107,7 +117,7 @@ function themeButton(c) {
         </button>`;
 }
 
-const NAV_TOOLS = ['merge', 'split', 'compress', 'sign'];
+const NAV_TOOLS = ['merge', 'compress'];
 
 function header(lang, paths, current, currentTool) {
   const c = content[lang];
@@ -125,6 +135,16 @@ function header(lang, paths, current, currentTool) {
           <div class="s-mega">
             ${groups}
             <a class="s-mega__all" href="${pagePath('pdfTools', lang)}">${e(c.nav.allPdfTools)} →</a>
+          </div>
+        </details>
+        <details class="s-menu">
+          <summary>${e(P('moreTools', lang))}<svg class="s-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+          <div class="s-mega s-mega--wide">
+            ${UCAT_ORDER.filter(cat => utilsOf(cat).length).map(cat => `<div>
+              <h3><a href="${hubPath(cat, lang)}">${e(UCATS[cat].name[LI[lang]])}</a></h3>
+              ${utilsOf(cat).slice(0, 6).map(t => `<a href="${utilPath(t, lang)}">${e(t.names[LI[lang]])}</a>`).join('')}
+              ${utilsOf(cat).length > 6 ? `<a class="s-mega__more" href="${hubPath(cat, lang)}">${e(P('count', lang, { n: utilsOf(cat).length }))} →</a>` : ''}
+            </div>`).join('')}
           </div>
         </details>
         ${NAV_TOOLS.map(id => `<a href="${toolPath(toolById(id), lang)}"${currentTool === id ? ' aria-current="page"' : ''}>${e(c.tools[id].name)}</a>`).join('')}
@@ -154,7 +174,12 @@ function footer(lang, paths, { noTheme = false } = {}) {
     <div class="s-wrap">
       <div class="s-footer__toc">
         ${CATEGORIES.map(cat => tocBlock(c.cats[cat], TOOLS.filter(t => t.cat === cat).map(toolLink))).join('')}
-        ${tocBlock(c.footer.family, Object.entries(SISTER_SITES).map(([key, s]) => `<a href="${s.host}/${lang}/" rel="noopener">${e(s.name)}<span>↗</span></a>`))}
+        ${UCAT_ORDER.filter(cat => utilsOf(cat).length).map(cat => tocBlock(UCATS[cat].name[LI[lang]], [
+    ...utilsOf(cat).slice(0, 7).map(t => `<a href="${utilPath(t, lang)}">${e(t.names[LI[lang]])}</a>`),
+    `<a href="${hubPath(cat, lang)}">${e(P('count', lang, { n: utilsOf(cat).length }))}<span>→</span></a>`,
+  ])).join('')}
+        ${tocBlock(c.footer.family, Object.entries(SITE_NAMES).map(([key, name]) => `<a href="${SITES[key]}/${lang}/" rel="noopener">${e(name)}<span>↗</span></a>`))}
+        ${false ? tocBlock(c.footer.family, Object.entries(SISTER_SITES).map(([key, s]) => `<a href="${s.host}/${lang}/" rel="noopener">${e(s.name)}<span>↗</span></a>`)) : ''}
       </div>
       <div class="s-footer__bottom">
         <a href="${pagePath('privacy', lang)}">${e(c.nav.privacy)}</a>
@@ -284,7 +309,8 @@ function homePage(lang) {
   const c = content[lang];
   const h = c.home;
   const paths = pathsFor('home');
-  const popular = TOOLS.filter(t => t.popular).slice(0, 7);
+  const chipIds = ['merge', 'compress', 'jpg-to-pdf', 'case-converter', 'character-counter', 'remove-duplicate-lines', 'csv-delimiter-converter', 'unix-timestamp-converter'];
+  const chips = chipIds.map(id => toolById(id) ? [toolPath(toolById(id), lang), c.tools[id].name] : utilById(id) ? [utilPath(utilById(id), lang), utilById(id).names[LI[lang]]] : null).filter(Boolean);
   return `${head({ lang, title: h.title, desc: h.desc, paths, jsonLd: [ldOrg, ldApp(lang, 'OHFIS', h.desc, paths[lang]), ldFaq(h.faqs)] })}
 <body class="s-page">
   ${header(lang, paths, 'home')}
@@ -299,12 +325,22 @@ function homePage(lang) {
             <a class="s-btn s-btn--primary" href="${pagePath('pdfTools', lang)}">${e(h.ctaPdf)}</a>
             <a class="s-btn s-btn--secondary" href="#privacy">${e(h.ctaPrivacy)}</a>
           </div>
-          <nav class="s-shortcuts" aria-label="${e(h.popularTitle)}">${popular.map(t => `<a class="s-chip" href="${toolPath(t, lang)}">${e(c.tools[t.id].name)}</a>`).join('')}</nav>
+          <nav class="s-shortcuts" aria-label="${e(h.popularTitle)}">${chips.map(([href, name]) => `<a class="s-chip" href="${href}">${e(name)}</a>`).join('')}</nav>
         </div>
       </div>
     </section>
 
-    <section class="s-section">
+    <section class="s-section" id="categories">
+      <div class="s-wrap">
+        <h2>${e(P('browse', lang))}</h2>
+        <div class="s-cards s-cards--cats">
+          <a class="s-card" data-cat="organize" href="${pagePath('pdfTools', lang)}">${iconSvg('merge')}<span class="s-card__title">${e(c.nav.pdfTools)}</span><span class="s-card__desc">${e(P('pdfShort', lang))}</span><span class="s-card__count">${e(P('count', lang, { n: TOOLS.length }))}</span></a>
+          ${UCAT_ORDER.filter(cat => utilsOf(cat).length).map(cat => `<a class="s-card" data-cat="${cat}" href="${hubPath(cat, lang)}">${iconSvg(UCATS[cat].icon)}<span class="s-card__title">${e(UCATS[cat].name[LI[lang]])}</span><span class="s-card__desc">${e(UCATS[cat].short[LI[lang]])}</span><span class="s-card__count">${e(P('count', lang, { n: utilsOf(cat).length }))}</span></a>`).join('')}
+        </div>
+      </div>
+    </section>
+
+    <section class="s-section s-section--tint">
       <div class="s-wrap">
         <h2>${e(h.popularTitle)}</h2>
         <p class="s-section__lede">${e(h.popularLede)}</p>
@@ -312,7 +348,7 @@ function homePage(lang) {
       </div>
     </section>
 
-    <section class="s-section s-section--tint" id="privacy">
+    <section class="s-section" id="privacy">
       <div class="s-wrap s-privacy">
         ${stamp(c)}
         <div class="s-prose">
@@ -432,6 +468,156 @@ function toolPage(lang, tool) {
 `;
 }
 
+
+// ─── Utility tools ────────────────────────────────────────────────────────────
+
+const ucard = (lang, t) => `<a class="s-card" data-cat="${t.cat}" href="${utilPath(t, lang)}">
+          ${iconSvg(t.icon || UCATS[t.cat].icon)}
+          <span class="s-card__title">${e(t.names[LI[lang]])}</span>
+          <span class="s-card__desc">${e(t.shorts[LI[lang]])}</span>
+        </a>`;
+const anyCard = (lang, id) => toolById(id) ? card(lang, toolById(id)) : utilById(id) ? ucard(lang, utilById(id)) : '';
+const exists = id => !!(toolById(id) || utilById(id));
+
+function linkKeyUrl(key, lang) {
+  const [site, path] = LINKS[key];
+  const p = typeof path === 'string' ? path : path[lang];
+  return `${SITES[site]}/${lang}/${p}`;
+}
+function utilLinksSection(lang, keys) {
+  const list = (keys || []).filter(k => LINKS[k]);
+  if (!list.length) return '';
+  return `<section class="s-section">
+    <div class="s-wrap">
+      <h2>${e(P('alsoTitle', lang))}</h2>
+      <p class="s-section__lede">${e(P('alsoLede', lang))}</p>
+      <div class="s-links">${list.map(k => `<a href="${linkKeyUrl(k, lang)}" rel="noopener"><strong>${e(LINKS[k][2][LI[lang]])}</strong><small>${e(SITE_NAMES[LINKS[k][0]])} ↗</small></a>`).join('')}</div>
+    </div>
+  </section>`;
+}
+
+function utilTitle(lang, t) {
+  const name = t.names[LI[lang]];
+  return lang === 'en' ? (t.title || `${name} – ${P('suffix', 'en')}`) : `${name} – ${P('suffix', lang)}`;
+}
+
+function utilityPage(lang, tool) {
+  const c = content[lang];
+  const li = LI[lang];
+  const name = tool.names[li], short = tool.shorts[li];
+  const paths = Object.fromEntries(LANGS.map(l => [l, utilPath(tool, l)]));
+  const title = utilTitle(lang, tool), desc = `${short} ${P('priv', lang)}`;
+  const la = lang === 'en' ? '' : ' lang="en"';
+  const cat = UCATS[tool.cat];
+  const crumbs = [[c.nav.home, `/${lang}/`], [cat.name[li], hubPath(tool.cat, lang)], [name]];
+  const faqs = [...tool.faqs, ...c.toolPage.sharedFaqs];
+  const related = (tool.related || []).filter(exists).slice(0, 4);
+  const jsonLd = [ldApp(lang, name, desc, paths[lang]), ldCrumbs(crumbs), ldHowTo(`${P('howToUse', lang)}: ${name}`, tool.steps), ldFaq(faqs)];
+  return `${head({ lang, title, desc, paths, jsonLd })}
+<body class="s-page">
+  ${header(lang, paths)}
+  <main id="main">
+    <div class="s-wrap">
+      ${breadcrumbs(crumbs)}
+      <div class="s-toolhead">
+        <h1>${e(name)}</h1>
+        <p>${e(short)}</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="${tool.id}" data-cat="${tool.cat}"><p class="pt-hint">${e(P('loading', lang))}</p><noscript><p class="pt-drop__error">${e(c.toolPage.noJs)}</p></noscript></div>
+        <ul class="s-trust">${c.toolPage.trust.map(x => `<li>${e(x)}</li>`).join('')}</ul>
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>${e(P('howItWorks', lang, { name }))}</h2>
+        ${lang === 'en' ? '' : `<p class="pt-hint">${e(P('note', lang))}</p>`}
+        ${tool.about.map(p => `<p${la}>${e(p)}</p>`).join('')}
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>${e(P('howToUse', lang))}</h2>
+        <ol class="s-steps">${tool.steps.map(st => `<li><p${la}>${e(st)}</p></li>`).join('')}</ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>${e(c.toolPage.faqTitle)}</h2>
+        <div class="s-faq">
+          ${faqs.map(([q, a], i) => `<details${i === 0 ? ' open' : ''}><summary${la}>${e(q)}</summary><p${la}>${e(a)}</p></details>`).join('\n          ')}
+        </div>
+      </div>
+    </section>
+    ${utilLinksSection(lang, tool.links)}
+    ${related.length ? `<section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>${e(c.toolPage.relatedTitle)}</h2>
+        <div class="s-cards" style="margin-top:16px">${related.map(id => anyCard(lang, id)).join('')}</div>
+      </div>
+    </section>` : ''}
+  </main>
+  ${footer(lang, paths)}
+  <script type="module" src="${assetUrl('assets/js/tools/main.js')}"></script>
+</body>
+</html>
+`;
+}
+
+function utilHubPage(lang, catKey) {
+  const c = content[lang];
+  const li = LI[lang];
+  const cat = UCATS[catKey];
+  const paths = Object.fromEntries(LANGS.map(l => [l, hubPath(catKey, l)]));
+  const title = lang === 'en' ? `${cat.h1[0]} – ${utilsOf(catKey).length} Free Tools, No Upload` : `${cat.h1[li]} – ${P('suffix', lang)}`;
+  const desc = `${cat.short[li]} ${P('priv', lang)}`;
+  const crumbs = [[c.nav.home, `/${lang}/`], [cat.name[li]]];
+  const items = utilsOf(catKey);
+  const jsonLd = [ldCrumbs(crumbs), ldFaq(c.toolPage.sharedFaqs), {
+    '@context': 'https://schema.org', '@type': 'CollectionPage', name: cat.h1[li], description: desc, url: `${SITE}${paths[lang]}`, inLanguage: lang,
+    mainEntity: { '@type': 'ItemList', itemListElement: items.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${utilPath(t, lang)}`, name: t.names[li] })) },
+  }];
+  return `${head({ lang, title, desc, paths, jsonLd })}
+<body class="s-page">
+  ${header(lang, paths)}
+  <main id="main">
+    <div class="s-wrap">
+      ${breadcrumbs(crumbs)}
+      <div class="s-toolhead">
+        <h1>${e(cat.h1[li])}</h1>
+        <p>${e(cat.short[li])} ${e(P('hubLede', lang))}</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cards">${items.map(t => ucard(lang, t)).join('')}</div></div>
+    </section>
+    ${faqSection(c, c.toolPage.sharedFaqs)}
+  </main>
+  ${footer(lang, paths)}
+</body>
+</html>
+`;
+}
+
+function llmsText(full) {
+  const en = content.en; const lines = [];
+  lines.push('# OHFIS', '', `> Free online tools that run entirely in your browser: PDF tools, text tools, CSV and spreadsheet tools, image tools, time and calendar tools, business calculators, IT and web helpers, notes and privacy tools, and team tools. Files and text are processed on the visitor's device and are never uploaded. No account, no watermark, no limits. Available in English, German, Polish and Czech.`, '');
+  lines.push('## About', '', `- Site: ${SITE}/`, '- Languages: English (/en/), German (/de/), Polish (/pl/), Czech (/cs/). Utility tool URLs use the same slug in every language, for example /en/case-converter/ and /de/case-converter/.', '- Privacy: all processing happens in the browser using JavaScript, Canvas, Web Crypto and WebAssembly. There is no server that receives files.', '- Operator: Andreas Dittes, Berlin, Germany. Contact: ohfis@dittes.info', `- Sitemap: ${SITE}/sitemap.xml`, '');
+  lines.push('## PDF tools', '');
+  for (const t of TOOLS) lines.push(`- [${en.tools[t.id].name}](${SITE}${toolPath(t, 'en')}): ${en.tools[t.id].desc}`);
+  for (const cat of UCAT_ORDER) {
+    const items = utilsOf(cat); if (!items.length) continue;
+    lines.push('', `## ${UCATS[cat].name[0]}`, '', `${UCATS[cat].short[0]} Hub: ${SITE}${hubPath(cat, 'en')}`, '');
+    for (const t of items) {
+      lines.push(`- [${t.names[0]}](${SITE}${utilPath(t, 'en')}): ${t.shorts[0]}`);
+      if (full) lines.push(`  ${t.about[0]}`, `  How to use: ${t.steps.join(' ')}`);
+    }
+  }
+  lines.push('', '## Related sites by the same operator', '', ...Object.entries(SITE_NAMES).map(([k, n]) => `- [${n}](${SITES[k]}/): ${({ files: 'More PDF tools and file utilities', open: 'Open and view almost any file format in the browser', culators: 'Hundreds of calculators', test: 'Hardware, browser and ability tests' })[k]}`), '');
+  return lines.join('\n');
+}
+
 function legalPage(lang, key) {
   const c = content[lang];
   const p = c[key];
@@ -522,6 +708,8 @@ function sitemap() {
   const groups = [
     ...Object.keys(PAGES).map(pathsFor),
     ...TOOLS.map(toolPaths),
+    ...UCAT_ORDER.filter(cat => utilsOf(cat).length).map(cat => Object.fromEntries(LANGS.map(l => [l, hubPath(cat, l)]))),
+    ...UTOOLS.map(t => Object.fromEntries(LANGS.map(l => [l, utilPath(t, l)]))),
   ];
   const entries = [];
   for (const paths of groups) {
@@ -582,8 +770,18 @@ for (const lang of LANGS) {
   for (const tool of TOOLS) write(`${lang}/${tool.slugs[lang]}/index.html`, toolPage(lang, tool));
   write(`${lang}/${PAGES.privacy[lang]}/index.html`, legalPage(lang, 'privacy'));
   write(`${lang}/${PAGES.imprint[lang]}/index.html`, legalPage(lang, 'imprint'));
+  for (const cat of UCAT_ORDER) if (utilsOf(cat).length) { write(`${lang}/${UCATS[cat].slug}/index.html`, utilHubPage(lang, cat)); pages++; }
+  for (const tool of UTOOLS) { write(`${lang}/${tool.id}/index.html`, utilityPage(lang, tool)); pages++; }
   pages += TOOLS.length + 4;
 }
+
+// UI labels for the utility tools, read at runtime by assets/js/tools/kit.js
+for (const lang of LANGS) write(`assets/i18n/ut.${lang}.js`, `// Generated by build/build.mjs from build/content/ui.mjs\nexport default ${JSON.stringify(UI[lang])};\n`);
+write('llms.txt', llmsText(false));
+write('llms-full.txt', llmsText(true));
+// Related ids that point nowhere yet (tools planned but not built)
+const dangling = [...new Set(UTOOLS.flatMap(t => (t.related || []).filter(id => !exists(id))))];
+if (dangling.length) console.log(`Note: ${dangling.length} related tool ids are not built yet: ${dangling.join(', ')}`);
 
 write('index.html', rootPage());
 write('assets/icons/icon.svg', LOGO_SVG);
@@ -600,7 +798,7 @@ write('manifest.webmanifest', JSON.stringify({
 }, null, 2) + '\n');
 write('404.html', notFoundPage());
 write('sitemap.xml', sitemap());
-write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
+write('robots.txt', ['User-agent: *', 'Allow: /', '', ...['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Google-Extended', 'Applebot-Extended', 'CCBot', 'Bytespider'].flatMap(b => [`User-agent: ${b}`, 'Allow: /', '']), `Sitemap: ${SITE}/sitemap.xml`, ''].join('\n'));
 write('service-worker.js', serviceWorker());
 
 

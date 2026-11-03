@@ -1,0 +1,82 @@
+# OHFIS
+
+> Free online tools that run entirely in your browser: PDF tools, text tools, CSV and spreadsheet tools, image tools, time and calendar tools, business calculators, IT and web helpers, notes and privacy tools, and team tools. Files and text are processed on the visitor's device and are never uploaded. No account, no watermark, no limits. Available in English, German, Polish and Czech.
+
+## About
+
+- Site: https://ohfis.com/
+- Languages: English (/en/), German (/de/), Polish (/pl/), Czech (/cs/). Utility tool URLs use the same slug in every language, for example /en/case-converter/ and /de/case-converter/.
+- Privacy: all processing happens in the browser using JavaScript, Canvas, Web Crypto and WebAssembly. There is no server that receives files.
+- Operator: Andreas Dittes, Berlin, Germany. Contact: ohfis@dittes.info
+- Sitemap: https://ohfis.com/sitemap.xml
+
+## PDF tools
+
+- [Merge PDF](https://ohfis.com/en/merge-pdf/): Merge PDF files into one document in seconds. Put them in the right order and download. Free, no upload and no sign-up.
+- [Split PDF](https://ohfis.com/en/split-pdf/): Split a PDF into several files: every page on its own, by page range, or every few pages. Free, with no upload and no sign-up.
+- [Extract PDF Pages](https://ohfis.com/en/extract-pdf-pages/): Select the pages you need and save them as a new PDF, or as separate files. Free, right in your browser, with no upload.
+- [Delete PDF Pages](https://ohfis.com/en/delete-pdf-pages/): Remove pages from a PDF in a few clicks. Removed pages are really gone from the new file. Free, with no upload and no account.
+- [Organize PDF](https://ohfis.com/en/organize-pdf/): Drag PDF pages into a new order, rotate them, add blank pages or remove what you do not need. Free, in your browser, with no upload.
+- [Rotate PDF](https://ohfis.com/en/rotate-pdf/): Rotate one page or a whole PDF by 90 or 180 degrees and save it permanently. Free, with no upload. Forms and links stay intact.
+- [Crop PDF](https://ohfis.com/en/crop-pdf/): Cut margins or unwanted areas from PDF pages by drawing the part to keep. On one page or all of them. Free, with no upload.
+- [Compress PDF](https://ohfis.com/en/compress-pdf/): Reduce the file size of your PDF without losing text quality. Choose how strong to compress. Free, with no upload and no sign-up.
+- [OCR PDF](https://ohfis.com/en/ocr-pdf/): Recognize the text in scanned PDFs so you can search and copy it. English, German, Polish and Czech. Runs in your browser, so nothing is uploaded.
+- [Flatten PDF](https://ohfis.com/en/flatten-pdf/): Turn fillable form fields and comments into fixed page content that can no longer be edited. Free, in your browser, with no upload.
+- [PDF to Word](https://ohfis.com/en/pdf-to-word/): Convert PDF to an editable Word document in your browser. Keeps headings, paragraphs and styling. Free, and your file is never uploaded.
+- [PDF to Excel](https://ohfis.com/en/pdf-to-excel/): Extract tables from a PDF into an Excel spreadsheet. Numbers become real numbers you can calculate with. Free, and nothing is uploaded.
+- [PDF to JPG](https://ohfis.com/en/pdf-to-jpg/): Convert each page of a PDF to a JPG image in the resolution you choose. Free, right in your browser, with no upload.
+- [PDF to PNG](https://ohfis.com/en/pdf-to-png/): Convert PDF pages to crisp PNG images in the resolution you choose. Ideal for text and diagrams. Free, with no upload.
+- [PDF to Text](https://ohfis.com/en/pdf-to-text/): Extract all text from a PDF into a plain .txt file, with paragraphs put back together. Free, in your browser, with no upload.
+- [JPG to PDF](https://ohfis.com/en/jpg-to-pdf/): Combine JPG photos into a single PDF. Choose page size, orientation and margins. Free, in your browser, with no upload.
+- [PNG to PDF](https://ohfis.com/en/png-to-pdf/): Convert PNG screenshots and graphics into a single PDF, losslessly. Choose page size and margins. Free, and nothing is uploaded.
+- [Edit PDF](https://ohfis.com/en/edit-pdf/): Add text, highlights, shapes, drawings and images to a PDF in your browser. Free, with no account and no upload.
+- [Sign PDF](https://ohfis.com/en/sign-pdf/): Sign a PDF by drawing, typing or uploading your signature, then place it on the page. Free, with no account and no upload.
+- [Fill PDF Form](https://ohfis.com/en/fill-pdf-form/): Fill in PDF forms in your browser and save them. Text fields, checkboxes and dropdowns. Free, and your answers are never uploaded.
+- [Add Watermark](https://ohfis.com/en/add-watermark-to-pdf/): Stamp text like CONFIDENTIAL or DRAFT on every page of a PDF. Choose size, color, angle and opacity with a live preview. Free, with no upload.
+- [Add Page Numbers](https://ohfis.com/en/add-page-numbers-to-pdf/): Add page numbers to a PDF. Choose position, format, size and first number, with a live preview. Free, in your browser, with no upload.
+- [Protect PDF](https://ohfis.com/en/protect-pdf/): Encrypt a PDF with a password using AES-256 and control printing and copying. Free, and neither your file nor your password is uploaded.
+- [Unlock PDF](https://ohfis.com/en/unlock-pdf/): Remove the password and restrictions from a PDF you can open. Free, and your file and password stay in your browser.
+- [Redact PDF](https://ohfis.com/en/redact-pdf/): Permanently black out names, numbers and other sensitive information in a PDF. The content is really removed. Free, with no upload.
+- [Edit PDF Metadata](https://ohfis.com/en/edit-pdf-metadata/): See and change a PDF's title, author and keywords, or remove all metadata in one click. Free, in your browser, with no upload.
+
+## Text Tools
+
+Clean, convert, count, compare and extract text. Hub: https://ohfis.com/en/text-tools/
+
+- [Zero-Width Character Remover](https://ohfis.com/en/zero-width-character-remover/): Find and delete invisible characters such as zero-width spaces and BOMs.
+- [Case Converter](https://ohfis.com/en/case-converter/): Switch text to UPPER, lower, Title, Sentence, camelCase, snake_case and more.
+- [Remove Duplicate Lines](https://ohfis.com/en/remove-duplicate-lines/): Delete repeated lines and see how often each one occurred.
+- [List to Comma Separated Converter](https://ohfis.com/en/list-to-comma-separated/): Turn lines into comma, tab or quoted lists, arrays and SQL IN (…) lists.
+- [Extract Emails, Phones & URLs from Text](https://ohfis.com/en/regex-extractor/): Pull emails, phone numbers, UUIDs, IPs, dates and more out of raw text.
+- [Text Diff Checker](https://ohfis.com/en/text-diff-checker/): Compare two texts side by side and see every added and removed word or line.
+- [Table to Markdown Converter](https://ohfis.com/en/table-to-markdown/): Paste cells from Excel or CSV and get a clean Markdown or HTML table.
+- [Character Counter](https://ohfis.com/en/character-counter/): Count characters, words and bytes against X, LinkedIn, Google Ads and SMS limits.
+- [Speech Time Calculator](https://ohfis.com/en/speech-time-calculator/): Estimate how long your speech or script takes at slow, natural and energetic pace.
+- [Fake Data Generator](https://ohfis.com/en/dummy-data-generator/): Generate realistic names, emails and addresses for test data instead of Lorem Ipsum.
+- [Smart Quotes to Straight Quotes](https://ohfis.com/en/smart-quotes-to-ascii/): Replace curly quotes, dashes, ellipses and ligatures with plain ASCII.
+- [Remove Line Breaks](https://ohfis.com/en/remove-line-breaks/): Join text copied from PDFs into flowing paragraphs and keep real paragraph breaks.
+- [Add Prefix or Suffix to Lines](https://ohfis.com/en/add-prefix-suffix-to-lines/): Add text, numbers or tags before or after every line in one step.
+- [Sort Lines Alphabetically](https://ohfis.com/en/sort-lines/): Sort lists A–Z, Z–A, by length or naturally (v2 before v10).
+- [Email Extractor](https://ohfis.com/en/email-extractor/): Pull every email address out of any text, remove duplicates and group by domain.
+- [URL Extractor & Tracking Parameter Remover](https://ohfis.com/en/url-extractor-tracking-remover/): List the links in a text and strip utm_*, fbclid and other tracking tags.
+- [URL Slug Generator](https://ohfis.com/en/slug-generator/): Turn titles into clean, accent-free, SEO-friendly URL slugs.
+- [ROT13 Encoder & Decoder](https://ohfis.com/en/rot13-encoder/): Encode or decode ROT13 and other Caesar ciphers.
+- [Emoji Remover](https://ohfis.com/en/emoji-remover/): Strip emoji and pictograms from text, or reduce everything to plain ASCII.
+- [NATO Phonetic Alphabet Translator](https://ohfis.com/en/nato-phonetic-alphabet/): Spell names, codes and serial numbers in Alfa, Bravo, Charlie…
+- [Random Line Shuffler](https://ohfis.com/en/shuffle-lines/): Shuffle a list into random order with a fair Fisher-Yates shuffle.
+- [Filter Lines (Text Grep)](https://ohfis.com/en/filter-lines/): Keep or drop the lines that contain, start or end with a search term.
+- [Merge Two Lists into Columns](https://ohfis.com/en/merge-columns/): Paste two lists and join them side by side, ready for Excel.
+- [Tabs to Spaces Converter](https://ohfis.com/en/tabs-to-spaces/): Normalise code indentation to 2, 4 or 8 spaces, or back to tabs.
+- [Word Frequency Counter](https://ohfis.com/en/word-frequency-counter/): Rank the most used words and phrases, ignoring common stop words.
+- [Text Splitter](https://ohfis.com/en/text-splitter/): Cut long text into chunks of a set length without breaking words.
+- [Buzzword Detector](https://ohfis.com/en/buzzword-detector/): Highlight corporate jargon and see plain-language alternatives.
+- [Indented Text to JSON, HTML & XML](https://ohfis.com/en/outline-converter/): Convert an indented outline into nested JSON, HTML lists, XML, Markdown or YAML.
+- [Text to Hex, Binary & Base32 Converter](https://ohfis.com/en/text-base-converter/): Convert text between hex, binary, decimal, octal, Base32 and Base64.
+- [Morse Code Translator](https://ohfis.com/en/morse-code-translator/): Translate text to Morse code and back, and play it as beeps.
+
+## Related sites by the same operator
+
+- [Files Online](https://files-online.com/): More PDF tools and file utilities
+- [Open Online](https://open-online.com/): Open and view almost any file format in the browser
+- [Culators](https://culators.com/): Hundreds of calculators
+- [test.institute](https://test.institute/): Hardware, browser and ability tests

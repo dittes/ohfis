@@ -32,7 +32,7 @@
   <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
   <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   
-  <link rel="stylesheet" href="/assets/css/site.css?v=cdce852a">
+  <link rel="stylesheet" href="/assets/css/site.css?v=572a7dec">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Flatten PDF","url":"https://ohfis.com/en/flatten-pdf/","description":"Turn fillable form fields and comments into fixed page content that can no longer be edited. Free, in your browser, with no upload.","inLanguage":"en","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ohfis.com/en/"},{"@type":"ListItem","position":2,"name":"PDF tools","item":"https://ohfis.com/en/pdf-tools/"},{"@type":"ListItem","position":3,"name":"Flatten PDF"}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to flatten a PDF","step":[{"@type":"HowToStep","position":1,"text":"Choose your PDF file."},{"@type":"HowToStep","position":2,"text":"Decide whether comments and link areas should be removed too."},{"@type":"HowToStep","position":3,"text":"Click “Flatten PDF” and download the result."}]}</script>
@@ -66,7 +66,17 @@
             <a class="s-mega__all" href="/en/pdf-tools/">All PDF tools →</a>
           </div>
         </details>
-        <a href="/en/merge-pdf/">Merge PDF</a><a href="/en/split-pdf/">Split PDF</a><a href="/en/compress-pdf/">Compress PDF</a><a href="/en/sign-pdf/">Sign PDF</a>
+        <details class="s-menu">
+          <summary>More tools<svg class="s-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+          <div class="s-mega s-mega--wide">
+            <div>
+              <h3><a href="/en/text-tools/">Text Tools</a></h3>
+              <a href="/en/zero-width-character-remover/">Zero-Width Character Remover</a><a href="/en/case-converter/">Case Converter</a><a href="/en/remove-duplicate-lines/">Remove Duplicate Lines</a><a href="/en/list-to-comma-separated/">List to Comma Separated Converter</a><a href="/en/regex-extractor/">Extract Emails, Phones &amp; URLs from Text</a><a href="/en/text-diff-checker/">Text Diff Checker</a>
+              <a class="s-mega__more" href="/en/text-tools/">30 tools →</a>
+            </div>
+          </div>
+        </details>
+        <a href="/en/merge-pdf/">Merge PDF</a><a href="/en/compress-pdf/">Compress PDF</a>
       </nav>
       <div class="s-actions">
         <details class="s-lang">
@@ -186,9 +196,14 @@
           <a href="/en/protect-pdf/">Protect PDF<span>PDF</span></a><a href="/en/unlock-pdf/">Unlock PDF<span>PDF</span></a><a href="/en/redact-pdf/">Redact PDF<span>PDF</span></a><a href="/en/edit-pdf-metadata/">Edit PDF Metadata<span>PDF</span></a>
         </section>
         <section>
-          <h2>Our other sites</h2>
-          <a href="https://open-online.com/en/" rel="noopener">Open Online<span>↗</span></a>
+          <h2>Text Tools</h2>
+          <a href="/en/zero-width-character-remover/">Zero-Width Character Remover</a><a href="/en/case-converter/">Case Converter</a><a href="/en/remove-duplicate-lines/">Remove Duplicate Lines</a><a href="/en/list-to-comma-separated/">List to Comma Separated Converter</a><a href="/en/regex-extractor/">Extract Emails, Phones &amp; URLs from Text</a><a href="/en/text-diff-checker/">Text Diff Checker</a><a href="/en/table-to-markdown/">Table to Markdown Converter</a><a href="/en/text-tools/">30 tools<span>→</span></a>
         </section>
+        <section>
+          <h2>Our other sites</h2>
+          <a href="https://files-online.com/en/" rel="noopener">Files Online<span>↗</span></a><a href="https://open-online.com/en/" rel="noopener">Open Online<span>↗</span></a><a href="https://culators.com/en/" rel="noopener">Culators<span>↗</span></a><a href="https://test.institute/en/" rel="noopener">test.institute<span>↗</span></a>
+        </section>
+        
       </div>
       <div class="s-footer__bottom">
         <a href="/en/privacy/">Privacy</a>

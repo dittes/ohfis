@@ -4,6 +4,17 @@
 const SHEET = 'M6 3h8l4 4v14H6z M14 3v4h4';
 
 export const ICONS = {
+  doc: `<path d="${SHEET}"/><path d="M9 12h6M9 15h6M9 18h3"/>`,
+  text: '<path d="M4 6h16M4 12h16M4 18h10"/>',
+  table: '<path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/>',
+  image: '<path d="M3 4h18v16H3z"/><circle cx="8.5" cy="9" r="1.6"/><path d="M3 17l5-4.5 3.5 3 4-4.5 5.5 6"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>',
+  coins: '<circle cx="9" cy="9" r="6"/><path d="M15 9.2a6 6 0 1 1-5.8 5.8"/><path d="M8 7.5h2.2a1.3 1.3 0 0 1 0 2.6H8.4a1.3 1.3 0 0 0 0 2.6H11"/>',
+  code: '<path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>',
+  note: '<path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/>',
+  team: '<circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M2.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5M14.5 14.8c2.8-.6 6 .9 6 4.2"/>',
+  wave: '<path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/>',
+  link: '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>',
   file: `<path d="${SHEET}"/>`,
   merge: '<path d="M3 4h7v9H3z M14 11h7v9h-7z"/><path d="M10 8h4l-1.8-1.8M14 8l-1.8 1.8"/><path d="M10 16h4l-1.8-1.8M10 16l1.8 1.8" opacity="0"/><path d="M6.5 16v3.5H11"/>',
   split: '<path d="M4 3h16v7H4z M4 14h16v7H4z"/><path d="M2 12h3M9 12h2M14 12h2M19 12h3" stroke-dasharray="0"/>',

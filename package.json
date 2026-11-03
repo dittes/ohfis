@@ -1,9 +1,11 @@
 {
-  "name": "files-online",
+  "name": "ohfis",
   "private": true,
-  "description": "Static site generator for files-online.com. Output is committed; GitHub Pages serves it as is.",
+  "description": "Static site generator for ohfis.com. Output is committed; GitHub Pages serves it as is.",
   "scripts": {
     "build": "node build/build.mjs",
-    "check:strings": "node build/extract-strings.mjs --missing"
-  }
+    "test": "node --test tests/",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "type": "module"
 }
