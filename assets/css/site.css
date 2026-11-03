@@ -840,3 +840,14 @@ body.s-page { letter-spacing: -.003em; }
 .ut-colcards { display: flex; flex-wrap: wrap; gap: 8px; }
 .ut-pre { white-space: pre-wrap; word-break: break-word; font: 400 14px/1.55 ui-monospace, Menlo, Consolas, monospace; padding: 12px 14px; border: 1px solid var(--s-rule-strong); border-radius: var(--s-radius); background: var(--s-sheet); margin: 0; }
 .ut-big { font: 700 clamp(30px, 5vw, 44px)/1.1 var(--s-display); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.ut-figure { margin: 0; display: grid; gap: 8px; } .ut-chart { width: 100%; height: auto; background: var(--s-sheet); border: 1px solid var(--s-rule); border-radius: var(--s-radius-lg); }
+.ut-chart__grid { stroke: var(--s-rule); stroke-width: 1; } .ut-chart__tick { fill: var(--s-ink-3); font: 500 11px var(--s-body); }
+.ut-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--s-ink-2); } .ut-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; }
+.ut-result { display: grid; gap: 14px; } .ut-card--good strong { color: var(--s-green); } .ut-card--bad strong { color: var(--s-danger); }
+.ut-clock { font: 700 clamp(48px, 12vw, 120px)/1 var(--s-display); letter-spacing: -.04em; font-variant-numeric: tabular-nums; text-align: center; padding: 18px 0; }
+.ut-clock--warn { color: var(--s-orange); } .ut-clock--danger { color: var(--s-danger); }
+.ut-fullscreen { position: fixed; inset: 0; z-index: 90; background: var(--s-paper); display: grid; place-items: center; padding: 24px; }
+.ut-tz { display: grid; grid-template-columns: 170px 1fr; gap: 8px 12px; align-items: center; } .ut-tz__name { font-weight: 600; font-size: 14px; }
+.ut-tz__bar { display: grid; grid-template-columns: repeat(48, 1fr); height: 28px; border-radius: 6px; overflow: hidden; border: 1px solid var(--s-rule); }
+.ut-tz__bar i { background: var(--s-paper-2); } .ut-tz__bar i.on { background: color-mix(in srgb, var(--s-green) 55%, var(--s-sheet)); } .ut-tz__bar i.all { background: var(--s-green); } .ut-tz__bar i.off { background: var(--s-rule); }
+@media (max-width: 640px) { .ut-tz { grid-template-columns: 1fr; } }

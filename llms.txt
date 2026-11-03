@@ -109,6 +109,29 @@ Fix, convert, merge, compare and reshape CSV and spreadsheet data. Hub: https://
 - [Excel Formula Translator (EN ⇄ DE, FR, ES)](https://ohfis.com/en/excel-formula-translator/): Convert formulas between English, German, French and Spanish Excel, including separators.
 - [Unpivot Table (Crosstab to List)](https://ohfis.com/en/unpivot-table/): Turn a wide crosstab with one column per month into a tidy long list.
 
+## Time & Calendar
+
+Time zones, working days, timestamps, calendar files and timers. Hub: https://ohfis.com/en/time-calendar-tools/
+
+- [Unix Timestamp Converter](https://ohfis.com/en/unix-timestamp-converter/): Convert epoch seconds or milliseconds to a date and back, in any time zone.
+- [Date Difference Calculator](https://ohfis.com/en/date-difference-calculator/): Exact time between two dates in years, months, days, weeks, hours and business days.
+- [Working Days Calculator](https://ohfis.com/en/working-days-calculator/): Add or subtract working days and count them between dates, skipping weekends and public holidays.
+- [Calendar Event (.ics) Generator](https://ohfis.com/en/ics-event-generator/): Create a calendar file for an email invitation, no Outlook or Google account needed.
+- [Time Zone Meeting Planner](https://ohfis.com/en/timezone-overlap-planner/): Find the hours when everyone is in working time across cities and time zones.
+- [Meeting Time Link Generator](https://ohfis.com/en/meeting-time-link-generator/): Create a link that shows the meeting time in each recipient's own time zone.
+- [Meeting Cost Calculator](https://ohfis.com/en/meeting-cost-calculator/): See what a meeting costs in real time from headcount and salaries.
+- [Pomodoro Timer with Focus Sounds](https://ohfis.com/en/pomodoro-timer/): Focus and break cycles with built-in white noise, rain and coffee-shop sounds.
+- [Hours and Minutes to Decimal Converter](https://ohfis.com/en/decimal-hours-converter/): Convert 7:45 to 7.75 for timesheets and invoices, with rounding rules.
+- [Timecard & Overtime Calculator](https://ohfis.com/en/timecard-calculator/): Total a week of punch-in and punch-out times, with breaks and overtime.
+- [Time Calculator (Add & Subtract Hours)](https://ohfis.com/en/time-calculator/): Add and subtract durations like 4h 12m + 1h 55m or 2:30 - 0:45.
+- [ISO Week Number & Quarter Calculator](https://ohfis.com/en/iso-week-number-calculator/): Find the ISO week number, day of the year and fiscal quarter of any date.
+- [Recurring Date List Generator](https://ohfis.com/en/recurring-dates-generator/): List the dates of an event that repeats, such as every other Tuesday.
+- [Julian Date & Ordinal Date Converter](https://ohfis.com/en/julian-date-converter/): Convert calendar dates to Julian Day numbers and YYYY-DDD ordinal dates.
+- [Countdown Timer for Presentations](https://ohfis.com/en/countdown-timer/): A big countdown that turns orange and red as time runs short, with full screen mode.
+- [Stopwatch with Lap Times (CSV Export)](https://ohfis.com/en/stopwatch-lap-timer/): Millisecond stopwatch that records laps and exports them as CSV.
+- [World Clock](https://ohfis.com/en/world-clock/): A custom grid of live clocks for your offices and contacts around the world.
+- [Sprint Schedule Generator](https://ohfis.com/en/sprint-schedule-generator/): Lay out sprint dates, planning days and reviews for a quarter or a year.
+
 ## Related sites by the same operator
 
 - [Files Online](https://files-online.com/): More PDF tools and file utilities

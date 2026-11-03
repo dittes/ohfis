@@ -32,7 +32,7 @@
   <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
   <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   
-  <link rel="stylesheet" href="/assets/css/site.css?v=0879c97d">
+  <link rel="stylesheet" href="/assets/css/site.css?v=e292b90a">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Konwerter numerów seryjnych dat Excela","url":"https://ohfis.com/pl/excel-date-converter/","description":"Zamień numery seryjne Excela, np. 45231, na daty i odwrotnie. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","inLanguage":"pl","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"Arkusze i CSV","item":"https://ohfis.com/pl/spreadsheet-csv-tools/"},{"@type":"ListItem","position":3,"name":"Konwerter numerów seryjnych dat Excela"}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Konwerter numerów seryjnych dat Excela","step":[{"@type":"HowToStep","position":1,"text":"Paste serial numbers or ISO dates, one per line."},{"@type":"HowToStep","position":2,"text":"Pick the date system (Windows 1900 is the default)."},{"@type":"HowToStep","position":3,"text":"Copy the converted values."}]}</script>
@@ -77,6 +77,10 @@
               <h3><a href="/pl/spreadsheet-csv-tools/">Arkusze i CSV</a></h3>
               <a href="/pl/csv-delimiter-converter/">Zmiana separatora CSV</a><a href="/pl/csv-viewer/">Podgląd dużych plików CSV</a><a href="/pl/leading-zero-fixer/">Przywracanie zer wiodących w CSV</a><a href="/pl/vlookup-formula-generator/">Generator formuł WYSZUKAJ.PIONOWO i XLOOKUP</a><a href="/pl/excel-date-converter/">Konwerter numerów seryjnych dat Excela</a><a href="/pl/json-to-csv/">Konwerter JSON na CSV</a>
               <a class="s-mega__more" href="/pl/spreadsheet-csv-tools/">30 narzędzi →</a>
+            </div><div>
+              <h3><a href="/pl/time-calendar-tools/">Czas i kalendarz</a></h3>
+              <a href="/pl/unix-timestamp-converter/">Konwerter znaczników czasu Unix</a><a href="/pl/date-difference-calculator/">Kalkulator różnicy dat</a><a href="/pl/working-days-calculator/">Kalkulator dni roboczych</a><a href="/pl/ics-event-generator/">Generator wydarzeń kalendarza (.ics)</a><a href="/pl/timezone-overlap-planner/">Planer spotkań w strefach czasowych</a><a href="/pl/meeting-time-link-generator/">Generator linku do czasu spotkania</a>
+              <a class="s-mega__more" href="/pl/time-calendar-tools/">18 narzędzi →</a>
             </div>
           </div>
         </details>
@@ -144,7 +148,15 @@
     <section class="s-section s-section--tint">
       <div class="s-wrap">
         <h2>Może Ci się przydać</h2>
-        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="data" href="/pl/excel-number-format-tester/">
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="time" href="/pl/unix-timestamp-converter/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Konwerter znaczników czasu Unix</span>
+          <span class="s-card__desc">Zamień sekundy lub milisekundy epoki na datę i odwrotnie, w dowolnej strefie czasowej.</span>
+        </a><a class="s-card" data-cat="time" href="/pl/date-difference-calculator/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Kalkulator różnicy dat</span>
+          <span class="s-card__desc">Dokładny czas między dwiema datami w latach, miesiącach, dniach, tygodniach, godzinach i dniach roboczych.</span>
+        </a><a class="s-card" data-cat="data" href="/pl/excel-number-format-tester/">
           <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
           <span class="s-card__title">Tester niestandardowych formatów liczb Excela</span>
           <span class="s-card__desc">Wypróbuj własne kody formatu, np. #,##0.00 lub [&gt;=1000]0.0,&quot;K&quot;, na przykładowych wartościach.</span>
@@ -181,6 +193,9 @@
         </section><section>
           <h2>Arkusze i CSV</h2>
           <a href="/pl/csv-delimiter-converter/">Zmiana separatora CSV</a><a href="/pl/csv-viewer/">Podgląd dużych plików CSV</a><a href="/pl/leading-zero-fixer/">Przywracanie zer wiodących w CSV</a><a href="/pl/vlookup-formula-generator/">Generator formuł WYSZUKAJ.PIONOWO i XLOOKUP</a><a href="/pl/excel-date-converter/">Konwerter numerów seryjnych dat Excela</a><a href="/pl/json-to-csv/">Konwerter JSON na CSV</a><a href="/pl/csv-to-json/">Konwerter CSV na JSON</a><a href="/pl/spreadsheet-csv-tools/">30 narzędzi<span>→</span></a>
+        </section><section>
+          <h2>Czas i kalendarz</h2>
+          <a href="/pl/unix-timestamp-converter/">Konwerter znaczników czasu Unix</a><a href="/pl/date-difference-calculator/">Kalkulator różnicy dat</a><a href="/pl/working-days-calculator/">Kalkulator dni roboczych</a><a href="/pl/ics-event-generator/">Generator wydarzeń kalendarza (.ics)</a><a href="/pl/timezone-overlap-planner/">Planer spotkań w strefach czasowych</a><a href="/pl/meeting-time-link-generator/">Generator linku do czasu spotkania</a><a href="/pl/meeting-cost-calculator/">Kalkulator kosztu spotkania</a><a href="/pl/time-calendar-tools/">18 narzędzi<span>→</span></a>
         </section>
         <section>
           <h2>Nasze inne strony</h2>

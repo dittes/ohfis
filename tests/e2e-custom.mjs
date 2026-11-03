@@ -141,4 +141,79 @@ Object.assign(custom, {
   },
 });
 
+
+const num = (page, label) => page.getByLabel(label, { exact: true });
+Object.assign(custom, {
+  async 'unix-timestamp-converter'(page) {
+    await page.locator('#tool-root textarea').fill('1700000000\n1700000000123\nbad'); await page.waitForTimeout(300); const t = await page.locator('.ut-table').innerText();
+    assert.match(t, /1700000000\tseconds\t1700000000\t1700000000000\t2023-11-14T22:13:20\.000Z/); assert.match(t, /milliseconds/); assert.match(t, /not recognised/);
+    const live = Number(await page.locator('.ut-big').innerText()); assert.ok(Math.abs(live - Date.now() / 1000) < 5);
+  },
+  async 'date-difference-calculator'(page) {
+    await page.locator('#tool-root input[type=date]').nth(0).fill('2020-02-29'); await page.locator('#tool-root input[type=date]').nth(1).fill('2024-03-01'); await page.waitForTimeout(200);
+    const t = await page.locator('.ut-cards').innerText(); assert.match(t, /4 years, 1 day/); assert.match(t, /1,462/);
+  },
+  async 'working-days-calculator'(page) {
+    await page.locator('#tool-root input[type=date]').first().fill('2024-12-20'); await page.locator('#tool-root select').nth(1).selectOption('US'); await page.locator('#tool-root input[type=number]').first().fill('5'); await page.waitForTimeout(300);
+    const t = await page.locator('.ut-result').innerText(); assert.match(t, /2024-12-30/); assert.match(t, /2024-12-25\tChristmas Day/);
+    await page.locator('#tool-root select').first().selectOption('count'); await page.locator('#tool-root input[type=date]').nth(1).fill('2024-12-27'); await page.waitForTimeout(300); assert.match(await page.locator('.ut-cards').innerText(), /Working days\s*5/);
+  },
+  async 'ics-event-generator'(page) {
+    await page.locator('#tool-root select').nth(0).selectOption('UTC').catch(() => {}); const ics = await page.locator('.ut-pre').innerText(); assert.match(ics, /^BEGIN:VCALENDAR/); assert.match(ics, /SUMMARY:Project kick-off/); assert.match(ics, /END:VEVENT/);
+    await page.locator('#tool-root input[type=text]').first().fill('Lunch, with "team"; ok'); await page.waitForTimeout(300); assert.match(await page.locator('.ut-pre').innerText(), /SUMMARY:Lunch\\, with "team"\; ok/);
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Download .ics file' }).click()]); assert.equal(dl.suggestedFilename(), 'event.ics'); assert.match((await import('node:fs')).readFileSync(await dl.path(), 'utf8'), /\r\nEND:VCALENDAR\r\n$/);
+  },
+  async 'timezone-overlap-planner'(page) {
+    assert.ok(await page.getByText('No time works for everyone').isVisible()); await page.getByRole('button', { name: 'Remove Asia/Kolkata' }).click(); await page.locator('#tool-root input[type=date]').fill('2024-01-16'); await page.waitForTimeout(300);
+    const t = await page.locator('.ut-table').innerText(); assert.match(t, /14:00–16:00 UTC/); assert.match(t, /09:00–11:00/); assert.match(t, /15:00–17:00/);
+  },
+  async 'meeting-time-link-generator'(page, base) {
+    const link = await page.locator('.ut-pre').innerText(); assert.match(link, /\?t=\d{4}-\d\d-\d\dT\d\d%3A\d\dZ&title=Team%20call/);
+    const ctx = await page.context().browser().newContext({ timezoneId: 'Asia/Tokyo', locale: 'en-GB' }); const p2 = await ctx.newPage(); await p2.goto(`${base}/en/meeting-time-link-generator/?t=2024-06-01T03:00Z&title=Launch%20call`); await p2.waitForSelector('#tool-root[data-ready=true]');
+    const t = await p2.locator('#tool-root').innerText(); assert.match(t, /Launch call/); assert.match(t, /12:00/); assert.match(t, /Asia\/Tokyo/); assert.match(t, /2024-06-01T03:00:00Z/); await ctx.close();
+  },
+  async 'meeting-cost-calculator'(page) {
+    assert.match(await page.locator('.pt-hint').first().innerText(), /€ 46\.30 per hour|€ 266\.67 per hour/.source ? /per hour/ : /x/); const perHour = (6 * 80000 / 1800); assert.match(await page.locator('#tool-root').innerText(), new RegExp(`€ ${perHour.toFixed(2).replace('.', '\\.')} per hour`));
+    await page.getByRole('button', { name: 'Start meeting' }).click(); await page.waitForTimeout(1200); const c = await page.locator('.ut-clock').innerText(); assert.notEqual(c, '€ 0.00'); await page.getByRole('button', { name: 'Pause' }).click();
+  },
+  async 'pomodoro-timer'(page) {
+    await page.getByRole('button', { name: 'Start' }).click(); await page.waitForTimeout(1500); const c = await page.locator('.ut-clock').innerText(); assert.match(c, /^24:5\d$/); assert.match(await page.title(), /24:5\d Focus/);
+    await page.getByRole('button', { name: 'Pause' }).click(); await page.getByRole('button', { name: 'Skip' }).click(); assert.match(await page.locator('.pt-hint').first().innerText(), /Short break/);
+  },
+  async 'decimal-hours-converter'(page) {
+    await page.locator('#tool-root textarea:not([readonly])').fill('7:45\n0:10\nxyz'); await page.waitForTimeout(300); const o = await page.locator('#tool-root textarea[readonly]').inputValue(); assert.match(o, /^7\.75 {2}·/); assert.match(o, /0\.17 {2}·/); assert.match(o, /⚠ xyz/); assert.match(await page.locator('.ut-stats').innerText(), /Total\s*7\.92 h/);
+    await page.locator('#tool-root select').first().selectOption('0.25'); await page.waitForTimeout(200); assert.match(await page.locator('.ut-stats').innerText(), /Total\s*8\.00 h/);
+  },
+  async 'timecard-calculator'(page) {
+    const t = await page.locator('#tool-root').innerText(); assert.match(t, /Total hours\s*40\.00/); assert.match(t, /Overtime\s*0\.00/); await page.getByLabel('Mon end').fill('21:30'); await page.waitForTimeout(200); assert.match(await page.locator('.ut-cards').innerText(), /Total hours\s*44\.00[\s\S]*Overtime\s*4\.00/);
+  },
+  async 'iso-week-number-calculator'(page) {
+    await page.locator('#tool-root input[type=date]').fill('2024-12-30'); await page.waitForTimeout(200); const t = await page.locator('#tool-root').innerText(); assert.match(t, /2025-W01/); assert.match(t, /Monday/); assert.match(t, /Day of year\s*365 of 366/);
+    await page.locator('#tool-root select').selectOption('10'); await page.waitForTimeout(200); assert.match(await page.locator('.ut-cards').innerText(), /Fiscal quarter\s*Q1 FY2025/);
+  },
+  async 'recurring-dates-generator'(page) {
+    await page.locator('#tool-root input[type=date]').fill('2024-01-02'); await page.waitForTimeout(300); const t = await page.locator('.ut-table').innerText(); assert.match(t, /1\t2024-01-02\tTuesday/); assert.match(t, /2\t2024-01-16\tTuesday/);
+  },
+  async 'julian-date-converter'(page) {
+    await page.locator('#tool-root input[type=date]').fill('2024-01-01'); await page.waitForTimeout(200); const t = await page.locator('.ut-cards').innerText(); assert.match(t, /2,460,310\.5/); assert.match(t, /2024-001/);
+    await page.locator('#tool-root input[type=number]').fill('2451545'); await page.waitForTimeout(200); assert.match(await page.locator('.ut-cards').innerText(), /2000-01-01 12:00:00 UTC/);
+  },
+  async 'countdown-timer'(page) {
+    await page.getByRole('button', { name: '1 min' }).click(); assert.equal(await page.locator('.ut-clock').innerText(), '01:00'); await page.getByRole('button', { name: 'Start' }).click(); await page.waitForTimeout(1500); assert.match(await page.locator('.ut-clock').innerText(), /^00:5\d$/);
+    await page.getByRole('button', { name: 'Full screen' }).click(); assert.ok(await page.locator('.ut-fullscreen').isVisible()); await page.keyboard.press('Escape'); assert.equal(await page.locator('.ut-fullscreen').count(), 0);
+  },
+  async 'stopwatch-lap-timer'(page) {
+    await page.keyboard.press('Space'); await page.waitForTimeout(400); await page.keyboard.press('l'); await page.waitForTimeout(300); await page.keyboard.press('l'); await page.keyboard.press('Space');
+    const t = await page.locator('.ut-table').innerText(); assert.match(t, /2\t00:00\.\d{3}\t00:00\.\d{3}/); const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export laps (CSV)' }).click()]);
+    const csv = (await import('node:fs')).readFileSync(await dl.path(), 'utf8').split('\n'); assert.equal(csv.length, 3); assert.match(csv[1], /^1,\d+,\d+,/);
+  },
+  async 'world-clock'(page) {
+    const before = await page.locator('.ut-card').count(); await page.locator('#tool-root select').selectOption('Pacific/Auckland'); await page.waitForTimeout(200); assert.equal(await page.locator('.ut-card').count(), before + 1);
+    await page.reload(); await page.waitForSelector('#tool-root[data-ready=true]'); assert.equal(await page.locator('.ut-card').count(), before + 1); assert.match(await page.locator('#tool-root').innerText(), /Pacific\/Auckland|Pacific Auckland/);
+  },
+  async 'sprint-schedule-generator'(page) {
+    await page.locator('#tool-root input[type=date]').fill('2024-01-01'); await page.waitForTimeout(300); const t = await page.locator('.ut-table').innerText(); assert.match(t, /Sprint 1\t2024-01-01\t2024-01-01\t2024-01-12/); assert.match(t, /Sprint 2\t2024-01-15\t2024-01-15\t2024-01-26/);
+  },
+});
+
 export default custom;

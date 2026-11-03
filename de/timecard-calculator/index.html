@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Stundenzettel- &amp; Überstundenrechner – Kostenlos online</title>
+  <meta name="description" content="Eine Woche Kommen/Gehen-Zeiten mit Pausen und Überstunden summieren. Kostenlos, läuft im Browser, nichts wird hochgeladen.">
+  
+  <link rel="canonical" href="https://ohfis.com/de/timecard-calculator/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/timecard-calculator/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/timecard-calculator/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/timecard-calculator/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/timecard-calculator/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/timecard-calculator/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/de/timecard-calculator/">
+  <meta property="og:title" content="Stundenzettel- &amp; Überstundenrechner – Kostenlos online">
+  <meta property="og:description" content="Eine Woche Kommen/Gehen-Zeiten mit Pausen und Überstunden summieren. Kostenlos, läuft im Browser, nichts wird hochgeladen.">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=e292b90a">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Stundenzettel- & Überstundenrechner","url":"https://ohfis.com/de/timecard-calculator/","description":"Eine Woche Kommen/Gehen-Zeiten mit Pausen und Überstunden summieren. Kostenlos, läuft im Browser, nichts wird hochgeladen.","inLanguage":"de","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://ohfis.com/de/"},{"@type":"ListItem","position":2,"name":"Zeit & Kalender","item":"https://ohfis.com/de/time-calendar-tools/"},{"@type":"ListItem","position":3,"name":"Stundenzettel- & Überstundenrechner"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"So benutzt du es: Stundenzettel- & Überstundenrechner","step":[{"@type":"HowToStep","position":1,"text":"Fill in start, end and break for each day worked."},{"@type":"HowToStep","position":2,"text":"Set the overtime thresholds, and optionally the rate and multiplier."},{"@type":"HowToStep","position":3,"text":"Read the totals and copy them into your payroll or invoice."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How are night shifts handled?","acceptedAnswer":{"@type":"Answer","text":"If the end time is earlier than the start time, the shift is assumed to end the next day."}},{"@type":"Question","name":"Does it follow my country's overtime law?","acceptedAnswer":{"@type":"Answer","text":"It applies the thresholds you enter. Check local rules for daily limits, rest periods and premiums."}},{"@type":"Question","name":"Werden meine Dateien hochgeladen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Datei wird von deinem eigenen Browser geöffnet und verarbeitet. Das kannst du selbst prüfen: Öffne beim Arbeiten den Netzwerk-Tab deines Browsers oder trenne die Internetverbindung, nachdem die Seite geladen ist."}},{"@type":"Question","name":"Ist dieses Tool kostenlos?","acceptedAnswer":{"@type":"Answer","text":"Ja, vollständig. Es gibt keine Anmeldung, keinen Bezahltarif und kein Wasserzeichen auf deinen Dateien."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Zum Inhalt springen</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/de/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="ohfis-g" x1="4" y1="2" x2="28" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3A6FEA"/><stop offset="1" stop-color="#1B3FA8"/></linearGradient></defs><rect width="32" height="32" rx="8" fill="url(#ohfis-g)"/><circle cx="16" cy="16" r="10" fill="none" stroke="#fff" stroke-width="2.6"/><g transform="translate(16 16) scale(1.16) translate(-16 -16)"><path d="M12.9 11.2h4.3l2.3 2.3v6.6a1 1 0 0 1-1 1h-5.6a1 1 0 0 1-1-1v-7.9a1 1 0 0 1 1-1z" fill="#fff"/><path d="M17.2 11.2v1.6a.9.9 0 0 0 .9.9h1.4z" fill="#9DB8F4"/></g></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Hauptnavigation">
+        <details class="s-menu">
+          <summary>PDF-Tools<svg class="s-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+          <div class="s-mega">
+            <div>
+              <h3>Seiten organisieren</h3>
+              <a href="/de/pdf-zusammenfuegen/">PDF zusammenfügen</a><a href="/de/pdf-teilen/">PDF teilen</a><a href="/de/pdf-seiten-extrahieren/">PDF-Seiten extrahieren</a><a href="/de/pdf-seiten-loeschen/">PDF-Seiten löschen</a><a href="/de/pdf-sortieren/">PDF sortieren</a><a href="/de/pdf-drehen/">PDF drehen</a><a href="/de/pdf-zuschneiden/">PDF zuschneiden</a>
+            </div><div>
+              <h3>Optimieren</h3>
+              <a href="/de/pdf-verkleinern/">PDF verkleinern</a><a href="/de/pdf-ocr/">PDF OCR</a><a href="/de/pdf-reduzieren/">PDF reduzieren</a>
+            </div><div>
+              <h3>Umwandeln</h3>
+              <a href="/de/pdf-in-word/">PDF in Word</a><a href="/de/pdf-in-excel/">PDF in Excel</a><a href="/de/pdf-in-jpg/">PDF in JPG</a><a href="/de/pdf-in-png/">PDF in PNG</a><a href="/de/pdf-in-text/">PDF in Text</a><a href="/de/jpg-in-pdf/">JPG in PDF</a><a href="/de/png-in-pdf/">PNG in PDF</a>
+            </div><div>
+              <h3>Bearbeiten &amp; unterschreiben</h3>
+              <a href="/de/pdf-bearbeiten/">PDF bearbeiten</a><a href="/de/pdf-unterschreiben/">PDF unterschreiben</a><a href="/de/pdf-formular-ausfuellen/">PDF-Formular ausfüllen</a><a href="/de/pdf-wasserzeichen/">PDF-Wasserzeichen</a><a href="/de/pdf-seitenzahlen/">PDF-Seitenzahlen</a>
+            </div><div>
+              <h3>Sicherheit &amp; Datenschutz</h3>
+              <a href="/de/pdf-verschluesseln/">PDF verschlüsseln</a><a href="/de/pdf-entsperren/">PDF entsperren</a><a href="/de/pdf-schwaerzen/">PDF schwärzen</a><a href="/de/pdf-metadaten-bearbeiten/">PDF-Metadaten bearbeiten</a>
+            </div>
+            <a class="s-mega__all" href="/de/pdf-tools/">Alle PDF-Tools →</a>
+          </div>
+        </details>
+        <details class="s-menu">
+          <summary>Weitere Tools<svg class="s-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+          <div class="s-mega s-mega--wide">
+            <div>
+              <h3><a href="/de/text-tools/">Text-Tools</a></h3>
+              <a href="/de/zero-width-character-remover/">Unsichtbare Zeichen entfernen</a><a href="/de/case-converter/">Groß- und Kleinschreibung ändern</a><a href="/de/remove-duplicate-lines/">Doppelte Zeilen entfernen</a><a href="/de/list-to-comma-separated/">Liste in kommagetrennten Text umwandeln</a><a href="/de/regex-extractor/">E-Mails, Telefonnummern &amp; URLs aus Text extrahieren</a><a href="/de/text-diff-checker/">Text vergleichen (Diff)</a>
+              <a class="s-mega__more" href="/de/text-tools/">30 Tools →</a>
+            </div><div>
+              <h3><a href="/de/spreadsheet-csv-tools/">Tabellen- &amp; CSV-Tools</a></h3>
+              <a href="/de/csv-delimiter-converter/">CSV-Trennzeichen ändern</a><a href="/de/csv-viewer/">Große CSV-Datei anzeigen</a><a href="/de/leading-zero-fixer/">Führende Nullen in CSV wiederherstellen</a><a href="/de/vlookup-formula-generator/">SVERWEIS- &amp; XVERWEIS-Formel-Generator</a><a href="/de/excel-date-converter/">Excel-Datum-Seriennummer umrechnen</a><a href="/de/json-to-csv/">JSON in CSV umwandeln</a>
+              <a class="s-mega__more" href="/de/spreadsheet-csv-tools/">30 Tools →</a>
+            </div><div>
+              <h3><a href="/de/time-calendar-tools/">Zeit &amp; Kalender</a></h3>
+              <a href="/de/unix-timestamp-converter/">Unix-Timestamp umrechnen</a><a href="/de/date-difference-calculator/">Datumsdifferenz berechnen</a><a href="/de/working-days-calculator/">Arbeitstage-Rechner</a><a href="/de/ics-event-generator/">Kalendereinladung (.ics) erstellen</a><a href="/de/timezone-overlap-planner/">Zeitzonen-Meetingplaner</a><a href="/de/meeting-time-link-generator/">Meeting-Zeit-Link erstellen</a>
+              <a class="s-mega__more" href="/de/time-calendar-tools/">18 Tools →</a>
+            </div>
+          </div>
+        </details>
+        <a href="/de/pdf-zusammenfuegen/">PDF zusammenfügen</a><a href="/de/pdf-verkleinern/">PDF verkleinern</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Sprache">de</summary>
+          <ul>
+            <li><a href="/en/timecard-calculator/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/timecard-calculator/" hreflang="de" lang="de" data-set-lang="de" aria-current="true">Deutsch</a></li><li><a href="/pl/timecard-calculator/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/timecard-calculator/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Zwischen hell und dunkel wechseln" title="Zwischen hell und dunkel wechseln">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menü" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/de/">Startseite</a></li><li><a href="/de/time-calendar-tools/">Zeit &amp; Kalender</a></li><li><span aria-current="page">Stundenzettel- &amp; Überstundenrechner</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Stundenzettel- &amp; Überstundenrechner</h1>
+        <p>Eine Woche Kommen/Gehen-Zeiten mit Pausen und Überstunden summieren.</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="timecard-calculator" data-cat="time"><p class="pt-hint">Tool wird geladen…</p><noscript><p class="pt-drop__error">Dieses Tool braucht JavaScript, weil deine Datei in deinem Browser verarbeitet wird.</p></noscript></div>
+        <ul class="s-trust"><li>Kein Upload</li><li>Kostenlos</li><li>Kein Konto</li><li>Einmal geladen, auch offline nutzbar</li></ul>
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>So funktioniert: Stundenzettel- &amp; Überstundenrechner</h2>
+        <p class="pt-hint">Die ausführliche Erklärung ist auf Englisch.</p>
+        <p lang="en">Enter the start time, end time and unpaid break for each day, and the calculator adds up the hours worked, the overtime and, with an hourly rate, the gross pay. Times can be typed as 9:00, 0900 or 9am; shifts that cross midnight are handled.</p><p lang="en">For each day the break is subtracted from the time between start and end (adding 24 hours if the end is earlier than the start). Weekly overtime is every hour above the threshold you set (40 by default); an optional daily threshold counts hours above it per day, and the larger of the daily and weekly overtime is used so hours are never counted twice. Overtime pay uses your multiplier (1.5 by default). Laws and contracts differ by country, so treat the result as a calculation aid, not payroll advice.</p>
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>So benutzt du es</h2>
+        <ol class="s-steps"><li><p lang="en">Fill in start, end and break for each day worked.</p></li><li><p lang="en">Set the overtime thresholds, and optionally the rate and multiplier.</p></li><li><p lang="en">Read the totals and copy them into your payroll or invoice.</p></li></ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>Häufige Fragen</h2>
+        <div class="s-faq">
+          <details open><summary lang="en">How are night shifts handled?</summary><p lang="en">If the end time is earlier than the start time, the shift is assumed to end the next day.</p></details>
+          <details><summary lang="en">Does it follow my country's overtime law?</summary><p lang="en">It applies the thresholds you enter. Check local rules for daily limits, rest periods and premiums.</p></details>
+          <details><summary lang="en">Werden meine Dateien hochgeladen?</summary><p lang="en">Nein. Die Datei wird von deinem eigenen Browser geöffnet und verarbeitet. Das kannst du selbst prüfen: Öffne beim Arbeiten den Netzwerk-Tab deines Browsers oder trenne die Internetverbindung, nachdem die Seite geladen ist.</p></details>
+          <details><summary lang="en">Ist dieses Tool kostenlos?</summary><p lang="en">Ja, vollständig. Es gibt keine Anmeldung, keinen Bezahltarif und kein Wasserzeichen auf deinen Dateien.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="s-section">
+    <div class="s-wrap">
+      <h2>Auch nützlich</h2>
+      <p class="s-section__lede">Passende Tools auf unseren anderen Seiten, kostenlos und im Browser.</p>
+      <div class="s-links"><a href="https://culators.com/de/hours-calculator/" rel="noopener"><strong>Stundenrechner</strong><small>Culators ↗</small></a></div>
+    </div>
+  </section>
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>Das könnte auch helfen</h2>
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="time" href="/de/decimal-hours-converter/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Stunden und Minuten in Dezimal umrechnen</span>
+          <span class="s-card__desc">7:45 in 7,75 umrechnen für Zeiterfassung und Rechnungen, mit Rundungsregeln.</span>
+        </a><a class="s-card" data-cat="time" href="/de/time-calculator/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Zeitrechner (Stunden addieren &amp; subtrahieren)</span>
+          <span class="s-card__desc">Dauern wie 4h 12m + 1h 55m oder 2:30 - 0:45 addieren und subtrahieren.</span>
+        </a><a class="s-card" data-cat="time" href="/de/working-days-calculator/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Arbeitstage-Rechner</span>
+          <span class="s-card__desc">Arbeitstage addieren, abziehen und zählen, ohne Wochenenden und Feiertage.</span>
+        </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__toc">
+        <section>
+          <h2>Seiten organisieren</h2>
+          <a href="/de/pdf-zusammenfuegen/">PDF zusammenfügen<span>PDF</span></a><a href="/de/pdf-teilen/">PDF teilen<span>PDF</span></a><a href="/de/pdf-seiten-extrahieren/">PDF-Seiten extrahieren<span>PDF</span></a><a href="/de/pdf-seiten-loeschen/">PDF-Seiten löschen<span>PDF</span></a><a href="/de/pdf-sortieren/">PDF sortieren<span>PDF</span></a><a href="/de/pdf-drehen/">PDF drehen<span>PDF</span></a><a href="/de/pdf-zuschneiden/">PDF zuschneiden<span>PDF</span></a>
+        </section><section>
+          <h2>Optimieren</h2>
+          <a href="/de/pdf-verkleinern/">PDF verkleinern<span>PDF</span></a><a href="/de/pdf-ocr/">PDF OCR<span>PDF</span></a><a href="/de/pdf-reduzieren/">PDF reduzieren<span>PDF</span></a>
+        </section><section>
+          <h2>Umwandeln</h2>
+          <a href="/de/pdf-in-word/">PDF in Word<span>PDF</span></a><a href="/de/pdf-in-excel/">PDF in Excel<span>PDF</span></a><a href="/de/pdf-in-jpg/">PDF in JPG<span>PDF</span></a><a href="/de/pdf-in-png/">PDF in PNG<span>PDF</span></a><a href="/de/pdf-in-text/">PDF in Text<span>PDF</span></a><a href="/de/jpg-in-pdf/">JPG in PDF<span>PDF</span></a><a href="/de/png-in-pdf/">PNG in PDF<span>PDF</span></a>
+        </section><section>
+          <h2>Bearbeiten &amp; unterschreiben</h2>
+          <a href="/de/pdf-bearbeiten/">PDF bearbeiten<span>PDF</span></a><a href="/de/pdf-unterschreiben/">PDF unterschreiben<span>PDF</span></a><a href="/de/pdf-formular-ausfuellen/">PDF-Formular ausfüllen<span>PDF</span></a><a href="/de/pdf-wasserzeichen/">PDF-Wasserzeichen<span>PDF</span></a><a href="/de/pdf-seitenzahlen/">PDF-Seitenzahlen<span>PDF</span></a>
+        </section><section>
+          <h2>Sicherheit &amp; Datenschutz</h2>
+          <a href="/de/pdf-verschluesseln/">PDF verschlüsseln<span>PDF</span></a><a href="/de/pdf-entsperren/">PDF entsperren<span>PDF</span></a><a href="/de/pdf-schwaerzen/">PDF schwärzen<span>PDF</span></a><a href="/de/pdf-metadaten-bearbeiten/">PDF-Metadaten bearbeiten<span>PDF</span></a>
+        </section>
+        <section>
+          <h2>Text-Tools</h2>
+          <a href="/de/zero-width-character-remover/">Unsichtbare Zeichen entfernen</a><a href="/de/case-converter/">Groß- und Kleinschreibung ändern</a><a href="/de/remove-duplicate-lines/">Doppelte Zeilen entfernen</a><a href="/de/list-to-comma-separated/">Liste in kommagetrennten Text umwandeln</a><a href="/de/regex-extractor/">E-Mails, Telefonnummern &amp; URLs aus Text extrahieren</a><a href="/de/text-diff-checker/">Text vergleichen (Diff)</a><a href="/de/table-to-markdown/">Tabelle in Markdown umwandeln</a><a href="/de/text-tools/">30 Tools<span>→</span></a>
+        </section><section>
+          <h2>Tabellen- &amp; CSV-Tools</h2>
+          <a href="/de/csv-delimiter-converter/">CSV-Trennzeichen ändern</a><a href="/de/csv-viewer/">Große CSV-Datei anzeigen</a><a href="/de/leading-zero-fixer/">Führende Nullen in CSV wiederherstellen</a><a href="/de/vlookup-formula-generator/">SVERWEIS- &amp; XVERWEIS-Formel-Generator</a><a href="/de/excel-date-converter/">Excel-Datum-Seriennummer umrechnen</a><a href="/de/json-to-csv/">JSON in CSV umwandeln</a><a href="/de/csv-to-json/">CSV in JSON umwandeln</a><a href="/de/spreadsheet-csv-tools/">30 Tools<span>→</span></a>
+        </section><section>
+          <h2>Zeit &amp; Kalender</h2>
+          <a href="/de/unix-timestamp-converter/">Unix-Timestamp umrechnen</a><a href="/de/date-difference-calculator/">Datumsdifferenz berechnen</a><a href="/de/working-days-calculator/">Arbeitstage-Rechner</a><a href="/de/ics-event-generator/">Kalendereinladung (.ics) erstellen</a><a href="/de/timezone-overlap-planner/">Zeitzonen-Meetingplaner</a><a href="/de/meeting-time-link-generator/">Meeting-Zeit-Link erstellen</a><a href="/de/meeting-cost-calculator/">Meetingkosten-Rechner</a><a href="/de/time-calendar-tools/">18 Tools<span>→</span></a>
+        </section>
+        <section>
+          <h2>Unsere anderen Seiten</h2>
+          <a href="https://files-online.com/de/" rel="noopener">Files Online<span>↗</span></a><a href="https://open-online.com/de/" rel="noopener">Open Online<span>↗</span></a><a href="https://culators.com/de/" rel="noopener">Culators<span>↗</span></a><a href="https://test.institute/de/" rel="noopener">test.institute<span>↗</span></a>
+        </section>
+        
+      </div>
+      <div class="s-footer__bottom">
+        <a href="/de/datenschutz/">Datenschutz</a>
+        <a href="/de/impressum/">Impressum</a>
+        <a href="/en/timecard-calculator/" hreflang="en" lang="en" data-set-lang="en">English</a><a href="/de/timecard-calculator/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a><a href="/pl/timecard-calculator/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a><a href="/cs/timecard-calculator/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a>
+        <span class="s-footer__note">Läuft in deinem Browser. Kein Upload, kein Konto, kein Tracking.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+  <script type="module" src="/assets/js/tools/main.js?v=b91dabba"></script>
+</body>
+</html>

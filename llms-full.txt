@@ -229,6 +229,65 @@ Fix, convert, merge, compare and reshape CSV and spreadsheet data. Hub: https://
   Reports often have one column per month or year. Databases, charts and pivot tables want one row per value instead. Choose the columns that identify a row (like product or region) and every other column is turned into rows of attribute and value: Jan, Feb, Mar become a "month" column and the numbers a "amount" column.
   How to use: Paste the wide table. Tick the identifier columns and name the two new columns. Copy or download the long table.
 
+## Time & Calendar
+
+Time zones, working days, timestamps, calendar files and timers. Hub: https://ohfis.com/en/time-calendar-tools/
+
+- [Unix Timestamp Converter](https://ohfis.com/en/unix-timestamp-converter/): Convert epoch seconds or milliseconds to a date and back, in any time zone.
+  Logs, APIs and databases store moments as a number: seconds (1700000000) or milliseconds (1700000000000) since 1 January 1970 UTC. Paste one or many timestamps to see the date in UTC and in any time zone, with a relative description such as "3 years ago", or paste a date to get its timestamp. A live counter shows the current Unix time.
+  How to use: Paste one or more timestamps or dates, one per line. Choose the time zone to display. Copy the table or the single value you need.
+- [Date Difference Calculator](https://ohfis.com/en/date-difference-calculator/): Exact time between two dates in years, months, days, weeks, hours and business days.
+  How long until the deadline, how old is the contract, how many days since the incident? Enter two dates and see the span as "2 years, 3 months, 5 days", as total days, weeks, hours and minutes, and as business days (Monday to Friday).
+  How to use: Pick the start and end date. Read the difference in the units you need. For holidays and custom weekends, switch to the Working Days Calculator.
+- [Working Days Calculator](https://ohfis.com/en/working-days-calculator/): Add or subtract working days and count them between dates, skipping weekends and public holidays.
+  Find a deadline "10 working days from today" or count the working days between two dates. Weekends and the public holidays of the United States, United Kingdom (England and Wales), Germany, Austria, Poland or Czechia are skipped, and you can add your own days off such as company closures. Weekends can be Friday and Saturday or Sunday only.
+  How to use: Choose "A date after N working days" or "Working days between two dates". Select the country for public holidays and the weekend, and add extra days off if needed. Read the result and the list of skipped holidays.
+- [Calendar Event (.ics) Generator](https://ohfis.com/en/ics-event-generator/): Create a calendar file for an email invitation, no Outlook or Google account needed.
+  Make an event that opens in Outlook, Apple Calendar, Google Calendar and phones. Enter the title, start and end time in a time zone you choose, location or video link, description, attendees, a reminder and optional repetition, then download the .ics file to attach to an email or put on a web page. A button opens the same event in Google Calendar.
+  How to use: Enter the event details and choose the time zone. Optionally add attendees, a reminder or a repetition. Download the .ics file, or open it in Google Calendar.
+- [Time Zone Meeting Planner](https://ohfis.com/en/timezone-overlap-planner/): Find the hours when everyone is in working time across cities and time zones.
+  Add the cities of your team, pick a date and your working hours, and see a bar for each time zone with the 24 hours of the day. Dark green marks the half-hours when everyone is working, and the table lists those windows in each city's local time, ready to copy into an invitation.
+  How to use: Add the time zones of all participants. Choose the date and the working hours. Pick a time from the shared windows and copy it.
+- [Meeting Time Link Generator](https://ohfis.com/en/meeting-time-link-generator/): Create a link that shows the meeting time in each recipient's own time zone.
+  "3 pm CET" means little to someone in Seattle. Enter the meeting time once and share the link: whoever opens it sees the time in their own time zone and can add it to their calendar with one click. Handy for international teams, webinars and friends abroad.
+  How to use: Enter the title, date and time, and the time zone you are thinking in. Copy the generated link. Send it; recipients see the time in their own zone.
+- [Meeting Cost Calculator](https://ohfis.com/en/meeting-cost-calculator/): See what a meeting costs in real time from headcount and salaries.
+  Put a number on the time your team spends together. Enter how many people attend and their average yearly salary and press start: the cost of the meeting ticks up in real time. Before the meeting, the tool also tells you what a planned meeting of a given length will cost.
+  How to use: Enter the number of people, average yearly salary and currency. Press "Start meeting" when the meeting begins. Watch the cost, or compare planned lengths before you schedule.
+- [Pomodoro Timer with Focus Sounds](https://ohfis.com/en/pomodoro-timer/): Focus and break cycles with built-in white noise, rain and coffee-shop sounds.
+  The Pomodoro technique alternates focused work (traditionally 25 minutes) with short breaks, and a longer break after four rounds. Set your own lengths, start the timer and the countdown also appears in the browser tab title, so you can see it while working in another tab. A soft tone marks the end of each phase.
+  How to use: Set the focus and break lengths, and choose a background sound if you like. Press Start and work until the tone sounds. Take the break, then continue; after the set number of sessions you get a long break.
+- [Hours and Minutes to Decimal Converter](https://ohfis.com/en/decimal-hours-converter/): Convert 7:45 to 7.75 for timesheets and invoices, with rounding rules.
+  Billing systems and spreadsheets want 7.75, your timesheet says 7:45. Paste a list of times in any common form (7:45, 7h 45m, 465 minutes, 7.75) and get decimal hours, the h:mm form and a running total. Round to billing increments such as 6 minutes (0.1 h) or 15 minutes (0.25 h), up, down or to the nearest.
+  How to use: Paste your times, one per line. Choose a rounding increment and mode, and the number of decimals. Copy the decimals and the total.
+- [Timecard & Overtime Calculator](https://ohfis.com/en/timecard-calculator/): Total a week of punch-in and punch-out times, with breaks and overtime.
+  Enter the start time, end time and unpaid break for each day, and the calculator adds up the hours worked, the overtime and, with an hourly rate, the gross pay. Times can be typed as 9:00, 0900 or 9am; shifts that cross midnight are handled.
+  How to use: Fill in start, end and break for each day worked. Set the overtime thresholds, and optionally the rate and multiplier. Read the totals and copy them into your payroll or invoice.
+- [Time Calculator (Add & Subtract Hours)](https://ohfis.com/en/time-calculator/): Add and subtract durations like 4h 12m + 1h 55m or 2:30 - 0:45.
+  Type calculations the way you would say them: "4h 12m + 1h 55m", "2:30 - 0:45" or "1d 2h + 90m". Each line gives the result as hours and minutes, as decimal hours and as total minutes, which is useful for timesheets, video editing, flight times and cooking schedules.
+  How to use: Type one calculation per line, with + and - between durations. Read the result in h:mm, decimal hours and minutes. Copy the lines you need.
+- [ISO Week Number & Quarter Calculator](https://ohfis.com/en/iso-week-number-calculator/): Find the ISO week number, day of the year and fiscal quarter of any date.
+  Which week number is today? Pick any date to see its ISO 8601 week (for example 2025-W01), the weekday, the day of the year, days left, the calendar quarter and your fiscal quarter, plus a table with the start and end of every week of that ISO year.
+  How to use: Pick a date. Choose the month your fiscal year starts. Read the week, quarter and day numbers, or copy the table of weeks.
+- [Recurring Date List Generator](https://ohfis.com/en/recurring-dates-generator/): List the dates of an event that repeats, such as every other Tuesday.
+  Plan a project, a training series or a payment schedule: choose the first date and how it repeats (every N days, weeks, months or years, on certain weekdays, or on the first, second or last weekday of each month) and get the list of dates with their weekdays, ready to copy or download as CSV.
+  How to use: Choose the first date and the repeat pattern. Set how many dates you need, and weekend or holiday handling. Copy the list or download it as CSV.
+- [Julian Date & Ordinal Date Converter](https://ohfis.com/en/julian-date-converter/): Convert calendar dates to Julian Day numbers and YYYY-DDD ordinal dates.
+  Astronomers, satellite operators, manufacturers and old mainframe systems use serial day numbers instead of month and day. Enter a date to get its Julian Day number, Modified Julian Date, ordinal date (2024-061) and day of the year, or enter a Julian Day to get the calendar date and time.
+  How to use: Enter a calendar date, or a Julian Day number. Read the Julian Day, Modified JD, ordinal date and Unix time. Copy the value you need.
+- [Countdown Timer for Presentations](https://ohfis.com/en/countdown-timer/): A big countdown that turns orange and red as time runs short, with full screen mode.
+  Keep talks, breaks and exams on time. Set minutes and seconds or pick a preset, and show the clock full screen on a projector. The numbers turn orange in the last quarter of the time and red in the last tenth, and a tone sounds at zero.
+  How to use: Choose a preset or enter minutes and seconds. Press Start; use full screen for a projector. Watch the colour change as time runs short.
+- [Stopwatch with Lap Times (CSV Export)](https://ohfis.com/en/stopwatch-lap-timer/): Millisecond stopwatch that records laps and exports them as CSV.
+  Time a run, a process step or a speaker. Start, stop and record any number of laps with the buttons or the keyboard (Space to start and stop, L for a lap). The table shows each lap time and the cumulative time, and one click exports it as CSV for a spreadsheet.
+  How to use: Press Start (or Space). Press Lap (or L) for every split. Stop, then export the laps as CSV if you need them elsewhere.
+- [World Clock](https://ohfis.com/en/world-clock/): A custom grid of live clocks for your offices and contacts around the world.
+  Keep the current time of your offices, customers and family in one view. Add any city or IANA time zone, remove the ones you do not need, and switch between 12- and 24-hour display. Your list is remembered in your browser.
+  How to use: Pick cities or time zones to add. Remove the ones you do not need. Leave the page open for a live view; your list is saved.
+- [Sprint Schedule Generator](https://ohfis.com/en/sprint-schedule-generator/): Lay out sprint dates, planning days and reviews for a quarter or a year.
+  Enter the first sprint start and the sprint length in working days, and get a calendar of sprints with the planning day at the start, review and retrospective on the last day and any public holidays inside each sprint listed for reference. Copy it into a roadmap or download it as CSV.
+  How to use: Enter the start date, sprint length and number of sprints. Optionally choose a country to list public holidays. Copy the table or download it as CSV.
+
 ## Related sites by the same operator
 
 - [Files Online](https://files-online.com/): More PDF tools and file utilities

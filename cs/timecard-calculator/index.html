@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Kalkulačka docházky a přesčasů – Online zdarma</title>
+  <meta name="description" content="Sečtěte týden příchodů a odchodů s přestávkami a přesčasy. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  
+  <link rel="canonical" href="https://ohfis.com/cs/timecard-calculator/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/timecard-calculator/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/timecard-calculator/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/timecard-calculator/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/timecard-calculator/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/timecard-calculator/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/cs/timecard-calculator/">
+  <meta property="og:title" content="Kalkulačka docházky a přesčasů – Online zdarma">
+  <meta property="og:description" content="Sečtěte týden příchodů a odchodů s přestávkami a přesčasy. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=e292b90a">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Kalkulačka docházky a přesčasů","url":"https://ohfis.com/cs/timecard-calculator/","description":"Sečtěte týden příchodů a odchodů s přestávkami a přesčasy. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Čas a kalendář","item":"https://ohfis.com/cs/time-calendar-tools/"},{"@type":"ListItem","position":3,"name":"Kalkulačka docházky a přesčasů"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Kalkulačka docházky a přesčasů","step":[{"@type":"HowToStep","position":1,"text":"Fill in start, end and break for each day worked."},{"@type":"HowToStep","position":2,"text":"Set the overtime thresholds, and optionally the rate and multiplier."},{"@type":"HowToStep","position":3,"text":"Read the totals and copy them into your payroll or invoice."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How are night shifts handled?","acceptedAnswer":{"@type":"Answer","text":"If the end time is earlier than the start time, the shift is assumed to end the next day."}},{"@type":"Question","name":"Does it follow my country's overtime law?","acceptedAnswer":{"@type":"Answer","text":"It applies the thresholds you enter. Check local rules for daily limits, rest periods and premiums."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Přejít na obsah</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/cs/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="ohfis-g" x1="4" y1="2" x2="28" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3A6FEA"/><stop offset="1" stop-color="#1B3FA8"/></linearGradient></defs><rect width="32" height="32" rx="8" fill="url(#ohfis-g)"/><circle cx="16" cy="16" r="10" fill="none" stroke="#fff" stroke-width="2.6"/><g transform="translate(16 16) scale(1.16) translate(-16 -16)"><path d="M12.9 11.2h4.3l2.3 2.3v6.6a1 1 0 0 1-1 1h-5.6a1 1 0 0 1-1-1v-7.9a1 1 0 0 1 1-1z" fill="#fff"/><path d="M17.2 11.2v1.6a.9.9 0 0 0 .9.9h1.4z" fill="#9DB8F4"/></g></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Hlavní navigace">
+        <details class="s-menu">
+          <summary>PDF nástroje<svg class="s-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+          <div class="s-mega">
+            <div>
+              <h3>Uspořádání stránek</h3>
+              <a href="/cs/spojit-pdf/">Spojit PDF</a><a href="/cs/rozdelit-pdf/">Rozdělit PDF</a><a href="/cs/extrahovat-stranky-pdf/">Extrahovat stránky PDF</a><a href="/cs/odstranit-stranky-pdf/">Odstranit stránky PDF</a><a href="/cs/usporadat-pdf/">Uspořádat PDF</a><a href="/cs/otocit-pdf/">Otočit PDF</a><a href="/cs/oriznout-pdf/">Oříznout PDF</a>
+            </div><div>
+              <h3>Optimalizace</h3>
+              <a href="/cs/komprimovat-pdf/">Komprimovat PDF</a><a href="/cs/ocr-pdf/">OCR PDF</a><a href="/cs/zplostit-pdf/">Zploštit PDF</a>
+            </div><div>
+              <h3>Převod</h3>
+              <a href="/cs/pdf-na-word/">PDF na Word</a><a href="/cs/pdf-na-excel/">PDF na Excel</a><a href="/cs/pdf-na-jpg/">PDF na JPG</a><a href="/cs/pdf-na-png/">PDF na PNG</a><a href="/cs/pdf-na-text/">PDF na text</a><a href="/cs/jpg-na-pdf/">JPG na PDF</a><a href="/cs/png-na-pdf/">PNG na PDF</a>
+            </div><div>
+              <h3>Úpravy a podpis</h3>
+              <a href="/cs/upravit-pdf/">Upravit PDF</a><a href="/cs/podepsat-pdf/">Podepsat PDF</a><a href="/cs/vyplnit-pdf-formular/">Vyplnit PDF formulář</a><a href="/cs/vodoznak-pdf/">Přidat vodoznak</a><a href="/cs/cislovani-stran-pdf/">Přidat čísla stránek</a>
+            </div><div>
+              <h3>Zabezpečení a soukromí</h3>
+              <a href="/cs/zaheslovat-pdf/">Zaheslovat PDF</a><a href="/cs/odemknout-pdf/">Odemknout PDF</a><a href="/cs/zacernit-pdf/">Začernit PDF</a><a href="/cs/upravit-metadata-pdf/">Upravit metadata PDF</a>
+            </div>
+            <a class="s-mega__all" href="/cs/pdf-nastroje/">Všechny PDF nástroje →</a>
+          </div>
+        </details>
+        <details class="s-menu">
+          <summary>Další nástroje<svg class="s-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+          <div class="s-mega s-mega--wide">
+            <div>
+              <h3><a href="/cs/text-tools/">Textové nástroje</a></h3>
+              <a href="/cs/zero-width-character-remover/">Odstranění neviditelných znaků</a><a href="/cs/case-converter/">Změna velikosti písmen</a><a href="/cs/remove-duplicate-lines/">Odstranění duplicitních řádků</a><a href="/cs/list-to-comma-separated/">Seznam na text oddělený čárkami</a><a href="/cs/regex-extractor/">Extrakce e-mailů, telefonů a URL z textu</a><a href="/cs/text-diff-checker/">Porovnání textů (diff)</a>
+              <a class="s-mega__more" href="/cs/text-tools/">30 nástrojů →</a>
+            </div><div>
+              <h3><a href="/cs/spreadsheet-csv-tools/">Tabulky a CSV</a></h3>
+              <a href="/cs/csv-delimiter-converter/">Změna oddělovače CSV</a><a href="/cs/csv-viewer/">Prohlížeč velkých souborů CSV</a><a href="/cs/leading-zero-fixer/">Obnovení úvodních nul v CSV</a><a href="/cs/vlookup-formula-generator/">Generátor vzorců SVYHLEDAT a XLOOKUP</a><a href="/cs/excel-date-converter/">Převodník sériových čísel dat Excelu</a><a href="/cs/json-to-csv/">Převod JSON na CSV</a>
+              <a class="s-mega__more" href="/cs/spreadsheet-csv-tools/">30 nástrojů →</a>
+            </div><div>
+              <h3><a href="/cs/time-calendar-tools/">Čas a kalendář</a></h3>
+              <a href="/cs/unix-timestamp-converter/">Převodník Unix timestampu</a><a href="/cs/date-difference-calculator/">Kalkulačka rozdílu dat</a><a href="/cs/working-days-calculator/">Kalkulačka pracovních dnů</a><a href="/cs/ics-event-generator/">Generátor kalendářních událostí (.ics)</a><a href="/cs/timezone-overlap-planner/">Plánovač schůzek v časových pásmech</a><a href="/cs/meeting-time-link-generator/">Generátor odkazu na čas schůzky</a>
+              <a class="s-mega__more" href="/cs/time-calendar-tools/">18 nástrojů →</a>
+            </div>
+          </div>
+        </details>
+        <a href="/cs/spojit-pdf/">Spojit PDF</a><a href="/cs/komprimovat-pdf/">Komprimovat PDF</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Jazyk">cs</summary>
+          <ul>
+            <li><a href="/en/timecard-calculator/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/timecard-calculator/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/timecard-calculator/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/timecard-calculator/" hreflang="cs" lang="cs" data-set-lang="cs" aria-current="true">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Přepnout světlý a tmavý režim" title="Přepnout světlý a tmavý režim">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Nabídka" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/cs/">Domů</a></li><li><a href="/cs/time-calendar-tools/">Čas a kalendář</a></li><li><span aria-current="page">Kalkulačka docházky a přesčasů</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Kalkulačka docházky a přesčasů</h1>
+        <p>Sečtěte týden příchodů a odchodů s přestávkami a přesčasy.</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="timecard-calculator" data-cat="time"><p class="pt-hint">Načítání nástroje…</p><noscript><p class="pt-drop__error">Tento nástroj potřebuje JavaScript, protože se soubor zpracovává ve vašem prohlížeči.</p></noscript></div>
+        <ul class="s-trust"><li>Bez nahrávání</li><li>Zdarma</li><li>Bez účtu</li><li>Po načtení funguje offline</li></ul>
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>Jak funguje: Kalkulačka docházky a přesčasů</h2>
+        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
+        <p lang="en">Enter the start time, end time and unpaid break for each day, and the calculator adds up the hours worked, the overtime and, with an hourly rate, the gross pay. Times can be typed as 9:00, 0900 or 9am; shifts that cross midnight are handled.</p><p lang="en">For each day the break is subtracted from the time between start and end (adding 24 hours if the end is earlier than the start). Weekly overtime is every hour above the threshold you set (40 by default); an optional daily threshold counts hours above it per day, and the larger of the daily and weekly overtime is used so hours are never counted twice. Overtime pay uses your multiplier (1.5 by default). Laws and contracts differ by country, so treat the result as a calculation aid, not payroll advice.</p>
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>Jak to použít</h2>
+        <ol class="s-steps"><li><p lang="en">Fill in start, end and break for each day worked.</p></li><li><p lang="en">Set the overtime thresholds, and optionally the rate and multiplier.</p></li><li><p lang="en">Read the totals and copy them into your payroll or invoice.</p></li></ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>Časté dotazy</h2>
+        <div class="s-faq">
+          <details open><summary lang="en">How are night shifts handled?</summary><p lang="en">If the end time is earlier than the start time, the shift is assumed to end the next day.</p></details>
+          <details><summary lang="en">Does it follow my country's overtime law?</summary><p lang="en">It applies the thresholds you enter. Check local rules for daily limits, rest periods and premiums.</p></details>
+          <details><summary lang="en">Nahrávají se moje soubory?</summary><p lang="en">Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
+          <details><summary lang="en">Je tento nástroj zdarma?</summary><p lang="en">Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="s-section">
+    <div class="s-wrap">
+      <h2>Užitečné i jinde</h2>
+      <p class="s-section__lede">Související nástroje na našich dalších webech, zdarma a v prohlížeči.</p>
+      <div class="s-links"><a href="https://culators.com/cs/hours-calculator/" rel="noopener"><strong>Kalkulačka hodin</strong><small>Culators ↗</small></a></div>
+    </div>
+  </section>
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>Mohlo by se vám hodit</h2>
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="time" href="/cs/decimal-hours-converter/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Převod hodin a minut na desetinná čísla</span>
+          <span class="s-card__desc">Převeďte 7:45 na 7,75 pro výkazy a faktury s pravidly zaokrouhlení.</span>
+        </a><a class="s-card" data-cat="time" href="/cs/time-calculator/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Kalkulačka času (sčítání a odčítání hodin)</span>
+          <span class="s-card__desc">Sčítejte a odčítejte doby trvání, např. 4h 12m + 1h 55m nebo 2:30 - 0:45.</span>
+        </a><a class="s-card" data-cat="time" href="/cs/working-days-calculator/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Kalkulačka pracovních dnů</span>
+          <span class="s-card__desc">Přičítejte, odečítejte a počítejte pracovní dny bez víkendů a svátků.</span>
+        </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__toc">
+        <section>
+          <h2>Uspořádání stránek</h2>
+          <a href="/cs/spojit-pdf/">Spojit PDF<span>PDF</span></a><a href="/cs/rozdelit-pdf/">Rozdělit PDF<span>PDF</span></a><a href="/cs/extrahovat-stranky-pdf/">Extrahovat stránky PDF<span>PDF</span></a><a href="/cs/odstranit-stranky-pdf/">Odstranit stránky PDF<span>PDF</span></a><a href="/cs/usporadat-pdf/">Uspořádat PDF<span>PDF</span></a><a href="/cs/otocit-pdf/">Otočit PDF<span>PDF</span></a><a href="/cs/oriznout-pdf/">Oříznout PDF<span>PDF</span></a>
+        </section><section>
+          <h2>Optimalizace</h2>
+          <a href="/cs/komprimovat-pdf/">Komprimovat PDF<span>PDF</span></a><a href="/cs/ocr-pdf/">OCR PDF<span>PDF</span></a><a href="/cs/zplostit-pdf/">Zploštit PDF<span>PDF</span></a>
+        </section><section>
+          <h2>Převod</h2>
+          <a href="/cs/pdf-na-word/">PDF na Word<span>PDF</span></a><a href="/cs/pdf-na-excel/">PDF na Excel<span>PDF</span></a><a href="/cs/pdf-na-jpg/">PDF na JPG<span>PDF</span></a><a href="/cs/pdf-na-png/">PDF na PNG<span>PDF</span></a><a href="/cs/pdf-na-text/">PDF na text<span>PDF</span></a><a href="/cs/jpg-na-pdf/">JPG na PDF<span>PDF</span></a><a href="/cs/png-na-pdf/">PNG na PDF<span>PDF</span></a>
+        </section><section>
+          <h2>Úpravy a podpis</h2>
+          <a href="/cs/upravit-pdf/">Upravit PDF<span>PDF</span></a><a href="/cs/podepsat-pdf/">Podepsat PDF<span>PDF</span></a><a href="/cs/vyplnit-pdf-formular/">Vyplnit PDF formulář<span>PDF</span></a><a href="/cs/vodoznak-pdf/">Přidat vodoznak<span>PDF</span></a><a href="/cs/cislovani-stran-pdf/">Přidat čísla stránek<span>PDF</span></a>
+        </section><section>
+          <h2>Zabezpečení a soukromí</h2>
+          <a href="/cs/zaheslovat-pdf/">Zaheslovat PDF<span>PDF</span></a><a href="/cs/odemknout-pdf/">Odemknout PDF<span>PDF</span></a><a href="/cs/zacernit-pdf/">Začernit PDF<span>PDF</span></a><a href="/cs/upravit-metadata-pdf/">Upravit metadata PDF<span>PDF</span></a>
+        </section>
+        <section>
+          <h2>Textové nástroje</h2>
+          <a href="/cs/zero-width-character-remover/">Odstranění neviditelných znaků</a><a href="/cs/case-converter/">Změna velikosti písmen</a><a href="/cs/remove-duplicate-lines/">Odstranění duplicitních řádků</a><a href="/cs/list-to-comma-separated/">Seznam na text oddělený čárkami</a><a href="/cs/regex-extractor/">Extrakce e-mailů, telefonů a URL z textu</a><a href="/cs/text-diff-checker/">Porovnání textů (diff)</a><a href="/cs/table-to-markdown/">Tabulka na Markdown</a><a href="/cs/text-tools/">30 nástrojů<span>→</span></a>
+        </section><section>
+          <h2>Tabulky a CSV</h2>
+          <a href="/cs/csv-delimiter-converter/">Změna oddělovače CSV</a><a href="/cs/csv-viewer/">Prohlížeč velkých souborů CSV</a><a href="/cs/leading-zero-fixer/">Obnovení úvodních nul v CSV</a><a href="/cs/vlookup-formula-generator/">Generátor vzorců SVYHLEDAT a XLOOKUP</a><a href="/cs/excel-date-converter/">Převodník sériových čísel dat Excelu</a><a href="/cs/json-to-csv/">Převod JSON na CSV</a><a href="/cs/csv-to-json/">Převod CSV na JSON</a><a href="/cs/spreadsheet-csv-tools/">30 nástrojů<span>→</span></a>
+        </section><section>
+          <h2>Čas a kalendář</h2>
+          <a href="/cs/unix-timestamp-converter/">Převodník Unix timestampu</a><a href="/cs/date-difference-calculator/">Kalkulačka rozdílu dat</a><a href="/cs/working-days-calculator/">Kalkulačka pracovních dnů</a><a href="/cs/ics-event-generator/">Generátor kalendářních událostí (.ics)</a><a href="/cs/timezone-overlap-planner/">Plánovač schůzek v časových pásmech</a><a href="/cs/meeting-time-link-generator/">Generátor odkazu na čas schůzky</a><a href="/cs/meeting-cost-calculator/">Kalkulačka nákladů schůzky</a><a href="/cs/time-calendar-tools/">18 nástrojů<span>→</span></a>
+        </section>
+        <section>
+          <h2>Naše další weby</h2>
+          <a href="https://files-online.com/cs/" rel="noopener">Files Online<span>↗</span></a><a href="https://open-online.com/cs/" rel="noopener">Open Online<span>↗</span></a><a href="https://culators.com/cs/" rel="noopener">Culators<span>↗</span></a><a href="https://test.institute/cs/" rel="noopener">test.institute<span>↗</span></a>
+        </section>
+        
+      </div>
+      <div class="s-footer__bottom">
+        <a href="/cs/soukromi/">Soukromí</a>
+        <a href="/cs/tiraz/">Tiráž</a>
+        <a href="/en/timecard-calculator/" hreflang="en" lang="en" data-set-lang="en">English</a><a href="/de/timecard-calculator/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a><a href="/pl/timecard-calculator/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a><a href="/cs/timecard-calculator/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a>
+        <span class="s-footer__note">Běží ve vašem prohlížeči. Bez nahrávání, bez účtu, bez sledování.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+  <script type="module" src="/assets/js/tools/main.js?v=b91dabba"></script>
+</body>
+</html>
