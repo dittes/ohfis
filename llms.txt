@@ -211,6 +211,47 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 - [CSS Box Shadow Generator](https://ohfis.com/en/css-box-shadow-generator/): Design layered box shadows visually and copy clean CSS.
 - [Regular Expression Explainer & Tester](https://ohfis.com/en/regex-explainer/): Break a regular expression into plain-language parts and test it live.
 
+## Notes & Privacy
+
+Scratchpads, checklists, passwords, QR codes and encrypted notes. Hub: https://ohfis.com/en/notes-privacy-tools/
+
+- [Password Generator](https://ohfis.com/en/password-generator/): Create strong random passwords with custom rules, right in your browser.
+- [Passphrase Generator (Diceware)](https://ohfis.com/en/passphrase-generator/): Memorable passphrases like correct-horse-battery-staple from the EFF word list.
+- [JWT Decoder & Verifier](https://ohfis.com/en/jwt-decoder/): Read a JSON Web Token's header, payload and expiry without sending it anywhere.
+- [Wi-Fi QR Code Generator](https://ohfis.com/en/wifi-qr-code-generator/): Make a printable QR code that lets guests join your Wi-Fi with one scan.
+- [vCard QR Code Generator (Contact QR)](https://ohfis.com/en/vcard-qr-code-generator/): Create a QR code that saves your contact details to a phone's address book.
+- [QR Code Generator](https://ohfis.com/en/qr-code-generator/): Create QR codes for links, text, email and SMS, free and without tracking.
+- [Encrypted Note Link (Private Message)](https://ohfis.com/en/encrypted-note-link/): Encrypt a short message in your browser and share it as a link plus a separate key.
+- [Online Scratchpad (Auto-Saving Notepad)](https://ohfis.com/en/scratchpad/): A plain notepad that saves automatically in your browser, with several pads.
+- [Checklist with Progress Bar](https://ohfis.com/en/checklist-maker/): Tick off items and watch the completion percentage, saved in your browser.
+- [Kanban Board (To Do, Doing, Done)](https://ohfis.com/en/kanban-board/): A personal three-column task board with drag and drop, stored locally.
+- [Tally Counter (Click Counter)](https://ohfis.com/en/tally-counter/): A big on-screen counter for attendees, votes or stock, with keyboard shortcuts.
+- [Markdown Table of Contents Generator](https://ohfis.com/en/markdown-table-of-contents/): Generate a linked table of contents from the headings of a Markdown document.
+- [Template Variable Filler ({{name}})](https://ohfis.com/en/template-variable-filler/): Fill {{placeholders}} in email templates, canned replies and AI prompts.
+- [Decision Matrix (Weighted Scoring)](https://ohfis.com/en/decision-matrix/): Score options against weighted criteria to decide objectively.
+- [Daily Standup Update Formatter](https://ohfis.com/en/daily-standup-formatter/): Turn rough notes into a clean Yesterday / Today / Blockers update for Slack.
+- [Paste as Plain Text (Remove Formatting)](https://ohfis.com/en/plain-text-paste/): A staging box that strips fonts, colours and links before you paste elsewhere.
+- [Markdown to Formatted Email](https://ohfis.com/en/markdown-to-email/): Write in Markdown and paste rich, styled text straight into Gmail or Outlook.
+
+## Team & Meetings
+
+Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.com/en/team-meeting-tools/
+
+- [PERT Estimator (Three-Point Estimate)](https://ohfis.com/en/pert-estimator/): Combine optimistic, likely and pessimistic estimates into expected time and confidence ranges.
+- [Random Name Picker Wheel](https://ohfis.com/en/name-picker-wheel/): Spin a wheel to pick a name for a meeting, a giveaway or a presentation order.
+- [Secret Santa Generator](https://ohfis.com/en/secret-santa-generator/): Draw gift partners with exclusions and send each person a private reveal link.
+- [Tournament Bracket Maker](https://ohfis.com/en/tournament-bracket-maker/): Create printable single-elimination brackets or round-robin schedules.
+- [Org Chart Maker from Indented Text](https://ohfis.com/en/org-chart-maker/): Turn an indented list of people into an organisation chart and download it as an image.
+- [Passive-Aggressive Tone Checker for Emails](https://ohfis.com/en/tone-auditor/): Highlight guilt-tripping, over-apologising and passive-aggressive phrases with kinder alternatives.
+
+## Audio & Video
+
+Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.com/en/audio-video-tools/
+
+- [Online Tone Generator (Sine, Square, Sweep)](https://ohfis.com/en/audio-tone-generator/): Play pure tones and frequency sweeps to test speakers and find hums or rattles.
+- [Online Teleprompter](https://ohfis.com/en/teleprompter/): A full-screen scrolling script with adjustable speed, size and mirror mode.
+- [BPM Tap Tempo Counter](https://ohfis.com/en/bpm-tap-counter/): Tap along to find the tempo of a song in beats per minute.
+
 ## Related sites by the same operator
 
 - [Files Online](https://files-online.com/): More PDF tools and file utilities

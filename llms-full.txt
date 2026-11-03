@@ -495,6 +495,99 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
   Paste a regular expression and see it explained token by token in nested form: what each group, class, quantifier and anchor means. A test area highlights the matches line by line, so you can see whether it does what you think.
   How to use: Paste your regular expression and set flags. Read the explanation of each part. Edit the test text to check matches and non-matches.
 
+## Notes & Privacy
+
+Scratchpads, checklists, passwords, QR codes and encrypted notes. Hub: https://ohfis.com/en/notes-privacy-tools/
+
+- [Password Generator](https://ohfis.com/en/password-generator/): Create strong random passwords with custom rules, right in your browser.
+  Pick the length and character types and get a fresh password with a strength estimate. Options include avoiding look-alike characters (I, l, 1, O, 0) and generating several passwords at once. The password never leaves your device and is not stored.
+  How to use: Set the length and the character types. Click "Generate new" until you like the result. Copy it into your password manager.
+- [Passphrase Generator (Diceware)](https://ohfis.com/en/passphrase-generator/): Memorable passphrases like correct-horse-battery-staple from the EFF word list.
+  A passphrase of five or six random words is much easier to type and remember than a string of symbols, and just as strong. Choose the number of words, a separator and optional capitalisation or a digit, and see the exact entropy.
+  How to use: Choose the number of words (six for important accounts). Pick a separator and options. Memorise or store the passphrase; never reuse it.
+- [JWT Decoder & Verifier](https://ohfis.com/en/jwt-decoder/): Read a JSON Web Token's header, payload and expiry without sending it anywhere.
+  Paste a token and see its header and payload as formatted JSON, with the issued-at, not-before and expiry times converted to dates and a clear "expired" or "valid" status. Enter the secret to check an HS256, HS384 or HS512 signature. Warnings flag unsigned tokens (alg none) and tokens that never expire.
+  How to use: Paste the JWT (a leading "Bearer " is fine). Read the header, payload and time claims. Optionally enter the secret to verify an HMAC signature.
+- [Wi-Fi QR Code Generator](https://ohfis.com/en/wifi-qr-code-generator/): Make a printable QR code that lets guests join your Wi-Fi with one scan.
+  Enter the network name and password, choose the security type and get a QR code that iPhones and Android phones understand: the camera app offers to join the network. Download it as PNG or SVG, or print it for the office, the cafe or the guest room.
+  How to use: Enter the network name, security type and password. Download or print the QR code. Test it with a phone before putting it up.
+- [vCard QR Code Generator (Contact QR)](https://ohfis.com/en/vcard-qr-code-generator/): Create a QR code that saves your contact details to a phone's address book.
+  Put your name, company, phone numbers, email, website and address into a QR code for business cards, email signatures or conference badges. Scanning it offers to save the contact straight into the phone's address book.
+  How to use: Fill in the fields you want to share. Download the QR code or print it. Scan it with a phone to test how the contact looks.
+- [QR Code Generator](https://ohfis.com/en/qr-code-generator/): Create QR codes for links, text, email and SMS, free and without tracking.
+  Type a link or a message and get a QR code you can download as PNG (up to 2048 px) or as a vector SVG for print, and choose colours and the error-correction level. The code contains your data directly: there is no redirect, no tracking and no expiry date, so a printed code works forever.
+  How to use: Choose the type of content and enter it. Pick colours and the error correction. Download the PNG or SVG, or print it.
+- [Encrypted Note Link (Private Message)](https://ohfis.com/en/encrypted-note-link/): Encrypt a short message in your browser and share it as a link plus a separate key.
+  Share a password or a private message without leaving it readable in chat history. Write the note, and you get a link and, separately, a key (or use your own password). Send the two by different channels: whoever has both can read the note.
+  How to use: Write your message and choose a random key or a password. Send the link in one channel and the key or password in another. The recipient opens the link, enters the key and reads the note.
+- [Online Scratchpad (Auto-Saving Notepad)](https://ohfis.com/en/scratchpad/): A plain notepad that saves automatically in your browser, with several pads.
+  A blank page for the thing you need to jot down right now: a phone number, a draft, a to-do list. Everything you type is saved after every pause, so a crash, a restart or an accidental tab close does not lose it. Use several pads, rename them and download any as a text file.
+  How to use: Type in the pad; it saves automatically. Add or rename pads for different topics. Copy or download the text when you need it elsewhere.
+- [Checklist with Progress Bar](https://ohfis.com/en/checklist-maker/): Tick off items and watch the completion percentage, saved in your browser.
+  Make a checklist for a launch, a trip or a procedure: add items, tick them off, reorder them and see a progress bar and the percentage done. Copy the list as text with [x] and [ ] marks to paste into a ticket or message.
+  How to use: Type an item and press Enter to add it. Tick items off; move them up or delete them. Copy the list or remove completed items.
+- [Kanban Board (To Do, Doing, Done)](https://ohfis.com/en/kanban-board/): A personal three-column task board with drag and drop, stored locally.
+  Sketch your work as cards in three columns: what is waiting, what you are doing now and what is done. Drag cards between columns (or use the arrows), add cards by typing, and copy the board as Markdown for a status update.
+  How to use: Add cards in the "To do" column. Drag them to "Doing" and "Done" (or use the arrows). Copy the board as Markdown when you need to report.
+- [Tally Counter (Click Counter)](https://ohfis.com/en/tally-counter/): A big on-screen counter for attendees, votes or stock, with keyboard shortcuts.
+  Count people at the door, votes in a meeting or items on a shelf: a huge plus button, a minus button, a step of 1, 2, 5 or 10 and the keyboard (Space or ↑ to add, ↓ to subtract). The number is remembered when you close the page.
+  How to use: Press the plus button or Space to count up. Use minus or ↓ to correct a mistake. Reset when you start the next count.
+- [Markdown Table of Contents Generator](https://ohfis.com/en/markdown-table-of-contents/): Generate a linked table of contents from the headings of a Markdown document.
+  Paste a README or document and get a nested list of links to all its headings, ready to paste at the top. Choose which heading levels to include, bullets or numbers, and optionally insert the finished table into the document right after the title.
+  How to use: Paste your Markdown document. Choose the heading levels and list style. Copy the table of contents into your document.
+- [Template Variable Filler ({{name}})](https://ohfis.com/en/template-variable-filler/): Fill {{placeholders}} in email templates, canned replies and AI prompts.
+  Write a template once with markers such as {{name}} and {{date}}, and fill in the values for each use. Form fields appear automatically for every placeholder, the result updates as you type, and unfilled placeholders stay visible so nothing is forgotten.
+  How to use: Write your template with {{placeholders}}. Fill in the fields that appear. Copy the finished text.
+- [Decision Matrix (Weighted Scoring)](https://ohfis.com/en/decision-matrix/): Score options against weighted criteria to decide objectively.
+  Comparing vendors, job offers or tools? List your criteria, give each a weight from 1 to 10, score every option from 0 to 10 per criterion and see the weighted total, with the best option highlighted. A note appears when the top two are too close to call.
+  How to use: Set your criteria and their weights. Score each option per criterion. Read the weighted totals and discuss the close calls.
+- [Daily Standup Update Formatter](https://ohfis.com/en/daily-standup-formatter/): Turn rough notes into a clean Yesterday / Today / Blockers update for Slack.
+  Write three short lists and get an update that is ready to paste into Slack, Teams or an email: bold headings, tidy bullets, empty sections filled with "Nothing to report" or "None". Choose Slack-style bold, Markdown or plain text.
+  How to use: Write what you did, what you will do and any blockers, one item per line. Choose the format. Copy the update into your chat.
+- [Paste as Plain Text (Remove Formatting)](https://ohfis.com/en/plain-text-paste/): A staging box that strips fonts, colours and links before you paste elsewhere.
+  Copy text from a web page or Word, paste it into the box and copy it out again as plain text with no fonts, colours, links or hidden styles, ready to paste into a form, CMS or document without breaking its layout. Optional cleanups trim the ends, collapse blank lines and replace curly quotes and special spaces.
+  How to use: Paste your formatted text into the box. Tick the cleanups you want. Copy the plain text.
+- [Markdown to Formatted Email](https://ohfis.com/en/markdown-to-email/): Write in Markdown and paste rich, styled text straight into Gmail or Outlook.
+  Draft in plain Markdown (headings, bold, italics, lists, quotes, links, code) and copy a formatted version that keeps its look when pasted into an email composer. A live preview shows what you will get, and you can also copy the HTML itself.
+  How to use: Write your message in Markdown. Check the preview. Click "Copy for email" and paste into your email.
+
+## Team & Meetings
+
+Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.com/en/team-meeting-tools/
+
+- [PERT Estimator (Three-Point Estimate)](https://ohfis.com/en/pert-estimator/): Combine optimistic, likely and pessimistic estimates into expected time and confidence ranges.
+  Estimates are uncertain, so ask for three numbers per task: optimistic, most likely and pessimistic. The tool computes the expected duration of each task and of the whole project, the standard deviation, the time within which you can be 80% or 95% sure to finish, and the chance of meeting a target date.
+  How to use: List the tasks with optimistic, most likely and pessimistic values. Optionally enter a target total. Read the expected total, the confidence ranges and the probability of hitting the target.
+- [Random Name Picker Wheel](https://ohfis.com/en/name-picker-wheel/): Spin a wheel to pick a name for a meeting, a giveaway or a presentation order.
+  Paste a list of names and spin: the wheel slows down with a ticking sound and lands on a winner. Remove each winner automatically to pick several people in turn, shuffle the list, and keep a history of winners.
+  How to use: Enter the names, one per line. Choose whether winners are removed after a spin. Press "Spin the wheel".
+- [Secret Santa Generator](https://ohfis.com/en/secret-santa-generator/): Draw gift partners with exclusions and send each person a private reveal link.
+  Enter the participants, add exclusions such as couples who should not draw each other, and generate the draw. Every person gets a private link that reveals only their own match when they tap a button; the organiser can hide the list of pairs to stay surprised too.
+  How to use: Enter the participants and any exclusions. Send each person their private link. Participants open the link and tap "Reveal my match".
+- [Tournament Bracket Maker](https://ohfis.com/en/tournament-bracket-maker/): Create printable single-elimination brackets or round-robin schedules.
+  List the teams or players from best to worst seed and get a bracket for single elimination, with byes where the number is not a power of two, or a round-robin schedule where everyone plays everyone. Download the bracket as PNG or SVG or print it for the hackathon, the office tournament or the school contest.
+  How to use: Enter the entrants, best seed first. Choose single elimination or round robin. Download or print the bracket.
+- [Org Chart Maker from Indented Text](https://ohfis.com/en/org-chart-maker/): Turn an indented list of people into an organisation chart and download it as an image.
+  Type who reports to whom with indentation, optionally as "Name, Title", and get a tidy organisation chart you can download as PNG or SVG for a slide, a wiki page or an onboarding document.
+  How to use: Type the structure; indent with spaces or a tab for direct reports. Adjust the box width and colour. Download the chart as PNG or SVG.
+- [Passive-Aggressive Tone Checker for Emails](https://ohfis.com/en/tone-auditor/): Highlight guilt-tripping, over-apologising and passive-aggressive phrases with kinder alternatives.
+  Before you press send, paste your email or chat message and see which phrases may sound passive-aggressive ("as per my last email"), blaming ("you never"), guilt-tripping, condescending ("obviously"), vague ("ASAP") or over-apologetic. Each flagged phrase comes with a plain suggestion, and messages with too many apologies, exclamation marks or capitals get a gentle note.
+  How to use: Paste your draft message. Read the highlighted phrases and the suggestions. Rewrite what could land badly, then send.
+
+## Audio & Video
+
+Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.com/en/audio-video-tools/
+
+- [Online Tone Generator (Sine, Square, Sweep)](https://ohfis.com/en/audio-tone-generator/): Play pure tones and frequency sweeps to test speakers and find hums or rattles.
+  Play a pure tone at any frequency from 1 Hz to 20 kHz with sine, square, triangle or sawtooth waves, on both speakers or only the left or right one. A 30-second sweep slides from 20 Hz to 20 kHz so you can find the frequency at which a speaker rattles, a cabinet resonates or coil whine appears. The display shows the nearest musical note.
+  How to use: Set the volume low, choose a frequency and press Play. Use the channel selector to test left and right, or start the sweep to find a resonance. Stop as soon as you hear the problem frequency and note the value.
+- [Online Teleprompter](https://ohfis.com/en/teleprompter/): A full-screen scrolling script with adjustable speed, size and mirror mode.
+  Paste your script, set the speed and text size and start: the text scrolls smoothly in full screen while you look into the camera. A red reading line marks where to read, Space pauses, the arrow keys change the speed on the fly, and mirror mode flips the text for teleprompters that read through glass.
+  How to use: Paste your script and set the speed and size. Press "Start teleprompter" (full screen). Pause with Space, change speed with ↑ and ↓, close with Esc.
+- [BPM Tap Tempo Counter](https://ohfis.com/en/bpm-tap-counter/): Tap along to find the tempo of a song in beats per minute.
+  Tap the button or press the space bar on every beat and read the tempo. The tool averages your last twelve taps, shows half-time and double-time values, warns if your taps are uneven and can play a metronome click at the measured tempo.
+  How to use: Play the music and tap on every beat (or press Space). Read the BPM after about eight taps. Turn on the click to check it against the song.
+
 ## Related sites by the same operator
 
 - [Files Online](https://files-online.com/): More PDF tools and file utilities
