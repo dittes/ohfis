@@ -87,12 +87,14 @@ export default {
     ]
   },
   "home": {
-    "title": "OHFIS – Darmowe narzędzia PDF online, bez przesyłania",
-    "desc": "Kompresuj, łącz, dziel, konwertuj, edytuj i podpisuj pliki PDF za darmo. Twoje pliki zostają w przeglądarce i nigdy nie są przesyłane. Bez konta.",
-    "short": "Darmowe narzędzia do PDF i plików działające w przeglądarce. Nic nie jest przesyłane.",
+    "search": "Szukaj narzędzi…",
+    "ctaAll": "Przeglądaj wszystkie narzędzia",
+    "title": "OHFIS – Darmowe narzędzia online do PDF, tekstu, arkuszy i obrazów (bez przesyłania)",
+    "desc": "Darmowe narzędzia w przeglądarce: PDF, tekst i CSV, obrazy, kalkulatory, czas i pomocniki IT. Wszystko działa na Twoim urządzeniu, nic nie jest przesyłane.",
+    "short": "Darmowe narzędzia do PDF, tekstu, arkuszy, obrazów, czasu i finansów w przeglądarce. Nic nie jest przesyłane.",
     "eyebrow": "Za darmo · Prywatnie · Bez rejestracji",
-    "h1Html": "Wszystkie potrzebne narzędzia PDF, <span class=\"s-mark\">bez przesyłania plików.</span>",
-    "lede": "Kompresuj, łącz, dziel, konwertuj, edytuj i podpisuj dokumenty bezpośrednio w przeglądarce. Twoje pliki od początku do końca zostają na Twoim urządzeniu.",
+    "h1Html": "Wszystkie potrzebne narzędzia biurowe, <span class=\"s-mark\">bez przesyłania plików.</span>",
+    "lede": "PDF-y, tekst, arkusze, obrazy, daty, kalkulatory i pomocniki dla programistów. Wszystko działa w przeglądarce, a pliki zostają na Twoim urządzeniu.",
     "ctaPdf": "Zobacz wszystkie narzędzia PDF",
     "popularTitle": "Wszystkie narzędzia PDF",
     "popularLede": "Wybierz narzędzie i upuść plik. Nie trzeba nic instalować ani zakładać konta.",
@@ -102,6 +104,10 @@ export default {
     "familyTitle": "Chcesz otworzyć plik?",
     "familyLede": "Nasza siostrzana strona otwiera niemal każdy plik, od DOCX i ZIP po STL i Parquet, z tą samą obietnicą: bez przesyłania.",
     "faqs": [
+      [
+        "Co mogę zrobić w OHFIS?",
+        "Pracować z plikami PDF (łączyć, dzielić, kompresować, konwertować, podpisywać), czyścić i konwertować tekst, naprawiać dane CSV i Excela, zmieniać rozmiar i format obrazów, liczyć daty, finanse i harmonogramy oraz używać narzędzi IT, takich jak hash, cron, podsieci i JWT. Wszystko działa w przeglądarce."
+      ],
       [
         "Czy moje pliki trafiają na serwer?",
         "Nie. Każde narzędzie działa w przeglądarce dzięki JavaScriptowi i WebAssembly. Pliki są odczytywane z Twojego urządzenia, przetwarzane w pamięci i zapisywane z powrotem na urządzeniu."

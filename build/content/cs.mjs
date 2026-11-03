@@ -87,12 +87,14 @@ export default {
     ]
   },
   "home": {
-    "title": "OHFIS – PDF nástroje online zdarma, bez nahrávání",
-    "desc": "Komprimujte, spojujte, rozdělujte, převádějte, upravujte a podepisujte PDF zdarma. Soubory zůstávají v prohlížeči a nikdy se nenahrávají. Bez účtu.",
-    "short": "Bezplatné nástroje pro PDF a soubory, které běží v prohlížeči. Nic se nenahrává.",
+    "search": "Hledat nástroje…",
+    "ctaAll": "Procházet všechny nástroje",
+    "title": "OHFIS – Online nástroje zdarma pro PDF, text, tabulky a obrázky (bez nahrávání)",
+    "desc": "Bezplatné nástroje v prohlížeči: PDF, text a CSV, obrázky, kalkulačky, čas a IT pomocníci. Vše běží ve vašem zařízení, nic se nenahrává.",
+    "short": "Bezplatné nástroje pro PDF, text, tabulky, obrázky, čas a finance v prohlížeči. Nic se nenahrává.",
     "eyebrow": "Zdarma · Soukromě · Bez registrace",
-    "h1Html": "Všechny PDF nástroje, které potřebujete, <span class=\"s-mark\">bez nahrávání.</span>",
-    "lede": "Komprimujte, spojujte, rozdělujte, převádějte, upravujte a podepisujte dokumenty přímo v prohlížeči. Vaše soubory zůstávají od začátku do konce ve vašem zařízení.",
+    "h1Html": "Všechny kancelářské nástroje, které potřebujete, <span class=\"s-mark\">bez nahrávání.</span>",
+    "lede": "PDF, text, tabulky, obrázky, data, kalkulačky a pomocníci pro vývojáře. Vše běží v prohlížeči a vaše soubory zůstávají ve vašem zařízení.",
     "ctaPdf": "Zobrazit všechny PDF nástroje",
     "popularTitle": "Všechny PDF nástroje",
     "popularLede": "Vyberte nástroj a přetáhněte soubor. Nic se neinstaluje a nezakládá se žádný účet.",
@@ -102,6 +104,10 @@ export default {
     "familyTitle": "Potřebujete otevřít soubor?",
     "familyLede": "Náš sesterský web otevře téměř jakýkoli soubor, od DOCX a ZIP po STL a Parquet, se stejným slibem: bez nahrávání.",
     "faqs": [
+      [
+        "Co mohu na OHFIS dělat?",
+        "Pracovat s PDF (spojovat, dělit, komprimovat, převádět, podepisovat), čistit a převádět text, opravovat data CSV a Excelu, měnit velikost a formát obrázků, počítat data, finance a plány a používat IT nástroje jako hash, cron, podsítě a JWT. Vše běží v prohlížeči."
+      ],
       [
         "Nahrávají se moje soubory na server?",
         "Ne. Všechny nástroje běží v prohlížeči pomocí JavaScriptu a WebAssembly. Soubory se načtou z vašeho zařízení, zpracují v paměti a uloží zpět do zařízení."

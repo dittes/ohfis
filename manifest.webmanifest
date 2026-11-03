@@ -1,7 +1,7 @@
 {
   "name": "OHFIS",
   "short_name": "OHFIS",
-  "description": "Free PDF and file tools that run in your browser. Nothing is uploaded.",
+  "description": "Free tools for PDFs, text, spreadsheets, images, time and finance that run in your browser. Nothing is uploaded.",
   "id": "/",
   "start_url": "/en/",
   "scope": "/",

@@ -1,0 +1,12 @@
+// search.js — client-side tool finder for the home page. The index is generated at build time.
+const input = document.getElementById('tool-search'); const list = document.getElementById('tool-search-list');
+if (input && list) {
+  let index = null; let active = -1; const norm = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const load = async () => index ||= (await import(`/assets/i18n/search.${input.dataset.lang}.js`)).default.map(e => ({ ...e, hay: norm(`${e.n} ${e.k || ''} ${e.d} ${e.c}`) }));
+  const render = items => { list.replaceChildren(...items.map((e, i) => { const li = document.createElement('li'); const a = document.createElement('a'); a.href = e.u; a.setAttribute('role', 'option'); a.innerHTML = '<strong></strong><small></small>'; a.firstChild.textContent = e.n; a.lastChild.textContent = e.c; li.append(a); return li; })); list.hidden = !items.length; active = -1; };
+  const run = async () => { const q = norm(input.value.trim()); if (q.length < 2) { list.hidden = true; return; } const idx = await load(); const terms = q.split(/\s+/); const scored = idx.map(e => { let s = 0; for (const t of terms) { if (!e.hay.includes(t)) return null; s += norm(e.n).startsWith(t) ? 6 : norm(e.n).includes(t) ? 4 : 1; } return { e, s }; }).filter(Boolean).sort((a, b) => b.s - a.s).slice(0, 8).map(x => x.e); render(scored); };
+  input.addEventListener('input', run); input.addEventListener('focus', () => { if (input.value.length >= 2) run(); });
+  input.addEventListener('keydown', e => { const links = [...list.querySelectorAll('a')]; if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); active = (active + (e.key === 'ArrowDown' ? 1 : -1) + links.length) % Math.max(1, links.length); links[active]?.focus(); } else if (e.key === 'Enter' && links[0]) { location.href = (links[active] || links[0]).href; } else if (e.key === 'Escape') list.hidden = true; });
+  list.addEventListener('keydown', e => { const links = [...list.querySelectorAll('a')]; const i = links.indexOf(document.activeElement); if (e.key === 'ArrowDown') { e.preventDefault(); links[(i + 1) % links.length].focus(); } else if (e.key === 'ArrowUp') { e.preventDefault(); (i > 0 ? links[i - 1] : input).focus(); } else if (e.key === 'Escape') { list.hidden = true; input.focus(); } });
+  document.addEventListener('click', e => { if (!e.target.closest('.s-search')) list.hidden = true; });
+}

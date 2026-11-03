@@ -87,12 +87,14 @@ export default {
     ]
   },
   "home": {
-    "title": "OHFIS – Free Online PDF Tools, No Upload",
-    "desc": "Compress, merge, split, convert, edit and sign PDFs for free. Your files stay in your browser and are never uploaded. No account needed.",
-    "short": "Free PDF and file tools that run in your browser. Nothing is uploaded.",
+    "search": "Search all tools…",
+    "ctaAll": "Browse all tools",
+    "title": "OHFIS – Free Online Tools for PDFs, Text, Data, Images & More (No Upload)",
+    "desc": "Free browser tools: PDF editor and converters, text and CSV tools, image tools, calculators, time and IT helpers. Everything runs on your device, nothing is uploaded.",
+    "short": "Free tools for PDFs, text, spreadsheets, images, time and finance that run in your browser. Nothing is uploaded.",
     "eyebrow": "Free · Private · No sign-up",
-    "h1Html": "Every PDF tool you need, <span class=\"s-mark\">without the upload.</span>",
-    "lede": "Compress, merge, split, convert, edit and sign documents right in your browser. Your files stay on your device from start to finish.",
+    "h1Html": "Every office tool you need, <span class=\"s-mark\">without the upload.</span>",
+    "lede": "PDFs, text, spreadsheets, images, dates, calculators and developer helpers. Everything runs in your browser and your files stay on your device.",
     "ctaPdf": "See all PDF tools",
     "popularTitle": "All PDF tools",
     "popularLede": "Pick a tool and drop your file. There is nothing to install and no account to create.",
@@ -102,6 +104,10 @@ export default {
     "familyTitle": "Need to open a file?",
     "familyLede": "Our sister site opens almost any file, from DOCX and ZIP to STL and Parquet, with the same no-upload promise.",
     "faqs": [
+      [
+        "What can I do on OHFIS?",
+        "Work with PDFs (merge, split, compress, convert, sign), clean and convert text, fix CSV and Excel data, resize and convert images, calculate dates, finances and schedules, and use IT helpers such as hash, cron, subnet and JWT tools. All of it runs in your browser."
+      ],
       [
         "Are my files uploaded to a server?",
         "No. Every tool runs in your browser using JavaScript and WebAssembly. Your files are read from your device, processed in memory and saved back to your device."

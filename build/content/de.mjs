@@ -87,12 +87,14 @@ export default {
     ]
   },
   "home": {
-    "title": "OHFIS – Kostenlose PDF-Tools online, ohne Upload",
-    "desc": "PDFs kostenlos komprimieren, zusammenfügen, teilen, umwandeln, bearbeiten und unterschreiben. Deine Dateien bleiben im Browser und werden nie hochgeladen.",
-    "short": "Kostenlose PDF- und Datei-Tools, die in deinem Browser laufen. Nichts wird hochgeladen.",
+    "search": "Alle Tools durchsuchen…",
+    "ctaAll": "Alle Tools ansehen",
+    "title": "OHFIS – Kostenlose Online-Tools für PDF, Text, Tabellen & Bilder (ohne Upload)",
+    "desc": "Kostenlose Browser-Tools: PDF-Werkzeuge, Text- und CSV-Tools, Bildbearbeitung, Rechner, Zeit- und IT-Helfer. Alles läuft auf deinem Gerät, nichts wird hochgeladen.",
+    "short": "Kostenlose Tools für PDFs, Text, Tabellen, Bilder, Zeit und Finanzen im Browser. Nichts wird hochgeladen.",
     "eyebrow": "Kostenlos · Privat · Ohne Anmeldung",
-    "h1Html": "Alle PDF-Tools, die du brauchst, <span class=\"s-mark\">ganz ohne Upload.</span>",
-    "lede": "Dokumente direkt im Browser komprimieren, zusammenfügen, teilen, umwandeln, bearbeiten und unterschreiben. Deine Dateien bleiben von Anfang bis Ende auf deinem Gerät.",
+    "h1Html": "Alle Büro-Tools, die du brauchst, <span class=\"s-mark\">ohne Upload.</span>",
+    "lede": "PDFs, Text, Tabellen, Bilder, Datum, Rechner und Entwickler-Helfer. Alles läuft in deinem Browser, deine Dateien bleiben auf deinem Gerät.",
     "ctaPdf": "Alle PDF-Tools ansehen",
     "popularTitle": "Alle PDF-Tools",
     "popularLede": "Tool wählen und Datei ablegen. Du musst nichts installieren und kein Konto anlegen.",
@@ -102,6 +104,10 @@ export default {
     "familyTitle": "Eine Datei öffnen?",
     "familyLede": "Unsere Schwesterseite öffnet fast jede Datei, von DOCX und ZIP bis STL und Parquet, mit demselben Versprechen: kein Upload.",
     "faqs": [
+      [
+        "Was kann ich auf OHFIS tun?",
+        "PDFs bearbeiten (zusammenfügen, teilen, komprimieren, umwandeln, unterschreiben), Text bereinigen und umwandeln, CSV- und Excel-Daten reparieren, Bilder skalieren und konvertieren, Daten, Finanzen und Zeitpläne berechnen und IT-Helfer wie Hash-, Cron-, Subnetz- und JWT-Tools nutzen. Alles läuft im Browser."
+      ],
       [
         "Werden meine Dateien auf einen Server hochgeladen?",
         "Nein. Alle Tools laufen mit JavaScript und WebAssembly in deinem Browser. Deine Dateien werden von deinem Gerät gelesen, im Arbeitsspeicher verarbeitet und wieder auf deinem Gerät gespeichert."
