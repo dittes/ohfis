@@ -134,6 +134,101 @@ Clean, convert, count, compare and extract text. Hub: https://ohfis.com/en/text-
   Type a message to get dots and dashes, or paste Morse code to read it. The direction is detected automatically. Press "Play as sound" to hear the message as beeps at the speed and pitch you choose.
   How to use: Type text or paste Morse code. Read the translation, or press "Play as sound". Adjust the speed and pitch to taste, then copy the result.
 
+## Spreadsheet & CSV Tools
+
+Fix, convert, merge, compare and reshape CSV and spreadsheet data. Hub: https://ohfis.com/en/spreadsheet-csv-tools/
+
+- [CSV Delimiter Converter](https://ohfis.com/en/csv-delimiter-converter/): Detect the separator of a CSV and convert it to comma, semicolon, tab or pipe.
+  Excel in Germany, France or Poland saves CSV files with semicolons, US tools expect commas, databases like tabs. If a file opens as one long column, the separator is wrong. This tool detects the delimiter of your file and rewrites it with the one you need, converting CSV to TSV and back without breaking cells that contain commas, quotes or line breaks.
+  How to use: Paste your data or open a file. The detected separator is shown. Choose the output separator under "Output format". Copy the result or download it as a new file.
+- [Large CSV File Viewer](https://ohfis.com/en/csv-viewer/): Open CSV files of hundreds of megabytes, scroll millions of rows and search them.
+  Excel stops at about one million rows and text editors freeze on files of this size. This viewer opens CSV files of hundreds of megabytes in seconds: a table you can scroll through, a search across all columns and a "go to row" box. The file never leaves your computer.
+  How to use: Drop a CSV file onto the page or choose it. Wait a moment while the rows are indexed (a progress bar shows the status). Scroll, jump to a row number or search; clear the search to see all rows again.
+- [Restore Leading Zeros in CSV](https://ohfis.com/en/leading-zero-fixer/): Repair zip codes and IDs that lost their leading zeros in Excel.
+  Excel treats 01234 as the number 1234 and silently removes the zero. Zip codes, product numbers, employee IDs and phone prefixes are damaged this way every day. This tool restores them: it detects the intended width of each column or pads to a width you choose.
+  How to use: Paste the damaged CSV or open the file. Leave the width on 0 to detect it, or enter the number of digits. Pick the columns. Download the repaired file and import it with the column set to Text.
+- [VLOOKUP & XLOOKUP Formula Generator](https://ohfis.com/en/vlookup-formula-generator/): Build correct lookup formulas from column letters, in English, German, French or Spanish.
+  Tell the generator which cell holds the value, which column to search and which column to return, and it writes three working formulas: XLOOKUP, VLOOKUP and INDEX/MATCH. Ranges are made absolute ($D$2:$D$100) so they do not drift when you fill down, and an optional IFERROR shows your own text instead of #N/A.
+  How to use: Enter the cell to look up, the column to search and the column to return. Set the first and last data row, and optionally the sheet name and the text for "not found". Copy the formula you prefer into your sheet and fill it down.
+- [Excel Date Serial Number Converter](https://ohfis.com/en/excel-date-converter/): Turn Excel serial numbers like 45231 into dates and dates back into serial numbers.
+  Dates in Excel are stored as the number of days since a starting date, so exports and CSV files often show 45231 where you expect a date. Paste a list of serial numbers to get ISO dates (decimals become times), or paste dates to get serial numbers for formulas and imports.
+  How to use: Paste serial numbers or ISO dates, one per line. Pick the date system (Windows 1900 is the default). Copy the converted values.
+- [JSON to CSV Converter](https://ohfis.com/en/json-to-csv/): Flatten JSON arrays and nested objects into a CSV table for Excel.
+  API responses and exports arrive as JSON, but analysts want rows and columns. Paste a JSON array of objects (or an object that contains one) and get a CSV with one row per object. Nested objects become dotted columns such as address.city, and arrays can become numbered columns, joined text or JSON text.
+  How to use: Paste your JSON or open a .json file. Choose how nested arrays and objects should be flattened. Copy the CSV or download it and open it in Excel.
+- [CSV to JSON Converter](https://ohfis.com/en/csv-to-json/): Turn a CSV into JSON objects, with typed values and optional nesting.
+  Turn a spreadsheet export into JSON for an API, a test fixture or a config file. The first row becomes the keys, every other row becomes an object. Numbers and true/false are converted to real JSON types, empty cells become null, and headers with dots such as address.city can be nested into objects.
+  How to use: Paste your CSV or open a file. The separator is detected. Choose type conversion, nesting and formatting options. Copy the JSON or download it.
+- [Transpose Table (Rows to Columns)](https://ohfis.com/en/transpose-table/): Swap rows and columns of pasted spreadsheet cells.
+  Turn a wide table into a tall one, or the other way round. Paste cells from Excel or Google Sheets, or a CSV, and the rows become columns. The result uses a tab separator by default, so you can paste it straight back into a spreadsheet.
+  How to use: Paste the cells or a CSV. The transposed table appears immediately. Copy it (tab separated for Excel) or download it.
+- [Pivot Table Generator](https://ohfis.com/en/pivot-table-generator/): Group data and calculate sums, averages and counts without Excel.
+  Summarise a long list of records into a compact table. Choose a column to group by (rows), optionally a column for the headings across (columns) and a value column; then pick sum, average, count, distinct count, minimum, maximum or median. With both rows and columns chosen you get a cross-tab with totals.
+  How to use: Paste your CSV or open a file. Choose the row field, an optional column field, the value column and the calculation. Copy the pivot table or download it as CSV.
+- [Split Column into Multiple Columns](https://ohfis.com/en/split-column/): Split full names, addresses or codes into separate columns by delimiter, position or pattern.
+  Separate "Ann Marie Lee" into first and last name, "2024-05-06" into year, month and day, or "AB1234" into letters and digits. Pick the column, choose how to split and the tool inserts the new columns in place, naming them after the original.
+  How to use: Paste your CSV and choose the column to split. Pick the split mode and enter the delimiter, positions or pattern. Copy the new table or download it.
+- [Compare Two CSV Files](https://ohfis.com/en/csv-compare/): Find added, removed and changed rows and cells between two CSV files.
+  Which customers were added since last month? Which prices changed? Load two versions of a table and see the differences: new rows in green, removed rows in red and changed cells in yellow with the old value crossed out. A summary counts each kind and the full report can be downloaded.
+  How to use: Paste or open the original CSV on the left and the changed CSV on the right. Choose the key column that identifies a row (or compare row by row). Review the highlighted differences and download the report.
+- [CSV to SQL INSERT Converter](https://ohfis.com/en/csv-to-sql/): Turn spreadsheet rows into INSERT or UPDATE statements for MySQL, PostgreSQL, SQLite or SQL Server.
+  Paste rows from a spreadsheet and get SQL you can run: a CREATE TABLE with guessed column types, batched INSERT statements or one UPDATE per row using a key column. Quoting of table and column names follows the database you choose (backticks, double quotes or brackets).
+  How to use: Paste your CSV and enter the table name. Choose the database, INSERT or UPDATE, and whether to create the table. Copy the SQL or download the .sql file.
+- [Markdown Table Formatter](https://ohfis.com/en/markdown-table-formatter/): Align ragged Markdown tables into neat, readable grids.
+  A Markdown table is easy to write and hard to read when the pipes do not line up. Paste your table, even one with missing outer pipes or uneven columns, and get a tidy version with every column padded to the same width. Column alignment markers (:--, :-:, --:) are preserved or can be forced.
+  How to use: Paste the Markdown table. Optionally choose compact output or force an alignment. Copy the formatted table into your README or docs.
+- [Excel Custom Number Format Tester](https://ohfis.com/en/excel-number-format-tester/): Try custom format codes like #,##0.00 or [>=1000]0.0,"K" on sample values.
+  Custom formats in Excel are powerful and cryptic. Type a format code, paste test values and see exactly how each one will be displayed: thousands separators, decimals, percentages, scientific notation, dates and times, text, colours and up to four sections for positive, negative, zero and text values. Sixteen presets show common patterns such as accounting, K/M suffixes and leading zeros.
+  How to use: Pick a preset or type your own format code. Edit the test values, one per line. Read the preview and copy the code into Format Cells → Custom.
+- [CSV to GeoJSON Converter](https://ohfis.com/en/csv-to-geojson/): Turn a list of coordinates into a GeoJSON FeatureCollection of points.
+  Put a spreadsheet of places on a map. Choose the latitude and longitude columns (they are detected from names like lat, lon, latitude) and get a standard GeoJSON FeatureCollection; every other column becomes a property of the point. The result opens in geojson.io, QGIS, Mapbox, Leaflet and most GIS software.
+  How to use: Paste the CSV and check the latitude and longitude columns. Review the list of skipped rows, if any. Copy or download the .geojson file.
+- [Reorder & Delete CSV Columns](https://ohfis.com/en/reorder-csv-columns/): Drag columns into a new order or remove them before you share a table.
+  Strip a customer export down to the columns you want to share, or put the columns in the order an import template expects. Every column becomes a card: drag it, use the arrow buttons or untick it to drop the column. A live preview shows the result.
+  How to use: Paste your CSV. Drag the column cards (or use the arrows), and untick columns to delete them. Copy or download the new table.
+- [Z-Score & Min-Max Normalizer](https://ohfis.com/en/zscore-normalizer/): Standardise numeric columns to z-scores or scale them to 0–1.
+  Put columns with different units on the same scale before comparing or modelling them. Choose z-score (how many standard deviations from the mean), min–max scaling (0 to 1) or max-abs scaling (−1 to 1), pick the numeric columns and download the table with the new columns. The mean, standard deviation, minimum and maximum of every column are shown.
+  How to use: Paste your CSV and tick the numeric columns. Choose z-score, min–max or max-abs and the decimals. Copy or download the normalised table.
+- [Phone Number Formatter (E.164)](https://ohfis.com/en/phone-number-formatter/): Normalise phone numbers in a list to E.164 or a readable international style.
+  A contact list with (415) 555-0132, 0049 30 1234567 and +49 (0)30 1234567 cannot be imported into most CRMs and SMS tools. This tool rewrites every number in a column to E.164, the international standard (+14155550132), or to a readable international, national (US) or digits-only style, and flags the numbers it cannot read.
+  How to use: Paste your CSV and choose the phone column. Pick the default country and output style. Download the cleaned list; the "valid" column shows numbers that need a look.
+- [Fill Blank Cells in Spreadsheet Data](https://ohfis.com/en/fill-blank-cells/): Fill empty cells with the value above, a fixed value or the column average.
+  Exports from pivot tables and reports often leave a cell empty when the value is the same as above. Models and databases do not like gaps either. Choose how to fill: the value from the cell above (fill down) or below, a fixed text, zero, or a statistic of the column such as the average, median, most frequent value, minimum or maximum.
+  How to use: Paste your CSV. Choose the fill method and the columns. Copy or download the completed table.
+- [Excel Formula Formatter](https://ohfis.com/en/excel-formula-formatter/): Break long nested Excel formulas into indented, readable lines.
+  A formula with five nested IFs in the formula bar is nearly impossible to debug. Paste it here and get it back with one argument per line, indented by nesting level, and with spaces around operators. Short parts stay on one line. In Excel, press Alt+Enter in the formula bar to add such line breaks; they do not change the result.
+  How to use: Paste the formula, with or without the leading =. Set the maximum line width and indent size. Copy the formatted formula back into the formula bar.
+- [Address Parser (Split Street, City, ZIP)](https://ohfis.com/en/address-parser/): Split one-line addresses into street, number, unit, city, state and ZIP.
+  Mailing lists often keep the whole address in one cell. Paste one address per line and get a table with street, house number, unit (Apt, Suite, #), city, state, ZIP and country. US addresses, UK postcodes and continental European layouts (street number, then postcode and city) are recognised.
+  How to use: Paste addresses, one per line. Check the "format" column of the result. Download the table as CSV.
+- [Currency to Number Converter](https://ohfis.com/en/currency-normalizer/): Turn "$1,234.56", "1.234,56 €" and "(500)" into plain numbers.
+  Money in exported data arrives as text with symbols and mixed conventions: $1,234.56, 1.234,56 €, CHF 1'234.50, (500.00) or 12,5 zł. Excel cannot calculate with these. This tool converts selected columns to plain numbers with a dot as the decimal mark, and can add a column with the detected currency.
+  How to use: Paste your CSV and tick the amount columns. Choose how ambiguous values like 1,234 should be read. Download the numeric table.
+- [Percentage Change Calculator for Columns](https://ohfis.com/en/percentage-change-calculator/): Add a percent-change column comparing two numeric columns.
+  Compare this year with last year for hundreds of rows at once. Choose the old and the new value column and the tool adds a "% change" column with the rounding you want. Growth shows as positive numbers, declines as negative ones.
+  How to use: Paste your CSV. Choose the old-value and new-value columns and the number of decimals. Copy or download the table with the new column.
+- [Trim Spaces in CSV & Spreadsheet Cells](https://ohfis.com/en/trim-whitespace-csv/): Strip leading, trailing and hidden spaces from every cell.
+  A lookup that "should work" fails because "Berlin" and "Berlin " are different values. Paste your table and every cell is trimmed. Non-breaking spaces, which Excel's TRIM function does not remove, and invisible zero-width characters are removed too, and repeated spaces inside cells can be collapsed.
+  How to use: Paste the CSV. Choose whether to collapse inner spaces and remove hidden characters. Copy or download the cleaned table.
+- [CSV Header Cleaner (snake_case)](https://ohfis.com/en/csv-header-sanitizer/): Turn messy column titles into clean, database-safe names.
+  Headers like "First Name", "Revenue (€)" or "2024 Sales" break imports into SQL, pandas and BI tools. This tool rewrites them as lowercase snake_case (or camelCase or kebab-case): accents are removed, symbols are spelled out (% → pct), names that start with a digit get a prefix, duplicates are numbered and SQL keywords are made safe.
+  How to use: Paste the CSV with the messy header row. Choose snake_case, camelCase or kebab-case and an optional maximum length. Copy or download the table with the clean header.
+- [Merge CSV Files](https://ohfis.com/en/merge-csv-files/): Combine several CSV files into one, matching columns by name.
+  Twelve monthly exports, one file per branch or a folder of logs: drop them all in and download a single CSV. Files with the same columns are stacked; if the columns differ or are in a different order, they are matched by header name and missing values stay empty. An optional column records the file name of each row.
+  How to use: Drop or choose two or more CSV files. Choose how to combine them and whether to add a source column. Download the merged file.
+- [Sample Size Calculator](https://ohfis.com/en/sample-size-calculator/): How many respondents do you need for your confidence level and margin of error?
+  Before you run a survey, find out how many answers you need. Enter the confidence level (95% is standard), the margin of error (± 5 points is common) and, if the group is small, the population size. The result is the number of completed responses for a proportion estimate.
+  How to use: Enter the population size (leave empty if it is very large). Choose the confidence level and margin of error. Read the required sample size and plan your survey around it.
+- [CSV Encoding Fixer (UTF-8, Mojibake)](https://ohfis.com/en/csv-encoding-fixer/): Repair garbled characters like MÃ¼ller and convert files to UTF-8.
+  "MÃ¼ller" instead of "Müller", "cafÃ©" instead of "café" and question marks where umlauts should be: these are encoding mix-ups. Open the file here and it is decoded with the right character set (detected automatically, or chosen from a list such as Windows-1252, ISO-8859-2 or UTF-16) and saved back as UTF-8, with a BOM if Excel needs one.
+  How to use: Open the file, or paste the garbled text. Leave the encoding on automatic, or pick the one your file uses. Check the preview and download the UTF-8 file.
+- [Excel Formula Translator (EN ⇄ DE, FR, ES)](https://ohfis.com/en/excel-formula-translator/): Convert formulas between English, German, French and Spanish Excel, including separators.
+  A formula from an English tutorial does not work in a German Excel: it wants SUMME instead of SUM, WENN instead of IF and semicolons instead of commas. Paste the formula, pick the languages and get a version your Excel accepts. It works the other way round, too, which helps when you share files with colleagues abroad.
+  How to use: Paste one formula per line. Choose the language it is written in and the language you need. Copy the translated formulas.
+- [Unpivot Table (Crosstab to List)](https://ohfis.com/en/unpivot-table/): Turn a wide crosstab with one column per month into a tidy long list.
+  Reports often have one column per month or year. Databases, charts and pivot tables want one row per value instead. Choose the columns that identify a row (like product or region) and every other column is turned into rows of attribute and value: Jan, Feb, Mar become a "month" column and the numbers a "amount" column.
+  How to use: Paste the wide table. Tick the identifier columns and name the two new columns. Copy or download the long table.
+
 ## Related sites by the same operator
 
 - [Files Online](https://files-online.com/): More PDF tools and file utilities

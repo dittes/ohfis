@@ -1117,6 +1117,1122 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-tools/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/spreadsheet-csv-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/spreadsheet-csv-tools/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/spreadsheet-csv-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/spreadsheet-csv-tools/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/spreadsheet-csv-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/spreadsheet-csv-tools/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/spreadsheet-csv-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/spreadsheet-csv-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/spreadsheet-csv-tools/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/csv-delimiter-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-delimiter-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/csv-delimiter-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-delimiter-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/csv-delimiter-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-delimiter-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/csv-delimiter-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-delimiter-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-delimiter-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/csv-viewer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-viewer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/csv-viewer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-viewer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/csv-viewer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-viewer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/csv-viewer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-viewer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/leading-zero-fixer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/leading-zero-fixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/leading-zero-fixer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/leading-zero-fixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/leading-zero-fixer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/leading-zero-fixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/leading-zero-fixer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/leading-zero-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/leading-zero-fixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/vlookup-formula-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/vlookup-formula-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/vlookup-formula-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/vlookup-formula-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/vlookup-formula-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/vlookup-formula-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/vlookup-formula-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vlookup-formula-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/vlookup-formula-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/excel-date-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-date-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/excel-date-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-date-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/excel-date-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-date-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/excel-date-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-date-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-date-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/json-to-csv/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/json-to-csv/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/json-to-csv/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/json-to-csv/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/json-to-csv/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/json-to-csv/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/json-to-csv/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/json-to-csv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/json-to-csv/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/csv-to-json/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-json/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/csv-to-json/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-json/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/csv-to-json/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-json/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/csv-to-json/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-json/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/transpose-table/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/transpose-table/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/transpose-table/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/transpose-table/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/transpose-table/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/transpose-table/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/transpose-table/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/transpose-table/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/transpose-table/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/pivot-table-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pivot-table-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/pivot-table-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pivot-table-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/pivot-table-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pivot-table-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/pivot-table-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pivot-table-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pivot-table-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/split-column/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/split-column/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/split-column/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/split-column/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/split-column/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/split-column/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/split-column/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/split-column/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/split-column/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/csv-compare/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-compare/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/csv-compare/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-compare/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/csv-compare/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-compare/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/csv-compare/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-compare/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/csv-to-sql/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-sql/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/csv-to-sql/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-sql/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/csv-to-sql/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-sql/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/csv-to-sql/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-sql/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-sql/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/markdown-table-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/markdown-table-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/markdown-table-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/markdown-table-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/markdown-table-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/markdown-table-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/markdown-table-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/markdown-table-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/markdown-table-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/excel-number-format-tester/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-number-format-tester/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/excel-number-format-tester/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-number-format-tester/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/excel-number-format-tester/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-number-format-tester/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/excel-number-format-tester/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-number-format-tester/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-number-format-tester/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/csv-to-geojson/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-geojson/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/csv-to-geojson/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-geojson/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/csv-to-geojson/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-geojson/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/csv-to-geojson/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-to-geojson/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-geojson/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/reorder-csv-columns/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/reorder-csv-columns/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/reorder-csv-columns/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/reorder-csv-columns/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/reorder-csv-columns/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/reorder-csv-columns/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/reorder-csv-columns/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/reorder-csv-columns/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/reorder-csv-columns/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/zscore-normalizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zscore-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/zscore-normalizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zscore-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/zscore-normalizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zscore-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/zscore-normalizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/zscore-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zscore-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/phone-number-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/phone-number-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/phone-number-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/phone-number-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/phone-number-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/phone-number-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/phone-number-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/phone-number-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/phone-number-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/fill-blank-cells/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/fill-blank-cells/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/fill-blank-cells/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/fill-blank-cells/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/fill-blank-cells/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/fill-blank-cells/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/fill-blank-cells/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/fill-blank-cells/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/fill-blank-cells/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/excel-formula-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-formula-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/excel-formula-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-formula-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/excel-formula-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-formula-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/excel-formula-formatter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-formula-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-formula-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/address-parser/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/address-parser/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/address-parser/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/address-parser/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/address-parser/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/address-parser/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/address-parser/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/address-parser/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/address-parser/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/currency-normalizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/currency-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/currency-normalizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/currency-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/currency-normalizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/currency-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/currency-normalizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/currency-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/currency-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/percentage-change-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/percentage-change-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/percentage-change-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/percentage-change-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/percentage-change-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/percentage-change-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/percentage-change-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/percentage-change-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/percentage-change-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/trim-whitespace-csv/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/trim-whitespace-csv/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/trim-whitespace-csv/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/trim-whitespace-csv/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/trim-whitespace-csv/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/trim-whitespace-csv/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/trim-whitespace-csv/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/trim-whitespace-csv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/trim-whitespace-csv/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/csv-header-sanitizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-header-sanitizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/csv-header-sanitizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-header-sanitizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/csv-header-sanitizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-header-sanitizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/csv-header-sanitizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-header-sanitizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-header-sanitizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/merge-csv-files/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/merge-csv-files/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/merge-csv-files/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/merge-csv-files/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/merge-csv-files/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/merge-csv-files/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/merge-csv-files/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/merge-csv-files/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/merge-csv-files/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/sample-size-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sample-size-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/sample-size-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sample-size-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/sample-size-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sample-size-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/sample-size-calculator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/sample-size-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sample-size-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/csv-encoding-fixer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-encoding-fixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/csv-encoding-fixer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-encoding-fixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/csv-encoding-fixer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-encoding-fixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/csv-encoding-fixer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/csv-encoding-fixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-encoding-fixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/excel-formula-translator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-formula-translator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/excel-formula-translator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-formula-translator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/excel-formula-translator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-formula-translator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/excel-formula-translator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/excel-formula-translator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/excel-formula-translator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/unpivot-table/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/unpivot-table/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/unpivot-table/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/unpivot-table/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/unpivot-table/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/unpivot-table/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/unpivot-table/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/unpivot-table/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/unpivot-table/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/zero-width-character-remover/</loc>
     <lastmod>2026-11-03</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zero-width-character-remover/"/>

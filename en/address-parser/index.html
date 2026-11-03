@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Address Parser – Split Address into Street, City, State &amp; ZIP Code</title>
+  <meta name="description" content="Split one-line addresses into street, number, unit, city, state and ZIP. Free, runs in your browser, nothing is uploaded.">
+  
+  <link rel="canonical" href="https://ohfis.com/en/address-parser/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/address-parser/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/address-parser/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/address-parser/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/address-parser/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/address-parser/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/en/address-parser/">
+  <meta property="og:title" content="Address Parser – Split Address into Street, City, State &amp; ZIP Code">
+  <meta property="og:description" content="Split one-line addresses into street, number, unit, city, state and ZIP. Free, runs in your browser, nothing is uploaded.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=0879c97d">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Address Parser (Split Street, City, ZIP)","url":"https://ohfis.com/en/address-parser/","description":"Split one-line addresses into street, number, unit, city, state and ZIP. Free, runs in your browser, nothing is uploaded.","inLanguage":"en","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ohfis.com/en/"},{"@type":"ListItem","position":2,"name":"Spreadsheet & CSV Tools","item":"https://ohfis.com/en/spreadsheet-csv-tools/"},{"@type":"ListItem","position":3,"name":"Address Parser (Split Street, City, ZIP)"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to use it: Address Parser (Split Street, City, ZIP)","step":[{"@type":"HowToStep","position":1,"text":"Paste addresses, one per line."},{"@type":"HowToStep","position":2,"text":"Check the \"format\" column of the result."},{"@type":"HowToStep","position":3,"text":"Download the table as CSV."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which countries work?","acceptedAnswer":{"@type":"Answer","text":"US, UK and Germany-style layouts (also Austria, Switzerland and other countries where the postcode comes before the city). Other formats are only split at commas."}},{"@type":"Question","name":"Does it validate that an address exists?","acceptedAnswer":{"@type":"Answer","text":"No. It splits text into fields; it does not check against postal databases."}},{"@type":"Question","name":"Are my files uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. The file is opened and processed by your own browser. You can check it yourself: open your browser's network tab while using the tool, or disconnect from the internet after the page has loaded."}},{"@type":"Question","name":"Is this tool free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely. There is no sign-up, no paid tier and no watermark on your files."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Skip to content</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/en/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="ohfis-g" x1="4" y1="2" x2="28" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3A6FEA"/><stop offset="1" stop-color="#1B3FA8"/></linearGradient></defs><rect width="32" height="32" rx="8" fill="url(#ohfis-g)"/><circle cx="16" cy="16" r="10" fill="none" stroke="#fff" stroke-width="2.6"/><g transform="translate(16 16) scale(1.16) translate(-16 -16)"><path d="M12.9 11.2h4.3l2.3 2.3v6.6a1 1 0 0 1-1 1h-5.6a1 1 0 0 1-1-1v-7.9a1 1 0 0 1 1-1z" fill="#fff"/><path d="M17.2 11.2v1.6a.9.9 0 0 0 .9.9h1.4z" fill="#9DB8F4"/></g></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Main navigation">
+        <details class="s-menu">
+          <summary>PDF tools<svg class="s-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+          <div class="s-mega">
+            <div>
+              <h3>Organize pages</h3>
+              <a href="/en/merge-pdf/">Merge PDF</a><a href="/en/split-pdf/">Split PDF</a><a href="/en/extract-pdf-pages/">Extract PDF Pages</a><a href="/en/delete-pdf-pages/">Delete PDF Pages</a><a href="/en/organize-pdf/">Organize PDF</a><a href="/en/rotate-pdf/">Rotate PDF</a><a href="/en/crop-pdf/">Crop PDF</a>
+            </div><div>
+              <h3>Optimize</h3>
+              <a href="/en/compress-pdf/">Compress PDF</a><a href="/en/ocr-pdf/">OCR PDF</a><a href="/en/flatten-pdf/">Flatten PDF</a>
+            </div><div>
+              <h3>Convert</h3>
+              <a href="/en/pdf-to-word/">PDF to Word</a><a href="/en/pdf-to-excel/">PDF to Excel</a><a href="/en/pdf-to-jpg/">PDF to JPG</a><a href="/en/pdf-to-png/">PDF to PNG</a><a href="/en/pdf-to-text/">PDF to Text</a><a href="/en/jpg-to-pdf/">JPG to PDF</a><a href="/en/png-to-pdf/">PNG to PDF</a>
+            </div><div>
+              <h3>Edit &amp; sign</h3>
+              <a href="/en/edit-pdf/">Edit PDF</a><a href="/en/sign-pdf/">Sign PDF</a><a href="/en/fill-pdf-form/">Fill PDF Form</a><a href="/en/add-watermark-to-pdf/">Add Watermark</a><a href="/en/add-page-numbers-to-pdf/">Add Page Numbers</a>
+            </div><div>
+              <h3>Security &amp; privacy</h3>
+              <a href="/en/protect-pdf/">Protect PDF</a><a href="/en/unlock-pdf/">Unlock PDF</a><a href="/en/redact-pdf/">Redact PDF</a><a href="/en/edit-pdf-metadata/">Edit PDF Metadata</a>
+            </div>
+            <a class="s-mega__all" href="/en/pdf-tools/">All PDF tools →</a>
+          </div>
+        </details>
+        <details class="s-menu">
+          <summary>More tools<svg class="s-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+          <div class="s-mega s-mega--wide">
+            <div>
+              <h3><a href="/en/text-tools/">Text Tools</a></h3>
+              <a href="/en/zero-width-character-remover/">Zero-Width Character Remover</a><a href="/en/case-converter/">Case Converter</a><a href="/en/remove-duplicate-lines/">Remove Duplicate Lines</a><a href="/en/list-to-comma-separated/">List to Comma Separated Converter</a><a href="/en/regex-extractor/">Extract Emails, Phones &amp; URLs from Text</a><a href="/en/text-diff-checker/">Text Diff Checker</a>
+              <a class="s-mega__more" href="/en/text-tools/">30 tools →</a>
+            </div><div>
+              <h3><a href="/en/spreadsheet-csv-tools/">Spreadsheet &amp; CSV Tools</a></h3>
+              <a href="/en/csv-delimiter-converter/">CSV Delimiter Converter</a><a href="/en/csv-viewer/">Large CSV File Viewer</a><a href="/en/leading-zero-fixer/">Restore Leading Zeros in CSV</a><a href="/en/vlookup-formula-generator/">VLOOKUP &amp; XLOOKUP Formula Generator</a><a href="/en/excel-date-converter/">Excel Date Serial Number Converter</a><a href="/en/json-to-csv/">JSON to CSV Converter</a>
+              <a class="s-mega__more" href="/en/spreadsheet-csv-tools/">30 tools →</a>
+            </div>
+          </div>
+        </details>
+        <a href="/en/merge-pdf/">Merge PDF</a><a href="/en/compress-pdf/">Compress PDF</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Language">en</summary>
+          <ul>
+            <li><a href="/en/address-parser/" hreflang="en" lang="en" data-set-lang="en" aria-current="true">English</a></li><li><a href="/de/address-parser/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/address-parser/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/address-parser/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Switch between light and dark" title="Switch between light and dark">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/en/">Home</a></li><li><a href="/en/spreadsheet-csv-tools/">Spreadsheet &amp; CSV Tools</a></li><li><span aria-current="page">Address Parser (Split Street, City, ZIP)</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Address Parser (Split Street, City, ZIP)</h1>
+        <p>Split one-line addresses into street, number, unit, city, state and ZIP.</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="address-parser" data-cat="data"><p class="pt-hint">Loading tool…</p><noscript><p class="pt-drop__error">This tool needs JavaScript, because your file is processed in your browser.</p></noscript></div>
+        <ul class="s-trust"><li>No upload</li><li>Free</li><li>No account</li><li>Works offline once loaded</li></ul>
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>How Address Parser (Split Street, City, ZIP) works</h2>
+        
+        <p>Mailing lists often keep the whole address in one cell. Paste one address per line and get a table with street, house number, unit (Apt, Suite, #), city, state, ZIP and country. US addresses, UK postcodes and continental European layouts (street number, then postcode and city) are recognised.</p><p>Rule-based patterns are tried in turn. US style looks for &quot;city, STATE 12345(-6789)&quot; with a valid two-letter state; European style looks for a street followed by a house number and a four- or five-digit postcode before the city; UK style recognises postcodes like SW1A 2AA. Units are extracted first so they do not confuse the street. The &quot;format&quot; column tells you which rule matched, and lines that match no rule are split at commas and marked &quot;unknown&quot;. Rules are heuristics: always spot-check a sample before mailing.</p>
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>How to use it</h2>
+        <ol class="s-steps"><li><p>Paste addresses, one per line.</p></li><li><p>Check the &quot;format&quot; column of the result.</p></li><li><p>Download the table as CSV.</p></li></ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>Frequently asked questions</h2>
+        <div class="s-faq">
+          <details open><summary>Which countries work?</summary><p>US, UK and Germany-style layouts (also Austria, Switzerland and other countries where the postcode comes before the city). Other formats are only split at commas.</p></details>
+          <details><summary>Does it validate that an address exists?</summary><p>No. It splits text into fields; it does not check against postal databases.</p></details>
+          <details><summary>Are my files uploaded?</summary><p>No. The file is opened and processed by your own browser. You can check it yourself: open your browser's network tab while using the tool, or disconnect from the internet after the page has loaded.</p></details>
+          <details><summary>Is this tool free?</summary><p>Yes, completely. There is no sign-up, no paid tier and no watermark on your files.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="s-section">
+    <div class="s-wrap">
+      <h2>Also useful elsewhere</h2>
+      <p class="s-section__lede">Related tools on our other sites, free and in your browser.</p>
+      <div class="s-links"><a href="https://open-online.com/en/csv" rel="noopener"><strong>Open a CSV file</strong><small>Open Online ↗</small></a></div>
+    </div>
+  </section>
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>You might also need</h2>
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="data" href="/en/split-column/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Split Column into Multiple Columns</span>
+          <span class="s-card__desc">Split full names, addresses or codes into separate columns by delimiter, position or pattern.</span>
+        </a><a class="s-card" data-cat="data" href="/en/csv-to-geojson/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">CSV to GeoJSON Converter</span>
+          <span class="s-card__desc">Turn a list of coordinates into a GeoJSON FeatureCollection of points.</span>
+        </a><a class="s-card" data-cat="data" href="/en/phone-number-formatter/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Phone Number Formatter (E.164)</span>
+          <span class="s-card__desc">Normalise phone numbers in a list to E.164 or a readable international style.</span>
+        </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__toc">
+        <section>
+          <h2>Organize pages</h2>
+          <a href="/en/merge-pdf/">Merge PDF<span>PDF</span></a><a href="/en/split-pdf/">Split PDF<span>PDF</span></a><a href="/en/extract-pdf-pages/">Extract PDF Pages<span>PDF</span></a><a href="/en/delete-pdf-pages/">Delete PDF Pages<span>PDF</span></a><a href="/en/organize-pdf/">Organize PDF<span>PDF</span></a><a href="/en/rotate-pdf/">Rotate PDF<span>PDF</span></a><a href="/en/crop-pdf/">Crop PDF<span>PDF</span></a>
+        </section><section>
+          <h2>Optimize</h2>
+          <a href="/en/compress-pdf/">Compress PDF<span>PDF</span></a><a href="/en/ocr-pdf/">OCR PDF<span>PDF</span></a><a href="/en/flatten-pdf/">Flatten PDF<span>PDF</span></a>
+        </section><section>
+          <h2>Convert</h2>
+          <a href="/en/pdf-to-word/">PDF to Word<span>PDF</span></a><a href="/en/pdf-to-excel/">PDF to Excel<span>PDF</span></a><a href="/en/pdf-to-jpg/">PDF to JPG<span>PDF</span></a><a href="/en/pdf-to-png/">PDF to PNG<span>PDF</span></a><a href="/en/pdf-to-text/">PDF to Text<span>PDF</span></a><a href="/en/jpg-to-pdf/">JPG to PDF<span>PDF</span></a><a href="/en/png-to-pdf/">PNG to PDF<span>PDF</span></a>
+        </section><section>
+          <h2>Edit &amp; sign</h2>
+          <a href="/en/edit-pdf/">Edit PDF<span>PDF</span></a><a href="/en/sign-pdf/">Sign PDF<span>PDF</span></a><a href="/en/fill-pdf-form/">Fill PDF Form<span>PDF</span></a><a href="/en/add-watermark-to-pdf/">Add Watermark<span>PDF</span></a><a href="/en/add-page-numbers-to-pdf/">Add Page Numbers<span>PDF</span></a>
+        </section><section>
+          <h2>Security &amp; privacy</h2>
+          <a href="/en/protect-pdf/">Protect PDF<span>PDF</span></a><a href="/en/unlock-pdf/">Unlock PDF<span>PDF</span></a><a href="/en/redact-pdf/">Redact PDF<span>PDF</span></a><a href="/en/edit-pdf-metadata/">Edit PDF Metadata<span>PDF</span></a>
+        </section>
+        <section>
+          <h2>Text Tools</h2>
+          <a href="/en/zero-width-character-remover/">Zero-Width Character Remover</a><a href="/en/case-converter/">Case Converter</a><a href="/en/remove-duplicate-lines/">Remove Duplicate Lines</a><a href="/en/list-to-comma-separated/">List to Comma Separated Converter</a><a href="/en/regex-extractor/">Extract Emails, Phones &amp; URLs from Text</a><a href="/en/text-diff-checker/">Text Diff Checker</a><a href="/en/table-to-markdown/">Table to Markdown Converter</a><a href="/en/text-tools/">30 tools<span>→</span></a>
+        </section><section>
+          <h2>Spreadsheet &amp; CSV Tools</h2>
+          <a href="/en/csv-delimiter-converter/">CSV Delimiter Converter</a><a href="/en/csv-viewer/">Large CSV File Viewer</a><a href="/en/leading-zero-fixer/">Restore Leading Zeros in CSV</a><a href="/en/vlookup-formula-generator/">VLOOKUP &amp; XLOOKUP Formula Generator</a><a href="/en/excel-date-converter/">Excel Date Serial Number Converter</a><a href="/en/json-to-csv/">JSON to CSV Converter</a><a href="/en/csv-to-json/">CSV to JSON Converter</a><a href="/en/spreadsheet-csv-tools/">30 tools<span>→</span></a>
+        </section>
+        <section>
+          <h2>Our other sites</h2>
+          <a href="https://files-online.com/en/" rel="noopener">Files Online<span>↗</span></a><a href="https://open-online.com/en/" rel="noopener">Open Online<span>↗</span></a><a href="https://culators.com/en/" rel="noopener">Culators<span>↗</span></a><a href="https://test.institute/en/" rel="noopener">test.institute<span>↗</span></a>
+        </section>
+        
+      </div>
+      <div class="s-footer__bottom">
+        <a href="/en/privacy/">Privacy</a>
+        <a href="/en/imprint/">Imprint</a>
+        <a href="/en/address-parser/" hreflang="en" lang="en" data-set-lang="en">English</a><a href="/de/address-parser/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a><a href="/pl/address-parser/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a><a href="/cs/address-parser/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a>
+        <span class="s-footer__note">Runs in your browser. No upload, no account, no tracking.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+  <script type="module" src="/assets/js/tools/main.js?v=b91dabba"></script>
+</body>
+</html>

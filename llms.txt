@@ -74,6 +74,41 @@ Clean, convert, count, compare and extract text. Hub: https://ohfis.com/en/text-
 - [Text to Hex, Binary & Base32 Converter](https://ohfis.com/en/text-base-converter/): Convert text between hex, binary, decimal, octal, Base32 and Base64.
 - [Morse Code Translator](https://ohfis.com/en/morse-code-translator/): Translate text to Morse code and back, and play it as beeps.
 
+## Spreadsheet & CSV Tools
+
+Fix, convert, merge, compare and reshape CSV and spreadsheet data. Hub: https://ohfis.com/en/spreadsheet-csv-tools/
+
+- [CSV Delimiter Converter](https://ohfis.com/en/csv-delimiter-converter/): Detect the separator of a CSV and convert it to comma, semicolon, tab or pipe.
+- [Large CSV File Viewer](https://ohfis.com/en/csv-viewer/): Open CSV files of hundreds of megabytes, scroll millions of rows and search them.
+- [Restore Leading Zeros in CSV](https://ohfis.com/en/leading-zero-fixer/): Repair zip codes and IDs that lost their leading zeros in Excel.
+- [VLOOKUP & XLOOKUP Formula Generator](https://ohfis.com/en/vlookup-formula-generator/): Build correct lookup formulas from column letters, in English, German, French or Spanish.
+- [Excel Date Serial Number Converter](https://ohfis.com/en/excel-date-converter/): Turn Excel serial numbers like 45231 into dates and dates back into serial numbers.
+- [JSON to CSV Converter](https://ohfis.com/en/json-to-csv/): Flatten JSON arrays and nested objects into a CSV table for Excel.
+- [CSV to JSON Converter](https://ohfis.com/en/csv-to-json/): Turn a CSV into JSON objects, with typed values and optional nesting.
+- [Transpose Table (Rows to Columns)](https://ohfis.com/en/transpose-table/): Swap rows and columns of pasted spreadsheet cells.
+- [Pivot Table Generator](https://ohfis.com/en/pivot-table-generator/): Group data and calculate sums, averages and counts without Excel.
+- [Split Column into Multiple Columns](https://ohfis.com/en/split-column/): Split full names, addresses or codes into separate columns by delimiter, position or pattern.
+- [Compare Two CSV Files](https://ohfis.com/en/csv-compare/): Find added, removed and changed rows and cells between two CSV files.
+- [CSV to SQL INSERT Converter](https://ohfis.com/en/csv-to-sql/): Turn spreadsheet rows into INSERT or UPDATE statements for MySQL, PostgreSQL, SQLite or SQL Server.
+- [Markdown Table Formatter](https://ohfis.com/en/markdown-table-formatter/): Align ragged Markdown tables into neat, readable grids.
+- [Excel Custom Number Format Tester](https://ohfis.com/en/excel-number-format-tester/): Try custom format codes like #,##0.00 or [>=1000]0.0,"K" on sample values.
+- [CSV to GeoJSON Converter](https://ohfis.com/en/csv-to-geojson/): Turn a list of coordinates into a GeoJSON FeatureCollection of points.
+- [Reorder & Delete CSV Columns](https://ohfis.com/en/reorder-csv-columns/): Drag columns into a new order or remove them before you share a table.
+- [Z-Score & Min-Max Normalizer](https://ohfis.com/en/zscore-normalizer/): Standardise numeric columns to z-scores or scale them to 0–1.
+- [Phone Number Formatter (E.164)](https://ohfis.com/en/phone-number-formatter/): Normalise phone numbers in a list to E.164 or a readable international style.
+- [Fill Blank Cells in Spreadsheet Data](https://ohfis.com/en/fill-blank-cells/): Fill empty cells with the value above, a fixed value or the column average.
+- [Excel Formula Formatter](https://ohfis.com/en/excel-formula-formatter/): Break long nested Excel formulas into indented, readable lines.
+- [Address Parser (Split Street, City, ZIP)](https://ohfis.com/en/address-parser/): Split one-line addresses into street, number, unit, city, state and ZIP.
+- [Currency to Number Converter](https://ohfis.com/en/currency-normalizer/): Turn "$1,234.56", "1.234,56 €" and "(500)" into plain numbers.
+- [Percentage Change Calculator for Columns](https://ohfis.com/en/percentage-change-calculator/): Add a percent-change column comparing two numeric columns.
+- [Trim Spaces in CSV & Spreadsheet Cells](https://ohfis.com/en/trim-whitespace-csv/): Strip leading, trailing and hidden spaces from every cell.
+- [CSV Header Cleaner (snake_case)](https://ohfis.com/en/csv-header-sanitizer/): Turn messy column titles into clean, database-safe names.
+- [Merge CSV Files](https://ohfis.com/en/merge-csv-files/): Combine several CSV files into one, matching columns by name.
+- [Sample Size Calculator](https://ohfis.com/en/sample-size-calculator/): How many respondents do you need for your confidence level and margin of error?
+- [CSV Encoding Fixer (UTF-8, Mojibake)](https://ohfis.com/en/csv-encoding-fixer/): Repair garbled characters like MÃ¼ller and convert files to UTF-8.
+- [Excel Formula Translator (EN ⇄ DE, FR, ES)](https://ohfis.com/en/excel-formula-translator/): Convert formulas between English, German, French and Spanish Excel, including separators.
+- [Unpivot Table (Crosstab to List)](https://ohfis.com/en/unpivot-table/): Turn a wide crosstab with one column per month into a tidy long list.
+
 ## Related sites by the same operator
 
 - [Files Online](https://files-online.com/): More PDF tools and file utilities
