@@ -5,6 +5,9 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
+import { addExif } from './fixtures.mjs';
+import * as IMG from '../assets/js/tools/lib/image.js';
 
 const area = (page, i = 0) => page.locator('#tool-root textarea:not([readonly])').nth(i);
 const out = page => page.locator('#tool-root textarea[readonly]').first();
@@ -272,6 +275,86 @@ Object.assign(custom, {
   async 'basic-auth-header-generator'(page) { assert.match(await page.locator('.ut-pre').innerText(), /^Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==$/); },
   async 'query-string-builder'(page) { const o = await page.locator('.ut-pre').innerText(); assert.equal(o, 'https://api.example.com/search?q=coffee%20%26%20tea&lang=de&tag=hot&tag=cold&price_max=3%2C50'); },
   async 'cache-buster-url-generator'(page) { const o = (await page.locator('.ut-pre').innerText()).split('\n'); assert.match(o[0], /^https:\/\/example\.com\/assets\/app\.css\?v=\d{13}$/); assert.match(o[1], /app\.js\?lang=en&v=\d{13}$/); },
+});
+
+
+// ── image helpers: images are generated inside the browser and written to disk ──
+async function makeImage(page, path, { w = 400, h = 300, type = 'image/png', paint } = {}) {
+  const b64 = await page.evaluate(async ({ w, h, type, paint }) => { const c = document.createElement('canvas'); c.width = w; c.height = h; const x = c.getContext('2d'); if (paint) new Function('x', 'w', 'h', paint)(x, w, h); else { x.fillStyle = '#d62525'; x.fillRect(0, 0, w / 2, h); x.fillStyle = '#2557d6'; x.fillRect(w / 2, 0, w / 2, h); } const blob = await new Promise(r => c.toBlob(r, type, 0.95)); const buf = new Uint8Array(await blob.arrayBuffer()); let s = ''; for (let i = 0; i < buf.length; i += 0x8000) s += String.fromCharCode(...buf.subarray(i, i + 0x8000)); return btoa(s); }, { w, h, type, paint });
+  writeFileSync(path, Buffer.from(b64, 'base64')); return path;
+}
+const decode = (page, file) => page.evaluate(async b64 => { const bin = Uint8Array.from(atob(b64), c => c.charCodeAt(0)); const bmp = await createImageBitmap(new Blob([bin])); const c = document.createElement('canvas'); c.width = bmp.width; c.height = bmp.height; const x = c.getContext('2d'); x.drawImage(bmp, 0, 0); return { w: bmp.width, h: bmp.height, px: (X, Y) => 0, data: Array.from(x.getImageData(0, 0, bmp.width, bmp.height).data.slice(0, 0)) }; }, readFileSync(file).toString('base64')).then(async r => { const px = await page.evaluate(async b64 => { const bin = Uint8Array.from(atob(b64), c => c.charCodeAt(0)); const bmp = await createImageBitmap(new Blob([bin])); const c = document.createElement('canvas'); c.width = bmp.width; c.height = bmp.height; const x = c.getContext('2d', { willReadFrequently: true }); x.drawImage(bmp, 0, 0); const d = x.getImageData(0, 0, bmp.width, bmp.height).data; return { w: bmp.width, h: bmp.height, data: Array.from(d) }; }, readFileSync(file).toString('base64')); return { ...px, at: (X, Y) => px.data.slice((Y * px.w + X) * 4, (Y * px.w + X) * 4 + 4) }; });
+const saveDownload = async (page, click, name) => { const [dl] = await Promise.all([page.waitForEvent('download'), click()]); const p = join(tmp(), name || dl.suggestedFilename()); await dl.saveAs(p); return { path: p, name: dl.suggestedFilename(), bytes: readFileSync(p) }; };
+const near = (a, b, tol = 12) => a.every((v, i) => Math.abs(v - b[i]) <= tol);
+
+Object.assign(custom, {
+  async 'image-converter'(page) {
+    const dir = tmp(); const png = await makeImage(page, join(dir, 'pic.png')); await pickFile(page, png, 'Choose images'); await page.waitForSelector('.ut-img img'); await page.locator('#tool-root select').first().selectOption('image/jpeg'); await page.waitForTimeout(600);
+    const d = await saveDownload(page, () => page.locator('.ut-img button').first().click()); assert.equal(d.name, 'pic.jpg'); assert.deepEqual([...d.bytes.slice(0, 3)], [0xFF, 0xD8, 0xFF]); const im = await decode(page, d.path); assert.deepEqual([im.w, im.h], [400, 300]); assert.ok(near(im.at(50, 50), [214, 37, 37, 255]) && near(im.at(350, 50), [37, 87, 214, 255]));
+    await page.locator('#tool-root select').first().selectOption('image/webp'); await page.waitForTimeout(600); const w = await saveDownload(page, () => page.locator('.ut-img button').first().click()); assert.equal(String.fromCharCode(...w.bytes.slice(8, 12)), 'WEBP');
+  },
+  async 'image-resizer'(page) {
+    const dir = tmp(); await makeImage(page, join(dir, 'a.png'), { w: 800, h: 600 }); await makeImage(page, join(dir, 'b.png'), { w: 200, h: 100 }); const [fc] = await Promise.all([page.waitForEvent('filechooser'), page.getByRole('button', { name: 'Choose images' }).click()]); await fc.setFiles([join(dir, 'a.png'), join(dir, 'b.png')]); await page.waitForSelector('.ut-img img'); await page.locator('#tool-root input[type=number]').first().fill('400'); await page.waitForTimeout(800);
+    const t = await page.locator('.ut-imglist').innerText(); assert.match(t, /a-400x300\.png/); assert.match(t, /800×600 → 400×300/); assert.match(t, /200×100 → 200×100/, 'small image not enlarged'); const z = await saveDownload(page, () => page.getByRole('button', { name: 'Download all (ZIP)' }).click()); assert.equal(z.name, 'images.zip');
+    const { unzipSync } = await import('../assets/vendor/fflate/fflate.js'); assert.deepEqual(Object.keys(unzipSync(new Uint8Array(z.bytes))).sort(), ['a-400x300.png', 'b-200x100.png']);
+  },
+  async 'image-compressor'(page) {
+    const dir = tmp(); await makeImage(page, join(dir, 'noise.png'), { w: 500, h: 400, paint: "for (let i=0;i<w;i+=4) for (let j=0;j<h;j+=4) { x.fillStyle='hsl('+((i*7+j*3)%360)+',70%,'+(30+((i+j)%40))+'%)'; x.fillRect(i,j,4,4); }" }); const orig = readFileSync(join(dir, 'noise.png')).length;
+    await pickFile(page, join(dir, 'noise.png'), 'Choose images'); await page.waitForSelector('.ut-img img'); await page.waitForTimeout(500); const t = await page.locator('.ut-imglist').innerText(); const m = t.match(/([\d.]+) (KB|MB|B) → ([\d.]+) (KB|MB|B)/); assert.ok(m, t); const toB = (n, u) => Number(n) * ({ B: 1, KB: 1024, MB: 1048576 })[u]; assert.ok(toB(m[3], m[4]) < toB(m[1], m[2]) * 0.8, `expected savings: ${m[0]}`); assert.match(await page.locator('.ut-stats').innerText(), /Change\s*−\d+ %/);
+  },
+  async 'image-metadata-remover'(page) {
+    const dir = tmp(); const jpg = join(dir, 'photo.jpg'); await makeImage(page, jpg, { type: 'image/jpeg' }); writeFileSync(jpg, addExif(new Uint8Array(readFileSync(jpg)))); assert.equal(IMG.readExif(readFileSync(jpg)).gps.lat, 52.5);
+    await pickFile(page, jpg, 'Choose images'); await page.waitForSelector('.ut-img img'); const t = await page.locator('.ut-imglist').innerText(); assert.match(t, /GPS location 52\.5000, 13\.4000/); assert.match(t, /device: Canon/); assert.match(t, /EXIF/);
+    const d = await saveDownload(page, () => page.locator('.ut-img button').first().click()); assert.equal(d.name, 'photo-clean.jpg'); const ex = IMG.readExif(d.bytes); assert.equal(ex.gps, undefined); assert.equal(ex.Make, undefined); assert.equal(ex.Orientation, 6, 'rotation kept'); const im = await decode(page, d.path); assert.deepEqual([im.w, im.h].sort(), [300, 400], 'still a valid image'); assert.ok(d.bytes.length < readFileSync(jpg).length);
+    await page.getByLabel('Keep the rotation flag (recommended, so the photo is not turned)').uncheck(); await page.waitForTimeout(600); const d2 = await saveDownload(page, () => page.locator('.ut-img button').first().click()); assert.equal(IMG.readExif(d2.bytes), null);
+  },
+  async 'image-blur-redact'(page) {
+    const dir = tmp(); await makeImage(page, join(dir, 's.png'), { w: 400, h: 200 }); await pickFile(page, join(dir, 's.png'), 'Choose an image'); await page.waitForSelector('canvas.ut-canvas'); await page.locator('#tool-root select').selectOption('black');
+    const box = await page.locator('canvas.ut-canvas').boundingBox(); await page.mouse.move(box.x + box.width * 0.1, box.y + box.height * 0.2); await page.mouse.down(); await page.mouse.move(box.x + box.width * 0.4, box.y + box.height * 0.6, { steps: 5 }); await page.mouse.up();
+    const px = await page.evaluate(() => { const c = document.querySelector('canvas.ut-canvas'); const x = c.getContext('2d'); return [Array.from(x.getImageData(80, 70, 1, 1).data), Array.from(x.getImageData(350, 150, 1, 1).data)]; }); assert.deepEqual(px[0], [0, 0, 0, 255]); assert.ok(near(px[1], [37, 87, 214, 255]), 'outside untouched');
+    await page.getByRole('button', { name: 'Undo' }).click(); assert.ok(near(await page.evaluate(() => Array.from(document.querySelector('canvas.ut-canvas').getContext('2d').getImageData(80, 70, 1, 1).data)), [214, 37, 37, 255]), 'undo restores');
+    const d = await saveDownload(page, () => page.getByRole('button', { name: 'Download PNG' }).click()); assert.equal(d.name, 's-redacted.png'); assert.deepEqual([...d.bytes.slice(1, 4)], [80, 78, 71]);
+  },
+  async 'image-crop-rotate-flip'(page) {
+    const dir = tmp(); await makeImage(page, join(dir, 'c.png'), { w: 400, h: 200 }); await pickFile(page, join(dir, 'c.png'), 'Choose an image'); await page.waitForSelector('canvas.ut-canvas'); await page.getByRole('button', { name: '↻ 90°' }).click(); assert.match(await page.locator('.pt-hint').first().innerText(), /200 × 400/);
+    await page.getByRole('button', { name: 'Flip horizontally' }).click(); const box = await page.locator('canvas.ut-canvas').boundingBox(); await page.mouse.move(box.x + 10, box.y + 10); await page.mouse.down(); await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2, { steps: 4 }); await page.mouse.up();
+    const d = await saveDownload(page, () => page.getByRole('button', { name: 'Download PNG' }).click()); const im = await decode(page, d.path); assert.ok(Math.abs(im.w - 90) <= 6 && Math.abs(im.h - 190) <= 6, `crop ${im.w}×${im.h}`);
+  },
+  async 'watermark-images'(page) {
+    const dir = tmp(); await makeImage(page, join(dir, 'w.png'), { w: 600, h: 400, paint: "x.fillStyle='#000'; x.fillRect(0,0,w,h)" }); await pickFile(page, join(dir, 'w.png'), 'Choose images'); await page.waitForSelector('.ut-img img'); await page.waitForTimeout(400);
+    const d = await saveDownload(page, () => page.locator('.ut-img button').first().click()); assert.equal(d.name, 'w-watermarked.png'); const im = await decode(page, d.path); let lit = 0; for (let y = 300; y < 400; y++) for (let x = 400; x < 600; x++) if (im.at(x, y)[0] > 40) lit++; assert.ok(lit > 200, 'text pixels in the bottom-right corner: ' + lit); let top = 0; for (let y = 0; y < 100; y++) for (let x = 0; x < 200; x++) if (im.at(x, y)[0] > 40) top++; assert.equal(top, 0, 'top-left untouched');
+  },
+  async 'favicon-generator'(page) {
+    const dir = tmp(); await makeImage(page, join(dir, 'logo.png'), { w: 512, h: 512 }); await pickFile(page, join(dir, 'logo.png'), 'Choose an image'); await page.waitForSelector('.ut-icons figure'); assert.equal(await page.locator('.ut-icons figure').count(), 6);
+    const z = await saveDownload(page, () => page.getByRole('button', { name: 'Download all (ZIP)' }).click()); const { unzipSync } = await import('../assets/vendor/fflate/fflate.js'); const files = unzipSync(new Uint8Array(z.bytes)); assert.deepEqual(Object.keys(files).sort(), ['apple-touch-icon.png', 'favicon-16x16.png', 'favicon-32x32.png', 'favicon-48x48.png', 'favicon.ico', 'icon-192.png', 'icon-512.png', 'site.webmanifest']);
+    const ico = files['favicon.ico']; const dv = new DataView(ico.buffer, ico.byteOffset); assert.equal(dv.getUint16(2, true), 1); assert.equal(dv.getUint16(4, true), 3); assert.deepEqual([ico[6], ico[22], ico[38]], [16, 32, 48]); const first = dv.getUint32(18, true); assert.deepEqual([...ico.slice(first, first + 4)], [0x89, 0x50, 0x4E, 0x47]); assert.equal(JSON.parse(new TextDecoder().decode(files['site.webmanifest'])).icons.length, 2);
+    const p = join(tmp(), 'a.png'); writeFileSync(p, files['apple-touch-icon.png']); const a = await decode(page, p); assert.deepEqual([a.w, a.h], [180, 180]); assert.equal(a.at(0, 0)[3], 255, 'apple icon is opaque');
+  },
+  async 'wcag-contrast-checker'(page) {
+    assert.match(await page.locator('.ut-cards').innerText(), /6\.\d\d : 1/); assert.match(await page.locator('.ut-stats').innerText(), /✓ AA normal text[\s\S]*✗ AAA normal text[\s\S]*✓ AAA large text/i); const f = page.locator('#tool-root input[type=text]').first(); await f.fill('#777777'); await page.locator('#tool-root input[type=text]').nth(1).fill('#ffffff'); await page.waitForTimeout(200); assert.match(await page.locator('.ut-cards').innerText(), /4\.48 : 1/); assert.match(await page.locator('.ut-stats').innerText(), /✗ AA normal text/i); assert.match(await page.locator('.pt-notice').innerText(), /passes AA: #[0-9A-F]{6}/); await page.getByRole('button', { name: 'Use it' }).click(); await page.waitForTimeout(200); assert.match(await page.locator('.ut-stats').innerText(), /✓ AA normal text/i);
+  },
+  async 'image-palette-extractor'(page) {
+    const dir = tmp(); await makeImage(page, join(dir, 'p.png'), { paint: "x.fillStyle='#e03030'; x.fillRect(0,0,w,h); x.fillStyle='#2040d0'; x.fillRect(0,0,w,h*0.3)" }); await pickFile(page, join(dir, 'p.png'), 'Choose an image'); await page.waitForSelector('.ut-chip'); const chips = await page.locator('.ut-chip').allInnerTexts(); assert.ok(chips[0].includes('#E03030') && chips[0].includes('70 %'), chips[0]); assert.ok(chips[1].includes('#2040D0'), chips[1]);
+  },
+  async 'aspect-ratio-padder'(page) {
+    const dir = tmp(); await makeImage(page, join(dir, 'sq.png'), { w: 100, h: 100 }); await pickFile(page, join(dir, 'sq.png'), 'Choose images'); await page.waitForSelector('.ut-img img'); await page.waitForTimeout(400); assert.match(await page.locator('.ut-imglist').innerText(), /100×100 → 178×100/);
+    const d = await saveDownload(page, () => page.locator('.ut-img button').first().click()); const im = await decode(page, d.path); assert.deepEqual([im.w, im.h], [178, 100]); assert.deepEqual(im.at(2, 50), [255, 255, 255, 255]); assert.ok(near(im.at(60, 50), [214, 37, 37, 255]));
+  },
+  async 'image-to-base64'(page) {
+    const dir = tmp(); const png = await makeImage(page, join(dir, 'i.png'), { w: 16, h: 16 }); await pickFile(page, png, 'Choose an image'); await page.waitForTimeout(300); const v = await out(page).inputValue(); assert.ok(v.startsWith('data:image/png;base64,')); assert.equal(Buffer.from(v.split(',')[1], 'base64').compare(readFileSync(png)), 0);
+    await page.locator('#tool-root select').selectOption('img'); await page.waitForTimeout(100); assert.match(await out(page).inputValue(), /^<img src="data:image\/png;base64,/); await page.locator('#tool-root textarea:not([readonly])').fill(v); await page.waitForTimeout(500); assert.ok(await page.locator('img[alt="Decoded image"]').isVisible());
+  },
+  async 'avatar-circle-cropper'(page) {
+    const dir = tmp(); await makeImage(page, join(dir, 'f.png'), { w: 300, h: 400 }); await pickFile(page, join(dir, 'f.png'), 'Choose an image'); await page.waitForSelector('canvas.ut-canvas'); const d = await saveDownload(page, () => page.getByRole('button', { name: 'Download PNG' }).click()); assert.equal(d.name, 'f-avatar.png'); const im = await decode(page, d.path); assert.deepEqual([im.w, im.h], [512, 512]); assert.equal(im.at(2, 2)[3], 0, 'corner transparent'); assert.equal(im.at(256, 256)[3], 255, 'centre opaque');
+  },
+  async 'screenshot-beautifier'(page) {
+    const dir = tmp(); await makeImage(page, join(dir, 'shot.png'), { w: 300, h: 200 }); await pickFile(page, join(dir, 'shot.png'), 'Choose a screenshot'); await page.waitForSelector('canvas.ut-canvas'); const dims = await page.evaluate(() => { const c = document.querySelector('canvas.ut-canvas'); return [c.width, c.height]; }); assert.deepEqual(dims, [300 + 128, 200 + 38 + 128]);
+    const d = await saveDownload(page, () => page.getByRole('button', { name: 'Download PNG' }).click()); const im = await decode(page, d.path); assert.ok(near(im.at(5, 5), [37, 87, 214, 255], 70), 'gradient corner'); assert.ok(near(im.at(64 + 100, 64 + 38 + 20), [214, 37, 37, 255]), 'screenshot content');
+  },
+  async 'image-diff'(page) {
+    const dir = tmp(); await makeImage(page, join(dir, 'a.png'), { w: 100, h: 100, paint: "x.fillStyle='#fff'; x.fillRect(0,0,w,h)" }); await makeImage(page, join(dir, 'b.png'), { w: 100, h: 100, paint: "x.fillStyle='#fff'; x.fillRect(0,0,w,h); x.fillStyle='#000'; x.fillRect(10,10,20,20)" });
+    const [c1] = await Promise.all([page.waitForEvent('filechooser'), page.locator('#tool-root button', { hasText: 'Choose' }).first().click()]); await c1.setFiles(join(dir, 'a.png')); const [c2] = await Promise.all([page.waitForEvent('filechooser'), page.locator('#tool-root button', { hasText: 'Choose' }).nth(1).click()]); await c2.setFiles(join(dir, 'b.png')); await page.waitForSelector('.ut-stats .ut-stat'); const t = await page.locator('.ut-stats').innerText(); assert.match(t, /Changed pixels\s*400/); assert.match(t, /Share of image\s*4\.00 %/);
+  },
 });
 
 export default custom;

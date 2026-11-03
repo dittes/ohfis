@@ -109,6 +109,26 @@ Fix, convert, merge, compare and reshape CSV and spreadsheet data. Hub: https://
 - [Excel Formula Translator (EN ⇄ DE, FR, ES)](https://ohfis.com/en/excel-formula-translator/): Convert formulas between English, German, French and Spanish Excel, including separators.
 - [Unpivot Table (Crosstab to List)](https://ohfis.com/en/unpivot-table/): Turn a wide crosstab with one column per month into a tidy long list.
 
+## Image Tools
+
+Resize, convert, blur, crop and clean images without uploading them. Hub: https://ohfis.com/en/image-tools/
+
+- [Image Converter (JPG, PNG, WebP, AVIF)](https://ohfis.com/en/image-converter/): Convert images between JPG, PNG, WebP and AVIF in your browser, in batches.
+- [Bulk Image Resizer](https://ohfis.com/en/image-resizer/): Resize many images to a width, height or percentage and download them as a ZIP.
+- [Image Compressor (Reduce Photo File Size)](https://ohfis.com/en/image-compressor/): Shrink JPG, PNG and WebP files with adjustable quality and see the savings.
+- [Remove EXIF & GPS Data from Photos](https://ohfis.com/en/image-metadata-remover/): Strip location, camera and date metadata from JPG, PNG and WebP without re-encoding.
+- [Blur & Redact Parts of an Image](https://ohfis.com/en/image-blur-redact/): Pixelate, blur or black out sensitive areas of a screenshot or photo.
+- [Crop, Rotate & Flip Image](https://ohfis.com/en/image-crop-rotate-flip/): Crop to a shape or ratio, rotate by any angle and mirror images.
+- [Add Watermark to Images](https://ohfis.com/en/watermark-images/): Stamp text across many photos with opacity, position and tiling.
+- [Favicon & App Icon Generator](https://ohfis.com/en/favicon-generator/): Create favicon.ico, PNG icons, Apple touch icon and manifest from one image.
+- [WCAG Contrast Checker](https://ohfis.com/en/wcag-contrast-checker/): Check text and background colours against WCAG AA and AAA and get a passing suggestion.
+- [Color Palette from Image](https://ohfis.com/en/image-palette-extractor/): Pull the dominant colours out of any picture and copy them as HEX or CSS variables.
+- [Add Padding to Fit an Aspect Ratio](https://ohfis.com/en/aspect-ratio-padder/): Add colour, transparent or blurred borders to make images 1:1, 16:9, 4:5 and more.
+- [Image to Base64 & Base64 to Image](https://ohfis.com/en/image-to-base64/): Turn an image into a data URI, HTML or CSS snippet, or render Base64 as a picture.
+- [Circular Avatar & Profile Picture Cropper](https://ohfis.com/en/avatar-circle-cropper/): Crop a headshot into a round profile picture with an optional colour ring.
+- [Screenshot Beautifier (Frame, Shadow, Gradient)](https://ohfis.com/en/screenshot-beautifier/): Wrap screenshots in a macOS, Windows or browser frame on a gradient background.
+- [Image Difference Checker](https://ohfis.com/en/image-diff/): Compare two images and highlight every changed pixel in a colour of your choice.
+
 ## Time & Calendar
 
 Time zones, working days, timestamps, calendar files and timers. Hub: https://ohfis.com/en/time-calendar-tools/

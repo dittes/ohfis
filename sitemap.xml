@@ -1153,6 +1153,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/spreadsheet-csv-tools/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/image-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-tools/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/image-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-tools/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/image-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-tools/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/image-tools/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-tools/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/time-calendar-tools/</loc>
     <lastmod>2026-11-03</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/time-calendar-tools/"/>
@@ -4103,6 +4139,546 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/startup-dilution-calculator/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/startup-dilution-calculator/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/startup-dilution-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/image-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/image-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/image-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/image-converter/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/image-resizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-resizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/image-resizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-resizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/image-resizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-resizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/image-resizer/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-resizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-resizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/image-compressor/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-compressor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/image-compressor/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-compressor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/image-compressor/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-compressor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/image-compressor/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-compressor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-compressor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/image-metadata-remover/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-metadata-remover/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/image-metadata-remover/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-metadata-remover/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/image-metadata-remover/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-metadata-remover/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/image-metadata-remover/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-metadata-remover/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-metadata-remover/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/image-blur-redact/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-blur-redact/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/image-blur-redact/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-blur-redact/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/image-blur-redact/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-blur-redact/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/image-blur-redact/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-blur-redact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-blur-redact/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/image-crop-rotate-flip/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-crop-rotate-flip/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/image-crop-rotate-flip/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-crop-rotate-flip/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/image-crop-rotate-flip/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-crop-rotate-flip/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/image-crop-rotate-flip/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-crop-rotate-flip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-crop-rotate-flip/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/watermark-images/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/watermark-images/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/watermark-images/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/watermark-images/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/watermark-images/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/watermark-images/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/watermark-images/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/watermark-images/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/watermark-images/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/favicon-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/favicon-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/favicon-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/favicon-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/favicon-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/favicon-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/favicon-generator/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/favicon-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/favicon-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/wcag-contrast-checker/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/wcag-contrast-checker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/wcag-contrast-checker/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/wcag-contrast-checker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/wcag-contrast-checker/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/wcag-contrast-checker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/wcag-contrast-checker/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/wcag-contrast-checker/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/wcag-contrast-checker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/image-palette-extractor/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-palette-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/image-palette-extractor/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-palette-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/image-palette-extractor/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-palette-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/image-palette-extractor/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-palette-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-palette-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/aspect-ratio-padder/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/aspect-ratio-padder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/aspect-ratio-padder/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/aspect-ratio-padder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/aspect-ratio-padder/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/aspect-ratio-padder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/aspect-ratio-padder/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/aspect-ratio-padder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/aspect-ratio-padder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/image-to-base64/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-to-base64/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/image-to-base64/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-to-base64/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/image-to-base64/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-to-base64/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/image-to-base64/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-to-base64/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-to-base64/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/avatar-circle-cropper/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/avatar-circle-cropper/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/avatar-circle-cropper/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/avatar-circle-cropper/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/avatar-circle-cropper/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/avatar-circle-cropper/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/avatar-circle-cropper/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/avatar-circle-cropper/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/avatar-circle-cropper/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/screenshot-beautifier/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screenshot-beautifier/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/screenshot-beautifier/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screenshot-beautifier/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/screenshot-beautifier/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screenshot-beautifier/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/screenshot-beautifier/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screenshot-beautifier/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screenshot-beautifier/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/image-diff/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-diff/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/image-diff/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-diff/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/image-diff/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-diff/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/image-diff/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/image-diff/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/image-diff/"/>
   </url>
   <url>
     <loc>https://ohfis.com/en/zero-width-character-remover/</loc>

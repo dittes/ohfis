@@ -229,6 +229,56 @@ Fix, convert, merge, compare and reshape CSV and spreadsheet data. Hub: https://
   Reports often have one column per month or year. Databases, charts and pivot tables want one row per value instead. Choose the columns that identify a row (like product or region) and every other column is turned into rows of attribute and value: Jan, Feb, Mar become a "month" column and the numbers a "amount" column.
   How to use: Paste the wide table. Tick the identifier columns and name the two new columns. Copy or download the long table.
 
+## Image Tools
+
+Resize, convert, blur, crop and clean images without uploading them. Hub: https://ohfis.com/en/image-tools/
+
+- [Image Converter (JPG, PNG, WebP, AVIF)](https://ohfis.com/en/image-converter/): Convert images between JPG, PNG, WebP and AVIF in your browser, in batches.
+  Drop one or many images and convert them to the format you need: WebP for smaller web images, JPG for maximum compatibility, PNG for lossless graphics with transparency, or AVIF where your browser can create it. Quality is adjustable and everything happens on your device, so photos stay private and there is no upload wait.
+  How to use: Drop your images or choose them. Pick the target format and quality. Download single files or everything as a ZIP.
+- [Bulk Image Resizer](https://ohfis.com/en/image-resizer/): Resize many images to a width, height or percentage and download them as a ZIP.
+  Shrink a folder of photos for email or the web: fit them inside a maximum width and height, set an exact size, or scale by a percentage. Aspect ratio is preserved unless you ask for exact dimensions, small images are not enlarged by default, and the output can keep the original format or switch to JPG, PNG or WebP.
+  How to use: Drop your images. Choose how to resize and the output format. Download the results or the ZIP.
+- [Image Compressor (Reduce Photo File Size)](https://ohfis.com/en/image-compressor/): Shrink JPG, PNG and WebP files with adjustable quality and see the savings.
+  Large photos slow down websites and fill mailboxes. Choose WebP or JPG, lower the quality slider until you can just see a difference, then go one step back. Optionally limit the longest side to remove pixels you do not need. The tool shows the before and after size for every file, and keeps the original if compression would not help.
+  How to use: Drop your images. Choose WebP or JPG and a quality. Check the savings and download.
+- [Remove EXIF & GPS Data from Photos](https://ohfis.com/en/image-metadata-remover/): Strip location, camera and date metadata from JPG, PNG and WebP without re-encoding.
+  Photos from phones carry a hidden label: where they were taken, the exact time, the camera or phone model and sometimes a serial number. Drop your pictures to see what was found and get clean copies for sharing. The picture itself is not touched, so quality stays exactly the same.
+  How to use: Drop your photos. Read what was removed for each file. Download the clean copies (or a ZIP).
+- [Blur & Redact Parts of an Image](https://ohfis.com/en/image-blur-redact/): Pixelate, blur or black out sensitive areas of a screenshot or photo.
+  Hide names, faces, account numbers or tokens before you share a screenshot. Drag a rectangle over the area and choose pixelate, blur or a solid black box; undo as many steps as you like and download the result as a PNG.
+  How to use: Drop your image. Choose the effect and strength, then drag over each area to hide. Download the redacted PNG.
+- [Crop, Rotate & Flip Image](https://ohfis.com/en/image-crop-rotate-flip/): Crop to a shape or ratio, rotate by any angle and mirror images.
+  Straighten a crooked horizon, mirror a selfie that came out reversed, or cut a picture to 16:9, 4:3 or a square. Drag on the picture to select the area to keep, rotate in 90° steps or by any angle, flip horizontally or vertically and save as PNG, JPG or WebP.
+  How to use: Drop an image. Rotate, flip and drag the crop area; choose a ratio if you need one. Download as PNG, JPG or WebP.
+- [Add Watermark to Images](https://ohfis.com/en/watermark-images/): Stamp text across many photos with opacity, position and tiling.
+  Protect your pictures or mark drafts: enter a text such as "© Your name", choose a corner, the centre, a repeated pattern or a diagonal tile, adjust size, opacity and colour, and apply it to a whole batch. An outline keeps the text readable on bright and dark areas.
+  How to use: Drop your photos. Enter the text and choose position, size and opacity. Download the watermarked images (ZIP for several).
+- [Favicon & App Icon Generator](https://ohfis.com/en/favicon-generator/): Create favicon.ico, PNG icons, Apple touch icon and manifest from one image.
+  Upload one square logo and download the whole icon set a modern website needs: a multi-size favicon.ico (16, 32 and 48 px), PNG icons for browsers and Android (16 to 512 px), the 180 px Apple touch icon, a web app manifest and the HTML tags to paste into your page. A ZIP contains everything.
+  How to use: Drop a square logo. Adjust padding, background and rounded corners. Download the ZIP and paste the HTML into your <head>.
+- [WCAG Contrast Checker](https://ohfis.com/en/wcag-contrast-checker/): Check text and background colours against WCAG AA and AAA and get a passing suggestion.
+  Check whether your text is readable for people with low vision. Enter a text colour and a background colour in any CSS notation and see the contrast ratio, a live sample and pass or fail for AA and AAA at normal and large text size and for UI components. If the pair fails, a nearby text colour that passes AA is suggested.
+  How to use: Enter the text and background colours. Read the ratio and the five pass/fail results. Use the suggested colour if your pair fails.
+- [Color Palette from Image](https://ohfis.com/en/image-palette-extractor/): Pull the dominant colours out of any picture and copy them as HEX or CSS variables.
+  Build a colour scheme from a logo, photo or product shot. The tool finds the main colours of your picture, shows each with its HEX code and how much of the image it covers, and copies them as a list or as CSS custom properties. In Chrome and Edge an eyedropper can also sample any pixel on your screen.
+  How to use: Drop an image. Choose how many colours you want. Click a colour to copy its HEX code, or copy the whole palette.
+- [Add Padding to Fit an Aspect Ratio](https://ohfis.com/en/aspect-ratio-padder/): Add colour, transparent or blurred borders to make images 1:1, 16:9, 4:5 and more.
+  Social platforms and slides want fixed shapes, and cropping cuts off content. Pad the image instead: choose the target ratio and fill the extra space with a colour, transparency or a blurred enlarged copy of the picture, the style used by many video apps. Batch processing handles a whole set at once.
+  How to use: Drop your images. Choose the aspect ratio and the padding style. Download the padded images.
+- [Image to Base64 & Base64 to Image](https://ohfis.com/en/image-to-base64/): Turn an image into a data URI, HTML or CSS snippet, or render Base64 as a picture.
+  Embed a small icon directly into HTML, CSS or an email, or look at what a long Base64 string from an API really is. Drop an image to get a data URI, a ready <img> tag, a CSS background-image rule or the bare Base64; paste Base64 below to see the picture.
+  How to use: Drop an image and choose the output format. Copy the data URI, HTML tag or CSS. To reverse, paste Base64 into the second box.
+- [Circular Avatar & Profile Picture Cropper](https://ohfis.com/en/avatar-circle-cropper/): Crop a headshot into a round profile picture with an optional colour ring.
+  Make a round avatar for your profile, team page or chat. Drag the photo to centre the face, zoom with the slider, add a coloured ring if you like and download a PNG at 256, 512 or 1024 px with a transparent background outside the circle.
+  How to use: Drop a portrait. Drag to position and zoom; add a ring if wanted. Download the PNG.
+- [Screenshot Beautifier (Frame, Shadow, Gradient)](https://ohfis.com/en/screenshot-beautifier/): Wrap screenshots in a macOS, Windows or browser frame on a gradient background.
+  Turn a plain screenshot into a polished image for documentation, a blog or social media: choose a macOS, Windows or browser window frame, a gradient background, padding, rounded corners and a soft shadow. Paste a screenshot with Ctrl+V and download or copy the result as PNG.
+  How to use: Drop or paste a screenshot. Pick a frame, colours, padding and shadow. Download the PNG or copy it to the clipboard.
+- [Image Difference Checker](https://ohfis.com/en/image-diff/): Compare two images and highlight every changed pixel in a colour of your choice.
+  Spot what changed between two design mockups, screenshots or photos. Load an original and a changed version and every differing pixel is painted in magenta (or a colour you choose); unchanged areas are faded so the differences stand out. You get the share of changed pixels and can download the diff image.
+  How to use: Load image A and image B. Adjust the sensitivity and highlight colour. Read the changed percentage and download the diff.
+
 ## Time & Calendar
 
 Time zones, working days, timestamps, calendar files and timers. Hub: https://ohfis.com/en/time-calendar-tools/
