@@ -162,6 +162,35 @@ Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.
 - [Overhead Cost Allocation Calculator](https://ohfis.com/en/overhead-allocation-calculator/): Allocate shared costs to departments by headcount, floor area or revenue.
 - [Startup Dilution & Cap Table Calculator](https://ohfis.com/en/startup-dilution-calculator/): See founders' ownership after seed, Series A and later rounds.
 
+## IT & Web Tools
+
+Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://ohfis.com/en/it-web-tools/
+
+- [File Checksum Generator (SHA-256, MD5, SHA-1)](https://ohfis.com/en/file-hash-generator/): Calculate and compare file hashes in your browser to verify downloads.
+- [Subnet Calculator (CIDR, Netmask, IP Range)](https://ohfis.com/en/subnet-calculator/): Network, broadcast, usable hosts and subnet splitting for any IPv4 range.
+- [Cron Expression Translator](https://ohfis.com/en/cron-expression-translator/): Translate cron schedules into plain English and see the next run times.
+- [HTTP Status Codes Reference](https://ohfis.com/en/http-status-codes/): Search every HTTP status code with a plain explanation and a fix.
+- [cURL to JavaScript & Python Converter](https://ohfis.com/en/curl-converter/): Turn a curl command into working fetch and Python requests code.
+- [User-Agent String Decoder](https://ohfis.com/en/user-agent-decoder/): Find out browser, OS, device and engine from a user-agent string.
+- [HTML Entity Encoder & Decoder](https://ohfis.com/en/html-entity-encoder/): Convert special characters to HTML entities and back.
+- [Base64 Encoder & Decoder (Text and Files)](https://ohfis.com/en/base64-encoder/): Encode or decode Base64 and data URLs, for text and for files.
+- [Color Converter (HEX, RGB, HSL, CMYK)](https://ohfis.com/en/color-converter/): Convert colours between HEX, RGB, HSL, HSV and CMYK, with picker and eyedropper.
+- [UUID / GUID Generator (v4 & v7)](https://ohfis.com/en/uuid-generator/): Generate batches of secure random UUIDs, including time-sortable v7.
+- [Number Base Converter (Binary, Octal, Decimal, Hex)](https://ohfis.com/en/number-base-converter/): Convert integers between bases 2 to 36, with arbitrary size.
+- [Basic Auth Header Generator](https://ohfis.com/en/basic-auth-header-generator/): Create the Authorization: Basic header from a username and password.
+- [Hex Color Alpha (Opacity to Hex) Calculator](https://ohfis.com/en/hex-alpha-calculator/): Convert opacity percentages to two-digit hex alpha values like 50% = 80.
+- [Meta Viewport Tag Generator](https://ohfis.com/en/meta-viewport-generator/): Build a correct viewport tag for responsive pages.
+- [Favicon HTML Tag Generator](https://ohfis.com/en/favicon-html-generator/): Generate the link tags and manifest for desktop and mobile icons.
+- [URL Query String Builder](https://ohfis.com/en/query-string-builder/): Turn key-value pairs into a correctly percent-encoded URL query string.
+- [Cache Buster URL Generator](https://ohfis.com/en/cache-buster-url-generator/): Append a version or timestamp parameter so browsers fetch the latest file.
+- [SSL Certificate Expiry Checker & Reminder](https://ohfis.com/en/ssl-certificate-expiry-checker/): Read a certificate, see how many days remain and download calendar reminders.
+- [Email Header Analyzer](https://ohfis.com/en/email-header-analyzer/): Trace an email's route, delays and SPF, DKIM and DMARC results.
+- [robots.txt Generator & Validator](https://ohfis.com/en/robots-txt-generator/): Build a robots.txt or check an existing one for syntax mistakes.
+- [Sitemap XML Validator & Formatter](https://ohfis.com/en/sitemap-xml-validator/): Validate a sitemap against the standard and pretty-print it.
+- [Open Graph & Social Share Preview](https://ohfis.com/en/opengraph-preview/): Preview how a link looks on Facebook, X, LinkedIn and Slack and get the meta tags.
+- [CSS Box Shadow Generator](https://ohfis.com/en/css-box-shadow-generator/): Design layered box shadows visually and copy clean CSS.
+- [Regular Expression Explainer & Tester](https://ohfis.com/en/regex-explainer/): Break a regular expression into plain-language parts and test it live.
+
 ## Related sites by the same operator
 
 - [Files Online](https://files-online.com/): More PDF tools and file utilities

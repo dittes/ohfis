@@ -368,6 +368,83 @@ Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.
   Enter your funding rounds with the investment and the pre-money valuation and see what the new investors own, how much of the company the founders keep after every round and what that stake is worth at the round's valuation.
   How to use: Enter each round as name, investment and pre-money valuation. Read the ownership after each round and the chart. Vary valuations to see their effect on dilution.
 
+## IT & Web Tools
+
+Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://ohfis.com/en/it-web-tools/
+
+- [File Checksum Generator (SHA-256, MD5, SHA-1)](https://ohfis.com/en/file-hash-generator/): Calculate and compare file hashes in your browser to verify downloads.
+  Download pages publish a checksum so you can check that the file is exactly what the publisher built. Drop the file here, paste the published value and you immediately see whether they match. SHA-256, SHA-384, SHA-512, SHA-1 and MD5 can be calculated at once, for files or for typed text.
+  How to use: Drop a file (or type text) and choose the algorithms. Optionally paste the checksum from the download page into the compare field. Read the green or red result and copy the hash you need.
+- [Subnet Calculator (CIDR, Netmask, IP Range)](https://ohfis.com/en/subnet-calculator/): Network, broadcast, usable hosts and subnet splitting for any IPv4 range.
+  Enter 192.168.1.10/24 or an address with a mask such as 10.1.2.3 255.255.0.0 and see the network and broadcast address, the first and last usable host, the number of hosts, the wildcard mask, the binary mask, the address class and whether the range is private, loopback or public. Optionally split the network into equal smaller subnets.
+  How to use: Enter an address with a prefix (/24) or a subnet mask. Read the network details. Optionally enter a longer prefix to split the network.
+- [Cron Expression Translator](https://ohfis.com/en/cron-expression-translator/): Translate cron schedules into plain English and see the next run times.
+  What does "30 4 1,15 * 5" do? Paste a crontab schedule and read it in plain English, then check the next dates it will run. Presets cover common schedules such as every 5 minutes, weekdays at 9:00 or the first of every month.
+  How to use: Type or pick a cron expression. Read the plain-English description. Check the list of upcoming runs, in UTC or local time.
+- [HTTP Status Codes Reference](https://ohfis.com/en/http-status-codes/): Search every HTTP status code with a plain explanation and a fix.
+  Search by number or keyword to see what a status code means and what to do about it. All codes from 1xx to 5xx in the IANA registry that matter in practice are listed, grouped by class, each with a short explanation and a hint for fixing it.
+  How to use: Type a code (404) or a keyword (redirect, timeout). Optionally filter by class. Read the explanation and what to try.
+- [cURL to JavaScript & Python Converter](https://ohfis.com/en/curl-converter/): Turn a curl command into working fetch and Python requests code.
+  API docs and browser dev tools give you curl commands. Paste one and get equivalent JavaScript fetch code and Python requests code with the same method, headers, body, basic auth and form fields.
+  How to use: Paste a curl command (in the browser: Network tab → right-click a request → Copy as cURL). Read the generated JavaScript and Python. Copy the code you need.
+- [User-Agent String Decoder](https://ohfis.com/en/user-agent-decoder/): Find out browser, OS, device and engine from a user-agent string.
+  Paste a user-agent string from a log file or support ticket and see the browser and version, operating system, device type, rendering engine and whether it is a bot. Your own user agent is prefilled.
+  How to use: Paste a user-agent string (or use yours). Read the decoded browser, system and device. Treat bot results with care: strings can be faked.
+- [HTML Entity Encoder & Decoder](https://ohfis.com/en/html-entity-encoder/): Convert special characters to HTML entities and back.
+  Show "<b>" as text on a web page, escape user input or decode &amp;eacute; in scraped text. Choose whether to escape only the five characters that matter in HTML (& < > " ') or also every non-ASCII character, as named entities (&eacute;) or as decimal or hexadecimal numbers (&#233;, &#xE9;).
+  How to use: Choose encode or decode. Pick how much to escape. Paste your text and copy the result.
+- [Base64 Encoder & Decoder (Text and Files)](https://ohfis.com/en/base64-encoder/): Encode or decode Base64 and data URLs, for text and for files.
+  Convert text to Base64 or back, or encode any file by dropping it on the page. The tool detects whether your input looks like Base64 and decodes it automatically, recognises binary results such as images and PDFs and lets you download them, and supports the URL-safe alphabet used in JWTs and web links.
+  How to use: Type text, paste Base64, or choose a file. Pick URL-safe, padding and line-length options if needed. Copy the result or download the decoded file.
+- [Color Converter (HEX, RGB, HSL, CMYK)](https://ohfis.com/en/color-converter/): Convert colours between HEX, RGB, HSL, HSV and CMYK, with picker and eyedropper.
+  Type a colour in any common notation (#2557D6, rgb(37 87 214), hsl(223 70% 48%), cmyk(83 59 0 16) or a name such as coral) and get all the others, ready to copy. Use the picker or, in Chrome and Edge, the eyedropper to sample a colour from anywhere on your screen.
+  How to use: Enter a colour or use the picker or eyedropper. Read all formats. Copy the one you need.
+- [UUID / GUID Generator (v4 & v7)](https://ohfis.com/en/uuid-generator/): Generate batches of secure random UUIDs, including time-sortable v7.
+  Create one UUID or ten thousand: version 4 (random) for general use, or version 7, which starts with a timestamp so IDs sort by creation time and keep database indexes fast. Output formats include upper case, without hyphens, Microsoft braces and SQL-quoted lists.
+  How to use: Choose version, quantity and format. Change a setting or press "Generate new batch". Copy the list.
+- [Number Base Converter (Binary, Octal, Decimal, Hex)](https://ohfis.com/en/number-base-converter/): Convert integers between bases 2 to 36, with arbitrary size.
+  Enter a number in any base from 2 to 36 and see it in binary, octal, decimal, hexadecimal and one more base of your choice. Prefixes such as 0x and 0b and underscores are understood, and numbers can be of any size, because the tool uses arbitrary-precision integers instead of floating point.
+  How to use: Enter the number and choose its base. Read the other bases. Copy the value you need.
+- [Basic Auth Header Generator](https://ohfis.com/en/basic-auth-header-generator/): Create the Authorization: Basic header from a username and password.
+  Enter a username and password and get the exact HTTP header, plus the equivalent curl option. Useful for testing APIs, configuring webhooks or setting up a reverse proxy.
+  How to use: Enter username and password. Copy the header or the curl option. Use it over HTTPS only.
+- [Hex Color Alpha (Opacity to Hex) Calculator](https://ohfis.com/en/hex-alpha-calculator/): Convert opacity percentages to two-digit hex alpha values like 50% = 80.
+  Add transparency to a hex colour: enter the opacity in percent, get the two-digit suffix and, with a base colour, the complete 8-digit code (#2557D680). A table lists the usual steps from 0 to 100 percent.
+  How to use: Enter the opacity in percent. Optionally enter the base colour. Copy the suffix or the complete colour.
+- [Meta Viewport Tag Generator](https://ohfis.com/en/meta-viewport-generator/): Build a correct viewport tag for responsive pages.
+  The viewport meta tag tells mobile browsers to use the device width instead of pretending to be a 980-pixel desktop. Choose the options and copy the tag; the generator keeps pinch-zoom enabled because disabling it fails accessibility requirements.
+  How to use: Choose the width and initial scale. Add viewport-fit if you design for notched phones. Copy the tag into your <head>.
+- [Favicon HTML Tag Generator](https://ohfis.com/en/favicon-html-generator/): Generate the link tags and manifest for desktop and mobile icons.
+  Choose which icon files you have and get the right <link> tags, in the order browsers prefer, plus a ready web app manifest. Pair it with the Favicon & App Icon Generator to create the image files themselves.
+  How to use: Enter the folder that holds your icons. Tick the icons you provide and set the theme colour. Copy the tags into <head> and save the manifest.
+- [URL Query String Builder](https://ohfis.com/en/query-string-builder/): Turn key-value pairs into a correctly percent-encoded URL query string.
+  List parameters as key=value lines and get the encoded query string, optionally appended to a base URL. Spaces, ampersands, equals signs, accents and emoji are escaped correctly, and repeated keys can be written as tag=a&tag=b, tag[]=a&tag[]=b or tag=a,b.
+  How to use: Enter parameters as key=value lines. Choose how spaces and repeated keys are written. Copy the query string or the full URL.
+- [Cache Buster URL Generator](https://ohfis.com/en/cache-buster-url-generator/): Append a version or timestamp parameter so browsers fetch the latest file.
+  When you update a stylesheet or script and browsers or a CDN keep serving the old copy, a changed query string forces a fresh download. Paste the URLs, choose a timestamp, random string or fixed version and copy the busted URLs.
+  How to use: Paste the URLs, one per line. Choose the parameter name and value type. Copy the new URLs.
+- [SSL Certificate Expiry Checker & Reminder](https://ohfis.com/en/ssl-certificate-expiry-checker/): Read a certificate, see how many days remain and download calendar reminders.
+  Expired certificates take websites down. Paste a certificate (PEM) and the tool reads who it was issued to and by whom, the alternative names, the signature algorithm and the validity dates, and tells you how many days are left. A download adds reminders 30, 14 and 7 days before expiry to your calendar. If you only know the date, enter that instead.
+  How to use: Paste the certificate, or enter the expiry date. Read the days remaining and the details. Download the reminders for your calendar.
+- [Email Header Analyzer](https://ohfis.com/en/email-header-analyzer/): Trace an email's route, delays and SPF, DKIM and DMARC results.
+  Where did this mail come from, why did it take two hours and is the sender real? Paste the full headers and see the route as a table of hops with the time each server took, the SPF, DKIM and DMARC verdicts, and warnings when the From, Return-Path and Reply-To addresses do not match.
+  How to use: Open the message source (Gmail: ⋮ → Show original) and copy the headers. Paste them here. Read the route, delays and authentication results.
+- [robots.txt Generator & Validator](https://ohfis.com/en/robots-txt-generator/): Build a robots.txt or check an existing one for syntax mistakes.
+  Control which parts of your site crawlers may visit. Build a file from a list of blocked paths, exceptions and your sitemap URL, with an option to block AI-training crawlers, or paste an existing file and see every problem with its line number.
+  How to use: Choose "Check" or "Build". Paste your file, or enter the paths and sitemap URL. Fix the listed problems, or copy and upload the new file to your site's root.
+- [Sitemap XML Validator & Formatter](https://ohfis.com/en/sitemap-xml-validator/): Validate a sitemap against the standard and pretty-print it.
+  Paste your sitemap and learn whether search engines will accept it: well-formed XML, correct namespace, absolute URLs, valid dates, priority and changefreq values, no duplicates and within the size limits. Each problem names the entry. The formatted XML can be copied or downloaded.
+  How to use: Paste your sitemap.xml. Read the list of problems and the entry table. Fix them, and copy the formatted XML.
+- [Open Graph & Social Share Preview](https://ohfis.com/en/opengraph-preview/): Preview how a link looks on Facebook, X, LinkedIn and Slack and get the meta tags.
+  Fill in the title, description, URL and an image and see approximately how the shared link will look on Facebook, X (Twitter), LinkedIn and Slack or Discord. The page also writes the matching <title>, description, canonical, Open Graph and Twitter card tags, and warns when text will be cut off.
+  How to use: Enter title, description, URL and site name. Choose a preview image and enter the public image URL for the tag. Copy the HTML into your page's <head>.
+- [CSS Box Shadow Generator](https://ohfis.com/en/css-box-shadow-generator/): Design layered box shadows visually and copy clean CSS.
+  Soft, realistic shadows are built from several layers. Add as many as you like, move the sliders for offset, blur, spread, colour and opacity, switch a layer to inset and watch the preview change. Copy the finished box-shadow declaration.
+  How to use: Adjust the first layer, or add more layers. Pick page and box colours to judge the result. Copy the CSS.
+- [Regular Expression Explainer & Tester](https://ohfis.com/en/regex-explainer/): Break a regular expression into plain-language parts and test it live.
+  Paste a regular expression and see it explained token by token in nested form: what each group, class, quantifier and anchor means. A test area highlights the matches line by line, so you can see whether it does what you think.
+  How to use: Paste your regular expression and set flags. Read the explanation of each part. Edit the test text to check matches and non-matches.
+
 ## Related sites by the same operator
 
 - [Files Online](https://files-online.com/): More PDF tools and file utilities
