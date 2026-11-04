@@ -94,7 +94,7 @@ export default {
     "short": "Bezplatné nástroje pro PDF, text, tabulky, obrázky, čas a finance v prohlížeči. Nic se nenahrává.",
     "eyebrow": "Zdarma · Soukromě · Bez registrace",
     "h1Html": "Všechny kancelářské nástroje, které potřebujete. <span class=\"s-mark\">Vaše soubory nikdy neopustí vaše zařízení.</span>",
-    "lede": "PDF, text, tabulky, obrázky, data, kalkulačky a pomocníci pro vývojáře. Vše se zpracovává přímo ve vašem zařízení: nic se neposílá na server a nepotřebujete účet.",
+    "lede": "PDF, text, tabulky, obrázky, data, kalkulačky a pomocníci pro vývojáře. Vše se zpracovává přímo ve vašem zařízení: nic se neposílá na server.",
     "ctaPdf": "Zobrazit všechny PDF nástroje",
     "popularTitle": "Všechny PDF nástroje",
     "popularLede": "Vyberte nástroj a přetáhněte soubor. Nic se neinstaluje a nezakládá se žádný účet.",

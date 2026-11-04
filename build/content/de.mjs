@@ -94,7 +94,7 @@ export default {
     "short": "Kostenlose Tools für PDFs, Text, Tabellen, Bilder, Zeit und Finanzen im Browser. Nichts wird hochgeladen.",
     "eyebrow": "Kostenlos · Privat · Ohne Anmeldung",
     "h1Html": "Alle Büro-Tools, die du brauchst. <span class=\"s-mark\">Deine Dateien verlassen nie dein Gerät.</span>",
-    "lede": "PDFs, Text, Tabellen, Bilder, Datum, Rechner und Entwickler-Helfer. Alles wird auf deinem eigenen Gerät verarbeitet: Nichts wird an einen Server gesendet, und ein Konto brauchst du nicht.",
+    "lede": "PDFs, Text, Tabellen, Bilder, Datum, Rechner und Entwickler-Helfer. Alles wird auf deinem eigenen Gerät verarbeitet: Nichts wird an einen Server gesendet.",
     "ctaPdf": "Alle PDF-Tools ansehen",
     "popularTitle": "Alle PDF-Tools",
     "popularLede": "Tool wählen und Datei ablegen. Du musst nichts installieren und kein Konto anlegen.",

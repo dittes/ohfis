@@ -94,7 +94,7 @@ export default {
     "short": "Free tools for PDFs, text, spreadsheets, images, time and finance that run in your browser. Nothing is uploaded.",
     "eyebrow": "Free · Private · No sign-up",
     "h1Html": "Every office tool you need. <span class=\"s-mark\">Your files never leave your device.</span>",
-    "lede": "PDFs, text, spreadsheets, images, dates, calculators and developer helpers. Everything is processed on your own device: nothing is sent to a server, and there is no account.",
+    "lede": "PDFs, text, spreadsheets, images, dates, calculators and developer helpers. Everything is processed on your own device: nothing is sent to a server.",
     "ctaPdf": "See all PDF tools",
     "popularTitle": "All PDF tools",
     "popularLede": "Pick a tool and drop your file. There is nothing to install and no account to create.",

@@ -94,7 +94,7 @@ export default {
     "short": "Darmowe narzędzia do PDF, tekstu, arkuszy, obrazów, czasu i finansów w przeglądarce. Nic nie jest przesyłane.",
     "eyebrow": "Za darmo · Prywatnie · Bez rejestracji",
     "h1Html": "Wszystkie potrzebne narzędzia biurowe. <span class=\"s-mark\">Twoje pliki nigdy nie opuszczają urządzenia.</span>",
-    "lede": "PDF-y, tekst, arkusze, obrazy, daty, kalkulatory i pomocniki dla programistów. Wszystko jest przetwarzane na Twoim własnym urządzeniu: nic nie trafia na serwer i nie potrzebujesz konta.",
+    "lede": "PDF-y, tekst, arkusze, obrazy, daty, kalkulatory i pomocniki dla programistów. Wszystko jest przetwarzane na Twoim własnym urządzeniu: nic nie trafia na serwer.",
     "ctaPdf": "Zobacz wszystkie narzędzia PDF",
     "popularTitle": "Wszystkie narzędzia PDF",
     "popularLede": "Wybierz narzędzie i upuść plik. Nie trzeba nic instalować ani zakładać konta.",
