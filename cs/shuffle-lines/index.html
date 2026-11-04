@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Náhodné promíchání řádků","url":"https://ohfis.com/cs/shuffle-lines/","description":"Zamíchejte seznam do náhodného pořadí férovým algoritmem Fisher-Yates. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Textové nástroje","item":"https://ohfis.com/cs/text-tools/"},{"@type":"ListItem","position":3,"name":"Náhodné promíchání řádků"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Náhodné promíchání řádků","step":[{"@type":"HowToStep","position":1,"text":"Paste your list, one item per line."},{"@type":"HowToStep","position":2,"text":"Read the shuffled order."},{"@type":"HowToStep","position":3,"text":"Press \"Shuffle again\" for a new order, then copy it."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the shuffle really random?","acceptedAnswer":{"@type":"Answer","text":"It uses the browser's secure random number generator and an unbiased algorithm, so every order is equally likely."}},{"@type":"Question","name":"Can I pick a random winner instead?","acceptedAnswer":{"@type":"Answer","text":"Use the Name Picker Wheel in the Team tools to pick one or several names."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Náhodné promíchání řádků","step":[{"@type":"HowToStep","position":1,"text":"Vložte seznam, jedna položka na řádek."},{"@type":"HowToStep","position":2,"text":"Přečtěte si zamíchané pořadí."},{"@type":"HowToStep","position":3,"text":"Stiskněte „Zamíchat znovu“ pro nové pořadí, pak ho zkopírujte."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Je míchání opravdu náhodné?","acceptedAnswer":{"@type":"Answer","text":"Používá bezpečný generátor náhodných čísel prohlížeče a nevychýlený algoritmus, takže každé pořadí je stejně pravděpodobné."}},{"@type":"Question","name":"Mohu místo toho vylosovat vítěze?","acceptedAnswer":{"@type":"Answer","text":"Použijte kolo pro výběr jmen v týmových nástrojích a vyberte jedno či více jmen."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Náhodné promíchání řádků</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Randomise a list of names for a presentation order, shuffle quiz questions or mix a playlist. Paste one item per line and press &quot;Shuffle again&quot; as often as you like.</p><p lang="en">The tool uses the Fisher-Yates algorithm, the only simple method that gives every possible ordering exactly the same probability. Random numbers come from crypto.getRandomValues, the browser's cryptographically secure generator, with rejection sampling to avoid the slight bias of the common modulo trick. Sorting with a random comparator (a popular shortcut) is deliberately not used because it is measurably unfair.</p>
+        
+        <p>Náhodně seřaďte seznam jmen pro pořadí prezentací, zamíchejte otázky kvízu nebo playlist. Vložte jednu položku na řádek a mačkejte „Zamíchat znovu“, kolikrát chcete.</p><p>Nástroj používá algoritmus Fisher-Yates, jedinou jednoduchou metodu, která dává každému možnému uspořádání přesně stejnou pravděpodobnost. Náhodná čísla pocházejí z crypto.getRandomValues, kryptograficky bezpečného generátoru prohlížeče, s odmítavým vzorkováním, aby se předešlo mírnému vychýlení běžného triku s modulem. Řazení s náhodným komparátorem (oblíbená zkratka) se záměrně nepoužívá, protože je měřitelně nespravedlivé.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Paste your list, one item per line.</p></li><li><p lang="en">Read the shuffled order.</p></li><li><p lang="en">Press &quot;Shuffle again&quot; for a new order, then copy it.</p></li></ol>
+        <ol class="s-steps"><li><p>Vložte seznam, jedna položka na řádek.</p></li><li><p>Přečtěte si zamíchané pořadí.</p></li><li><p>Stiskněte „Zamíchat znovu“ pro nové pořadí, pak ho zkopírujte.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Is the shuffle really random?</summary><p lang="en">It uses the browser's secure random number generator and an unbiased algorithm, so every order is equally likely.</p></details>
-          <details><summary lang="en">Can I pick a random winner instead?</summary><p lang="en">Use the Name Picker Wheel in the Team tools to pick one or several names.</p></details>
+          <details open><summary>Je míchání opravdu náhodné?</summary><p>Používá bezpečný generátor náhodných čísel prohlížeče a nevychýlený algoritmus, takže každé pořadí je stejně pravděpodobné.</p></details>
+          <details><summary>Mohu místo toho vylosovat vítěze?</summary><p>Použijte kolo pro výběr jmen v týmových nástrojích a vyberte jedno či více jmen.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

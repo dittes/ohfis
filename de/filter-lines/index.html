@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Zeilen filtern (Text-Grep)","url":"https://ohfis.com/de/filter-lines/","description":"Zeilen behalten oder entfernen, die einen Suchbegriff enthalten oder damit beginnen. Kostenlos, läuft im Browser, nichts wird hochgeladen.","inLanguage":"de","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://ohfis.com/de/"},{"@type":"ListItem","position":2,"name":"Text-Tools","item":"https://ohfis.com/de/text-tools/"},{"@type":"ListItem","position":3,"name":"Zeilen filtern (Text-Grep)"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"So benutzt du es: Zeilen filtern (Text-Grep)","step":[{"@type":"HowToStep","position":1,"text":"Paste your lines."},{"@type":"HowToStep","position":2,"text":"Enter the search term and choose how it should match."},{"@type":"HowToStep","position":3,"text":"Optionally invert the filter, then copy the remaining lines."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I delete all lines containing a word?","acceptedAnswer":{"@type":"Answer","text":"Enter the word and tick \"Keep lines that do NOT match\"."}},{"@type":"Question","name":"Can I use regular expressions?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tick the regular expression option and enter a JavaScript pattern."}},{"@type":"Question","name":"Werden meine Dateien hochgeladen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Datei wird von deinem eigenen Browser geöffnet und verarbeitet. Das kannst du selbst prüfen: Öffne beim Arbeiten den Netzwerk-Tab deines Browsers oder trenne die Internetverbindung, nachdem die Seite geladen ist."}},{"@type":"Question","name":"Ist dieses Tool kostenlos?","acceptedAnswer":{"@type":"Answer","text":"Ja, vollständig. Es gibt keine Anmeldung, keinen Bezahltarif und kein Wasserzeichen auf deinen Dateien."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"So benutzt du es: Zeilen filtern (Text-Grep)","step":[{"@type":"HowToStep","position":1,"text":"Fügen Sie Ihre Zeilen ein."},{"@type":"HowToStep","position":2,"text":"Geben Sie den Suchbegriff ein und wählen Sie die Abgleichsart."},{"@type":"HowToStep","position":3,"text":"Kehren Sie optional den Filter um und kopieren Sie dann die verbleibenden Zeilen."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Wie lösche ich alle Zeilen mit einem bestimmten Wort?","acceptedAnswer":{"@type":"Answer","text":"Geben Sie das Wort ein und haken Sie „Zeilen behalten, die NICHT passen“ an."}},{"@type":"Question","name":"Kann ich reguläre Ausdrücke nutzen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Haken Sie die Option für reguläre Ausdrücke an und geben Sie ein JavaScript-Muster ein."}},{"@type":"Question","name":"Werden meine Dateien hochgeladen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Datei wird von deinem eigenen Browser geöffnet und verarbeitet. Das kannst du selbst prüfen: Öffne beim Arbeiten den Netzwerk-Tab deines Browsers oder trenne die Internetverbindung, nachdem die Seite geladen ist."}},{"@type":"Question","name":"Ist dieses Tool kostenlos?","acceptedAnswer":{"@type":"Answer","text":"Ja, vollständig. Es gibt keine Anmeldung, keinen Bezahltarif und kein Wasserzeichen auf deinen Dateien."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Zum Inhalt springen</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>So funktioniert: Zeilen filtern (Text-Grep)</h2>
-        <p class="pt-hint">Die ausführliche Erklärung ist auf Englisch.</p>
-        <p lang="en">Reduce a log file, a keyword list or an export to just the lines you care about. Type a search term and keep the lines that contain it, start with it, end with it or equal it, or invert the filter to delete those lines instead.</p><p lang="en">This works like the grep command for text you paste. Matching is case-insensitive by default; switching on &quot;regular expression&quot; lets you use full JavaScript patterns such as ^ERROR|WARN$. Invalid patterns show an error message instead of an empty result. The counters tell you how many lines were kept out of the total.</p>
+        
+        <p>Reduzieren Sie eine Logdatei, eine Keyword-Liste oder einen Export auf die Zeilen, die Sie interessieren. Tippen Sie einen Suchbegriff und behalten Sie die Zeilen, die ihn enthalten, damit beginnen, damit enden oder ihm entsprechen, oder kehren Sie den Filter um, um diese Zeilen stattdessen zu löschen.</p><p>Das funktioniert wie der grep-Befehl für eingefügten Text. Der Abgleich ignoriert standardmäßig Groß-/Kleinschreibung; mit „Regulärer Ausdruck“ nutzen Sie vollständige JavaScript-Muster wie ^ERROR|WARN$. Ungültige Muster zeigen eine Fehlermeldung statt eines leeren Ergebnisses. Die Zähler zeigen, wie viele Zeilen von insgesamt behalten wurden.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>So benutzt du es</h2>
-        <ol class="s-steps"><li><p lang="en">Paste your lines.</p></li><li><p lang="en">Enter the search term and choose how it should match.</p></li><li><p lang="en">Optionally invert the filter, then copy the remaining lines.</p></li></ol>
+        <ol class="s-steps"><li><p>Fügen Sie Ihre Zeilen ein.</p></li><li><p>Geben Sie den Suchbegriff ein und wählen Sie die Abgleichsart.</p></li><li><p>Kehren Sie optional den Filter um und kopieren Sie dann die verbleibenden Zeilen.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Häufige Fragen</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How do I delete all lines containing a word?</summary><p lang="en">Enter the word and tick &quot;Keep lines that do NOT match&quot;.</p></details>
-          <details><summary lang="en">Can I use regular expressions?</summary><p lang="en">Yes. Tick the regular expression option and enter a JavaScript pattern.</p></details>
+          <details open><summary>Wie lösche ich alle Zeilen mit einem bestimmten Wort?</summary><p>Geben Sie das Wort ein und haken Sie „Zeilen behalten, die NICHT passen“ an.</p></details>
+          <details><summary>Kann ich reguläre Ausdrücke nutzen?</summary><p>Ja. Haken Sie die Option für reguläre Ausdrücke an und geben Sie ein JavaScript-Muster ein.</p></details>
           <details><summary>Werden meine Dateien hochgeladen?</summary><p>Nein. Die Datei wird von deinem eigenen Browser geöffnet und verarbeitet. Das kannst du selbst prüfen: Öffne beim Arbeiten den Netzwerk-Tab deines Browsers oder trenne die Internetverbindung, nachdem die Seite geladen ist.</p></details>
           <details><summary>Ist dieses Tool kostenlos?</summary><p>Ja, vollständig. Es gibt keine Anmeldung, keinen Bezahltarif und kein Wasserzeichen auf deinen Dateien.</p></details>
         </div>

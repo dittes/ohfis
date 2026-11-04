@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Filtrowanie linii (grep)","url":"https://ohfis.com/pl/filter-lines/","description":"Zachowaj lub usuń linie zawierające szukany tekst. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","inLanguage":"pl","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"Narzędzia tekstowe","item":"https://ohfis.com/pl/text-tools/"},{"@type":"ListItem","position":3,"name":"Filtrowanie linii (grep)"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Filtrowanie linii (grep)","step":[{"@type":"HowToStep","position":1,"text":"Paste your lines."},{"@type":"HowToStep","position":2,"text":"Enter the search term and choose how it should match."},{"@type":"HowToStep","position":3,"text":"Optionally invert the filter, then copy the remaining lines."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I delete all lines containing a word?","acceptedAnswer":{"@type":"Answer","text":"Enter the word and tick \"Keep lines that do NOT match\"."}},{"@type":"Question","name":"Can I use regular expressions?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tick the regular expression option and enter a JavaScript pattern."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Filtrowanie linii (grep)","step":[{"@type":"HowToStep","position":1,"text":"Wklej wiersze."},{"@type":"HowToStep","position":2,"text":"Wpisz szukany termin i wybierz sposób dopasowania."},{"@type":"HowToStep","position":3,"text":"Opcjonalnie odwróć filtr, potem skopiuj pozostałe wiersze."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak usunąć wszystkie wiersze zawierające dane słowo?","acceptedAnswer":{"@type":"Answer","text":"Wpisz słowo i zaznacz „Zachowaj wiersze, które NIE pasują”."}},{"@type":"Question","name":"Czy mogę używać wyrażeń regularnych?","acceptedAnswer":{"@type":"Answer","text":"Tak. Zaznacz opcję wyrażenia regularnego i wpisz wzorzec JavaScript."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Przejdź do treści</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak działa: Filtrowanie linii (grep)</h2>
-        <p class="pt-hint">Szczegółowe wyjaśnienie jest po angielsku.</p>
-        <p lang="en">Reduce a log file, a keyword list or an export to just the lines you care about. Type a search term and keep the lines that contain it, start with it, end with it or equal it, or invert the filter to delete those lines instead.</p><p lang="en">This works like the grep command for text you paste. Matching is case-insensitive by default; switching on &quot;regular expression&quot; lets you use full JavaScript patterns such as ^ERROR|WARN$. Invalid patterns show an error message instead of an empty result. The counters tell you how many lines were kept out of the total.</p>
+        
+        <p>Zredukuj plik logów, listę słów kluczowych lub eksport do samych wierszy, które Cię interesują. Wpisz szukany termin i zachowaj wiersze, które go zawierają, zaczynają się nim, kończą nim lub są mu równe, albo odwróć filtr, by te wiersze usunąć.</p><p>Działa jak polecenie grep dla wklejonego tekstu. Dopasowanie domyślnie nie rozróżnia wielkości liter; włączenie „wyrażenia regularnego” pozwala używać pełnych wzorców JavaScript, jak ^ERROR|WARN$. Nieprawidłowe wzorce pokazują komunikat o błędzie zamiast pustego wyniku. Liczniki mówią, ile wierszy z ogółu zachowano.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak z tego korzystać</h2>
-        <ol class="s-steps"><li><p lang="en">Paste your lines.</p></li><li><p lang="en">Enter the search term and choose how it should match.</p></li><li><p lang="en">Optionally invert the filter, then copy the remaining lines.</p></li></ol>
+        <ol class="s-steps"><li><p>Wklej wiersze.</p></li><li><p>Wpisz szukany termin i wybierz sposób dopasowania.</p></li><li><p>Opcjonalnie odwróć filtr, potem skopiuj pozostałe wiersze.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Najczęstsze pytania</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How do I delete all lines containing a word?</summary><p lang="en">Enter the word and tick &quot;Keep lines that do NOT match&quot;.</p></details>
-          <details><summary lang="en">Can I use regular expressions?</summary><p lang="en">Yes. Tick the regular expression option and enter a JavaScript pattern.</p></details>
+          <details open><summary>Jak usunąć wszystkie wiersze zawierające dane słowo?</summary><p>Wpisz słowo i zaznacz „Zachowaj wiersze, które NIE pasują”.</p></details>
+          <details><summary>Czy mogę używać wyrażeń regularnych?</summary><p>Tak. Zaznacz opcję wyrażenia regularnego i wpisz wzorzec JavaScript.</p></details>
           <details><summary>Czy moje pliki są gdzieś przesyłane?</summary><p>Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony.</p></details>
           <details><summary>Czy to narzędzie jest darmowe?</summary><p>Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach.</p></details>
         </div>

@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Odstranění emoji","url":"https://ohfis.com/cs/emoji-remover/","description":"Odstraňte z textu emoji a piktogramy, nebo vše zredukujte na čisté ASCII. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Textové nástroje","item":"https://ohfis.com/cs/text-tools/"},{"@type":"ListItem","position":3,"name":"Odstranění emoji"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Odstranění emoji","step":[{"@type":"HowToStep","position":1,"text":"Paste the text containing emoji."},{"@type":"HowToStep","position":2,"text":"Optionally enable plain ASCII mode or choose a replacement."},{"@type":"HowToStep","position":3,"text":"Copy the clean text. The counter shows how many characters were removed."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Will it remove normal punctuation or accented letters?","acceptedAnswer":{"@type":"Answer","text":"No, unless you enable the plain ASCII mode, which also strips accents."}},{"@type":"Question","name":"Why do some emoji leave a blank square behind elsewhere?","acceptedAnswer":{"@type":"Answer","text":"Older systems cannot display newer emoji. Removing them here avoids that problem."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Odstranění emoji","step":[{"@type":"HowToStep","position":1,"text":"Vložte text s emoji."},{"@type":"HowToStep","position":2,"text":"Volitelně zapněte režim čistého ASCII nebo zvolte náhradu."},{"@type":"HowToStep","position":3,"text":"Zkopírujte čistý text. Počítadlo ukazuje, kolik znaků bylo odstraněno."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Odstraní běžnou interpunkci nebo písmena s diakritikou?","acceptedAnswer":{"@type":"Answer","text":"Ne, pokud nezapnete režim čistého ASCII, který odstraní i diakritiku."}},{"@type":"Question","name":"Proč některá emoji jinde zanechají prázdný čtvereček?","acceptedAnswer":{"@type":"Answer","text":"Starší systémy neumějí zobrazit novější emoji. Jejich odstranění zde tomuto problému předchází."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Odstranění emoji</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Remove emoji from comments, product descriptions, chat exports or data feeds before importing them into systems that cannot store them. Skin-tone modifiers, flags, keycaps and multi-part emoji such as families are removed completely, with no stray joiner characters left behind.</p><p lang="en">The tool matches the Unicode &quot;Extended Pictographic&quot; property, regional indicator pairs (flags), variation selectors, zero-width joiners and skin-tone modifiers. Digits, # and * stay untouched even though they appear in keycap emoji. A second mode converts the remaining text to plain ASCII by stripping accents and dropping any other non-ASCII symbol, with an optional replacement string.</p>
+        
+        <p>Odstraňte emoji z komentářů, popisů produktů, exportů chatů nebo datových feedů před importem do systémů, které je neumějí uložit. Modifikátory odstínu pleti, vlajky, klávesy a vícedílná emoji, například rodiny, se odstraní úplně, bez zbylých spojovacích znaků.</p><p>Nástroj rozpozná vlastnost Unicode „Extended Pictographic“, dvojice regionálních indikátorů (vlajky), selektory variant, spojky nulové šířky a modifikátory odstínu pleti. Číslice, # a * zůstanou nedotčeny, i když se objevují v emoji kláves. Druhý režim převede zbylý text na čisté ASCII odstraněním diakritiky a zahozením každého jiného symbolu mimo ASCII, s volitelným náhradním řetězcem.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Paste the text containing emoji.</p></li><li><p lang="en">Optionally enable plain ASCII mode or choose a replacement.</p></li><li><p lang="en">Copy the clean text. The counter shows how many characters were removed.</p></li></ol>
+        <ol class="s-steps"><li><p>Vložte text s emoji.</p></li><li><p>Volitelně zapněte režim čistého ASCII nebo zvolte náhradu.</p></li><li><p>Zkopírujte čistý text. Počítadlo ukazuje, kolik znaků bylo odstraněno.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Will it remove normal punctuation or accented letters?</summary><p lang="en">No, unless you enable the plain ASCII mode, which also strips accents.</p></details>
-          <details><summary lang="en">Why do some emoji leave a blank square behind elsewhere?</summary><p lang="en">Older systems cannot display newer emoji. Removing them here avoids that problem.</p></details>
+          <details open><summary>Odstraní běžnou interpunkci nebo písmena s diakritikou?</summary><p>Ne, pokud nezapnete režim čistého ASCII, který odstraní i diakritiku.</p></details>
+          <details><summary>Proč některá emoji jinde zanechají prázdný čtvereček?</summary><p>Starší systémy neumějí zobrazit novější emoji. Jejich odstranění zde tomuto problému předchází.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Losowa kolejność linii","url":"https://ohfis.com/pl/shuffle-lines/","description":"Przetasuj listę w losowej kolejności uczciwym algorytmem Fisher-Yates. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","inLanguage":"pl","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"Narzędzia tekstowe","item":"https://ohfis.com/pl/text-tools/"},{"@type":"ListItem","position":3,"name":"Losowa kolejność linii"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Losowa kolejność linii","step":[{"@type":"HowToStep","position":1,"text":"Paste your list, one item per line."},{"@type":"HowToStep","position":2,"text":"Read the shuffled order."},{"@type":"HowToStep","position":3,"text":"Press \"Shuffle again\" for a new order, then copy it."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the shuffle really random?","acceptedAnswer":{"@type":"Answer","text":"It uses the browser's secure random number generator and an unbiased algorithm, so every order is equally likely."}},{"@type":"Question","name":"Can I pick a random winner instead?","acceptedAnswer":{"@type":"Answer","text":"Use the Name Picker Wheel in the Team tools to pick one or several names."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Losowa kolejność linii","step":[{"@type":"HowToStep","position":1,"text":"Wklej listę, jeden element w wierszu."},{"@type":"HowToStep","position":2,"text":"Przeczytaj przetasowaną kolejność."},{"@type":"HowToStep","position":3,"text":"Naciśnij „Tasuj ponownie” po nową kolejność, potem skopiuj."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy tasowanie jest naprawdę losowe?","acceptedAnswer":{"@type":"Answer","text":"Używa bezpiecznego generatora liczb losowych przeglądarki i nieobciążonego algorytmu, więc każda kolejność jest równie prawdopodobna."}},{"@type":"Question","name":"Czy mogę zamiast tego wylosować zwycięzcę?","acceptedAnswer":{"@type":"Answer","text":"Użyj koła losowania imion w narzędziach zespołowych, by wybrać jedno lub kilka imion."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Przejdź do treści</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak działa: Losowa kolejność linii</h2>
-        <p class="pt-hint">Szczegółowe wyjaśnienie jest po angielsku.</p>
-        <p lang="en">Randomise a list of names for a presentation order, shuffle quiz questions or mix a playlist. Paste one item per line and press &quot;Shuffle again&quot; as often as you like.</p><p lang="en">The tool uses the Fisher-Yates algorithm, the only simple method that gives every possible ordering exactly the same probability. Random numbers come from crypto.getRandomValues, the browser's cryptographically secure generator, with rejection sampling to avoid the slight bias of the common modulo trick. Sorting with a random comparator (a popular shortcut) is deliberately not used because it is measurably unfair.</p>
+        
+        <p>Losowo ułóż listę imion na kolejność prezentacji, przetasuj pytania quizu lub playlistę. Wklej jeden element w wierszu i naciskaj „Tasuj ponownie”, ile razy chcesz.</p><p>Narzędzie używa algorytmu Fishera-Yatesa, jedynej prostej metody dającej każdemu możliwemu uporządkowaniu dokładnie to samo prawdopodobieństwo. Liczby losowe pochodzą z crypto.getRandomValues, kryptograficznie bezpiecznego generatora przeglądarki, z próbkowaniem odrzucającym, by uniknąć lekkiego obciążenia powszechnej sztuczki z modulo. Sortowanie z losowym komparatorem (popularny skrót) celowo nie jest używane, bo jest wymiernie niesprawiedliwe.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak z tego korzystać</h2>
-        <ol class="s-steps"><li><p lang="en">Paste your list, one item per line.</p></li><li><p lang="en">Read the shuffled order.</p></li><li><p lang="en">Press &quot;Shuffle again&quot; for a new order, then copy it.</p></li></ol>
+        <ol class="s-steps"><li><p>Wklej listę, jeden element w wierszu.</p></li><li><p>Przeczytaj przetasowaną kolejność.</p></li><li><p>Naciśnij „Tasuj ponownie” po nową kolejność, potem skopiuj.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Najczęstsze pytania</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Is the shuffle really random?</summary><p lang="en">It uses the browser's secure random number generator and an unbiased algorithm, so every order is equally likely.</p></details>
-          <details><summary lang="en">Can I pick a random winner instead?</summary><p lang="en">Use the Name Picker Wheel in the Team tools to pick one or several names.</p></details>
+          <details open><summary>Czy tasowanie jest naprawdę losowe?</summary><p>Używa bezpiecznego generatora liczb losowych przeglądarki i nieobciążonego algorytmu, więc każda kolejność jest równie prawdopodobna.</p></details>
+          <details><summary>Czy mogę zamiast tego wylosować zwycięzcę?</summary><p>Użyj koła losowania imion w narzędziach zespołowych, by wybrać jedno lub kilka imion.</p></details>
           <details><summary>Czy moje pliki są gdzieś przesyłane?</summary><p>Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony.</p></details>
           <details><summary>Czy to narzędzie jest darmowe?</summary><p>Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach.</p></details>
         </div>
