@@ -89,12 +89,12 @@ export default {
   "home": {
     "search": "Hledat nástroje…",
     "ctaAll": "Procházet všechny nástroje",
-    "title": "OHFIS – Online nástroje zdarma pro PDF, text, tabulky a obrázky (bez nahrávání)",
+    "title": "Ohfis – Online nástroje zdarma pro PDF, text, tabulky a obrázky (bez nahrávání)",
     "desc": "Bezplatné nástroje v prohlížeči: PDF, text a CSV, obrázky, kalkulačky, čas a IT pomocníci. Vše běží ve vašem zařízení, nic se nenahrává.",
     "short": "Bezplatné nástroje pro PDF, text, tabulky, obrázky, čas a finance v prohlížeči. Nic se nenahrává.",
     "eyebrow": "Zdarma · Soukromě · Bez registrace",
-    "h1Html": "Všechny kancelářské nástroje, které potřebujete, <span class=\"s-mark\">bez nahrávání.</span>",
-    "lede": "PDF, text, tabulky, obrázky, data, kalkulačky a pomocníci pro vývojáře. Vše běží v prohlížeči a vaše soubory zůstávají ve vašem zařízení.",
+    "h1Html": "Všechny kancelářské nástroje, které potřebujete. <span class=\"s-mark\">Vaše soubory nikdy neopustí vaše zařízení.</span>",
+    "lede": "PDF, text, tabulky, obrázky, data, kalkulačky a pomocníci pro vývojáře. Vše se zpracovává přímo ve vašem zařízení: nic se neposílá na server a nepotřebujete účet.",
     "ctaPdf": "Zobrazit všechny PDF nástroje",
     "popularTitle": "Všechny PDF nástroje",
     "popularLede": "Vyberte nástroj a přetáhněte soubor. Nic se neinstaluje a nezakládá se žádný účet.",
@@ -105,7 +105,7 @@ export default {
     "familyLede": "Náš sesterský web otevře téměř jakýkoli soubor, od DOCX a ZIP po STL a Parquet, se stejným slibem: bez nahrávání.",
     "faqs": [
       [
-        "Co mohu na OHFIS dělat?",
+        "Co mohu na Ohfis dělat?",
         "Pracovat s PDF (spojovat, dělit, komprimovat, převádět, podepisovat), čistit a převádět text, opravovat data CSV a Excelu, měnit velikost a formát obrázků, počítat data, finance a plány a používat IT nástroje jako hash, cron, podsítě a JWT. Vše běží v prohlížeči."
       ],
       [
@@ -122,7 +122,7 @@ export default {
       ],
       [
         "Můžu to používat offline?",
-        "Ano. Načtený nástroj funguje i bez připojení k internetu. OHFIS si také můžete z prohlížeče nainstalovat jako aplikaci."
+        "Ano. Načtený nástroj funguje i bez připojení k internetu. Ohfis si také můžete z prohlížeče nainstalovat jako aplikaci."
       ]
     ],
     "ctaPrivacy": "Jak zůstává vše soukromé"
@@ -153,14 +153,14 @@ export default {
     ]
   },
   "privacy": {
-    "title": "Zásady ochrany soukromí – OHFIS",
-    "desc": "OHFIS zpracovává vaše soubory v prohlížeči. Bez nahrávání, bez analytiky, bez cookies. Co to přesně znamená.",
+    "title": "Zásady ochrany soukromí – Ohfis",
+    "desc": "Ohfis zpracovává vaše soubory v prohlížeči. Bez nahrávání, bez analytiky, bez cookies. Co to přesně znamená.",
     "h1": "Zásady ochrany soukromí",
-    "html": "<p class=\"s-legal__glance\">OHFIS běží ve vašem prohlížeči. Vaše soubory se nenahrávají a nepoužíváme analytiku, sledování ani cookies.</p>\n      <h2>Co se děje s vašimi soubory</h2>\n      <p>Soubory, které otevřete, se zpracovávají v paměti prohlížeče ve vašem zařízení. Nikdy se neodesílají nám ani nikomu jinému. Neprovozujeme server, který by soubory zpracovával.</p>\n      <p>PDF nástroje, domovská stránka a přehled PDF nástrojů navíc obsahují politiku Content Security Policy, která prohlížeči nařizuje blokovat síťová připojení k jiným serverům. Veškerý kód a data, které tyto nástroje potřebují, včetně rozpoznávání textu, pocházejí přímo z ohfis.com.</p>\n      <h2>Co se ukládá ve vašem zařízení</h2>\n      <ul>\n        <li><strong>Local storage:</strong> vybraný vzhled a jazyk a nastavení zobrazení.</li>\n        <li><strong>IndexedDB:</strong> soubor předávaný z jednoho PDF nástroje do dalšího. Smaže se, jakmile ho další nástroj otevře.</li>\n        <li><strong>Cache storage:</strong> soubory samotné aplikace, aby fungovala offline.</li>\n      </ul>\n      <p>To vše můžete kdykoli odstranit v nastavení prohlížeče, v datech tohoto webu. Nemáme k nim žádný přístup.</p>\n      <h2>Hosting</h2>\n      <p>Tento web je hostován na GitHub Pages. Při návštěvě GitHub zpracovává technické údaje, jako je vaše IP adresa, aby mohl stránky doručit. Viz <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">prohlášení GitHub o ochraně soukromí</a>. Právním základem je náš oprávněný zájem na provozu webu (čl. 6 odst. 1 písm. f GDPR).</p>\n      <h2>Vaše práva</h2>\n      <p>Podle GDPR máte právo na přístup, opravu, výmaz, omezení zpracování, přenositelnost údajů a námitku a také právo podat stížnost u dozorového úřadu. Protože sami osobní údaje neshromažďujeme, obvykle o vás nemáme žádné záznamy. Dotazy rádi zodpovíme na <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a>.</p>\n      <h2>Správce údajů</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Německo</address>"
+    "html": "<p class=\"s-legal__glance\">Ohfis běží ve vašem prohlížeči. Vaše soubory se nenahrávají a nepoužíváme analytiku, sledování ani cookies.</p>\n      <h2>Co se děje s vašimi soubory</h2>\n      <p>Soubory, které otevřete, se zpracovávají v paměti prohlížeče ve vašem zařízení. Nikdy se neodesílají nám ani nikomu jinému. Neprovozujeme server, který by soubory zpracovával.</p>\n      <p>PDF nástroje, domovská stránka a přehled PDF nástrojů navíc obsahují politiku Content Security Policy, která prohlížeči nařizuje blokovat síťová připojení k jiným serverům. Veškerý kód a data, které tyto nástroje potřebují, včetně rozpoznávání textu, pocházejí přímo z ohfis.com.</p>\n      <h2>Co se ukládá ve vašem zařízení</h2>\n      <ul>\n        <li><strong>Local storage:</strong> vybraný vzhled a jazyk a nastavení zobrazení.</li>\n        <li><strong>IndexedDB:</strong> soubor předávaný z jednoho PDF nástroje do dalšího. Smaže se, jakmile ho další nástroj otevře.</li>\n        <li><strong>Cache storage:</strong> soubory samotné aplikace, aby fungovala offline.</li>\n      </ul>\n      <p>To vše můžete kdykoli odstranit v nastavení prohlížeče, v datech tohoto webu. Nemáme k nim žádný přístup.</p>\n      <h2>Hosting</h2>\n      <p>Tento web je hostován na GitHub Pages. Při návštěvě GitHub zpracovává technické údaje, jako je vaše IP adresa, aby mohl stránky doručit. Viz <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">prohlášení GitHub o ochraně soukromí</a>. Právním základem je náš oprávněný zájem na provozu webu (čl. 6 odst. 1 písm. f GDPR).</p>\n      <h2>Vaše práva</h2>\n      <p>Podle GDPR máte právo na přístup, opravu, výmaz, omezení zpracování, přenositelnost údajů a námitku a také právo podat stížnost u dozorového úřadu. Protože sami osobní údaje neshromažďujeme, obvykle o vás nemáme žádné záznamy. Dotazy rádi zodpovíme na <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a>.</p>\n      <h2>Správce údajů</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Německo</address>"
   },
   "imprint": {
-    "title": "Tiráž – OHFIS",
-    "desc": "Právní informace a kontaktní údaje OHFIS.",
+    "title": "Tiráž – Ohfis",
+    "desc": "Právní informace a kontaktní údaje Ohfis.",
     "h1": "Tiráž",
     "html": "<h2>Údaje podle § 5 DDG</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Německo</address>\n      <h2>Kontakt</h2>\n      <p>E-mail: <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a></p>\n      <h2>Odpovědnost za obsah podle § 18 odst. 2 MStV</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin</address>"
   },

@@ -34,7 +34,7 @@ await shot(`<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" vie
 
 // Social card
 const card = `<div style="width:1200px;height:630px;box-sizing:border-box;padding:80px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter Variable',Inter,system-ui,sans-serif;color:#171b24;background:#eef3fd">
-  <div style="display:flex;align-items:center;gap:22px">${sized(LOGO_SVG, 84)}<span style="font-size:52px;font-weight:700;letter-spacing:-.03em">OHFIS</span></div>
+  <div style="display:flex;align-items:center;gap:22px">${sized(LOGO_SVG, 84)}<span style="font-size:52px;font-weight:700;letter-spacing:-.03em">Ohfis</span></div>
   <div>
     <div style="font-size:78px;line-height:1.04;font-weight:700;letter-spacing:-.04em;max-width:960px">Over 250 free tools,<br><span style="color:#2557d6">right in your browser.</span></div>
     <div style="margin-top:28px;font-size:30px;color:#3d4452">Free · No upload · No account · EN · DE · PL · CS</div>

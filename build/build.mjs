@@ -106,7 +106,7 @@ function head({ lang, title, desc, paths, jsonLd = [], useCsp = true, extraCss =
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="${ogType}">
-  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:site_name" content="Ohfis">
   <meta property="og:url" content="${url}">
   <meta property="og:title" content="${e(title)}">
   <meta property="og:description" content="${e(desc)}">
@@ -137,7 +137,7 @@ function header(lang, paths, current) {
   return `<a class="s-skip" href="#main">${e(c.nav.skip)}</a>
   <header class="s-header">
     <div class="s-wrap s-header__row">
-      <a class="s-logo" href="/${lang}/">${LOGO}<span>OHFIS</span></a>
+      <a class="s-logo" href="/${lang}/">${LOGO}<span>Ohfis</span></a>
       <nav class="s-nav" aria-label="${e(c.nav.main)}">
         ${GROUP_ORDER.map(g => `<a href="${hubPath(g, lang)}"${current === g ? ' aria-current="page"' : ''}>${e(groupName(g, lang))}</a>`).join('')}
       </nav>
@@ -245,7 +245,7 @@ function benefitsSection(c) {
 
 // ─── JSON-LD ──────────────────────────────────────────────────────────────────
 
-const ldOrg = { '@context': 'https://schema.org', '@type': 'Organization', '@id': `${SITE}/#org`, name: 'OHFIS', url: `${SITE}/`, logo: `${SITE}/assets/icons/icon-512.png` };
+const ldOrg = { '@context': 'https://schema.org', '@type': 'Organization', '@id': `${SITE}/#org`, name: 'Ohfis', url: `${SITE}/`, logo: `${SITE}/assets/icons/icon-512.png` };
 
 function ldApp(lang, name, desc, path, features = []) {
   return {
@@ -288,21 +288,16 @@ function homePage(lang) {
   const paths = pathsFor('home');
   const chipIds = ['merge', 'compress', 'jpg-to-pdf', 'case-converter', 'character-counter', 'remove-duplicate-lines', 'csv-delimiter-converter', 'unix-timestamp-converter'];
   const chips = chipIds.map(id => toolById(id) ? [toolPath(toolById(id), lang), c.tools[id].name] : utilById(id) ? [utilPath(utilById(id), lang), utilById(id).names[LI[lang]]] : null).filter(Boolean);
-  return `${head({ lang, title: h.title, desc: h.desc, paths, jsonLd: [ldOrg, ldApp(lang, 'OHFIS', h.desc, paths[lang]), ldFaq(h.faqs)] })}
+  return `${head({ lang, title: h.title, desc: h.desc, paths, jsonLd: [ldOrg, ldApp(lang, 'Ohfis', h.desc, paths[lang]), ldFaq(h.faqs)] })}
 <body class="s-page">
   ${header(lang, paths, 'home')}
   <main id="main">
     <section class="s-hero">
       <div class="s-wrap s-hero__grid">
         <div class="s-hero__inner">
-          <p class="s-eyebrow">${e(h.eyebrow)}</p>
           <h1>${h.h1Html}</h1>
           <p class="s-hero__lede">${e(h.lede)}</p>
           <div class="s-search" role="search"><input type="search" id="tool-search" class="s-search__input" placeholder="${e(h.search)}" aria-label="${e(h.search)}" autocomplete="off" data-lang="${lang}"><ul class="s-search__list" id="tool-search-list" hidden></ul></div>
-          <div class="s-hero__cta">
-            <a class="s-btn s-btn--primary" href="#categories">${e(h.ctaAll)}</a>
-            <a class="s-btn s-btn--secondary" href="#privacy">${e(h.ctaPrivacy)}</a>
-          </div>
           <nav class="s-shortcuts" aria-label="${e(h.popularTitle)}">${chips.map(([href, name]) => `<a class="s-chip" href="${href}">${e(name)}</a>`).join('')}</nav>
         </div>
       </div>
@@ -595,7 +590,7 @@ function utilHubPage(lang, g) {
 
 function llmsText(full) {
   const en = content.en; const lines = [];
-  lines.push('# OHFIS', '', `> Free online tools that run entirely in your browser: PDF tools, text tools, CSV and spreadsheet tools, image tools, time and calendar tools, business calculators, IT and web helpers, notes and privacy tools, and team tools. Files and text are processed on the visitor's device and are never uploaded. No account, no watermark, no limits. Available in English, German, Polish and Czech.`, '');
+  lines.push('# Ohfis', '', `> Free online tools that run entirely in your browser: PDF tools, text tools, CSV and spreadsheet tools, image tools, time and calendar tools, business calculators, IT and web helpers, notes and privacy tools, and team tools. Files and text are processed on the visitor's device and are never uploaded. No account, no watermark, no limits. Available in English, German, Polish and Czech.`, '');
   lines.push('## About', '', `- Site: ${SITE}/`, '- Languages: English (/en/), German (/de/), Polish (/pl/), Czech (/cs/). Every URL is translated: the tool name in each language is the URL, for example /en/case-converter/ and /de/gross-und-kleinschreibung-umwandeln/.', '- Privacy: all processing happens in the browser using JavaScript, Canvas, Web Crypto and WebAssembly. There is no server that receives files.', '- Operator: Andreas Dittes, Berlin, Germany. Contact: ohfis@dittes.info', `- Sitemap: ${SITE}/sitemap.xml`, '');
   lines.push('## PDF tools', '');
   for (const t of TOOLS) lines.push(`- [${en.tools[t.id].name}](${SITE}${toolPath(t, 'en')}): ${en.tools[t.id].desc}`);
@@ -657,7 +652,7 @@ function rootPage() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="${e(csp([THEME_BOOT, boot]))}">
-  <title>OHFIS – PDF &amp; file tools · PDF- &amp; Datei-Tools · Narzędzia PDF · PDF nástroje</title>
+  <title>Ohfis – PDF &amp; file tools · PDF- &amp; Datei-Tools · Narzędzia PDF · PDF nástroje</title>
   <meta name="description" content="${e(LANGS.map(l => content[l].home.short).join(' · '))}">
   <link rel="canonical" href="${SITE}/">
   ${LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE}${paths[l]}">`).join('\n  ')}
@@ -671,7 +666,7 @@ function rootPage() {
   <main class="s-chooser">
     <div class="s-chooser__box">
       ${LOGO.replace('<svg', '<svg width="52" height="52"')}
-      <h1>OHFIS</h1>
+      <h1>Ohfis</h1>
       <p>Choose your language · Sprache wählen · Wybierz język · Vyberte jazyk</p>
       <ul>
         ${LANGS.map(l => `<li><a href="/${l}/" hreflang="${l}" lang="${l}" data-set-lang="${l}">${LANG_NAMES[l]}<small>${e(content[l].home.short)}</small></a></li>`).join('\n        ')}
@@ -691,7 +686,7 @@ function notFoundPage() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Page not found – OHFIS</title>
+  <title>Page not found – Ohfis</title>
   <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
   <script>${THEME_BOOT}</script>
   <link rel="stylesheet" href="/assets/css/site.css">
@@ -808,7 +803,7 @@ write('index.html', rootPage());
 write('assets/icons/icon.svg', LOGO_SVG);
 write('favicon.svg', LOGO_SVG);
 write('manifest.webmanifest', JSON.stringify({
-  name: 'OHFIS', short_name: 'OHFIS', description: content.en.home.short, id: '/', start_url: '/en/', scope: '/',
+  name: 'Ohfis', short_name: 'Ohfis', description: content.en.home.short, id: '/', start_url: '/en/', scope: '/',
   display: 'standalone', background_color: '#ffffff', theme_color: '#2557d6', lang: 'en', categories: ['productivity', 'utilities'],
   icons: [
     { src: '/assets/icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },

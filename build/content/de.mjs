@@ -89,12 +89,12 @@ export default {
   "home": {
     "search": "Alle Tools durchsuchen…",
     "ctaAll": "Alle Tools ansehen",
-    "title": "OHFIS – Kostenlose Online-Tools für PDF, Text, Tabellen & Bilder (ohne Upload)",
+    "title": "Ohfis – Kostenlose Online-Tools für PDF, Text, Tabellen & Bilder (ohne Upload)",
     "desc": "Kostenlose Browser-Tools: PDF-Werkzeuge, Text- und CSV-Tools, Bildbearbeitung, Rechner, Zeit- und IT-Helfer. Alles läuft auf deinem Gerät, nichts wird hochgeladen.",
     "short": "Kostenlose Tools für PDFs, Text, Tabellen, Bilder, Zeit und Finanzen im Browser. Nichts wird hochgeladen.",
     "eyebrow": "Kostenlos · Privat · Ohne Anmeldung",
-    "h1Html": "Alle Büro-Tools, die du brauchst, <span class=\"s-mark\">ohne Upload.</span>",
-    "lede": "PDFs, Text, Tabellen, Bilder, Datum, Rechner und Entwickler-Helfer. Alles läuft in deinem Browser, deine Dateien bleiben auf deinem Gerät.",
+    "h1Html": "Alle Büro-Tools, die du brauchst. <span class=\"s-mark\">Deine Dateien verlassen nie dein Gerät.</span>",
+    "lede": "PDFs, Text, Tabellen, Bilder, Datum, Rechner und Entwickler-Helfer. Alles wird auf deinem eigenen Gerät verarbeitet: Nichts wird an einen Server gesendet, und ein Konto brauchst du nicht.",
     "ctaPdf": "Alle PDF-Tools ansehen",
     "popularTitle": "Alle PDF-Tools",
     "popularLede": "Tool wählen und Datei ablegen. Du musst nichts installieren und kein Konto anlegen.",
@@ -105,7 +105,7 @@ export default {
     "familyLede": "Unsere Schwesterseite öffnet fast jede Datei, von DOCX und ZIP bis STL und Parquet, mit demselben Versprechen: kein Upload.",
     "faqs": [
       [
-        "Was kann ich auf OHFIS tun?",
+        "Was kann ich auf Ohfis tun?",
         "PDFs bearbeiten (zusammenfügen, teilen, komprimieren, umwandeln, unterschreiben), Text bereinigen und umwandeln, CSV- und Excel-Daten reparieren, Bilder skalieren und konvertieren, Daten, Finanzen und Zeitpläne berechnen und IT-Helfer wie Hash-, Cron-, Subnetz- und JWT-Tools nutzen. Alles läuft im Browser."
       ],
       [
@@ -122,7 +122,7 @@ export default {
       ],
       [
         "Kann ich das offline nutzen?",
-        "Ja. Einmal geladen, funktioniert ein Tool auch ohne Internetverbindung. Du kannst OHFIS außerdem über deinen Browser als App installieren."
+        "Ja. Einmal geladen, funktioniert ein Tool auch ohne Internetverbindung. Du kannst Ohfis außerdem über deinen Browser als App installieren."
       ]
     ],
     "ctaPrivacy": "So bleibt es privat"
@@ -153,14 +153,14 @@ export default {
     ]
   },
   "privacy": {
-    "title": "Datenschutzerklärung – OHFIS",
-    "desc": "OHFIS verarbeitet deine Dateien in deinem Browser. Kein Upload, keine Analyse-Tools, keine Cookies. Was das im Einzelnen bedeutet.",
+    "title": "Datenschutzerklärung – Ohfis",
+    "desc": "Ohfis verarbeitet deine Dateien in deinem Browser. Kein Upload, keine Analyse-Tools, keine Cookies. Was das im Einzelnen bedeutet.",
     "h1": "Datenschutzerklärung",
-    "html": "<p class=\"s-legal__glance\">OHFIS läuft in deinem Browser. Deine Dateien werden nicht hochgeladen, und wir verwenden weder Analyse-Tools noch Tracking oder Cookies.</p>\n      <h2>Was mit deinen Dateien passiert</h2>\n      <p>Dateien, die du öffnest, werden im Arbeitsspeicher deines Browsers auf deinem eigenen Gerät verarbeitet. Sie werden nie an uns oder an andere gesendet. Wir betreiben keinen Server, der Dateien verarbeitet.</p>\n      <p>Die PDF-Tools, die Startseite und die PDF-Übersicht enthalten außerdem eine Content Security Policy, die deinen Browser anweist, Netzwerkverbindungen zu anderen Servern zu blockieren. Der gesamte Code und alle Daten, die diese Tools brauchen, auch für die Texterkennung, kommen direkt von ohfis.com.</p>\n      <h2>Was auf deinem Gerät gespeichert wird</h2>\n      <ul>\n        <li><strong>Local Storage:</strong> deine Wahl von Farbschema und Sprache sowie Anzeigeeinstellungen.</li>\n        <li><strong>IndexedDB:</strong> eine Datei, die du von einem PDF-Tool an das nächste weitergibst. Sie wird gelöscht, sobald das nächste Tool sie geöffnet hat.</li>\n        <li><strong>Cache Storage:</strong> die Dateien der Anwendung selbst, damit sie offline weiter funktioniert.</li>\n      </ul>\n      <p>Du kannst all das jederzeit in deinen Browsereinstellungen bei den Websitedaten dieser Seite löschen. Wir haben darauf keinen Zugriff.</p>\n      <h2>Hosting</h2>\n      <p>Diese Website wird bei GitHub Pages gehostet. Beim Besuch verarbeitet GitHub technische Daten wie deine IP-Adresse, um die Seiten auszuliefern. Siehe die <a href=\"https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">Datenschutzerklärung von GitHub</a>. Rechtsgrundlage ist unser berechtigtes Interesse am Betrieb der Website (Art. 6 Abs. 1 lit. f DSGVO).</p>\n      <h2>Deine Rechte</h2>\n      <p>Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer Aufsichtsbehörde zu beschweren. Da wir selbst keine personenbezogenen Daten erheben, liegen uns in der Regel keine Daten über dich vor. Fragen beantworten wir gern unter <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a>.</p>\n      <h2>Verantwortlicher</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Deutschland</address>"
+    "html": "<p class=\"s-legal__glance\">Ohfis läuft in deinem Browser. Deine Dateien werden nicht hochgeladen, und wir verwenden weder Analyse-Tools noch Tracking oder Cookies.</p>\n      <h2>Was mit deinen Dateien passiert</h2>\n      <p>Dateien, die du öffnest, werden im Arbeitsspeicher deines Browsers auf deinem eigenen Gerät verarbeitet. Sie werden nie an uns oder an andere gesendet. Wir betreiben keinen Server, der Dateien verarbeitet.</p>\n      <p>Die PDF-Tools, die Startseite und die PDF-Übersicht enthalten außerdem eine Content Security Policy, die deinen Browser anweist, Netzwerkverbindungen zu anderen Servern zu blockieren. Der gesamte Code und alle Daten, die diese Tools brauchen, auch für die Texterkennung, kommen direkt von ohfis.com.</p>\n      <h2>Was auf deinem Gerät gespeichert wird</h2>\n      <ul>\n        <li><strong>Local Storage:</strong> deine Wahl von Farbschema und Sprache sowie Anzeigeeinstellungen.</li>\n        <li><strong>IndexedDB:</strong> eine Datei, die du von einem PDF-Tool an das nächste weitergibst. Sie wird gelöscht, sobald das nächste Tool sie geöffnet hat.</li>\n        <li><strong>Cache Storage:</strong> die Dateien der Anwendung selbst, damit sie offline weiter funktioniert.</li>\n      </ul>\n      <p>Du kannst all das jederzeit in deinen Browsereinstellungen bei den Websitedaten dieser Seite löschen. Wir haben darauf keinen Zugriff.</p>\n      <h2>Hosting</h2>\n      <p>Diese Website wird bei GitHub Pages gehostet. Beim Besuch verarbeitet GitHub technische Daten wie deine IP-Adresse, um die Seiten auszuliefern. Siehe die <a href=\"https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">Datenschutzerklärung von GitHub</a>. Rechtsgrundlage ist unser berechtigtes Interesse am Betrieb der Website (Art. 6 Abs. 1 lit. f DSGVO).</p>\n      <h2>Deine Rechte</h2>\n      <p>Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer Aufsichtsbehörde zu beschweren. Da wir selbst keine personenbezogenen Daten erheben, liegen uns in der Regel keine Daten über dich vor. Fragen beantworten wir gern unter <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a>.</p>\n      <h2>Verantwortlicher</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Deutschland</address>"
   },
   "imprint": {
-    "title": "Impressum – OHFIS",
-    "desc": "Rechtliche Angaben und Kontaktdaten von OHFIS.",
+    "title": "Impressum – Ohfis",
+    "desc": "Rechtliche Angaben und Kontaktdaten von Ohfis.",
     "h1": "Impressum",
     "html": "<h2>Angaben gemäß § 5 DDG</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Deutschland</address>\n      <h2>Kontakt</h2>\n      <p>E-Mail: <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a></p>\n      <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin</address>"
   },

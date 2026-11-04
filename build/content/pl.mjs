@@ -89,12 +89,12 @@ export default {
   "home": {
     "search": "Szukaj narzędzi…",
     "ctaAll": "Przeglądaj wszystkie narzędzia",
-    "title": "OHFIS – Darmowe narzędzia online do PDF, tekstu, arkuszy i obrazów (bez przesyłania)",
+    "title": "Ohfis – Darmowe narzędzia online do PDF, tekstu, arkuszy i obrazów (bez przesyłania)",
     "desc": "Darmowe narzędzia w przeglądarce: PDF, tekst i CSV, obrazy, kalkulatory, czas i pomocniki IT. Wszystko działa na Twoim urządzeniu, nic nie jest przesyłane.",
     "short": "Darmowe narzędzia do PDF, tekstu, arkuszy, obrazów, czasu i finansów w przeglądarce. Nic nie jest przesyłane.",
     "eyebrow": "Za darmo · Prywatnie · Bez rejestracji",
-    "h1Html": "Wszystkie potrzebne narzędzia biurowe, <span class=\"s-mark\">bez przesyłania plików.</span>",
-    "lede": "PDF-y, tekst, arkusze, obrazy, daty, kalkulatory i pomocniki dla programistów. Wszystko działa w przeglądarce, a pliki zostają na Twoim urządzeniu.",
+    "h1Html": "Wszystkie potrzebne narzędzia biurowe. <span class=\"s-mark\">Twoje pliki nigdy nie opuszczają urządzenia.</span>",
+    "lede": "PDF-y, tekst, arkusze, obrazy, daty, kalkulatory i pomocniki dla programistów. Wszystko jest przetwarzane na Twoim własnym urządzeniu: nic nie trafia na serwer i nie potrzebujesz konta.",
     "ctaPdf": "Zobacz wszystkie narzędzia PDF",
     "popularTitle": "Wszystkie narzędzia PDF",
     "popularLede": "Wybierz narzędzie i upuść plik. Nie trzeba nic instalować ani zakładać konta.",
@@ -105,7 +105,7 @@ export default {
     "familyLede": "Nasza siostrzana strona otwiera niemal każdy plik, od DOCX i ZIP po STL i Parquet, z tą samą obietnicą: bez przesyłania.",
     "faqs": [
       [
-        "Co mogę zrobić w OHFIS?",
+        "Co mogę zrobić w Ohfis?",
         "Pracować z plikami PDF (łączyć, dzielić, kompresować, konwertować, podpisywać), czyścić i konwertować tekst, naprawiać dane CSV i Excela, zmieniać rozmiar i format obrazów, liczyć daty, finanse i harmonogramy oraz używać narzędzi IT, takich jak hash, cron, podsieci i JWT. Wszystko działa w przeglądarce."
       ],
       [
@@ -122,7 +122,7 @@ export default {
       ],
       [
         "Czy mogę korzystać offline?",
-        "Tak. Załadowane narzędzie działa dalej bez internetu. Możesz też zainstalować OHFIS jako aplikację z poziomu przeglądarki."
+        "Tak. Załadowane narzędzie działa dalej bez internetu. Możesz też zainstalować Ohfis jako aplikację z poziomu przeglądarki."
       ]
     ],
     "ctaPrivacy": "Jak zachowujemy prywatność"
@@ -153,14 +153,14 @@ export default {
     ]
   },
   "privacy": {
-    "title": "Polityka prywatności – OHFIS",
-    "desc": "OHFIS przetwarza Twoje pliki w przeglądarce. Bez przesyłania, bez analityki, bez cookies. Co to dokładnie oznacza.",
+    "title": "Polityka prywatności – Ohfis",
+    "desc": "Ohfis przetwarza Twoje pliki w przeglądarce. Bez przesyłania, bez analityki, bez cookies. Co to dokładnie oznacza.",
     "h1": "Polityka prywatności",
-    "html": "<p class=\"s-legal__glance\">OHFIS działa w Twojej przeglądarce. Pliki nie są przesyłane, a my nie używamy analityki, śledzenia ani plików cookie.</p>\n      <h2>Co dzieje się z Twoimi plikami</h2>\n      <p>Otwierane pliki są przetwarzane w pamięci przeglądarki na Twoim urządzeniu. Nigdy nie są wysyłane do nas ani do nikogo innego. Nie prowadzimy serwera, który przetwarza pliki.</p>\n      <p>Narzędzia PDF, strona główna i przegląd narzędzi PDF zawierają też politykę Content Security Policy, która nakazuje przeglądarce blokować połączenia z innymi serwerami. Cały kod i dane potrzebne tym narzędziom, także do rozpoznawania tekstu, pochodzą bezpośrednio z ohfis.com.</p>\n      <h2>Co jest zapisywane na Twoim urządzeniu</h2>\n      <ul>\n        <li><strong>Local storage:</strong> wybrany motyw i język oraz ustawienia wyświetlania.</li>\n        <li><strong>IndexedDB:</strong> plik przekazywany z jednego narzędzia PDF do następnego. Jest usuwany, gdy tylko kolejne narzędzie go otworzy.</li>\n        <li><strong>Cache storage:</strong> pliki samej aplikacji, aby działała offline.</li>\n      </ul>\n      <p>Możesz to wszystko usunąć w dowolnej chwili w ustawieniach przeglądarki, w danych tej witryny. Nie mamy do nich dostępu.</p>\n      <h2>Hosting</h2>\n      <p>Ta strona jest hostowana w GitHub Pages. Podczas wizyty GitHub przetwarza dane techniczne, takie jak adres IP, aby dostarczyć strony. Zobacz <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">oświadczenie o prywatności GitHub</a>. Podstawą prawną jest nasz prawnie uzasadniony interes w udostępnianiu strony (art. 6 ust. 1 lit. f RODO).</p>\n      <h2>Twoje prawa</h2>\n      <p>Na mocy RODO masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia oraz sprzeciwu, a także prawo do złożenia skargi do organu nadzorczego. Ponieważ sami nie zbieramy danych osobowych, zwykle nie mamy żadnych danych na Twój temat. Pytania prosimy kierować na adres <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a>.</p>\n      <h2>Administrator</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Niemcy</address>"
+    "html": "<p class=\"s-legal__glance\">Ohfis działa w Twojej przeglądarce. Pliki nie są przesyłane, a my nie używamy analityki, śledzenia ani plików cookie.</p>\n      <h2>Co dzieje się z Twoimi plikami</h2>\n      <p>Otwierane pliki są przetwarzane w pamięci przeglądarki na Twoim urządzeniu. Nigdy nie są wysyłane do nas ani do nikogo innego. Nie prowadzimy serwera, który przetwarza pliki.</p>\n      <p>Narzędzia PDF, strona główna i przegląd narzędzi PDF zawierają też politykę Content Security Policy, która nakazuje przeglądarce blokować połączenia z innymi serwerami. Cały kod i dane potrzebne tym narzędziom, także do rozpoznawania tekstu, pochodzą bezpośrednio z ohfis.com.</p>\n      <h2>Co jest zapisywane na Twoim urządzeniu</h2>\n      <ul>\n        <li><strong>Local storage:</strong> wybrany motyw i język oraz ustawienia wyświetlania.</li>\n        <li><strong>IndexedDB:</strong> plik przekazywany z jednego narzędzia PDF do następnego. Jest usuwany, gdy tylko kolejne narzędzie go otworzy.</li>\n        <li><strong>Cache storage:</strong> pliki samej aplikacji, aby działała offline.</li>\n      </ul>\n      <p>Możesz to wszystko usunąć w dowolnej chwili w ustawieniach przeglądarki, w danych tej witryny. Nie mamy do nich dostępu.</p>\n      <h2>Hosting</h2>\n      <p>Ta strona jest hostowana w GitHub Pages. Podczas wizyty GitHub przetwarza dane techniczne, takie jak adres IP, aby dostarczyć strony. Zobacz <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">oświadczenie o prywatności GitHub</a>. Podstawą prawną jest nasz prawnie uzasadniony interes w udostępnianiu strony (art. 6 ust. 1 lit. f RODO).</p>\n      <h2>Twoje prawa</h2>\n      <p>Na mocy RODO masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia oraz sprzeciwu, a także prawo do złożenia skargi do organu nadzorczego. Ponieważ sami nie zbieramy danych osobowych, zwykle nie mamy żadnych danych na Twój temat. Pytania prosimy kierować na adres <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a>.</p>\n      <h2>Administrator</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Niemcy</address>"
   },
   "imprint": {
-    "title": "Nota prawna – OHFIS",
-    "desc": "Informacje prawne i dane kontaktowe OHFIS.",
+    "title": "Nota prawna – Ohfis",
+    "desc": "Informacje prawne i dane kontaktowe Ohfis.",
     "h1": "Nota prawna",
     "html": "<h2>Informacje zgodnie z § 5 DDG</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Niemcy</address>\n      <h2>Kontakt</h2>\n      <p>E-mail: <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a></p>\n      <h2>Odpowiedzialny za treść zgodnie z § 18 ust. 2 MStV</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin</address>"
   },

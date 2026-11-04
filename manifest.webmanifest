@@ -1,6 +1,6 @@
 {
-  "name": "OHFIS",
-  "short_name": "OHFIS",
+  "name": "Ohfis",
+  "short_name": "Ohfis",
   "description": "Free tools for PDFs, text, spreadsheets, images, time and finance that run in your browser. Nothing is uploaded.",
   "id": "/",
   "start_url": "/en/",

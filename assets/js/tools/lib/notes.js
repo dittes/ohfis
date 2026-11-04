@@ -31,7 +31,7 @@ export async function encryptNote(text, { password = null } = {}) {
 }
 async function deriveKey(password, salt) { const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveKey']); return crypto.subtle.deriveKey({ name: 'PBKDF2', salt, iterations: 210000, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['encrypt', 'decrypt']); }
 export async function decryptNote(payload, secret) {
-  const [v, mode, iv, ct, salt] = payload.split('.'); if (v !== 'v1' || !ct) throw new Error('This is not an OHFIS encrypted note'); let key;
+  const [v, mode, iv, ct, salt] = payload.split('.'); if (v !== 'v1' || !ct) throw new Error('This is not an Ohfis encrypted note'); let key;
   try { if (mode === 'p') key = await deriveKey(secret, unb64u(salt)); else key = await crypto.subtle.importKey('raw', unb64u(secret), 'AES-GCM', false, ['decrypt']); const pt = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: unb64u(iv) }, key, unb64u(ct)); return new TextDecoder().decode(pt); } catch { throw new Error('Wrong key or password, or the note was changed'); }
 }
 

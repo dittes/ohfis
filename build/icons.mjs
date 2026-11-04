@@ -42,7 +42,7 @@ export const ICONS = {
   metadata: '<path d="M4 4h8.5L20 11.5 12 20l-8-8z"/><circle cx="8.5" cy="8.5" r="1.3"/>',
 };
 
-// OHFIS mark, flat: a solid blue tile, a white page with a folded corner and an "O" ring on it
+// Ohfis mark, flat: a solid blue tile, a white page with a folded corner and an "O" ring on it
 // (the first letter, and a hole punch). Two flat colours plus white; no gradients or shadows.
 export const LOGO_TILE = '<rect width="32" height="32" rx="8" fill="#2557D6"/>';
 export const LOGO_GLYPH = '<path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/>';

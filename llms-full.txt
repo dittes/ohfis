@@ -1,4 +1,4 @@
-# OHFIS
+# Ohfis
 
 > Free online tools that run entirely in your browser: PDF tools, text tools, CSV and spreadsheet tools, image tools, time and calendar tools, business calculators, IT and web helpers, notes and privacy tools, and team tools. Files and text are processed on the visitor's device and are never uploaded. No account, no watermark, no limits. Available in English, German, Polish and Czech.
 

@@ -134,7 +134,7 @@ export function fold(line) { // 75 octets per line, continuation lines start wit
 }
 const icsUTC = ms => new Date(ms).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
 export function buildICS({ title, start, end, allDay = false, tz = 'UTC', location = '', description = '', url = '', organizer = '', attendees = [], alarmMinutes = null, rrule = '', uid, now = Date.now(), status = 'CONFIRMED' }) {
-  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//OHFIS//Calendar Event Generator//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', 'BEGIN:VEVENT'];
+  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Ohfis//Calendar Event Generator//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', 'BEGIN:VEVENT'];
   lines.push(`UID:${uid || `${now.toString(36)}-${Math.random().toString(36).slice(2, 10)}@ohfis.com`}`, `DTSTAMP:${icsUTC(now)}`);
   if (allDay) { const s = parseYMD(start.slice(0, 10)); const e = parseYMD((end || start).slice(0, 10)); lines.push(`DTSTART;VALUE=DATE:${ymd(s).replaceAll('-', '')}`, `DTEND;VALUE=DATE:${ymd(addDays(e, 1)).replaceAll('-', '')}`); }
   else { const p = s => s.match(/^(\d{4})-(\d{2})-(\d{2})[T ](\d{2}):(\d{2})/).slice(1).map(Number); const [y, mo, d, h, mi] = p(start); const [y2, mo2, d2, h2, mi2] = p(end || start); const sMs = zonedToUtc(y, mo, d, h, mi, tz), eMs = zonedToUtc(y2, mo2, d2, h2, mi2, tz); if (eMs < sMs) throw new Error('The event ends before it starts'); lines.push(`DTSTART:${icsUTC(sMs)}`, `DTEND:${icsUTC(eMs)}`); }

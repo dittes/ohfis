@@ -22,7 +22,7 @@ test('passphrases come from the EFF list', () => {
 });
 test('encrypted notes round-trip and detect tampering', async () => {
   const msg = 'Geheimnis: Wörld 👋\nzeile 2'; const a = await N.encryptNote(msg); assert.match(a.payload, /^v1\.k\./); assert.ok(a.key.length >= 43); assert.equal(await N.decryptNote(a.payload, a.key), msg);
-  await assert.rejects(() => N.decryptNote(a.payload, 'A'.repeat(43)), /Wrong key/); const bad = a.payload.split('.'); bad[3] = bad[3].slice(0, -2) + (bad[3].endsWith('AA') ? 'BB' : 'AA'); await assert.rejects(() => N.decryptNote(bad.join('.'), a.key), /Wrong key/); await assert.rejects(() => N.decryptNote('garbage', a.key), /not an OHFIS/);
+  await assert.rejects(() => N.decryptNote(a.payload, 'A'.repeat(43)), /Wrong key/); const bad = a.payload.split('.'); bad[3] = bad[3].slice(0, -2) + (bad[3].endsWith('AA') ? 'BB' : 'AA'); await assert.rejects(() => N.decryptNote(bad.join('.'), a.key), /Wrong key/); await assert.rejects(() => N.decryptNote('garbage', a.key), /not an Ohfis/);
   const b = await N.encryptNote(msg, { password: 'correct horse' }); assert.match(b.payload, /^v1\.p\./); assert.equal(b.key, null); assert.equal(await N.decryptNote(b.payload, 'correct horse'), msg); await assert.rejects(() => N.decryptNote(b.payload, 'wrong'), /Wrong key or password/); const c = await N.encryptNote(msg, { password: 'correct horse' }); assert.notEqual(b.payload, c.payload, 'fresh salt and IV every time');
 });
 test('JWT decoding and HMAC verification', async () => {

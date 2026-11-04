@@ -89,12 +89,12 @@ export default {
   "home": {
     "search": "Search all tools…",
     "ctaAll": "Browse all tools",
-    "title": "OHFIS – Free Online Tools for PDFs, Text, Data, Images & More (No Upload)",
+    "title": "Ohfis – Free Online Tools for PDFs, Text, Data, Images & More (No Upload)",
     "desc": "Free browser tools: PDF editor and converters, text and CSV tools, image tools, calculators, time and IT helpers. Everything runs on your device, nothing is uploaded.",
     "short": "Free tools for PDFs, text, spreadsheets, images, time and finance that run in your browser. Nothing is uploaded.",
     "eyebrow": "Free · Private · No sign-up",
-    "h1Html": "Every office tool you need, <span class=\"s-mark\">without the upload.</span>",
-    "lede": "PDFs, text, spreadsheets, images, dates, calculators and developer helpers. Everything runs in your browser and your files stay on your device.",
+    "h1Html": "Every office tool you need. <span class=\"s-mark\">Your files never leave your device.</span>",
+    "lede": "PDFs, text, spreadsheets, images, dates, calculators and developer helpers. Everything is processed on your own device: nothing is sent to a server, and there is no account.",
     "ctaPdf": "See all PDF tools",
     "popularTitle": "All PDF tools",
     "popularLede": "Pick a tool and drop your file. There is nothing to install and no account to create.",
@@ -105,7 +105,7 @@ export default {
     "familyLede": "Our sister site opens almost any file, from DOCX and ZIP to STL and Parquet, with the same no-upload promise.",
     "faqs": [
       [
-        "What can I do on OHFIS?",
+        "What can I do on Ohfis?",
         "Work with PDFs (merge, split, compress, convert, sign), clean and convert text, fix CSV and Excel data, resize and convert images, calculate dates, finances and schedules, and use IT helpers such as hash, cron, subnet and JWT tools. All of it runs in your browser."
       ],
       [
@@ -122,7 +122,7 @@ export default {
       ],
       [
         "Can I use it offline?",
-        "Yes. Once a tool has loaded, it keeps working without an internet connection. You can also install OHFIS as an app from your browser."
+        "Yes. Once a tool has loaded, it keeps working without an internet connection. You can also install Ohfis as an app from your browser."
       ]
     ],
     "ctaPrivacy": "How it stays private"
@@ -153,14 +153,14 @@ export default {
     ]
   },
   "privacy": {
-    "title": "Privacy Policy – OHFIS",
-    "desc": "OHFIS processes your files in your browser. No upload, no analytics, no cookies. Read what that means in detail.",
+    "title": "Privacy Policy – Ohfis",
+    "desc": "Ohfis processes your files in your browser. No upload, no analytics, no cookies. Read what that means in detail.",
     "h1": "Privacy policy",
-    "html": "<p class=\"s-legal__glance\">OHFIS runs in your browser. Your files are not uploaded, and we do not use analytics, tracking or cookies.</p>\n      <h2>What happens to your files</h2>\n      <p>Files you open are processed in your browser's memory on your own device. They are never sent to us or to anyone else. We do not operate a server that processes files.</p>\n      <p>The PDF tools, the home page and the PDF overview also carry a Content Security Policy, which tells your browser to block network connections to other servers. All the code and data these tools need, including text recognition, is served from ohfis.com itself.</p>\n      <h2>What is stored on your device</h2>\n      <ul>\n        <li><strong>Local storage:</strong> your theme and language choice and display preferences.</li>\n        <li><strong>IndexedDB:</strong> a file you pass from one PDF tool to the next. It is deleted as soon as the next tool has opened it.</li>\n        <li><strong>Cache storage:</strong> the app's own files, so it keeps working offline.</li>\n      </ul>\n      <p>You can remove all of this at any time in your browser settings, under the site data for this website. We have no access to any of it.</p>\n      <h2>Hosting</h2>\n      <p>This website is hosted on GitHub Pages. When you visit it, GitHub processes technical data such as your IP address in order to deliver the pages. See the <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">GitHub privacy statement</a>. The legal basis is our legitimate interest in providing the website (Art. 6(1)(f) GDPR).</p>\n      <h2>Your rights</h2>\n      <p>Under the GDPR you have the right to access, rectification, erasure, restriction, data portability and objection, and the right to lodge a complaint with a supervisory authority. Since we do not collect personal data ourselves, we will usually have nothing on file about you. Questions are welcome at <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a>.</p>\n      <h2>Controller</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Germany</address>"
+    "html": "<p class=\"s-legal__glance\">Ohfis runs in your browser. Your files are not uploaded, and we do not use analytics, tracking or cookies.</p>\n      <h2>What happens to your files</h2>\n      <p>Files you open are processed in your browser's memory on your own device. They are never sent to us or to anyone else. We do not operate a server that processes files.</p>\n      <p>The PDF tools, the home page and the PDF overview also carry a Content Security Policy, which tells your browser to block network connections to other servers. All the code and data these tools need, including text recognition, is served from ohfis.com itself.</p>\n      <h2>What is stored on your device</h2>\n      <ul>\n        <li><strong>Local storage:</strong> your theme and language choice and display preferences.</li>\n        <li><strong>IndexedDB:</strong> a file you pass from one PDF tool to the next. It is deleted as soon as the next tool has opened it.</li>\n        <li><strong>Cache storage:</strong> the app's own files, so it keeps working offline.</li>\n      </ul>\n      <p>You can remove all of this at any time in your browser settings, under the site data for this website. We have no access to any of it.</p>\n      <h2>Hosting</h2>\n      <p>This website is hosted on GitHub Pages. When you visit it, GitHub processes technical data such as your IP address in order to deliver the pages. See the <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">GitHub privacy statement</a>. The legal basis is our legitimate interest in providing the website (Art. 6(1)(f) GDPR).</p>\n      <h2>Your rights</h2>\n      <p>Under the GDPR you have the right to access, rectification, erasure, restriction, data portability and objection, and the right to lodge a complaint with a supervisory authority. Since we do not collect personal data ourselves, we will usually have nothing on file about you. Questions are welcome at <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a>.</p>\n      <h2>Controller</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Germany</address>"
   },
   "imprint": {
-    "title": "Imprint – OHFIS",
-    "desc": "Legal information and contact details for OHFIS.",
+    "title": "Imprint – Ohfis",
+    "desc": "Legal information and contact details for Ohfis.",
     "h1": "Imprint",
     "html": "<h2>Information pursuant to § 5 DDG</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin<br>Germany</address>\n      <h2>Contact</h2>\n      <p>Email: <a href=\"mailto:ohfis@dittes.info\">ohfis@dittes.info</a></p>\n      <h2>Responsible for content under § 18(2) MStV</h2>\n      <address>Andreas Dittes<br>Bautzener Str. 35<br>10829 Berlin</address>"
   },
@@ -168,7 +168,7 @@ export default {
     "merge": {
       "name": "Merge PDF",
       "short": "Combine several PDFs into one file.",
-      "title": "Merge PDF – Combine PDF OHFIS for Free",
+      "title": "Merge PDF – Combine PDF Ohfis for Free",
       "desc": "Merge PDF files into one document in seconds. Put them in the right order and download. Free, no upload and no sign-up.",
       "h1": "Merge PDF files",
       "lede": "Combine several PDFs into one document, in exactly the order you want.",
