@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Formátování tabulek Markdown","url":"https://ohfis.com/cs/markdown-table-formatter/","description":"Zarovnejte neupravené tabulky Markdownu do přehledných mřížek. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Tabulky a CSV","item":"https://ohfis.com/cs/spreadsheet-csv-tools/"},{"@type":"ListItem","position":3,"name":"Formátování tabulek Markdown"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Formátování tabulek Markdown","step":[{"@type":"HowToStep","position":1,"text":"Paste the Markdown table."},{"@type":"HowToStep","position":2,"text":"Optionally choose compact output or force an alignment."},{"@type":"HowToStep","position":3,"text":"Copy the formatted table into your README or docs."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the table have to start with a pipe?","acceptedAnswer":{"@type":"Answer","text":"No. Tables like a|b followed by 1|2 are accepted and written back with outer pipes."}},{"@type":"Question","name":"Can it convert from Excel?","acceptedAnswer":{"@type":"Answer","text":"Use the Table to Markdown converter to turn copied cells into a Markdown table first."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Formátování tabulek Markdown","step":[{"@type":"HowToStep","position":1,"text":"Vložte tabulku v Markdownu."},{"@type":"HowToStep","position":2,"text":"Volitelně zvolte kompaktní výstup nebo vynuťte zarovnání."},{"@type":"HowToStep","position":3,"text":"Zkopírujte formátovanou tabulku do README nebo dokumentace."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Musí tabulka začínat svislicí?","acceptedAnswer":{"@type":"Answer","text":"Ne. Tabulky jako a|b následované 1|2 se přijmou a zapíší zpět s vnějšími svislicemi."}},{"@type":"Question","name":"Umí převádět z Excelu?","acceptedAnswer":{"@type":"Answer","text":"Nejdřív převeďte zkopírované buňky na tabulku v Markdownu převodníkem „Tabulka na Markdown“."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Formátování tabulek Markdown</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">A Markdown table is easy to write and hard to read when the pipes do not line up. Paste your table, even one with missing outer pipes or uneven columns, and get a tidy version with every column padded to the same width. Column alignment markers (:--, :-:, --:) are preserved or can be forced.</p><p lang="en">Cells are split on pipes (escaped \| pipes stay inside cells), the delimiter row is read to learn each column's alignment, rows are padded to the same number of cells, and column widths are measured in characters, so emoji and accents are handled. Compact mode removes padding for the smallest output.</p>
+        
+        <p>Tabulka v Markdownu se snadno píše a špatně čte, když svislice nejsou zarovnané. Vložte tabulku, i s chybějícími vnějšími svislicemi nebo nerovnými sloupci, a získáte upravenou verzi, kde je každý sloupec doplněn na stejnou šířku. Značky zarovnání (:--, :-:, --:) se zachovají nebo je lze vynutit.</p><p>Buňky se dělí na svislicích (escapované | zůstanou v buňkách), oddělovací řádek prozradí zarovnání každého sloupce, řádky se doplní na stejný počet buněk a šířky sloupců se měří ve znacích, takže se zohlední emoji a diakritika. Kompaktní režim odstraní doplnění pro nejmenší výstup.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Paste the Markdown table.</p></li><li><p lang="en">Optionally choose compact output or force an alignment.</p></li><li><p lang="en">Copy the formatted table into your README or docs.</p></li></ol>
+        <ol class="s-steps"><li><p>Vložte tabulku v Markdownu.</p></li><li><p>Volitelně zvolte kompaktní výstup nebo vynuťte zarovnání.</p></li><li><p>Zkopírujte formátovanou tabulku do README nebo dokumentace.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Does the table have to start with a pipe?</summary><p lang="en">No. Tables like a|b followed by 1|2 are accepted and written back with outer pipes.</p></details>
-          <details><summary lang="en">Can it convert from Excel?</summary><p lang="en">Use the Table to Markdown converter to turn copied cells into a Markdown table first.</p></details>
+          <details open><summary>Musí tabulka začínat svislicí?</summary><p>Ne. Tabulky jako a|b následované 1|2 se přijmou a zapíší zpět s vnějšími svislicemi.</p></details>
+          <details><summary>Umí převádět z Excelu?</summary><p>Nejdřív převeďte zkopírované buňky na tabulku v Markdownu převodníkem „Tabulka na Markdown“.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
