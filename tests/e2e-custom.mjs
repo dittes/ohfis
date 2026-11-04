@@ -547,6 +547,27 @@ Object.assign(custom, {
   async 'dual-monitor-matcher'(page) {
     const txt = await rootText(page); assert.ok(/Monitor 1 density\s*108\.8 PPI/.test(txt) && /Monitor 2 density\s*91\.8 PPI/.test(txt), txt.slice(0, 300));
   },
+  async 'sunrise-sunset-calculator'(page) {
+    await page.waitForSelector('[data-result=ready]'); let txt = await rootText(page); assert.ok(/Sunrise\s*\d\d:\d\d/.test(txt) && /Daylight\s*\d+ h \d\d min/.test(txt), txt.slice(0, 300));
+    await page.locator('#tool-root input[type=date]').fill('2024-06-21'); await page.waitForTimeout(300); txt = await rootText(page); const sr = /Sunrise\s*(\d\d):(\d\d)/.exec(txt), ss = /Sunset\s*(\d\d):(\d\d)/.exec(txt); assert.ok(Math.abs((+sr[1] * 60 + +sr[2]) - (4 * 60 + 43)) <= 4, 'Berlin sunrise ' + sr[0]); assert.ok(Math.abs((+ss[1] * 60 + +ss[2]) - (21 * 60 + 33)) <= 4, 'Berlin sunset ' + ss[0]);
+    await page.selectOption('#tool-root select >> nth=0', 'Reykjavik'); await page.locator('#tool-root input[type=date]').fill('2024-12-21'); await page.waitForTimeout(300); assert.ok(/Sunrise\s*1[01]:/.test(await rootText(page)), 'Reykjavik winter sunrise late');
+  },
+  async 'moon-phase-calculator'(page) {
+    await page.locator('#tool-root input[type=date]').fill('2024-01-25'); await page.waitForTimeout(300); const txt = await rootText(page); assert.ok(txt.includes('Full moon') && /Illuminated\s*(9[89]|100) %/.test(txt), txt.slice(0, 300)); await page.locator('#tool-root input[type=date]').fill('2024-01-11'); await page.waitForTimeout(300); assert.ok(/New moon/.test(await rootText(page)));
+  },
+  async 'year-progress-bar'(page) {
+    await page.locator('#tool-root input[type=date]').fill('2024-07-01'); await page.waitForTimeout(300); const txt = await rootText(page); assert.ok(/Year 2024\s*50\.0 % · day 183 of 366 · 183 left/.test(txt), txt.slice(0, 300)); assert.ok(/Days left in the year\s*183/.test(txt));
+    await page.locator('#tool-root input[type=date]').fill('2023-12-31'); await page.waitForTimeout(300); assert.ok(/100\.0 %/.test(await rootText(page)));
+  },
+  async 'fiscal-year-mapper'(page) {
+    await page.locator('#tool-root input[type=date]').fill('2025-02-10'); await page.waitForTimeout(300); let txt = await rootText(page); assert.ok(/Fiscal year\s*FY2024/.test(txt) && /Fiscal quarter\s*Q4/.test(txt) && /2024-04-01 to 2025-03-31/.test(txt), txt.slice(0, 300));
+    await page.getByRole('button', { name: /US federal/ }).click(); await page.waitForTimeout(300); txt = await rootText(page); assert.ok(/Fiscal year\s*FY2025/.test(txt) && /Fiscal quarter\s*Q2/.test(txt), 'US federal: ' + txt.slice(0, 300));
+  },
+  async 'availability-formatter'(page) {
+    await page.locator('#tool-root input[type=date]').fill('2024-03-05'); await page.locator('#tool-root select').first().selectOption('Europe/Berlin'); await page.waitForTimeout(500); const txt = await page.locator('[data-record]').innerText(); assert.ok(txt.includes('09:00–11:30 CET') && txt.includes('03:00–05:30 EST'), txt);
+    await page.locator('#tool-root input[type=date]').fill('2024-03-20'); await page.waitForTimeout(400); assert.ok((await page.locator('[data-record]').innerText()).includes('EDT'), 'DST in New York by 20 March');
+    await page.locator('#tool-root textarea').fill('bad'); await page.waitForTimeout(400); assert.ok(await page.locator('.pt-drop__error:visible').count() > 0);
+  },
 });
 
 export default custom;

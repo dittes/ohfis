@@ -372,6 +372,21 @@ Time zones, working days, timestamps, calendar files and timers. Hub: https://oh
 - [Sprint Schedule Generator](https://ohfis.com/en/sprint-schedule-generator/): Lay out sprint dates, planning days and reviews for a quarter or a year.
   Enter the first sprint start and the sprint length in working days, and get a calendar of sprints with the planning day at the start, review and retrospective on the last day and any public holidays inside each sprint listed for reference. Copy it into a roadmap or download it as CSV.
   How to use: Enter the start date, sprint length and number of sprints. Optionally choose a country to list public holidays. Copy the table or download it as CSV.
+- [Sunrise & Sunset Calculator](https://ohfis.com/en/sunrise-sunset-calculator/): Sunrise, sunset, daylight length and twilight for any place and date.
+  Choose a city or enter coordinates and a date and get sunrise, sunset, solar noon, the length of daylight, how much longer or shorter the day is than yesterday, the golden hour before sunset, and civil and nautical twilight. Times are shown in the time zone you pick, and polar day and polar night are recognised.
+  How to use: Pick a city or enter latitude and longitude. Choose the date and the time zone to display. Read sunrise, sunset, daylight and twilight times.
+- [Moon Phase Calculator](https://ohfis.com/en/moon-phase-calculator/): See the moon phase on any date and the next new and full moons.
+  Enter a date and see the moon's phase name, how much of the disc is lit, the moon's age in days and the dates of the next new and full moons. It works for any year, so you can look up the moon on a birthday or plan a night shoot.
+  How to use: Choose the date. Read the phase, illumination and moon age. Check the next new and full moons.
+- [Year Progress Bar (Days Left in the Year)](https://ohfis.com/en/year-progress-bar/): How much of the year, quarter, month and week has passed, and how many days are left.
+  See at a glance how far the year, the quarter, the month and the week have progressed, with percentages, day numbers and days left, plus the weeks left in the year, the ISO week number and the working days remaining until 31 December (optionally minus public holidays of a country).
+  How to use: Pick a date (today by default). Choose a holiday set if you want working days. Read the progress bars and the days left.
+- [Fiscal Year Calculator (Fiscal Quarter & Period)](https://ohfis.com/en/fiscal-year-mapper/): Find the fiscal year and quarter of a date and map months to fiscal quarters.
+  Choose the month in which your fiscal year starts and a date, and get the fiscal year, the fiscal quarter, the start and end of that fiscal year and how far into it you are. A table maps every calendar month to its fiscal quarter and period. Presets exist for the US federal government, the UK and India, Australia and the plain calendar year.
+  How to use: Choose the first month of the fiscal year and the naming convention. Enter the date. Read the fiscal year, quarter and the month map.
+- [Availability Formatter (Time Slots in Several Time Zones)](https://ohfis.com/en/availability-formatter/): Turn your free time ranges into a message that shows every time zone.
+  List the time ranges you are free on a day, name your time zone and the zones of the other people, and get a neat message to paste into an email or chat: each slot with its local times, the zone abbreviation and a note if it falls on another date. It saves the mental arithmetic when arranging calls across continents.
+  How to use: Pick the date and your time zone. Enter your free ranges and the other zones. Copy the formatted message.
 
 ## Business & Finance
 
