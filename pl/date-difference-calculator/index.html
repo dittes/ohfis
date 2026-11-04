@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Kalkulator różnicy dat","url":"https://ohfis.com/pl/date-difference-calculator/","description":"Dokładny czas między dwiema datami w latach, miesiącach, dniach, tygodniach, godzinach i dniach roboczych. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","inLanguage":"pl","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"Czas i kalendarz","item":"https://ohfis.com/pl/time-calendar-tools/"},{"@type":"ListItem","position":3,"name":"Kalkulator różnicy dat"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Kalkulator różnicy dat","step":[{"@type":"HowToStep","position":1,"text":"Pick the start and end date."},{"@type":"HowToStep","position":2,"text":"Read the difference in the units you need."},{"@type":"HowToStep","position":3,"text":"For holidays and custom weekends, switch to the Working Days Calculator."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the end date included?","acceptedAnswer":{"@type":"Answer","text":"No. The difference between 1 and 2 January is 1 day. Add one if you want to count both days."}},{"@type":"Question","name":"Why is a month not always 30 days?","acceptedAnswer":{"@type":"Answer","text":"Calendar months have 28 to 31 days, so the tool counts whole calendar months and then the leftover days."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Kalkulator różnicy dat","step":[{"@type":"HowToStep","position":1,"text":"Wybierz datę początkową i końcową."},{"@type":"HowToStep","position":2,"text":"Odczytaj różnicę w potrzebnych jednostkach."},{"@type":"HowToStep","position":3,"text":"Dla świąt i własnych weekendów przejdź do kalkulatora dni roboczych."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy data końcowa jest wliczana?","acceptedAnswer":{"@type":"Answer","text":"Nie. Różnica między 1 a 2 stycznia to 1 dzień. Dodaj jeden, jeśli chcesz liczyć oba dni."}},{"@type":"Question","name":"Dlaczego miesiąc nie zawsze ma 30 dni?","acceptedAnswer":{"@type":"Answer","text":"Miesiące kalendarzowe mają od 28 do 31 dni, więc narzędzie liczy pełne miesiące kalendarzowe, a potem pozostałe dni."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Przejdź do treści</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak działa: Kalkulator różnicy dat</h2>
-        <p class="pt-hint">Szczegółowe wyjaśnienie jest po angielsku.</p>
-        <p lang="en">How long until the deadline, how old is the contract, how many days since the incident? Enter two dates and see the span as &quot;2 years, 3 months, 5 days&quot;, as total days, weeks, hours and minutes, and as business days (Monday to Friday).</p><p lang="en">Months are counted on the calendar: starting from the earlier date, whole months are added with the day clamped to the end of shorter months (31 January plus one month is 29 February in a leap year), and the remaining days are what is left over. This avoids the errors of dividing by 30. Business days count every Monday to Friday between the dates; use the Working Days Calculator when public holidays matter.</p>
+        
+        <p>Ile do terminu, ile ma umowa, ile dni od zdarzenia? Wpisz dwie daty i zobacz odstęp jako „2 lata, 3 miesiące, 5 dni”, jako łączne dni, tygodnie, godziny i minuty oraz jako dni robocze (od poniedziałku do piątku).</p><p>Miesiące są liczone kalendarzowo: od wcześniejszej daty dodawane są pełne miesiące, z dniem przycinanym do końca krótszych miesięcy (31 stycznia plus miesiąc to w roku przestępnym 29 lutego), a pozostałe dni to reszta. Unika to błędów dzielenia przez 30. Dni robocze liczą każdy poniedziałek–piątek między datami; użyj kalkulatora dni roboczych, gdy liczą się święta.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak z tego korzystać</h2>
-        <ol class="s-steps"><li><p lang="en">Pick the start and end date.</p></li><li><p lang="en">Read the difference in the units you need.</p></li><li><p lang="en">For holidays and custom weekends, switch to the Working Days Calculator.</p></li></ol>
+        <ol class="s-steps"><li><p>Wybierz datę początkową i końcową.</p></li><li><p>Odczytaj różnicę w potrzebnych jednostkach.</p></li><li><p>Dla świąt i własnych weekendów przejdź do kalkulatora dni roboczych.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Najczęstsze pytania</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Is the end date included?</summary><p lang="en">No. The difference between 1 and 2 January is 1 day. Add one if you want to count both days.</p></details>
-          <details><summary lang="en">Why is a month not always 30 days?</summary><p lang="en">Calendar months have 28 to 31 days, so the tool counts whole calendar months and then the leftover days.</p></details>
+          <details open><summary>Czy data końcowa jest wliczana?</summary><p>Nie. Różnica między 1 a 2 stycznia to 1 dzień. Dodaj jeden, jeśli chcesz liczyć oba dni.</p></details>
+          <details><summary>Dlaczego miesiąc nie zawsze ma 30 dni?</summary><p>Miesiące kalendarzowe mają od 28 do 31 dni, więc narzędzie liczy pełne miesiące kalendarzowe, a potem pozostałe dni.</p></details>
           <details><summary>Czy moje pliki są gdzieś przesyłane?</summary><p>Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony.</p></details>
           <details><summary>Czy to narzędzie jest darmowe?</summary><p>Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach.</p></details>
         </div>

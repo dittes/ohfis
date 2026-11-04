@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Odsazený text na JSON, HTML a XML","url":"https://ohfis.com/cs/outline-converter/","description":"Převeďte odsazenou osnovu na vnořený JSON, HTML seznamy, XML, Markdown nebo YAML. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Textové nástroje","item":"https://ohfis.com/cs/text-tools/"},{"@type":"ListItem","position":3,"name":"Odsazený text na JSON, HTML a XML"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Odsazený text na JSON, HTML a XML","step":[{"@type":"HowToStep","position":1,"text":"Type or paste your outline, indenting children with tabs or spaces."},{"@type":"HowToStep","position":2,"text":"Pick the output format."},{"@type":"HowToStep","position":3,"text":"Copy the generated structure."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How deep can the tree be?","acceptedAnswer":{"@type":"Answer","text":"There is no fixed limit. Each deeper indentation level creates a new level."}},{"@type":"Question","name":"Does it handle mixed tabs and spaces?","acceptedAnswer":{"@type":"Answer","text":"Tabs are converted to the number of spaces you set, so mixed indentation works as long as the visual depth is consistent."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Odsazený text na JSON, HTML a XML","step":[{"@type":"HowToStep","position":1,"text":"Napište nebo vložte osnovu, potomky odsaďte tabulátory nebo mezerami."},{"@type":"HowToStep","position":2,"text":"Zvolte výstupní formát."},{"@type":"HowToStep","position":3,"text":"Zkopírujte vygenerovanou strukturu."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak hluboký může strom být?","acceptedAnswer":{"@type":"Answer","text":"Pevný limit není. Každá hlubší úroveň odsazení vytvoří novou úroveň."}},{"@type":"Question","name":"Zvládne smíšené tabulátory a mezery?","acceptedAnswer":{"@type":"Answer","text":"Tabulátory se převedou na nastavený počet mezer, takže smíšené odsazení funguje, pokud je vizuální hloubka konzistentní."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Odsazený text na JSON, HTML a XML</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Write a tree the easy way (one item per line, indented to show hierarchy) and convert it to a structured format. Typical uses: a menu structure for a website, a folder tree, an org structure or a table of contents.</p><p lang="en">The converter reads the indentation of each line (tabs count as the number of spaces you choose), optionally ignoring list markers such as &quot;-&quot;, &quot;*&quot; or &quot;1.&quot;, and builds a tree using a stack: a line that is indented deeper becomes a child of the previous line, a line at the same or a smaller depth closes the branches above it. The tree is then serialised as JSON with text and children fields, a nested HTML &lt;ul&gt;, XML items, a Markdown list or YAML.</p>
+        
+        <p>Napište strom jednoduše (jedna položka na řádek, odsazením naznačte hierarchii) a převeďte ho do strukturovaného formátu. Typické použití: struktura nabídky webu, strom složek, organizační struktura nebo obsah.</p><p>Převodník čte odsazení každého řádku (tabulátory se počítají jako zvolený počet mezer), volitelně ignoruje značky seznamu jako „-“, „*“ nebo „1.“ a staví strom pomocí zásobníku: hlouběji odsazený řádek se stane potomkem předchozího, řádek ve stejné nebo menší hloubce uzavře větve nad ním. Strom se pak serializuje jako JSON s poli text a children, vnořené HTML &lt;ul&gt;, položky XML, seznam Markdown nebo YAML.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Type or paste your outline, indenting children with tabs or spaces.</p></li><li><p lang="en">Pick the output format.</p></li><li><p lang="en">Copy the generated structure.</p></li></ol>
+        <ol class="s-steps"><li><p>Napište nebo vložte osnovu, potomky odsaďte tabulátory nebo mezerami.</p></li><li><p>Zvolte výstupní formát.</p></li><li><p>Zkopírujte vygenerovanou strukturu.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How deep can the tree be?</summary><p lang="en">There is no fixed limit. Each deeper indentation level creates a new level.</p></details>
-          <details><summary lang="en">Does it handle mixed tabs and spaces?</summary><p lang="en">Tabs are converted to the number of spaces you set, so mixed indentation works as long as the visual depth is consistent.</p></details>
+          <details open><summary>Jak hluboký může strom být?</summary><p>Pevný limit není. Každá hlubší úroveň odsazení vytvoří novou úroveň.</p></details>
+          <details><summary>Zvládne smíšené tabulátory a mezery?</summary><p>Tabulátory se převedou na nastavený počet mezer, takže smíšené odsazení funguje, pokud je vizuální hloubka konzistentní.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

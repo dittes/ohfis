@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Tłumacz alfabetu Morse’a","url":"https://ohfis.com/pl/morse-code-translator/","description":"Tłumacz tekst na alfabet Morse’a i z powrotem, z odtwarzaniem dźwięku. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","inLanguage":"pl","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"Narzędzia tekstowe","item":"https://ohfis.com/pl/text-tools/"},{"@type":"ListItem","position":3,"name":"Tłumacz alfabetu Morse’a"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Tłumacz alfabetu Morse’a","step":[{"@type":"HowToStep","position":1,"text":"Type text or paste Morse code."},{"@type":"HowToStep","position":2,"text":"Read the translation, or press \"Play as sound\"."},{"@type":"HowToStep","position":3,"text":"Adjust the speed and pitch to taste, then copy the result."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I write a space between words in Morse?","acceptedAnswer":{"@type":"Answer","text":"Use a slash (/) or several spaces between words; single spaces separate letters."}},{"@type":"Question","name":"How fast is 15 words per minute?","acceptedAnswer":{"@type":"Answer","text":"It is a comfortable speed for learners. The timing follows the standard PARIS word."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Tłumacz alfabetu Morse’a","step":[{"@type":"HowToStep","position":1,"text":"Wpisz tekst lub wklej alfabet Morse'a."},{"@type":"HowToStep","position":2,"text":"Przeczytaj tłumaczenie lub naciśnij „Odtwórz jako dźwięk”."},{"@type":"HowToStep","position":3,"text":"Dostosuj tempo i ton, potem skopiuj wynik."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak zapisać odstęp między słowami w alfabecie Morse'a?","acceptedAnswer":{"@type":"Answer","text":"Użyj ukośnika (/) lub kilku spacji między słowami; pojedyncze spacje rozdzielają litery."}},{"@type":"Question","name":"Jak szybkie jest 15 słów na minutę?","acceptedAnswer":{"@type":"Answer","text":"To wygodne tempo dla uczących się. Taktowanie opiera się na standardowym słowie PARIS."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Przejdź do treści</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak działa: Tłumacz alfabetu Morse’a</h2>
-        <p class="pt-hint">Szczegółowe wyjaśnienie jest po angielsku.</p>
-        <p lang="en">Type a message to get dots and dashes, or paste Morse code to read it. The direction is detected automatically. Press &quot;Play as sound&quot; to hear the message as beeps at the speed and pitch you choose.</p><p lang="en">Letters, digits and common punctuation are converted with the International Morse table; accented letters are reduced to their base letters (ä → AE, ß → SS). Words are separated by a slash. For audio, the Web Audio API drives a sine oscillator that is switched on for a dot (one unit) or dash (three units) with short ramps to avoid clicks, using the standard timing: one unit between symbols, three between letters and seven between words.</p>
+        
+        <p>Wpisz wiadomość, by uzyskać kropki i kreski, lub wklej alfabet Morse'a, by go przeczytać. Kierunek jest wykrywany automatycznie. Naciśnij „Odtwórz jako dźwięk”, by usłyszeć wiadomość jako piski w wybranym tempie i tonie.</p><p>Litery, cyfry i popularna interpunkcja są konwertowane międzynarodową tabelą Morse'a; litery z akcentami są redukowane do liter podstawowych (ä → AE, ą → A, ß → SS). Słowa są rozdzielane ukośnikiem. Dla dźwięku Web Audio API steruje oscylatorem sinusoidalnym włączanym na kropkę (jedna jednostka) lub kreskę (trzy jednostki) z krótkimi narastaniami, by uniknąć trzasków, według standardowego taktowania: jedna jednostka między znakami, trzy między literami i siedem między słowami.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak z tego korzystać</h2>
-        <ol class="s-steps"><li><p lang="en">Type text or paste Morse code.</p></li><li><p lang="en">Read the translation, or press &quot;Play as sound&quot;.</p></li><li><p lang="en">Adjust the speed and pitch to taste, then copy the result.</p></li></ol>
+        <ol class="s-steps"><li><p>Wpisz tekst lub wklej alfabet Morse'a.</p></li><li><p>Przeczytaj tłumaczenie lub naciśnij „Odtwórz jako dźwięk”.</p></li><li><p>Dostosuj tempo i ton, potem skopiuj wynik.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Najczęstsze pytania</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How do I write a space between words in Morse?</summary><p lang="en">Use a slash (/) or several spaces between words; single spaces separate letters.</p></details>
-          <details><summary lang="en">How fast is 15 words per minute?</summary><p lang="en">It is a comfortable speed for learners. The timing follows the standard PARIS word.</p></details>
+          <details open><summary>Jak zapisać odstęp między słowami w alfabecie Morse'a?</summary><p>Użyj ukośnika (/) lub kilku spacji między słowami; pojedyncze spacje rozdzielają litery.</p></details>
+          <details><summary>Jak szybkie jest 15 słów na minutę?</summary><p>To wygodne tempo dla uczących się. Taktowanie opiera się na standardowym słowie PARIS.</p></details>
           <details><summary>Czy moje pliki są gdzieś przesyłane?</summary><p>Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony.</p></details>
           <details><summary>Czy to narzędzie jest darmowe?</summary><p>Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach.</p></details>
         </div>

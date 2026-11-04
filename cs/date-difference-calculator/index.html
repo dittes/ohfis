@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Kalkulačka rozdílu dat","url":"https://ohfis.com/cs/date-difference-calculator/","description":"Přesný čas mezi dvěma daty v letech, měsících, dnech, týdnech, hodinách a pracovních dnech. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Čas a kalendář","item":"https://ohfis.com/cs/time-calendar-tools/"},{"@type":"ListItem","position":3,"name":"Kalkulačka rozdílu dat"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Kalkulačka rozdílu dat","step":[{"@type":"HowToStep","position":1,"text":"Pick the start and end date."},{"@type":"HowToStep","position":2,"text":"Read the difference in the units you need."},{"@type":"HowToStep","position":3,"text":"For holidays and custom weekends, switch to the Working Days Calculator."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the end date included?","acceptedAnswer":{"@type":"Answer","text":"No. The difference between 1 and 2 January is 1 day. Add one if you want to count both days."}},{"@type":"Question","name":"Why is a month not always 30 days?","acceptedAnswer":{"@type":"Answer","text":"Calendar months have 28 to 31 days, so the tool counts whole calendar months and then the leftover days."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Kalkulačka rozdílu dat","step":[{"@type":"HowToStep","position":1,"text":"Vyberte počáteční a koncové datum."},{"@type":"HowToStep","position":2,"text":"Přečtěte si rozdíl v potřebných jednotkách."},{"@type":"HowToStep","position":3,"text":"Pro svátky a vlastní víkendy přejděte na kalkulačku pracovních dnů."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Počítá se koncové datum?","acceptedAnswer":{"@type":"Answer","text":"Ne. Rozdíl mezi 1. a 2. lednem je 1 den. Přičtěte jedna, chcete-li počítat oba dny."}},{"@type":"Question","name":"Proč nemá měsíc vždy 30 dní?","acceptedAnswer":{"@type":"Answer","text":"Kalendářní měsíce mají 28 až 31 dní, proto nástroj počítá celé kalendářní měsíce a pak zbývající dny."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Kalkulačka rozdílu dat</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">How long until the deadline, how old is the contract, how many days since the incident? Enter two dates and see the span as &quot;2 years, 3 months, 5 days&quot;, as total days, weeks, hours and minutes, and as business days (Monday to Friday).</p><p lang="en">Months are counted on the calendar: starting from the earlier date, whole months are added with the day clamped to the end of shorter months (31 January plus one month is 29 February in a leap year), and the remaining days are what is left over. This avoids the errors of dividing by 30. Business days count every Monday to Friday between the dates; use the Working Days Calculator when public holidays matter.</p>
+        
+        <p>Jak dlouho do termínu, jak stará je smlouva, kolik dní od incidentu? Zadejte dvě data a uvidíte rozdíl jako „2 roky, 3 měsíce, 5 dní“, jako celkové dny, týdny, hodiny a minuty a jako pracovní dny (pondělí až pátek).</p><p>Měsíce se počítají kalendářně: od dřívějšího data se přičítají celé měsíce s dnem ořezaným na konec kratších měsíců (31. leden plus měsíc je v přestupném roce 29. únor) a zbývající dny jsou zbytek. Tím se předchází chybám dělení třiceti. Pracovní dny počítají každé pondělí až pátek mezi daty; když záleží na svátcích, použijte kalkulačku pracovních dnů.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Pick the start and end date.</p></li><li><p lang="en">Read the difference in the units you need.</p></li><li><p lang="en">For holidays and custom weekends, switch to the Working Days Calculator.</p></li></ol>
+        <ol class="s-steps"><li><p>Vyberte počáteční a koncové datum.</p></li><li><p>Přečtěte si rozdíl v potřebných jednotkách.</p></li><li><p>Pro svátky a vlastní víkendy přejděte na kalkulačku pracovních dnů.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Is the end date included?</summary><p lang="en">No. The difference between 1 and 2 January is 1 day. Add one if you want to count both days.</p></details>
-          <details><summary lang="en">Why is a month not always 30 days?</summary><p lang="en">Calendar months have 28 to 31 days, so the tool counts whole calendar months and then the leftover days.</p></details>
+          <details open><summary>Počítá se koncové datum?</summary><p>Ne. Rozdíl mezi 1. a 2. lednem je 1 den. Přičtěte jedna, chcete-li počítat oba dny.</p></details>
+          <details><summary>Proč nemá měsíc vždy 30 dní?</summary><p>Kalendářní měsíce mají 28 až 31 dní, proto nástroj počítá celé kalendářní měsíce a pak zbývající dny.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

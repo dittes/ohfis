@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Překladač Morseovy abecedy","url":"https://ohfis.com/cs/morse-code-translator/","description":"Překládejte text do Morseovy abecedy a zpět, s přehráním jako pípání. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Textové nástroje","item":"https://ohfis.com/cs/text-tools/"},{"@type":"ListItem","position":3,"name":"Překladač Morseovy abecedy"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Překladač Morseovy abecedy","step":[{"@type":"HowToStep","position":1,"text":"Type text or paste Morse code."},{"@type":"HowToStep","position":2,"text":"Read the translation, or press \"Play as sound\"."},{"@type":"HowToStep","position":3,"text":"Adjust the speed and pitch to taste, then copy the result."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I write a space between words in Morse?","acceptedAnswer":{"@type":"Answer","text":"Use a slash (/) or several spaces between words; single spaces separate letters."}},{"@type":"Question","name":"How fast is 15 words per minute?","acceptedAnswer":{"@type":"Answer","text":"It is a comfortable speed for learners. The timing follows the standard PARIS word."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Překladač Morseovy abecedy","step":[{"@type":"HowToStep","position":1,"text":"Napište text nebo vložte Morseovu abecedu."},{"@type":"HowToStep","position":2,"text":"Přečtěte si překlad nebo stiskněte „Přehrát jako zvuk“."},{"@type":"HowToStep","position":3,"text":"Upravte rychlost a výšku tónu a zkopírujte výsledek."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak zapíšu mezeru mezi slovy v Morseově abecedě?","acceptedAnswer":{"@type":"Answer","text":"Použijte lomítko (/) nebo několik mezer mezi slovy; jednotlivé mezery oddělují písmena."}},{"@type":"Question","name":"Jak rychlých je 15 slov za minutu?","acceptedAnswer":{"@type":"Answer","text":"Je to pohodlné tempo pro začátečníky. Časování se řídí standardním slovem PARIS."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Překladač Morseovy abecedy</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Type a message to get dots and dashes, or paste Morse code to read it. The direction is detected automatically. Press &quot;Play as sound&quot; to hear the message as beeps at the speed and pitch you choose.</p><p lang="en">Letters, digits and common punctuation are converted with the International Morse table; accented letters are reduced to their base letters (ä → AE, ß → SS). Words are separated by a slash. For audio, the Web Audio API drives a sine oscillator that is switched on for a dot (one unit) or dash (three units) with short ramps to avoid clicks, using the standard timing: one unit between symbols, three between letters and seven between words.</p>
+        
+        <p>Napište zprávu a získáte tečky a čárky, nebo vložte Morseovu abecedu a přečtěte ji. Směr se rozpozná automaticky. Stiskněte „Přehrát jako zvuk“ a uslyšíte zprávu jako pípání zvolenou rychlostí a výškou tónu.</p><p>Písmena, číslice a běžná interpunkce se převádějí mezinárodní Morseovou tabulkou; písmena s diakritikou se zredukují na základní (ä → AE, č → C, ß → SS). Slova se oddělují lomítkem. Pro zvuk řídí Web Audio API sinusový oscilátor zapnutý na tečku (jedna jednotka) nebo čárku (tři jednotky) s krátkými náběhy proti lupání, podle standardního časování: jedna jednotka mezi znaky, tři mezi písmeny a sedm mezi slovy.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Type text or paste Morse code.</p></li><li><p lang="en">Read the translation, or press &quot;Play as sound&quot;.</p></li><li><p lang="en">Adjust the speed and pitch to taste, then copy the result.</p></li></ol>
+        <ol class="s-steps"><li><p>Napište text nebo vložte Morseovu abecedu.</p></li><li><p>Přečtěte si překlad nebo stiskněte „Přehrát jako zvuk“.</p></li><li><p>Upravte rychlost a výšku tónu a zkopírujte výsledek.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How do I write a space between words in Morse?</summary><p lang="en">Use a slash (/) or several spaces between words; single spaces separate letters.</p></details>
-          <details><summary lang="en">How fast is 15 words per minute?</summary><p lang="en">It is a comfortable speed for learners. The timing follows the standard PARIS word.</p></details>
+          <details open><summary>Jak zapíšu mezeru mezi slovy v Morseově abecedě?</summary><p>Použijte lomítko (/) nebo několik mezer mezi slovy; jednotlivé mezery oddělují písmena.</p></details>
+          <details><summary>Jak rychlých je 15 slov za minutu?</summary><p>Je to pohodlné tempo pro začátečníky. Časování se řídí standardním slovem PARIS.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
