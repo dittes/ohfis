@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Kalkulačka odpisového plánu","url":"https://ohfis.com/cs/depreciation-schedule-calculator/","description":"Odpisové plány lineární, zrychlené a podle součtu let. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Byznys a finance","item":"https://ohfis.com/cs/business-finance-tools/"},{"@type":"ListItem","position":3,"name":"Kalkulačka odpisového plánu"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Kalkulačka odpisového plánu","step":[{"@type":"HowToStep","position":1,"text":"Enter cost, salvage value and useful life."},{"@type":"HowToStep","position":2,"text":"Choose the method."},{"@type":"HowToStep","position":3,"text":"Copy the schedule or download it as CSV."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which method is best?","acceptedAnswer":{"@type":"Answer","text":"Straight line is simplest. Accelerated methods write off more early, matching assets that lose value quickly."}},{"@type":"Question","name":"What is salvage value?","acceptedAnswer":{"@type":"Answer","text":"The estimated value of the asset at the end of its useful life."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Kalkulačka odpisového plánu","step":[{"@type":"HowToStep","position":1,"text":"Zadejte cenu, zůstatkovou hodnotu a dobu použitelnosti."},{"@type":"HowToStep","position":2,"text":"Zvolte metodu."},{"@type":"HowToStep","position":3,"text":"Zkopírujte rozpis nebo ho stáhněte jako CSV."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Která metoda je nejlepší?","acceptedAnswer":{"@type":"Answer","text":"Rovnoměrná je nejjednodušší. Zrychlené metody odepisují víc brzy a hodí se na majetek, který rychle ztrácí hodnotu."}},{"@type":"Question","name":"Co je zůstatková hodnota?","acceptedAnswer":{"@type":"Answer","text":"Odhadovaná hodnota majetku na konci doby použitelnosti."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Kalkulačka odpisového plánu</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Enter the cost, the residual value and the useful life, and get a year-by-year schedule with the expense, the accumulated depreciation and the book value, plus a chart. Choose straight line, declining balance (double or another factor) or the sum-of-the-years' digits method.</p><p lang="en">Straight line = (cost − salvage) ÷ life. Declining balance = book value × factor ÷ life each year (factor 2 = double declining), never reducing the book value below salvage and writing off the remainder in the last year. Sum-of-the-years' digits = (cost − salvage) × (life − year + 1) ÷ (life × (life + 1) ÷ 2). Tax depreciation follows national tables (MACRS, AfA, etc.) that can differ, so confirm with your accountant.</p>
+        
+        <p>Zadejte pořizovací cenu, zůstatkovou hodnotu a dobu použitelnosti a získáte rozpis rok po roce s náklady, kumulovanými odpisy a účetní hodnotou plus graf. Zvolte rovnoměrné odpisy, zrychlené (dvojité nebo jiný koeficient) nebo metodu součtu číslic let.</p><p>Rovnoměrné = (cena − zůstatková hodnota) ÷ doba. Zrychlené = účetní hodnota × koeficient ÷ doba každý rok, přičemž účetní hodnota nikdy neklesne pod zůstatkovou a zbytek se odepíše v posledním roce. Součet číslic let = (cena − zůstatková hodnota) × (doba − rok + 1) ÷ (doba × (doba + 1) ÷ 2). Daňové odpisy se řídí národními tabulkami (MACRS, AfA, odpisové skupiny aj.), které se mohou lišit, proto to potvrďte s účetním.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Enter cost, salvage value and useful life.</p></li><li><p lang="en">Choose the method.</p></li><li><p lang="en">Copy the schedule or download it as CSV.</p></li></ol>
+        <ol class="s-steps"><li><p>Zadejte cenu, zůstatkovou hodnotu a dobu použitelnosti.</p></li><li><p>Zvolte metodu.</p></li><li><p>Zkopírujte rozpis nebo ho stáhněte jako CSV.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Which method is best?</summary><p lang="en">Straight line is simplest. Accelerated methods write off more early, matching assets that lose value quickly.</p></details>
-          <details><summary lang="en">What is salvage value?</summary><p lang="en">The estimated value of the asset at the end of its useful life.</p></details>
+          <details open><summary>Která metoda je nejlepší?</summary><p>Rovnoměrná je nejjednodušší. Zrychlené metody odepisují víc brzy a hodí se na majetek, který rychle ztrácí hodnotu.</p></details>
+          <details><summary>Co je zůstatková hodnota?</summary><p>Odhadovaná hodnota majetku na konci doby použitelnosti.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
