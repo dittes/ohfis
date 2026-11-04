@@ -5869,6 +5869,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/meme-generator/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/png-color-reducer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/png-color-reducer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/png-color-reducer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/png-color-reducer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/png-color-reducer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/png-color-reducer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/png-color-reducer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/png-color-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/png-color-reducer/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/audio-tone-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-tone-generator/"/>
@@ -9503,5 +9539,113 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/availability-formatter/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/availability-formatter/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/availability-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/flight-time-calculator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/flight-time-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/flight-time-calculator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/flight-time-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/flight-time-calculator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/flight-time-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/flight-time-calculator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/flight-time-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/flight-time-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/weekly-hours-budget/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/weekly-hours-budget/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/weekly-hours-budget/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/weekly-hours-budget/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/weekly-hours-budget/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/weekly-hours-budget/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/weekly-hours-budget/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/weekly-hours-budget/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/weekly-hours-budget/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/okr-timeline-generator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/okr-timeline-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/okr-timeline-generator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/okr-timeline-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/okr-timeline-generator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/okr-timeline-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/okr-timeline-generator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/okr-timeline-generator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/okr-timeline-generator/"/>
   </url>
 </urlset>

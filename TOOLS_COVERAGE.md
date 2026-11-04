@@ -7,11 +7,11 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 ## Summary
 
 - Requested items: 277
-- ✅ built: 238
+- ✅ built: 242
 - ◐ partly built: 14
 - 🔗 link-out or covered elsewhere: 8
-- ❌ not built: 17
-- Utility tools on the site: 224 (plus 26 PDF tools from the first redesign)
+- ❌ not built: 13
+- Utility tools on the site: 228 (plus 26 PDF tools from the first redesign)
 
 ## PDF, documents & print
 
@@ -150,7 +150,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 | 26 | Color Inverter & Dark Mode Simulator | ✅ | [image-color-effects](/en/image-color-effects/) |
 | 27 | Animated GIF to Video / MP4 to GIF | ❌ | not built (needs a video encoder such as ffmpeg.wasm) |
 | 28 | Video Frame Capture | ✅ | [video-frame-capture](/en/video-frame-capture/) |
-| 29 | PNG Color Palette Quantizer | ❌ | not built; image-palette-extractor only lists colours |
+| 29 | PNG Color Palette Quantizer | ✅ | [png-color-reducer](/en/png-color-reducer/) |
 | 30 | Flip & Mirror Utility | ✅ | [image-crop-rotate-flip](/en/image-crop-rotate-flip/) |
 
 ## Time zones & calendars
@@ -163,7 +163,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 | 4 | Meeting Cost Clock | ✅ | [meeting-cost-calculator](/en/meeting-cost-calculator/) |
 | 5 | Pomodoro & Focus Sound Canvas | ✅ | [pomodoro-timer](/en/pomodoro-timer/) |
 | 6 | Timecard & Split-Shift Hours Calculator | ✅ | [timecard-calculator](/en/timecard-calculator/) |
-| 7 | Flight Layover & Timezone Shift Visualizer | ❌ | not built; see world-clock and timezone-overlap-planner |
+| 7 | Flight Layover & Timezone Shift Visualizer | ✅ | [flight-time-calculator](/en/flight-time-calculator/) |
 | 8 | Date Difference Breakdown | ✅ | [date-difference-calculator](/en/date-difference-calculator/) |
 | 9 | ISO Week Number & Quarter Matrix | ✅ | [iso-week-number-calculator](/en/iso-week-number-calculator/) |
 | 10 | Personal Visual Day-Blocker | ❌ | not built |
@@ -182,8 +182,8 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 | 23 | Moon Phase & Tide Overview | ◐ | [moon-phase-calculator](/en/moon-phase-calculator/) – moon phases only; tides need local station data |
 | 24 | Time Left in Year / Progress Bar | ✅ | [year-progress-bar](/en/year-progress-bar/) |
 | 25 | World Clock Matrix | ✅ | [world-clock](/en/world-clock/) |
-| 26 | Weekly Work-Hour Budgeter | ❌ | not built; see timecard-calculator |
-| 27 | Quarterly OKR Timeline Generator | ❌ | not built; see sprint-schedule-generator |
+| 26 | Weekly Work-Hour Budgeter | ✅ | [weekly-hours-budget](/en/weekly-hours-budget/) |
+| 27 | Quarterly OKR Timeline Generator | ✅ | [okr-timeline-generator](/en/okr-timeline-generator/) |
 | 28 | Time Slot Availability Formatter | ✅ | [availability-formatter](/en/availability-formatter/) |
 | 29 | Lunch Break Duration Counter | ◐ | [timecard-calculator](/en/timecard-calculator/) – break deduction |
 | 30 | Julian Day & Ordinal Date Calculator | ✅ | [julian-date-converter](/en/julian-date-converter/) |

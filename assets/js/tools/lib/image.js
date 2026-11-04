@@ -140,3 +140,30 @@ export function optimizeSVG(src, { precision = 2, removeTitle = false, removeIds
   s = s.replace(/\s*=\s*"/g, '="').replace(/>\s+</g, '><').replace(/\s{2,}/g, ' ').replace(/\s+(\/?>)/g, '$1').trim();
   return { svg: s, before, after: s.length };
 }
+
+// ---------- Palette quantisation (median cut) and indexed PNG ----------
+/** Reduce RGBA pixels to at most n colours. Returns { palette: [[r,g,b,a]], indices: Uint8Array }. dither: Floyd–Steinberg. */
+export function quantize(rgba, w, h, n = 16, { dither = false } = {}) {
+  n = Math.max(2, Math.min(256, n | 0)); const total = w * h; const opaque = []; let hasAlpha = false;
+  for (let i = 0; i < total; i++) { if (rgba[i * 4 + 3] < 128) hasAlpha = true; else opaque.push(i); }
+  const limit = hasAlpha ? n - 1 : n; const px = opaque.map(i => [rgba[i * 4], rgba[i * 4 + 1], rgba[i * 4 + 2]]); const boxes = [px.length ? px : [[0, 0, 0]]];
+  const range = b => { let lo = [255, 255, 255], hi = [0, 0, 0]; for (const p of b) for (let k = 0; k < 3; k++) { if (p[k] < lo[k]) lo[k] = p[k]; if (p[k] > hi[k]) hi[k] = p[k]; } const r = [hi[0] - lo[0], hi[1] - lo[1], hi[2] - lo[2]]; return { r, ch: r.indexOf(Math.max(...r)) }; };
+  while (boxes.length < limit) { let bi = -1, best = 0; boxes.forEach((b, i) => { if (b.length < 2) return; const { r } = range(b); const score = Math.max(...r) * Math.sqrt(b.length); if (score > best) { best = score; bi = i; } }); if (bi < 0) break; const b = boxes[bi], { ch } = range(b); b.sort((p, q) => p[ch] - q[ch]); const mid = b.length >> 1; boxes.splice(bi, 1, b.slice(0, mid), b.slice(mid)); }
+  const palette = boxes.map(b => { const s = [0, 0, 0]; for (const p of b) { s[0] += p[0]; s[1] += p[1]; s[2] += p[2]; } return [Math.round(s[0] / b.length), Math.round(s[1] / b.length), Math.round(s[2] / b.length), 255]; });
+  let transparentIndex = -1; if (hasAlpha) { transparentIndex = palette.length; palette.push([0, 0, 0, 0]); }
+  const nearest = (r, g, b) => { let bi = 0, bd = Infinity; for (let i = 0; i < (hasAlpha ? palette.length - 1 : palette.length); i++) { const p = palette[i], d = (p[0] - r) ** 2 + (p[1] - g) ** 2 + (p[2] - b) ** 2; if (d < bd) { bd = d; bi = i; } } return bi; };
+  const indices = new Uint8Array(total); const err = dither ? new Float32Array(total * 3) : null;
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { const i = y * w + x; if (rgba[i * 4 + 3] < 128) { indices[i] = transparentIndex; continue; } let r = rgba[i * 4], g = rgba[i * 4 + 1], b = rgba[i * 4 + 2]; if (err) { r = Math.max(0, Math.min(255, r + err[i * 3])); g = Math.max(0, Math.min(255, g + err[i * 3 + 1])); b = Math.max(0, Math.min(255, b + err[i * 3 + 2])); } const k = nearest(r, g, b); indices[i] = k; if (err) { const p = palette[k], e = [r - p[0], g - p[1], b - p[2]]; const push = (xx, yy, f) => { if (xx < 0 || xx >= w || yy >= h) return; const j = (yy * w + xx) * 3; for (let c = 0; c < 3; c++) err[j + c] += e[c] * f; }; push(x + 1, y, 7 / 16); push(x - 1, y + 1, 3 / 16); push(x, y + 1, 5 / 16); push(x + 1, y + 1, 1 / 16); } }
+  return { palette, indices };
+}
+const CRC_T = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+export const crc32 = bytes => { let c = 0xffffffff; for (let i = 0; i < bytes.length; i++) c = CRC_T[(c ^ bytes[i]) & 255] ^ (c >>> 8); return (c ^ 0xffffffff) >>> 0; };
+/** Encode an 8-bit (or packed 1/2/4-bit) indexed PNG. deflate(bytes) → compressed zlib stream (pass fflate's zlibSync). */
+export function encodeIndexedPng(indices, w, h, palette, deflate) {
+  const n = palette.length, depth = n <= 2 ? 1 : n <= 4 ? 2 : n <= 16 ? 4 : 8; const rowBytes = Math.ceil(w * depth / 8), raw = new Uint8Array((rowBytes + 1) * h);
+  for (let y = 0; y < h; y++) { const o = y * (rowBytes + 1); raw[o] = 0; for (let x = 0; x < w; x++) { const v = indices[y * w + x]; if (depth === 8) raw[o + 1 + x] = v; else { const bit = x * depth, byte = o + 1 + (bit >> 3), shift = 8 - depth - (bit & 7); raw[byte] |= v << shift; } } }
+  const chunk = (type, data) => { const out = new Uint8Array(12 + data.length), dv = new DataView(out.buffer); dv.setUint32(0, data.length); for (let i = 0; i < 4; i++) out[4 + i] = type.charCodeAt(i); out.set(data, 8); dv.setUint32(8 + data.length, crc32(out.subarray(4, 8 + data.length))); return out; };
+  const ihdr = new Uint8Array(13), dv = new DataView(ihdr.buffer); dv.setUint32(0, w); dv.setUint32(4, h); ihdr[8] = depth; ihdr[9] = 3; const plte = new Uint8Array(n * 3); palette.forEach((p, i) => plte.set([p[0], p[1], p[2]], i * 3));
+  const parts = [Uint8Array.from([137, 80, 78, 71, 13, 10, 26, 10]), chunk('IHDR', ihdr), chunk('PLTE', plte)]; const lastOpaque = palette.reduce((a, p, i) => p[3] < 255 ? i : a, -1); if (lastOpaque >= 0) parts.push(chunk('tRNS', Uint8Array.from(palette.slice(0, lastOpaque + 1).map(p => p[3])))); parts.push(chunk('IDAT', deflate(raw)), chunk('IEND', new Uint8Array(0)));
+  const total = parts.reduce((s, p) => s + p.length, 0), out = new Uint8Array(total); let o = 0; for (const p of parts) { out.set(p, o); o += p.length; } return out;
+}

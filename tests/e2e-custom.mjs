@@ -674,6 +674,23 @@ Object.assign(custom, {
     await page.getByRole('button', { name: /Create separator sheets/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 20000 }); const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Download separator/ }).click()]); const buf = readFileSync(await dl.path()); assert.equal((await pageCount(buf)).n, 10); const txt = pdfText(buf); assert.ok(txt.includes('DOC-001') && txt.includes('DOC-010'), JSON.stringify(txt.match(/DOC[^ \n]*/g)));
     const { createRequire } = await import('node:module'); const rq = createRequire('/tmp/claude-0/qrdec/'); try { const jsQR = rq('jsqr'); const { PNG } = rq('pngjs'); const { dir, file } = poppler(buf); spawnSync('pdftoppm', ['-png', '-r', '110', '-f', '3', '-l', '3', file, join(dir, 'q')]); const img = PNG.sync.read(readFileSync(join(dir, readdirSync(dir).find(x => x.startsWith('q') && x.endsWith('.png'))))); assert.equal(jsQR(new Uint8ClampedArray(img.data), img.width, img.height)?.data, 'DOC-003', 'QR code content'); } catch (e) { if (!/Cannot find module/.test(e.message)) throw e; }
   },
+  async 'png-color-reducer'(page) {
+    const png = await makeImg(page, 64, 64, "const gr=g.createLinearGradient(0,0,64,64);gr.addColorStop(0,'#ff0000');gr.addColorStop(0.5,'#00ff88');gr.addColorStop(1,'#2000ff');g.fillStyle=gr;g.fillRect(0,0,w,h)"); await page.setInputFiles('#tool-root input[type=file]', { name: 'grad.png', mimeType: 'image/png', buffer: png }); await page.waitForSelector('.ut-img img', { timeout: 10000 });
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-img a, #tool-root .ut-img button', { hasText: /Download|↓/ }).first().click()]); const buf = readFileSync(await dl.path()); assert.equal(buf.subarray(1, 4).toString(), 'PNG'); assert.equal(buf[25], 3, 'indexed colour type'); assert.equal(buf[24], 8, '8 bits per pixel for 32 colours');
+    const p = join(mkdtempSync(join(tmpdir(), 'q-')), 'x.png'); writeFileSync(p, buf); const info = spawnSync('file', ['-b', p]).stdout.toString(); assert.match(info, /8-bit colormap/i, info);
+    const px = await pixelAt(page, '.ut-img img', 2, 2); assert.ok(px[0] > 200 && px[1] < 60, 'top-left stays red: ' + px); const txt = await rootText(page); assert.ok(/32 colours/.test(txt), txt.slice(0, 300));
+  },
+  async 'flight-time-calculator'(page) {
+    await page.locator('#tool-root input[type=date]').fill('2024-03-05'); await page.waitForTimeout(300); const txt = await rootText(page); assert.ok(/Arrival\s*Tue 2024-03-05 13:30 \(America\/New_York\)/.test(txt), txt.slice(0, 400)); assert.ok(/Time-zone shift\s*-6 h|Time-zone shift\s*−6 h/.test(txt), txt.slice(0, 400));
+    const t = page.locator('#tool-root input[type=text]'); await t.nth(1).fill('2:00'); await t.nth(2).fill('5:30'); await page.waitForTimeout(400); const t2 = await rootText(page); assert.ok(/Final arrival\s*Tue 2024-03-05 \d\d:\d\d \(America\/Los_Angeles\)/.test(t2) && /Total travel time\s*17 h 0 min/.test(t2), t2.slice(0, 700));
+    await t.nth(0).fill('abc'); await page.waitForTimeout(300); assert.ok(await page.locator('.pt-drop__error:visible').count() > 0);
+  },
+  async 'weekly-hours-budget'(page) {
+    let txt = await rootText(page); assert.ok(/Planned\s*32 h/.test(txt) && /Usable after reserve\s*32 h/.test(txt) && /Free capacity\s*0 h/.test(txt), txt.slice(0, 300)); await page.locator('#tool-root textarea').fill('A, 30\nB, 10'); await page.waitForTimeout(300); txt = await rootText(page); assert.ok(/Over-booked by\s*8 h/.test(txt), txt.slice(0, 300));
+  },
+  async 'okr-timeline-generator'(page) {
+    await page.locator('#tool-root input[type=date]').fill('2025-01-06'); await page.waitForTimeout(300); const rows = await page.locator('.ut-table tr').allInnerTexts(); const txt = rows.join('\n'); assert.ok(/2025-01-06\s+Mon\s+Quarter starts/.test(txt), txt.slice(0, 200)); assert.ok(/2025-04-06\s+Sun\s+Quarter ends/.test(txt)); assert.ok(rows.filter(r => /check-in/.test(r)).length >= 11);
+  },
 });
 
 export default custom;

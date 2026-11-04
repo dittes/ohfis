@@ -70,3 +70,20 @@ test('SVG optimizer keeps the drawing and removes bloat', () => {
   assert.ok(!/id="p1"/.test(M.optimizeSVG(src, { removeIds: true }).svg)); assert.ok(/id="p1"/.test(M.optimizeSVG(src).svg));
   const used = M.optimizeSVG('<svg><defs><linearGradient id="g"/></defs><rect fill="url(#g)"/></svg>', { removeIds: true }).svg; assert.ok(used.includes('id="g"'), 'referenced ids kept');
 });
+
+import { zlibSync, unzlibSync } from '../assets/vendor/fflate/fflate.js';
+test('median cut keeps distinct colours and honours the limit', () => {
+  const w = 8, h = 8, d = new Uint8ClampedArray(w * h * 4); const cols = [[255, 0, 0], [0, 255, 0], [0, 0, 255], [255, 255, 0]]; for (let i = 0; i < w * h; i++) { const c = cols[i % 4]; d[i * 4] = c[0] + (i % 3); d[i * 4 + 1] = c[1]; d[i * 4 + 2] = c[2]; d[i * 4 + 3] = 255; }
+  const q = M.quantize(d, w, h, 4); assert.equal(q.palette.length, 4); for (const c of cols) assert.ok(q.palette.some(p => Math.hypot(p[0] - c[0], p[1] - c[1], p[2] - c[2]) < 4), 'colour ' + c); assert.equal(q.indices.length, 64);
+  const q2 = M.quantize(d, w, h, 2); assert.equal(q2.palette.length, 2);
+});
+test('transparent pixels get a transparent palette entry', () => {
+  const d = new Uint8ClampedArray([255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0]); const q = M.quantize(d, 4, 1, 4); const t = q.palette.findIndex(p => p[3] === 0); assert.ok(t >= 0); assert.equal(q.indices[1], t); assert.equal(q.indices[3], t); assert.notEqual(q.indices[0], t);
+});
+test('indexed PNG structure, CRC and pixel data', () => {
+  assert.equal(M.crc32(new TextEncoder().encode('123456789')), 0xcbf43926);
+  const w = 5, h = 3, idx = Uint8Array.from({ length: 15 }, (_, i) => i % 3), pal = [[255, 0, 0, 255], [0, 255, 0, 255], [0, 0, 255, 0]]; const png = M.encodeIndexedPng(idx, w, h, pal, zlibSync);
+  assert.deepEqual([...png.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10]); const dv = new DataView(png.buffer, png.byteOffset); assert.equal(dv.getUint32(16), w); assert.equal(dv.getUint32(20), h); assert.equal(png[24], 2, '2-bit depth for 3 colours'); assert.equal(png[25], 3, 'colour type indexed');
+  let o = 8; const chunks = {}; while (o < png.length) { const len = dv.getUint32(o), type = String.fromCharCode(...png.subarray(o + 4, o + 8)); const body = png.subarray(o + 8, o + 8 + len); assert.equal(dv.getUint32(o + 8 + len), M.crc32(png.subarray(o + 4, o + 8 + len)), 'crc ' + type); chunks[type] = body; o += 12 + len; }
+  assert.deepEqual(Object.keys(chunks), ['IHDR', 'PLTE', 'tRNS', 'IDAT', 'IEND']); const raw = unzlibSync(chunks.IDAT); assert.equal(raw.length, (Math.ceil(w * 2 / 8) + 1) * h); assert.equal(raw[1] >> 6, 0); assert.equal((raw[1] >> 4) & 3, 1); assert.equal((raw[1] >> 2) & 3, 2);
+});

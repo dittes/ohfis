@@ -343,6 +343,9 @@ Resize, convert, blur, crop and clean images without uploading them. Hub: https:
 - [Meme Generator (Top & Bottom Text)](https://ohfis.com/en/meme-generator/): Put classic Impact-style captions on any picture and download it.
   Choose a picture, type a top and a bottom line and get the familiar white text with black outline. Text size, colours and capital letters can be changed, long lines wrap automatically, and the finished meme downloads as PNG or JPEG without a watermark.
   How to use: Choose the image. Type the top and bottom text and adjust the style. Download the meme.
+- [PNG Color Reducer (Smaller PNG, 256 Colours or Less)](https://ohfis.com/en/png-color-reducer/): Reduce an image to 2–256 colours and save a small indexed PNG-8.
+  Drop logos, icons, screenshots or illustrations and choose how many colours to keep, from 2 to 256. The tool builds an optimal palette with the median-cut algorithm, optionally with Floyd–Steinberg dithering, and saves a real indexed PNG (palette PNG-8, with 1, 2, 4 or 8 bits per pixel), which is often 50–80 % smaller than a 24-bit PNG. Before and after sizes are listed for every file and ZIP download is available.
+  How to use: Drop one or more images. Choose the number of colours and dithering. Compare the sizes and download.
 
 ## Time & Calendar
 
@@ -417,6 +420,15 @@ Time zones, working days, timestamps, calendar files and timers. Hub: https://oh
 - [Availability Formatter (Time Slots in Several Time Zones)](https://ohfis.com/en/availability-formatter/): Turn your free time ranges into a message that shows every time zone.
   List the time ranges you are free on a day, name your time zone and the zones of the other people, and get a neat message to paste into an email or chat: each slot with its local times, the zone abbreviation and a note if it falls on another date. It saves the mental arithmetic when arranging calls across continents.
   How to use: Pick the date and your time zone. Enter your free ranges and the other zones. Copy the formatted message.
+- [Flight Arrival Time & Jet Lag Calculator](https://ohfis.com/en/flight-time-calculator/): Work out the local arrival time across time zones, with an optional layover and second flight.
+  Enter the departure date, time and time zone, the flight time and the arrival zone and get the local arrival date and time, the time-zone shift and the total travel time. Add a layover and a second flight to see the final arrival in the last time zone, with a short jet-lag hint.
+  How to use: Enter the departure and the flight time. Add a layover and second flight if you have one. Read the arrival time and the shift.
+- [Weekly Work Hours Budget Planner](https://ohfis.com/en/weekly-hours-budget/): Check whether your planned work fits into the hours you really have this week.
+  Enter your weekly hours, how much you want to keep free for meetings, email and surprises, and a list of work items with hours. The planner shows the planned hours, the usable hours after the reserve, the free capacity or the overbooking, each item's share and the hours per day.
+  How to use: Enter the hours you have and the reserve. List the tasks with hours. Remove or move work until the plan fits.
+- [OKR Quarter Timeline & Check-in Schedule](https://ohfis.com/en/okr-timeline-generator/): Get the dates for kickoff, weekly check-ins, mid-quarter review and grading.
+  Pick the first day of the quarter, its length in weeks and the weekday for check-ins, and get a dated schedule: kickoff, one check-in every week, a mid-quarter review, grading and the retrospective on the last day. Copy the table into your calendar or planning document.
+  How to use: Choose the quarter start, the length and the check-in weekday. Read the dated schedule. Copy it into your calendar.
 
 ## Business & Finance
 

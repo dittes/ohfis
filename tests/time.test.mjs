@@ -68,3 +68,13 @@ test('recurring dates', () => {
   assert.deepEqual(f({ unit: 'day', every: 3, count: 3, skipWeekends: true }), ['2024-01-02', '2024-01-05', '2024-01-08']); assert.deepEqual(f({ unit: 'year', count: 2, start: T.utc(2024, 2, 29) }).length, 2); assert.equal(T.recurringDates({ start: s, unit: 'day', count: 100, until: T.utc(2024, 1, 5) }).length, 4);
   const sp = T.sprintPlan({ start: T.utc(2024, 1, 1), sprintDays: 10, count: 2 }); assert.deepEqual([sp[0].start, sp[0].end, sp[1].start, sp[1].end], ['2024-01-01', '2024-01-12', '2024-01-15', '2024-01-26']);
 });
+
+test('flight arrival across zones', () => {
+  const r = T.flightArrival({ y: 2024, mo: 3, d: 5, h: 10, mi: 0, depTz: 'Europe/Berlin', arrTz: 'America/New_York', durationMin: 570 }); assert.equal(r.arrLocal.h, 13); assert.equal(r.arrLocal.mi, 30); assert.equal(r.shiftHours, -6);
+  const n = T.flightArrival({ y: 2024, mo: 3, d: 5, h: 23, mi: 0, depTz: 'Europe/Berlin', arrTz: 'Asia/Tokyo', durationMin: 11 * 60 }); assert.equal(n.arrLocal.h, 18); assert.equal(n.shiftHours, 8); assert.equal(n.arrLocal.d, 6);
+  const dst = T.flightArrival({ y: 2024, mo: 3, d: 9, h: 22, mi: 0, depTz: 'America/New_York', arrTz: 'Europe/London', durationMin: 420 }); assert.equal(dst.shiftHours, 5); assert.equal(dst.arrLocal.h, 10); assert.equal(dst.arrLocal.d, 10);
+});
+test('OKR schedule', () => {
+  const s = T.okrSchedule(new Date(Date.UTC(2025, 0, 6)), { weeks: 13, checkinDay: 4 }); assert.equal(s[0].date.toISOString().slice(0, 10), '2025-01-06'); assert.ok(s.filter(e => /check-in/.test(e.label)).length >= 11); assert.ok(s.every((e, i) => !i || e.date >= s[i - 1].date)); assert.equal(s.at(-1).date.toISOString().slice(0, 10), '2025-04-06'); assert.ok(s.some(e => /Mid-quarter/.test(e.label)));
+  for (const e of s.filter(e => /check-in/.test(e.label))) assert.equal(e.date.getUTCDay(), 4);
+});

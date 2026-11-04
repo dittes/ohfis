@@ -153,6 +153,7 @@ Resize, convert, blur, crop and clean images without uploading them. Hub: https:
 - [Image to Text (OCR) – Extract Text from Photos & Screenshots](https://ohfis.com/en/image-to-text-ocr/): Copy the text out of a screenshot, scan or photo of a document, locally.
 - [Photo Collage & Split Screen Maker](https://ohfis.com/en/image-collage-maker/): Combine 2–4 images side by side, stacked, in a grid or as a before/after split.
 - [Meme Generator (Top & Bottom Text)](https://ohfis.com/en/meme-generator/): Put classic Impact-style captions on any picture and download it.
+- [PNG Color Reducer (Smaller PNG, 256 Colours or Less)](https://ohfis.com/en/png-color-reducer/): Reduce an image to 2–256 colours and save a small indexed PNG-8.
 
 ## Time & Calendar
 
@@ -181,6 +182,9 @@ Time zones, working days, timestamps, calendar files and timers. Hub: https://oh
 - [Year Progress Bar (Days Left in the Year)](https://ohfis.com/en/year-progress-bar/): How much of the year, quarter, month and week has passed, and how many days are left.
 - [Fiscal Year Calculator (Fiscal Quarter & Period)](https://ohfis.com/en/fiscal-year-mapper/): Find the fiscal year and quarter of a date and map months to fiscal quarters.
 - [Availability Formatter (Time Slots in Several Time Zones)](https://ohfis.com/en/availability-formatter/): Turn your free time ranges into a message that shows every time zone.
+- [Flight Arrival Time & Jet Lag Calculator](https://ohfis.com/en/flight-time-calculator/): Work out the local arrival time across time zones, with an optional layover and second flight.
+- [Weekly Work Hours Budget Planner](https://ohfis.com/en/weekly-hours-budget/): Check whether your planned work fits into the hours you really have this week.
+- [OKR Quarter Timeline & Check-in Schedule](https://ohfis.com/en/okr-timeline-generator/): Get the dates for kickoff, weekly check-ins, mid-quarter review and grading.
 
 ## Business & Finance
 

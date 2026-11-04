@@ -1,6 +1,6 @@
 # OHFIS
 
-Free online tools that run entirely in the browser: 26 PDF tools and 224 utilities for documents, text, CSV and spreadsheets, images, time and calendars, business maths, notes and privacy, IT and web work, teams and audio/video. Nothing is uploaded. English, German, Polish and Czech (`/en`, `/de`, `/pl`, `/cs`).
+Free online tools that run entirely in the browser: 26 PDF tools and 228 utilities for documents, text, CSV and spreadsheets, images, time and calendars, business maths, notes and privacy, IT and web work, teams and audio/video. Nothing is uploaded. English, German, Polish and Czech (`/en`, `/de`, `/pl`, `/cs`).
 
 Live at https://ohfis.com (GitHub Pages serves the committed output). What exists compared with the original request list is in [TOOLS_COVERAGE.md](TOOLS_COVERAGE.md).
 

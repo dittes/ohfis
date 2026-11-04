@@ -189,3 +189,19 @@ export function recurringDates({ start, every = 1, unit = 'week', weekdays = [],
 export function sprintPlan({ start, sprintDays = 14, count = 6, planningDays = 0, retroDays = 0 }) {
   const out = []; let cur = new Date(start); for (let i = 0; i < count; i++) { let endIdx = 0, days = 0; const s = new Date(cur); let e = new Date(cur); while (days < sprintDays) { if (e.getUTCDay() !== 0 && e.getUTCDay() !== 6) days++; if (days < sprintDays) e = addDays(e, 1); } out.push({ sprint: i + 1, start: ymd(s), end: ymd(e), planning: ymd(s), review: ymd(e), retro: ymd(e) }); cur = addDays(e, 1); while (cur.getUTCDay() === 0 || cur.getUTCDay() === 6) cur = addDays(cur, 1); } return out;
 }
+
+/** Arrival in another zone: departure wall clock in depTz plus duration (minutes). */
+export function flightArrival({ y, mo, d, h, mi, depTz, arrTz, durationMin }) {
+  const dep = zonedToUtc(y, mo, d, h, mi, depTz), arr = dep + durationMin * 60000; const shift = (tzOffsetMinutes(arrTz, arr) - tzOffsetMinutes(depTz, dep)) / 60;
+  return { depUtc: dep, arrUtc: arr, arrLocal: localParts(arr, arrTz), shiftHours: shift };
+}
+/** OKR quarter schedule: kickoff, weekly check-ins, mid-quarter review, final grading. start = Date (UTC). */
+export function okrSchedule(start, { weeks = 13, checkinDay = 4 } = {}) {
+  const ev = [{ date: start, label: 'Quarter starts: OKR kickoff, objectives and key results final' }]; const dayOf = d => d.getUTCDay();
+  let first = new Date(start.getTime() + 7 * 864e5); while (dayOf(first) !== checkinDay) first = new Date(first.getTime() - 864e5);
+  if (first < start) first = new Date(first.getTime() + 7 * 864e5);
+  for (let w = 1; w < weeks; w++) { const d = new Date(first.getTime() + (w - 1) * 7 * 864e5); if (d < new Date(start.getTime() + weeks * 7 * 864e5)) ev.push({ date: d, label: `Week ${w + 1}: check-in (update confidence, flag risks)` }); }
+  const mid = new Date(start.getTime() + Math.floor(weeks / 2) * 7 * 864e5); ev.push({ date: mid, label: 'Mid-quarter review: re-forecast, adjust or drop key results' });
+  const end = new Date(start.getTime() + (weeks * 7 - 1) * 864e5); ev.push({ date: new Date(end.getTime() - 4 * 864e5), label: 'Grading: score every key result (0.0–1.0)' }, { date: end, label: 'Quarter ends: retrospective and planning for the next quarter' });
+  return ev.sort((a, b) => a.date - b.date);
+}
