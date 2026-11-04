@@ -1,7 +1,7 @@
 // Files Online — Service Worker
 // Cache-first for app shell, network-first for CDN resources.
 
-const CACHE_VERSION = 'db7a54e091';
+const CACHE_VERSION = 'bb7ca0f63e';
 const SHELL_CACHE = `files-online-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `files-online-runtime-${CACHE_VERSION}`;
 
@@ -58,6 +58,7 @@ const SHELL_FILES = [
   "/assets/js/tools/lib/audio.js",
   "/assets/js/tools/lib/csv.js",
   "/assets/js/tools/lib/data.js",
+  "/assets/js/tools/lib/devtools.js",
   "/assets/js/tools/lib/diff.js",
   "/assets/js/tools/lib/docs.js",
   "/assets/js/tools/lib/dummy.js",
@@ -78,6 +79,7 @@ const SHELL_FILES = [
   "/assets/js/tools/main.js",
   "/assets/js/tools/media.js",
   "/assets/js/tools/notes.js",
+  "/assets/js/tools/regex-worker.js",
   "/assets/js/tools/tabletool.js",
   "/assets/js/tools/team.js",
   "/assets/js/tools/text.js",

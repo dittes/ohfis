@@ -854,4 +854,42 @@ Object.assign(custom, {
   },
 });
 
+// ---- developer tools: formatters, converters, regex, markdown ----
+Object.assign(custom, {
+  async 'json-formatter'(page) {
+    await area(page).fill('{"b":1,"a":{"z":[1,2],"y":null}}'); await page.waitForTimeout(300); assert.equal(await out(page).inputValue(), '{\n  "b": 1,\n  "a": {\n    "z": [\n      1,\n      2\n    ],\n    "y": null\n  }\n}');
+    await page.locator('#tool-root input[type=checkbox]').nth(1).check(); await page.waitForTimeout(200); assert.ok((await out(page).inputValue()).indexOf('"a"') < (await out(page).inputValue()).indexOf('"b"'), 'sorted'); await page.locator('#tool-root input[type=checkbox]').nth(0).check(); await page.waitForTimeout(200); assert.equal(await out(page).inputValue(), '{"a":{"y":null,"z":[1,2]},"b":1}');
+    await area(page).fill('{\n  "a": 1,\n  "b": ,\n}'); await page.waitForTimeout(300); const e = await page.locator('.pt-drop__error:visible').innerText(); assert.match(e, /Line 3, column 8/); assert.match(e, /\^/);
+    await area(page).fill('{ // c\n "a": 1, }'); await page.locator('#tool-root input[type=checkbox]').nth(2).check(); await page.waitForTimeout(300); assert.equal(await out(page).inputValue(), '{"a":1}');
+  },
+  async 'data-format-converter'(page) {
+    await area(page).fill('a: 1\nlist:\n  - x\n  - y: true\n'); await page.waitForTimeout(300); assert.deepEqual(JSON.parse(await out(page).inputValue()), { a: 1, list: ['x', { y: true }] }); assert.match(await rootText(page), /Detected input\s*YAML/);
+    await page.locator('#tool-root select').nth(1).selectOption('xml'); await page.waitForTimeout(300); assert.match(await out(page).inputValue(), /<root>\n {2}<a>1<\/a>/);
+    await area(page).fill('<shop name="X"><item id="1">Pen</item><item id="2"/></shop>'); await page.locator('#tool-root select').nth(1).selectOption('json'); await page.waitForTimeout(300); assert.deepEqual(JSON.parse(await out(page).inputValue()), { shop: { '@name': 'X', item: [{ '@id': '1', '#text': 'Pen' }, { '@id': '2' }] } });
+    await area(page).fill('<a><b></a>'); await page.waitForTimeout(300); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /Not valid XML.*does not match/);
+  },
+  async 'sql-formatter'(page) {
+    await area(page).fill("select a,b from t where x=1 and y='z' order by a"); await page.waitForTimeout(300); assert.equal(await out(page).inputValue(), "SELECT\n  a,\n  b\nFROM\n  t\nWHERE\n  x = 1\n  AND y = 'z'\nORDER BY\n  a");
+    await page.locator('#tool-root select').nth(1).selectOption('lower'); await page.waitForTimeout(200); assert.match(await out(page).inputValue(), /^select\n {2}a,/);
+  },
+  async 'regex-tester'(page) {
+    await page.waitForFunction(() => /Matches\s*3/.test(document.getElementById('tool-root').innerText), null, { timeout: 8000 }); const marks = await page.locator('.ut-hl mark').allInnerTexts(); assert.deepEqual(marks, ['a=1', 'bb=22', 'c=333']); assert.match(await rootText(page), /bb=22\s+2:1/); assert.match(await rootText(page), /\$1=bb\s+\$2=22\s+key=bb/);
+    await page.locator('#tool-root input[type=text]').nth(1).fill('<$1>'); await page.waitForTimeout(700); assert.match(await out(page).inputValue(), /<a>/); assert.match(await out(page).inputValue(), /<bb> and <c>/);
+    await page.locator('#tool-root input[type=text]').first().fill('(unclosed'); await page.waitForTimeout(700); assert.ok(await page.locator('.pt-drop__error:visible').count() > 0, 'invalid pattern message');
+    await page.locator('#tool-root input[type=text]').first().fill('(a+)+$'); await area(page).fill('a'.repeat(40) + 'b'); await page.waitForFunction(() => /took too long/.test(document.getElementById('tool-root').innerText), null, { timeout: 8000 });
+    await area(page).fill('fine'); await page.locator('#tool-root input[type=text]').first().fill('f(i)ne'); await page.waitForFunction(() => /Matches\s*1/.test(document.getElementById('tool-root').innerText), null, { timeout: 8000 });
+  },
+  async 'markdown-previewer'(page) {
+    await area(page).fill('# Title\n\n- [x] done\n\n<script>window.__x=1</script> **b** [bad](javascript:alert(1))'); await page.waitForTimeout(300); const html = await page.locator('.ut-richout').innerHTML(); assert.match(html, /<h1>Title<\/h1>/); assert.match(html, /<input type="checkbox" disabled="" checked="">/); assert.ok(!html.includes('<script'), 'no script'); assert.ok(html.includes('href="#"'), 'js link neutralised'); assert.equal(await page.evaluate(() => window.__x), undefined);
+  },
+  async 'css-html-minifier'(page) {
+    await area(page).fill('/* c */\n.a {\n  margin: 0px;\n  color: #ffffff;\n}\n'); await page.waitForTimeout(300); assert.equal(await out(page).inputValue(), '.a{margin:0;color:#fff}'); assert.match(await rootText(page), /Type\s*CSS/);
+    await area(page).fill('<!-- x -->\n<div>\n  <p>Hi   there</p>\n</div>'); await page.waitForTimeout(300); assert.equal(await out(page).inputValue(), '<div><p>Hi there</p></div>'); await area(page).fill('{ "a": [1, 2] }'); await page.waitForTimeout(300); assert.equal(await out(page).inputValue(), '{"a":[1,2]}');
+  },
+  async 'lorem-ipsum-generator'(page) {
+    const a = await out(page).inputValue(); assert.ok(a.startsWith('Lorem ipsum dolor sit amet')); assert.equal(a.split('\n\n').length, 3); await page.getByRole('button', { name: 'Generate new text' }).click(); const b = await out(page).inputValue(); assert.notEqual(a, b);
+    await page.locator('#tool-root select').selectOption('words'); await page.locator('#tool-root input[type=number]').fill('10'); await page.waitForTimeout(300); assert.equal((await out(page).inputValue()).split(' ').length, 10);
+  },
+});
+
 export default custom;

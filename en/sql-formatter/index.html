@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>SQL Formatter – Beautify SQL for PostgreSQL, MySQL, SQL Server and More (No Upload)</title>
+  <meta name="description" content="Make SQL queries readable with indentation and line breaks. Free, runs in your browser, nothing is uploaded.">
+  
+  <link rel="canonical" href="https://ohfis.com/en/sql-formatter/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/sql-formatter/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/sql-formatieren-und-verschoenern/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/formatowanie-sql/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/formatovani-sql/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sql-formatter/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohfis">
+  <meta property="og:url" content="https://ohfis.com/en/sql-formatter/">
+  <meta property="og:title" content="SQL Formatter – Beautify SQL for PostgreSQL, MySQL, SQL Server and More (No Upload)">
+  <meta property="og:description" content="Make SQL queries readable with indentation and line breaks. Free, runs in your browser, nothing is uploaded.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=2c184942">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"SQL Formatter and Beautifier","url":"https://ohfis.com/en/sql-formatter/","description":"Make SQL queries readable with indentation and line breaks. Free, runs in your browser, nothing is uploaded.","inLanguage":"en","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ohfis.com/en/"},{"@type":"ListItem","position":2,"name":"IT & Web","item":"https://ohfis.com/en/it-web-tools/"},{"@type":"ListItem","position":3,"name":"SQL Formatter and Beautifier"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to use it: SQL Formatter and Beautifier","step":[{"@type":"HowToStep","position":1,"text":"Paste the SQL."},{"@type":"HowToStep","position":2,"text":"Choose the dialect, keyword case and indentation."},{"@type":"HowToStep","position":3,"text":"Copy the formatted query."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it validate my SQL?","acceptedAnswer":{"@type":"Answer","text":"No. It only formats. A syntax error may show up as a formatting error, but a valid-looking query can still fail on your database."}},{"@type":"Question","name":"Which dialect should I pick?","acceptedAnswer":{"@type":"Answer","text":"The one of your database. Standard SQL works for simple queries; vendor-specific features format best with the matching dialect."}},{"@type":"Question","name":"Are my files uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. The file is opened and processed by your own browser. You can check it yourself: open your browser's network tab while using the tool, or disconnect from the internet after the page has loaded."}},{"@type":"Question","name":"Is this tool free?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely. There is no sign-up, no paid tier and no watermark on your files."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Skip to content</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/en/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>Ohfis</span></a>
+      <nav class="s-nav" aria-label="Main navigation" data-menu="/assets/i18n/menu.en.js">
+        <div class="s-navitem" data-group="pdf"><a class="s-navlink" href="/en/pdf-tools/">PDF &amp; Documents</a><button class="s-navtoggle" type="button" aria-expanded="false" aria-controls="drop-pdf" aria-label="Open menu: PDF &amp; Documents"><svg viewBox="0 0 10 10" width="10" height="10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><div class="s-drop" id="drop-pdf" hidden></div></div><div class="s-navitem" data-group="text"><a class="s-navlink" href="/en/text-tools/">Text &amp; Notes</a><button class="s-navtoggle" type="button" aria-expanded="false" aria-controls="drop-text" aria-label="Open menu: Text &amp; Notes"><svg viewBox="0 0 10 10" width="10" height="10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><div class="s-drop" id="drop-text" hidden></div></div><div class="s-navitem" data-group="data"><a class="s-navlink" href="/en/spreadsheet-csv-tools/">Spreadsheets &amp; CSV</a><button class="s-navtoggle" type="button" aria-expanded="false" aria-controls="drop-data" aria-label="Open menu: Spreadsheets &amp; CSV"><svg viewBox="0 0 10 10" width="10" height="10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><div class="s-drop" id="drop-data" hidden></div></div><div class="s-navitem" data-group="images"><a class="s-navlink" href="/en/image-media-tools/">Images &amp; Media</a><button class="s-navtoggle" type="button" aria-expanded="false" aria-controls="drop-images" aria-label="Open menu: Images &amp; Media"><svg viewBox="0 0 10 10" width="10" height="10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><div class="s-drop" id="drop-images" hidden></div></div><div class="s-navitem" data-group="time"><a class="s-navlink" href="/en/time-calendar-tools/">Time &amp; Calendar</a><button class="s-navtoggle" type="button" aria-expanded="false" aria-controls="drop-time" aria-label="Open menu: Time &amp; Calendar"><svg viewBox="0 0 10 10" width="10" height="10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><div class="s-drop" id="drop-time" hidden></div></div><div class="s-navitem" data-group="business"><a class="s-navlink" href="/en/business-team-tools/">Business &amp; Team</a><button class="s-navtoggle" type="button" aria-expanded="false" aria-controls="drop-business" aria-label="Open menu: Business &amp; Team"><svg viewBox="0 0 10 10" width="10" height="10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><div class="s-drop" id="drop-business" hidden></div></div><div class="s-navitem" data-group="dev"><a class="s-navlink" href="/en/it-web-tools/" aria-current="page">IT &amp; Web</a><button class="s-navtoggle" type="button" aria-expanded="false" aria-controls="drop-dev" aria-label="Open menu: IT &amp; Web"><svg viewBox="0 0 10 10" width="10" height="10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><div class="s-drop" id="drop-dev" hidden></div></div>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Language">en</summary>
+          <ul>
+            <li><a href="/en/sql-formatter/" hreflang="en" lang="en" data-set-lang="en" aria-current="true">English</a></li><li><a href="/de/sql-formatieren-und-verschoenern/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/formatowanie-sql/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/formatovani-sql/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Switch between light and dark" title="Switch between light and dark">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/en/">Home</a></li><li><a href="/en/it-web-tools/">IT &amp; Web</a></li><li><span aria-current="page">SQL Formatter and Beautifier</span></li></ol>
+      <div class="s-toolhead">
+        <h1>SQL Formatter and Beautifier</h1>
+        <p>Make SQL queries readable with indentation and line breaks.</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="sql-formatter" data-cat="dev"><p class="pt-hint">Loading tool…</p><noscript><p class="pt-drop__error">This tool needs JavaScript, because your file is processed in your browser.</p></noscript></div>
+        <ul class="s-trust"><li>No upload</li><li>Free</li><li>No account</li><li>Works offline once loaded</li></ul>
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>How SQL Formatter and Beautifier works</h2>
+        
+        <p>Paste a long one-line query and get it formatted with each clause on its own line, indented joins and conditions and keywords in upper case. Choose the dialect (standard SQL, PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, BigQuery, Snowflake), the keyword case and the indentation.</p><p>The formatter is the open-source sql-formatter library, running in your browser; your queries are not sent anywhere, which matters when they contain table names or values from a real system. It formats; it does not check that the query would run, and unusual vendor syntax can be laid out differently than you would.</p>
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>How to use it</h2>
+        <ol class="s-steps"><li><p>Paste the SQL.</p></li><li><p>Choose the dialect, keyword case and indentation.</p></li><li><p>Copy the formatted query.</p></li></ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>Frequently asked questions</h2>
+        <div class="s-faq">
+          <details open><summary>Does it validate my SQL?</summary><p>No. It only formats. A syntax error may show up as a formatting error, but a valid-looking query can still fail on your database.</p></details>
+          <details><summary>Which dialect should I pick?</summary><p>The one of your database. Standard SQL works for simple queries; vendor-specific features format best with the matching dialect.</p></details>
+          <details><summary>Are my files uploaded?</summary><p>No. The file is opened and processed by your own browser. You can check it yourself: open your browser's network tab while using the tool, or disconnect from the internet after the page has loaded.</p></details>
+          <details><summary>Is this tool free?</summary><p>Yes, completely. There is no sign-up, no paid tier and no watermark on your files.</p></details>
+        </div>
+      </div>
+    </section>
+    
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>You might also need</h2>
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="data" href="/en/csv-to-sql/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">CSV to SQL INSERT Converter</span>
+          <span class="s-card__desc">Turn spreadsheet rows into INSERT or UPDATE statements for MySQL, PostgreSQL, SQLite or SQL Server.</span>
+        </a><a class="s-card" data-cat="dev" href="/en/json-formatter/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">JSON Formatter and Validator</span>
+          <span class="s-card__desc">Format, minify, sort and validate JSON, with the exact error position.</span>
+        </a><a class="s-card" data-cat="dev" href="/en/regex-tester/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Regex Tester (JavaScript)</span>
+          <span class="s-card__desc">Test a regular expression live: matches, groups and replacement.</span>
+        </a><a class="s-card" data-cat="text" href="/en/text-diff-checker/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Text Diff Checker</span>
+          <span class="s-card__desc">Compare two texts side by side and see every added and removed word or line.</span>
+        </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/en/privacy/">Privacy</a>
+        <a href="/en/imprint/">Imprint</a>
+        <span class="s-footer__note">Runs in your browser. No upload, no account, no tracking.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=2f5991df" defer></script>
+  <script type="module" src="/assets/js/tools/main.js?v=b91dabba"></script>
+</body>
+</html>

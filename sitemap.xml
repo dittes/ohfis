@@ -3457,6 +3457,258 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/font-converter/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/json-formatter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/json-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-formatieren-und-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/formatowanie-i-walidacja-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/formatovani-a-kontrola-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/json-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/json-formatieren-und-pruefen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/json-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-formatieren-und-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/formatowanie-i-walidacja-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/formatovani-a-kontrola-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/json-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/formatowanie-i-walidacja-json/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/json-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-formatieren-und-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/formatowanie-i-walidacja-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/formatovani-a-kontrola-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/json-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/formatovani-a-kontrola-json/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/json-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-formatieren-und-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/formatowanie-i-walidacja-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/formatovani-a-kontrola-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/json-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/data-format-converter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/data-format-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-yaml-und-xml-umwandeln/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-json-yaml-i-xml/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-json-yaml-a-xml/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/data-format-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/json-yaml-und-xml-umwandeln/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/data-format-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-yaml-und-xml-umwandeln/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-json-yaml-i-xml/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-json-yaml-a-xml/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/data-format-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/konwerter-json-yaml-i-xml/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/data-format-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-yaml-und-xml-umwandeln/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-json-yaml-i-xml/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-json-yaml-a-xml/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/data-format-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/prevodnik-json-yaml-a-xml/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/data-format-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/json-yaml-und-xml-umwandeln/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-json-yaml-i-xml/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-json-yaml-a-xml/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/data-format-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/sql-formatter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sql-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sql-formatieren-und-verschoenern/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/formatowanie-sql/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/formatovani-sql/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sql-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/sql-formatieren-und-verschoenern/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sql-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sql-formatieren-und-verschoenern/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/formatowanie-sql/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/formatovani-sql/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sql-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/formatowanie-sql/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sql-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sql-formatieren-und-verschoenern/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/formatowanie-sql/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/formatovani-sql/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sql-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/formatovani-sql/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/sql-formatter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/sql-formatieren-und-verschoenern/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/formatowanie-sql/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/formatovani-sql/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/sql-formatter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/regex-tester/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/regex-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/regex-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tester-wyrazen-regularnych/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tester-regularnich-vyrazu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/regex-tester/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/regex-tester/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/regex-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/regex-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tester-wyrazen-regularnych/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tester-regularnich-vyrazu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/regex-tester/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/tester-wyrazen-regularnych/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/regex-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/regex-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tester-wyrazen-regularnych/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tester-regularnich-vyrazu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/regex-tester/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/tester-regularnich-vyrazu/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/regex-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/regex-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tester-wyrazen-regularnych/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tester-regularnich-vyrazu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/regex-tester/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/markdown-previewer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/markdown-previewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/markdown-vorschau/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/podglad-markdown/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/nahled-markdownu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/markdown-previewer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/markdown-vorschau/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/markdown-previewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/markdown-vorschau/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/podglad-markdown/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/nahled-markdownu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/markdown-previewer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/podglad-markdown/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/markdown-previewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/markdown-vorschau/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/podglad-markdown/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/nahled-markdownu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/markdown-previewer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/nahled-markdownu/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/markdown-previewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/markdown-vorschau/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/podglad-markdown/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/nahled-markdownu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/markdown-previewer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/css-html-minifier/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/css-html-minifier/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/css-html-und-json-minimieren/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/minifikator-css-html-i-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/minifikace-css-html-a-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/css-html-minifier/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/css-html-und-json-minimieren/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/css-html-minifier/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/css-html-und-json-minimieren/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/minifikator-css-html-i-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/minifikace-css-html-a-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/css-html-minifier/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/minifikator-css-html-i-json/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/css-html-minifier/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/css-html-und-json-minimieren/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/minifikator-css-html-i-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/minifikace-css-html-a-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/css-html-minifier/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/minifikace-css-html-a-json/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/css-html-minifier/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/css-html-und-json-minimieren/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/minifikator-css-html-i-json/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/minifikace-css-html-a-json/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/css-html-minifier/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/lorem-ipsum-generator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/lorem-ipsum-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lorem-ipsum-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-lorem-ipsum/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-lorem-ipsum/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/lorem-ipsum-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/lorem-ipsum-generator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/lorem-ipsum-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lorem-ipsum-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-lorem-ipsum/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-lorem-ipsum/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/lorem-ipsum-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/generator-lorem-ipsum/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/lorem-ipsum-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lorem-ipsum-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-lorem-ipsum/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-lorem-ipsum/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/lorem-ipsum-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/generator-lorem-ipsum/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/lorem-ipsum-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lorem-ipsum-generator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-lorem-ipsum/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-lorem-ipsum/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/lorem-ipsum-generator/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/booklet-maker/</loc>
     <lastmod>2026-11-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/booklet-maker/"/>

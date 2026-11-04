@@ -3,6 +3,7 @@ import { h, t, area, btn, select, check, field, numInput, textInput, filePicker,
 import { calcTool } from './calctool.js';
 import * as I from './lib/it.js';
 import * as FT from './lib/font.js';
+import * as DV from './lib/devtools.js';
 import { fflate } from '../pdf/lib.js';
 import * as N from './lib/notes.js';
 import { buildICS, parseYMD, addDays, ymd } from './lib/time.js';
@@ -223,5 +224,67 @@ export const tools = {
         css.value = `@font-face {\n  font-family: "${(d.family || fname).replace(/"/g, '')}";\n  src: url("${fname}.woff") format("woff");\n  font-weight: normal;\n  font-style: normal;\n  font-display: swap;\n}`; } catch (e) { err.textContent = e.message || String(e); err.hidden = false; } }
     const drop = h('div', { class: 'ut-drop' }, h('p', {}, 'Drop a TTF, OTF or WOFF font here, or'), filePicker({ accept: '.ttf,.otf,.woff,font/ttf,font/otf,font/woff', label: t('chooseFile'), onFiles: load })); ['dragover', 'drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); if (ev === 'drop' && e.dataTransfer.files[0]) load([e.dataTransfer.files[0]]); }));
     ui.append(drop, info, err, out, field('Preview text', sample), prev, h('div', { class: 'ut-col' }, h('strong', {}, 'CSS for your website'), css, h('div', { class: 'ut-actions' }, btn('Copy CSS', () => copyText(css.value), 'secondary'))), h('p', { class: 'pt-hint' }, 'TTF and OTF fonts are converted to WOFF (smaller, for websites); WOFF fonts are unpacked to TTF or OTF. The glyph shapes are not changed. WOFF2, the smallest web format, needs Brotli compression and is not supported. Check the font licence before you put a font on a website. Nothing is uploaded.'));
+  },
+
+  'json-formatter'(root) {
+    const fmtErr = (text, e) => { const line = text.split('\n')[e.line - 1] ?? ''; return `Line ${e.line}, column ${e.col}: ${e.message}${line ? `\n${line.slice(0, 120)}\n${' '.repeat(Math.min(e.col - 1, 119))}^` : ''}`; };
+    const ui = textTool(root, { file: '.json,application/json,.txt', filename: 'formatted.json', inputLabel: 'JSON', outputLabel: 'Result', sample: '{"name":"Ohfis","tools":[1,2,3],"nested":{"ok":true,"none":null}}',
+      options: [{ key: 'indent', label: 'Indentation', type: 'select', value: '2', choices: [['2', '2 spaces'], ['4', '4 spaces'], ['tab', 'Tab']] }, { key: 'minify', label: 'Minify (one line)', type: 'check', value: false }, { key: 'sortKeys', label: 'Sort keys A–Z', type: 'check', value: false }, { key: 'lenient', label: 'Allow comments and trailing commas', type: 'check', value: false }],
+      run(s, o) { if (!s.trim()) return { text: '', stats: [] }; const r = DV.formatJson(s, { indent: o.indent === 'tab' ? 'tab' : Number(o.indent), minify: o.minify, sortKeys: o.sortKeys, lenient: o.lenient }); if (!r.ok) throw new Error(fmtErr(o.lenient ? DV.stripJsonExtras(s) : s, r.error)); const st = r.stats; return { text: r.text, stats: [['Type', st.type], ['Keys', st.keys], ['Depth', st.depth], ['Size', sizeFmt(st.bytes)]] }; } });
+    const e = root.querySelector('.pt-drop__error'); if (e) e.style.whiteSpace = 'pre-wrap', e.style.fontFamily = 'ui-monospace, monospace'; return ui;
+  },
+  async 'data-format-converter'(root) {
+    const yaml = (await import('/assets/vendor/js-yaml/js-yaml.mjs')).default;
+    const detect = s => { const x = s.trimStart(); return x.startsWith('<') ? 'xml' : /^[[{]/.test(x) ? 'json' : 'yaml'; };
+    textTool(root, { file: '.json,.yaml,.yml,.xml,.txt', inputLabel: 'Input', outputLabel: 'Result', sample: 'shop:\n  name: Ohfis\n  items:\n    - id: 1\n      label: Pen\n    - id: 2\n      label: Ink\n',
+      options: [{ key: 'from', label: 'From', type: 'select', value: 'auto', choices: [['auto', 'Detect automatically'], ['json', 'JSON'], ['yaml', 'YAML'], ['xml', 'XML']] }, { key: 'to', label: 'To', type: 'select', value: 'json', choices: [['json', 'JSON'], ['yaml', 'YAML'], ['xml', 'XML']] }, { key: 'indent', label: 'Indentation', type: 'select', value: '2', choices: [['2', '2 spaces'], ['4', '4 spaces']] }],
+      run(s, o) {
+        if (!s.trim()) return { text: '', stats: [] }; const from = o.from === 'auto' ? detect(s) : o.from, ind = Number(o.indent); let v;
+        try { v = from === 'json' ? JSON.parse(DV.stripJsonExtras(s)) : from === 'yaml' ? yaml.load(s) : DV.xmlToJson(s); } catch (e) { if (from === 'json') { const p = DV.jsonErrorPosition(s); throw new Error(`Not valid JSON, line ${p.line}, column ${p.col}: ${p.message}`); } throw new Error(`Not valid ${from.toUpperCase()}: ${String(e.message).split('\n')[0]}`); }
+        const text = o.to === 'json' ? JSON.stringify(v, null, ind) : o.to === 'yaml' ? yaml.dump(v, { indent: ind, lineWidth: -1, noRefs: true }) : DV.valueToXml(v, { indent: ind });
+        return { text, stats: [['Detected input', from.toUpperCase()], ['Output', o.to.toUpperCase()], ['Size', sizeFmt(new TextEncoder().encode(text).length)]] };
+      } });
+  },
+  async 'sql-formatter'(root) {
+    await new Promise((res, rej) => { if (globalThis.sqlFormatter) return res(); const sc = document.createElement('script'); sc.src = '/assets/vendor/sql-formatter/sql-formatter.min.js'; sc.onload = res; sc.onerror = () => rej(new Error('The SQL formatter could not be loaded.')); document.head.append(sc); });
+    textTool(root, { file: '.sql,.txt', filename: 'formatted.sql', inputLabel: 'SQL', outputLabel: 'Formatted SQL', sample: "select u.id,u.name,count(o.id) as orders from users u left join orders o on o.user_id=u.id where u.active=1 and o.created_at>'2024-01-01' group by u.id,u.name having count(o.id)>2 order by orders desc limit 10;",
+      options: [{ key: 'language', label: 'Dialect', type: 'select', value: 'sql', choices: [['sql', 'Standard SQL'], ['postgresql', 'PostgreSQL'], ['mysql', 'MySQL'], ['mariadb', 'MariaDB'], ['sqlite', 'SQLite'], ['transactsql', 'SQL Server (T-SQL)'], ['plsql', 'Oracle PL/SQL'], ['bigquery', 'BigQuery'], ['snowflake', 'Snowflake']] }, { key: 'keywordCase', label: 'Keywords', type: 'select', value: 'upper', choices: [['upper', 'UPPERCASE'], ['lower', 'lowercase'], ['preserve', 'As written']] }, { key: 'indent', label: 'Indentation', type: 'select', value: '2', choices: [['2', '2 spaces'], ['4', '4 spaces'], ['tab', 'Tab']] }],
+      run(s, o) { if (!s.trim()) return { text: '', stats: [] }; let text; try { text = globalThis.sqlFormatter.format(s, { language: o.language, keywordCase: o.keywordCase, tabWidth: o.indent === 'tab' ? 2 : Number(o.indent), useTabs: o.indent === 'tab', linesBetweenQueries: 2 }); } catch (e) { throw new Error(String(e.message).split('\n')[0]); } return { text, stats: [['Lines', text.split('\n').length], ['Statements', (s.match(/;/g) || []).length || 1]] }; } });
+  },
+  'regex-tester'(root) {
+    const ui = wrap(root); let worker = null, seq = 0, timer = null;
+    const pat = textInput('(?<key>\\w+)=(\\d+)', { 'aria-label': 'Regular expression', onInput: () => schedule() }), rep = textInput('', { 'aria-label': 'Replacement', placeholder: 'Replacement, e.g. <$1>', onInput: () => schedule() });
+    const flagBoxes = [['g', 'g (all matches)', true], ['i', 'i (ignore case)', false], ['m', 'm (^ $ per line)', false], ['s', 's (. matches newline)', false], ['u', 'u (Unicode)', false]].map(([f, l, v]) => ({ f, node: check(l, v, { onChange: () => schedule() }) }));
+    const text = area({ rows: 7, 'aria-label': 'Text to test', onInput: () => schedule() }); text.value = 'a=1\nbb=22 and c=333\nno match here';
+    const shown = h('div', { class: 'ut-hl', 'aria-live': 'polite' }), tbl = h('div'), replOut = area({ readonly: true, rows: 4, 'aria-label': 'Replacement result' }), info = h('div', { class: 'ut-stats' }), err = h('p', { class: 'pt-drop__error', role: 'alert', hidden: true }), replWrap = h('div', { class: 'ut-col', hidden: true }, h('strong', {}, 'Result of the replacement'), replOut);
+    const schedule = () => { clearTimeout(timer); timer = setTimeout(run, 180); };
+    function run() {
+      err.hidden = true; const flags = flagBoxes.filter(x => x.node.input.checked).map(x => x.f).join(''), id = ++seq;
+      if (!pat.value) { shown.textContent = text.value; tbl.replaceChildren(); info.replaceChildren(); replWrap.hidden = true; return; }
+      if (text.value.length > 300000) { err.textContent = 'The text is too long for the live test (limit 300 000 characters).'; err.hidden = false; return; }
+      worker?.terminate(); worker = new Worker('/assets/js/tools/regex-worker.js', { type: 'module' }); const wd = setTimeout(() => { worker.terminate(); worker = null; err.textContent = 'The pattern took too long (over 2 seconds). It may cause catastrophic backtracking, for example nested repeats like (a+)+. Make it more specific.'; err.hidden = false; }, 2000);
+      worker.onmessage = ({ data }) => { clearTimeout(wd); if (data.id !== seq) return; if (data.error) { err.textContent = data.error; err.hidden = false; shown.textContent = text.value; tbl.replaceChildren(); info.replaceChildren(); return; }
+        const parts = []; let pos = 0; for (const m of data.matches) { if (m.index > pos) parts.push(text.value.slice(pos, m.index)); parts.push(h('mark', {}, m.text || '∅')); pos = m.end; } parts.push(text.value.slice(pos)); shown.replaceChildren(...parts);
+        info.replaceChildren(stat('Matches', data.matches.length + (data.truncated ? '+' : '')), stat('Flags', flags || '–')); const hasNamed = data.matches.some(m => Object.keys(m.named).length);
+        tbl.replaceChildren(data.matches.length ? table([['#', 'Match', 'Line:col', 'Groups'], ...data.matches.map((m, k) => [k + 1, m.text, `${m.line}:${m.col}`, m.groups.map((g, gi) => `$${gi + 1}=${g ?? '∅'}`).concat(hasNamed ? Object.entries(m.named).map(([n, v]) => `${n}=${v}`) : []).join('  ')])], { max: 200 }) : h('p', { class: 'pt-hint' }, 'No matches.'));
+        replWrap.hidden = data.replaced === null; if (data.replaced !== null) replOut.value = data.replaced; };
+      worker.postMessage({ id, pattern: pat.value, flags, text: text.value, replace: rep.value === '' ? null : rep.value });
+    }
+    ui.append(field('Regular expression', pat), h('div', { class: 'ut-options' }, flagBoxes.map(x => x.node)), field('Replacement (optional, $1 $<name> $&)', rep), h('div', { class: 'ut-col' }, h('strong', {}, 'Text to test'), text), err, info, h('div', { class: 'ut-col' }, h('strong', {}, 'Matches highlighted'), shown), tbl, replWrap, h('p', { class: 'pt-hint' }, 'JavaScript regular expressions (the same engine as in your browser). The test runs in a background worker and is stopped after 2 seconds, so a bad pattern cannot freeze this page. Nothing is uploaded.'));
+    run(); addEventListener('pagehide', () => worker?.terminate());
+  },
+  'markdown-previewer'(root) {
+    textTool(root, { file: '.md,.markdown,.txt', filename: 'preview.html', inputLabel: 'Markdown', outputLabel: 'Preview (the copy button copies the HTML)', outputHtml: true, sample: '# Hello Ohfis\n\nSome **bold**, *italic* and `code`.\n\n- [x] done\n- [ ] todo\n\n| A | B |\n|---|--:|\n| 1 | 2 |\n\n> Quote\n\n```js\nconsole.log("hi");\n```\n',
+      run: s => { const html = DV.markdownToHtml(s); return { text: html, html, stats: [['Words', (s.match(/[\p{L}\p{N}'’-]+/gu) || []).length], ['Characters', s.length]] }; } });
+  },
+  'css-html-minifier'(root) {
+    textTool(root, { file: '.css,.html,.htm,.json,.txt', filename: 'minified.txt', inputLabel: 'CSS, HTML or JSON', outputLabel: 'Minified', sample: '/* header */\n.card {\n  margin: 0px;\n  color: #ffffff;\n}\n\n.card > .title { font-weight : bold; }\n',
+      options: [{ key: 'mode', label: 'Type', type: 'select', value: 'auto', choices: [['auto', 'Detect automatically'], ['css', 'CSS'], ['html', 'HTML'], ['json', 'JSON']] }],
+      run(s, o) { if (!s.trim()) return { text: '', stats: [] }; const x = s.trimStart(), mode = o.mode === 'auto' ? (x.startsWith('<') ? 'html' : /^[[{]/.test(x) && !/^\s*[{[][^]*?:\s*[^"]/.test(x.slice(0, 0)) && DV.formatJson(s, { lenient: true }).ok ? 'json' : 'css') : o.mode; let text; try { text = mode === 'html' ? DV.minifyHtml(s) : mode === 'json' ? DV.minifyJson(s) : DV.minifyCss(s); } catch (e) { throw new Error(mode === 'json' ? 'Not valid JSON.' : e.message); } const z = DV.savings(s, text); return { text, stats: [['Type', mode.toUpperCase()], ['Before', sizeFmt(z.before)], ['After', sizeFmt(z.after)], ['Saved', `${z.before ? Math.round((1 - z.after / z.before) * 100) : 0} %`]] }; } });
+  },
+  'lorem-ipsum-generator'(root) {
+    const ui = wrap(root); const unit = select([['paragraphs', 'Paragraphs'], ['sentences', 'Sentences'], ['words', 'Words']], 'paragraphs', { onChange: gen }), count = numInput(3, { min: 1, max: 1000, step: 1, onInput: debounce(gen, 150) }), classic = check('Start with "Lorem ipsum dolor sit amet"', true, { onChange: gen }), html = check('Wrap paragraphs in <p> tags', false, { onChange: gen }); let seed = 1; const out = area({ rows: 12, readonly: true, 'aria-label': 'Generated text' }), info = h('div', { class: 'ut-stats' });
+    function gen() { let txt = DV.lorem({ unit: unit.value, count: Number(count.value) || 1, classicStart: classic.input.checked, seed }); if (html.input.checked && unit.value === 'paragraphs') txt = txt.split('\n\n').map(p => `<p>${p}</p>`).join('\n'); out.value = txt; info.replaceChildren(stat('Words', (txt.match(/[a-z]+/gi) || []).length), stat('Characters', txt.length)); }
+    ui.append(h('div', { class: 'ut-options' }, field('Amount', count), field('Unit', unit), classic, html), h('div', { class: 'ut-actions' }, btn(t('copy'), () => copyText(out.value), 'primary'), btn('Generate new text', () => { seed = Math.floor(Math.random() * 1e9) + 1; gen(); }, 'secondary'), btn(t('download'), () => download('lorem-ipsum.txt', out.value), 'ghost')), out, info, h('p', { class: 'pt-hint' }, 'Placeholder text made of Latin-looking words, with no meaning. The same settings always give the same text until you press "Generate new text".')); gen();
   },
 };

@@ -981,3 +981,7 @@ body.s-page { letter-spacing: -.003em; }
 .ut-stage .ut-rect { position: absolute; border: 2px solid #ff3b3b; background: rgba(255, 59, 59, .18); pointer-events: none; box-sizing: border-box; }
 .ut-stage video { display: block; }
 progress { accent-color: var(--s-blue); height: 10px; }
+.ut-hl { white-space: pre-wrap; overflow-wrap: anywhere; font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; padding: 12px 14px; border: 1px solid var(--s-rule); border-radius: var(--s-radius); max-height: 320px; overflow: auto; }
+.ut-hl mark { background: #ffe58a; color: inherit; border-radius: 3px; padding: 0 1px; }
+:root[data-theme="dark"] .ut-hl mark { background: #6b5a14; }
+.ut-richout table { border-collapse: collapse; } .ut-richout th, .ut-richout td { border: 1px solid var(--s-rule); padding: 4px 8px; } .ut-richout pre { background: var(--s-paper-2); padding: 10px 12px; border-radius: 6px; overflow: auto; } .ut-richout blockquote { margin: 0 0 .8em; padding-left: 12px; border-left: 3px solid var(--s-rule); color: var(--s-ink-2); } .ut-richout code { background: var(--s-paper-2); padding: 1px 5px; border-radius: 4px; }

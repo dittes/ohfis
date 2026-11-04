@@ -625,6 +625,27 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 - [Font Converter (TTF/OTF to WOFF and back)](https://ohfis.com/en/font-converter/): Convert a font file to WOFF for websites, or unpack WOFF to TTF/OTF.
   Drop a TTF or OTF font and get a WOFF file for your website, usually about a third smaller; drop a WOFF and get the TTF or OTF back. The tool shows the font family, style and number of glyphs, previews your own text in the font and writes the matching @font-face CSS for you to copy.
   How to use: Drop the font file. Check the preview and the font details. Download the converted file and copy the CSS.
+- [JSON Formatter and Validator](https://ohfis.com/en/json-formatter/): Format, minify, sort and validate JSON, with the exact error position.
+  Paste JSON and get it indented, minified or with sorted keys, or see exactly where it is invalid: the line, the column and what was expected, with the offending line and a pointer. An option accepts JSON with comments and trailing commas, as found in config files.
+  How to use: Paste the JSON or open a file. Choose indentation, minify or sort keys. Copy or download the result, or fix the error shown.
+- [JSON, YAML and XML Converter](https://ohfis.com/en/data-format-converter/): Convert between JSON, YAML and XML in either direction.
+  Paste data in one format and get it in another: JSON to YAML for config files, YAML to JSON for APIs, XML to JSON and back. The input format is detected automatically, and the indentation can be chosen.
+  How to use: Paste the data or open a file. Choose the target format (the input is detected automatically). Copy or download the result.
+- [SQL Formatter and Beautifier](https://ohfis.com/en/sql-formatter/): Make SQL queries readable with indentation and line breaks.
+  Paste a long one-line query and get it formatted with each clause on its own line, indented joins and conditions and keywords in upper case. Choose the dialect (standard SQL, PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, BigQuery, Snowflake), the keyword case and the indentation.
+  How to use: Paste the SQL. Choose the dialect, keyword case and indentation. Copy the formatted query.
+- [Regex Tester (JavaScript)](https://ohfis.com/en/regex-tester/): Test a regular expression live: matches, groups and replacement.
+  Type a pattern and a text and see every match highlighted, with its position (line and column), numbered groups and named groups. Switch the flags (g, i, m, s, u) and try a replacement such as <$1> to see the result. Together with the Regex Explainer it helps you build and understand patterns.
+  How to use: Enter the pattern and choose the flags. Paste or type the test text. Read the highlighted matches and groups, and try a replacement.
+- [Markdown Previewer (Live Preview)](https://ohfis.com/en/markdown-previewer/): See Markdown rendered as you type and copy the HTML.
+  Write or paste Markdown and see headings, lists, task lists, tables, quotes, code blocks, links and images rendered next to it. The copy button gives you the generated HTML. Open a .md file to check a README before you commit it.
+  How to use: Type, paste or open the Markdown. Check the preview. Copy the HTML or the Markdown.
+- [CSS, HTML and JSON Minifier](https://ohfis.com/en/css-html-minifier/): Remove comments and whitespace to make CSS, HTML or JSON smaller.
+  Paste CSS, HTML or JSON and get a compact version without comments and unnecessary whitespace, with the size before and after. CSS also loses redundant semicolons and zero units and gets short hex colours; HTML keeps the content of pre, textarea, script and style blocks intact.
+  How to use: Paste the code. Check the detected type (or choose it). Copy the minified result and compare the sizes.
+- [Lorem Ipsum Generator](https://ohfis.com/en/lorem-ipsum-generator/): Generate placeholder text by paragraphs, sentences or words.
+  Choose how many paragraphs, sentences or words you need, whether to start with the classic "Lorem ipsum dolor sit amet", and optionally wrap the paragraphs in <p> tags. Copy or download the text for a mock-up, a template or a layout test.
+  How to use: Choose the amount and the unit. Decide on the classic start and HTML tags. Copy the text, or press "Generate new text" for a different one.
 
 ## Notes & Privacy
 

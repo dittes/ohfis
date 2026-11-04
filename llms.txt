@@ -257,6 +257,13 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 - [CSS Flexbox Playground & Cheat Sheet](https://ohfis.com/en/css-flexbox-playground/): Click through flexbox settings, see the result live and copy the CSS.
 - [Webhook Signature Tester (HMAC SHA-256)](https://ohfis.com/en/webhook-signature-tester/): Calculate GitHub, Stripe and Slack style webhook signatures and check the one you received.
 - [Font Converter (TTF/OTF to WOFF and back)](https://ohfis.com/en/font-converter/): Convert a font file to WOFF for websites, or unpack WOFF to TTF/OTF.
+- [JSON Formatter and Validator](https://ohfis.com/en/json-formatter/): Format, minify, sort and validate JSON, with the exact error position.
+- [JSON, YAML and XML Converter](https://ohfis.com/en/data-format-converter/): Convert between JSON, YAML and XML in either direction.
+- [SQL Formatter and Beautifier](https://ohfis.com/en/sql-formatter/): Make SQL queries readable with indentation and line breaks.
+- [Regex Tester (JavaScript)](https://ohfis.com/en/regex-tester/): Test a regular expression live: matches, groups and replacement.
+- [Markdown Previewer (Live Preview)](https://ohfis.com/en/markdown-previewer/): See Markdown rendered as you type and copy the HTML.
+- [CSS, HTML and JSON Minifier](https://ohfis.com/en/css-html-minifier/): Remove comments and whitespace to make CSS, HTML or JSON smaller.
+- [Lorem Ipsum Generator](https://ohfis.com/en/lorem-ipsum-generator/): Generate placeholder text by paragraphs, sentences or words.
 
 ## Notes & Privacy
 
