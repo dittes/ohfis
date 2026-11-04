@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Srovnání poplatků za platby","url":"https://ohfis.com/cs/payment-processing-fee-calculator/","description":"Porovnejte poplatky Stripe, PayPalu a dalších na platbu, měsíc a rok. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Byznys a finance","item":"https://ohfis.com/cs/business-finance-tools/"},{"@type":"ListItem","position":3,"name":"Srovnání poplatků za platby"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Srovnání poplatků za platby","step":[{"@type":"HowToStep","position":1,"text":"Enter a typical payment amount and monthly volume."},{"@type":"HowToStep","position":2,"text":"Edit the processor list to your actual rates."},{"@type":"HowToStep","position":3,"text":"Compare effective rates and yearly cost."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is the effective rate higher on small payments?","acceptedAnswer":{"@type":"Answer","text":"The fixed fee (for example 0.30) is a large share of a 5 payment."}},{"@type":"Question","name":"Are these the current prices?","acceptedAnswer":{"@type":"Answer","text":"They are list prices from 2024. Fees change; use your own contract rates."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Srovnání poplatků za platby","step":[{"@type":"HowToStep","position":1,"text":"Zadejte typickou částku platby a měsíční objem."},{"@type":"HowToStep","position":2,"text":"Upravte seznam zpracovatelů na své skutečné sazby."},{"@type":"HowToStep","position":3,"text":"Porovnejte efektivní sazby a roční náklady."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Proč je efektivní sazba u malých plateb vyšší?","acceptedAnswer":{"@type":"Answer","text":"Pevný poplatek (například 0,30) je velkým podílem platby 5."}},{"@type":"Question","name":"Jsou to aktuální ceny?","acceptedAnswer":{"@type":"Answer","text":"Jsou to ceníkové ceny z roku 2024. Poplatky se mění; použijte sazby z vlastní smlouvy."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Srovnání poplatků za platby</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Find the cheapest way to get paid. Enter a typical payment and how many you receive per month; the table ranks processors by fee, shows what you actually receive, the effective rate and the yearly cost, and the amount you would need to charge to receive exactly 100.</p><p lang="en">Each processor charges a percentage plus a fixed fee: fee = amount × % + fixed. The effective rate is higher for small payments because the fixed part weighs more. The &quot;charge to receive 100&quot; column grosses the amount up: (100 + fixed) ÷ (1 − %). The prefilled rates are public list prices and are only a starting point: edit the list to match your own contract, card mix and currency.</p>
+        
+        <p>Najděte nejlevnější způsob, jak dostávat platby. Zadejte typickou platbu a počet plateb měsíčně; tabulka seřadí zpracovatele podle poplatku, ukáže, kolik skutečně dostanete, efektivní sazbu a roční náklad a částku, kterou byste museli účtovat, abyste dostali přesně 100.</p><p>Každý zpracovatel účtuje procento plus pevný poplatek: poplatek = částka × % + pevný. Efektivní sazba je u malých plateb vyšší, protože pevná část váží víc. Sloupec „účtovat pro 100“ částku navyšuje: (100 + pevný) ÷ (1 − %). Předvyplněné sazby jsou veřejné ceníky a jen výchozí bod: upravte seznam podle své smlouvy, mixu karet a měny.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Enter a typical payment amount and monthly volume.</p></li><li><p lang="en">Edit the processor list to your actual rates.</p></li><li><p lang="en">Compare effective rates and yearly cost.</p></li></ol>
+        <ol class="s-steps"><li><p>Zadejte typickou částku platby a měsíční objem.</p></li><li><p>Upravte seznam zpracovatelů na své skutečné sazby.</p></li><li><p>Porovnejte efektivní sazby a roční náklady.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Why is the effective rate higher on small payments?</summary><p lang="en">The fixed fee (for example 0.30) is a large share of a 5 payment.</p></details>
-          <details><summary lang="en">Are these the current prices?</summary><p lang="en">They are list prices from 2024. Fees change; use your own contract rates.</p></details>
+          <details open><summary>Proč je efektivní sazba u malých plateb vyšší?</summary><p>Pevný poplatek (například 0,30) je velkým podílem platby 5.</p></details>
+          <details><summary>Jsou to aktuální ceny?</summary><p>Jsou to ceníkové ceny z roku 2024. Poplatky se mění; použijte sazby z vlastní smlouvy.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

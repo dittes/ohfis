@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Kalkulator NPV i IRR","url":"https://ohfis.com/pl/npv-irr-calculator/","description":"Wartość bieżąca netto, wewnętrzna stopa zwrotu i zdyskontowany okres zwrotu. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","inLanguage":"pl","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"Biznes i finanse","item":"https://ohfis.com/pl/business-finance-tools/"},{"@type":"ListItem","position":3,"name":"Kalkulator NPV i IRR"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Kalkulator NPV i IRR","step":[{"@type":"HowToStep","position":1,"text":"Enter the discount rate."},{"@type":"HowToStep","position":2,"text":"List the cash flows, one per period, investment first."},{"@type":"HowToStep","position":3,"text":"Read NPV, IRR and payback."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does a positive NPV mean?","acceptedAnswer":{"@type":"Answer","text":"The project earns more than your required return, so it adds value."}},{"@type":"Question","name":"Why does Excel give a different NPV?","acceptedAnswer":{"@type":"Answer","text":"Excel treats the first value as period 1. This calculator treats it as today, as in most textbooks."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Kalkulator NPV i IRR","step":[{"@type":"HowToStep","position":1,"text":"Wpisz stopę dyskonta."},{"@type":"HowToStep","position":2,"text":"Wypisz przepływy, po jednym na okres, inwestycja pierwsza."},{"@type":"HowToStep","position":3,"text":"Odczytaj NPV, IRR i zwrot."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Co oznacza dodatnie NPV?","acceptedAnswer":{"@type":"Answer","text":"Projekt zarabia więcej niż wymagany zwrot, więc tworzy wartość."}},{"@type":"Question","name":"Dlaczego Excel daje inne NPV?","acceptedAnswer":{"@type":"Answer","text":"Excel traktuje pierwszą wartość jako okres 1. Ten kalkulator traktuje ją jako dziś, jak większość podręczników."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Przejdź do treści</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak działa: Kalkulator NPV i IRR</h2>
-        <p class="pt-hint">Szczegółowe wyjaśnienie jest po angielsku.</p>
-        <p lang="en">Evaluate a project by entering the discount rate and a list of cash flows, with the investment as a negative number first. The result is the net present value (NPV), the internal rate of return (IRR), the discounted payback time and a table of discount factors.</p><p lang="en">NPV = Σ cash flow(t) ÷ (1 + r)^t, with the first flow at t = 0 (not discounted). IRR is the rate at which NPV is zero, found by bisection to high precision; it is reported as &quot;no solution&quot; if the flows never change sign. Discounted payback interpolates the point at which the cumulative present value turns positive. Note that Excel's NPV function discounts the first value by one period, so add the initial investment outside the function.</p>
+        
+        <p>Oceń projekt, wpisując stopę dyskonta i listę przepływów pieniężnych, z inwestycją jako liczbą ujemną na początku. Wynikiem jest wartość bieżąca netto (NPV), wewnętrzna stopa zwrotu (IRR), zdyskontowany czas zwrotu i tabela czynników dyskontowych.</p><p>NPV = Σ przepływ(t) ÷ (1 + r)^t, gdzie pierwszy przepływ jest w t = 0 (niezdyskontowany). IRR to stopa, przy której NPV wynosi zero, znajdowana bisekcją z dużą precyzją; jest zgłaszana jako „brak rozwiązania”, jeśli przepływy nigdy nie zmieniają znaku. Zdyskontowany zwrot interpoluje punkt, w którym skumulowana wartość bieżąca staje się dodatnia. Pamiętaj, że funkcja NPV w Excelu dyskontuje pierwszą wartość o jeden okres, więc dodaj inwestycję początkową poza funkcją.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak z tego korzystać</h2>
-        <ol class="s-steps"><li><p lang="en">Enter the discount rate.</p></li><li><p lang="en">List the cash flows, one per period, investment first.</p></li><li><p lang="en">Read NPV, IRR and payback.</p></li></ol>
+        <ol class="s-steps"><li><p>Wpisz stopę dyskonta.</p></li><li><p>Wypisz przepływy, po jednym na okres, inwestycja pierwsza.</p></li><li><p>Odczytaj NPV, IRR i zwrot.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Najczęstsze pytania</h2>
         <div class="s-faq">
-          <details open><summary lang="en">What does a positive NPV mean?</summary><p lang="en">The project earns more than your required return, so it adds value.</p></details>
-          <details><summary lang="en">Why does Excel give a different NPV?</summary><p lang="en">Excel treats the first value as period 1. This calculator treats it as today, as in most textbooks.</p></details>
+          <details open><summary>Co oznacza dodatnie NPV?</summary><p>Projekt zarabia więcej niż wymagany zwrot, więc tworzy wartość.</p></details>
+          <details><summary>Dlaczego Excel daje inne NPV?</summary><p>Excel traktuje pierwszą wartość jako okres 1. Ten kalkulator traktuje ją jako dziś, jak większość podręczników.</p></details>
           <details><summary>Czy moje pliki są gdzieś przesyłane?</summary><p>Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony.</p></details>
           <details><summary>Czy to narzędzie jest darmowe?</summary><p>Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach.</p></details>
         </div>

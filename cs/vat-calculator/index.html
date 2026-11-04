@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Kalkulačka DPH (bez DPH, s DPH a částka DPH)","url":"https://ohfis.com/cs/vat-calculator/","description":"Vyjměte DPH z ceny s DPH nebo ho přičtěte k ceně bez DPH. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Byznys a finance","item":"https://ohfis.com/cs/business-finance-tools/"},{"@type":"ListItem","position":3,"name":"Kalkulačka DPH (bez DPH, s DPH a částka DPH)"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Kalkulačka DPH (bez DPH, s DPH a částka DPH)","step":[{"@type":"HowToStep","position":1,"text":"Enter the amount and choose whether it includes VAT."},{"@type":"HowToStep","position":2,"text":"Pick a country or enter the rate."},{"@type":"HowToStep","position":3,"text":"Copy the net, VAT and gross figures."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate VAT from a gross price?","acceptedAnswer":{"@type":"Answer","text":"Divide the gross price by 1 + rate (1.19 for 19%) to get the net price. The difference is the VAT."}},{"@type":"Question","name":"Is 19% of 119 the VAT?","acceptedAnswer":{"@type":"Answer","text":"No. 19% of 119 is 22.61, but the VAT inside 119 is 19.00, because 119 includes the tax."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Kalkulačka DPH (bez DPH, s DPH a částka DPH)","step":[{"@type":"HowToStep","position":1,"text":"Zadejte částku a zvolte, zda obsahuje DPH."},{"@type":"HowToStep","position":2,"text":"Vyberte zemi nebo zadejte sazbu."},{"@type":"HowToStep","position":3,"text":"Zkopírujte základ, DPH a celkem."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak spočítat DPH z ceny s daní?","acceptedAnswer":{"@type":"Answer","text":"Vydělte cenu s daní číslem 1 + sazba (1,21 pro 21 %) a získáte cenu bez daně. Rozdíl je DPH."}},{"@type":"Question","name":"Je 21 % ze 121 DPH?","acceptedAnswer":{"@type":"Answer","text":"Ne. 21 % ze 121 je 25,41, ale DPH obsažené ve 121 je 21,00, protože 121 už daň obsahuje."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Kalkulačka DPH (bez DPH, s DPH a částka DPH)</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Split a receipt into net amount and VAT, or add VAT to a price. Pick your country to see its current standard and reduced rates, or type any rate, which works equally for GST, sales tax and MwSt.</p><p lang="en">From a gross amount: net = gross ÷ (1 + rate) and VAT = gross − net (not gross × rate, a frequent mistake that overstates the tax). From a net amount: VAT = net × rate and gross = net + VAT. The rate list is for orientation and changes over time, so confirm the rate that applies to your product with the tax authority.</p>
+        
+        <p>Rozdělte účtenku na základ a DPH nebo přidejte DPH k ceně. Vyberte svou zemi a uvidíte její aktuální základní a snížené sazby, nebo zadejte libovolnou sazbu – funguje stejně pro GST, daň z prodeje i MwSt.</p><p>Z částky s daní: základ = celkem ÷ (1 + sazba) a DPH = celkem − základ (ne celkem × sazba, častá chyba, která daň nadhodnotí). Ze základu: DPH = základ × sazba a celkem = základ + DPH. Seznam sazeb slouží k orientaci a v čase se mění, proto sazbu platnou pro váš produkt potvrďte u finančního úřadu.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Enter the amount and choose whether it includes VAT.</p></li><li><p lang="en">Pick a country or enter the rate.</p></li><li><p lang="en">Copy the net, VAT and gross figures.</p></li></ol>
+        <ol class="s-steps"><li><p>Zadejte částku a zvolte, zda obsahuje DPH.</p></li><li><p>Vyberte zemi nebo zadejte sazbu.</p></li><li><p>Zkopírujte základ, DPH a celkem.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How do I calculate VAT from a gross price?</summary><p lang="en">Divide the gross price by 1 + rate (1.19 for 19%) to get the net price. The difference is the VAT.</p></details>
-          <details><summary lang="en">Is 19% of 119 the VAT?</summary><p lang="en">No. 19% of 119 is 22.61, but the VAT inside 119 is 19.00, because 119 includes the tax.</p></details>
+          <details open><summary>Jak spočítat DPH z ceny s daní?</summary><p>Vydělte cenu s daní číslem 1 + sazba (1,21 pro 21 %) a získáte cenu bez daně. Rozdíl je DPH.</p></details>
+          <details><summary>Je 21 % ze 121 DPH?</summary><p>Ne. 21 % ze 121 je 25,41, ale DPH obsažené ve 121 je 21,00, protože 121 už daň obsahuje.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

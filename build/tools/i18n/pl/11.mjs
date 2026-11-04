@@ -1,0 +1,42 @@
+export default {
+'vat-calculator': [[
+`Rozdziel paragon na kwotę netto i VAT lub dodaj VAT do ceny. Wybierz kraj, by zobaczyć jego aktualne stawki podstawowe i obniżone, albo wpisz dowolną stawkę – działa tak samo dla GST, podatku od sprzedaży i MwSt.`,
+`Z kwoty brutto: netto = brutto ÷ (1 + stawka) i VAT = brutto − netto (nie brutto × stawka, częsty błąd zawyżający podatek). Z kwoty netto: VAT = netto × stawka i brutto = netto + VAT. Lista stawek służy orientacji i zmienia się w czasie, więc potwierdź stawkę dla swojego produktu w urzędzie skarbowym.`],
+[`Wpisz kwotę i wybierz, czy zawiera VAT.`,`Wybierz kraj lub wpisz stawkę.`,`Skopiuj netto, VAT i brutto.`],
+[[`Jak obliczyć VAT z ceny brutto?`,`Podziel cenę brutto przez 1 + stawka (1,23 dla 23%), aby otrzymać cenę netto. Różnica to VAT.`],[`Czy 23% ze 123 to VAT?`,`Nie. 23% ze 123 to 28,29, ale VAT zawarty w 123 to 23,00, bo 123 zawiera już podatek.`]]],
+'npv-irr-calculator': [[
+`Oceń projekt, wpisując stopę dyskonta i listę przepływów pieniężnych, z inwestycją jako liczbą ujemną na początku. Wynikiem jest wartość bieżąca netto (NPV), wewnętrzna stopa zwrotu (IRR), zdyskontowany czas zwrotu i tabela czynników dyskontowych.`,
+`NPV = Σ przepływ(t) ÷ (1 + r)^t, gdzie pierwszy przepływ jest w t = 0 (niezdyskontowany). IRR to stopa, przy której NPV wynosi zero, znajdowana bisekcją z dużą precyzją; jest zgłaszana jako „brak rozwiązania”, jeśli przepływy nigdy nie zmieniają znaku. Zdyskontowany zwrot interpoluje punkt, w którym skumulowana wartość bieżąca staje się dodatnia. Pamiętaj, że funkcja NPV w Excelu dyskontuje pierwszą wartość o jeden okres, więc dodaj inwestycję początkową poza funkcją.`],
+[`Wpisz stopę dyskonta.`,`Wypisz przepływy, po jednym na okres, inwestycja pierwsza.`,`Odczytaj NPV, IRR i zwrot.`],
+[[`Co oznacza dodatnie NPV?`,`Projekt zarabia więcej niż wymagany zwrot, więc tworzy wartość.`],[`Dlaczego Excel daje inne NPV?`,`Excel traktuje pierwszą wartość jako okres 1. Ten kalkulator traktuje ją jako dziś, jak większość podręczników.`]]],
+'rule-of-72-calculator': [[
+`Podziel 72 przez roczną stopę, a otrzymasz przybliżoną liczbę lat potrzebnych na podwojenie inwestycji: przy 8% około 9 lat. Kalkulator pokazuje to oszacowanie obok dokładnego czasu podwojenia, błędu i tabeli typowych stóp.`,
+`Dokładny czas to ln 2 ÷ ln(1 + stopa); dla małych stóp ln(1 + r) ≈ r, co daje 69,3 ÷ stopa. Używa się 72 zamiast 69,3, bo ma wiele dzielników i kompensuje kapitalizację przy typowych stopach 6–10%, gdzie odbiega od dokładnej wartości o ok. 0,3%. Dla wzrostu ciągłego reguła 69,3 jest dokładna. Ta sama reguła działa dla inflacji: przy 3% ceny podwajają się w 24 lata.`],
+[`Wpisz roczną stopę.`,`Odczytaj oszacowanie i dokładną wartość.`,`Porównaj inne stopy w tabeli.`],
+[[`Jak dokładna jest reguła 72?`,`Bardzo dobra między 6% a 10%; przy 2% lub 20% błąd rośnie do kilku procent.`],[`Czy mogę jej użyć dla inflacji?`,`Tak: 72 ÷ stopa inflacji daje lata do podwojenia cen.`]]],
+'tiered-pricing-calculator': [[
+`Przetestuj cennik przed publikacją. Wpisz progi jako „od ilości, cena jednostkowa” i ilość, a zobaczysz sumę, średnią cenę za jednostkę, rozbicie na progi i wykres ceny względem ilości.`,
+`Spotyka się dwa modele. W cenie progowej (graduated) każda jednostka jest liczona po cenie progu, w który wpada (pierwsze 100 po 10, następne 400 po 8). W cenie wolumenowej osiągnięty próg ustala cenę wszystkich jednostek (600 jednostek po 5). Cena wolumenowa tworzy klify, na których kupno więcej kosztuje łącznie mniej, cena progowa jest płynna. Wykres uwidacznia takie efekty.`],
+[`Wpisz progi, po jednym w wierszu.`,`Wybierz cenę progową lub wolumenową i ilość.`,`Sprawdź rozbicie i wykres pod kątem dziwnych skoków.`],
+[[`Jaka jest różnica między ceną progową a wolumenową?`,`Progowa stosuje każdą cenę tylko do jednostek w swoim progu; wolumenowa stosuje cenę osiągniętego progu do każdej jednostki.`],[`Dlaczego 101 jednostek kosztuje mniej niż 100 w cenie wolumenowej?`,`To efekt klifu; aby go uniknąć, użyj ceny progowej lub dostosuj ceny progów.`]]],
+'sales-commission-calculator': [[
+`Wpisz osiągniętą sprzedaż, kwotę plan i swoje progi prowizji, a zobaczysz wypłatę, realizację planu i rozbicie na progi. Typowe plany płacą stawkę bazową do planu i akceleratory powyżej niego.`,
+`Każdy próg dotyczy części sprzedaży między jego dolną a górną granicą, wyrażonej jako procent planu, jak progi podatku dochodowego: przy progach 0–100% po 5% i 100–150% po 8% sprzedaż 130% planu 100 000 płaci 100 000 × 5% + 30 000 × 8% = 7400. Ostatni próg może być otwarty (*). Stawka efektywna pokazuje średnią stawkę od całej sprzedaży.`],
+[`Wpisz sprzedaż i plan.`,`Zdefiniuj progi jako „do % planu, stawka %”.`,`Odczytaj prowizję i rozbicie.`],
+[[`Czym jest akcelerator?`,`Wyższa stawka prowizji od sprzedaży ponad plan, by nagradzać nadwyżkę.`],[`Czy progi dotyczą całej sprzedaży, czy tylko części wewnątrz?`,`Tylko części wewnątrz progu, jak progi podatkowe.`]]],
+'payment-processing-fee-calculator': [[
+`Znajdź najtańszy sposób na otrzymywanie płatności. Wpisz typową płatność i liczbę płatności miesięcznie; tabela szereguje operatorów według opłaty, pokazuje, ile faktycznie dostajesz, stawkę efektywną i roczny koszt oraz kwotę, którą musiałbyś pobrać, by dostać dokładnie 100.`,
+`Każdy operator pobiera procent plus opłatę stałą: opłata = kwota × % + stała. Stawka efektywna jest wyższa przy małych płatnościach, bo część stała waży więcej. Kolumna „pobierz, by dostać 100” zawyża kwotę: (100 + stała) ÷ (1 − %). Wstępnie wpisane stawki to publiczne cenniki i tylko punkt wyjścia: edytuj listę, by pasowała do Twojej umowy, miksu kart i waluty.`],
+[`Wpisz typową kwotę płatności i miesięczny wolumen.`,`Edytuj listę operatorów do swoich faktycznych stawek.`,`Porównaj stawki efektywne i roczny koszt.`],
+[[`Dlaczego stawka efektywna jest wyższa przy małych płatnościach?`,`Opłata stała (np. 0,30) to duży udział płatności 5.`],[`Czy to aktualne ceny?`,`To ceny katalogowe z 2024. Opłaty się zmieniają; użyj stawek z własnej umowy.`]]],
+'effective-hourly-rate-calculator': [[
+`Pensja 60 000 przy 40 godzinach brzmi jak 28,85 za godzinę, ale godzin, które praca naprawdę zajmuje, jest więcej. Wpisz czas dojazdu, niepłatne nadgodziny, tygodnie wolne i koszty związane z pracą, by zobaczyć, ile zarabiasz za każdą godzinę, którą faktycznie poświęcasz.`,
+`Stawka nominalna = pensja ÷ (godziny umowne × przepracowane tygodnie). Stawka efektywna = (pensja − koszty związane z pracą) ÷ (godziny umowne + niepłatne nadgodziny + godziny dojazdu) rocznie, przy czym dojazd liczony jest jako dwie podróże na dzień pracy w miejscu pracy. Przepracowane tygodnie to 52 minus tygodnie wolne. Wynik służy porównywaniu ofert pracy oraz pracy zdalnej i stacjonarnej, nie obliczaniu podatków.`],
+[`Wpisz wynagrodzenie, godziny umowne i tygodnie wolne.`,`Dodaj dojazd, niepłatne godziny i roczne koszty pracy.`,`Porównaj efektywną i nominalną stawkę godzinową.`],
+[[`Czy dojazd liczyć jako czas pracy?`,`Prawnie nie, ale to czas, który praca zabiera z życia, więc ma znaczenie przy porównywaniu ofert.`],[`Czy to przed, czy po opodatkowaniu?`,`Używaj brutto lub netto konsekwentnie; kalkulator nie stosuje podatków.`]]],
+'salary-to-contractor-rate-calculator': [[
+`Freelancerzy, którzy po prostu dzielą pensję przez 2080 godzin, liczą o jedną trzecią za mało. Ten kalkulator dodaje to, co pracodawca płaci za Ciebie (świadczenia, emerytura, ubezpieczenie), własne koszty działalności, niepłatne tygodnie wolne i niefakturowalny czas na administrację i szukanie klientów.`,
+`Stawka = (pensja × (1 + świadczenia %) + własne koszty) ÷ godziny fakturowalne ÷ (1 − margines podatkowy). Godziny fakturowalne = (52 − tygodnie wolne) × godziny tygodniowo × udział fakturowalny. Udział 70% jest realistyczny dla wielu freelancerów. Margines podatkowy pozwala podnieść stawkę na podatki lub ryzyko. Stawka dzienna zakłada 8 godzin fakturowalnych.`],
+[`Wpisz pensję, którą chcesz zrównać, i procent świadczeń.`,`Dodaj swoje koszty, tygodnie wolne i udział fakturowalny.`,`Użyj stawki godzinowej i dziennej jako dolnej granicy wyceny.`],
+[[`Dlaczego nie mogę po prostu podzielić pensji przez 2080?`,`Bo nie możesz fakturować każdej godziny: administracja, sprzedaż i urlopy są niepłatne, a ubezpieczenie i sprzęt opłacasz sam.`],[`Jaki udział fakturowalny jest realistyczny?`,`60–80% dla konsultantów, mniej podczas budowania bazy klientów.`]]],
+};
