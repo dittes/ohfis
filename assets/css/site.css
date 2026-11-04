@@ -985,3 +985,5 @@ progress { accent-color: var(--s-blue); height: 10px; }
 .ut-hl mark { background: #ffe58a; color: inherit; border-radius: 3px; padding: 0 1px; }
 :root[data-theme="dark"] .ut-hl mark { background: #6b5a14; }
 .ut-richout table { border-collapse: collapse; } .ut-richout th, .ut-richout td { border: 1px solid var(--s-rule); padding: 4px 8px; } .ut-richout pre { background: var(--s-paper-2); padding: 10px 12px; border-radius: 6px; overflow: auto; } .ut-richout blockquote { margin: 0 0 .8em; padding-left: 12px; border-left: 3px solid var(--s-rule); color: var(--s-ink-2); } .ut-richout code { background: var(--s-paper-2); padding: 1px 5px; border-radius: 4px; }
+
+.s-disclaimer { margin: 14px 0 0; padding: 10px 14px; border-left: 3px solid var(--s-rule-strong); border-radius: 4px; background: var(--s-paper-2); color: var(--s-ink-2); font-size: 13.5px; line-height: 1.55; }

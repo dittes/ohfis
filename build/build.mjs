@@ -16,6 +16,7 @@ import { UCATS, UCAT_ORDER, GROUPS, GROUP_ORDER, GROUP_OF, LINKS, SITES, SITE_NA
 import { slugify } from '../assets/js/tools/lib/text.js';
 import UTOOLS from './tools/index.mjs';
 import UI, { PAGE } from './content/ui.mjs';
+import { disclaimerFor, imprintExtras } from './content/legal-notes.mjs';
 
 const BUILD = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(BUILD, '..');
@@ -423,6 +424,7 @@ function toolPage(lang, tool) {
         </div>
         <div class="pt-stage" hidden></div>
         <ul class="s-trust">${c.toolPage.trust.map(x => `<li>${e(x)}</li>`).join('')}</ul>
+        ${disclaimerFor(lang, tool) ? `<p class="s-disclaimer" role="note">${e(disclaimerFor(lang, tool))}</p>` : ''}
       </div>
     </div>
 
@@ -514,6 +516,7 @@ function utilityPage(lang, tool0) {
       <div class="pt">
         <div id="tool-root" data-tool="${tool.id}" data-cat="${tool.cat}"><p class="pt-hint">${e(P('loading', lang))}</p><noscript><p class="pt-drop__error">${e(c.toolPage.noJs)}</p></noscript></div>
         <ul class="s-trust">${c.toolPage.trust.map(x => `<li>${e(x)}</li>`).join('')}</ul>
+        ${disclaimerFor(lang, tool) ? `<p class="s-disclaimer" role="note">${e(disclaimerFor(lang, tool))}</p>` : ''}
       </div>
     </div>
 
@@ -620,7 +623,7 @@ function legalPage(lang, key) {
   <main id="main">
     <div class="s-wrap s-legal">
       <h1>${e(p.h1)}</h1>
-      ${p.html}
+      ${p.html}${key === 'imprint' ? imprintExtras(lang) : ''}
     </div>
   </main>
   ${footer(lang, paths)}

@@ -1,7 +1,7 @@
 // Files Online — Service Worker
 // Cache-first for app shell, network-first for CDN resources.
 
-const CACHE_VERSION = '0da5b3ffcc';
+const CACHE_VERSION = '70b6f40857';
 const SHELL_CACHE = `files-online-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `files-online-runtime-${CACHE_VERSION}`;
 
@@ -145,7 +145,8 @@ self.addEventListener('fetch', event => {
   // Same-origin: cache-first
   if (url.origin === self.location.origin) {
     // For navigation requests always try network first so the latest HTML is served
-    if (request.mode === 'navigate') {
+    // Unversioned scripts (tool modules loaded by dynamic import) are also network-first so a new release is never shadowed by a stale cached copy
+    if (request.mode === 'navigate' || (url.pathname.endsWith('.js') && !url.search)) {
       event.respondWith(networkFirstWithCache(request, SHELL_CACHE));
     } else {
       event.respondWith(cacheFirstWithNetwork(request, SHELL_CACHE));
