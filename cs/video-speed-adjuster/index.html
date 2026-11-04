@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Změna rychlosti videa (zpomalení a zrychlení)","url":"https://ohfis.com/cs/video-speed-adjuster/","description":"Přehrajte video rychlostí 0,25× až 4× a exportujte zrychlenou verzi. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Audio a video","item":"https://ohfis.com/cs/audio-video-tools/"},{"@type":"ListItem","position":3,"name":"Změna rychlosti videa (zpomalení a zrychlení)"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Změna rychlosti videa (zpomalení a zrychlení)","step":[{"@type":"HowToStep","position":1,"text":"Choose a video file."},{"@type":"HowToStep","position":2,"text":"Set the speed and pitch option."},{"@type":"HowToStep","position":3,"text":"Preview, then export if you need a new file."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the export reduce quality?","acceptedAnswer":{"@type":"Answer","text":"Yes, it is recorded and re-encoded in real time. Use it for sharing, not for archives."}},{"@type":"Question","name":"Can I speed up above 4×?","acceptedAnswer":{"@type":"Answer","text":"Browsers limit playback speed; export twice if needed."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Změna rychlosti videa (zpomalení a zrychlení)","step":[{"@type":"HowToStep","position":1,"text":"Vyberte videosoubor."},{"@type":"HowToStep","position":2,"text":"Nastavte rychlost a volbu výšky hlasu."},{"@type":"HowToStep","position":3,"text":"Zobrazte náhled a pak exportujte, potřebujete-li nový soubor."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Snižuje export kvalitu?","acceptedAnswer":{"@type":"Answer","text":"Ano, nahrává se a znovu kóduje v reálném čase. Používejte ho ke sdílení, ne do archivů."}},{"@type":"Question","name":"Mohu zrychlit nad 4×?","acceptedAnswer":{"@type":"Answer","text":"Prohlížeče omezují rychlost přehrávání; podle potřeby exportujte dvakrát."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Změna rychlosti videa (zpomalení a zrychlení)</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Open a video from your device and change its speed with a slider or presets between 0.25× and 4×, with or without keeping the voice pitch natural. The tool shows the new running time and can export the result as a WebM file.</p><p lang="en">The preview sets the playbackRate of an HTML video element, and preservesPitch decides whether the audio is time-stretched (natural voice) or resampled (chipmunk effect). Export plays the video at the chosen speed in real time while recording its output stream with MediaRecorder, so exporting takes as long as the new duration and the output is re-encoded VP8/VP9 WebM with some quality loss. Formats depend on what your browser can play: MP4 (H.264), WebM and most phone videos work. For lossless or frame-exact editing a desktop editor is better.</p>
+        
+        <p>Otevřete video ze svého zařízení a změňte jeho rychlost jezdcem nebo předvolbami mezi 0,25× a 4×, s přirozenou výškou hlasu nebo bez ní. Nástroj ukáže novou délku a může výsledek exportovat jako soubor WebM.</p><p>Náhled nastaví playbackRate prvku video HTML a preservesPitch rozhoduje, zda se zvuk časově roztahuje (přirozený hlas), nebo převzorkovává (efekt veverky). Export přehrává video zvolenou rychlostí v reálném čase a zároveň nahrává jeho výstupní proud přes MediaRecorder, takže export trvá tak dlouho jako nová délka a výstup se znovu kóduje jako VP8/VP9 WebM s určitou ztrátou kvality. Formáty závisejí na tom, co váš prohlížeč přehraje: MP4 (H.264), WebM a většina videí z telefonů funguje. Pro bezeztrátovou nebo snímkově přesnou úpravu je lepší desktopový editor.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Choose a video file.</p></li><li><p lang="en">Set the speed and pitch option.</p></li><li><p lang="en">Preview, then export if you need a new file.</p></li></ol>
+        <ol class="s-steps"><li><p>Vyberte videosoubor.</p></li><li><p>Nastavte rychlost a volbu výšky hlasu.</p></li><li><p>Zobrazte náhled a pak exportujte, potřebujete-li nový soubor.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Does the export reduce quality?</summary><p lang="en">Yes, it is recorded and re-encoded in real time. Use it for sharing, not for archives.</p></details>
-          <details><summary lang="en">Can I speed up above 4×?</summary><p lang="en">Browsers limit playback speed; export twice if needed.</p></details>
+          <details open><summary>Snižuje export kvalitu?</summary><p>Ano, nahrává se a znovu kóduje v reálném čase. Používejte ho ke sdílení, ne do archivů.</p></details>
+          <details><summary>Mohu zrychlit nad 4×?</summary><p>Prohlížeče omezují rychlost přehrávání; podle potřeby exportujte dvakrát.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
