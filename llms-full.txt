@@ -467,6 +467,18 @@ Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.
 - [Startup Dilution & Cap Table Calculator](https://ohfis.com/en/startup-dilution-calculator/): See founders' ownership after seed, Series A and later rounds.
   Enter your funding rounds with the investment and the pre-money valuation and see what the new investors own, how much of the company the founders keep after every round and what that stake is worth at the round's valuation.
   How to use: Enter each round as name, investment and pre-money valuation. Read the ownership after each round and the chart. Vary valuations to see their effect on dilution.
+- [Currency Conversion Fee Calculator](https://ohfis.com/en/currency-fee-calculator/): See the real cost of an exchange rate margin and transfer fees.
+  Enter the amount, the mid-market rate, the provider's margin and any fixed fee, and see how much arrives, the effective rate you really get, and how much money you lose compared with the mid-market rate. Switch to "receive" mode to find out how much you must send so that an exact amount arrives, and add a safety cushion for rate moves when you budget in a foreign currency.
+  How to use: Enter the amount and the mid-market rate. Enter the provider margin and fixed fee. Read what arrives, the effective rate and the lost amount.
+- [Commercial Lease Cost Calculator](https://ohfis.com/en/lease-cost-calculator/): Work out the all-in monthly and total cost of an office or shop lease.
+  Landlords quote rent per square foot or square metre per year, but the real cost includes operating costs, taxes and insurance (CAM or triple net charges), fixed extras such as parking, yearly rent escalation and sometimes free months. Enter them and get the cost in year 1 per month, a year-by-year table, the total over the lease term and the true all-in cost per unit of area.
+  How to use: Enter the area and the yearly price per unit. Add operating costs, extras, escalation and term. Compare the all-in cost with other offers.
+- [Inflation Calculator (Future & Past Value)](https://ohfis.com/en/inflation-value-calculator/): What an amount will cost in the future or is worth today, at an inflation rate you choose.
+  Enter an amount, a yearly inflation rate and the number of years to see what the same goods will cost then, how much purchasing power the money loses, or what an amount from the past is worth today. A third mode finds the average annual inflation rate between two prices, for example from a menu from 2010 and today's menu.
+  How to use: Choose what to calculate. Enter the amount, rate and years or the two prices. Read the result and the table.
+- [Cash Drawer Counter & Float Balancer](https://ohfis.com/en/cash-drawer-counter/): Count notes and coins and compare with the expected amount: over, short or balanced.
+  Enter how many of each note and coin are in the till or petty-cash box, and the tool adds them up, compares the total with the amount you expected (opening float plus sales) and shows whether the drawer is over, short or balanced. You can copy the count as a short report for your records.
+  How to use: Choose the currency and enter the expected amount. Enter the number of each note and coin. Read the difference and copy the report.
 
 ## IT & Web Tools
 

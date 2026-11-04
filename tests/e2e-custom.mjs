@@ -568,6 +568,20 @@ Object.assign(custom, {
     await page.locator('#tool-root input[type=date]').fill('2024-03-20'); await page.waitForTimeout(400); assert.ok((await page.locator('[data-record]').innerText()).includes('EDT'), 'DST in New York by 20 March');
     await page.locator('#tool-root textarea').fill('bad'); await page.waitForTimeout(400); assert.ok(await page.locator('.pt-drop__error:visible').count() > 0);
   },
+  async 'currency-fee-calculator'(page) {
+    const txt = await rootText(page); assert.ok(/Effective rate\s*1\.0628/.test(txt), 'effective rate 1.09*(1-0.025): ' + txt.slice(0, 400)); assert.ok(/They receive\s*1,057\.44/.test(txt), 'received (1000-5)*1.06275: ' + txt.slice(0, 400));
+    await page.locator('#tool-root select').first().selectOption('receive'); await page.waitForTimeout(300); assert.ok(/You must send/.test(await rootText(page)));
+  },
+  async 'lease-cost-calculator'(page) {
+    const txt = await rootText(page); assert.ok(/Monthly cost, year 1\s*€ 7,958\.33/.test(txt), txt.slice(0, 300)); const rows = await page.locator('.ut-table tr').count(); assert.equal(rows, 6, 'header + 5 years');
+  },
+  async 'inflation-value-calculator'(page) {
+    let txt = await rootText(page); assert.ok(/will cost\s*€ 1,343\.92/.test(txt), txt.slice(0, 300)); await page.locator('#tool-root select').first().selectOption('rate'); await page.waitForTimeout(300); txt = await rootText(page); assert.ok(/Average annual inflation\s*2\.97 %|Average annual inflation\s*2,97 %/.test(txt), txt.slice(0, 300));
+  },
+  async 'cash-drawer-counter'(page) {
+    await page.getByLabel('Count of 20', { exact: true }).fill('3'); await page.getByLabel('Count of 0.1', { exact: true }).fill('3'); await page.getByLabel('Count of 0.05', { exact: true }).fill('1'); await page.locator('#tool-root input[aria-label="Expected amount"]').fill('60'); await page.waitForTimeout(300); const txt = await rootText(page); assert.ok(/Counted\s*60\.35 USD/.test(txt) && /Over by\s*0\.35 USD/.test(txt), txt.slice(0, 400));
+    await page.locator('#tool-root input[aria-label="Expected amount"]').fill('60.35'); await page.waitForTimeout(200); assert.ok(/Balanced\s*✓/.test(await rootText(page)));
+  },
 });
 
 export default custom;

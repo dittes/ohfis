@@ -57,3 +57,19 @@ test('remaining helpers', () => {
   const d = F.dilution([{ name: 'Seed', invest: 1, preMoney: 4 }, { name: 'A', invest: 5, preMoney: 15 }]); close(d[0].investor, 20); close(d[0].founders, 80); close(d[1].investor, 25); close(d[1].founders, 60); close(d[1].post, 20);
   const ch = F.churnModel({ customers: 1000, arpa: 50, churn: 5, months: 12 }); close(ch.rows[0].customers, 950); close(ch.survival, 54.0360, 1e-3); close(ch.halfLife, 13.5134, 1e-3);
 });
+
+test('currency conversion with markup and fee', () => {
+  const r = F.currencyConversion({ amount: 1000, midRate: 1.1, markupPct: 2, fixedFee: 5 }); assert.ok(Math.abs(r.received - 995 * 1.1 * 0.98) < 1e-9); assert.ok(Math.abs(r.effectiveRate - 1.078) < 1e-9); assert.ok(r.lostPct > 2.4 && r.lostPct < 2.6, String(r.lostPct));
+  const b = F.currencyConversion({ amount: 1000, midRate: 1.1, markupPct: 2, fixedFee: 5, mode: 'receive' }); assert.ok(Math.abs(b.sent - (1000 / 1.078 + 5)) < 1e-9); assert.ok(b.lost > 0);
+  assert.equal(F.withCushion(200, 3), 206);
+});
+test('lease cost with escalation and free months', () => {
+  const r = F.leaseCost({ area: 100, rentPerAreaYear: 240, opexPerAreaYear: 60, escalationPct: 3, years: 3 }); assert.equal(r.rows[0].total, 30000); assert.ok(Math.abs(r.rows[1].total - 30900) < 1e-6); assert.ok(Math.abs(r.total - (30000 + 30900 + 31827)) < 1e-6);
+  const f = F.leaseCost({ area: 100, rentPerAreaYear: 240, years: 1, freeMonths: 2 }); assert.equal(f.rows[0].total, 24000 - 4000);
+});
+test('inflation', () => {
+  assert.ok(Math.abs(F.inflate(100, 3, 10) - 134.39) < 0.01); assert.ok(Math.abs(F.inflate(100, 3, -10) - 74.41) < 0.01); assert.ok(Math.abs(F.impliedRate(100, 134.39, 10) - 3) < 0.01);
+});
+test('cash drawer', () => {
+  assert.equal(F.drawerTotal([[20, 3], [0.1, 3], [0.05, 1]]), 60.35); assert.equal(F.drawerVariance(60.35, 60), 0.35); assert.equal(F.drawerTotal([[0.01, 7]]), 0.07);
+});

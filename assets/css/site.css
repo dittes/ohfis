@@ -913,3 +913,7 @@ body.s-page { letter-spacing: -.003em; }
 .ut-prog{margin:14px 0}
 .ut-prog__head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:4px}
 .ut-prog progress{width:100%;height:14px;accent-color:var(--s-blue,#2d6cdf)}
+
+.ut-denoms{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;margin:12px 0}
+.ut-denom{display:grid;grid-template-columns:64px 1fr 76px;gap:8px;align-items:center;font-variant-numeric:tabular-nums}
+.ut-denom span{font-weight:700;text-align:right}.ut-denom output{text-align:right;opacity:.8}

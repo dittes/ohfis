@@ -120,3 +120,34 @@ export function elasticity({ p1, q1, p2, q2 }) { const mid = (a, b) => (a + b) /
 export function dilution(rounds, founders = 100) { // rounds: [{name, invest, preMoney}]
   let own = founders; let shares = 100; const out = []; for (const r of rounds) { const post = r.preMoney + r.invest; const pct = r.invest / post * 100; own *= 1 - pct / 100; out.push({ ...r, post, investor: pct, founders: own, value: own / 100 * post }); } return out;
 }
+
+// ---------- Currency conversion with fees ----------
+/** midRate: target units per 1 source unit (mid-market). markupPct: provider margin on the rate. fixedFee in source currency. */
+export function currencyConversion({ amount, midRate, markupPct = 0, fixedFee = 0, mode = 'send' }) {
+  const eff = midRate * (1 - markupPct / 100);
+  if (mode === 'send') { const net = Math.max(0, amount - fixedFee), received = net * eff, ideal = amount * midRate; return { sent: amount, received, effectiveRate: eff, effectiveRateAll: amount ? received / amount : 0, lost: ideal - received, lostPct: ideal ? (ideal - received) / ideal * 100 : 0, lostInSource: midRate ? (ideal - received) / midRate : 0 }; }
+  const sent = amount / eff + fixedFee, ideal = amount / midRate; return { sent, received: amount, effectiveRate: eff, effectiveRateAll: sent ? amount / sent : 0, lost: sent - ideal, lostPct: ideal ? (sent - ideal) / ideal * 100 : 0, lostInSource: sent - ideal };
+}
+/** Add a safety cushion to a budget in foreign currency, e.g. 3 % for rate moves. */
+export const withCushion = (amount, pct) => amount * (1 + pct / 100);
+
+// ---------- Commercial lease ----------
+export function leaseCost({ area, rentPerAreaYear, opexPerAreaYear = 0, extraMonthly = 0, escalationPct = 0, years = 5, freeMonths = 0 }) {
+  const rows = []; let total = 0, freeLeft = freeMonths;
+  for (let y = 1; y <= years; y++) {
+    const f = Math.pow(1 + escalationPct / 100, y - 1), rent = area * rentPerAreaYear * f, opex = area * opexPerAreaYear * f, extra = extraMonthly * 12; let yearTotal = rent + opex + extra; const freeThisYear = Math.min(12, freeLeft); freeLeft -= freeThisYear; const discount = (rent / 12) * freeThisYear; yearTotal -= discount;
+    total += yearTotal; rows.push({ year: y, rent, opex, extra, discount, total: yearTotal, monthly: yearTotal / 12, perArea: area ? yearTotal / area : 0 });
+  }
+  return { rows, total, firstYearMonthly: rows[0].monthly, avgPerAreaYear: area && years ? total / years / area : 0 };
+}
+
+// ---------- Inflation ----------
+/** Value of `amount` after `years` at annual rate (negative years = past). */
+export const inflate = (amount, ratePct, years) => amount * Math.pow(1 + ratePct / 100, years);
+/** Average annual rate between two price levels over a number of years. */
+export const impliedRate = (from, to, years) => (years ? (Math.pow(to / from, 1 / years) - 1) * 100 : 0);
+
+// ---------- Cash drawer ----------
+export const DENOMS = { USD: [100, 50, 20, 10, 5, 2, 1, 0.5, 0.25, 0.1, 0.05, 0.01], EUR: [500, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01], GBP: [50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01], CZK: [5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1], PLN: [500, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01], CHF: [1000, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05] };
+export function drawerTotal(counts) { let c = 0; for (const [d, n] of counts) c += Math.round(Number(d) * 100) * Math.max(0, Math.floor(Number(n) || 0)); return c / 100; }
+export const drawerVariance = (counted, expected) => Math.round((counted - expected) * 100) / 100;

@@ -201,6 +201,10 @@ Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.
 - [Price Elasticity of Demand Calculator](https://ohfis.com/en/price-elasticity-calculator/): Estimate how a price change affects quantity and revenue.
 - [Overhead Cost Allocation Calculator](https://ohfis.com/en/overhead-allocation-calculator/): Allocate shared costs to departments by headcount, floor area or revenue.
 - [Startup Dilution & Cap Table Calculator](https://ohfis.com/en/startup-dilution-calculator/): See founders' ownership after seed, Series A and later rounds.
+- [Currency Conversion Fee Calculator](https://ohfis.com/en/currency-fee-calculator/): See the real cost of an exchange rate margin and transfer fees.
+- [Commercial Lease Cost Calculator](https://ohfis.com/en/lease-cost-calculator/): Work out the all-in monthly and total cost of an office or shop lease.
+- [Inflation Calculator (Future & Past Value)](https://ohfis.com/en/inflation-value-calculator/): What an amount will cost in the future or is worth today, at an inflation rate you choose.
+- [Cash Drawer Counter & Float Balancer](https://ohfis.com/en/cash-drawer-counter/): Count notes and coins and compare with the expected amount: over, short or balanced.
 
 ## IT & Web Tools
 
