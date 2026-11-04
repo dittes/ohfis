@@ -1,0 +1,42 @@
+export default {
+'smart-quotes-to-ascii': [[
+`Textové editory a chaty s AI nahrazují rovné uvozovky oblými a pomlčky a tři tečky mění na jednotlivé speciální znaky. V dokumentu to vypadá hezky, ale rozbíjí to kód, JSON, příkazy shellu, soubory CSV a staré systémy. Tento nástroj je vrátí zpět na obyčejné znaky z klávesnice.`,
+`Nahrazuje jednoduché i dvojité typografické uvozovky (včetně německého a francouzského stylu) znaky ' a ", půlčtvrtkové a čtvrtkové pomlčky znaky - a --, výpustku třemi tečkami, ligatury jako ﬁ a æ jejich písmeny a speciální mezery a znaky nulové šířky běžnými mezerami nebo ničím. Každou skupinu lze vypnout zvlášť.`],
+[`Vložte text s oblými uvozovkami nebo speciálními pomlčkami.`,`Zvolte, které skupiny znaků normalizovat.`,`Zkopírujte prostý text do kódu, konfigurace nebo tabulky.`],
+[[`Proč oblé uvozovky rozbíjejí můj kód?`,`Programovací jazyky a shelly přijímají jen rovné uvozovky. Oblá uvozovka je jiný znak a způsobuje syntaktické chyby.`],[`Změní moje písmena s diakritikou?`,`Ne. Nahrazuje se jen interpunkce, ligatury a speciální mezery. Písmena jako é nebo ü zůstávají.`]]],
+'remove-line-breaks': [[
+`Text zkopírovaný z PDF, e-mailu nebo terminálu je zalomen do krátkých řádků o šířce původní stránky. Vložení do dokumentu pak dává rozcuchané odstavce. Tento nástroj odstraní tvrdá zalomení řádků uvnitř odstavců, ale ponechá prázdné řádky oddělující skutečné odstavce a volitelně položky odrážkových a číslovaných seznamů.`,
+`Jednotlivá zalomení řádků se nahradí mezerami, dvojitá zůstanou jako dělení odstavců a slova rozdělená pomlčkou na konci řádku („dě-“ + „lení“) se opět spojí. Řádky začínající odrážkou nebo číslem zůstanou na vlastním řádku, aby se seznamy nesloučily do jedné věty.`],
+[`Vložte text s nechtěnými zalomeními řádků.`,`Ponechte nebo zahoďte dělení odstavců, opravu dělení slov a zacházení se seznamy.`,`Zkopírujte plynulý text.`],
+[[`Mohu odstranit všechna zalomení řádků včetně odstavců?`,`Ano. Odškrtněte „Ponechat dělení odstavců“ a získáte jediný blok textu.`],[`Proč jsou některá slova stále dělená?`,`Za dělení slov se považuje jen pomlčka těsně před zalomením řádku, za níž následuje malé písmeno. Skutečná složeniny jako „well-known“ zůstanou nedotčeny.`]]],
+'add-prefix-suffix-to-lines': [[
+`Uzavřete každý řádek do uvozovek, přidejte odrážku, připojte středník nebo očíslujte seznam: napište, co má stát před a za každým řádkem, a použije se to na tisíce řádků najednou. Použijte {n} kdekoli v předponě nebo příponě pro vložení počítadla, které může začínat libovolným číslem a být doplněno nulami.`,
+`Text se rozdělí na řádky a ke každému se přidá předpona a přípona. Prázdné řádky se ve výchozím nastavení přeskakují, takže prázdné oddělovače zůstanou prázdné. Počítadlo roste o jedna na neprázdný řádek a doplňuje se úvodními nulami na zvolený počet číslic (například 007).`],
+[`Vložte řádky.`,`Zadejte text před a za, s {n} pro počítadlo, pokud ho potřebujete.`,`Zkopírujte výsledek.`],
+[[`Jak očísluji řádky?`,`Zaškrtněte „Vložit počítadlo“ a do předpony dejte {n}, například „{n}. “. Nastavte počáteční číslo a počet číslic.`],[`Mohu přidat text jen na konec?`,`Ano. Nechte předponu prázdnou a vyplňte jen příponu.`]]],
+'sort-lines': [[
+`Seřaďte jména, názvy souborů, čísla verzí nebo jakýkoli seznam. Zvolte abecední pořadí, přirozené řazení (aby „soubor2“ bylo před „soubor10“), řazení podle délky řádku nebo podle čísla nalezeného v každém řádku a pořadí v případě potřeby obraťte.`,
+`Abecední řazení používá kolátor prohlížeče respektující jazyk, takže písmena s diakritikou jako č, ř nebo ł jsou umístěna tam, kde je čeká rodilý mluvčí, a ne až za „z“. Přirozené řazení porovnává řady číslic jako čísla. Číselné řazení vytáhne první číslo z každého řádku, včetně záporných a desetinných, což se hodí u cen.`],
+[`Vložte seznam, jeden záznam na řádek.`,`Zvolte druh řazení a zda ho obrátit.`,`Zkopírujte seřazený seznam.`],
+[[`Co je přirozené pořadí řazení?`,`Porovnává čísla uvnitř textu podle hodnoty, takže item2 je před item10, jak lidé očekávají.`],[`Řadí se písmena s diakritikou správně?`,`Ano. Řazení používá pravidla prohlížeče respektující jazyk.`]]],
+'email-extractor': [[
+`Vložte export schránky, zdroj webové stránky, řádek kopie nebo jakýkoli nepořádný text a získáte čistý abecední seznam e-mailových adres v něm. Duplicity se odstraní, adresy se převedou na malá písmena a můžete je seskupit podle domény, abyste viděli, které firmy se objevují nejčastěji.`,
+`Vzor pro lokální část, znak @ a doménu s doménou nejvyšší úrovně najde adresy; okolní interpunkce, jako špičaté závorky, čárky a koncové tečky, se ignoruje. Porovnání nerozlišuje velikost písmen a adresy se před odstraněním duplicit normalizují na malá písmena. Nic se nikam neposílá, což je důležité, když seznam obsahuje osobní údaje.`],
+[`Vložte text.`,`Volitelně zaškrtněte „Seskupit podle domény“.`,`Zkopírujte seznam nebo ho stáhněte jako textový soubor.`],
+[[`Odesílají se adresy na server?`,`Ne. Extrakce běží ve vašem prohlížeči. Seznamy kontaktů vaše zařízení nikdy neopustí.`],[`Kontroluje, zda adresa opravdu existuje?`,`Ne. Najde text, který vypadá jako e-mailová adresa. Nemůže poznat, zda schránka existuje.`]]],
+'url-extractor-tracking-remover': [[
+`Sdílené odkazy jsou často plné sledovacích značek jako utm_source, fbclid, gclid nebo mc_eid. Prodlužují odkazy a prozrazují odesílateli, kdo klikl. Vložte odkaz nebo celý text a získáte čisté URL bez sledovacích parametrů, nebo text s odkazy vyčištěnými na místě.`,
+`URL se najdou vzorem ignorujícím koncovou interpunkci a pak se zparsují parserem URL prohlížeče. Parametry dotazu, jejichž názvy odpovídají seznamu známých trackerů (utm_*, fbclid, gclid, dclid, msclkid, mc_cid, mc_eid, igshid, yclid, _hsenc, ref a další), se smažou; funkční parametry jako ?id=7 zůstanou. Můžete také odstranit celý řetězec dotazu nebo #fragment.`],
+[`Vložte odkaz nebo text s odkazy.`,`Zvolte seznam čistých URL nebo celý text s vyčištěnými odkazy.`,`Zkopírujte výsledek. Shrnutí ukazuje, které parametry byly odstraněny.`],
+[[`Rozbije odstranění parametrů odkaz?`,`Odstraňují se jen známé sledovací parametry. Parametry, které stránka potřebuje, jako ?id=7 nebo ?page=2, zůstanou. „Odstranit celý řetězec dotazu“ použijte, jen když víte, že stránka bez něj funguje.`],[`Co je fbclid?`,`Identifikátor kliknutí Facebooku přidávaný k odchozím odkazům. Umožňuje Facebooku spojit kliknutí s účtem a k otevření stránky není potřeba.`]]],
+'slug-generator': [[
+`Dobrý slug je krátký, čitelný a používá jen písmena, číslice a pomlčky. Vložte jeden název na řádek a získáte slugy pro blog, obchod nebo CMS. Diakritika se odstraní (crème → creme, žluťoučký → zlutoucky), německé ß se změní na ss a symboly a interpunkce se změní na jednotlivé pomlčky.`,
+`Text se normalizuje dekompozicí Unicode k odstranění diakritiky, speciální písmena jako ø, ł, đ a æ se transliterují, vše, co není písmeno ani číslice, se stane oddělovačem a opakované oddělovače se sloučí. Volitelná nastavení odstraní malá vynechávaná slova, změní oddělovač na podtržítko, ponechají velká písmena nebo zkrátí slug na hranici slova.`],
+[`Vložte názvy, jeden na řádek.`,`Zvolte oddělovač, velikost písmen, odstranění vynechávaných slov a maximální délku.`,`Zkopírujte slugy.`],
+[[`Pomlčky nebo podtržítka v URL?`,`Vyhledávače berou pomlčky jako oddělovače slov, takže pomlčky jsou obvyklou volbou pro webové adresy.`],[`Jak dlouhý má být slug?`,`Cilte na tři až šest smysluplných slov. Volba maximální délky řeže na hranici slova.`]]],
+'rot13-encoder': [[
+`ROT13 nahradí každé písmeno tím, které je v abecedě o 13 míst dál. Protože latinská abeceda má 26 písmen, dvojí použití vrátí původní text, takže stejné tlačítko šifruje i dešifruje. Používá se pro varování před spoilery a lehké zakrytí, ne pro bezpečnost.`,
+`Pro jiné Caesarovy šifry nastavte libovolný posun od -25 do 25 a volitelně otáčejte i číslice (ROT5). Písmena si zachovají velikost a mezery, interpunkce a nelatinské znaky projdou beze změny. České znaky s diakritikou se neposouvají.`],
+[`Napište nebo vložte text.`,`Pro ROT13 nechte posun 13 nebo zvolte jiný.`,`Zkopírujte výsledek. Chcete-li ROT13 dešifrovat, spusťte ho znovu.`],
+[[`Je ROT13 šifrování?`,`Ne. Je to jednoduchá substituce, kterou může kdokoli obrátit. Nikdy jím nechraňte tajemství.`],[`Jak dešifruji Caesarovu šifru s neznámým posunem?`,`Zkoušejte posuny od 1 do 25, dokud se neobjeví čitelný text. Možností je jen 25.`]]],
+};
