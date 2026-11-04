@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Formátování vzorců Excelu","url":"https://ohfis.com/cs/excel-formula-formatter/","description":"Rozdělte dlouhé vnořené vzorce Excelu na čitelné odsazené řádky. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Tabulky a CSV","item":"https://ohfis.com/cs/spreadsheet-csv-tools/"},{"@type":"ListItem","position":3,"name":"Formátování vzorců Excelu"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Formátování vzorců Excelu","step":[{"@type":"HowToStep","position":1,"text":"Paste the formula, with or without the leading =."},{"@type":"HowToStep","position":2,"text":"Set the maximum line width and indent size."},{"@type":"HowToStep","position":3,"text":"Copy the formatted formula back into the formula bar."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do line breaks change what the formula does?","acceptedAnswer":{"@type":"Answer","text":"No. Excel ignores spaces and line breaks outside of text in quotes."}},{"@type":"Question","name":"Does it check the formula for errors?","acceptedAnswer":{"@type":"Answer","text":"It does not evaluate formulas. If parentheses do not match, you will see it in the indentation."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Formátování vzorců Excelu","step":[{"@type":"HowToStep","position":1,"text":"Vložte vzorec, s úvodním = nebo bez něj."},{"@type":"HowToStep","position":2,"text":"Nastavte maximální šířku řádku a velikost odsazení."},{"@type":"HowToStep","position":3,"text":"Zkopírujte formátovaný vzorec zpět do řádku vzorců."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Mění zalomení řádků, co vzorec dělá?","acceptedAnswer":{"@type":"Answer","text":"Ne. Excel ignoruje mezery a zalomení mimo text v uvozovkách."}},{"@type":"Question","name":"Kontroluje vzorec na chyby?","acceptedAnswer":{"@type":"Answer","text":"Vzorce nevyhodnocuje. Pokud závorky nesedí, uvidíte to na odsazení."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Formátování vzorců Excelu</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">A formula with five nested IFs in the formula bar is nearly impossible to debug. Paste it here and get it back with one argument per line, indented by nesting level, and with spaces around operators. Short parts stay on one line. In Excel, press Alt+Enter in the formula bar to add such line breaks; they do not change the result.</p><p lang="en">The formula is tokenised (function names, strings, references, numbers and operators) and parsed into a tree of function calls. A call that fits within your width limit is printed on one line; a longer call is expanded with each argument on its own line. Text in quotes and sheet references are preserved exactly, and the formatted formula contains the same characters as the original apart from spaces and line breaks.</p>
+        
+        <p>Vzorec s pěti vnořenými KDYŽ v řádku vzorců se téměř nedá ladit. Vložte ho sem a získáte ho zpět s jedním argumentem na řádek, odsazený podle úrovně vnoření a s mezerami kolem operátorů. Krátké části zůstanou na jednom řádku. V Excelu takové zalomení vložíte v řádku vzorců klávesou Alt+Enter; výsledek nemění.</p><p>Vzorec se rozloží na tokeny (názvy funkcí, řetězce, odkazy, čísla a operátory) a zpracuje do stromu volání funkcí. Volání, které se vejde do limitu šířky, se vytiskne na jeden řádek; delší se rozbalí s každým argumentem na vlastním řádku. Text v uvozovkách a odkazy na listy se zachovají přesně a formátovaný vzorec obsahuje stejné znaky jako původní, kromě mezer a zalomení.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Paste the formula, with or without the leading =.</p></li><li><p lang="en">Set the maximum line width and indent size.</p></li><li><p lang="en">Copy the formatted formula back into the formula bar.</p></li></ol>
+        <ol class="s-steps"><li><p>Vložte vzorec, s úvodním = nebo bez něj.</p></li><li><p>Nastavte maximální šířku řádku a velikost odsazení.</p></li><li><p>Zkopírujte formátovaný vzorec zpět do řádku vzorců.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Do line breaks change what the formula does?</summary><p lang="en">No. Excel ignores spaces and line breaks outside of text in quotes.</p></details>
-          <details><summary lang="en">Does it check the formula for errors?</summary><p lang="en">It does not evaluate formulas. If parentheses do not match, you will see it in the indentation.</p></details>
+          <details open><summary>Mění zalomení řádků, co vzorec dělá?</summary><p>Ne. Excel ignoruje mezery a zalomení mimo text v uvozovkách.</p></details>
+          <details><summary>Kontroluje vzorec na chyby?</summary><p>Vzorce nevyhodnocuje. Pokud závorky nesedí, uvidíte to na odsazení.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

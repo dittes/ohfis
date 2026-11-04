@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Vyplnění prázdných buněk v tabulce","url":"https://ohfis.com/cs/fill-blank-cells/","description":"Vyplňte prázdné buňky hodnotou shora, pevnou hodnotou nebo průměrem sloupce. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Tabulky a CSV","item":"https://ohfis.com/cs/spreadsheet-csv-tools/"},{"@type":"ListItem","position":3,"name":"Vyplnění prázdných buněk v tabulce"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Vyplnění prázdných buněk v tabulce","step":[{"@type":"HowToStep","position":1,"text":"Paste your CSV."},{"@type":"HowToStep","position":2,"text":"Choose the fill method and the columns."},{"@type":"HowToStep","position":3,"text":"Copy or download the completed table."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does fill down do?","acceptedAnswer":{"@type":"Answer","text":"It copies the nearest non-empty value above into each blank cell, like Ctrl+D in Excel for a selection with gaps."}},{"@type":"Question","name":"Is filling with the average a good idea?","acceptedAnswer":{"@type":"Answer","text":"It keeps the mean unchanged but shrinks variance; use it only if that suits your analysis."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Vyplnění prázdných buněk v tabulce","step":[{"@type":"HowToStep","position":1,"text":"Vložte CSV."},{"@type":"HowToStep","position":2,"text":"Zvolte metodu vyplnění a sloupce."},{"@type":"HowToStep","position":3,"text":"Zkopírujte doplněnou tabulku nebo ji stáhněte."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Co dělá „vyplnit dolů“?","acceptedAnswer":{"@type":"Answer","text":"Zkopíruje nejbližší neprázdnou hodnotu shora do každé prázdné buňky, jako Ctrl+D v Excelu u výběru s mezerami."}},{"@type":"Question","name":"Je vyplnění průměrem dobrý nápad?","acceptedAnswer":{"@type":"Answer","text":"Průměr zůstane stejný, ale rozptyl se zmenší; použijte to jen, pokud to vaší analýze vyhovuje."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Vyplnění prázdných buněk v tabulce</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Exports from pivot tables and reports often leave a cell empty when the value is the same as above. Models and databases do not like gaps either. Choose how to fill: the value from the cell above (fill down) or below, a fixed text, zero, or a statistic of the column such as the average, median, most frequent value, minimum or maximum.</p><p lang="en">Each selected column is processed top to bottom. For &quot;previous&quot; the last non-empty value is remembered; &quot;next&quot; looks ahead; statistics are computed from the non-empty numeric cells of the column and rounded sensibly. Cells that only contain spaces count as empty. The counter shows how many cells were filled and columns can be limited to the ones you pick.</p>
+        
+        <p>Exporty z kontingenčních tabulek a reportů často nechávají buňku prázdnou, když je hodnota stejná jako nad ní. Modely a databáze také nemají rády mezery. Zvolte, čím vyplnit: hodnotou z buňky nad (vyplnit dolů) nebo pod, pevným textem, nulou nebo statistikou sloupce jako průměr, medián, nejčastější hodnota, minimum či maximum.</p><p>Každý zvolený sloupec se zpracuje shora dolů. U „předchozí“ se pamatuje poslední neprázdná hodnota; „další“ se dívá dopředu; statistiky se počítají z neprázdných číselných buněk sloupce a rozumně zaokrouhlí. Buňky obsahující jen mezery se počítají jako prázdné. Počítadlo ukazuje, kolik buněk se vyplnilo, a sloupce lze omezit na vybrané.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Paste your CSV.</p></li><li><p lang="en">Choose the fill method and the columns.</p></li><li><p lang="en">Copy or download the completed table.</p></li></ol>
+        <ol class="s-steps"><li><p>Vložte CSV.</p></li><li><p>Zvolte metodu vyplnění a sloupce.</p></li><li><p>Zkopírujte doplněnou tabulku nebo ji stáhněte.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">What does fill down do?</summary><p lang="en">It copies the nearest non-empty value above into each blank cell, like Ctrl+D in Excel for a selection with gaps.</p></details>
-          <details><summary lang="en">Is filling with the average a good idea?</summary><p lang="en">It keeps the mean unchanged but shrinks variance; use it only if that suits your analysis.</p></details>
+          <details open><summary>Co dělá „vyplnit dolů“?</summary><p>Zkopíruje nejbližší neprázdnou hodnotu shora do každé prázdné buňky, jako Ctrl+D v Excelu u výběru s mezerami.</p></details>
+          <details><summary>Je vyplnění průměrem dobrý nápad?</summary><p>Průměr zůstane stejný, ale rozptyl se zmenší; použijte to jen, pokud to vaší analýze vyhovuje.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
