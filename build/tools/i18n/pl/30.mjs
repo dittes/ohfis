@@ -1,0 +1,32 @@
+export default {
+'audio-cutter': [[
+`Przeciągnij plik audio, wpisz, gdzie zaczyna się i kończy potrzebna część, i zapisz ją jako WAV lub MP3. Możesz zachować tylko ten fragment (na dzwonek, próbkę dźwięku lub skrócony wywiad) albo go wyciąć i połączyć resztę (by usunąć kaszel lub pomyłkę). Opcjonalne wyciszanie i wzmacnianie unika trzasków w miejscach cięcia.`,
+`Plik jest dekodowany przez przeglądarkę, próbki są cięte z dokładnością do pojedynczej próbki, a wynik jest kodowany ponownie, wszystko na Twoim urządzeniu. Wyjście MP3 używa kodera LAME; WAV zachowuje każdy szczegół. Narzędzie pracuje na czasach w sekundach, co jest precyzyjne, ale wymaga wcześniejszego odsłuchu: odtwórz oryginał, zanotuj czasy i sprawdź wynik w odtwarzaczu podglądu przed pobraniem.`],
+[`Przeciągnij plik audio.`,`Wybierz „zachowaj” lub „usuń” i wpisz początek i koniec w sekundach.`,`Posłuchaj podglądu i pobierz WAV lub MP3.`],
+[[`Jakie formaty mogę otworzyć?`,`Wszystko, co odtworzy przeglądarka: MP3, M4A/AAC, OGG, Opus, FLAC, WAV i dźwięk z większości plików wideo.`],[`Czy cięcie obniża jakość?`,`Nie przy WAV. Zapis jako MP3 kompresuje dźwięk jeszcze raz, co kosztuje trochę jakości; użyj 256 lub 320 kbps, by ją zachować.`]]],
+'audio-joiner': [[
+`Dodaj dwa lub więcej plików audio, ustaw je w dobrej kolejności przyciskami strzałek i pobierz jeden połączony plik jako WAV lub MP3. Płynne przejście trwające kilkaset milisekund pozwala jednemu utworowi wpłynąć w następny, na przykład w miksie lub podcaście z muzyką na wejściu i wyjściu.`,
+`Wszystkie pliki są dekodowane przez przeglądarkę przy 44,1 kHz, więc utwory o różnych częstotliwościach próbkowania łączą się bez zmiany wysokości dźwięku; utwór mono jest rozszerzany do stereo, gdy miesza się go z utworami stereo. Płynne przejście używa krzywej o stałej mocy, która utrzymuje stałą głośność w trakcie przejścia. Łączenie odbywa się w pamięci, więc bardzo długie nagrania (godziny) wymagają komputera z wystarczającą ilością RAM.`],
+[`Dodaj pliki audio.`,`Ułóż je za pomocą ↑ i ↓ i usuń niepotrzebne.`,`Ustaw płynne przejście, jeśli chcesz, posłuchaj i pobierz wynik.`],
+[[`Jak uzyskać gładkie przejście?`,`Ustaw płynne przejście 200–2000 ms. Przy 0 ms utwory są łączone bez nakładania.`],[`Czy jest limit liczby plików?`,`Brak stałego limitu, ale wszystko jest przetwarzane w przeglądarce, więc praktycznym limitem jest pamięć komputera.`]]],
+'audio-volume-changer': [[
+`Wpisz, o ile decybeli nagranie ma być głośniejsze (+) lub cichsze (−), posłuchaj wyniku i zapisz go jako WAV lub MP3. +6 dB to mniej więcej dwa razy głośniej, −6 dB o połowę ciszej. Wyciszanie i wzmacnianie można dodać w tym samym kroku.`,
+`Wzmocnienie jest stosowane do każdej próbki. Zgłośnienie nagrania może wypchnąć najgłośniejsze szczyty ponad maksimum i spowodować ostre zniekształcenia (clipping), więc domyślnie narzędzie skaluje wynik w dół tylko tyle, by tego uniknąć, i mówi, o ile go zmniejszyło. Jeśli chcesz, by najgłośniejszy punkt automatycznie osiągał dokładny poziom, użyj zamiast tego normalizatora audio.`],
+[`Przeciągnij plik audio.`,`Wpisz zmianę w dB (dodatnia = głośniej).`,`Sprawdź podgląd i uwagę o clippingu, potem pobierz.`],
+[[`Ile dB to dwa razy głośniej?`,`Około +6 dB podwaja poziom sygnału; ludzie zwykle słyszą +10 dB jako dwa razy głośniej.`],[`Dlaczego wynik nie jest tak głośny, jak chciałem?`,`Ogranicznik clippingu go ograniczył. Wyłącz opcję, by dopuścić zniekształcenia, lub użyj normalizacji w stylu kompresora przy bardzo cichych nagraniach.`]]],
+'audio-reverser': [[
+`Przeciągnij nagranie i otrzymaj je odwrócone, gotowe do odtworzenia lub pobrania jako WAV lub MP3. Odwrócony dźwięk służy do efektów w muzyce i wideo, do zagadek i do zabawy z wypowiedziami.`,
+`Próbki każdego kanału są po prostu czytane od końca do początku, więc nic nie ginie, a dwukrotne odwrócenie daje dokładnie oryginał. Długie nagrania są odwracane w pamięci, co dla minut dźwięku trwa chwilę.`],
+[`Przeciągnij plik audio.`,`Posłuchaj odwróconej wersji.`,`Pobierz ją jako WAV lub MP3.`],
+[[`Czy mogę odwrócić tylko część nagrania?`,`Najpierw wytnij fragment narzędziem do cięcia audio, odwróć go tutaj i połącz kawałki łącznikiem audio.`],[`Czy odwracanie jest bezstratne?`,`Tak dla WAV. Wyjście MP3 jest kompresowane jeszcze raz.`]]],
+'audio-equalizer': [[
+`Wybierz ustawienie wstępne (podbicie basów, podbicie wysokich, wyraźna mowa, ciepło i miękkość) lub ustaw samodzielnie pięć pasm: 60 Hz, 250 Hz, 1 kHz, 4 kHz i 12 kHz, każde od −12 do +12 dB. Wynik jest renderowany, odtwarzany do sprawdzenia i zapisywany jako WAV lub MP3.`,
+`Każde pasmo to standardowy filtr biquad z Audio EQ Cookbook: filtry półkowe dla najniższego i najwyższego pasma oraz filtry szczytowe o umiarkowanej szerokości pomiędzy nimi. Podbijanie pasm może podnieść ogólny poziom, więc narzędzie skaluje wynik w dół, gdyby miał się przesterować. Korektor nie naprawi złego nagrania, ale kilka dB w odpowiednim miejscu sprawia, że mowa jest wyraźniejsza, a muzyka cieplejsza.`],
+[`Przeciągnij plik audio.`,`Wybierz ustawienie wstępne lub przesuń pięć pasm.`,`Posłuchaj i pobierz.`],
+[[`Które pasmo poprawia mowę?`,`Odrobina przy 4 kHz (+3 do +5 dB) czyni mowę wyraźniejszą; obcięcie 60–250 Hz zmniejsza dudnienie i buczenie.`],[`Dlaczego wynik jest cichszy, niż oczekiwałem?`,`Gdy podbicia przesterowałyby sygnał, narzędzie obniża cały wynik o potrzebną wartość.`]]],
+'audio-converter': [[
+`Przeciągnij plik audio i zapisz go jako MP3 (mały, działa wszędzie) lub WAV (nieskompresowany, do edycji). Narzędzie wyciąga też ścieżkę dźwiękową z pliku wideo, takiego jak MP4 lub WebM. Wybierz przepływność MP3 od 64 do 320 kbps i w razie potrzeby zamień na mono, by zmniejszyć rozmiar o połowę.`,
+`Twoja przeglądarka dekoduje wejście i to decyduje, co da się otworzyć: MP3, AAC/M4A, OGG, Opus, FLAC i WAV działają w aktualnych przeglądarkach, a formaty takie jak WMA lub AMR zwykle nie. MP3 powstaje kodekiem LAME w przeglądarce. Konwersja z formatu stratnego (MP3, AAC) ponownie do MP3 dodaje trochę strat, więc zachowaj oryginał i użyj wysokiej przepływności.`],
+[`Przeciągnij plik audio lub wideo.`,`Wybierz MP3 lub WAV i jakość.`,`Pobierz przekonwertowany plik.`],
+[[`Jaką przepływność wybrać?`,`128 kbps wystarcza dla mowy, 192 dla muzyki ogólnej, 256–320 kbps dla najlepszej jakości.`],[`Czy mogę uzyskać MP3 z wideo?`,`Tak, przeciągnij plik wideo; konwertowany jest tylko jego dźwięk. Bardzo duże wideo wymaga dość wolnej pamięci.`]]],
+};

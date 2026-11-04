@@ -1,6 +1,6 @@
 # Ohfis
 
-Free online tools that run entirely in the browser: 26 PDF tools and 228 utilities for documents, text, CSV and spreadsheets, images, time and calendars, business maths, notes and privacy, IT and web work, teams and audio/video. Nothing is uploaded. English, German, Polish and Czech (`/en`, `/de`, `/pl`, `/cs`).
+Free online tools that run entirely in the browser: 26 PDF tools and 240 utilities for documents, text, CSV and spreadsheets, images, time and calendars, business maths, notes and privacy, IT and web work, teams and audio/video. Nothing is uploaded. English, German, Polish and Czech (`/en`, `/de`, `/pl`, `/cs`).
 
 Live at https://ohfis.com (GitHub Pages serves the committed output). What exists compared with the original request list is in [TOOLS_COVERAGE.md](TOOLS_COVERAGE.md).
 
@@ -41,7 +41,7 @@ Pages under `en/ de/ pl/ cs/`, `sitemap.xml`, `llms*.txt`, `robots.txt`, `servic
 
 ## Design notes
 
-- All 228 utility tools have their explanations (how it works, steps, FAQs) translated into German, Polish and Czech by hand, in `build/tools/i18n/<lang>/NN.mjs`. A tool without a translation falls back to the English text (marked `lang="en"` with a note). Interface strings that are not tool-specific are localised in `build/content`.
+- All 240 utility tools have their explanations (how it works, steps, FAQs) translated into German, Polish and Czech by hand, in `build/tools/i18n/<lang>/NN.mjs`. A tool without a translation falls back to the English text (marked `lang="en"` with a note). Interface strings that are not tool-specific are localised in `build/content`.
 - The translations are written by an AI model without a native-speaker review; corrections are welcome as edits to those files.
 - Navigation: seven sections (PDF & Documents, Text & Notes, Spreadsheets & CSV, Images & Media, Time & Calendar, Business & Team, IT & Web), defined as `GROUPS` in `build/tools/registry.mjs`. The ten finer categories still exist inside a section page. The footer only holds the legal links; the language is switched in the header.
 - URLs are translated in every language. PDF tool slugs are set in `build/registry.mjs`; utility tool slugs are generated from the translated tool name (English keeps the tool id) and section slugs come from `GROUPS`. The former English slugs and category URLs stay alive as small redirect pages. `tests/urls.test.mjs` checks canonicals, redirects, links and the navigation.

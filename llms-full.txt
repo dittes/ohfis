@@ -85,6 +85,15 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [Scan Separator Sheet Maker (Batch Scanning)](https://ohfis.com/en/scan-separator-sheets/): Print numbered separator pages with a QR code to split a stack of scans into documents.
   Scanning a stack of paperwork in one go is fast, but the pages need to be split into documents afterwards. Print numbered separator sheets, put one between every two documents, scan the whole stack and let your scanning software (or you) split at the sheets. Set the number of sheets, a label prefix, the first number and the paper size; every page has a black title band, a huge label such as DOC-001 and optionally a QR code with the same label.
   How to use: Set the number of sheets, label prefix and paper. Create the PDF and print it, preferably on coloured paper. Put a sheet between documents and scan the stack.
+- [Unzip Files Online (ZIP, TAR and GZ Extractor)](https://ohfis.com/en/zip-extractor/): Open an archive, see what is inside and save single files or a selection.
+  Drop a ZIP, TAR, TAR.GZ or GZ file and see every file inside with its size. Filter by name, save a single file with one click or tick several files and save them as a new, smaller ZIP. This is handy on a locked-down computer, on a phone or for a quick look into an archive you do not trust enough to unpack on your disk.
+  How to use: Drop the archive. Filter the list or tick the files you want. Save single files or the selection as a ZIP.
+- [Create ZIP File Online (Compress Files and Folders)](https://ohfis.com/en/zip-creator/): Pack files and whole folders into one ZIP file.
+  Add files, drag in many at once or pick a whole folder (its sub-folders are kept), choose the compression level and download one ZIP file with the name you want. It is the quickest way to send several files as one attachment.
+  How to use: Add files or choose a folder. Name the archive and pick the compression. Download the ZIP.
+- [PDF to HTML Converter](https://ohfis.com/en/pdf-to-html/): Turn the text of a PDF into clean HTML with headings, paragraphs and lists.
+  Drop a PDF and get clean, simple HTML: headings are detected from the font size, lines are joined into paragraphs, bullet and numbered lines become lists and words broken at the end of a line with a hyphen are put back together. Copy the HTML or download it as a complete page, with page breaks marked if you like.
+  How to use: Drop the PDF. Choose headings, page breaks and a full page or just the markup. Check the preview, then copy or download the HTML.
 
 ## Text Tools
 
@@ -613,6 +622,9 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 - [Webhook Signature Tester (HMAC SHA-256)](https://ohfis.com/en/webhook-signature-tester/): Calculate GitHub, Stripe and Slack style webhook signatures and check the one you received.
   Paste the raw request body and the signing secret and see the signatures a sender would produce: GitHub's sha256= and legacy sha1=, Stripe's t=…,v1=…, Slack's v0=…, plain hex, Base64 (used by Shopify and others) and SHA-512. Paste the signature header you actually received and the tool tells you whether it matches one of them, which quickly shows if the problem is the secret, the body, the timestamp or the header format.
   How to use: Paste the raw body and the secret. Optionally enter the timestamp and the received signature. Compare the calculated signatures with the header you got.
+- [Font Converter (TTF/OTF to WOFF and back)](https://ohfis.com/en/font-converter/): Convert a font file to WOFF for websites, or unpack WOFF to TTF/OTF.
+  Drop a TTF or OTF font and get a WOFF file for your website, usually about a third smaller; drop a WOFF and get the TTF or OTF back. The tool shows the font family, style and number of glyphs, previews your own text in the font and writes the matching @font-face CSS for you to copy.
+  How to use: Drop the font file. Check the preview and the font details. Download the converted file and copy the CSS.
 
 ## Notes & Privacy
 
@@ -772,6 +784,30 @@ Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.c
 - [Video Frame Capture (Screenshot from Video)](https://ohfis.com/en/video-frame-capture/): Pick the exact frame in a video and save it as a full-resolution PNG or JPEG.
   Open a video from your device, scrub to the moment you want, step frame by frame or second by second and save the frame as a PNG or JPEG at the full resolution of the video. Saved frames are listed with their time code so you can collect several.
   How to use: Choose the video. Scrub or step to the frame. Press "Save frame".
+- [Audio Cutter (Trim MP3 and WAV Online)](https://ohfis.com/en/audio-cutter/): Cut a part out of a recording or keep only the part you need.
+  Drop an audio file, enter where the part you want starts and ends, and save it as WAV or MP3. You can keep only that part (to make a ringtone, a sound bite or a trimmed interview) or cut it out and join the rest (to remove a cough or a mistake). Optional fade in and fade out avoid clicks at the cut points.
+  How to use: Drop the audio file. Choose "keep" or "remove", then enter start and end in seconds. Listen to the preview and download the WAV or MP3.
+- [Audio Joiner (Merge MP3 Files Online)](https://ohfis.com/en/audio-joiner/): Join several audio files into one, in the order you choose.
+  Add two or more audio files, put them in the right order with the arrow buttons and download one combined file as WAV or MP3. A crossfade of a few hundred milliseconds lets one track flow into the next, for example for a mix or a podcast with intro and outro music.
+  How to use: Add the audio files. Order them with ↑ and ↓ and remove any you do not need. Set a crossfade if you like, listen, and download the result.
+- [Change Audio Volume (Make MP3 Louder or Quieter)](https://ohfis.com/en/audio-volume-changer/): Make a recording louder or quieter by a number of decibels.
+  Enter how many decibels louder (+) or quieter (−) the recording should be, listen to the result and save it as WAV or MP3. +6 dB is roughly twice as loud, −6 dB half. Fade in and out can be added in the same step.
+  How to use: Drop the audio file. Enter the change in dB (positive = louder). Check the preview and the clipping note, then download.
+- [Reverse Audio (Play Sound Backwards)](https://ohfis.com/en/audio-reverser/): Turn a recording around so that it plays backwards.
+  Drop a recording and get it back reversed, ready to play or download as WAV or MP3. Reversed sound is used for effects in music and video, for puzzles and for fun with spoken words.
+  How to use: Drop the audio file. Listen to the reversed version. Download it as WAV or MP3.
+- [Audio Equalizer (Bass and Treble Online)](https://ohfis.com/en/audio-equalizer/): Shape the sound of a recording with five frequency bands and presets.
+  Pick a preset (bass boost, treble boost, voice clarity, warm and soft) or set five bands yourself: 60 Hz, 250 Hz, 1 kHz, 4 kHz and 12 kHz, each from −12 to +12 dB. The result is rendered, played back for you to check and saved as WAV or MP3.
+  How to use: Drop the audio file. Choose a preset or move the five bands. Listen and download.
+- [Audio Converter (to MP3 or WAV)](https://ohfis.com/en/audio-converter/): Convert M4A, OGG, FLAC, Opus or video sound to MP3 or WAV.
+  Drop an audio file and save it as MP3 (small, plays everywhere) or WAV (uncompressed, for editing). It also pulls the sound track out of a video file such as MP4 or WebM. Choose the MP3 bitrate from 64 to 320 kbps and, if you like, convert to mono to halve the size.
+  How to use: Drop the audio or video file. Choose MP3 or WAV and the quality. Download the converted file.
+- [Webcam Video Recorder](https://ohfis.com/en/webcam-video-recorder/): Record a video from your webcam and save it, without installing anything.
+  Turn the camera on, pick the camera and the resolution, press record and save the video as a file. It is made for a quick message, a video application, a screen-less demo or a test of your camera and microphone. The preview is mirrored like a mirror, the saved video is not.
+  How to use: Press "Turn camera on" and allow access. Choose camera, resolution and whether to record sound. Press "Start recording", then stop and download the video.
+- [Text to Speech (Read Text Aloud)](https://ohfis.com/en/text-to-speech/): Have your browser read a text aloud with a voice and speed you choose.
+  Paste a text, choose one of the voices on your device, set speed, pitch and volume and press play. Useful for proofreading (mistakes are easy to hear), for learning pronunciation or for listening to an article instead of reading it. Pause, resume and stop at any time.
+  How to use: Type or paste the text. Choose the voice (it should match the language of the text) and the speed. Press "Read aloud".
 
 ## Related sites by the same operator
 

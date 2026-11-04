@@ -3421,6 +3421,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webhook-signature-tester/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/font-converter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/font-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/schrift-konverter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-czcionek/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-pisem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/font-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/schrift-konverter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/font-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/schrift-konverter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-czcionek/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-pisem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/font-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/konwerter-czcionek/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/font-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/schrift-konverter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-czcionek/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-pisem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/font-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/prevodnik-pisem/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/font-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/schrift-konverter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-czcionek/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-pisem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/font-converter/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/booklet-maker/</loc>
     <lastmod>2026-11-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/booklet-maker/"/>
@@ -3923,6 +3959,114 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/kreator-kartek-rozdzielajacych-do-skanowania/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tvorba-oddelovacich-listu-pro-skenovani/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/scan-separator-sheets/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/zip-extractor/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zip-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zip-dateien-online-entpacken/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rozpakuj-zip-online/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rozbalit-zip-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zip-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/zip-dateien-online-entpacken/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zip-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zip-dateien-online-entpacken/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rozpakuj-zip-online/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rozbalit-zip-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zip-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/rozpakuj-zip-online/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zip-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zip-dateien-online-entpacken/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rozpakuj-zip-online/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rozbalit-zip-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zip-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/rozbalit-zip-online/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zip-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zip-dateien-online-entpacken/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rozpakuj-zip-online/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rozbalit-zip-online/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zip-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/zip-creator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zip-creator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zip-datei-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tworzenie-pliku-zip/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vytvoreni-souboru-zip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zip-creator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/zip-datei-erstellen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zip-creator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zip-datei-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tworzenie-pliku-zip/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vytvoreni-souboru-zip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zip-creator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/tworzenie-pliku-zip/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zip-creator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zip-datei-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tworzenie-pliku-zip/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vytvoreni-souboru-zip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zip-creator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/vytvoreni-souboru-zip/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zip-creator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zip-datei-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tworzenie-pliku-zip/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vytvoreni-souboru-zip/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/zip-creator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/pdf-to-html/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-in-html-umwandeln/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-pdf-na-html/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevod-pdf-na-html/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-to-html/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/pdf-in-html-umwandeln/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-in-html-umwandeln/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-pdf-na-html/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevod-pdf-na-html/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-to-html/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/konwerter-pdf-na-html/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-in-html-umwandeln/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-pdf-na-html/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevod-pdf-na-html/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-to-html/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/prevod-pdf-na-html/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-in-html-umwandeln/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-pdf-na-html/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevod-pdf-na-html/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-to-html/"/>
   </url>
   <url>
     <loc>https://ohfis.com/en/margin-markup-calculator/</loc>
@@ -6443,6 +6587,294 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/zrzut-klatki-z-wideo/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/ulozeni-snimku-z-videa/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/video-frame-capture/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/audio-cutter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-cutter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-schneiden/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/przycinanie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/strih-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-cutter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/audio-schneiden/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-cutter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-schneiden/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/przycinanie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/strih-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-cutter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/przycinanie-audio/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-cutter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-schneiden/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/przycinanie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/strih-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-cutter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/strih-zvuku/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-cutter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-schneiden/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/przycinanie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/strih-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-cutter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/audio-joiner/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-joiner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-zusammenfuegen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/laczenie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/spojeni-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-joiner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/audio-zusammenfuegen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-joiner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-zusammenfuegen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/laczenie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/spojeni-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-joiner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/laczenie-audio/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-joiner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-zusammenfuegen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/laczenie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/spojeni-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-joiner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/spojeni-zvuku/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-joiner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-zusammenfuegen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/laczenie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/spojeni-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-joiner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/audio-volume-changer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-volume-changer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-lautstaerke-aendern/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/zmiana-glosnosci-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/zmena-hlasitosti-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-volume-changer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/audio-lautstaerke-aendern/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-volume-changer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-lautstaerke-aendern/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/zmiana-glosnosci-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/zmena-hlasitosti-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-volume-changer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/zmiana-glosnosci-audio/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-volume-changer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-lautstaerke-aendern/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/zmiana-glosnosci-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/zmena-hlasitosti-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-volume-changer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/zmena-hlasitosti-zvuku/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-volume-changer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-lautstaerke-aendern/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/zmiana-glosnosci-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/zmena-hlasitosti-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-volume-changer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/audio-reverser/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-reverser/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-rueckwaerts-abspielen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/odwracanie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/obraceni-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-reverser/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/audio-rueckwaerts-abspielen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-reverser/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-rueckwaerts-abspielen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/odwracanie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/obraceni-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-reverser/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/odwracanie-audio/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-reverser/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-rueckwaerts-abspielen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/odwracanie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/obraceni-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-reverser/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/obraceni-zvuku/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-reverser/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-rueckwaerts-abspielen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/odwracanie-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/obraceni-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-reverser/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/audio-equalizer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-equalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-equalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/korektor-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/ekvalizer-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-equalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/audio-equalizer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-equalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-equalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/korektor-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/ekvalizer-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-equalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/korektor-audio/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-equalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-equalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/korektor-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/ekvalizer-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-equalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/ekvalizer-zvuku/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-equalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-equalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/korektor-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/ekvalizer-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-equalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/audio-converter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-konverter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/audio-konverter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-konverter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/konwerter-audio/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-konverter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/prevodnik-zvuku/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-konverter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevodnik-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/webcam-video-recorder/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webcam-video-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webcam-videorekorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rejestrator-wideo-z-kamery/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/nahravani-videa-z-webkamery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webcam-video-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/webcam-videorekorder/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webcam-video-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webcam-videorekorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rejestrator-wideo-z-kamery/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/nahravani-videa-z-webkamery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webcam-video-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/rejestrator-wideo-z-kamery/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webcam-video-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webcam-videorekorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rejestrator-wideo-z-kamery/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/nahravani-videa-z-webkamery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webcam-video-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/nahravani-videa-z-webkamery/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webcam-video-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webcam-videorekorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rejestrator-wideo-z-kamery/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/nahravani-videa-z-webkamery/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webcam-video-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/text-to-speech/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-to-speech/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/text-vorlesen-lassen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/czytanie-tekstu-na-glos/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/predcitani-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-to-speech/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/text-vorlesen-lassen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-to-speech/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/text-vorlesen-lassen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/czytanie-tekstu-na-glos/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/predcitani-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-to-speech/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/czytanie-tekstu-na-glos/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-to-speech/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/text-vorlesen-lassen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/czytanie-tekstu-na-glos/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/predcitani-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-to-speech/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/predcitani-textu/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-to-speech/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/text-vorlesen-lassen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/czytanie-tekstu-na-glos/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/predcitani-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-to-speech/"/>
   </url>
   <url>
     <loc>https://ohfis.com/en/password-generator/</loc>

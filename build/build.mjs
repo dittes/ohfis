@@ -625,6 +625,9 @@ function legalPage(lang, key) {
 `;
 }
 
+// Tools added after the URLs were translated never lived at their English id in other languages, so they need no redirect.
+const NEVER_PUBLISHED_AT_OLD_URL = new Set(['audio-cutter', 'audio-joiner', 'audio-volume-changer', 'audio-reverser', 'audio-equalizer', 'audio-converter', 'webcam-video-recorder', 'text-to-speech', 'zip-extractor', 'zip-creator', 'pdf-to-html', 'font-converter']);
+
 function redirectPage(to) {
   return `<!DOCTYPE html>
 <html lang="en">
@@ -778,7 +781,7 @@ for (const lang of LANGS) {
   for (const tool of UTOOLS) { write(`${lang}/${tool.slugs[lang]}/index.html`, utilityPage(lang, tool)); pages++; }
   // Old URLs (English tool id in every language, the ten former category hubs) forward to the new ones
   const taken = new Set([...UTOOLS.map(t => t.slugs[lang]), ...GROUP_ORDER.filter(g => g !== 'pdf').map(g => GROUPS[g].slug[LI[lang]])]);
-  for (const t of UTOOLS) if (!taken.has(t.id)) write(`${lang}/${t.id}/index.html`, redirectPage(utilPath(t, lang)));
+  for (const t of UTOOLS) if (!taken.has(t.id) && !NEVER_PUBLISHED_AT_OLD_URL.has(t.id)) write(`${lang}/${t.id}/index.html`, redirectPage(utilPath(t, lang)));
   for (const cat of UCAT_ORDER) if (!taken.has(UCATS[cat].slug)) write(`${lang}/${UCATS[cat].slug}/index.html`, redirectPage(hubPath(GROUP_OF[cat], lang)));
   pages += TOOLS.length + 4;
 }

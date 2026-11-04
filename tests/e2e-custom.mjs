@@ -693,4 +693,90 @@ Object.assign(custom, {
   },
 });
 
+// ---- audio editing, archives, fonts, PDF to HTML, recorder and speech ----
+import * as F2 from '../assets/vendor/fflate/fflate.js';
+const sineWav = (f, secs, amp = 0.1, sr = 44100, ch = 2) => { const a = Float32Array.from({ length: Math.round(secs * sr) }, (_, i) => amp * Math.sin(2 * Math.PI * f * i / sr)); return Buffer.from(AU.encodeWav(ch === 1 ? [a] : [a, a.slice()], sr)); };
+const dlWav = async page => { const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /Download/ }).first().click()]); return { path: await dl.path(), name: dl.suggestedFilename(), buf: readFileSync(await dl.path()) }; };
+const ffprobe = (path, entries) => JSON.parse(spawnSync('ffprobe', ['-v', 'error', '-show_entries', entries, '-of', 'json', path]).stdout.toString() || '{}');
+const setNum = async (page, i, v) => { await page.locator('#tool-root input[type=number]').nth(i).fill(String(v)); await page.waitForTimeout(500); await page.waitForSelector('[data-result=ready]'); };
+Object.assign(custom, {
+  async 'audio-cutter'(page) {
+    const wav = Buffer.from(AU.encodeWav([Float32Array.from({ length: 44100 * 4 }, (_, i) => i < 44100 ? 0.05 : i < 88200 ? 0.2 : 0.4), Float32Array.from({ length: 44100 * 4 }, () => 0)], 44100));
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'in.wav', buffer: wav }); await page.waitForSelector('[data-result=ready]');
+    await setNum(page, 0, 1); await setNum(page, 1, 2); let d = AU.decodeWav(new Uint8Array((await dlWav(page)).buf)); assert.ok(Math.abs(d.chs[0].length / d.sr - 1) < 0.01, 'kept length ' + d.chs[0].length / d.sr); assert.ok(Math.abs(AU.peak(d.chs) - 0.2) < 0.01, 'kept the right part');
+    await page.locator('#tool-root select').first().selectOption('remove'); await page.waitForTimeout(600); d = AU.decodeWav(new Uint8Array((await dlWav(page)).buf)); assert.ok(Math.abs(d.chs[0].length / d.sr - 3) < 0.01, 'removed length'); assert.ok(Math.abs(AU.peak(d.chs) - 0.4) < 0.01);
+    await page.locator('#tool-root input[type=number]').nth(1).fill('0.5'); await page.waitForTimeout(700); assert.ok((await page.locator('.pt-drop__error:visible').innerText()).includes('end must be after'), 'validation message');
+  },
+  async 'audio-volume-changer'(page) {
+    let d = await audioRun(page, sineWav(440, 1, 0.1)); assert.ok(Math.abs(AU.gainToDb(AU.peak(d.chs) / 0.1) - 6) < 0.1, '+6 dB');
+    await setNum(page, 0, -6); d = AU.decodeWav(new Uint8Array((await dlWav(page)).buf)); assert.ok(Math.abs(AU.gainToDb(AU.peak(d.chs) / 0.1) + 6) < 0.1, '−6 dB');
+    await setNum(page, 0, 30); d = AU.decodeWav(new Uint8Array((await dlWav(page)).buf)); assert.ok(AU.peak(d.chs) <= 1 && AU.peak(d.chs) > 0.98, 'clipping guard keeps the peak at full scale: ' + AU.peak(d.chs)); assert.match(await rootText(page), /reduced by/);
+  },
+  async 'audio-reverser'(page) {
+    const a = Float32Array.from({ length: 44100 * 3 }, (_, i) => i < 44100 ? 0.3 * Math.sin(i / 20) : 0); const d = await audioRun(page, Buffer.from(AU.encodeWav([a, a.slice()], 44100)));
+    const head = AU.peak([d.chs[0].subarray(0, 44100)]), tail = AU.peak([d.chs[0].subarray(88200)]); assert.ok(head < 0.001 && tail > 0.25, `reversed: head ${head} tail ${tail}`);
+  },
+  async 'audio-equalizer'(page) {
+    let d = await audioRun(page, sineWav(1000, 1, 0.1)); assert.ok(Math.abs(AU.peak(d.chs) - 0.1) < 0.005, 'flat is unchanged');
+    await setNum(page, 2, 12); d = AU.decodeWav(new Uint8Array((await dlWav(page)).buf)); const mid = AU.peak([d.chs[0].subarray(22050)]); assert.ok(mid > 0.38 && mid < 0.42, '+12 dB at 1 kHz ≈ ×4: ' + mid);
+    await page.locator('#tool-root select').first().selectOption('voice'); await page.waitForTimeout(700); assert.equal(await page.locator('#tool-root input[type=number]').nth(3).inputValue(), '5', 'preset fills the bands');
+  },
+  async 'audio-converter'(page) {
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'tone.wav', buffer: sineWav(440, 3, 0.2) }); await page.waitForSelector('[data-result=ready]');
+    await page.locator('#tool-root select').nth(0).selectOption('mp3'); await page.waitForTimeout(1500); await page.waitForSelector('[data-result=ready]'); const f = await dlWav(page); assert.match(f.name, /\.mp3$/); const pr = ffprobe(f.path, 'format=duration,format_name:stream=codec_name,channels'); assert.equal(pr.streams[0].codec_name, 'mp3'); assert.equal(pr.streams[0].channels, 2); assert.ok(Math.abs(Number(pr.format.duration) - 3) < 0.15, 'duration ' + pr.format.duration);
+    await page.locator('#tool-root input[type=checkbox]').check(); await page.waitForTimeout(1500); const g = await dlWav(page); assert.equal(ffprobe(g.path, 'stream=channels').streams[0].channels, 1, 'mono');
+  },
+  async 'audio-joiner'(page) {
+    await page.setInputFiles('#tool-root input[type=file]', [{ name: 'a.wav', mimeType: 'audio/wav', buffer: sineWav(440, 2, 0.2) }, { name: 'b.wav', mimeType: 'audio/wav', buffer: sineWav(660, 1, 0.2, 44100, 1) }]); await page.waitForSelector('[data-result=ready]', { timeout: 20000 });
+    let d = AU.decodeWav(new Uint8Array((await dlWav(page)).buf)); assert.ok(Math.abs(d.chs[0].length / d.sr - 3) < 0.02, 'joined length'); assert.equal(d.chs.length, 2, 'mono widened to stereo');
+    await page.locator('#tool-root .ut-row button', { hasText: '↓' }).first().click(); await page.waitForTimeout(500);
+    await page.locator('#tool-root input[type=number]').fill('500'); await page.waitForTimeout(800); d = AU.decodeWav(new Uint8Array((await dlWav(page)).buf)); assert.ok(Math.abs(d.chs[0].length / d.sr - 2.5) < 0.02, 'crossfade shortens by 0.5 s: ' + d.chs[0].length / d.sr);
+    const names = await page.locator('.ut-row__name').allInnerTexts(); assert.deepEqual(names.map(x => x.replace(/^\d+\. /, '')), ['b.wav', 'a.wav'], 'reordered');
+  },
+  async 'zip-extractor'(page) {
+    const zip = Buffer.from(F2.zipSync({ 'docs/a.txt': new TextEncoder().encode('alpha'), 'b.txt': new TextEncoder().encode('bravo'), 'img/c.png': new Uint8Array([1, 2, 3]) }));
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'x.zip', buffer: zip }); await page.waitForSelector('.ut-table'); let txt = await rootText(page); assert.ok(/Files\s*3/.test(txt) && txt.includes('docs/a.txt') && txt.includes('img/c.png'), txt.slice(0, 300));
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('.ut-table tr', { hasText: 'docs/a.txt' }).getByRole('button', { name: 'Save' }).click()]); assert.equal(readFileSync(await dl.path(), 'utf8'), 'alpha'); assert.equal(dl.suggestedFilename(), 'a.txt');
+    await page.locator('#tool-root input[type=search], #tool-root input[type=text]').first().fill('b.txt'); await page.waitForTimeout(300); assert.equal(await page.locator('.ut-table tr').count(), 2, 'filter leaves header + 1 row');
+    await page.locator('#tool-root input[type=search], #tool-root input[type=text]').first().fill(''); await page.locator('.ut-table tr input[type=checkbox]').nth(0).check(); await page.locator('.ut-table tr input[type=checkbox]').nth(2).check();
+    const [d2] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Save 2 selected as ZIP/ }).click()]); const back = F2.unzipSync(new Uint8Array(readFileSync(await d2.path()))); assert.deepEqual(Object.keys(back).sort(), ['b.txt', 'docs/a.txt'].sort().length === 2 ? Object.keys(back).sort() : []); assert.equal(Object.keys(back).length, 2);
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'x.rar', buffer: Buffer.from([0x52, 0x61, 0x72, 0x21, 0x1a, 7, 0, 0, 0, 0, 0, 0]) }); await page.waitForTimeout(500); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /RAR archive/);
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'a.txt.gz', buffer: Buffer.from(F2.gzipSync(new TextEncoder().encode('zipped text'))) }); await page.waitForSelector('.ut-table'); txt = await rootText(page); assert.ok(txt.includes('a.txt'), 'gz single file listed');
+  },
+  async 'zip-creator'(page) {
+    await page.setInputFiles('#tool-root input[type=file]:not([webkitdirectory])', [{ name: 'a.txt', buffer: Buffer.from('hello '.repeat(500)) }, { name: 'a.txt', buffer: Buffer.from('second') }, { name: 'p.jpg', buffer: Buffer.from([0xff, 0xd8, 0xff, 1, 2, 3]) }]); await page.waitForSelector('[data-result=ready]');
+    await page.locator('#tool-root input[type=text]').first().fill('my:files'); await page.waitForTimeout(500); const f = await dlWav(page); assert.equal(f.name, 'my-files.zip'); const z = F2.unzipSync(new Uint8Array(f.buf)); assert.deepEqual(Object.keys(z).sort(), ['a (2).txt', 'a.txt', 'p.jpg']); assert.equal(Buffer.from(z['a (2).txt']).toString(), 'second');
+    const t = spawnSync('python3', ['-c', 'import zipfile,sys;z=zipfile.ZipFile(sys.argv[1]);print(z.testzip())', f.path]).stdout.toString().trim(); assert.equal(t, 'None', 'Python reads the ZIP without errors');
+  },
+  async 'pdf-to-html'(page) {
+    const { PDFDocument, StandardFonts } = await import('../assets/vendor/pdf-lib/pdf-lib.esm.min.js'); const d = await PDFDocument.create(), f = await d.embedFont(StandardFonts.Helvetica), p = d.addPage([400, 500]);
+    p.drawText('Big Title', { x: 40, y: 440, size: 30, font: f }); p.drawText('Intro line one of the paragraph', { x: 40, y: 400, size: 12, font: f }); p.drawText('and it goes on here.', { x: 40, y: 386, size: 12, font: f }); p.drawText('- first item', { x: 40, y: 350, size: 12, font: f }); p.drawText('- second item', { x: 40, y: 336, size: 12, font: f });
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'in.pdf', mimeType: 'application/pdf', buffer: Buffer.from(await d.save()) }); await page.waitForSelector('[data-result=ready]', { timeout: 20000 });
+    const html = await out(page).inputValue(); assert.match(html, /<h1>Big Title<\/h1>/); assert.match(html, /<p>Intro line one of the paragraph and it goes on here\.<\/p>/); assert.match(html, /<ul><li>first item<\/li><li>second item<\/li><\/ul>/); assert.ok(html.startsWith('<!DOCTYPE html>'));
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Download.*\.html/ }).click()]); assert.equal(dl.suggestedFilename(), 'in.html');
+    await page.locator('#tool-root input[type=checkbox]').nth(2).uncheck(); await page.waitForTimeout(300); assert.ok(!(await out(page).inputValue()).includes('<html'), 'fragment mode');
+  },
+  async 'font-converter'(page) {
+    const ttf = readFileSync(new URL('../assets/vendor/fonts/DejaVuSans.ttf', import.meta.url)); await page.setInputFiles('#tool-root input[type=file]', { name: 'DejaVuSans.ttf', buffer: ttf }); await page.waitForSelector('[data-result=ready]');
+    assert.match(await rootText(page), /Family\s*DejaVu Sans/); assert.ok(/@font-face/.test(await out(page).inputValue()) && /DejaVu Sans/.test(await out(page).inputValue()));
+    const f = await dlWav(page); assert.equal(f.name, 'DejaVuSans.woff'); assert.ok(f.buf.length < ttf.length * 0.7); const fc = spawnSync('python3', ['-c', 'import sys;from fontTools.ttLib import TTFont;f=TTFont(sys.argv[1]);print(f.flavor,f["name"].getDebugName(1))', f.path]).stdout.toString().trim(); assert.equal(fc, 'woff DejaVu Sans');
+    const loaded = await page.evaluate(() => document.fonts.check("20px 'OhfisPreview'")); assert.ok(loaded, 'browser loaded the font for the preview');
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'DejaVuSans.woff', buffer: f.buf }); await page.waitForTimeout(600); await page.waitForSelector('[data-result=ready]'); const g = await dlWav(page); assert.equal(g.name, 'DejaVuSans.ttf'); assert.equal(spawnSync('python3', ['-c', 'import sys;from fontTools.ttLib import TTFont;print(TTFont(sys.argv[1]).flavor)', g.path]).stdout.toString().trim(), 'None');
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'x.woff2', buffer: Buffer.concat([Buffer.from('wOF2'), Buffer.alloc(60)]) }); await page.waitForTimeout(400); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /WOFF2/);
+  },
+  async 'webcam-video-recorder'(page) {
+    await page.evaluate(() => { navigator.mediaDevices.getUserMedia = async c => { const cv = Object.assign(document.createElement('canvas'), { width: 320, height: 240 }), g = cv.getContext('2d'); let n = 0; setInterval(() => { g.fillStyle = `hsl(${n++ * 9 % 360} 80% 50%)`; g.fillRect(0, 0, 320, 240); }, 40); const s = cv.captureStream(25); if (c.audio) { const ac = new AudioContext(), o = ac.createOscillator(), d = ac.createMediaStreamDestination(); o.connect(d); o.start(); d.stream.getAudioTracks().forEach(t => s.addTrack(t)); } return s; }; });
+    await page.getByRole('button', { name: 'Turn camera on' }).click(); await page.waitForFunction(() => !document.querySelector('#tool-root button[disabled]') || [...document.querySelectorAll('#tool-root button')].some(b => /Start recording/.test(b.textContent) && !b.disabled));
+    await page.getByRole('button', { name: /Start recording/ }).click(); await page.waitForTimeout(2200); await page.getByRole('button', { name: /Stop/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 10000 });
+    const f = await dlWav(page); assert.match(f.name, /^webcam-recording\.(webm|mp4)$/); const pr = ffprobe(f.path, 'stream=codec_type,width,height'); const kinds = pr.streams.map(s => s.codec_type).sort(); assert.deepEqual(kinds, ['audio', 'video']); assert.equal(pr.streams.find(s => s.codec_type === 'video').width, 320);
+  },
+  async 'text-to-speech'(page) {
+    await page.evaluate(() => { window.__spoken = []; speechSynthesis.speak = u => { window.__spoken.push({ text: u.text, rate: u.rate, pitch: u.pitch }); setTimeout(() => u.onend && u.onend(), 5); }; speechSynthesis.cancel = () => {}; });
+    const text = Array.from({ length: 30 }, (_, i) => `This is sentence number ${i + 1} of a long text.`).join(' ');
+    await area(page).fill(text); await page.locator('#tool-root input[type=number]').first().fill('1.5'); await page.getByRole('button', { name: /Read aloud/ }).click(); await page.waitForFunction(() => /Finished/.test(document.querySelector('#tool-root').innerText), null, { timeout: 8000 });
+    const spoken = await page.evaluate(() => window.__spoken); assert.ok(spoken.length >= 6 && spoken.every(s => s.text.length <= 200 && s.rate === 1.5), 'split into chunks: ' + spoken.length); assert.equal(spoken.map(s => s.text).join(' '), text, 'nothing lost');
+    await area(page).fill(''); await page.getByRole('button', { name: /Read aloud/ }).click(); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /Enter some text/);
+  },
+});
+
 export default custom;

@@ -57,6 +57,9 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [PDF to Grayscale Converter (Black & White)](https://ohfis.com/en/pdf-grayscale-converter/): Convert a colour PDF to grayscale or black and white to save ink and size.
 - [Printer Test Page (Alignment, Scale & Colour)](https://ohfis.com/en/printer-test-sheet/): Print a sheet that checks margins, scale, grey steps, colours, lines and text.
 - [Scan Separator Sheet Maker (Batch Scanning)](https://ohfis.com/en/scan-separator-sheets/): Print numbered separator pages with a QR code to split a stack of scans into documents.
+- [Unzip Files Online (ZIP, TAR and GZ Extractor)](https://ohfis.com/en/zip-extractor/): Open an archive, see what is inside and save single files or a selection.
+- [Create ZIP File Online (Compress Files and Folders)](https://ohfis.com/en/zip-creator/): Pack files and whole folders into one ZIP file.
+- [PDF to HTML Converter](https://ohfis.com/en/pdf-to-html/): Turn the text of a PDF into clean HTML with headings, paragraphs and lists.
 
 ## Text Tools
 
@@ -253,6 +256,7 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 - [SPF & DMARC Record Generator](https://ohfis.com/en/spf-dmarc-generator/): Build the DNS TXT records that stop others from spoofing your domain's email.
 - [CSS Flexbox Playground & Cheat Sheet](https://ohfis.com/en/css-flexbox-playground/): Click through flexbox settings, see the result live and copy the CSS.
 - [Webhook Signature Tester (HMAC SHA-256)](https://ohfis.com/en/webhook-signature-tester/): Calculate GitHub, Stripe and Slack style webhook signatures and check the one you received.
+- [Font Converter (TTF/OTF to WOFF and back)](https://ohfis.com/en/font-converter/): Convert a font file to WOFF for websites, or unpack WOFF to TTF/OTF.
 
 ## Notes & Privacy
 
@@ -316,6 +320,14 @@ Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.c
 - [Aspect Ratio Calculator (16:9, 4:3, Resize)](https://ohfis.com/en/aspect-ratio-calculator/): Find the ratio of a resolution, scale to a new width, and get screen PPI.
 - [Dual Monitor Size & Scaling Matcher](https://ohfis.com/en/dual-monitor-matcher/): Compare two screens and find the scaling that makes text the same size.
 - [Video Frame Capture (Screenshot from Video)](https://ohfis.com/en/video-frame-capture/): Pick the exact frame in a video and save it as a full-resolution PNG or JPEG.
+- [Audio Cutter (Trim MP3 and WAV Online)](https://ohfis.com/en/audio-cutter/): Cut a part out of a recording or keep only the part you need.
+- [Audio Joiner (Merge MP3 Files Online)](https://ohfis.com/en/audio-joiner/): Join several audio files into one, in the order you choose.
+- [Change Audio Volume (Make MP3 Louder or Quieter)](https://ohfis.com/en/audio-volume-changer/): Make a recording louder or quieter by a number of decibels.
+- [Reverse Audio (Play Sound Backwards)](https://ohfis.com/en/audio-reverser/): Turn a recording around so that it plays backwards.
+- [Audio Equalizer (Bass and Treble Online)](https://ohfis.com/en/audio-equalizer/): Shape the sound of a recording with five frequency bands and presets.
+- [Audio Converter (to MP3 or WAV)](https://ohfis.com/en/audio-converter/): Convert M4A, OGG, FLAC, Opus or video sound to MP3 or WAV.
+- [Webcam Video Recorder](https://ohfis.com/en/webcam-video-recorder/): Record a video from your webcam and save it, without installing anything.
+- [Text to Speech (Read Text Aloud)](https://ohfis.com/en/text-to-speech/): Have your browser read a text aloud with a voice and speed you choose.
 
 ## Related sites by the same operator
 

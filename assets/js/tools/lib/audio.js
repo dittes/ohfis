@@ -49,3 +49,66 @@ export function decodeWav(bytes) {
 }
 /** Level of a signal frame in dBFS (rms). */
 export const frameDb = (arr) => { let s = 0; for (let i = 0; i < arr.length; i++) s += arr[i] * arr[i]; const r = Math.sqrt(s / (arr.length || 1)); return r > 0 ? 20 * Math.log10(r) : -120; };
+
+// ── Cut, join, reverse, equaliser ───────────────────────────────────────────
+export const reverse = chs => chs.map(c => { const o = new Float32Array(c.length); for (let i = 0, n = c.length; i < n; i++) o[i] = c[n - 1 - i]; return o; });
+
+/** Keep the part between two times (seconds). With mode "remove" the part is cut out instead and the rest is joined. */
+export function cutRange(chs, sr, startS, endS, mode = 'keep') {
+  const n = chs[0].length, a = Math.max(0, Math.min(n, Math.round(startS * sr))), b = Math.max(a, Math.min(n, Math.round(endS * sr)));
+  if (mode === 'keep') return chs.map(c => c.slice(a, b));
+  return chs.map(c => { const o = new Float32Array(n - (b - a)); o.set(c.subarray(0, a), 0); o.set(c.subarray(b), a); return o; });
+}
+
+/** Make mono tracks stereo (or any track match the widest one) so that tracks can be joined. */
+export function matchChannels(tracks) {
+  const w = Math.max(...tracks.map(t => t.length));
+  return tracks.map(t => t.length === w ? t : Array.from({ length: w }, (_, i) => t[Math.min(i, t.length - 1)]));
+}
+
+/** Join tracks one after another; crossfadeMs > 0 overlaps neighbouring tracks with an equal-power fade. All tracks must share a sample rate. */
+export function concat(tracks, sr, crossfadeMs = 0) {
+  tracks = matchChannels(tracks); const w = tracks[0].length;
+  const xf = Math.round(crossfadeMs / 1000 * sr);
+  let total = 0; tracks.forEach((t, i) => { total += t[0].length; if (i && xf) total -= Math.min(xf, t[0].length, tracks[i - 1][0].length); });
+  const out = Array.from({ length: w }, () => new Float32Array(total)); let pos = 0;
+  tracks.forEach((t, i) => {
+    const len = t[0].length, ov = i && xf ? Math.min(xf, len, tracks[i - 1][0].length) : 0; pos -= ov;
+    for (let c = 0; c < w; c++) {
+      const o = out[c], s = t[c];
+      if (ov) { const prev = tracks[i - 1][c], plen = prev.length; for (let k = 0; k < ov; k++) { const a = (k + 0.5) / ov; o[pos + k] = prev[plen - ov + k] * Math.cos(a * Math.PI / 2) + s[k] * Math.sin(a * Math.PI / 2); } }
+      for (let k = ov; k < len; k++) o[pos + k] = s[k];
+    }
+    pos += len;
+  });
+  return out;
+}
+
+/** RBJ cookbook biquad coefficients, normalised so a0 = 1. type: peak | lowshelf | highshelf | lowpass | highpass. */
+export function biquad(type, fs, f0, gainDb = 0, q = 1) {
+  const A = Math.pow(10, gainDb / 40), w0 = 2 * Math.PI * Math.min(f0, fs * 0.49) / fs, cos = Math.cos(w0), sin = Math.sin(w0), alpha = sin / (2 * q);
+  let b0, b1, b2, a0, a1, a2;
+  if (type === 'peak') { b0 = 1 + alpha * A; b1 = -2 * cos; b2 = 1 - alpha * A; a0 = 1 + alpha / A; a1 = -2 * cos; a2 = 1 - alpha / A; }
+  else if (type === 'lowshelf') { const s = 2 * Math.sqrt(A) * alpha; b0 = A * ((A + 1) - (A - 1) * cos + s); b1 = 2 * A * ((A - 1) - (A + 1) * cos); b2 = A * ((A + 1) - (A - 1) * cos - s); a0 = (A + 1) + (A - 1) * cos + s; a1 = -2 * ((A - 1) + (A + 1) * cos); a2 = (A + 1) + (A - 1) * cos - s; }
+  else if (type === 'highshelf') { const s = 2 * Math.sqrt(A) * alpha; b0 = A * ((A + 1) + (A - 1) * cos + s); b1 = -2 * A * ((A - 1) + (A + 1) * cos); b2 = A * ((A + 1) + (A - 1) * cos - s); a0 = (A + 1) - (A - 1) * cos + s; a1 = 2 * ((A - 1) - (A + 1) * cos); a2 = (A + 1) - (A - 1) * cos - s; }
+  else if (type === 'lowpass') { b0 = (1 - cos) / 2; b1 = 1 - cos; b2 = (1 - cos) / 2; a0 = 1 + alpha; a1 = -2 * cos; a2 = 1 - alpha; }
+  else if (type === 'highpass') { b0 = (1 + cos) / 2; b1 = -(1 + cos); b2 = (1 + cos) / 2; a0 = 1 + alpha; a1 = -2 * cos; a2 = 1 - alpha; }
+  else throw new Error(`Unknown filter type ${type}`);
+  return { b0: b0 / a0, b1: b1 / a0, b2: b2 / a0, a1: a1 / a0, a2: a2 / a0 };
+}
+/** Magnitude (linear) of a biquad at a frequency. */
+export function biquadMagnitude(k, fs, f) {
+  const w = 2 * Math.PI * f / fs, c1 = Math.cos(w), s1 = Math.sin(w), c2 = Math.cos(2 * w), s2 = Math.sin(2 * w);
+  const nr = k.b0 + k.b1 * c1 + k.b2 * c2, ni = -(k.b1 * s1 + k.b2 * s2), dr = 1 + k.a1 * c1 + k.a2 * c2, di = -(k.a1 * s1 + k.a2 * s2);
+  return Math.hypot(nr, ni) / Math.hypot(dr, di);
+}
+export function applyBiquad(chs, k) {
+  return chs.map(c => { const o = new Float32Array(c.length); let x1 = 0, x2 = 0, y1 = 0, y2 = 0; for (let i = 0; i < c.length; i++) { const x = c[i], y = k.b0 * x + k.b1 * x1 + k.b2 * x2 - k.a1 * y1 - k.a2 * y2; o[i] = y; x2 = x1; x1 = x; y2 = y1; y1 = y; } return o; });
+}
+export const EQ_BANDS = [[60, 'lowshelf'], [250, 'peak'], [1000, 'peak'], [4000, 'peak'], [12000, 'highshelf']];
+/** gainsDb: one value per EQ_BANDS entry. Bands at 0 dB are skipped. */
+export function applyEq(chs, sr, gainsDb) {
+  let out = chs; EQ_BANDS.forEach(([f, type], i) => { if (gainsDb[i]) out = applyBiquad(out, biquad(type, sr, f, gainsDb[i], type === 'peak' ? 0.9 : 0.707)); }); return out;
+}
+/** Scale down only if the signal would clip; returns the channels and the gain used. */
+export function limitPeak(chs, ceiling = 0.999) { const p = peak(chs); if (p <= ceiling) return { chs, gain: 1 }; const g = ceiling / p; return { chs: applyGain(chs, g), gain: g }; }

@@ -23,6 +23,11 @@ const server = createServer(async (req, res) => {
 }).listen(0);
 const base = `http://localhost:${server.address().port}`;
 
+// Translated URLs: find the German address of a tool from the sitemap's hreflang links
+import { readFileSync } from 'node:fs';
+const sitemap = readFileSync(join(ROOT, 'sitemap.xml'), 'utf8');
+const dePath = id => { const m = new RegExp(`<loc>https://ohfis.com(/en/${id}/)</loc>[\\s\\S]*?hreflang="de" href="https://ohfis.com([^"]+)"`).exec(sitemap); if (!m) throw new Error('no German URL in sitemap for ' + id); return m[2]; };
+
 const only = process.argv.slice(2);
 const tools = UTOOLS.filter(t => !only.length || only.includes(t.id));
 const browser = await chromium.launch({ args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream', '--auto-select-desktop-capture-source=Entire screen', '--autoplay-policy=no-user-gesture-required'] });
@@ -49,7 +54,7 @@ async function run(tool) {
       if (!text.includes(expect)) throw new Error(`expected output to contain ${JSON.stringify(expect)}; got ${JSON.stringify(text.slice(0, 300))}`);
     }
     // the German page must load too (localised chrome, same tool)
-    await page.goto(`${base}/de/${tool.id}/`, { waitUntil: 'load' });
+    await page.goto(`${base}${dePath(tool.id)}`, { waitUntil: 'load' });
     await page.waitForFunction(() => document.getElementById('tool-root')?.dataset.ready, null, { timeout: 15000 });
     if (errors.length) throw new Error(errors.join(' | '));
     return null;

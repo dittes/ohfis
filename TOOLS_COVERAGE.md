@@ -11,7 +11,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - ◐ partly built: 14
 - 🔗 link-out or covered elsewhere: 8
 - ❌ not built: 13
-- Utility tools on the site: 228 (plus 26 PDF tools from the first redesign)
+- Utility tools on the site: 240 (plus 26 PDF tools from the first redesign)
 
 ## PDF, documents & print
 
@@ -342,4 +342,16 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 
 ## Additional tools not on the request list
 
+- [font-converter](/en/font-converter/)
+- [zip-extractor](/en/zip-extractor/)
+- [zip-creator](/en/zip-creator/)
+- [pdf-to-html](/en/pdf-to-html/)
+- [audio-cutter](/en/audio-cutter/)
+- [audio-joiner](/en/audio-joiner/)
+- [audio-volume-changer](/en/audio-volume-changer/)
+- [audio-reverser](/en/audio-reverser/)
+- [audio-equalizer](/en/audio-equalizer/)
+- [audio-converter](/en/audio-converter/)
+- [webcam-video-recorder](/en/webcam-video-recorder/)
+- [text-to-speech](/en/text-to-speech/)
 - [qr-code-generator](/en/qr-code-generator/)
