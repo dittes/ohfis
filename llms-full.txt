@@ -39,6 +39,41 @@
 - [Redact PDF](https://ohfis.com/en/redact-pdf/): Permanently black out names, numbers and other sensitive information in a PDF. The content is really removed. Free, with no upload.
 - [Edit PDF Metadata](https://ohfis.com/en/edit-pdf-metadata/): See and change a PDF's title, author and keywords, or remove all metadata in one click. Free, in your browser, with no upload.
 
+## Documents & Print
+
+Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfis.com/en/documents-print/
+
+- [PDF Booklet Maker (Print as Folded Booklet)](https://ohfis.com/en/booklet-maker/): Rearrange PDF pages so a duplex printout folds into a booklet.
+  Upload a PDF and get a new PDF in which two pages sit side by side on each landscape sheet, in the order that makes a stack of double-sided sheets fold into a booklet. Print it duplex, flip on the short edge, fold the stack in half and staple the fold.
+  How to use: Choose the PDF; pages are read locally. Pick the sheet size and binding direction. Download, print double-sided (flip on the short edge) and fold.
+- [PDF Multiple Pages per Sheet (N-up)](https://ohfis.com/en/n-up-pdf/): Put 2, 4, 6 or 9 PDF pages on one sheet to save paper.
+  Turn a long PDF into handouts or a compact proof: choose the number of columns and rows (2 × 1, 2 × 2, 3 × 3 …), the sheet size, margins and gaps, and get a new PDF with several pages on each sheet and optional thin borders.
+  How to use: Choose the PDF. Set columns, rows, sheet size and margins. Download the n-up PDF and print it at actual size.
+- [Bates Numbering for PDF](https://ohfis.com/en/bates-numbering/): Stamp a unique sequential ID such as CASE-000001 on every page.
+  Bates numbers give every page of a legal, audit or discovery document set a unique, ordered identifier. Enter a prefix, the start number, the number of digits and a suffix, choose a corner of the page and get the stamped PDF.
+  How to use: Choose the PDF. Enter prefix, start number, digits and position. Download the numbered PDF.
+- [Add Margins or Note Space to a PDF](https://ohfis.com/en/add-margins-to-pdf/): Enlarge each page with white space for notes, binding or printing.
+  Add space to the top, right, bottom or left of every page of a PDF without scaling the content. Typical uses: a wide right margin for handwritten notes (with ruled lines if you like), a left margin for binding or hole punching, or extra white space around full-bleed pages for printing.
+  How to use: Choose the PDF. Enter the margin for each side in millimetres. Download the enlarged PDF.
+- [Paper Size Calculator (A4, Letter, Pixels & PPI)](https://ohfis.com/en/paper-size-calculator/): Convert paper sizes to mm, inches and pixels, or find the print size of an image.
+  How many pixels is an A4 page at 300 dpi? How large can a 3000 × 2000 px photo be printed? Choose a paper format (A0–A8, B, C, DL, Letter, Legal, Tabloid, photo and business-card sizes) or enter your own, and see millimetres, inches, PDF points and pixels at 72, 96, 150, 300 and 600 ppi.
+  How to use: Choose a paper format or switch to "print size of an image". Pick the resolution. Read the size in all units and the pixel table.
+- [Mailing Label Printer (Avery Templates to PDF)](https://ohfis.com/en/mailing-labels/): Turn a list of addresses into a print-ready PDF for Avery label sheets.
+  Paste or load your addresses (one block per label, separated by a blank line), choose the label sheet and get a PDF whose text lands exactly in the label cells. You can skip labels that are already used on a partly used sheet, print several copies of each label and let the font size shrink automatically so long addresses fit.
+  How to use: Enter the addresses, with a blank line between labels, or load a text file. Choose the label sheet and options. Download the PDF and print it at actual size; test on plain paper first.
+- [Free Invoice Generator (PDF, No Sign-Up)](https://ohfis.com/en/invoice-builder/): Write items, tax and a discount and download a clean PDF invoice.
+  Fill in who you are, who you bill, the invoice number and dates, and list the items one per line as "description; quantity; unit price". The totals update as you type (subtotal, discount, tax, total) and a click creates a tidy PDF with a table that continues onto a second page if needed.
+  How to use: Enter sender, recipient, number, dates, currency and tax rate. List the items, one per line. Check the totals and download the PDF.
+- [Certificate Maker (Printable PDF Certificates)](https://ohfis.com/en/certificate-generator/): Create certificates for many names at once and download them as one PDF.
+  Choose a title and wording, a colour and the paper, paste a list of names (one per line) and get a landscape certificate for each of them in a single PDF, ready to print for a course, a team, a class or a competition. The first certificate can also be saved as a PNG.
+  How to use: Enter the title, text, date and signer. Paste the names, one per line. Download the PDF with one certificate per name.
+- [Markdown to Word (DOCX) Converter](https://ohfis.com/en/markdown-to-docx/): Convert Markdown notes into a real Word document with headings, lists and tables.
+  Paste Markdown or load a .md file and download a .docx that opens in Word, LibreOffice and Google Docs with real Heading styles (so the navigation pane and a table of contents work), bullet and numbered lists, nested lists, quotes, code blocks, tables with a shaded header row, bold, italic, inline code and clickable links.
+  How to use: Paste or open your Markdown. Set the title and font. Download the Word document.
+- [Word (DOCX) to Markdown Converter](https://ohfis.com/en/docx-to-markdown/): Extract the structure of a Word document as clean Markdown, locally.
+  Drop a .docx file and get Markdown with headings (#), bold, italic, links, bullet and numbered lists (also nested), quotes, code and tables, ready for GitHub, a wiki, a static site or an AI prompt. Copy the text or download it as a .md file.
+  How to use: Drop a .docx file. Check the Markdown. Copy it or download the .md file.
+
 ## Text Tools
 
 Clean, convert, count, compare and extract text. Hub: https://ohfis.com/en/text-tools/

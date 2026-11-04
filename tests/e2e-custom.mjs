@@ -13,6 +13,20 @@ const area = (page, i = 0) => page.locator('#tool-root textarea:not([readonly])'
 const out = page => page.locator('#tool-root textarea[readonly]').first();
 const rootText = page => page.evaluate(() => { const r = document.getElementById('tool-root'); return r.innerText + '\n' + [...r.querySelectorAll('textarea,input')].map(x => x.value).join('\n'); });
 
+
+// ---- document tools ----
+async function makePdf(n, size = [300, 400]) {
+  const { PDFDocument, StandardFonts } = await import('../assets/vendor/pdf-lib/pdf-lib.esm.min.js'); const d = await PDFDocument.create(); const f = await d.embedFont(StandardFonts.Helvetica);
+  for (let i = 0; i < n; i++) d.addPage(size).drawText('Page ' + (i + 1), { x: 40, y: 200, size: 24, font: f }); return Buffer.from(await d.save());
+}
+async function pageCount(buf) { const { PDFDocument } = await import('../assets/vendor/pdf-lib/pdf-lib.esm.min.js'); const d = await PDFDocument.load(buf); return { n: d.getPageCount(), sizes: d.getPages().map(p => p.getSize()) }; }
+async function runPdf(page, n, label, size) {
+  await page.setInputFiles('#tool-root input[type=file]', { name: 'in.pdf', mimeType: 'application/pdf', buffer: await makePdf(n, size) });
+  await page.getByRole('button', { name: label }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 20000 });
+  const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /Download/ }).first().click()]);
+  const path = await dl.path(); return { buf: readFileSync(path), name: dl.suggestedFilename() };
+}
+
 const custom = {
   async 'text-diff-checker'(page) {
     await area(page, 0).fill('a\nb\nc'); await area(page, 1).fill('a\nx\nc'); await page.waitForTimeout(400);
@@ -284,7 +298,8 @@ async function makeImage(page, path, { w = 400, h = 300, type = 'image/png', pai
   writeFileSync(path, Buffer.from(b64, 'base64')); return path;
 }
 const decode = (page, file) => page.evaluate(async b64 => { const bin = Uint8Array.from(atob(b64), c => c.charCodeAt(0)); const bmp = await createImageBitmap(new Blob([bin])); const c = document.createElement('canvas'); c.width = bmp.width; c.height = bmp.height; const x = c.getContext('2d'); x.drawImage(bmp, 0, 0); return { w: bmp.width, h: bmp.height, px: (X, Y) => 0, data: Array.from(x.getImageData(0, 0, bmp.width, bmp.height).data.slice(0, 0)) }; }, readFileSync(file).toString('base64')).then(async r => { const px = await page.evaluate(async b64 => { const bin = Uint8Array.from(atob(b64), c => c.charCodeAt(0)); const bmp = await createImageBitmap(new Blob([bin])); const c = document.createElement('canvas'); c.width = bmp.width; c.height = bmp.height; const x = c.getContext('2d', { willReadFrequently: true }); x.drawImage(bmp, 0, 0); const d = x.getImageData(0, 0, bmp.width, bmp.height).data; return { w: bmp.width, h: bmp.height, data: Array.from(d) }; }, readFileSync(file).toString('base64')); return { ...px, at: (X, Y) => px.data.slice((Y * px.w + X) * 4, (Y * px.w + X) * 4 + 4) }; });
-const saveDownload = async (page, click, name) => { const [dl] = await Promise.all([page.waitForEvent('download'), click()]); const p = join(tmp(), name || dl.suggestedFilename()); await dl.saveAs(p); return { path: p, name: dl.suggestedFilename(), bytes: readFileSync(p) }; };
+const saveDownload = async (page, click, name) => { const [dl] = await Promise.all([page.waitForEvent('download'), click()]); const p = join(tmp(), name || dl.suggestedFilename()); await dl.saveAs(p); return { path: p, name: dl.suggestedFilename(), bytes: readFileSync(p) }; 
+};
 const near = (a, b, tol = 12) => a.every((v, i) => Math.abs(v - b[i]) <= tol);
 
 Object.assign(custom, {
@@ -354,6 +369,57 @@ Object.assign(custom, {
   async 'image-diff'(page) {
     const dir = tmp(); await makeImage(page, join(dir, 'a.png'), { w: 100, h: 100, paint: "x.fillStyle='#fff'; x.fillRect(0,0,w,h)" }); await makeImage(page, join(dir, 'b.png'), { w: 100, h: 100, paint: "x.fillStyle='#fff'; x.fillRect(0,0,w,h); x.fillStyle='#000'; x.fillRect(10,10,20,20)" });
     const [c1] = await Promise.all([page.waitForEvent('filechooser'), page.locator('#tool-root button', { hasText: 'Choose' }).first().click()]); await c1.setFiles(join(dir, 'a.png')); const [c2] = await Promise.all([page.waitForEvent('filechooser'), page.locator('#tool-root button', { hasText: 'Choose' }).nth(1).click()]); await c2.setFiles(join(dir, 'b.png')); await page.waitForSelector('.ut-stats .ut-stat'); const t = await page.locator('.ut-stats').innerText(); assert.match(t, /Changed pixels\s*400/); assert.match(t, /Share of image\s*4\.00 %/);
+  },
+  async 'booklet-maker'(page) {
+    const r = await runPdf(page, 6, /Create booklet/); const c = await pageCount(r.buf); assert.equal(c.n, 4, 'sheet sides'); assert.ok(Math.abs(c.sizes[0].width - 600) < 1 && Math.abs(c.sizes[0].height - 400) < 1, JSON.stringify(c.sizes[0])); assert.match(r.name, /booklet/);
+  },
+  async 'n-up-pdf'(page) {
+    const r = await runPdf(page, 5, /Create n-up/); const c = await pageCount(r.buf); assert.equal(c.n, 2); assert.ok(Math.abs(c.sizes[0].width - 595.28) < 1, JSON.stringify(c.sizes[0]));
+  },
+  async 'bates-numbering'(page) {
+    const r = await runPdf(page, 3, /Add Bates/); assert.equal((await pageCount(r.buf)).n, 3);
+    const pdfjs = await import('../assets/vendor/pdfjs/pdf.min.mjs').catch(() => null); if (pdfjs) { pdfjs.GlobalWorkerOptions.workerSrc = new URL('../assets/vendor/pdfjs/pdf.worker.min.mjs', import.meta.url).href; const d = await pdfjs.getDocument({ data: new Uint8Array(r.buf), isEvalSupported: false }).promise; const tx = await (await d.getPage(3)).getTextContent(); assert.ok(tx.items.map(i => i.str).join(' ').includes('ACME-000003'), 'stamp text'); }
+    else assert.ok(r.buf.length > 1000);
+  },
+  async 'add-margins-to-pdf'(page) {
+    const r = await runPdf(page, 2, /Add margins/); const c = await pageCount(r.buf); assert.equal(c.n, 2); assert.ok(Math.abs(c.sizes[0].width - (300 + 60 * 72 / 25.4)) < 1, JSON.stringify(c.sizes[0])); assert.equal(Math.round(c.sizes[0].height), 400);
+  },
+  async 'paper-size-calculator'(page) {
+    let txt = await rootText(page); assert.ok(/210\.0 × 297\.0 mm/.test(txt) || /210 × 297/.test(txt), txt.slice(0, 200)); assert.ok(txt.includes('2,480 × 3,508 px') || txt.includes('2480 × 3508 px'), 'A4 at 300 ppi');
+    await page.selectOption('#tool-root select >> nth=0', 'pixels'); await page.waitForTimeout(300); txt = await rootText(page); assert.ok(/254 × 169\.3 mm/.test(txt), 'pixels mode: ' + txt.slice(0, 200));
+  },
+  async 'mailing-labels'(page) {
+    await area(page).fill('Anna Příklad\nUlice 1\nPraha\n\nBen Sample\n2 Road\nLondon'); await page.getByRole('button', { name: /Create label sheet/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 20000 });
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Download labels/ }).click()]); const c = await pageCount(readFileSync(await dl.path())); assert.equal(c.n, 1); assert.ok(Math.abs(c.sizes[0].width - 595.28) < 1, 'A4 sheet');
+    await page.locator('#tool-root input[type=number]').nth(1).fill('30'); await page.getByRole('button', { name: /Create label sheet/ }).click(); await page.waitForTimeout(1500);
+    const [dl2] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Download labels/ }).click()]); assert.equal((await pageCount(readFileSync(await dl2.path()))).n, 3, '60 labels need 3 sheets of 21');
+  },
+  async 'invoice-builder'(page) {
+    let txt = await rootText(page); assert.ok(txt.includes('985.00'), 'subtotal: ' + txt.slice(0, 600)); assert.ok(txt.includes('1,182.00'), 'total with 20% tax');
+    await page.getByRole('button', { name: /Create invoice PDF/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 20000 });
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /Download invoice/ }).click()]); const buf = readFileSync(await dl.path()); assert.equal((await pageCount(buf)).n, 1); assert.match(dl.suggestedFilename(), /invoice-2025-001\.pdf/);
+    await page.locator('#tool-root textarea').nth(2).fill('Broken line'); await page.waitForTimeout(400); assert.ok((await rootText(page)).includes('needs at least a description and a price'), 'error shown');
+  },
+  async 'certificate-generator'(page) {
+    await page.getByRole('button', { name: /Create certificates/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 20000 });
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /certificates\.pdf/ }).click()]); const c = await pageCount(readFileSync(await dl.path())); assert.equal(c.n, 2); assert.ok(c.sizes[0].width > c.sizes[0].height, 'landscape');
+  },
+  async 'markdown-to-docx'(page) {
+    await page.getByRole('button', { name: /Sample/i }).click(); await page.getByRole('button', { name: /Create Word document/ }).click(); await page.waitForSelector('[data-result=ready]');
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /Download/ }).click()]); const buf = readFileSync(await dl.path());
+    const { unzipSync, strFromU8 } = await import('../assets/vendor/fflate/fflate.js'); const z = unzipSync(new Uint8Array(buf)); const doc = strFromU8(z['word/document.xml']); assert.ok(doc.includes('Heading1') && doc.includes('<w:tbl>') && doc.includes('Project report')); assert.ok(z['[Content_Types].xml']);
+    const tmp = mkdtempSync(join(tmpdir(), 'docx-')); const f = join(tmp, 'out.docx'); writeFileSync(f, buf); const hasLo = spawnSync('which', ['soffice']).status === 0;
+    if (hasLo) { const r = spawnSync('soffice', ['--headless', '--convert-to', 'txt:Text', '--outdir', tmp, f], { timeout: 90000 }); assert.equal(r.status, 0, 'LibreOffice opens the file'); assert.ok(readFileSync(join(tmp, 'out.txt'), 'utf8').includes('Project report')); }
+    // round trip through the converter page
+    globalThis.__docxBuf = buf;
+  },
+  async 'docx-to-markdown'(page, base) {
+    // build a docx in-process using the same library, then convert it back
+    const D = await import('../assets/js/tools/lib/docs.js'); const { zipSync, strToU8 } = await import('../assets/vendor/fflate/fflate.js'); const md = '# Report\n\nSome **bold** and *italic* text with a [link](https://example.com).\n\n- one\n- two\n\n1. first\n2. second\n\n| A | B |\n|---|---|\n| 1 | 2 |\n';
+    const entries = {}; for (const [k, v] of Object.entries(D.docxFiles(md))) entries[k] = strToU8(v); const buf = Buffer.from(zipSync(entries));
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'report.docx', mimeType: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', buffer: buf }); await page.waitForTimeout(800);
+    const o = await out(page).inputValue(); for (const want of ['# Report', '**bold**', '*italic*', '[link](https://example.com)', '- one', '1. first', '| A | B |', '| 1 | 2 |']) assert.ok(o.includes(want), `missing ${want} in:\n${o}`);
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'bad.docx', buffer: Buffer.from('not a zip') }); await page.waitForTimeout(500); assert.ok((await page.locator('.pt-drop__error').first().innerText()).length > 0, 'error shown for invalid file');
   },
 });
 
