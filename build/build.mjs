@@ -782,7 +782,7 @@ for (const lang of LANGS) {
   for (const tool of UTOOLS) { write(`${lang}/${tool.slugs[lang]}/index.html`, utilityPage(lang, tool)); pages++; }
   // Old URLs (English tool id in every language, the ten former category hubs) forward to the new ones
   const taken = new Set([...UTOOLS.map(t => t.slugs[lang]), ...GROUP_ORDER.filter(g => g !== 'pdf').map(g => GROUPS[g].slug[LI[lang]])]);
-  for (const t of UTOOLS) if (!taken.has(t.id) && !NEVER_PUBLISHED_AT_OLD_URL.has(t.id)) write(`${lang}/${t.id}/index.html`, redirectPage(utilPath(t, lang)));
+  for (const t of UTOOLS) if (!taken.has(t.id) && !NEVER_PUBLISHED_AT_OLD_URL.has(t.id) && t.cat !== 'video') write(`${lang}/${t.id}/index.html`, redirectPage(utilPath(t, lang)));
   for (const cat of UCAT_ORDER) if (!taken.has(UCATS[cat].slug)) write(`${lang}/${UCATS[cat].slug}/index.html`, redirectPage(hubPath(GROUP_OF[cat], lang)));
   pages += TOOLS.length + 4;
 }

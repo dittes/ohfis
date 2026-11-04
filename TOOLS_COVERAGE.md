@@ -11,7 +11,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - ◐ partly built: 14
 - 🔗 link-out or covered elsewhere: 8
 - ❌ not built: 13
-- Utility tools on the site: 240 (plus 26 PDF tools from the first redesign)
+- Utility tools on the site: 255 (plus 26 PDF tools from the first redesign)
 
 ## PDF, documents & print
 
@@ -355,3 +355,18 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - [webcam-video-recorder](/en/webcam-video-recorder/)
 - [text-to-speech](/en/text-to-speech/)
 - [qr-code-generator](/en/qr-code-generator/)
+- [video-trimmer](/en/video-trimmer/)
+- [video-merger](/en/video-merger/)
+- [video-converter](/en/video-converter/)
+- [video-compressor](/en/video-compressor/)
+- [video-crop-rotate-flip](/en/video-crop-rotate-flip/)
+- [video-resizer](/en/video-resizer/)
+- [video-speed-changer](/en/video-speed-changer/)
+- [video-loop](/en/video-loop/)
+- [video-volume-changer](/en/video-volume-changer/)
+- [video-add-audio](/en/video-add-audio/)
+- [video-add-text](/en/video-add-text/)
+- [video-add-image](/en/video-add-image/)
+- [video-logo-remover](/en/video-logo-remover/)
+- [video-to-gif](/en/video-to-gif/)
+- [video-stabilizer](/en/video-stabilizer/)

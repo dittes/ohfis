@@ -779,4 +779,79 @@ Object.assign(custom, {
   },
 });
 
+// ---- video tools (real FFmpeg WebAssembly in the browser) ----
+const vidCache = {};
+const makeVideo = (name, { dur = 3, w = 320, h = 240, audio = true, crf = 0 } = {}) => { const key = [name, dur, w, h, audio, crf].join(); if (vidCache[key]) return vidCache[key]; const d = mkdtempSync(join(tmpdir(), 'v-')), f = join(d, name); const a = ['-y', '-f', 'lavfi', '-i', `testsrc=size=${w}x${h}:rate=25:duration=${dur}`]; if (audio) a.push('-f', 'lavfi', '-i', `sine=frequency=440:duration=${dur}`, '-c:a', 'aac'); a.push('-c:v', 'libx264', ...(crf ? ['-crf', String(crf)] : []), '-pix_fmt', 'yuv420p', '-shortest', f); const r = spawnSync('ffmpeg', a); assert.equal(r.status, 0, 'ffmpeg test video'); return (vidCache[key] = readFileSync(f)); };
+const dropVideo = async (page, ...vids) => { await page.setInputFiles('#tool-root .ut-drop input[type=file]', vids.map((b, i) => ({ name: `clip${i + 1}.mp4`, mimeType: 'video/mp4', buffer: b }))); await page.waitForFunction(() => { const g = [...document.querySelectorAll('#tool-root button')].find(b => /Trim|Join|Convert|Compress|Apply|Resize|Change speed|Make loop|Add |Remove logo|Make GIF|Stabilise/.test(b.textContent) && !/Cancel/.test(b.textContent)); return g && !g.disabled; }, null, { timeout: 90000 }).catch(() => {}); };
+const goVideo = async (page, label) => { await page.getByRole('button', { name: label, exact: true }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 120000 }); const f = await dlWav(page); return { ...f, ...ffprobe(f.path, 'format=duration:stream=codec_type,codec_name,width,height') }; };
+const vstream = r => r.streams.find(s => s.codec_type === 'video'), astream = r => r.streams.find(s => s.codec_type === 'audio'), vdur = r => Number(r.format.duration);
+const numAt = (page, i) => page.locator('#tool-root input[type=number]').nth(i);
+Object.assign(custom, {
+  async 'video-trimmer'(page) {
+    await dropVideo(page, makeVideo('a.mp4', { dur: 4 })); assert.match(await rootText(page), /Length\s*0:04/); await numAt(page, 0).fill('1'); await numAt(page, 1).fill('3');
+    let r = await goVideo(page, 'Trim video'); assert.ok(Math.abs(vdur(r) - 2) < 0.25, 'accurate ' + vdur(r)); assert.equal(vstream(r).codec_name, 'h264'); assert.match(r.name, /clip1-trimmed\.mp4/);
+    await page.locator('#tool-root input[type=checkbox]').check(); r = await goVideo(page, 'Trim video'); assert.ok(vdur(r) > 1.5 && vdur(r) < 4.1, 'fast ' + vdur(r));
+    await numAt(page, 0).fill('3'); await numAt(page, 1).fill('1'); await page.getByRole('button', { name: 'Trim video' }).click(); await page.waitForSelector('.pt-drop__error:visible'); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /end must be after/);
+  },
+  async 'video-merger'(page) {
+    await dropVideo(page, makeVideo('a.mp4', { dur: 2 }), makeVideo('b.mp4', { dur: 2, w: 640, h: 360 })); assert.equal(await page.locator('.ut-row').count(), 2);
+    await page.locator('#tool-root select').first().selectOption('1280x720'); const r = await goVideo(page, 'Join videos'); assert.ok(Math.abs(vdur(r) - 4) < 0.3, 'length ' + vdur(r)); assert.equal(vstream(r).width, 1280); assert.ok(astream(r));
+    await page.locator('.ut-row button', { hasText: '↓' }).first().click(); assert.deepEqual((await page.locator('.ut-row__name').allInnerTexts()).map(x => x.replace(/^\d\. /, '')), ['clip2.mp4', 'clip1.mp4']);
+    await dropVideo(page, makeVideo('s.mp4', { dur: 2, audio: false })); const r2 = await goVideo(page, 'Join videos'); assert.equal(astream(r2), undefined, 'no audio when one clip is silent'); assert.match(await rootText(page), /no sound/);
+  },
+  async 'video-converter'(page) {
+    await dropVideo(page, makeVideo('a.mp4', { w: 640, h: 360 })); const fmt = page.locator('#tool-root select').first();
+    await fmt.selectOption('webm'); let r = await goVideo(page, 'Convert'); assert.equal(vstream(r).codec_name, 'vp8'); assert.match(r.name, /\.webm$/);
+    await fmt.selectOption('mp3'); r = await goVideo(page, 'Convert'); assert.equal(astream(r).codec_name, 'mp3'); assert.equal(vstream(r), undefined);
+    await fmt.selectOption('gif'); r = await goVideo(page, 'Convert'); assert.equal(vstream(r).codec_name, 'gif');
+    await fmt.selectOption('mp4'); await page.locator('#tool-root select').nth(1).selectOption('320'); await page.locator('#tool-root input[type=checkbox]').check(); r = await goVideo(page, 'Convert'); assert.equal(vstream(r).width, 320); assert.equal(astream(r), undefined, 'muted');
+  },
+  async 'video-compressor'(page) {
+    await dropVideo(page, makeVideo('a.mp4', { dur: 3, w: 640, h: 480, crf: 10 })); await numAt(page, 0).fill('36'); await page.locator('#tool-root select').first().selectOption('240'.replace('240', '360')); const r = await goVideo(page, 'Compress video'); assert.equal(vstream(r).height, 360); assert.ok(readFileSync(r.path).length < makeVideo('a.mp4', { dur: 3, w: 640, h: 480, crf: 10 }).length, 'smaller'); assert.match(await rootText(page), /Change\s*−/);
+  },
+  async 'video-crop-rotate-flip'(page) {
+    await dropVideo(page, makeVideo('a.mp4')); const sel = page.locator('#tool-root select'); await sel.first().selectOption('aspect'); await sel.nth(1).selectOption('1:1'); let r = await goVideo(page, 'Apply'); assert.equal(vstream(r).width, 240); assert.equal(vstream(r).height, 240);
+    await sel.first().selectOption('rect'); await numAt(page, 2).fill('100'); await numAt(page, 3).fill('60'); assert.ok(await page.locator('.ut-rect').isVisible(), 'crop frame shown'); r = await goVideo(page, 'Apply'); assert.equal(vstream(r).width, 100); assert.equal(vstream(r).height, 60);
+    await sel.first().selectOption('none'); await sel.nth(2).selectOption('90'); r = await goVideo(page, 'Apply'); assert.equal(vstream(r).width, 240); assert.equal(vstream(r).height, 320);
+  },
+  async 'video-resizer'(page) {
+    await dropVideo(page, makeVideo('a.mp4', { w: 640, h: 360 })); await page.locator('#tool-root select').nth(1).selectOption('240'); let r = await goVideo(page, 'Resize video'); assert.equal(vstream(r).height, 240); assert.equal(vstream(r).width, 426);
+    await page.locator('#tool-root select').first().selectOption('exact'); await numAt(page, 1).fill('100'); await numAt(page, 2).fill('100'); r = await goVideo(page, 'Resize video'); assert.equal(vstream(r).width, 100); assert.equal(vstream(r).height, 100);
+  },
+  async 'video-speed-changer'(page) {
+    await dropVideo(page, makeVideo('a.mp4', { dur: 4 })); let r = await goVideo(page, 'Change speed'); assert.ok(Math.abs(vdur(r) - 2) < 0.3, '2× ' + vdur(r)); assert.ok(astream(r));
+    await numAt(page, 0).fill('0.5'); r = await goVideo(page, 'Change speed'); assert.ok(Math.abs(vdur(r) - 8) < 0.6, '0.5× ' + vdur(r));
+  },
+  async 'video-loop'(page) {
+    await dropVideo(page, makeVideo('a.mp4', { dur: 2 })); let r = await goVideo(page, 'Make loop'); assert.ok(Math.abs(vdur(r) - 6) < 0.5, 'copy ×3 ' + vdur(r)); await page.locator('#tool-root input[type=checkbox]').uncheck(); await numAt(page, 0).fill('2'); r = await goVideo(page, 'Make loop'); assert.ok(Math.abs(vdur(r) - 4) < 0.4, 're-encode ×2 ' + vdur(r));
+  },
+  async 'video-volume-changer'(page) {
+    await dropVideo(page, makeVideo('a.mp4')); let r = await goVideo(page, 'Apply'); assert.equal(vstream(r).codec_name, 'h264'); assert.ok(astream(r)); await page.locator('#tool-root input[type=checkbox]').check(); r = await goVideo(page, 'Apply'); assert.equal(astream(r), undefined, 'muted'); assert.equal(vstream(r).codec_name, 'h264');
+    await dropVideo(page, makeVideo('s.mp4', { audio: false })); await page.getByRole('button', { name: 'Apply' }).click(); await page.waitForSelector('.pt-drop__error:visible'); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /no audio/);
+  },
+  async 'video-add-audio'(page) {
+    await dropVideo(page, makeVideo('a.mp4', { dur: 3 })); const d = mkdtempSync(join(tmpdir(), 'm-')); spawnSync('ffmpeg', ['-y', '-f', 'lavfi', '-i', 'sine=frequency=880:duration=10', join(d, 'm.mp3')]); await page.locator('#tool-root input[type=file]').nth(1).setInputFiles(join(d, 'm.mp3')); await page.waitForFunction(() => ![...document.querySelectorAll('#tool-root button')].find(b => /Add audio/.test(b.textContent)).disabled);
+    let r = await goVideo(page, 'Add audio'); assert.ok(Math.abs(vdur(r) - 3) < 0.3, 'ends with the video ' + vdur(r)); assert.ok(astream(r)); await page.locator('#tool-root select').first().selectOption('mix'); r = await goVideo(page, 'Add audio'); assert.ok(astream(r) && Math.abs(vdur(r) - 3) < 0.3);
+  },
+  async 'video-add-text'(page) {
+    await dropVideo(page, makeVideo('a.mp4')); await page.locator('#tool-root textarea').fill('Grüße & “Test” 100%'); const r = await goVideo(page, 'Add text'); assert.equal(vstream(r).width, 320); assert.ok(astream(r)); const orig = makeVideo('a.mp4'), d = mkdtempSync(join(tmpdir(), 'f-')); writeFileSync(join(d, 'o.mp4'), orig); const fr = (f, o) => { spawnSync('ffmpeg', ['-y', '-i', f, '-vf', 'select=eq(n\\,30)', '-frames:v', '1', o]); return readFileSync(o); }; assert.notDeepEqual(fr(join(d, 'o.mp4'), join(d, 'o.png')), fr(r.path, join(d, 't.png')), 'text changed the frame');
+    await page.locator('#tool-root textarea').fill(''); await page.getByRole('button', { name: 'Add text' }).click(); await page.waitForSelector('.pt-drop__error:visible'); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /Enter the text/);
+  },
+  async 'video-add-image'(page) {
+    await dropVideo(page, makeVideo('a.mp4')); const d = mkdtempSync(join(tmpdir(), 'i-')); spawnSync('ffmpeg', ['-y', '-f', 'lavfi', '-i', 'color=red:s=100x50', '-frames:v', '1', join(d, 'l.png')]); await page.locator('#tool-root input[type=file]').nth(1).setInputFiles(join(d, 'l.png')); await page.waitForFunction(() => ![...document.querySelectorAll('#tool-root button')].find(b => /Add image/.test(b.textContent)).disabled);
+    const r = await goVideo(page, 'Add image'); assert.equal(vstream(r).width, 320); assert.ok(astream(r)); const fr = spawnSync('ffmpeg', ['-y', '-i', r.path, '-vf', 'select=eq(n\\,10),crop=4:4:260:198', '-frames:v', '1', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-']); const px = fr.stdout; assert.ok(px[0] > 150 && px[1] < 90 && px[2] < 90, `red logo in the bottom right corner: ${[...px.slice(0, 3)]}`);
+  },
+  async 'video-logo-remover'(page) {
+    await dropVideo(page, makeVideo('a.mp4')); assert.ok(await page.locator('.ut-rect').isVisible(), 'frame shown'); await numAt(page, 0).fill('10'); await numAt(page, 1).fill('10'); await numAt(page, 2).fill('80'); await numAt(page, 3).fill('40'); const r = await goVideo(page, 'Remove logo'); assert.equal(vstream(r).width, 320); assert.ok(astream(r));
+    await numAt(page, 0).fill('900'); await page.getByRole('button', { name: 'Remove logo' }).click(); await page.waitForSelector('.pt-drop__error:visible'); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /outside/);
+  },
+  async 'video-to-gif'(page) {
+    await dropVideo(page, makeVideo('a.mp4', { dur: 4 })); await numAt(page, 0).fill('1'); await numAt(page, 1).fill('2'); await numAt(page, 2).fill('8'); await numAt(page, 3).fill('160'); const r = await goVideo(page, 'Make GIF'); assert.equal(vstream(r).codec_name, 'gif'); assert.equal(vstream(r).width, 160); assert.ok(Math.abs(vdur(r) - 2) < 0.35, 'gif length ' + vdur(r)); assert.match(r.name, /clip1\.gif$/);
+  },
+  async 'video-stabilizer'(page) {
+    await dropVideo(page, makeVideo('a.mp4')); const r = await goVideo(page, 'Stabilise'); assert.equal(vstream(r).width, 320); assert.ok(Math.abs(vdur(r) - 3) < 0.3); assert.ok(astream(r));
+    await dropVideo(page, Buffer.from('this is not a video file at all')); assert.ok(await page.locator('.pt-drop__error:visible').count() > 0, 'non-video rejected');
+  },
+});
+
 export default custom;

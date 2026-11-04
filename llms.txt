@@ -329,6 +329,26 @@ Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.c
 - [Webcam Video Recorder](https://ohfis.com/en/webcam-video-recorder/): Record a video from your webcam and save it, without installing anything.
 - [Text to Speech (Read Text Aloud)](https://ohfis.com/en/text-to-speech/): Have your browser read a text aloud with a voice and speed you choose.
 
+## Video Tools
+
+Trim, join, convert, compress, crop, resize and edit videos without uploading them. Hub: https://ohfis.com/en/image-media-tools/
+
+- [Video Trimmer (Cut Video Online)](https://ohfis.com/en/video-trimmer/): Cut a video to the part you need, with or without re-encoding.
+- [Video Merger (Join Videos Online)](https://ohfis.com/en/video-merger/): Join several clips into one video, in the order you choose.
+- [Video Converter (MP4, WebM, GIF, MP3)](https://ohfis.com/en/video-converter/): Convert videos between MP4, WebM and GIF, or take just the sound as MP3.
+- [Video Compressor (Reduce Video File Size)](https://ohfis.com/en/video-compressor/): Make a video file much smaller for email, chat or upload.
+- [Crop, Rotate and Flip Video](https://ohfis.com/en/video-crop-rotate-flip/): Crop to an aspect ratio or area, rotate by 90° steps and mirror a video.
+- [Video Resizer (Change Video Resolution)](https://ohfis.com/en/video-resizer/): Scale a video to 1080p, 720p, 480p or an exact size.
+- [Change Video Speed (Slow Motion and Fast Forward)](https://ohfis.com/en/video-speed-changer/): Slow a video down or speed it up, with the sound following.
+- [Loop Video (Repeat a Video)](https://ohfis.com/en/video-loop/): Repeat a clip several times to make a longer video.
+- [Change Video Volume or Mute a Video](https://ohfis.com/en/video-volume-changer/): Make the sound of a video louder or quieter, or remove it.
+- [Add Audio or Music to a Video](https://ohfis.com/en/video-add-audio/): Replace the sound of a video with music or a voice-over, or mix both.
+- [Add Text to a Video](https://ohfis.com/en/video-add-text/): Put a title, caption or message on a video, at a position and time you choose.
+- [Add Image or Logo to a Video](https://ohfis.com/en/video-add-image/): Place a logo or picture on a video, with size, opacity and timing.
+- [Remove Logo or Watermark from a Video](https://ohfis.com/en/video-logo-remover/): Smooth over a small logo or mark in a corner of a video.
+- [Video to GIF Converter](https://ohfis.com/en/video-to-gif/): Turn a part of a video into an animated GIF with good colours.
+- [Video Stabilizer (Reduce Camera Shake)](https://ohfis.com/en/video-stabilizer/): Smooth out small shakes in hand-held video.
+
 ## Related sites by the same operator
 
 - [Files Online](https://files-online.com/): More PDF tools and file utilities

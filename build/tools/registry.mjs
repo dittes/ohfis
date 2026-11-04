@@ -45,7 +45,11 @@ export const UCATS = {
     short: ['Tone generators, teleprompter, recorders and display tests.', 'Tongeneratoren, Teleprompter, Rekorder und Display-Tests.', 'Generatory tonu, teleprompter, rejestratory i testy ekranu.', 'Generátory tónů, teleprompter, rekordéry a testy displeje.'],
     h1: ['Audio, video and hardware tools', 'Audio-, Video- und Hardware-Tools', 'Narzędzia audio, wideo i sprzętowe', 'Audio, video a hardwarové nástroje'] },
 };
-export const UCAT_ORDER = ['documents', 'text', 'data', 'images', 'time', 'finance', 'dev', 'notes', 'team', 'media'];
+UCATS.video = { slug: 'video-tools', icon: 'film',
+  name: ['Video Tools', 'Video-Tools', 'Narzędzia wideo', 'Video nástroje'],
+  short: ['Trim, join, convert, compress, crop, resize and edit videos without uploading them.', 'Videos schneiden, verbinden, umwandeln, komprimieren, zuschneiden und bearbeiten, ohne Upload.', 'Przycinaj, łącz, konwertuj, kompresuj i edytuj wideo bez przesyłania.', 'Stříhejte, spojujte, převádějte, komprimujte a upravujte videa bez nahrávání.'],
+  h1: ['Free online video tools', 'Kostenlose Video-Tools online', 'Darmowe narzędzia wideo online', 'Bezplatné online video nástroje'] };
+export const UCAT_ORDER = ['documents', 'text', 'data', 'images', 'time', 'finance', 'dev', 'notes', 'team', 'media', 'video'];
 
 
 /**
@@ -66,10 +70,10 @@ export const GROUPS = {
     name: ['Spreadsheets & CSV', 'Tabellen & CSV', 'Arkusze i CSV', 'Tabulky a CSV'],
     short: UCATS.data.short,
     h1: ['CSV and spreadsheet tools', 'CSV- und Tabellen-Tools', 'Narzędzia do CSV i arkuszy', 'Nástroje pro CSV a tabulky'] },
-  images: { icon: 'image', cats: ['images', 'media'],
+  images: { icon: 'image', cats: ['images', 'video', 'media'],
     slug: ['image-media-tools', 'bild-und-medien-werkzeuge', 'grafika-i-media', 'obrazky-a-media'],
     name: ['Images & Media', 'Bilder & Medien', 'Grafika i media', 'Obrázky a média'],
-    short: ['Resize, convert, blur and crop images; tone generators, teleprompter, recorders and display tests.', 'Bilder skalieren, umwandeln, verpixeln und zuschneiden; Tongeneratoren, Teleprompter, Rekorder und Display-Tests.', 'Zmieniaj rozmiar, konwertuj, rozmywaj i przycinaj obrazy; generatory tonu, teleprompter, rejestratory i testy ekranu.', 'Měňte velikost, převádějte, rozmazávejte a ořezávejte obrázky; generátory tónů, teleprompter, rekordéry a testy displeje.'],
+    short: ['Resize, convert, blur and crop images; edit, trim and convert videos; audio tools, recorders and display tests.', 'Bilder skalieren, umwandeln, verpixeln und zuschneiden; Videos schneiden und umwandeln; Audio-Tools, Rekorder und Display-Tests.', 'Zmieniaj rozmiar, konwertuj, rozmywaj i przycinaj obrazy; edytuj i konwertuj wideo; narzędzia audio, rejestratory i testy ekranu.', 'Měňte velikost, převádějte, rozmazávejte a ořezávejte obrázky; upravujte a převádějte videa; zvukové nástroje, rekordéry a testy displeje.'],
     h1: ['Free online image and media tools', 'Kostenlose Bild- und Medien-Tools online', 'Darmowe narzędzia graficzne i medialne online', 'Bezplatné online nástroje pro obrázky a média'] },
   time: { icon: 'clock', cats: ['time'],
     slug: ['time-calendar-tools', 'zeit-und-kalender-werkzeuge', 'czas-i-kalendarz', 'cas-a-kalendar'],
