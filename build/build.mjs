@@ -503,16 +503,22 @@ function utilTitle(lang, t) {
   return lang === 'en' ? (t.title || `${name} – ${P('suffix', 'en')}`) : `${name} – ${P('suffix', lang)}`;
 }
 
-function utilityPage(lang, tool) {
+const I18N = {};
+for (const l of ['de', 'pl', 'cs']) { I18N[l] = {}; const d = new URL(`./tools/i18n/${l}/`, import.meta.url); if (existsSync(d)) for (const f of readdirSync(d).filter(x => x.endsWith('.mjs')).sort()) Object.assign(I18N[l], (await import(new URL(f, d).href)).default); }
+
+function utilityPage(lang, tool0) {
   const c = content[lang];
+  const tr = I18N[lang]?.[tool0.id];
+  const tool = tr ? { ...tool0, about: tr[0], steps: tr[1], faqs: tr[2] } : tool0;
   const li = LI[lang];
   const name = tool.names[li], short = tool.shorts[li];
   const paths = Object.fromEntries(LANGS.map(l => [l, utilPath(tool, l)]));
   const title = utilTitle(lang, tool), desc = `${short} ${P('priv', lang)}`;
-  const la = lang === 'en' ? '' : ' lang="en"';
+  const la = lang === 'en' || tr ? '' : ' lang="en"';
   const cat = UCATS[tool.cat];
   const crumbs = [[c.nav.home, `/${lang}/`], [cat.name[li], hubPath(tool.cat, lang)], [name]];
   const faqs = [...tool.faqs, ...c.toolPage.sharedFaqs];
+  const nOwn = tool.faqs.length;
   const related = (tool.related || []).filter(exists).slice(0, 4);
   const jsonLd = [ldApp(lang, name, desc, paths[lang]), ldCrumbs(crumbs), ldHowTo(`${P('howToUse', lang)}: ${name}`, tool.steps), ldFaq(faqs)];
   return `${head({ lang, title, desc, paths, jsonLd })}
@@ -534,7 +540,7 @@ function utilityPage(lang, tool) {
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>${e(P('howItWorks', lang, { name }))}</h2>
-        ${lang === 'en' ? '' : `<p class="pt-hint">${e(P('note', lang))}</p>`}
+        ${lang === 'en' || tr ? '' : `<p class="pt-hint">${e(P('note', lang))}</p>`}
         ${tool.about.map(p => `<p${la}>${e(p)}</p>`).join('')}
       </div>
     </section>
@@ -548,7 +554,7 @@ function utilityPage(lang, tool) {
       <div class="s-wrap">
         <h2>${e(c.toolPage.faqTitle)}</h2>
         <div class="s-faq">
-          ${faqs.map(([q, a], i) => `<details${i === 0 ? ' open' : ''}><summary${la}>${e(q)}</summary><p${la}>${e(a)}</p></details>`).join('\n          ')}
+          ${faqs.map(([q, a], i) => { const l2 = i < nOwn ? la : ''; return `<details${i === 0 ? ' open' : ''}><summary${l2}>${e(q)}</summary><p${l2}>${e(a)}</p></details>`; }).join('\n          ')}
         </div>
       </div>
     </section>
