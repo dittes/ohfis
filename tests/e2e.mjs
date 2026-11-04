@@ -39,6 +39,7 @@ async function run(tool) {
     await page.waitForFunction(() => document.getElementById('tool-root')?.dataset.ready, null, { timeout: 15000 });
     const state = await page.evaluate(() => document.getElementById('tool-root').dataset.ready);
     if (state !== 'true') throw new Error('tool failed to mount: ' + await page.locator('#tool-root').innerText());
+    if (!['encrypted-note-link'].includes(tool.id)) { const shown = await page.locator('#tool-root .pt-drop__error:visible, #tool-root [role=alert]:visible').allInnerTexts(); if (shown.some(t => t.trim())) throw new Error('error shown on first render: ' + shown.join(' | ').slice(0, 200)); }
     if (custom[tool.id]) await custom[tool.id](page, base);
     else if (tool.test) {
       const [input, expect] = tool.test;
