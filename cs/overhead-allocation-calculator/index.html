@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Kalkulačka rozdělení režijních nákladů","url":"https://ohfis.com/cs/overhead-allocation-calculator/","description":"Rozdělte společné náklady na oddělení podle počtu lidí, plochy nebo tržeb. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Byznys a finance","item":"https://ohfis.com/cs/business-finance-tools/"},{"@type":"ListItem","position":3,"name":"Kalkulačka rozdělení režijních nákladů"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Kalkulačka rozdělení režijních nákladů","step":[{"@type":"HowToStep","position":1,"text":"Enter the cost pool."},{"@type":"HowToStep","position":2,"text":"List departments with headcount, area and revenue."},{"@type":"HowToStep","position":3,"text":"Choose the allocation key and read the shares."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which allocation key is fairest?","acceptedAnswer":{"@type":"Answer","text":"The one most closely related to the cost: area for rent, headcount for people-related costs."}},{"@type":"Question","name":"Can I use my own driver?","acceptedAnswer":{"@type":"Answer","text":"Use the revenue column for any numeric driver of your own."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Kalkulačka rozdělení režijních nákladů","step":[{"@type":"HowToStep","position":1,"text":"Zadejte fond nákladů."},{"@type":"HowToStep","position":2,"text":"Vypište oddělení s počtem lidí, plochou a tržbami."},{"@type":"HowToStep","position":3,"text":"Zvolte klíč rozdělení a přečtěte si podíly."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Který klíč rozdělení je nejspravedlivější?","acceptedAnswer":{"@type":"Answer","text":"Ten, který nejblíže souvisí s nákladem: plocha pro nájem, počet lidí pro osobní náklady."}},{"@type":"Question","name":"Mohu použít vlastního nositele?","acceptedAnswer":{"@type":"Answer","text":"Použijte sloupec tržeb pro libovolného vlastního číselného nositele."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Kalkulačka rozdělení režijních nákladů</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Rent, utilities and shared software benefit all teams. Enter the total pool and each department's headcount, floor area and revenue, choose the allocation key and see how many costs each department carries.</p><p lang="en">Each department gets pool × (its driver ÷ sum of all drivers). The best driver is the one that explains why the cost occurs: headcount for software licences and IT support, floor area for rent and heating, revenue for management time. Changing the key shows how sensitive the result is to your choice, which is often the real discussion.</p>
+        
+        <p>Nájem, energie a sdílený software slouží všem týmům. Zadejte celý fond a počet lidí, plochu a tržby každého oddělení, zvolte klíč rozdělení a uvidíte, kolik nákladů každé oddělení nese.</p><p>Každé oddělení dostane fond × (jeho nositel ÷ součet všech nositelů). Nejlepší nositel je ten, který vysvětluje, proč náklad vzniká: počet lidí pro softwarové licence a IT podporu, plocha pro nájem a topení, tržby pro čas vedení. Změna klíče ukáže, jak citlivý je výsledek na vaši volbu, což je často skutečná diskuse.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Enter the cost pool.</p></li><li><p lang="en">List departments with headcount, area and revenue.</p></li><li><p lang="en">Choose the allocation key and read the shares.</p></li></ol>
+        <ol class="s-steps"><li><p>Zadejte fond nákladů.</p></li><li><p>Vypište oddělení s počtem lidí, plochou a tržbami.</p></li><li><p>Zvolte klíč rozdělení a přečtěte si podíly.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Which allocation key is fairest?</summary><p lang="en">The one most closely related to the cost: area for rent, headcount for people-related costs.</p></details>
-          <details><summary lang="en">Can I use my own driver?</summary><p lang="en">Use the revenue column for any numeric driver of your own.</p></details>
+          <details open><summary>Který klíč rozdělení je nejspravedlivější?</summary><p>Ten, který nejblíže souvisí s nákladem: plocha pro nájem, počet lidí pro osobní náklady.</p></details>
+          <details><summary>Mohu použít vlastního nositele?</summary><p>Použijte sloupec tržeb pro libovolného vlastního číselného nositele.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
