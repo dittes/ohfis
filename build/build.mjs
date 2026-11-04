@@ -147,6 +147,7 @@ function header(lang, paths, current) {
         ${GROUP_ORDER.map(g => `<div class="s-navitem" data-group="${g}"><a class="s-navlink" href="${hubPath(g, lang)}"${current === g ? ' aria-current="page"' : ''}>${e(groupName(g, lang))}</a><button class="s-navtoggle" type="button" aria-expanded="false" aria-controls="drop-${g}" aria-label="${e(P('menuOf', lang, { name: groupName(g, lang) }))}">${CARET}</button><div class="s-drop" id="drop-${g}" hidden></div></div>`).join('')}
       </nav>
       <div class="s-actions">
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.${lang}.js" data-ph="${e(P('searchPlaceholder', lang))}" data-empty="${e(P('searchEmpty', lang))}" data-hint="${e(P('searchHint', lang))}" data-sections="${e(P('searchSections', lang))}" aria-label="${e(P('searchOpen', lang))}"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">${e(P('searchPlaceholder', lang))}</span><kbd>/</kbd></button>
         <details class="s-lang">
           <summary aria-label="${e(c.nav.language)}">${lang}</summary>
           <ul>
@@ -815,6 +816,8 @@ for (const lang of LANGS) {
       const multi = GROUPS[g].cats.length > 1;
       for (const cat of GROUPS[g].cats) cols.push([multi ? UCATS[cat].name[li] : '', utilsOf(cat).map(t => [t.names[li], utilPath(t, lang)])]);
     }
+    const short = nm => nm.replace(/\s*\([^)]*\)\s*$/, '');
+    for (const col of cols) col[1] = col[1].map(([nm, u]) => [short(nm), u]);
     const n = cols.reduce((k, x) => k + x[1].length, 0);
     menu[g] = { all: P('showAll', lang, { n }), url: hubPath(g, lang), cols: cols.filter(x => x[1].length) };
   }

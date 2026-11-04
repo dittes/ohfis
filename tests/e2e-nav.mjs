@@ -27,6 +27,11 @@ try {
   await item('dev').locator('.s-navlink').click(); await page.waitForLoadState('load'); assert.match(page.url(), /\/de\/it-und-web-werkzeuge\/$/);
   // keyboard: Tab to the toggle, Enter opens, Escape closes and keeps focus on the toggle
   await item('data').locator('.s-navtoggle').focus(); await page.keyboard.press('Enter'); await page.waitForSelector('#drop-data:not([hidden])'); await page.keyboard.press('Escape'); assert.ok(await page.locator('#drop-data').isHidden()); assert.equal(await page.evaluate(() => document.activeElement.className), 's-navtoggle');
+  // quick search: "/" opens, typing finds, arrows + Enter open, Escape closes; Ctrl+K works too
+  await page.goto(`${base}/de/`); await page.keyboard.press('/'); await page.waitForSelector('dialog.s-sq[open]'); assert.ok(await page.locator('.s-sq__item').count() === 7, 'sections shown first');
+  await page.keyboard.type('zeichenz'); await page.waitForSelector('.s-sq__item strong'); assert.match(await page.locator('.s-sq__item strong').first().innerText(), /Zeichenzähler/); await page.keyboard.press('Escape'); assert.equal(await page.locator('dialog.s-sq[open]').count(), 0, 'escape closes');
+  await page.keyboard.press('Control+k'); await page.waitForSelector('dialog.s-sq[open]'); await page.keyboard.type('xqzxqz'); await page.waitForSelector('.s-sq__empty'); await page.fill('.s-sq__input', 'pdf zusammen'); await page.waitForSelector('.s-sq__item'); await page.keyboard.press('Enter'); await page.waitForURL(/pdf-zusammenfuegen/);
+  assert.ok(!/\([^)]*\)\s*$/.test(await page.evaluate(async () => (await import('/assets/i18n/menu.de.js')).default.pdf.cols.at(-1)[1][0][0])), 'menu names carry no parenthetical');
   await page.close();
   // mobile: burger shows the sections, the arrow opens the list inline
   page = await browser.newPage({ viewport: { width: 390, height: 800 } }); page.on('pageerror', e => errors.push(e.message)); await page.goto(`${base}/pl/`);

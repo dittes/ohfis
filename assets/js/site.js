@@ -36,7 +36,7 @@ async function openItem(item) {
   item.querySelector('.s-drop').hidden = false; item.classList.add('is-open'); item.querySelector('.s-navtoggle').setAttribute('aria-expanded', 'true');
 }
 function closeItem(item) { item._want = false; item.classList.remove('is-open'); item.querySelector('.s-drop').hidden = true; item.querySelector('.s-navtoggle').setAttribute('aria-expanded', 'false'); }
-const hoverCapable = matchMedia('(min-width: 1181px) and (hover: hover)');
+const hoverCapable = matchMedia('(min-width: 1261px) and (hover: hover)');
 navItems.forEach(item => {
   const btn = item.querySelector('.s-navtoggle'); let timer;
   btn.addEventListener('click', () => { clearTimeout(timer); item.classList.contains('is-open') ? closeItem(item) : openItem(item); });
@@ -50,6 +50,42 @@ document.addEventListener('keydown', e => {
   menus.forEach(m => { if (m.open) { m.open = false; m.querySelector('summary').focus(); } });
   navItems.forEach(i => { if (i.classList.contains('is-open')) { closeItem(i); i.querySelector('.s-navtoggle').focus(); } });
 });
+
+// Quick search palette: "/" or Ctrl/Cmd+K, or the search button. Index is loaded on first use.
+const sbtn = document.querySelector('.s-searchbtn');
+if (sbtn) {
+  let dlg, input, list, index = null, items = [], active = -1;
+  const norm = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const load = () => index ||= import(sbtn.dataset.search).then(m => m.default.map(e => ({ ...e, nn: norm(e.n), hay: norm(`${e.n} ${e.k || ''} ${e.d} ${e.c}`) }))).catch(() => []);
+  const setActive = i => { active = items.length ? (i + items.length) % items.length : -1; [...list.children].forEach((li, k) => { const on = k === active; li.firstChild.classList.toggle('is-active', on); li.firstChild.setAttribute('aria-selected', String(on)); if (on) li.scrollIntoView({ block: 'nearest' }); }); input.setAttribute('aria-activedescendant', active >= 0 ? `sq-${active}` : ''); };
+  const link = (e, i) => { const li = el('li'); const a = el('a', 's-sq__item'); a.href = e.u; a.id = `sq-${i}`; a.setAttribute('role', 'option'); a.append(el('strong', '', e.n), el('small', '', e.d ? `${e.c} · ${e.d}` : e.c)); li.append(a); return li; };
+  const showSections = () => { items = []; const head = el('li', 's-sq__head', sbtn.dataset.sections); const links = [...document.querySelectorAll('.s-nav .s-navlink')].map(a => ({ n: a.textContent, c: '', d: '', u: a.href })); list.replaceChildren(head, ...links.map((e, i) => { const li = link(e, i); li.firstChild.removeAttribute('role'); return li; })); active = -1; };
+  const run = async () => {
+    const q = norm(input.value.trim()); if (!q) { showSections(); return; }
+    const idx = await load(); const terms = q.split(/\s+/);
+    items = idx.map(e => { let s = 0; for (const t of terms) { if (!e.hay.includes(t)) return null; s += e.nn.startsWith(t) ? 8 : e.nn.includes(` ${t}`) ? 6 : e.nn.includes(t) ? 4 : 1; } return { e, s }; }).filter(Boolean).sort((a, b) => b.s - a.s || a.e.n.length - b.e.n.length).slice(0, 12).map(x => x.e);
+    if (!items.length) { list.replaceChildren(el('li', 's-sq__empty', sbtn.dataset.empty)); active = -1; return; }
+    list.replaceChildren(...items.map(link)); setActive(0);
+  };
+  const build = () => {
+    dlg = el('dialog', 's-sq'); dlg.setAttribute('aria-label', sbtn.getAttribute('aria-label'));
+    input = el('input', 's-sq__input'); input.type = 'text'; input.enterKeyHint = 'search'; input.placeholder = sbtn.dataset.ph; input.autocomplete = 'off'; input.spellcheck = false; input.setAttribute('role', 'combobox'); input.setAttribute('aria-expanded', 'true'); input.setAttribute('aria-controls', 's-sq-list'); input.setAttribute('aria-label', sbtn.getAttribute('aria-label'));
+    list = el('ul', 's-sq__list'); list.id = 's-sq-list'; list.setAttribute('role', 'listbox');
+    dlg.append(input, list, el('p', 's-sq__hint', sbtn.dataset.hint)); document.body.append(dlg);
+    input.addEventListener('input', run);
+    input.addEventListener('keydown', e => {
+      if (e.key === 'ArrowDown') { e.preventDefault(); setActive(active + 1); } else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(active - 1); }
+      else if (e.key === 'Enter') { const a = list.querySelector('.is-active') || list.querySelector('a'); if (a) { e.preventDefault(); location.href = a.href; } }
+    });
+    dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+  };
+  const open = () => { if (!dlg) build(); navItems.forEach(closeItem); if (!dlg.open) dlg.showModal(); input.value = ''; showSections(); load(); input.focus(); };
+  sbtn.addEventListener('click', open);
+  document.addEventListener('keydown', e => {
+    const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName) || document.activeElement?.isContentEditable;
+    if ((e.key === 'k' && (e.ctrlKey || e.metaKey)) || (e.key === '/' && !typing && !e.ctrlKey && !e.metaKey && !e.altKey)) { e.preventDefault(); open(); }
+  });
+}
 
 const burger = document.querySelector('.s-burger');
 const nav = navEl;
