@@ -94,6 +94,9 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [PDF to HTML Converter](https://ohfis.com/en/pdf-to-html/): Turn the text of a PDF into clean HTML with headings, paragraphs and lists.
   Drop a PDF and get clean, simple HTML: headings are detected from the font size, lines are joined into paragraphs, bullet and numbered lines become lists and words broken at the end of a line with a hyphen are put back together. Copy the HTML or download it as a complete page, with page breaks marked if you like.
   How to use: Drop the PDF. Choose headings, page breaks and a full page or just the markup. Check the preview, then copy or download the HTML.
+- [Word Document Word Counter (DOCX)](https://ohfis.com/en/docx-word-counter/): Count words, characters, paragraphs and reading time in a .docx file.
+  Drop a .docx file and get the word count, characters with and without spaces, paragraphs, sentences, an estimated page count and the reading and speaking time. Options include or exclude footnotes, endnotes, headers and footers.
+  How to use: Drop the .docx file. Choose whether footnotes, headers and footers are counted. Read the numbers.
 
 ## Text Tools
 
@@ -189,6 +192,15 @@ Clean, convert, count, compare and extract text. Hub: https://ohfis.com/en/text-
 - [Morse Code Translator](https://ohfis.com/en/morse-code-translator/): Translate text to Morse code and back, and play it as beeps.
   Type a message to get dots and dashes, or paste Morse code to read it. The direction is detected automatically. Press "Play as sound" to hear the message as beeps at the speed and pitch you choose.
   How to use: Type text or paste Morse code. Read the translation, or press "Play as sound". Adjust the speed and pitch to taste, then copy the result.
+- [Readability Checker (Flesch Reading Ease)](https://ohfis.com/en/readability-score/): Measure how easy a text is to read, with scores and long sentences flagged.
+  Paste a text and see how hard it is to read: the Flesch Reading Ease and grade level for English, the Amstad score and the Wiener Sachtextformel for German, and language-independent scores (LIX, ARI, Coleman–Liau) for any language. The tool also lists your longest sentences, which are usually the quickest thing to fix.
+  How to use: Paste your text and choose its language. Read the level, the scores and the list of long sentences. Shorten the long sentences and check again.
+- [Text Summarizer (Shorten Text Automatically)](https://ohfis.com/en/text-summarizer/): Pick the most important sentences of a text, without any AI service.
+  Paste an article, report or transcript, choose how many sentences you want and get the sentences that carry most of the content, in their original order, together with the key words. It supports English, German, Polish and Czech.
+  How to use: Paste the text and choose its language. Set the number of sentences. Copy the summary.
+- [Text Similarity Checker (Compare Two Texts)](https://ohfis.com/en/text-similarity-checker/): Find out how much two texts overlap and which passages they share.
+  Paste two texts and see the share of identical word sequences, the similarity of the words used and a list of the passages that appear in both. Useful to check a rewrite against its source, to find a copied paragraph between two documents or to see how much two versions of a contract differ.
+  How to use: Paste text A and text B. Set the shortest passage to report (default 5 words). Read the percentages and the shared passages.
 
 ## Spreadsheet & CSV Tools
 
@@ -355,6 +367,9 @@ Resize, convert, blur, crop and clean images without uploading them. Hub: https:
 - [PNG Color Reducer (Smaller PNG, 256 Colours or Less)](https://ohfis.com/en/png-color-reducer/): Reduce an image to 2–256 colours and save a small indexed PNG-8.
   Drop logos, icons, screenshots or illustrations and choose how many colours to keep, from 2 to 256. The tool builds an optimal palette with the median-cut algorithm, optionally with Floyd–Steinberg dithering, and saves a real indexed PNG (palette PNG-8, with 1, 2, 4 or 8 bits per pixel), which is often 50–80 % smaller than a 24-bit PNG. Before and after sizes are listed for every file and ZIP download is available.
   How to use: Drop one or more images. Choose the number of colours and dithering. Compare the sizes and download.
+- [EXIF Viewer (Photo Metadata and GPS)](https://ohfis.com/en/exif-viewer/): See the camera, date and GPS location hidden in a photo.
+  Drop a photo and see what it tells about itself: camera make and model, lens, date taken, exposure, ISO, software and, if present, the GPS location with a link to a map. A warning appears when a location is stored, because anyone who receives the file can see where the photo was taken.
+  How to use: Drop the photo. Read the tags and check for a GPS location. Remove the metadata with the Image Metadata Remover if you plan to share the photo.
 
 ## Time & Calendar
 
@@ -646,6 +661,12 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 - [Lorem Ipsum Generator](https://ohfis.com/en/lorem-ipsum-generator/): Generate placeholder text by paragraphs, sentences or words.
   Choose how many paragraphs, sentences or words you need, whether to start with the classic "Lorem ipsum dolor sit amet", and optionally wrap the paragraphs in <p> tags. Copy or download the text for a mock-up, a template or a layout test.
   How to use: Choose the amount and the unit. Decide on the classic start and HTML tags. Copy the text, or press "Generate new text" for a different one.
+- [File Type Detector (Identify Any File)](https://ohfis.com/en/file-type-detector/): Find out what a file really is, from its content instead of its name.
+  Drop a file with no extension, a strange extension or a name you do not trust and see what it really is: image, PDF, Office document, archive, audio, video, font, executable, database or text. For each file you get the detected type, the MIME type and whether the file name matches the content.
+  How to use: Drop one or more files. Read the detected type and whether the name matches. Rename the file with the right extension if needed.
+- [Folder Tree Generator (Directory Structure as Text)](https://ohfis.com/en/folder-tree-generator/): Turn a folder or a list of paths into a text tree for documentation.
+  Choose or drop a folder, or paste a list of paths, and get the structure as a text tree with ├── and └── lines, ready for a README, a ticket or documentation. Options hide folders such as node_modules and .git, limit the depth, show only folders, show file sizes and sort by name or size.
+  How to use: Drop or choose a folder, or paste paths. Set the ignore list, depth and options. Copy the tree or download it.
 
 ## Notes & Privacy
 

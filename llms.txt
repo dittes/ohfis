@@ -60,6 +60,7 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [Unzip Files Online (ZIP, TAR and GZ Extractor)](https://ohfis.com/en/zip-extractor/): Open an archive, see what is inside and save single files or a selection.
 - [Create ZIP File Online (Compress Files and Folders)](https://ohfis.com/en/zip-creator/): Pack files and whole folders into one ZIP file.
 - [PDF to HTML Converter](https://ohfis.com/en/pdf-to-html/): Turn the text of a PDF into clean HTML with headings, paragraphs and lists.
+- [Word Document Word Counter (DOCX)](https://ohfis.com/en/docx-word-counter/): Count words, characters, paragraphs and reading time in a .docx file.
 
 ## Text Tools
 
@@ -95,6 +96,9 @@ Clean, convert, count, compare and extract text. Hub: https://ohfis.com/en/text-
 - [Indented Text to JSON, HTML & XML](https://ohfis.com/en/outline-converter/): Convert an indented outline into nested JSON, HTML lists, XML, Markdown or YAML.
 - [Text to Hex, Binary & Base32 Converter](https://ohfis.com/en/text-base-converter/): Convert text between hex, binary, decimal, octal, Base32 and Base64.
 - [Morse Code Translator](https://ohfis.com/en/morse-code-translator/): Translate text to Morse code and back, and play it as beeps.
+- [Readability Checker (Flesch Reading Ease)](https://ohfis.com/en/readability-score/): Measure how easy a text is to read, with scores and long sentences flagged.
+- [Text Summarizer (Shorten Text Automatically)](https://ohfis.com/en/text-summarizer/): Pick the most important sentences of a text, without any AI service.
+- [Text Similarity Checker (Compare Two Texts)](https://ohfis.com/en/text-similarity-checker/): Find out how much two texts overlap and which passages they share.
 
 ## Spreadsheet & CSV Tools
 
@@ -157,6 +161,7 @@ Resize, convert, blur, crop and clean images without uploading them. Hub: https:
 - [Photo Collage & Split Screen Maker](https://ohfis.com/en/image-collage-maker/): Combine 2–4 images side by side, stacked, in a grid or as a before/after split.
 - [Meme Generator (Top & Bottom Text)](https://ohfis.com/en/meme-generator/): Put classic Impact-style captions on any picture and download it.
 - [PNG Color Reducer (Smaller PNG, 256 Colours or Less)](https://ohfis.com/en/png-color-reducer/): Reduce an image to 2–256 colours and save a small indexed PNG-8.
+- [EXIF Viewer (Photo Metadata and GPS)](https://ohfis.com/en/exif-viewer/): See the camera, date and GPS location hidden in a photo.
 
 ## Time & Calendar
 
@@ -264,6 +269,8 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 - [Markdown Previewer (Live Preview)](https://ohfis.com/en/markdown-previewer/): See Markdown rendered as you type and copy the HTML.
 - [CSS, HTML and JSON Minifier](https://ohfis.com/en/css-html-minifier/): Remove comments and whitespace to make CSS, HTML or JSON smaller.
 - [Lorem Ipsum Generator](https://ohfis.com/en/lorem-ipsum-generator/): Generate placeholder text by paragraphs, sentences or words.
+- [File Type Detector (Identify Any File)](https://ohfis.com/en/file-type-detector/): Find out what a file really is, from its content instead of its name.
+- [Folder Tree Generator (Directory Structure as Text)](https://ohfis.com/en/folder-tree-generator/): Turn a folder or a list of paths into a text tree for documentation.
 
 ## Notes & Privacy
 

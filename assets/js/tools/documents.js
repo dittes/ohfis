@@ -6,6 +6,7 @@ import * as M from './lib/image.js';
 import * as D from './lib/docs.js';
 import * as Z from './lib/archive.js';
 import * as PH from './lib/pdfhtml.js';
+import * as TM from './lib/textmore.js';
 
 const sizeFmt = n => n < 1024 ? `${n} B` : n < 1048576 ? `${(n / 1024).toFixed(1)} KB` : `${(n / 1048576).toFixed(2)} MB`;
 const baseName = n => n.replace(/\.[^.]+$/, '');
@@ -313,5 +314,15 @@ export const tools = {
     async function load([f]) { err.hidden = true; out.replaceChildren(h('span', { class: 'pt-hint' }, t('processing'))); pages = null; name = baseName(f.name); try { const pdf = await openPdfjs(await readBytes(f)); const arr = []; for (let n = 1; n <= pdf.numPages; n++) { const pg = await pdf.getPage(n), tc = await pg.getTextContent(); arr.push({ items: tc.items.filter(i => 'str' in i).map(i => ({ str: i.str, x: i.transform[4], y: i.transform[5], size: Math.hypot(i.transform[0], i.transform[1]) || i.height, w: i.width })) }); } pages = arr; info.replaceChildren(stat('File', f.name), stat('Pages', pdf.numPages), stat('Text items', arr.reduce((n, p) => n + p.items.length, 0))); render(); } catch (e) { err.textContent = /password/i.test(e.message) ? 'This PDF is password-protected. Remove the password first with the Unlock PDF tool.' : 'Could not read this PDF: ' + (e.message || e); err.hidden = false; out.replaceChildren(); } }
     const drop = h('div', { class: 'ut-drop' }, h('p', {}, 'Drop a PDF here, or'), filePicker({ accept: 'application/pdf,.pdf', label: t('chooseFile'), onFiles: load })); ['dragover', 'drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); if (ev === 'drop' && e.dataTransfer.files[0]) load([e.dataTransfer.files[0]]); }));
     ui.append(drop, h('div', { class: 'ut-options' }, heads, brk, full), info, err, out, prev, code, h('p', { class: 'pt-hint' }, 'The result is clean, simple HTML with headings, paragraphs and lists, not a copy of the page layout. Tables, columns, images and exact fonts are not reproduced; scanned PDFs need OCR first. Everything runs in your browser.'));
+  },
+
+  'docx-word-counter'(root) {
+    const ui = wrap(root); const info = h('div', { class: 'ut-stats' }), err = h('p', { class: 'pt-drop__error', role: 'alert', hidden: true }), out = h('div'); let cache = null;
+    const extras = check('Include footnotes and endnotes', false, { onChange: () => cache && show() }), headers = check('Include headers and footers', false, { onChange: () => cache && show() });
+    function show() { const { z, F: Fz, name } = cache; const get = n => z[n] ? Fz.strFromU8(z[n]) : ''; let paras = TM.docxTextFromXml(get('word/document.xml')); if (extras.input.checked) paras = paras.concat(TM.docxTextFromXml(get('word/footnotes.xml')), TM.docxTextFromXml(get('word/endnotes.xml'))); if (headers.input.checked) for (const n of Object.keys(z).filter(k => /^word\/(header|footer)\d*\.xml$/.test(k))) paras = paras.concat(TM.docxTextFromXml(get(n)));
+      const c = TM.docCounts(paras); info.replaceChildren(stat('File', name), stat('Words', c.words.toLocaleString()), stat('Characters', c.characters.toLocaleString()), stat('Without spaces', c.charactersNoSpaces.toLocaleString()), stat('Paragraphs', c.paragraphs), stat('Sentences', c.sentences), stat('Pages (approx.)', c.pagesApprox), stat('Reading time', `${c.readingMinutes} min`), stat('Speaking time', `${c.speakingMinutes} min`)); out.replaceChildren(h('span', { 'data-result': 'ready', class: 'pt-hint' }, 'Counted without opening the file anywhere else.')); }
+    async function load([f]) { err.hidden = true; out.replaceChildren(); info.replaceChildren(); try { const Fz = await fflate(); const z = Fz.unzipSync(new Uint8Array(await f.arrayBuffer())); if (!z['word/document.xml']) throw new Error('This is not a .docx file (no word/document.xml). Old .doc files must be saved as .docx first.'); cache = { z, F: Fz, name: f.name }; show(); } catch (e) { err.textContent = e.message || String(e); err.hidden = false; } }
+    const drop = h('div', { class: 'ut-drop' }, h('p', {}, 'Drop a Word document (.docx) here, or'), filePicker({ accept: '.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document', label: t('chooseFile'), onFiles: load })); ['dragover', 'drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); if (ev === 'drop' && e.dataTransfer.files[0]) load([e.dataTransfer.files[0]]); }));
+    ui.append(drop, h('div', { class: 'ut-options' }, extras, headers), info, err, out, h('p', { class: 'pt-hint' }, 'Counts the text of the main document; text boxes, comments and tracked deletions are not included. The page count is only an estimate (500 words per page), because the real layout depends on fonts and margins, which only Word knows.'));
   },
 };

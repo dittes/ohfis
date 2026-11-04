@@ -3709,6 +3709,78 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/lorem-ipsum-generator/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/file-type-detector/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/file-type-detector/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/dateityp-erkennen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wykrywanie-typu-pliku/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rozpoznani-typu-souboru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/file-type-detector/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/dateityp-erkennen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/file-type-detector/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/dateityp-erkennen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wykrywanie-typu-pliku/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rozpoznani-typu-souboru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/file-type-detector/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/wykrywanie-typu-pliku/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/file-type-detector/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/dateityp-erkennen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wykrywanie-typu-pliku/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rozpoznani-typu-souboru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/file-type-detector/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/rozpoznani-typu-souboru/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/file-type-detector/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/dateityp-erkennen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wykrywanie-typu-pliku/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rozpoznani-typu-souboru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/file-type-detector/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/folder-tree-generator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/folder-tree-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/ordnerbaum-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-drzewa-folderow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-stromu-slozek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/folder-tree-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/ordnerbaum-erstellen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/folder-tree-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/ordnerbaum-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-drzewa-folderow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-stromu-slozek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/folder-tree-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/generator-drzewa-folderow/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/folder-tree-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/ordnerbaum-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-drzewa-folderow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-stromu-slozek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/folder-tree-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/generator-stromu-slozek/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/folder-tree-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/ordnerbaum-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-drzewa-folderow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-stromu-slozek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/folder-tree-generator/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/booklet-maker/</loc>
     <lastmod>2026-11-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/booklet-maker/"/>
@@ -4319,6 +4391,42 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-pdf-na-html/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevod-pdf-na-html/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-to-html/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/docx-word-counter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/docx-word-counter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/woerter-in-word-dokument-zaehlen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/licznik-slow-w-dokumencie-word/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pocitadlo-slov-v-dokumentu-word/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/docx-word-counter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/woerter-in-word-dokument-zaehlen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/docx-word-counter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/woerter-in-word-dokument-zaehlen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/licznik-slow-w-dokumencie-word/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pocitadlo-slov-v-dokumentu-word/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/docx-word-counter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/licznik-slow-w-dokumencie-word/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/docx-word-counter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/woerter-in-word-dokument-zaehlen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/licznik-slow-w-dokumencie-word/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pocitadlo-slov-v-dokumentu-word/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/docx-word-counter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/pocitadlo-slov-v-dokumentu-word/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/docx-word-counter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/woerter-in-word-dokument-zaehlen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/licznik-slow-w-dokumencie-word/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pocitadlo-slov-v-dokumentu-word/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/docx-word-counter/"/>
   </url>
   <url>
     <loc>https://ohfis.com/en/margin-markup-calculator/</loc>
@@ -6155,6 +6263,42 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/redukcja-kolorow-png/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/redukce-barev-png/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/png-color-reducer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/exif-viewer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/exif-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/exif-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/przegladarka-exif/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prohlizec-exif/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/exif-viewer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/exif-viewer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/exif-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/exif-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/przegladarka-exif/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prohlizec-exif/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/exif-viewer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/przegladarka-exif/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/exif-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/exif-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/przegladarka-exif/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prohlizec-exif/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/exif-viewer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/prohlizec-exif/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/exif-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/exif-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/przegladarka-exif/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prohlizec-exif/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/exif-viewer/"/>
   </url>
   <url>
     <loc>https://ohfis.com/en/audio-tone-generator/</loc>
@@ -9251,6 +9395,114 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tlumacz-alfabetu-morse-a/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prekladac-morseovy-abecedy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/morse-code-translator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/readability-score/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/readability-score/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lesbarkeit-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/test-czytelnosci-tekstu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/citelnost-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/readability-score/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/lesbarkeit-pruefen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/readability-score/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lesbarkeit-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/test-czytelnosci-tekstu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/citelnost-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/readability-score/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/test-czytelnosci-tekstu/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/readability-score/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lesbarkeit-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/test-czytelnosci-tekstu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/citelnost-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/readability-score/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/citelnost-textu/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/readability-score/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lesbarkeit-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/test-czytelnosci-tekstu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/citelnost-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/readability-score/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/text-summarizer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-summarizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/text-zusammenfassen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/streszczanie-tekstu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/shrnuti-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-summarizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/text-zusammenfassen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-summarizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/text-zusammenfassen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/streszczanie-tekstu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/shrnuti-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-summarizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/streszczanie-tekstu/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-summarizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/text-zusammenfassen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/streszczanie-tekstu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/shrnuti-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-summarizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/shrnuti-textu/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-summarizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/text-zusammenfassen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/streszczanie-tekstu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/shrnuti-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-summarizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/text-similarity-checker/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-similarity-checker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/textaehnlichkeit-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/porownanie-podobienstwa-tekstow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/porovnani-podobnosti-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-similarity-checker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/textaehnlichkeit-pruefen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-similarity-checker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/textaehnlichkeit-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/porownanie-podobienstwa-tekstow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/porovnani-podobnosti-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-similarity-checker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/porownanie-podobienstwa-tekstow/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-similarity-checker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/textaehnlichkeit-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/porownanie-podobienstwa-tekstow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/porovnani-podobnosti-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-similarity-checker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/porovnani-podobnosti-textu/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-similarity-checker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/textaehnlichkeit-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/porownanie-podobienstwa-tekstow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/porovnani-podobnosti-textu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-similarity-checker/"/>
   </url>
   <url>
     <loc>https://ohfis.com/en/unix-timestamp-converter/</loc>

@@ -1,6 +1,6 @@
 // Tools whose test needs real interaction. Each handler receives (page, baseUrl) and throws on failure.
 import assert from 'node:assert/strict';
-import { writeFileSync, mkdtempSync, createWriteStream } from 'node:fs';
+import { writeFileSync, mkdtempSync, createWriteStream, mkdirSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
@@ -889,6 +889,42 @@ Object.assign(custom, {
   async 'lorem-ipsum-generator'(page) {
     const a = await out(page).inputValue(); assert.ok(a.startsWith('Lorem ipsum dolor sit amet')); assert.equal(a.split('\n\n').length, 3); await page.getByRole('button', { name: 'Generate new text' }).click(); const b = await out(page).inputValue(); assert.notEqual(a, b);
     await page.locator('#tool-root select').selectOption('words'); await page.locator('#tool-root input[type=number]').fill('10'); await page.waitForTimeout(300); assert.equal((await out(page).inputValue()).split(' ').length, 10);
+  },
+});
+
+// ---- text analysis, files and EXIF ----
+Object.assign(custom, {
+  async 'readability-score'(page) {
+    await area(page).fill('The cat sat on the mat.'); await page.waitForTimeout(300); const t = await rootText(page); assert.match(t, /Flesch Reading Ease: 116\.1/); assert.match(t, /Level: very easy/); assert.match(t, /No sentence is longer than 25 words/);
+    await area(page).fill('Short. ' + 'word '.repeat(30).trim() + '.'); await page.waitForTimeout(300); assert.match(await rootText(page), /Sentences over 25 words \(1\)/);
+    await page.locator('#tool-root select').first().selectOption('de'); await area(page).fill('Das ist ein Haus. Es ist groß.'); await page.waitForTimeout(300); assert.match(await rootText(page), /Amstad/); assert.match(await rootText(page), /Wiener Sachtextformel/);
+  },
+  async 'text-summarizer'(page) {
+    await area(page).fill('Solar power is growing fast. Many homes now use solar panels on the roof. Solar panels convert sunlight into electricity. The weather was nice yesterday. Cheap solar panels make solar power popular. My cat likes fish.'); await page.locator('#tool-root input[type=number]').fill('2'); await page.waitForTimeout(400); const s = await out(page).inputValue(); assert.ok(!/cat likes fish|weather was nice/.test(s), s); assert.match(await rootText(page), /Sentences\s*2 of 6/); assert.match(await rootText(page), /Key words\s*solar/);
+  },
+  async 'text-similarity-checker'(page) {
+    const t = page.locator('#tool-root textarea'); await t.nth(0).fill('The quick brown fox jumps over the lazy dog near the river bank every single morning.'); await t.nth(1).fill('I think that the quick brown fox jumps over the lazy dog near the river bank and then rests.'); await page.waitForTimeout(500); const txt = await rootText(page); assert.match(txt, /the quick brown fox jumps over the lazy dog near the river bank/); assert.match(txt, /Word sequences in common/);
+    await t.nth(1).fill('Something entirely different about cooking pasta with tomatoes and basil today.'); await page.waitForTimeout(500); assert.match(await rootText(page), /No passage of that length/);
+  },
+  async 'docx-word-counter'(page) {
+    const xml = '<w:document><w:body><w:p><w:r><w:t>One two three.</w:t></w:r></w:p><w:p><w:r><w:t>Four five.</w:t></w:r></w:p></w:body></w:document>', foot = '<w:footnotes><w:p><w:r><w:t>Note one</w:t></w:r></w:p></w:footnotes>';
+    const docx = Buffer.from(F2.zipSync({ 'word/document.xml': new TextEncoder().encode(xml), 'word/footnotes.xml': new TextEncoder().encode(foot) }));
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'doc.docx', buffer: docx }); await page.waitForSelector('[data-result=ready]'); let t = await rootText(page); assert.match(t, /Words\s*5/); assert.match(t, /Paragraphs\s*2/);
+    await page.locator('#tool-root input[type=checkbox]').first().check(); await page.waitForTimeout(300); assert.match(await rootText(page), /Words\s*7/);
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'x.docx', buffer: Buffer.from(F2.zipSync({ 'a.txt': new Uint8Array([1]) })) }); await page.waitForTimeout(300); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /not a \.docx/);
+  },
+  async 'file-type-detector'(page) {
+    const png = Buffer.concat([Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]), Buffer.alloc(40)]); await page.setInputFiles('#tool-root input[type=file]', [{ name: 'photo.jpg', buffer: png }, { name: 'doc.pdf', buffer: Buffer.from('%PDF-1.4\n' + ' '.repeat(40)) }, { name: 'data', buffer: Buffer.from('{"a":1}') }, { name: 'a.docx', buffer: Buffer.from(F2.zipSync({ 'word/document.xml': new Uint8Array([60]) })) }]); await page.waitForSelector('[data-result=ready]');
+    const rows = await page.locator('.ut-table tr').allInnerTexts(); const txt = rows.join('\n'); assert.match(txt, /photo\.jpg\s+PNG image\s+image\/png[\s\S]*⚠ no, the content looks like \.png/); assert.match(txt, /doc\.pdf\s+PDF document[\s\S]*✓ yes/); assert.match(txt, /data\s+JSON data[\s\S]*\(no extension\)/); assert.match(txt, /a\.docx\s+Word document \(DOCX\)/);
+  },
+  async 'folder-tree-generator'(page) {
+    await area(page).fill('src/app.js\nsrc/lib/util.js\nREADME.md\nnode_modules/x/i.js'); await page.waitForTimeout(400); assert.equal(await out(page).inputValue(), '.\n├── src/\n│   ├── lib/\n│   │   └── util.js\n│   └── app.js\n└── README.md'); assert.match(await rootText(page), /Files\s*3/);
+    await page.locator('#tool-root input[type=number]').fill('1'); await page.waitForTimeout(300); assert.equal(await out(page).inputValue(), '.\n├── src/\n└── README.md');
+    await page.locator('#tool-root input[type=number]').fill('0'); const dir = tmp(); mkdirSync(join(dir, 'proj/sub'), { recursive: true }); writeFileSync(join(dir, 'proj/a.txt'), 'x'.repeat(2000)); writeFileSync(join(dir, 'proj/sub/b.txt'), 'y'); await page.locator('#tool-root input[webkitdirectory]').setInputFiles(join(dir, 'proj')); await page.waitForTimeout(500); const t = await out(page).inputValue(); assert.match(t, /^proj\/\n/); assert.match(t, /├── sub\/\n│ {3}└── b\.txt\n└── a\.txt/);
+  },
+  async 'exif-viewer'(page) {
+    const dir = tmp(); const jpg = join(dir, 'photo.jpg'); await makeImage(page, jpg, { type: 'image/jpeg' }); writeFileSync(jpg, addExif(new Uint8Array(readFileSync(jpg)))); await page.setInputFiles('#tool-root input[type=file]', jpg); await page.waitForSelector('[data-result=ready]'); const t = await rootText(page); assert.match(t, /GPS location: 52\.50000, 13\.40000/); assert.match(t, /Camera make\s+Canon/); assert.match(t, /Orientation\s+6/); assert.ok(await page.locator('a[href*="openstreetmap.org"]').count() === 1);
+    const plain = join(dir, 'plain.png'); await makeImage(page, plain, {}); await page.setInputFiles('#tool-root input[type=file]', plain); await page.waitForTimeout(500); assert.match(await rootText(page), /No EXIF metadata found/);
   },
 });
 

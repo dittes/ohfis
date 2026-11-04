@@ -1,6 +1,7 @@
 // text.js — UI for the text tools. Logic lives in lib/text.js (unit-tested).
 import { h, t, textTool, wrap, field, select, check, numInput, textInput, area, btn, copyText, download, stat, table, fmtNum, copyBar, debounce } from './kit.js';
 import * as T from './lib/text.js';
+import * as TM from './lib/textmore.js';
 import * as D from './lib/diff.js';
 import { generate } from './lib/dummy.js';
 
@@ -244,5 +245,23 @@ export const tools = {
     const playBtn = btn('Play as sound', play, 'primary');
     ui.append(h('div', { class: 'ut-options' }, field('Direction', dir), field('Speed (words per minute)', wpm), field('Pitch (Hz)', freq)), h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('strong', {}, t('input')), input), h('div', { class: 'ut-col' }, h('strong', {}, t('output')), out)),
       h('div', { class: 'ut-actions' }, playBtn, btn(t('copy'), () => copyText(out.value)), btn(t('sample'), () => { input.value = 'SOS Help'; run(); }, 'ghost'))); run();
+  },
+
+  'readability-score'(root) {
+    const lab = { fleschReadingEase: ['Flesch Reading Ease', '0–100, higher = easier. 60–70 is plain English'], fleschKincaidGrade: ['Flesch–Kincaid grade', 'US school grade needed to understand the text'], gunningFog: ['Gunning Fog index', 'years of education needed'], smog: ['SMOG index', 'years of education needed'], amstad: ['Flesch score for German (Amstad)', '0–100, higher = easier'], wiener: ['Wiener Sachtextformel', 'school grade (4 = very easy, 15 = very hard)'], lix: ['LIX', 'under 30 very easy, 40 easy, 50 medium, 60+ difficult (any language)'], ari: ['Automated Readability Index', 'US school grade (any language)'], colemanLiau: ['Coleman–Liau index', 'US school grade (any language)'] };
+    textTool(root, { inputLabel: 'Text', outputLabel: 'Scores', sample: 'Plain language helps everyone. Short sentences are easier to read. However, notwithstanding considerable methodological heterogeneity, interdisciplinary investigations demonstrate statistically significant correlations.',
+      options: [{ key: 'lang', label: 'Language of the text', type: 'select', value: document.documentElement.lang === 'de' ? 'de' : 'en', choices: [['en', 'English'], ['de', 'German'], ['other', 'Another language (language-independent scores only)']] }, { key: 'limit', label: 'Flag sentences longer than (words)', type: 'number', value: 25, min: 8, max: 80 }],
+      run(s, o) { const r = TM.readability(s, o.lang); if (!r) return { text: '', stats: [] }; const lines = Object.keys(lab).filter(k => r[k] !== undefined).map(k => `${lab[k][0]}: ${r[k]}  (${lab[k][1]})`); const ls = TM.longSentences(s, o.limit); const text = [`Level: ${r.level}`, '', ...lines, '', `Average sentence length: ${r.avgSentenceLength} words`, `Average syllables per word: ${r.avgSyllablesPerWord}`, `Long words (over 6 letters): ${r.longWordShare} %`, ...(ls.length ? ['', `Sentences over ${o.limit} words (${ls.length}):`, ...ls.slice(0, 10).map(x => `• (${x.n}) ${x.s.length > 160 ? x.s.slice(0, 160) + '…' : x.s}`)] : ['', `No sentence is longer than ${o.limit} words.`])].join('\n'); return { text, stats: [['Level', r.level], ['Words', r.words], ['Sentences', r.sentences], ['Words per sentence', r.avgSentenceLength]] }; } });
+  },
+  'text-summarizer'(root) {
+    textTool(root, { inputLabel: 'Text to summarise', outputLabel: 'Summary', sample: 'Solar power is growing fast. Many homes now use solar panels on the roof. Solar panels convert sunlight into electricity. The weather was nice yesterday. Cheap solar panels make solar power popular. My cat likes fish. Governments support solar power with subsidies.',
+      options: [{ key: 'n', label: 'Sentences in the summary', type: 'number', value: 3, min: 1, max: 30, step: 1 }, { key: 'lang', label: 'Language', type: 'select', value: document.documentElement.lang || 'en', choices: [['en', 'English'], ['de', 'German'], ['pl', 'Polish'], ['cs', 'Czech']] }],
+      run(s, o) { if (!s.trim()) return { text: '', stats: [] }; const all = TM.sentencesOf(s), sum = TM.summarize(s, Math.max(1, Math.round(o.n)), o.lang), kw = TM.topKeywords(s, 6, o.lang); const text = sum.join(' '); return { text, stats: [['Sentences', `${sum.length} of ${all.length}`], ['Shorter by', `${all.length ? Math.round((1 - text.length / s.length) * 100) : 0} %`], ['Key words', kw.map(k => k[0]).join(', ') || '–']] }; } });
+  },
+  'text-similarity-checker'(root) {
+    const ui = wrap(root); const a = area({ rows: 8, placeholder: 'Text A (for example the original)', 'aria-label': 'Text A', onInput: debounce(run, 250) }), b = area({ rows: 8, placeholder: 'Text B (for example the text to check)', 'aria-label': 'Text B', onInput: debounce(run, 250) }), minRun = numInput(5, { min: 3, max: 30, step: 1, onInput: debounce(run, 250) }), out = h('div'), info = h('div', { class: 'ut-stats' });
+    function run() { out.replaceChildren(); info.replaceChildren(); if (!a.value.trim() || !b.value.trim()) return; const r = TM.similarity(a.value, b.value, 3, Math.max(3, Number(minRun.value) || 5)); if (!r) return; info.replaceChildren(stat('Word sequences in common', `${r.jaccard} %`), stat('Word-use similarity', `${r.cosine} %`), stat('Shared passages cover A', `${r.sharedShareOfA} %`), stat('Shared passages cover B', `${r.sharedShareOfB} %`), stat('Words', `${r.wordsA} / ${r.wordsB}`));
+      out.replaceChildren(r.sharedPassages.length ? h('div', {}, h('strong', {}, `Passages found in both texts (at least ${minRun.value} words in a row)`), table([['Words', 'Passage'], ...r.sharedPassages.slice(0, 100).map(p => [p.words, p.text])], { max: 100 })) : h('p', { class: 'pt-hint', 'data-result': 'ready' }, 'No passage of that length appears in both texts.')); }
+    ui.append(h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('strong', {}, 'Text A'), a), h('div', { class: 'ut-col' }, h('strong', {}, 'Text B'), b)), h('div', { class: 'ut-options' }, field('Shortest shared passage (words in a row)', minRun)), info, out, h('p', { class: 'pt-hint' }, 'Compares only the two texts you paste: it counts shared three-word sequences and finds long identical passages, ignoring case and punctuation. It is not a plagiarism checker against the internet, and it does not recognise reworded text.'));
   },
 };

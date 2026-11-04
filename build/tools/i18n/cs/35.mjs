@@ -1,0 +1,37 @@
+export default {
+'readability-score': [[
+`Vložte text a uvidíte, jak obtížně se čte: Flesch Reading Ease a ročník pro angličtinu, Amstadovo skóre a Wiener Sachtextformel pro němčinu a jazykově nezávislé hodnoty (LIX, ARI, Coleman–Liau) pro jakýkoli jazyk. Nástroj také vypíše vaše nejdelší věty, které se obvykle opravují nejrychleji.`,
+`Skóre vzniká z délky vět, délky slov a slabik, takže měří povrch textu, ne zda je dobře napsaný nebo pravdivý. Slabiky se počítají jednoduchými pravidly pro jazyk, což je blízko, ale ne přesné; pro polštinu, češtinu a další jazyky se ukazují jen hodnoty, které slabiky nepotřebují. Čísla používejte k porovnání verzí vlastního textu, ne jako verdikt.`],
+[`Vložte text a zvolte jeho jazyk.`,`Přečtěte si úroveň, skóre a seznam dlouhých vět.`,`Dlouhé věty zkraťte a zkontrolujte znovu.`],
+[[`Jaké je dobré skóre Fleschova?`,`Pro běžné čtenáře je 60–70 srozumitelná angličtina; webové texty a návody by měly mířit na 60 a více. Odborné texty bývají pod 30.`],[`Proč má němčina vlastní hodnoty?`,`Německá slova jsou delší a anglický vzorec Fleschova hodnotí německé texty jako příliš obtížné. Vzorce Amstada a Wienera jsou upraveny pro němčinu.`]]],
+'text-summarizer': [[
+`Vložte článek, zprávu nebo přepis, zvolte počet vět a získáte věty nesoucí nejvíc obsahu, v původním pořadí, spolu s klíčovými slovy. Podporována je angličtina, němčina, polština a čeština.`,
+`Jde o extraktivní shrnutí: každá věta se hodnotí podle počtu důležitých slov (častá slova kromě běžných stop slov), první věty dostanou malý bonus a nejlepší se vrátí beze změny. Text se nepřepisuje ani nechápe, takže může chybět jádro argumentace nebo se vyberou věty vyžadující kontext. Je to poctivé, rychlé a soukromé; pro skutečný abstrakt výsledek přečtěte a upravte.`],
+[`Vložte text a zvolte jazyk.`,`Nastavte počet vět.`,`Zkopírujte shrnutí.`],
+[[`Je to AI?`,`Ne. Je to průhledná metoda četnosti slov, která vybírá existující věty. Nic se negeneruje ani neodesílá.`],[`Proč chybí věta, kterou považuji za důležitou?`,`Metoda jen počítá slova. Zvyšte počet vět nebo zvolte jazyk odpovídající textu, aby se stop slova správně ignorovala.`]]],
+'text-similarity-checker': [[
+`Vložte dva texty a uvidíte podíl shodných posloupností slov, podobnost použitých slov a seznam pasáží, které se vyskytují v obou. Hodí se ke kontrole přepisu proti zdroji, k nalezení zkopírovaného odstavce mezi dokumenty nebo k zjištění, jak moc se liší dvě verze smlouvy.`,
+`Nástroj ignoruje velikost písmen a interpunkci, porovnává trojslovné posloupnosti (shingles) a vypisuje maximální shodné úseky alespoň zvolené délky. Porovnává jen dva vložené texty: není to kontrola plagiátů proti internetu a přeformulovaný text nerozpozná. Pro porovnání řádek po řádku se vložením a smazáním použijte porovnání textů (Diff).`],
+[`Vložte text A a text B.`,`Nastavte nejkratší hlášenou pasáž (výchozí 5 slov).`,`Přečtěte si procenta a společné pasáže.`],
+[[`Co znamená „společné posloupnosti slov“?`,`Podíl trojslovných posloupností vyskytujících se v obou textech ve srovnání se všemi posloupnostmi v kterémkoli z nich. 100 % znamená shodné znění.`],[`Je to kontrola plagiátů?`,`Ne pro web. Porovnává jen dva zadané texty.`]]],
+'docx-word-counter': [[
+`Přetáhněte soubor .docx a získáte počet slov, znaků s mezerami i bez, odstavců, vět, odhad počtu stran a dobu čtení a mluvení. Volby zahrnou nebo vyloučí poznámky pod čarou, vysvětlivky, záhlaví a zápatí.`,
+`Text se čte z XML dokumentu v souboru, bez otevření Wordu, takže funguje i u dokumentů, které nemůžete nebo nechcete otevřít. Textová pole, komentáře a sledovaná smazání se nepočítají a počet stran je jen odhad (500 slov na stranu), protože skutečné rozvržení závisí na písmech a okrajích. Čísla se mohou mírně lišit od vlastních čísel Wordu, který má vlastní pravidla pro slova s pomlčkou a pole.`],
+[`Přetáhněte soubor .docx.`,`Zvolte, zda se počítají poznámky, záhlaví a zápatí.`,`Přečtěte si čísla.`],
+[[`Otevře staré soubory .doc?`,`Ne, jen .docx. Starý soubor nejprve uložte jako .docx ve Wordu nebo LibreOffice.`],[`Proč Word ukazuje jiné číslo?`,`Word některé věci počítá jinak (textová pole, slova s pomlčkou, pole). Rozdíl je obvykle malý.`]]],
+'file-type-detector': [[
+`Přetáhněte soubor bez přípony, s podivnou příponou nebo názvem, kterému nedůvěřujete, a uvidíte, čím skutečně je: obrázek, PDF, dokument Office, archiv, zvuk, video, písmo, spustitelný soubor, databáze nebo text. U každého souboru dostanete rozpoznaný typ, typ MIME a informaci, zda název odpovídá obsahu.`,
+`Typ se čte z prvních bajtů souboru (jeho „magického čísla“), stejně jako to dělá příkaz file v Unixu, takže nezávisí na názvu. Formáty založené na ZIP se rozliší podle položek (DOCX, XLSX, PPTX, EPUB, JAR, APK, OpenDocument), rodina MP4 podle značky (MP4, MOV, HEIC, AVIF) a textové soubory podle obsahu (JSON, HTML, XML, SVG, skripty). Rozpoznává se zhruba 60 běžných formátů; soubor bez shody se ohlásí jako neznámá binární data. Nesoulad názvu a obsahu je varovným znamením malwaru, ale stává se i nevinně.`],
+[`Přetáhněte jeden nebo více souborů.`,`Přečtěte si rozpoznaný typ a zda název sedí.`,`Podle potřeby soubor přejmenujte se správnou příponou.`],
+[[`Je nesoulad nebezpečný?`,`Může být: malware se často schovává za nevinnou příponou. Je také častý po chybném přejmenování. Neotevírejte soubory, kterým nedůvěřujete.`],[`Nahrává se soubor?`,`Ne. V prohlížeči se čte jen prvních 70 KB.`]]],
+'folder-tree-generator': [[
+`Zvolte nebo přetáhněte složku, nebo vložte seznam cest, a získáte strukturu jako textový strom s řádky ├── a └──, připravenou pro README, tiket nebo dokumentaci. Volby skryjí složky jako node_modules a .git, omezí hloubku, ukážou jen složky, velikosti souborů a seřadí podle názvu nebo velikosti.`,
+`Čtou se jen názvy a velikosti souborů, nikdy jejich obsah, a nic neopustí váš počítač. Vložené seznamy fungují s lomítky i zpětnými lomítky a cesty končící lomítkem se berou jako složky. Prázdné složky se zobrazí, když je prohlížeč ohlásí; u velmi velkých složek (desítky tisíc souborů) může prohlížeči chvíli trvat.`],
+[`Přetáhněte nebo zvolte složku, nebo vložte cesty.`,`Nastavte seznam ignorovaných, hloubku a volby.`,`Zkopírujte strom nebo ho stáhněte.`],
+[[`Čte se obsah mých souborů?`,`Ne. Jen názvy a velikosti.`],[`Jak zobrazím jen nejvyšší úroveň?`,`Nastavte „Maximální hloubku“ na 1.`]]],
+'exif-viewer': [[
+`Přetáhněte fotografii a uvidíte, co o sobě prozrazuje: značku a model fotoaparátu, objektiv, datum pořízení, expozici, ISO, software a, pokud je přítomna, polohu GPS s odkazem na mapu. Když je poloha uložena, zobrazí se varování, protože kdokoli, kdo soubor dostane, vidí, kde byla fotografie pořízena.`,
+`Prohlížeč čte blok EXIF souborů JPEG, PNG a WebP ve vašem prohlížeči. Mnoho komunikátorů a sociálních sítí tato data při sdílení fotografie odstraní, ale přílohy e-mailů, odkazy v cloudu a přímé přenosy souborů je obvykle zachovají. Soubory HEIC tento prohlížeč nečte. K odstranění údajů před sdílením použijte odstranění metadat z obrázku.`],
+[`Přetáhněte fotografii.`,`Přečtěte si značky a zkontrolujte polohu GPS.`,`Odstraňte metadata nástrojem pro odstranění metadat z obrázku, pokud chcete fotografii sdílet.`],
+[[`Má každá fotografie polohu GPS?`,`Ne. Ukládá se jen, pokud byly pro aplikaci fotoaparátu zapnuty služby určování polohy. Snímky obrazovky a upravené obrázky ji obvykle nemají.`],[`Nahrává se moje fotografie?`,`Ne. Čte se ve vašem prohlížeči. Odkaz na mapu otevře OpenStreetMap, až když kliknete.`]]],
+};

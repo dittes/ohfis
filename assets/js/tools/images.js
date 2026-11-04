@@ -3,6 +3,7 @@ import { h, t, area, btn, select, check, field, numInput, textInput, filePicker,
 import { calcTool } from './calctool.js';
 import * as M from './lib/image.js';
 import * as I from './lib/it.js';
+
 import { createOcrWorker } from '../pdf/lib.js';
 
 const sizeFmt = n => n < 1024 ? `${n} B` : n < 1048576 ? `${(n / 1024).toFixed(1)} KB` : `${(n / 1048576).toFixed(2)} MB`;
@@ -202,5 +203,19 @@ export const tools = {
     batchTool(root, { hint: 'Reduces the number of colours and saves a small indexed PNG (like pngquant). Great for logos, icons, screenshots and illustrations; photos may show banding unless you use dithering.',
       options: [{ key: 'n', label: 'Number of colours', type: 'select', value: '32', choices: [['2', '2 (black and white)'], ['4', '4'], ['8', '8'], ['16', '16'], ['32', '32'], ['64', '64'], ['128', '128'], ['256', '256 (maximum for PNG-8)']] }, { key: 'dither', label: 'Dithering (smoother gradients, larger file)', type: 'check', value: false }, { key: 'max', label: 'Shrink very large images to a width of at most (px, 0 = keep)', type: 'number', value: 0, min: 0 }],
       async process(file, o) { const bmp = await loadBitmap(file); let w = bmp.width, hh = bmp.height; if (o.max && w > o.max) { hh = Math.round(hh * o.max / w); w = o.max; } const c = canvasOf(w, hh); const x = c.getContext('2d', { willReadFrequently: true }); x.drawImage(bmp, 0, 0, w, hh); const id = x.getImageData(0, 0, w, hh); const q = M.quantize(id.data, w, hh, Number(o.n), { dither: o.dither }); const { zlibSync } = await import('/assets/vendor/fflate/fflate.js'); const png = M.encodeIndexedPng(q.indices, w, hh, q.palette, b => zlibSync(b, { level: 9 })); return { blob: new Blob([png], { type: 'image/png' }), name: `${baseName(file.name)}-${o.n}colors.png`, dim: `${w}×${hh}, ${q.palette.length} colours` }; } });
+  },
+
+  'exif-viewer'(root) {
+    const ui = wrap(root); const info = h('div', { class: 'ut-stats' }), err = h('p', { class: 'pt-drop__error', role: 'alert', hidden: true }), out = h('div'), prev = h('img', { alt: 'Preview', style: { maxWidth: '260px', maxHeight: '200px', borderRadius: '8px', display: 'none' } }); let url = null;
+    const friendly = { Make: 'Camera make', Model: 'Camera model', LensModel: 'Lens', Software: 'Software', DateTimeOriginal: 'Taken', DateTime: 'Modified', ExposureTime: 'Exposure time', FNumber: 'Aperture (f)', ISO: 'ISO', ISOSpeedRatings: 'ISO', FocalLength: 'Focal length (mm)', Orientation: 'Orientation', Flash: 'Flash', Artist: 'Artist', Copyright: 'Copyright', ImageDescription: 'Description', XResolution: 'X resolution', YResolution: 'Y resolution' };
+    async function load([f]) { err.hidden = true; out.replaceChildren(); info.replaceChildren(); if (url) URL.revokeObjectURL(url); try { const bytes = await readBytes(f); const type = M.detectType(bytes); url = URL.createObjectURL(f); prev.src = url; prev.style.display = ''; let dims = '–'; try { const bmp = await createImageBitmap(f); dims = `${bmp.width} × ${bmp.height}`; bmp.close?.(); } catch { /* not decodable here */ }
+        info.replaceChildren(stat('File', f.name), stat('Format', type || 'unknown'), stat('Size', sizeFmt(f.size)), stat('Pixels', dims));
+        if (!['jpeg', 'png', 'webp'].includes(type)) { out.replaceChildren(h('p', { class: 'pt-hint', 'data-result': 'ready' }, type === 'unknown' ? 'This does not look like a JPEG, PNG or WebP image. HEIC photos are not supported by this viewer; convert them first.' : `${type.toUpperCase()} files are not read by this viewer (it reads JPEG, PNG and WebP).`)); return; }
+        const ex = M.readExif(bytes); if (!ex) { out.replaceChildren(h('p', { class: 'pt-notice', 'data-result': 'ready' }, 'No EXIF metadata found. The image carries no camera, date or location information.')); return; }
+        const rows = Object.entries(ex).filter(([k]) => k !== 'gps').map(([k, v]) => [friendly[k] || k, Array.isArray(v) ? v.join(', ') : String(v)]); const nodes = [];
+        if (ex.gps) { const { lat, lon, alt } = ex.gps; nodes.push(h('p', { class: 'pt-notice pt-notice--error', 'data-result': 'ready' }, `⚠ This photo contains a GPS location: ${lat.toFixed(5)}, ${lon.toFixed(5)}${alt !== undefined ? `, ${Math.round(alt)} m` : ''}. Anyone who gets the file can see where it was taken. `, h('a', { href: `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=15/${lat}/${lon}`, target: '_blank', rel: 'noopener' }, 'Show on map ↗'))); rows.unshift(['GPS latitude', lat.toFixed(6)], ['GPS longitude', lon.toFixed(6)]); } else nodes.push(h('span', { 'data-result': 'ready', class: 'pt-hint' }, 'No GPS location in this file.'));
+        out.replaceChildren(...nodes, table([['Tag', 'Value'], ...rows], { max: 300 }), h('p', { class: 'pt-hint' }, 'To remove all of this before you share the photo, use the Image Metadata Remover.')); } catch (e) { err.textContent = e.message || String(e); err.hidden = false; } }
+    const drop = h('div', { class: 'ut-drop' }, h('p', {}, 'Drop a photo (JPEG, PNG or WebP) here, or'), filePicker({ accept: 'image/jpeg,image/png,image/webp', label: t('chooseFile'), onFiles: load })); ['dragover', 'drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); if (ev === 'drop' && e.dataTransfer.files[0]) load([e.dataTransfer.files[0]]); }));
+    ui.append(drop, prev, info, err, out, h('p', { class: 'pt-hint' }, 'The metadata is read from the file in your browser; the photo is not uploaded. Messengers and social networks often strip it, but e-mail attachments and cloud links usually keep it.'));
   },
 };

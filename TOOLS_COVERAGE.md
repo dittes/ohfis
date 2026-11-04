@@ -11,7 +11,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - ◐ partly built: 14
 - 🔗 link-out or covered elsewhere: 8
 - ❌ not built: 13
-- Utility tools on the site: 262 (plus 26 PDF tools from the first redesign)
+- Utility tools on the site: 269 (plus 26 PDF tools from the first redesign)
 
 ## PDF, documents & print
 
@@ -350,9 +350,13 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - [markdown-previewer](/en/markdown-previewer/)
 - [css-html-minifier](/en/css-html-minifier/)
 - [lorem-ipsum-generator](/en/lorem-ipsum-generator/)
+- [file-type-detector](/en/file-type-detector/)
+- [folder-tree-generator](/en/folder-tree-generator/)
 - [zip-extractor](/en/zip-extractor/)
 - [zip-creator](/en/zip-creator/)
 - [pdf-to-html](/en/pdf-to-html/)
+- [docx-word-counter](/en/docx-word-counter/)
+- [exif-viewer](/en/exif-viewer/)
 - [audio-cutter](/en/audio-cutter/)
 - [audio-joiner](/en/audio-joiner/)
 - [audio-volume-changer](/en/audio-volume-changer/)
@@ -362,6 +366,9 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - [webcam-video-recorder](/en/webcam-video-recorder/)
 - [text-to-speech](/en/text-to-speech/)
 - [qr-code-generator](/en/qr-code-generator/)
+- [readability-score](/en/readability-score/)
+- [text-summarizer](/en/text-summarizer/)
+- [text-similarity-checker](/en/text-similarity-checker/)
 - [video-trimmer](/en/video-trimmer/)
 - [video-merger](/en/video-merger/)
 - [video-converter](/en/video-converter/)
