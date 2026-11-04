@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Seznam na text oddělený čárkami","url":"https://ohfis.com/cs/list-to-comma-separated/","description":"Převeďte řádky na seznamy s čárkami, tabulátory nebo uvozovkami, pole a SQL IN seznamy. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Textové nástroje","item":"https://ohfis.com/cs/text-tools/"},{"@type":"ListItem","position":3,"name":"Seznam na text oddělený čárkami"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Seznam na text oddělený čárkami","step":[{"@type":"HowToStep","position":1,"text":"Paste your list and choose the input separator."},{"@type":"HowToStep","position":2,"text":"Pick the output separator, quote style and wrapper."},{"@type":"HowToStep","position":3,"text":"Copy the result into your email, code or query."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I turn an Excel column into a comma separated list?","acceptedAnswer":{"@type":"Answer","text":"Copy the column in Excel, paste it here with \"new line\" as input separator and \"comma\" as output."}},{"@type":"Question","name":"Are quotes inside values escaped?","acceptedAnswer":{"@type":"Answer","text":"Yes. A value containing the chosen quote character gets a backslash in front of it."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Seznam na text oddělený čárkami","step":[{"@type":"HowToStep","position":1,"text":"Vložte seznam a zvolte vstupní oddělovač."},{"@type":"HowToStep","position":2,"text":"Vyberte výstupní oddělovač, styl uvozovek a závorky."},{"@type":"HowToStep","position":3,"text":"Zkopírujte výsledek do e-mailu, kódu nebo dotazu."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak změním sloupec z Excelu na seznam oddělený čárkami?","acceptedAnswer":{"@type":"Answer","text":"Zkopírujte sloupec v Excelu, vložte sem s „nový řádek“ jako vstupním oddělovačem a „čárka“ jako výstupním."}},{"@type":"Question","name":"Escapují se uvozovky uvnitř hodnot?","acceptedAnswer":{"@type":"Answer","text":"Ano. Hodnota obsahující zvolený znak uvozovky dostane před něj zpětné lomítko."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Seznam na text oddělený čárkami</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Paste a column from Excel and get &quot;a, b, c&quot; for an email field, a quoted array for code or a ready-made SQL IN list. The reverse works as well: split comma, semicolon, pipe, tab or space separated text back into one item per line.</p><p lang="en">The input is split on the chosen separator, every item is trimmed, empty entries are dropped, and each item is wrapped in single, double or backtick quotes with quotes inside the text escaped. The items are then joined with your output separator and optionally wrapped in [ ] or ( ).</p>
+        
+        <p>Vložte sloupec z Excelu a získáte „a, b, c“ pro pole e-mailu, pole v uvozovkách pro kód nebo hotový seznam SQL IN. Funguje to i obráceně: text oddělený čárkami, středníky, svislítkem, tabulátorem nebo mezerami rozdělíte zpět na jednu položku na řádek.</p><p>Vstup se rozdělí podle zvoleného oddělovače, každá položka se ořízne, prázdné záznamy se zahodí a každá položka se uzavře do jednoduchých, dvojitých nebo zpětných uvozovek s escapováním uvozovek uvnitř textu. Položky se pak spojí vaším výstupním oddělovačem a volitelně se uzavřou do [ ] nebo ( ).</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Paste your list and choose the input separator.</p></li><li><p lang="en">Pick the output separator, quote style and wrapper.</p></li><li><p lang="en">Copy the result into your email, code or query.</p></li></ol>
+        <ol class="s-steps"><li><p>Vložte seznam a zvolte vstupní oddělovač.</p></li><li><p>Vyberte výstupní oddělovač, styl uvozovek a závorky.</p></li><li><p>Zkopírujte výsledek do e-mailu, kódu nebo dotazu.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How do I turn an Excel column into a comma separated list?</summary><p lang="en">Copy the column in Excel, paste it here with &quot;new line&quot; as input separator and &quot;comma&quot; as output.</p></details>
-          <details><summary lang="en">Are quotes inside values escaped?</summary><p lang="en">Yes. A value containing the chosen quote character gets a backslash in front of it.</p></details>
+          <details open><summary>Jak změním sloupec z Excelu na seznam oddělený čárkami?</summary><p>Zkopírujte sloupec v Excelu, vložte sem s „nový řádek“ jako vstupním oddělovačem a „čárka“ jako výstupním.</p></details>
+          <details><summary>Escapují se uvozovky uvnitř hodnot?</summary><p>Ano. Hodnota obsahující zvolený znak uvozovky dostane před něj zpětné lomítko.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
