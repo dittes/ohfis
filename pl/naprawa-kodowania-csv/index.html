@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Naprawa kodowania CSV (UTF-8) – Online za darmo</title>
+  <meta name="description" content="Napraw zniekształcone znaki, np. MÃ¼ller, i przekonwertuj pliki do UTF-8. Za darmo, działa w przeglądarce, nic nie jest przesyłane.">
+  
+  <link rel="canonical" href="https://ohfis.com/pl/naprawa-kodowania-csv/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-encoding-fixer/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-kodierung-reparieren/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/naprawa-kodowania-csv/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/oprava-kodovani-csv/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-encoding-fixer/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/pl/naprawa-kodowania-csv/">
+  <meta property="og:title" content="Naprawa kodowania CSV (UTF-8) – Online za darmo">
+  <meta property="og:description" content="Napraw zniekształcone znaki, np. MÃ¼ller, i przekonwertuj pliki do UTF-8. Za darmo, działa w przeglądarce, nic nie jest przesyłane.">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=f5925d7f">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Naprawa kodowania CSV (UTF-8)","url":"https://ohfis.com/pl/naprawa-kodowania-csv/","description":"Napraw zniekształcone znaki, np. MÃ¼ller, i przekonwertuj pliki do UTF-8. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","inLanguage":"pl","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"Arkusze i CSV","item":"https://ohfis.com/pl/arkusze-i-csv/"},{"@type":"ListItem","position":3,"name":"Naprawa kodowania CSV (UTF-8)"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Naprawa kodowania CSV (UTF-8)","step":[{"@type":"HowToStep","position":1,"text":"Otwórz plik lub wklej zniekształcony tekst."},{"@type":"HowToStep","position":2,"text":"Zostaw kodowanie na automatyczne lub wybierz to, którego używa plik."},{"@type":"HowToStep","position":3,"text":"Sprawdź podgląd i pobierz plik UTF-8."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Co powoduje „Ã¼” zamiast „ü”?","acceptedAnswer":{"@type":"Answer","text":"Plik UTF-8 otwarto tak, jakby był Windows-1252 lub Latin-1. Każdy znak diakrytyczny to w UTF-8 dwa bajty, które pokazują się jako dwa błędne znaki."}},{"@type":"Question","name":"Po co dodawać BOM?","acceptedAnswer":{"@type":"Answer","text":"Excel zgaduje kodowanie plików CSV i bez znacznika kolejności bajtów często się myli. Z BOM poprawnie otwiera UTF-8."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Przejdź do treści</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/pl/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Główna nawigacja">
+        <a href="/pl/narzedzia-pdf/">PDF i dokumenty</a><a href="/pl/narzedzia-tekstowe/">Tekst i notatki</a><a href="/pl/arkusze-i-csv/" aria-current="page">Arkusze i CSV</a><a href="/pl/grafika-i-media/">Grafika i media</a><a href="/pl/czas-i-kalendarz/">Czas i kalendarz</a><a href="/pl/biznes-i-zespol/">Biznes i zespół</a><a href="/pl/narzedzia-it-i-web/">IT i web</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Język">pl</summary>
+          <ul>
+            <li><a href="/en/csv-encoding-fixer/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/csv-kodierung-reparieren/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/naprawa-kodowania-csv/" hreflang="pl" lang="pl" data-set-lang="pl" aria-current="true">Polski</a></li><li><a href="/cs/oprava-kodovani-csv/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Przełącz między trybem jasnym i ciemnym" title="Przełącz między trybem jasnym i ciemnym">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/pl/">Strona główna</a></li><li><a href="/pl/arkusze-i-csv/">Arkusze i CSV</a></li><li><span aria-current="page">Naprawa kodowania CSV (UTF-8)</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Naprawa kodowania CSV (UTF-8)</h1>
+        <p>Napraw zniekształcone znaki, np. MÃ¼ller, i przekonwertuj pliki do UTF-8.</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="csv-encoding-fixer" data-cat="data"><p class="pt-hint">Ładowanie narzędzia…</p><noscript><p class="pt-drop__error">To narzędzie wymaga JavaScriptu, bo plik jest przetwarzany w Twojej przeglądarce.</p></noscript></div>
+        <ul class="s-trust"><li>Bez przesyłania</li><li>Za darmo</li><li>Bez konta</li><li>Po załadowaniu działa offline</li></ul>
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>Jak działa: Naprawa kodowania CSV (UTF-8)</h2>
+        
+        <p>„MÃ¼ller” zamiast „Müller”, „cafÃ©” zamiast „café” i znaki zapytania tam, gdzie powinny być polskie litery: to pomylone kodowania. Otwórz plik tutaj, a zostanie zdekodowany właściwym zestawem znaków (wykrytym automatycznie lub wybranym z listy, jak Windows-1252, ISO-8859-2 czy UTF-16) i zapisany z powrotem jako UTF-8, w razie potrzeby z BOM dla Excela.</p><p>Zniekształcony tekst typu „MÃ¼ller” (mojibake) powstaje, gdy bajty UTF-8 odczytano jako Windows-1252. Naprawa to odwraca: każdy znak jest odwzorowywany na pierwotny bajt (łącznie ze specjalnymi pozycjami Windows-1252, jak € i “), a bajty dekodowane jako UTF-8. Zmieniane są tylko słowa, które faktycznie wyglądają na zepsute, a proces powtarza się dla tekstu uszkodzonego dwukrotnie. Dla plików w innym kodowaniu bajty są dekodowane przez TextDecoder przeglądarki. Wykrywanie sprawdza, czy plik jest poprawnym UTF-8, a w przeciwnym razie wraca do Windows-1252.</p>
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>Jak z tego korzystać</h2>
+        <ol class="s-steps"><li><p>Otwórz plik lub wklej zniekształcony tekst.</p></li><li><p>Zostaw kodowanie na automatyczne lub wybierz to, którego używa plik.</p></li><li><p>Sprawdź podgląd i pobierz plik UTF-8.</p></li></ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>Najczęstsze pytania</h2>
+        <div class="s-faq">
+          <details open><summary>Co powoduje „Ã¼” zamiast „ü”?</summary><p>Plik UTF-8 otwarto tak, jakby był Windows-1252 lub Latin-1. Każdy znak diakrytyczny to w UTF-8 dwa bajty, które pokazują się jako dwa błędne znaki.</p></details>
+          <details><summary>Po co dodawać BOM?</summary><p>Excel zgaduje kodowanie plików CSV i bez znacznika kolejności bajtów często się myli. Z BOM poprawnie otwiera UTF-8.</p></details>
+          <details><summary>Czy moje pliki są gdzieś przesyłane?</summary><p>Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony.</p></details>
+          <details><summary>Czy to narzędzie jest darmowe?</summary><p>Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="s-section">
+    <div class="s-wrap">
+      <h2>Przydatne także gdzie indziej</h2>
+      <p class="s-section__lede">Powiązane narzędzia na naszych innych stronach, za darmo i w przeglądarce.</p>
+      <div class="s-links"><a href="https://open-online.com/pl/csv" rel="noopener"><strong>Otwórz plik CSV</strong><small>Open Online ↗</small></a><a href="https://files-online.com/pl/metadane-pliku/" rel="noopener"><strong>Podgląd metadanych pliku</strong><small>Files Online ↗</small></a></div>
+    </div>
+  </section>
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>Może Ci się przydać</h2>
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="data" href="/pl/zmiana-separatora-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Zmiana separatora CSV</span>
+          <span class="s-card__desc">Wykryj separator pliku CSV i zamień go na przecinek, średnik, tabulator lub kreskę.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/usuwanie-niewidocznych-znakow/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Usuwanie niewidocznych znaków</span>
+          <span class="s-card__desc">Znajdź i usuń niewidoczne znaki, takie jak spacje zerowej szerokości i BOM.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/cudzyslowy-typograficzne-na-proste/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Cudzysłowy typograficzne na proste</span>
+          <span class="s-card__desc">Zamień zaokrąglone cudzysłowy, myślniki, wielokropki i ligatury na zwykły ASCII.</span>
+        </a><a class="s-card" data-cat="data" href="/pl/laczenie-plikow-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Łączenie plików CSV</span>
+          <span class="s-card__desc">Połącz kilka plików CSV w jeden, dopasowując kolumny według nazw.</span>
+        </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/pl/prywatnosc/">Prywatność</a>
+        <a href="/pl/nota-prawna/">Nota prawna</a>
+        <span class="s-footer__note">Działa w przeglądarce. Bez przesyłania, bez konta, bez śledzenia.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+  <script type="module" src="/assets/js/tools/main.js?v=b91dabba"></script>
+</body>
+</html>

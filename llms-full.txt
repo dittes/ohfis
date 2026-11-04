@@ -5,7 +5,7 @@
 ## About
 
 - Site: https://ohfis.com/
-- Languages: English (/en/), German (/de/), Polish (/pl/), Czech (/cs/). Utility tool URLs use the same slug in every language, for example /en/case-converter/ and /de/case-converter/.
+- Languages: English (/en/), German (/de/), Polish (/pl/), Czech (/cs/). Every URL is translated: the tool name in each language is the URL, for example /en/case-converter/ and /de/gross-und-kleinschreibung-umwandeln/.
 - Privacy: all processing happens in the browser using JavaScript, Canvas, Web Crypto and WebAssembly. There is no server that receives files.
 - Operator: Andreas Dittes, Berlin, Germany. Contact: ohfis@dittes.info
 - Sitemap: https://ohfis.com/sitemap.xml
@@ -41,7 +41,7 @@
 
 ## Documents & Print
 
-Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfis.com/en/documents-print/
+Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfis.com/en/pdf-tools/
 
 - [PDF Booklet Maker (Print as Folded Booklet)](https://ohfis.com/en/booklet-maker/): Rearrange PDF pages so a duplex printout folds into a booklet.
   Upload a PDF and get a new PDF in which two pages sit side by side on each landscape sheet, in the order that makes a stack of double-sided sheets fold into a booklet. Print it duplex, flip on the short edge, fold the stack in half and staple the fold.
@@ -278,7 +278,7 @@ Fix, convert, merge, compare and reshape CSV and spreadsheet data. Hub: https://
 
 ## Image Tools
 
-Resize, convert, blur, crop and clean images without uploading them. Hub: https://ohfis.com/en/image-tools/
+Resize, convert, blur, crop and clean images without uploading them. Hub: https://ohfis.com/en/image-media-tools/
 
 - [Image Converter (JPG, PNG, WebP, AVIF)](https://ohfis.com/en/image-converter/): Convert images between JPG, PNG, WebP and AVIF in your browser, in batches.
   Drop one or many images and convert them to the format you need: WebP for smaller web images, JPG for maximum compatibility, PNG for lossless graphics with transparency, or AVIF where your browser can create it. Quality is adjustable and everything happens on your device, so photos stay private and there is no upload wait.
@@ -432,7 +432,7 @@ Time zones, working days, timestamps, calendar files and timers. Hub: https://oh
 
 ## Business & Finance
 
-Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.com/en/business-finance-tools/
+Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.com/en/business-team-tools/
 
 - [Margin vs Markup Calculator](https://ohfis.com/en/margin-markup-calculator/): Convert between gross margin and markup and find the price from cost.
   Margin and markup both describe profit, but against different bases, and mixing them up is a classic pricing error: a 50% markup gives only a 33% margin. Enter any two of cost, price, margin and markup and see all the others.
@@ -616,7 +616,7 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 
 ## Notes & Privacy
 
-Scratchpads, checklists, passwords, QR codes and encrypted notes. Hub: https://ohfis.com/en/notes-privacy-tools/
+Scratchpads, checklists, passwords, QR codes and encrypted notes. Hub: https://ohfis.com/en/text-tools/
 
 - [Password Generator](https://ohfis.com/en/password-generator/): Create strong random passwords with custom rules, right in your browser.
   Pick the length and character types and get a fresh password with a strength estimate. Options include avoiding look-alike characters (I, l, 1, O, 0) and generating several passwords at once. The password never leaves your device and is not stored.
@@ -687,7 +687,7 @@ Scratchpads, checklists, passwords, QR codes and encrypted notes. Hub: https://o
 
 ## Team & Meetings
 
-Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.com/en/team-meeting-tools/
+Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.com/en/business-team-tools/
 
 - [PERT Estimator (Three-Point Estimate)](https://ohfis.com/en/pert-estimator/): Combine optimistic, likely and pessimistic estimates into expected time and confidence ranges.
   Estimates are uncertain, so ask for three numbers per task: optimistic, most likely and pessimistic. The tool computes the expected duration of each task and of the whole project, the standard deviation, the time within which you can be 80% or 95% sure to finish, and the chance of meeting a target date.
@@ -713,7 +713,7 @@ Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.
 
 ## Audio & Video
 
-Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.com/en/audio-video-tools/
+Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.com/en/image-media-tools/
 
 - [Online Tone Generator (Sine, Square, Sweep)](https://ohfis.com/en/audio-tone-generator/): Play pure tones and frequency sweeps to test speakers and find hums or rattles.
   Play a pure tone at any frequency from 1 Hz to 20 kHz with sine, square, triangle or sawtooth waves, on both speakers or only the left or right one. A 30-second sweep slides from 20 Hz to 20 kHz so you can find the frequency at which a speaker rattles, a cabinet resonates or coil whine appears. The display shows the nearest musical note.

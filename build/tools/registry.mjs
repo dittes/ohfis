@@ -47,6 +47,49 @@ export const UCATS = {
 };
 export const UCAT_ORDER = ['documents', 'text', 'data', 'images', 'time', 'finance', 'dev', 'notes', 'team', 'media'];
 
+
+/**
+ * The seven top-level sections shown in the navigation. Each groups one or more of the
+ * finer categories above; "pdf" is the PDF-tools hub (its URL lives in PAGES.pdfTools).
+ * slug = URL segment per language (en, de, pl, cs).
+ */
+export const GROUPS = {
+  pdf: { icon: 'merge', cats: ['documents'],
+    name: ['PDF & Documents', 'PDF & Dokumente', 'PDF i dokumenty', 'PDF a dokumenty'] },
+  text: { icon: 'text', cats: ['text', 'notes'],
+    slug: ['text-tools', 'text-werkzeuge', 'narzedzia-tekstowe', 'textove-nastroje'],
+    name: ['Text & Notes', 'Text & Notizen', 'Tekst i notatki', 'Text a poznámky'],
+    short: ['Clean, convert, count and compare text; scratchpads, checklists, passwords, QR codes and encrypted notes.', 'Text bereinigen, umwandeln, zählen und vergleichen; Notizblöcke, Checklisten, Passwörter, QR-Codes und verschlüsselte Notizen.', 'Czyść, konwertuj, licz i porównuj tekst; notatniki, listy kontrolne, hasła, kody QR i szyfrowane notatki.', 'Čistěte, převádějte, počítejte a porovnávejte text; poznámkové bloky, checklisty, hesla, QR kódy a šifrované poznámky.'],
+    h1: ['Free online text and notes tools', 'Kostenlose Text- und Notiz-Tools online', 'Darmowe narzędzia do tekstu i notatek online', 'Bezplatné online nástroje pro text a poznámky'] },
+  data: { icon: 'table', cats: ['data'],
+    slug: ['spreadsheet-csv-tools', 'tabellen-csv-werkzeuge', 'arkusze-i-csv', 'tabulky-a-csv'],
+    name: ['Spreadsheets & CSV', 'Tabellen & CSV', 'Arkusze i CSV', 'Tabulky a CSV'],
+    short: UCATS.data.short,
+    h1: ['CSV and spreadsheet tools', 'CSV- und Tabellen-Tools', 'Narzędzia do CSV i arkuszy', 'Nástroje pro CSV a tabulky'] },
+  images: { icon: 'image', cats: ['images', 'media'],
+    slug: ['image-media-tools', 'bild-und-medien-werkzeuge', 'grafika-i-media', 'obrazky-a-media'],
+    name: ['Images & Media', 'Bilder & Medien', 'Grafika i media', 'Obrázky a média'],
+    short: ['Resize, convert, blur and crop images; tone generators, teleprompter, recorders and display tests.', 'Bilder skalieren, umwandeln, verpixeln und zuschneiden; Tongeneratoren, Teleprompter, Rekorder und Display-Tests.', 'Zmieniaj rozmiar, konwertuj, rozmywaj i przycinaj obrazy; generatory tonu, teleprompter, rejestratory i testy ekranu.', 'Měňte velikost, převádějte, rozmazávejte a ořezávejte obrázky; generátory tónů, teleprompter, rekordéry a testy displeje.'],
+    h1: ['Free online image and media tools', 'Kostenlose Bild- und Medien-Tools online', 'Darmowe narzędzia graficzne i medialne online', 'Bezplatné online nástroje pro obrázky a média'] },
+  time: { icon: 'clock', cats: ['time'],
+    slug: ['time-calendar-tools', 'zeit-und-kalender-werkzeuge', 'czas-i-kalendarz', 'cas-a-kalendar'],
+    name: ['Time & Calendar', 'Zeit & Kalender', 'Czas i kalendarz', 'Čas a kalendář'],
+    short: UCATS.time.short,
+    h1: ['Time, date and calendar tools', 'Tools für Zeit, Datum und Kalender', 'Narzędzia czasu, dat i kalendarza', 'Nástroje pro čas, datum a kalendář'] },
+  business: { icon: 'coins', cats: ['finance', 'team'],
+    slug: ['business-team-tools', 'business-und-team-werkzeuge', 'biznes-i-zespol', 'byznys-a-tym'],
+    name: ['Business & Team', 'Business & Team', 'Biznes i zespół', 'Byznys a tým'],
+    short: ['Margins, runway, VAT and pricing; estimates, decision tools, brackets, pickers and org charts.', 'Margen, Runway, MwSt. und Preise; Schätzungen, Entscheidungshilfen, Turnierbäume, Zufallsauswahl und Organigramme.', 'Marże, runway, VAT i ceny; szacowanie, decyzje, drabinki, losowanie i schematy organizacyjne.', 'Marže, runway, DPH a ceny; odhady, rozhodovací nástroje, pavouky, losování a organigramy.'],
+    h1: ['Business and team tools', 'Business- und Team-Tools', 'Narzędzia biznesowe i zespołowe', 'Byznys a týmové nástroje'] },
+  dev: { icon: 'code', cats: ['dev'],
+    slug: ['it-web-tools', 'it-und-web-werkzeuge', 'narzedzia-it-i-web', 'it-a-web-nastroje'],
+    name: ['IT & Web', 'IT & Web', 'IT i web', 'IT a web'],
+    short: UCATS.dev.short,
+    h1: ['IT and web helper tools', 'Hilfs-Tools für IT und Web', 'Narzędzia pomocnicze IT i web', 'Pomocné nástroje pro IT a web'] },
+};
+export const GROUP_ORDER = ['pdf', 'text', 'data', 'images', 'time', 'business', 'dev'];
+export const GROUP_OF = Object.fromEntries(Object.entries(GROUPS).flatMap(([g, v]) => v.cats.map(c => [c, g])));
+
 /** Links to the sister sites. key → [site, path, labels (en, de, pl, cs)] */
 export const SITES = {
   files: 'https://files-online.com', open: 'https://open-online.com', culators: 'https://culators.com', test: 'https://test.institute',

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Hilfs-Tools für IT und Web – Kostenlos online</title>
+  <meta name="description" content="Hashes, Encoder, Cron, JWT, Farben, Netzwerke und Web-Snippets. Kostenlos, läuft im Browser, nichts wird hochgeladen.">
+  
+  <link rel="canonical" href="https://ohfis.com/de/it-und-web-werkzeuge/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/it-web-tools/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/it-und-web-werkzeuge/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/narzedzia-it-i-web/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/it-a-web-nastroje/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/it-web-tools/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/de/it-und-web-werkzeuge/">
+  <meta property="og:title" content="Hilfs-Tools für IT und Web – Kostenlos online">
+  <meta property="og:description" content="Hashes, Encoder, Cron, JWT, Farben, Netzwerke und Web-Snippets. Kostenlos, läuft im Browser, nichts wird hochgeladen.">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=f5925d7f">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://ohfis.com/de/"},{"@type":"ListItem","position":2,"name":"IT & Web"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Werden meine Dateien hochgeladen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Datei wird von deinem eigenen Browser geöffnet und verarbeitet. Das kannst du selbst prüfen: Öffne beim Arbeiten den Netzwerk-Tab deines Browsers oder trenne die Internetverbindung, nachdem die Seite geladen ist."}},{"@type":"Question","name":"Ist dieses Tool kostenlos?","acceptedAnswer":{"@type":"Answer","text":"Ja, vollständig. Es gibt keine Anmeldung, keinen Bezahltarif und kein Wasserzeichen auf deinen Dateien."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Hilfs-Tools für IT und Web","description":"Hashes, Encoder, Cron, JWT, Farben, Netzwerke und Web-Snippets. Kostenlos, läuft im Browser, nichts wird hochgeladen.","url":"https://ohfis.com/de/it-und-web-werkzeuge/","inLanguage":"de","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://ohfis.com/de/datei-pruefsumme-berechnen/","name":"Datei-Prüfsumme berechnen (SHA-256, MD5, SHA-1)"},{"@type":"ListItem","position":2,"url":"https://ohfis.com/de/subnetz-rechner/","name":"Subnetz-Rechner (CIDR, Netzmaske, IP-Bereich)"},{"@type":"ListItem","position":3,"url":"https://ohfis.com/de/cron-ausdruck-verstaendlich-uebersetzen/","name":"Cron-Ausdruck verständlich übersetzen"},{"@type":"ListItem","position":4,"url":"https://ohfis.com/de/http-statuscodes-referenz/","name":"HTTP-Statuscodes Referenz"},{"@type":"ListItem","position":5,"url":"https://ohfis.com/de/curl-in-javascript-python-umwandeln/","name":"cURL in JavaScript & Python umwandeln"},{"@type":"ListItem","position":6,"url":"https://ohfis.com/de/user-agent-string-entschluesseln/","name":"User-Agent-String entschlüsseln"},{"@type":"ListItem","position":7,"url":"https://ohfis.com/de/html-entities-kodieren-dekodieren/","name":"HTML-Entities kodieren & dekodieren"},{"@type":"ListItem","position":8,"url":"https://ohfis.com/de/base64-kodieren-dekodieren/","name":"Base64 kodieren & dekodieren (Text und Dateien)"},{"@type":"ListItem","position":9,"url":"https://ohfis.com/de/farbumrechner/","name":"Farbumrechner (HEX, RGB, HSL, CMYK)"},{"@type":"ListItem","position":10,"url":"https://ohfis.com/de/uuid-guid-generator/","name":"UUID-/GUID-Generator (v4 & v7)"},{"@type":"ListItem","position":11,"url":"https://ohfis.com/de/zahlensystem-umrechner/","name":"Zahlensystem-Umrechner (Binär, Oktal, Dezimal, Hex)"},{"@type":"ListItem","position":12,"url":"https://ohfis.com/de/basic-auth-header-erzeugen/","name":"Basic-Auth-Header erzeugen"},{"@type":"ListItem","position":13,"url":"https://ohfis.com/de/hex-farbe-mit-transparenz/","name":"Hex-Farbe mit Transparenz (Deckkraft in Hex)"},{"@type":"ListItem","position":14,"url":"https://ohfis.com/de/meta-viewport-tag-erzeugen/","name":"Meta-Viewport-Tag erzeugen"},{"@type":"ListItem","position":15,"url":"https://ohfis.com/de/favicon-html-tags-erzeugen/","name":"Favicon-HTML-Tags erzeugen"},{"@type":"ListItem","position":16,"url":"https://ohfis.com/de/url-query-string-erstellen/","name":"URL-Query-String erstellen"},{"@type":"ListItem","position":17,"url":"https://ohfis.com/de/cache-buster-url-erzeugen/","name":"Cache-Buster-URL erzeugen"},{"@type":"ListItem","position":18,"url":"https://ohfis.com/de/ssl-zertifikat-ablauf-pruefen-erinnerung/","name":"SSL-Zertifikat Ablauf prüfen & Erinnerung"},{"@type":"ListItem","position":19,"url":"https://ohfis.com/de/e-mail-header-analysieren/","name":"E-Mail-Header analysieren"},{"@type":"ListItem","position":20,"url":"https://ohfis.com/de/robots-txt-generator-pruefer/","name":"robots.txt Generator & Prüfer"},{"@type":"ListItem","position":21,"url":"https://ohfis.com/de/sitemap-xml-pruefen-formatieren/","name":"Sitemap-XML prüfen & formatieren"},{"@type":"ListItem","position":22,"url":"https://ohfis.com/de/open-graph-social-share-vorschau/","name":"Open-Graph- & Social-Share-Vorschau"},{"@type":"ListItem","position":23,"url":"https://ohfis.com/de/css-box-shadow-generator/","name":"CSS-Box-Shadow-Generator"},{"@type":"ListItem","position":24,"url":"https://ohfis.com/de/regulaeren-ausdruck-erklaeren-testen/","name":"Regulären Ausdruck erklären & testen"},{"@type":"ListItem","position":25,"url":"https://ohfis.com/de/portnummern-nachschlagen/","name":"Portnummern nachschlagen (TCP/UDP-Ports)"},{"@type":"ListItem","position":26,"url":"https://ohfis.com/de/mime-typ-nachschlagen/","name":"MIME-Typ nachschlagen (Dateiendung zu Content-Type)"},{"@type":"ListItem","position":27,"url":"https://ohfis.com/de/spf-dmarc-eintrag-erstellen/","name":"SPF- & DMARC-Eintrag erstellen"},{"@type":"ListItem","position":28,"url":"https://ohfis.com/de/css-flexbox-spielwiese-spickzettel/","name":"CSS-Flexbox-Spielwiese & Spickzettel"},{"@type":"ListItem","position":29,"url":"https://ohfis.com/de/webhook-signatur-testen/","name":"Webhook-Signatur testen (HMAC SHA-256)"}]}}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Zum Inhalt springen</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/de/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Hauptnavigation">
+        <a href="/de/pdf-tools/">PDF &amp; Dokumente</a><a href="/de/text-werkzeuge/">Text &amp; Notizen</a><a href="/de/tabellen-csv-werkzeuge/">Tabellen &amp; CSV</a><a href="/de/bild-und-medien-werkzeuge/">Bilder &amp; Medien</a><a href="/de/zeit-und-kalender-werkzeuge/">Zeit &amp; Kalender</a><a href="/de/business-und-team-werkzeuge/">Business &amp; Team</a><a href="/de/it-und-web-werkzeuge/" aria-current="page">IT &amp; Web</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Sprache">de</summary>
+          <ul>
+            <li><a href="/en/it-web-tools/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/it-und-web-werkzeuge/" hreflang="de" lang="de" data-set-lang="de" aria-current="true">Deutsch</a></li><li><a href="/pl/narzedzia-it-i-web/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/it-a-web-nastroje/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Zwischen hell und dunkel wechseln" title="Zwischen hell und dunkel wechseln">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menü" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/de/">Startseite</a></li><li><span aria-current="page">IT &amp; Web</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Hilfs-Tools für IT und Web</h1>
+        <p>Hashes, Encoder, Cron, JWT, Farben, Netzwerke und Web-Snippets. Jedes Tool läuft im Browser. Nichts, was du einfügst oder öffnest, wird hochgeladen.</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cat">
+        
+        <div class="s-cards"><a class="s-card" data-cat="dev" href="/de/datei-pruefsumme-berechnen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Datei-Prüfsumme berechnen (SHA-256, MD5, SHA-1)</span>
+          <span class="s-card__desc">Datei-Hashes im Browser berechnen und vergleichen, um Downloads zu prüfen.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/subnetz-rechner/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Subnetz-Rechner (CIDR, Netzmaske, IP-Bereich)</span>
+          <span class="s-card__desc">Netzwerk, Broadcast, nutzbare Hosts und Subnetz-Aufteilung für jeden IPv4-Bereich.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/cron-ausdruck-verstaendlich-uebersetzen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Cron-Ausdruck verständlich übersetzen</span>
+          <span class="s-card__desc">Cron-Zeitpläne in verständliche Sprache übersetzen und die nächsten Ausführungen sehen.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/http-statuscodes-referenz/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">HTTP-Statuscodes Referenz</span>
+          <span class="s-card__desc">Jeden HTTP-Statuscode suchen, mit verständlicher Erklärung und Lösung.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/curl-in-javascript-python-umwandeln/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">cURL in JavaScript &amp; Python umwandeln</span>
+          <span class="s-card__desc">Einen curl-Befehl in lauffähigen fetch- und Python-requests-Code umwandeln.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/user-agent-string-entschluesseln/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">User-Agent-String entschlüsseln</span>
+          <span class="s-card__desc">Browser, Betriebssystem, Gerät und Engine aus einem User-Agent-String ermitteln.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/html-entities-kodieren-dekodieren/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">HTML-Entities kodieren &amp; dekodieren</span>
+          <span class="s-card__desc">Sonderzeichen in HTML-Entities umwandeln und zurück.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/base64-kodieren-dekodieren/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Base64 kodieren &amp; dekodieren (Text und Dateien)</span>
+          <span class="s-card__desc">Base64 und Data-URLs kodieren oder dekodieren, für Text und Dateien.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/farbumrechner/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Farbumrechner (HEX, RGB, HSL, CMYK)</span>
+          <span class="s-card__desc">Farben zwischen HEX, RGB, HSL, HSV und CMYK umrechnen, mit Farbwähler und Pipette.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/uuid-guid-generator/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">UUID-/GUID-Generator (v4 &amp; v7)</span>
+          <span class="s-card__desc">Stapel sicherer zufälliger UUIDs erzeugen, auch zeitlich sortierbare v7.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/zahlensystem-umrechner/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Zahlensystem-Umrechner (Binär, Oktal, Dezimal, Hex)</span>
+          <span class="s-card__desc">Ganze Zahlen zwischen den Basen 2 bis 36 umrechnen, in beliebiger Größe.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/basic-auth-header-erzeugen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Basic-Auth-Header erzeugen</span>
+          <span class="s-card__desc">Den Authorization: Basic-Header aus Benutzername und Passwort erzeugen.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/hex-farbe-mit-transparenz/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Hex-Farbe mit Transparenz (Deckkraft in Hex)</span>
+          <span class="s-card__desc">Deckkraft-Prozente in zweistellige Hex-Alphawerte umrechnen, z. B. 50 % = 80.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/meta-viewport-tag-erzeugen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Meta-Viewport-Tag erzeugen</span>
+          <span class="s-card__desc">Einen korrekten Viewport-Tag für responsive Seiten erzeugen.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/favicon-html-tags-erzeugen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Favicon-HTML-Tags erzeugen</span>
+          <span class="s-card__desc">Die Link-Tags und das Manifest für Desktop- und Mobil-Icons erzeugen.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/url-query-string-erstellen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">URL-Query-String erstellen</span>
+          <span class="s-card__desc">Schlüssel-Wert-Paare in einen korrekt kodierten URL-Query-String umwandeln.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/cache-buster-url-erzeugen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Cache-Buster-URL erzeugen</span>
+          <span class="s-card__desc">Einen Versions- oder Zeitstempel-Parameter anhängen, damit Browser die neueste Datei laden.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/ssl-zertifikat-ablauf-pruefen-erinnerung/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">SSL-Zertifikat Ablauf prüfen &amp; Erinnerung</span>
+          <span class="s-card__desc">Ein Zertifikat lesen, die verbleibenden Tage sehen und Kalendererinnerungen herunterladen.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/e-mail-header-analysieren/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">E-Mail-Header analysieren</span>
+          <span class="s-card__desc">Den Weg einer E-Mail, Verzögerungen und SPF-, DKIM- und DMARC-Ergebnisse nachvollziehen.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/robots-txt-generator-pruefer/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">robots.txt Generator &amp; Prüfer</span>
+          <span class="s-card__desc">Eine robots.txt erstellen oder eine vorhandene auf Syntaxfehler prüfen.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/sitemap-xml-pruefen-formatieren/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Sitemap-XML prüfen &amp; formatieren</span>
+          <span class="s-card__desc">Eine Sitemap gegen den Standard prüfen und formatieren.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/open-graph-social-share-vorschau/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Open-Graph- &amp; Social-Share-Vorschau</span>
+          <span class="s-card__desc">Vorschau, wie ein Link auf Facebook, X, LinkedIn und Slack aussieht, mit den Meta-Tags.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/css-box-shadow-generator/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">CSS-Box-Shadow-Generator</span>
+          <span class="s-card__desc">Geschichtete Box-Shadows visuell gestalten und sauberes CSS kopieren.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/regulaeren-ausdruck-erklaeren-testen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Regulären Ausdruck erklären &amp; testen</span>
+          <span class="s-card__desc">Einen regulären Ausdruck in verständliche Teile zerlegen und live testen.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/portnummern-nachschlagen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Portnummern nachschlagen (TCP/UDP-Ports)</span>
+          <span class="s-card__desc">Finde heraus, welcher Dienst einen Port nutzt und welchen Port ein Dienst verwendet.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/mime-typ-nachschlagen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">MIME-Typ nachschlagen (Dateiendung zu Content-Type)</span>
+          <span class="s-card__desc">Den richtigen Content-Type zu einer Dateiendung finden oder die Endung zu einem MIME-Typ.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/spf-dmarc-eintrag-erstellen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">SPF- &amp; DMARC-Eintrag erstellen</span>
+          <span class="s-card__desc">Die DNS-TXT-Einträge erstellen, die E-Mail-Spoofing Ihrer Domain verhindern.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/css-flexbox-spielwiese-spickzettel/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">CSS-Flexbox-Spielwiese &amp; Spickzettel</span>
+          <span class="s-card__desc">Flexbox-Einstellungen anklicken, das Ergebnis live sehen und das CSS kopieren.</span>
+        </a><a class="s-card" data-cat="dev" href="/de/webhook-signatur-testen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Webhook-Signatur testen (HMAC SHA-256)</span>
+          <span class="s-card__desc">GitHub-, Stripe- und Slack-ähnliche Webhook-Signaturen berechnen und die empfangene prüfen.</span>
+        </a></div>
+      </div></div>
+    </section>
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Häufige Fragen</h2>
+      <div class="s-faq">
+        <details open><summary>Werden meine Dateien hochgeladen?</summary><p>Nein. Die Datei wird von deinem eigenen Browser geöffnet und verarbeitet. Das kannst du selbst prüfen: Öffne beim Arbeiten den Netzwerk-Tab deines Browsers oder trenne die Internetverbindung, nachdem die Seite geladen ist.</p></details>
+        <details><summary>Ist dieses Tool kostenlos?</summary><p>Ja, vollständig. Es gibt keine Anmeldung, keinen Bezahltarif und kein Wasserzeichen auf deinen Dateien.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/de/datenschutz/">Datenschutz</a>
+        <a href="/de/impressum/">Impressum</a>
+        <span class="s-footer__note">Läuft in deinem Browser. Kein Upload, kein Konto, kein Tracking.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+</body>
+</html>

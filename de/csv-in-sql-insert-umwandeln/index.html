@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>CSV in SQL-INSERT umwandeln – Kostenlos online</title>
+  <meta name="description" content="Tabellenzeilen in INSERT- oder UPDATE-Anweisungen für MySQL, PostgreSQL, SQLite oder SQL Server umwandeln. Kostenlos, läuft im Browser, nichts wird hochgeladen.">
+  
+  <link rel="canonical" href="https://ohfis.com/de/csv-in-sql-insert-umwandeln/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/csv-to-sql/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/csv-in-sql-insert-umwandeln/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/konwerter-csv-na-sql-insert/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/prevod-csv-na-sql-insert/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/csv-to-sql/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/de/csv-in-sql-insert-umwandeln/">
+  <meta property="og:title" content="CSV in SQL-INSERT umwandeln – Kostenlos online">
+  <meta property="og:description" content="Tabellenzeilen in INSERT- oder UPDATE-Anweisungen für MySQL, PostgreSQL, SQLite oder SQL Server umwandeln. Kostenlos, läuft im Browser, nichts wird hochgeladen.">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=f5925d7f">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"CSV in SQL-INSERT umwandeln","url":"https://ohfis.com/de/csv-in-sql-insert-umwandeln/","description":"Tabellenzeilen in INSERT- oder UPDATE-Anweisungen für MySQL, PostgreSQL, SQLite oder SQL Server umwandeln. Kostenlos, läuft im Browser, nichts wird hochgeladen.","inLanguage":"de","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://ohfis.com/de/"},{"@type":"ListItem","position":2,"name":"Tabellen & CSV","item":"https://ohfis.com/de/tabellen-csv-werkzeuge/"},{"@type":"ListItem","position":3,"name":"CSV in SQL-INSERT umwandeln"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"So benutzt du es: CSV in SQL-INSERT umwandeln","step":[{"@type":"HowToStep","position":1,"text":"Fügen Sie Ihre CSV ein und geben Sie den Tabellennamen an."},{"@type":"HowToStep","position":2,"text":"Wählen Sie die Datenbank, INSERT oder UPDATE und ob die Tabelle angelegt werden soll."},{"@type":"HowToStep","position":3,"text":"Kopieren Sie das SQL oder laden Sie die .sql-Datei herunter."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ist das SQL gegen Injection sicher?","acceptedAnswer":{"@type":"Answer","text":"Werte werden maskiert, doch die Ausgabe ist für Import-Skripte gedacht, die Sie kontrollieren. Fügen Sie niemals nicht vertrauenswürdige Daten in ein Skript ein, das Sie ungeprüft ausführen."}},{"@type":"Question","name":"Wie werden die Typen gewählt?","acceptedAnswer":{"@type":"Answer","text":"Anhand der Werte jeder Spalte. Prüfen Sie das CREATE TABLE und passen Sie Typen wie die DECIMAL-Genauigkeit an Ihren Bedarf an."}},{"@type":"Question","name":"Werden meine Dateien hochgeladen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Datei wird von deinem eigenen Browser geöffnet und verarbeitet. Das kannst du selbst prüfen: Öffne beim Arbeiten den Netzwerk-Tab deines Browsers oder trenne die Internetverbindung, nachdem die Seite geladen ist."}},{"@type":"Question","name":"Ist dieses Tool kostenlos?","acceptedAnswer":{"@type":"Answer","text":"Ja, vollständig. Es gibt keine Anmeldung, keinen Bezahltarif und kein Wasserzeichen auf deinen Dateien."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Zum Inhalt springen</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/de/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Hauptnavigation">
+        <a href="/de/pdf-tools/">PDF &amp; Dokumente</a><a href="/de/text-werkzeuge/">Text &amp; Notizen</a><a href="/de/tabellen-csv-werkzeuge/" aria-current="page">Tabellen &amp; CSV</a><a href="/de/bild-und-medien-werkzeuge/">Bilder &amp; Medien</a><a href="/de/zeit-und-kalender-werkzeuge/">Zeit &amp; Kalender</a><a href="/de/business-und-team-werkzeuge/">Business &amp; Team</a><a href="/de/it-und-web-werkzeuge/">IT &amp; Web</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Sprache">de</summary>
+          <ul>
+            <li><a href="/en/csv-to-sql/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/csv-in-sql-insert-umwandeln/" hreflang="de" lang="de" data-set-lang="de" aria-current="true">Deutsch</a></li><li><a href="/pl/konwerter-csv-na-sql-insert/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/prevod-csv-na-sql-insert/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Zwischen hell und dunkel wechseln" title="Zwischen hell und dunkel wechseln">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menü" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/de/">Startseite</a></li><li><a href="/de/tabellen-csv-werkzeuge/">Tabellen &amp; CSV</a></li><li><span aria-current="page">CSV in SQL-INSERT umwandeln</span></li></ol>
+      <div class="s-toolhead">
+        <h1>CSV in SQL-INSERT umwandeln</h1>
+        <p>Tabellenzeilen in INSERT- oder UPDATE-Anweisungen für MySQL, PostgreSQL, SQLite oder SQL Server umwandeln.</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="csv-to-sql" data-cat="data"><p class="pt-hint">Tool wird geladen…</p><noscript><p class="pt-drop__error">Dieses Tool braucht JavaScript, weil deine Datei in deinem Browser verarbeitet wird.</p></noscript></div>
+        <ul class="s-trust"><li>Kein Upload</li><li>Kostenlos</li><li>Kein Konto</li><li>Einmal geladen, auch offline nutzbar</li></ul>
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>So funktioniert: CSV in SQL-INSERT umwandeln</h2>
+        
+        <p>Fügen Sie Zeilen aus einer Tabelle ein und erhalten Sie ausführbares SQL: ein CREATE TABLE mit geschätzten Spaltentypen, gebündelte INSERT-Anweisungen oder ein UPDATE pro Zeile über eine Schlüsselspalte. Die Anführungszeichen für Tabellen- und Spaltennamen folgen der gewählten Datenbank (Backticks, doppelte Anführungszeichen oder eckige Klammern).</p><p>Die Spaltentypen werden aus den Daten abgeleitet: Ganzzahlen, Dezimalzahlen, Wahrheitswerte, Datum, Zeitstempel, sonst Text; Spalten mit führenden Nullen bleiben Text, damit Postleitzahlen erhalten bleiben. Zeichenketten werden durch Verdoppeln einfacher Anführungszeichen maskiert (bei MySQL auch Backslashes), leere Zellen können zu NULL werden, und SQL-Server-Zeichenketten erhalten das Präfix N für Unicode. INSERTs werden in Pakete der eingestellten Größe geteilt. Prüfen Sie erzeugtes SQL immer, bevor Sie es gegen eine Produktivdatenbank ausführen.</p>
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>So benutzt du es</h2>
+        <ol class="s-steps"><li><p>Fügen Sie Ihre CSV ein und geben Sie den Tabellennamen an.</p></li><li><p>Wählen Sie die Datenbank, INSERT oder UPDATE und ob die Tabelle angelegt werden soll.</p></li><li><p>Kopieren Sie das SQL oder laden Sie die .sql-Datei herunter.</p></li></ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>Häufige Fragen</h2>
+        <div class="s-faq">
+          <details open><summary>Ist das SQL gegen Injection sicher?</summary><p>Werte werden maskiert, doch die Ausgabe ist für Import-Skripte gedacht, die Sie kontrollieren. Fügen Sie niemals nicht vertrauenswürdige Daten in ein Skript ein, das Sie ungeprüft ausführen.</p></details>
+          <details><summary>Wie werden die Typen gewählt?</summary><p>Anhand der Werte jeder Spalte. Prüfen Sie das CREATE TABLE und passen Sie Typen wie die DECIMAL-Genauigkeit an Ihren Bedarf an.</p></details>
+          <details><summary>Werden meine Dateien hochgeladen?</summary><p>Nein. Die Datei wird von deinem eigenen Browser geöffnet und verarbeitet. Das kannst du selbst prüfen: Öffne beim Arbeiten den Netzwerk-Tab deines Browsers oder trenne die Internetverbindung, nachdem die Seite geladen ist.</p></details>
+          <details><summary>Ist dieses Tool kostenlos?</summary><p>Ja, vollständig. Es gibt keine Anmeldung, keinen Bezahltarif und kein Wasserzeichen auf deinen Dateien.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="s-section">
+    <div class="s-wrap">
+      <h2>Auch nützlich</h2>
+      <p class="s-section__lede">Passende Tools auf unseren anderen Seiten, kostenlos und im Browser.</p>
+      <div class="s-links"><a href="https://open-online.com/de/csv" rel="noopener"><strong>CSV-Datei öffnen</strong><small>Open Online ↗</small></a></div>
+    </div>
+  </section>
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>Das könnte auch helfen</h2>
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="data" href="/de/csv-in-json-umwandeln/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">CSV in JSON umwandeln</span>
+          <span class="s-card__desc">CSV in JSON-Objekte umwandeln, mit getypten Werten und optionaler Verschachtelung.</span>
+        </a><a class="s-card" data-cat="data" href="/de/json-in-csv-umwandeln/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">JSON in CSV umwandeln</span>
+          <span class="s-card__desc">JSON-Arrays und verschachtelte Objekte zu einer CSV-Tabelle für Excel flachklopfen.</span>
+        </a><a class="s-card" data-cat="data" href="/de/csv-spaltenueberschriften-bereinigen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">CSV-Spaltenüberschriften bereinigen</span>
+          <span class="s-card__desc">Unsaubere Spaltentitel in saubere, datenbanktaugliche Namen verwandeln.</span>
+        </a><a class="s-card" data-cat="text" href="/de/testdaten-generator/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Testdaten-Generator</span>
+          <span class="s-card__desc">Realistische Namen, E-Mails und Adressen als Testdaten statt Lorem Ipsum erzeugen.</span>
+        </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/de/datenschutz/">Datenschutz</a>
+        <a href="/de/impressum/">Impressum</a>
+        <span class="s-footer__note">Läuft in deinem Browser. Kein Upload, kein Konto, kein Tracking.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+  <script type="module" src="/assets/js/tools/main.js?v=b91dabba"></script>
+</body>
+</html>

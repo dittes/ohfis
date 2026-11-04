@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Bezplatné online nástroje pro text a poznámky – Online zdarma</title>
+  <meta name="description" content="Čistěte, převádějte, počítejte a porovnávejte text; poznámkové bloky, checklisty, hesla, QR kódy a šifrované poznámky. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  
+  <link rel="canonical" href="https://ohfis.com/cs/textove-nastroje/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-tools/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/text-werkzeuge/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/narzedzia-tekstowe/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/textove-nastroje/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-tools/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/cs/textove-nastroje/">
+  <meta property="og:title" content="Bezplatné online nástroje pro text a poznámky – Online zdarma">
+  <meta property="og:description" content="Čistěte, převádějte, počítejte a porovnávejte text; poznámkové bloky, checklisty, hesla, QR kódy a šifrované poznámky. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=f5925d7f">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Text a poznámky"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Bezplatné online nástroje pro text a poznámky","description":"Čistěte, převádějte, počítejte a porovnávejte text; poznámkové bloky, checklisty, hesla, QR kódy a šifrované poznámky. Zdarma, běží v prohlížeči, nic se nenahrává.","url":"https://ohfis.com/cs/textove-nastroje/","inLanguage":"cs","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://ohfis.com/cs/generator-hesel/","name":"Generátor hesel"},{"@type":"ListItem","position":2,"url":"https://ohfis.com/cs/generator-hesel-z-frazi/","name":"Generátor hesel z frází (Diceware)"},{"@type":"ListItem","position":3,"url":"https://ohfis.com/cs/dekoder-a-overeni-jwt/","name":"Dekodér a ověření JWT"},{"@type":"ListItem","position":4,"url":"https://ohfis.com/cs/generator-qr-kodu-pro-wi-fi/","name":"Generátor QR kódu pro Wi-Fi"},{"@type":"ListItem","position":5,"url":"https://ohfis.com/cs/generator-qr-kodu-vcard/","name":"Generátor QR kódu vCard (vizitka)"},{"@type":"ListItem","position":6,"url":"https://ohfis.com/cs/generator-qr-kodu/","name":"Generátor QR kódů"},{"@type":"ListItem","position":7,"url":"https://ohfis.com/cs/sifrovana-poznamka-jako-odkaz/","name":"Šifrovaná poznámka jako odkaz"},{"@type":"ListItem","position":8,"url":"https://ohfis.com/cs/online-poznamkovy-blok-s-automatickym-ukladanim/","name":"Online poznámkový blok s automatickým ukládáním"},{"@type":"ListItem","position":9,"url":"https://ohfis.com/cs/checklist-s-ukazatelem-postupu/","name":"Checklist s ukazatelem postupu"},{"@type":"ListItem","position":10,"url":"https://ohfis.com/cs/kanban-tabule/","name":"Kanban tabule (K udělání, Dělám, Hotovo)"},{"@type":"ListItem","position":11,"url":"https://ohfis.com/cs/pocitadlo-kliknuti/","name":"Počítadlo kliknutí (čárkovač)"},{"@type":"ListItem","position":12,"url":"https://ohfis.com/cs/generator-obsahu-markdown/","name":"Generátor obsahu Markdown"},{"@type":"ListItem","position":13,"url":"https://ohfis.com/cs/doplnovani-promennych-sablony/","name":"Doplňování proměnných šablony ({{name}})"},{"@type":"ListItem","position":14,"url":"https://ohfis.com/cs/rozhodovaci-matice/","name":"Rozhodovací matice (vážené hodnocení)"},{"@type":"ListItem","position":15,"url":"https://ohfis.com/cs/formatovani-denniho-standupu/","name":"Formátování denního standupu"},{"@type":"ListItem","position":16,"url":"https://ohfis.com/cs/vlozit-jako-prosty-text/","name":"Vložit jako prostý text (odstranit formátování)"},{"@type":"ListItem","position":17,"url":"https://ohfis.com/cs/markdown-na-formatovany-e-mail/","name":"Markdown na formátovaný e-mail"},{"@type":"ListItem","position":18,"url":"https://ohfis.com/cs/schranka-textovych-uryvku/","name":"Schránka textových úryvků (kopírování jedním kliknutím)"},{"@type":"ListItem","position":19,"url":"https://ohfis.com/cs/prevod-formatovaneho-textu-na-ciste-html/","name":"Převod formátovaného textu na čisté HTML"},{"@type":"ListItem","position":20,"url":"https://ohfis.com/cs/prekladac-do-braillova-pisma/","name":"Překladač do Braillova písma"},{"@type":"ListItem","position":21,"url":"https://ohfis.com/cs/list-nouzovych-kontaktu/","name":"List nouzových kontaktů (tisknutelné PDF)"},{"@type":"ListItem","position":22,"url":"https://ohfis.com/cs/casovac-psani-s-pocitadlem-slov/","name":"Časovač psaní s počítadlem slov"},{"@type":"ListItem","position":23,"url":"https://ohfis.com/cs/odstraneni-neviditelnych-znaku/","name":"Odstranění neviditelných znaků"},{"@type":"ListItem","position":24,"url":"https://ohfis.com/cs/zmena-velikosti-pismen/","name":"Změna velikosti písmen"},{"@type":"ListItem","position":25,"url":"https://ohfis.com/cs/odstraneni-duplicitnich-radku/","name":"Odstranění duplicitních řádků"},{"@type":"ListItem","position":26,"url":"https://ohfis.com/cs/seznam-na-text-oddeleny-carkami/","name":"Seznam na text oddělený čárkami"},{"@type":"ListItem","position":27,"url":"https://ohfis.com/cs/extrakce-e-mailu-telefonu-a-url-z-textu/","name":"Extrakce e-mailů, telefonů a URL z textu"},{"@type":"ListItem","position":28,"url":"https://ohfis.com/cs/porovnani-textu/","name":"Porovnání textů (diff)"},{"@type":"ListItem","position":29,"url":"https://ohfis.com/cs/tabulka-na-markdown/","name":"Tabulka na Markdown"},{"@type":"ListItem","position":30,"url":"https://ohfis.com/cs/pocitadlo-znaku/","name":"Počítadlo znaků"},{"@type":"ListItem","position":31,"url":"https://ohfis.com/cs/kalkulacka-delky-projevu/","name":"Kalkulačka délky projevu"},{"@type":"ListItem","position":32,"url":"https://ohfis.com/cs/generator-testovacich-dat/","name":"Generátor testovacích dat"},{"@type":"ListItem","position":33,"url":"https://ohfis.com/cs/typograficke-uvozovky-na-rovne/","name":"Typografické uvozovky na rovné"},{"@type":"ListItem","position":34,"url":"https://ohfis.com/cs/odstraneni-zalomeni-radku/","name":"Odstranění zalomení řádků"},{"@type":"ListItem","position":35,"url":"https://ohfis.com/cs/pridani-predpony-nebo-pripony-k-radkum/","name":"Přidání předpony nebo přípony k řádkům"},{"@type":"ListItem","position":36,"url":"https://ohfis.com/cs/razeni-radku-abecedne/","name":"Řazení řádků abecedně"},{"@type":"ListItem","position":37,"url":"https://ohfis.com/cs/extrakce-e-mailovych-adres/","name":"Extrakce e-mailových adres"},{"@type":"ListItem","position":38,"url":"https://ohfis.com/cs/extrakce-url-a-odstraneni-sledovacich-parametru/","name":"Extrakce URL a odstranění sledovacích parametrů"},{"@type":"ListItem","position":39,"url":"https://ohfis.com/cs/generator-url-slugu/","name":"Generátor URL slugů"},{"@type":"ListItem","position":40,"url":"https://ohfis.com/cs/sifra-rot13/","name":"Šifra ROT13"},{"@type":"ListItem","position":41,"url":"https://ohfis.com/cs/odstraneni-emoji/","name":"Odstranění emoji"},{"@type":"ListItem","position":42,"url":"https://ohfis.com/cs/hlaskovaci-abeceda-nato/","name":"Hláskovací abeceda NATO"},{"@type":"ListItem","position":43,"url":"https://ohfis.com/cs/nahodne-promichani-radku/","name":"Náhodné promíchání řádků"},{"@type":"ListItem","position":44,"url":"https://ohfis.com/cs/filtrovani-radku/","name":"Filtrování řádků (grep)"},{"@type":"ListItem","position":45,"url":"https://ohfis.com/cs/slouceni-dvou-seznamu-do-sloupcu/","name":"Sloučení dvou seznamů do sloupců"},{"@type":"ListItem","position":46,"url":"https://ohfis.com/cs/tabulatory-na-mezery/","name":"Tabulátory na mezery"},{"@type":"ListItem","position":47,"url":"https://ohfis.com/cs/pocitadlo-cetnosti-slov/","name":"Počítadlo četnosti slov"},{"@type":"ListItem","position":48,"url":"https://ohfis.com/cs/rozdeleni-textu-na-casti/","name":"Rozdělení textu na části"},{"@type":"ListItem","position":49,"url":"https://ohfis.com/cs/detektor-firemnich-frazi/","name":"Detektor firemních frází"},{"@type":"ListItem","position":50,"url":"https://ohfis.com/cs/odsazeny-text-na-json-html-a-xml/","name":"Odsazený text na JSON, HTML a XML"},{"@type":"ListItem","position":51,"url":"https://ohfis.com/cs/text-na-hex-binar-a-base32/","name":"Text na hex, binár a Base32"},{"@type":"ListItem","position":52,"url":"https://ohfis.com/cs/prekladac-morseovy-abecedy/","name":"Překladač Morseovy abecedy"}]}}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Přejít na obsah</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/cs/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Hlavní navigace">
+        <a href="/cs/pdf-nastroje/">PDF a dokumenty</a><a href="/cs/textove-nastroje/" aria-current="page">Text a poznámky</a><a href="/cs/tabulky-a-csv/">Tabulky a CSV</a><a href="/cs/obrazky-a-media/">Obrázky a média</a><a href="/cs/cas-a-kalendar/">Čas a kalendář</a><a href="/cs/byznys-a-tym/">Byznys a tým</a><a href="/cs/it-a-web-nastroje/">IT a web</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Jazyk">cs</summary>
+          <ul>
+            <li><a href="/en/text-tools/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/text-werkzeuge/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/narzedzia-tekstowe/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/textove-nastroje/" hreflang="cs" lang="cs" data-set-lang="cs" aria-current="true">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Přepnout světlý a tmavý režim" title="Přepnout světlý a tmavý režim">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Nabídka" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/cs/">Domů</a></li><li><span aria-current="page">Text a poznámky</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Bezplatné online nástroje pro text a poznámky</h1>
+        <p>Čistěte, převádějte, počítejte a porovnávejte text; poznámkové bloky, checklisty, hesla, QR kódy a šifrované poznámky. Každý nástroj běží v prohlížeči. Nic, co vložíte nebo otevřete, se nenahrává.</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cat">
+        <div class="s-cat__head"><h2>Textové nástroje</h2></div>
+        <div class="s-cards"><a class="s-card" data-cat="text" href="/cs/odstraneni-neviditelnych-znaku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Odstranění neviditelných znaků</span>
+          <span class="s-card__desc">Najděte a smažte neviditelné znaky, například mezery nulové šířky a BOM.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/zmena-velikosti-pismen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Změna velikosti písmen</span>
+          <span class="s-card__desc">Převeďte text na VELKÁ, malá, Titulková, camelCase, snake_case a další.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/odstraneni-duplicitnich-radku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Odstranění duplicitních řádků</span>
+          <span class="s-card__desc">Smažte opakované řádky a zjistěte, kolikrát se vyskytly.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/seznam-na-text-oddeleny-carkami/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Seznam na text oddělený čárkami</span>
+          <span class="s-card__desc">Převeďte řádky na seznamy s čárkami, tabulátory nebo uvozovkami, pole a SQL IN seznamy.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/extrakce-e-mailu-telefonu-a-url-z-textu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Extrakce e-mailů, telefonů a URL z textu</span>
+          <span class="s-card__desc">Vytáhněte z textu e-maily, telefonní čísla, UUID, IP adresy a data.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/porovnani-textu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Porovnání textů (diff)</span>
+          <span class="s-card__desc">Porovnejte dva texty a uvidíte každé přidané nebo odebrané slovo či řádek.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/tabulka-na-markdown/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Tabulka na Markdown</span>
+          <span class="s-card__desc">Vložte buňky z Excelu nebo CSV a získejte čistou tabulku v Markdownu nebo HTML.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/pocitadlo-znaku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Počítadlo znaků</span>
+          <span class="s-card__desc">Spočítejte znaky, slova a bajty vůči limitům X, LinkedIn, Google Ads a SMS.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/kalkulacka-delky-projevu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Kalkulačka délky projevu</span>
+          <span class="s-card__desc">Odhadněte, jak dlouho potrvá projev nebo skript při pomalém, přirozeném a rychlém tempu.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/generator-testovacich-dat/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Generátor testovacích dat</span>
+          <span class="s-card__desc">Generujte realistická jména, e-maily a adresy jako testovací data místo Lorem Ipsum.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/typograficke-uvozovky-na-rovne/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Typografické uvozovky na rovné</span>
+          <span class="s-card__desc">Nahraďte kudrnaté uvozovky, pomlčky, tři tečky a ligatury obyčejným ASCII.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/odstraneni-zalomeni-radku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Odstranění zalomení řádků</span>
+          <span class="s-card__desc">Spojte text zkopírovaný z PDF do plynulých odstavců a zachovejte skutečné odstavce.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/pridani-predpony-nebo-pripony-k-radkum/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Přidání předpony nebo přípony k řádkům</span>
+          <span class="s-card__desc">Přidejte text, čísla nebo značky před nebo za každý řádek najednou.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/razeni-radku-abecedne/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Řazení řádků abecedně</span>
+          <span class="s-card__desc">Řaďte seznamy A–Z, Z–A, podle délky nebo přirozeně (v2 před v10).</span>
+        </a><a class="s-card" data-cat="text" href="/cs/extrakce-e-mailovych-adres/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Extrakce e-mailových adres</span>
+          <span class="s-card__desc">Vytáhněte z textu všechny e-mailové adresy, odstraňte duplicity a seskupte podle domény.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/extrakce-url-a-odstraneni-sledovacich-parametru/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+          <span class="s-card__title">Extrakce URL a odstranění sledovacích parametrů</span>
+          <span class="s-card__desc">Vypište odkazy z textu a odstraňte utm_*, fbclid a další sledovací značky.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/generator-url-slugu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+          <span class="s-card__title">Generátor URL slugů</span>
+          <span class="s-card__desc">Převeďte nadpisy na čisté URL slugy bez diakritiky vhodné pro SEO.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/sifra-rot13/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Šifra ROT13</span>
+          <span class="s-card__desc">Kódujte a dekódujte ROT13 a další Caesarovy šifry.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/odstraneni-emoji/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Odstranění emoji</span>
+          <span class="s-card__desc">Odstraňte z textu emoji a piktogramy, nebo vše zredukujte na čisté ASCII.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/hlaskovaci-abeceda-nato/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Hláskovací abeceda NATO</span>
+          <span class="s-card__desc">Hláskujte jména, kódy a sériová čísla: Alfa, Bravo, Charlie…</span>
+        </a><a class="s-card" data-cat="text" href="/cs/nahodne-promichani-radku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Náhodné promíchání řádků</span>
+          <span class="s-card__desc">Zamíchejte seznam do náhodného pořadí férovým algoritmem Fisher-Yates.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/filtrovani-radku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Filtrování řádků (grep)</span>
+          <span class="s-card__desc">Ponechte nebo odstraňte řádky obsahující hledaný výraz.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/slouceni-dvou-seznamu-do-sloupcu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Sloučení dvou seznamů do sloupců</span>
+          <span class="s-card__desc">Vložte dva seznamy a spojte je vedle sebe, připravené pro Excel.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/tabulatory-na-mezery/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Tabulátory na mezery</span>
+          <span class="s-card__desc">Sjednoťte odsazení kódu na 2, 4 nebo 8 mezer, nebo zpět na tabulátory.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/pocitadlo-cetnosti-slov/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Počítadlo četnosti slov</span>
+          <span class="s-card__desc">Seřaďte nejpoužívanější slova a fráze bez běžných stop slov.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/rozdeleni-textu-na-casti/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Rozdělení textu na části</span>
+          <span class="s-card__desc">Rozdělte dlouhý text na části dané délky bez rozdělování slov.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/detektor-firemnich-frazi/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Detektor firemních frází</span>
+          <span class="s-card__desc">Zvýrazněte firemní žargon a podívejte se na srozumitelné náhrady.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/odsazeny-text-na-json-html-a-xml/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Odsazený text na JSON, HTML a XML</span>
+          <span class="s-card__desc">Převeďte odsazenou osnovu na vnořený JSON, HTML seznamy, XML, Markdown nebo YAML.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/text-na-hex-binar-a-base32/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Text na hex, binár a Base32</span>
+          <span class="s-card__desc">Převádějte text mezi hex, binárním, desítkovým, osmičkovým, Base32 a Base64.</span>
+        </a><a class="s-card" data-cat="text" href="/cs/prekladac-morseovy-abecedy/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Překladač Morseovy abecedy</span>
+          <span class="s-card__desc">Překládejte text do Morseovy abecedy a zpět, s přehráním jako pípání.</span>
+        </a></div>
+      </div><div class="s-cat">
+        <div class="s-cat__head"><h2>Poznámky a soukromí</h2></div>
+        <div class="s-cards"><a class="s-card" data-cat="notes" href="/cs/generator-hesel/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generátor hesel</span>
+          <span class="s-card__desc">Vytvářejte silná náhodná hesla s vlastními pravidly přímo v prohlížeči.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/generator-hesel-z-frazi/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generátor hesel z frází (Diceware)</span>
+          <span class="s-card__desc">Zapamatovatelná hesla z frází ze seznamu slov EFF.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/dekoder-a-overeni-jwt/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Dekodér a ověření JWT</span>
+          <span class="s-card__desc">Přečtěte hlavičku, obsah a platnost tokenu JWT, aniž byste ho někam posílali.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/generator-qr-kodu-pro-wi-fi/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generátor QR kódu pro Wi-Fi</span>
+          <span class="s-card__desc">Vytvořte tisknutelný QR kód, kterým se hosté připojí k Wi-Fi jedním naskenováním.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/generator-qr-kodu-vcard/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generátor QR kódu vCard (vizitka)</span>
+          <span class="s-card__desc">Vytvořte QR kód, který uloží vaše kontaktní údaje do adresáře telefonu.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/generator-qr-kodu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generátor QR kódů</span>
+          <span class="s-card__desc">Vytvářejte QR kódy pro odkazy, text, e-mail a SMS, zdarma a bez sledování.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/sifrovana-poznamka-jako-odkaz/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Šifrovaná poznámka jako odkaz</span>
+          <span class="s-card__desc">Zašifrujte krátkou zprávu v prohlížeči a sdílejte ji jako odkaz s oddělenou klíčem.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/online-poznamkovy-blok-s-automatickym-ukladanim/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Online poznámkový blok s automatickým ukládáním</span>
+          <span class="s-card__desc">Jednoduchý poznámkový blok, který se automaticky ukládá v prohlížeči, s více bloky.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/checklist-s-ukazatelem-postupu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Checklist s ukazatelem postupu</span>
+          <span class="s-card__desc">Odškrtávejte položky a sledujte procento dokončení, uloženo v prohlížeči.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/kanban-tabule/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Kanban tabule (K udělání, Dělám, Hotovo)</span>
+          <span class="s-card__desc">Osobní tabule se třemi sloupci a přetahováním, uložená lokálně.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/pocitadlo-kliknuti/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Počítadlo kliknutí (čárkovač)</span>
+          <span class="s-card__desc">Velké počítadlo na obrazovce pro účastníky, hlasy nebo zásoby s klávesovými zkratkami.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/generator-obsahu-markdown/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generátor obsahu Markdown</span>
+          <span class="s-card__desc">Vygenerujte obsah s odkazy z nadpisů dokumentu Markdown.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/doplnovani-promennych-sablony/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Doplňování proměnných šablony ({{name}})</span>
+          <span class="s-card__desc">Doplňujte {{zástupné symboly}} v šablonách e-mailů, hotových odpovědích a promptech AI.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/rozhodovaci-matice/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Rozhodovací matice (vážené hodnocení)</span>
+          <span class="s-card__desc">Ohodnoťte možnosti podle vážených kritérií a rozhodněte se objektivně.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/formatovani-denniho-standupu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Formátování denního standupu</span>
+          <span class="s-card__desc">Změňte hrubé poznámky na přehlednou aktualizaci Včera / Dnes / Překážky pro Slack.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/vlozit-jako-prosty-text/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Vložit jako prostý text (odstranit formátování)</span>
+          <span class="s-card__desc">Mezistupeň, který odstraní písma, barvy a odkazy před vložením jinam.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/markdown-na-formatovany-e-mail/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Markdown na formátovaný e-mail</span>
+          <span class="s-card__desc">Pište v Markdownu a vkládejte formátovaný text přímo do Gmailu nebo Outlooku.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/schranka-textovych-uryvku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Schránka textových úryvků (kopírování jedním kliknutím)</span>
+          <span class="s-card__desc">Uchovejte texty, které denně vkládáte, a kopírujte je jedním kliknutím.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/prevod-formatovaneho-textu-na-ciste-html/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Převod formátovaného textu na čisté HTML</span>
+          <span class="s-card__desc">Vložte z Wordu nebo Google Docs a získejte čisté HTML bez stylů, písem a balastu.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/prekladac-do-braillova-pisma/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Překladač do Braillova písma</span>
+          <span class="s-card__desc">Převeďte text na Braillovo písmo v Unicode a zpět, se znaky velkých písmen a čísel.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/list-nouzovych-kontaktu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">List nouzových kontaktů (tisknutelné PDF)</span>
+          <span class="s-card__desc">Vytvořte jednostránkový list s telefonními čísly, zdravotními údaji a poznámkami na lednici.</span>
+        </a><a class="s-card" data-cat="notes" href="/cs/casovac-psani-s-pocitadlem-slov/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Časovač psaní s počítadlem slov</span>
+          <span class="s-card__desc">Pište po stanovenou dobu s živým počtem slov, tempem a sledováním cíle.</span>
+        </a></div>
+      </div></div>
+    </section>
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Časté dotazy</h2>
+      <div class="s-faq">
+        <details open><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
+        <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/cs/soukromi/">Soukromí</a>
+        <a href="/cs/tiraz/">Tiráž</a>
+        <span class="s-footer__note">Běží ve vašem prohlížeči. Bez nahrávání, bez účtu, bez sledování.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+</body>
+</html>

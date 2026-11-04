@@ -42,8 +42,10 @@ export const ICONS = {
   metadata: '<path d="M4 4h8.5L20 11.5 12 20l-8-8z"/><circle cx="8.5" cy="8.5" r="1.3"/>',
 };
 
-// OHFIS mark: an "O" ring (Office, and the first letter) around a page with a folded corner.
-// Blue tile with a soft gradient, white ring, white page; the fold is a lighter blue.
-export const LOGO_MARK = '<defs><linearGradient id="ohfis-g" x1="4" y1="2" x2="28" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3A6FEA"/><stop offset="1" stop-color="#1B3FA8"/></linearGradient></defs><rect width="32" height="32" rx="8" fill="url(#ohfis-g)"/><circle cx="16" cy="16" r="10" fill="none" stroke="#fff" stroke-width="2.6"/><g transform="translate(16 16) scale(1.16) translate(-16 -16)"><path d="M12.9 11.2h4.3l2.3 2.3v6.6a1 1 0 0 1-1 1h-5.6a1 1 0 0 1-1-1v-7.9a1 1 0 0 1 1-1z" fill="#fff"/><path d="M17.2 11.2v1.6a.9.9 0 0 0 .9.9h1.4z" fill="#9DB8F4"/></g>';
+// OHFIS mark, flat: a solid blue tile, a white page with a folded corner and an "O" ring on it
+// (the first letter, and a hole punch). Two flat colours plus white; no gradients or shadows.
+export const LOGO_TILE = '<rect width="32" height="32" rx="8" fill="#2557D6"/>';
+export const LOGO_GLYPH = '<path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/>';
+export const LOGO_MARK = LOGO_TILE + LOGO_GLYPH;
 export const LOGO = `<svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">${LOGO_MARK}</svg>`;
 export const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">${LOGO_MARK}</svg>\n`;

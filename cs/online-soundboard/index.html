@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Online soundboard (potlesk, bzučák, bubnový virbl) – Online zdarma</title>
+  <meta name="description" content="Dvanáct okamžitých zvuků pro schůzky, kvízy a ukázky, plus vlastní. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  
+  <link rel="canonical" href="https://ohfis.com/cs/online-soundboard/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/soundboard/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/online-soundboard/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/soundboard-online/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/online-soundboard/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/soundboard/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/cs/online-soundboard/">
+  <meta property="og:title" content="Online soundboard (potlesk, bzučák, bubnový virbl) – Online zdarma">
+  <meta property="og:description" content="Dvanáct okamžitých zvuků pro schůzky, kvízy a ukázky, plus vlastní. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=f5925d7f">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Online soundboard (potlesk, bzučák, bubnový virbl)","url":"https://ohfis.com/cs/online-soundboard/","description":"Dvanáct okamžitých zvuků pro schůzky, kvízy a ukázky, plus vlastní. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Obrázky a média","item":"https://ohfis.com/cs/obrazky-a-media/"},{"@type":"ListItem","position":3,"name":"Online soundboard (potlesk, bzučák, bubnový virbl)"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Online soundboard (potlesk, bzučák, bubnový virbl)","step":[{"@type":"HowToStep","position":1,"text":"Klikněte na tlačítko nebo stiskněte jeho číslici."},{"@type":"HowToStep","position":2,"text":"Nastavte hlasitost."},{"@type":"HowToStep","position":3,"text":"Volitelně přidejte vlastní zvukové soubory."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak ostatní uslyší zvuk v hovoru?","acceptedAnswer":{"@type":"Answer","text":"Sdílejte tuto kartu se zvukem nebo použijte virtuální audiokabel, který výstup prohlížeče přesměruje na vstup mikrofonu."}},{"@type":"Question","name":"Jsou zvuky nahrávky?","acceptedAnswer":{"@type":"Answer","text":"Ne. Vytvářejí se živě ve vašem prohlížeči."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Přejít na obsah</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/cs/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Hlavní navigace">
+        <a href="/cs/pdf-nastroje/">PDF a dokumenty</a><a href="/cs/textove-nastroje/">Text a poznámky</a><a href="/cs/tabulky-a-csv/">Tabulky a CSV</a><a href="/cs/obrazky-a-media/" aria-current="page">Obrázky a média</a><a href="/cs/cas-a-kalendar/">Čas a kalendář</a><a href="/cs/byznys-a-tym/">Byznys a tým</a><a href="/cs/it-a-web-nastroje/">IT a web</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Jazyk">cs</summary>
+          <ul>
+            <li><a href="/en/soundboard/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/online-soundboard/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/soundboard-online/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/online-soundboard/" hreflang="cs" lang="cs" data-set-lang="cs" aria-current="true">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Přepnout světlý a tmavý režim" title="Přepnout světlý a tmavý režim">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Nabídka" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/cs/">Domů</a></li><li><a href="/cs/obrazky-a-media/">Obrázky a média</a></li><li><span aria-current="page">Online soundboard (potlesk, bzučák, bubnový virbl)</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Online soundboard (potlesk, bzučák, bubnový virbl)</h1>
+        <p>Dvanáct okamžitých zvuků pro schůzky, kvízy a ukázky, plus vlastní.</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="soundboard" data-cat="media"><p class="pt-hint">Načítání nástroje…</p><noscript><p class="pt-drop__error">Tento nástroj potřebuje JavaScript, protože se soubor zpracovává ve vašem prohlížeči.</p></noscript></div>
+        <ul class="s-trust"><li>Bez nahrávání</li><li>Zdarma</li><li>Bez účtu</li><li>Po načtení funguje offline</li></ul>
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>Jak funguje: Online soundboard (potlesk, bzučák, bubnový virbl)</h2>
+        
+        <p>Velká tlačítka pro zvuky, které oživí schůzku nebo kvíz: zvonek, bzučák, bubnový virbl, tadá, smutná pozoun, potlesk, whoosh, houkačka, level up, špatná a správná odpověď a pípnutí časovače. Stiskem 1–9 a 0 na klávesnici spustíte prvních deset, měňte hlasitost a přidávejte vlastní zvukové soubory jako další tlačítka.</p><p>Vestavěné zvuky nejsou nahrávky: syntetizují se živě oscilátory, filtrovaným šumem a obálkami ve Web Audio API, takže je stránka maličká, funguje offline a nepotřebuje stahování. Vaše vlastní zvuky se dekódují v prohlížeči a drží jen v paměti. Aby publikum videohovoru zvuky slyšelo, sdílejte tuto kartu prohlížeče se „sdílet zvuk karty“ nebo přesměrujte výstup prohlížeče na virtuální mikrofon; webová stránka sama nepošle zvuk do jiných aplikací.</p>
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>Jak to použít</h2>
+        <ol class="s-steps"><li><p>Klikněte na tlačítko nebo stiskněte jeho číslici.</p></li><li><p>Nastavte hlasitost.</p></li><li><p>Volitelně přidejte vlastní zvukové soubory.</p></li></ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>Časté dotazy</h2>
+        <div class="s-faq">
+          <details open><summary>Jak ostatní uslyší zvuk v hovoru?</summary><p>Sdílejte tuto kartu se zvukem nebo použijte virtuální audiokabel, který výstup prohlížeče přesměruje na vstup mikrofonu.</p></details>
+          <details><summary>Jsou zvuky nahrávky?</summary><p>Ne. Vytvářejí se živě ve vašem prohlížeči.</p></details>
+          <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
+          <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="s-section">
+    <div class="s-wrap">
+      <h2>Užitečné i jinde</h2>
+      <p class="s-section__lede">Související nástroje na našich dalších webech, zdarma a v prohlížeči.</p>
+      <div class="s-links"><a href="https://test.institute/cs/sound-test/" rel="noopener"><strong>Test zvuku</strong><small>test.institute ↗</small></a><a href="https://test.institute/cs/headphone-test/" rel="noopener"><strong>Test sluchátek a stereo</strong><small>test.institute ↗</small></a></div>
+    </div>
+  </section>
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>Mohlo by se vám hodit</h2>
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="media" href="/cs/online-generator-tonu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Online generátor tónů (sinus, obdélník, sweep)</span>
+          <span class="s-card__desc">Přehrávejte čisté tóny a rozmítání frekvencí pro test reproduktorů a hledání brumu či chrastění.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/pocitadlo-bpm/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Počítadlo BPM (ťukání tempa)</span>
+          <span class="s-card__desc">Ťukejte do rytmu a zjistěte tempo písně v úderech za minutu.</span>
+        </a><a class="s-card" data-cat="team" href="/cs/nahodne-kolo-pro-vyber-jmen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M2.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5M14.5 14.8c2.8-.6 6 .9 6 4.2"/></svg>
+          <span class="s-card__title">Náhodné kolo pro výběr jmen</span>
+          <span class="s-card__desc">Zatočte kolem a vyberte jméno na schůzku, soutěž nebo pořadí prezentací.</span>
+        </a><a class="s-card" data-cat="time" href="/cs/pomodoro-casovac-se-zvuky-pro-soustredeni/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Pomodoro časovač se zvuky pro soustředění</span>
+          <span class="s-card__desc">Cykly soustředění a přestávek s vestavěným bílým šumem, deštěm a zvuky kavárny.</span>
+        </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/cs/soukromi/">Soukromí</a>
+        <a href="/cs/tiraz/">Tiráž</a>
+        <span class="s-footer__note">Běží ve vašem prohlížeči. Bez nahrávání, bez účtu, bez sledování.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+  <script type="module" src="/assets/js/tools/main.js?v=b91dabba"></script>
+</body>
+</html>

@@ -170,7 +170,7 @@ body.s-page {
 :root[data-theme="dark"] .s-icon-btn .icon-moon { display: none; }
 .s-burger { display: none; }
 
-@media (max-width: 920px) {
+@media (max-width: 1120px) {
   .s-burger { display: inline-grid; }
   .s-header__row { flex-wrap: wrap; gap: 8px 10px; min-height: 56px; padding-block: 8px; }
   .s-actions { margin-left: auto; }
@@ -931,3 +931,8 @@ body.s-page { letter-spacing: -.003em; }
 .ut-bigclock{font-size:44px;font-weight:800;font-variant-numeric:tabular-nums;margin-right:12px}
 
 .ut-bd{margin:14px 0}.ut-bd h3{margin:0 0 4px;font-size:1.05rem}.ut-bd ul{margin:0;padding-left:20px}.ut-bd__date{opacity:.65;font-size:.9em}
+
+/* Simplified chrome: seven plain section links in the header, legal links only in the footer */
+.s-footer { padding: 20px 0; }
+.s-footer__bottom { margin-top: 0; padding-top: 0; border-top: 0; }
+.s-nav > a { white-space: nowrap; }

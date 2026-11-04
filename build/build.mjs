@@ -12,7 +12,8 @@ import {
   sisterUrl, pagePath, toolPath,
 } from './registry.mjs';
 import { ICONS, LOGO, LOGO_SVG } from './icons.mjs';
-import { UCATS, UCAT_ORDER, LINKS, SITES, SITE_NAMES, LI } from './tools/registry.mjs';
+import { UCATS, UCAT_ORDER, GROUPS, GROUP_ORDER, GROUP_OF, LINKS, SITES, SITE_NAMES, LI } from './tools/registry.mjs';
+import { slugify } from '../assets/js/tools/lib/text.js';
 import UTOOLS from './tools/index.mjs';
 import UI, { PAGE } from './content/ui.mjs';
 
@@ -65,8 +66,22 @@ const utilById = id => UTOOLS.find(t => t.id === id);
 const utilsOf = cat => UTOOLS.filter(t => t.cat === cat);
 const pdfSlugs = new Set(TOOLS.flatMap(t => Object.values(t.slugs)));
 for (const t of UTOOLS) if (pdfSlugs.has(t.id)) throw new Error(`Tool id collides with a PDF tool slug: ${t.id}`);
-const utilPath = (tool, lang) => `/${lang}/${tool.id}/`;
-const hubPath = (cat, lang) => `/${lang}/${UCATS[cat].slug}/`;
+// Localised URL segments for the utility tools: the translated tool name, slugified.
+// English keeps the tool id. Collisions with other pages get a numeric suffix.
+const usedSlugs = Object.fromEntries(LANGS.map(l => [l, new Set([...TOOLS.map(t => t.slugs[l]), ...Object.values(PAGES).map(p => p[l]).filter(Boolean), ...Object.values(GROUPS).map(g => g.slug?.[LI[l]]).filter(Boolean)])]));
+for (const t of UTOOLS) { t.slugs = { en: t.id }; usedSlugs.en.add(t.id); }
+const slugName = (name, l) => slugify((l === 'de' ? name.replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/Ä/g, 'Ae').replace(/Ö/g, 'Oe').replace(/Ü/g, 'Ue') : name), { maxLen: 56 });
+for (const l of ['de', 'pl', 'cs']) for (const t of UTOOLS) {
+  const name = t.names[LI[l]];
+  const short = slugName(name.replace(/\s*\([^)]*\)/g, ''), l), full = slugName(name, l);
+  let n = [short, full].find(x => x && !usedSlugs[l].has(x)) || `${short || t.id}`, i = 2; const base = n;
+  while (usedSlugs[l].has(n)) n = `${base}-${i++}`;
+  usedSlugs[l].add(n); t.slugs[l] = n;
+}
+const utilPath = (tool, lang) => `/${lang}/${tool.slugs[lang]}/`;
+const groupTools = g => UTOOLS.filter(t => GROUP_OF[t.cat] === g);
+const groupName = (g, lang) => GROUPS[g].name[LI[lang]];
+const hubPath = (g, lang) => g === 'pdf' ? pagePath('pdfTools', lang) : `/${lang}/${GROUPS[g].slug[LI[lang]]}/`;
 const P = (key, lang, vars) => { let v = PAGE[key][LI[lang]]; if (vars) for (const [k, x] of Object.entries(vars)) v = v.replaceAll(`{${k}}`, x); return v; };
 
 // ─── Shared page parts ────────────────────────────────────────────────────────
@@ -117,37 +132,14 @@ function themeButton(c) {
         </button>`;
 }
 
-const NAV_TOOLS = ['merge', 'compress'];
-
-function header(lang, paths, current, currentTool) {
+function header(lang, paths, current) {
   const c = content[lang];
-  const groups = CATEGORIES.map(cat => `<div>
-              <h3>${e(c.cats[cat])}</h3>
-              ${TOOLS.filter(t => t.cat === cat).map(t => `<a href="${toolPath(t, lang)}">${e(c.tools[t.id].name)}</a>`).join('')}
-            </div>`).join('');
   return `<a class="s-skip" href="#main">${e(c.nav.skip)}</a>
   <header class="s-header">
     <div class="s-wrap s-header__row">
       <a class="s-logo" href="/${lang}/">${LOGO}<span>OHFIS</span></a>
       <nav class="s-nav" aria-label="${e(c.nav.main)}">
-        <details class="s-menu">
-          <summary>${e(c.nav.pdfTools)}<svg class="s-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-          <div class="s-mega">
-            ${groups}
-            <a class="s-mega__all" href="${pagePath('pdfTools', lang)}">${e(c.nav.allPdfTools)} →</a>
-          </div>
-        </details>
-        <details class="s-menu">
-          <summary>${e(P('moreTools', lang))}<svg class="s-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-          <div class="s-mega s-mega--wide">
-            ${UCAT_ORDER.filter(cat => utilsOf(cat).length).map(cat => `<div>
-              <h3><a href="${hubPath(cat, lang)}">${e(UCATS[cat].name[LI[lang]])}</a></h3>
-              ${utilsOf(cat).slice(0, 6).map(t => `<a href="${utilPath(t, lang)}">${e(t.names[LI[lang]])}</a>`).join('')}
-              ${utilsOf(cat).length > 6 ? `<a class="s-mega__more" href="${hubPath(cat, lang)}">${e(P('count', lang, { n: utilsOf(cat).length }))} →</a>` : ''}
-            </div>`).join('')}
-          </div>
-        </details>
-        ${NAV_TOOLS.map(id => `<a href="${toolPath(toolById(id), lang)}"${currentTool === id ? ' aria-current="page"' : ''}>${e(c.tools[id].name)}</a>`).join('')}
+        ${GROUP_ORDER.map(g => `<a href="${hubPath(g, lang)}"${current === g ? ' aria-current="page"' : ''}>${e(groupName(g, lang))}</a>`).join('')}
       </nav>
       <div class="s-actions">
         <details class="s-lang">
@@ -165,26 +157,11 @@ function header(lang, paths, current, currentTool) {
 
 function footer(lang, paths, { noTheme = false } = {}) {
   const c = content[lang];
-  const tocBlock = (title, links) => `<section>
-          <h2>${e(title)}</h2>
-          ${links.join('')}
-        </section>`;
-  const toolLink = t => `<a href="${toolPath(t, lang)}">${e(c.tools[t.id].name)}<span>PDF</span></a>`;
   return `<footer class="s-footer">
     <div class="s-wrap">
-      <div class="s-footer__toc">
-        ${CATEGORIES.map(cat => tocBlock(c.cats[cat], TOOLS.filter(t => t.cat === cat).map(toolLink))).join('')}
-        ${UCAT_ORDER.filter(cat => utilsOf(cat).length).map(cat => tocBlock(UCATS[cat].name[LI[lang]], [
-    ...utilsOf(cat).slice(0, 7).map(t => `<a href="${utilPath(t, lang)}">${e(t.names[LI[lang]])}</a>`),
-    `<a href="${hubPath(cat, lang)}">${e(P('count', lang, { n: utilsOf(cat).length }))}<span>→</span></a>`,
-  ])).join('')}
-        ${tocBlock(c.footer.family, Object.entries(SITE_NAMES).map(([key, name]) => `<a href="${SITES[key]}/${lang}/" rel="noopener">${e(name)}<span>↗</span></a>`))}
-        ${false ? tocBlock(c.footer.family, Object.entries(SISTER_SITES).map(([key, s]) => `<a href="${s.host}/${lang}/" rel="noopener">${e(s.name)}<span>↗</span></a>`)) : ''}
-      </div>
       <div class="s-footer__bottom">
         <a href="${pagePath('privacy', lang)}">${e(c.nav.privacy)}</a>
         <a href="${pagePath('imprint', lang)}">${e(c.nav.imprint)}</a>
-        ${LANGS.map(l => `<a href="${paths[l]}" hreflang="${l}" lang="${l}" data-set-lang="${l}">${LANG_NAMES[l]}</a>`).join('')}
         <span class="s-footer__note">${e(c.footer.note)}</span>
       </div>
     </div>
@@ -335,8 +312,7 @@ function homePage(lang) {
       <div class="s-wrap">
         <h2>${e(P('browse', lang))}</h2>
         <div class="s-cards s-cards--cats">
-          <a class="s-card" data-cat="organize" href="${pagePath('pdfTools', lang)}">${iconSvg('merge')}<span class="s-card__title">${e(c.nav.pdfTools)}</span><span class="s-card__desc">${e(P('pdfShort', lang))}</span><span class="s-card__count">${e(P('count', lang, { n: TOOLS.length }))}</span></a>
-          ${UCAT_ORDER.filter(cat => utilsOf(cat).length).map(cat => `<a class="s-card" data-cat="${cat}" href="${hubPath(cat, lang)}">${iconSvg(UCATS[cat].icon)}<span class="s-card__title">${e(UCATS[cat].name[LI[lang]])}</span><span class="s-card__desc">${e(UCATS[cat].short[LI[lang]])}</span><span class="s-card__count">${e(P('count', lang, { n: utilsOf(cat).length }))}</span></a>`).join('')}
+          ${GROUP_ORDER.map(g => `<a class="s-card" data-cat="${g === 'pdf' ? 'organize' : GROUPS[g].cats[0]}" href="${hubPath(g, lang)}">${iconSvg(GROUPS[g].icon)}<span class="s-card__title">${e(groupName(g, lang))}</span><span class="s-card__desc">${e(g === 'pdf' ? P('pdfShort', lang) : GROUPS[g].short[LI[lang]])}</span><span class="s-card__count">${e(P('count', lang, { n: groupTools(g).length + (g === 'pdf' ? TOOLS.length : 0) }))}</span></a>`).join('')}
         </div>
       </div>
     </section>
@@ -384,9 +360,9 @@ function hubPage(lang) {
   const h = c.hub;
   const paths = pathsFor('pdfTools');
   const crumbs = [[c.nav.home, `/${lang}/`], [h.name]];
-  return `${head({ lang, title: h.title, desc: h.desc, paths, jsonLd: [ldApp(lang, h.name, h.desc, paths[lang], TOOLS.map(t => c.tools[t.id].name)), ldCrumbs(crumbs), ldFaq(h.faqs)] })}
+  return `${head({ lang, title: h.title, desc: h.desc, paths, jsonLd: [ldApp(lang, h.name, h.desc, paths[lang], [...TOOLS.map(t => c.tools[t.id].name), ...groupTools('pdf').map(t => t.names[LI[lang]])]), ldCrumbs(crumbs), ldFaq(h.faqs)] })}
 <body class="s-page">
-  ${header(lang, paths, 'pdfTools')}
+  ${header(lang, paths, 'pdf')}
   <main id="main">
     <div class="s-wrap">
       ${breadcrumbs(crumbs)}
@@ -396,7 +372,12 @@ function hubPage(lang) {
       </div>
     </div>
     <section class="s-section" style="border-top:0;padding-top:0">
-      <div class="s-wrap">${toolGrid(lang, 'h2')}</div>
+      <div class="s-wrap">${toolGrid(lang, 'h2')}
+        <div class="s-cat">
+          <div class="s-cat__head"><h2>${e(UCATS.documents.name[LI[lang]])}</h2></div>
+          <div class="s-cards">${groupTools('pdf').map(t => ucard(lang, t)).join('')}</div>
+        </div>
+      </div>
     </section>
     ${CONVERT_TO_PDF.length ? `<section class="s-section s-section--tint">
       <div class="s-wrap">
@@ -424,7 +405,7 @@ function toolPage(lang, tool) {
   const jsonLd = [ldApp(lang, t.name, t.desc, paths[lang]), ldCrumbs(crumbs), ldHowTo(t.how, t.steps), ldFaq(faqs)];
   return `${head({ lang, title: t.title, desc: t.desc, paths, jsonLd })}
 <body class="s-page">
-  ${header(lang, paths, null, tool.id)}
+  ${header(lang, paths, 'pdf')}
   <main id="main">
     <div class="s-wrap">
       ${breadcrumbs(crumbs)}
@@ -515,15 +496,15 @@ function utilityPage(lang, tool0) {
   const paths = Object.fromEntries(LANGS.map(l => [l, utilPath(tool, l)]));
   const title = utilTitle(lang, tool), desc = `${short} ${P('priv', lang)}`;
   const la = lang === 'en' || tr ? '' : ' lang="en"';
-  const cat = UCATS[tool.cat];
-  const crumbs = [[c.nav.home, `/${lang}/`], [cat.name[li], hubPath(tool.cat, lang)], [name]];
+  const grp = GROUP_OF[tool.cat];
+  const crumbs = [[c.nav.home, `/${lang}/`], [groupName(grp, lang), hubPath(grp, lang)], [name]];
   const faqs = [...tool.faqs, ...c.toolPage.sharedFaqs];
   const nOwn = tool.faqs.length;
   const related = (tool.related || []).filter(exists).slice(0, 4);
   const jsonLd = [ldApp(lang, name, desc, paths[lang]), ldCrumbs(crumbs), ldHowTo(`${P('howToUse', lang)}: ${name}`, tool.steps), ldFaq(faqs)];
   return `${head({ lang, title, desc, paths, jsonLd })}
 <body class="s-page">
-  ${header(lang, paths)}
+  ${header(lang, paths, grp)}
   <main id="main">
     <div class="s-wrap">
       ${breadcrumbs(crumbs)}
@@ -573,32 +554,36 @@ function utilityPage(lang, tool0) {
 `;
 }
 
-function utilHubPage(lang, catKey) {
+function utilHubPage(lang, g) {
   const c = content[lang];
   const li = LI[lang];
-  const cat = UCATS[catKey];
-  const paths = Object.fromEntries(LANGS.map(l => [l, hubPath(catKey, l)]));
-  const title = lang === 'en' ? `${cat.h1[0]} – ${utilsOf(catKey).length} Free Tools, No Upload` : `${cat.h1[li]} – ${P('suffix', lang)}`;
-  const desc = `${cat.short[li]} ${P('priv', lang)}`;
-  const crumbs = [[c.nav.home, `/${lang}/`], [cat.name[li]]];
-  const items = utilsOf(catKey);
+  const grp = GROUPS[g];
+  const paths = Object.fromEntries(LANGS.map(l => [l, hubPath(g, l)]));
+  const items = groupTools(g);
+  const title = lang === 'en' ? `${grp.h1[0]} – ${items.length} Free Tools, No Upload` : `${grp.h1[li]} – ${P('suffix', lang)}`;
+  const desc = `${grp.short[li]} ${P('priv', lang)}`;
+  const crumbs = [[c.nav.home, `/${lang}/`], [grp.name[li]]];
   const jsonLd = [ldCrumbs(crumbs), ldFaq(c.toolPage.sharedFaqs), {
-    '@context': 'https://schema.org', '@type': 'CollectionPage', name: cat.h1[li], description: desc, url: `${SITE}${paths[lang]}`, inLanguage: lang,
+    '@context': 'https://schema.org', '@type': 'CollectionPage', name: grp.h1[li], description: desc, url: `${SITE}${paths[lang]}`, inLanguage: lang,
     mainEntity: { '@type': 'ItemList', itemListElement: items.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${utilPath(t, lang)}`, name: t.names[li] })) },
   }];
+  const sections = grp.cats.map(cat => ({ cat, list: utilsOf(cat) })).filter(x => x.list.length);
   return `${head({ lang, title, desc, paths, jsonLd })}
 <body class="s-page">
-  ${header(lang, paths)}
+  ${header(lang, paths, g)}
   <main id="main">
     <div class="s-wrap">
       ${breadcrumbs(crumbs)}
       <div class="s-toolhead">
-        <h1>${e(cat.h1[li])}</h1>
-        <p>${e(cat.short[li])} ${e(P('hubLede', lang))}</p>
+        <h1>${e(grp.h1[li])}</h1>
+        <p>${e(grp.short[li])} ${e(P('hubLede', lang))}</p>
       </div>
     </div>
     <section class="s-section" style="border-top:0;padding-top:0">
-      <div class="s-wrap"><div class="s-cards">${items.map(t => ucard(lang, t)).join('')}</div></div>
+      <div class="s-wrap">${sections.map(({ cat, list }) => `<div class="s-cat">
+        ${sections.length > 1 ? `<div class="s-cat__head"><h2>${e(UCATS[cat].name[li])}</h2></div>` : ''}
+        <div class="s-cards">${list.map(t => ucard(lang, t)).join('')}</div>
+      </div>`).join('')}</div>
     </section>
     ${faqSection(c, c.toolPage.sharedFaqs)}
   </main>
@@ -611,12 +596,12 @@ function utilHubPage(lang, catKey) {
 function llmsText(full) {
   const en = content.en; const lines = [];
   lines.push('# OHFIS', '', `> Free online tools that run entirely in your browser: PDF tools, text tools, CSV and spreadsheet tools, image tools, time and calendar tools, business calculators, IT and web helpers, notes and privacy tools, and team tools. Files and text are processed on the visitor's device and are never uploaded. No account, no watermark, no limits. Available in English, German, Polish and Czech.`, '');
-  lines.push('## About', '', `- Site: ${SITE}/`, '- Languages: English (/en/), German (/de/), Polish (/pl/), Czech (/cs/). Utility tool URLs use the same slug in every language, for example /en/case-converter/ and /de/case-converter/.', '- Privacy: all processing happens in the browser using JavaScript, Canvas, Web Crypto and WebAssembly. There is no server that receives files.', '- Operator: Andreas Dittes, Berlin, Germany. Contact: ohfis@dittes.info', `- Sitemap: ${SITE}/sitemap.xml`, '');
+  lines.push('## About', '', `- Site: ${SITE}/`, '- Languages: English (/en/), German (/de/), Polish (/pl/), Czech (/cs/). Every URL is translated: the tool name in each language is the URL, for example /en/case-converter/ and /de/gross-und-kleinschreibung-umwandeln/.', '- Privacy: all processing happens in the browser using JavaScript, Canvas, Web Crypto and WebAssembly. There is no server that receives files.', '- Operator: Andreas Dittes, Berlin, Germany. Contact: ohfis@dittes.info', `- Sitemap: ${SITE}/sitemap.xml`, '');
   lines.push('## PDF tools', '');
   for (const t of TOOLS) lines.push(`- [${en.tools[t.id].name}](${SITE}${toolPath(t, 'en')}): ${en.tools[t.id].desc}`);
   for (const cat of UCAT_ORDER) {
     const items = utilsOf(cat); if (!items.length) continue;
-    lines.push('', `## ${UCATS[cat].name[0]}`, '', `${UCATS[cat].short[0]} Hub: ${SITE}${hubPath(cat, 'en')}`, '');
+    lines.push('', `## ${UCATS[cat].name[0]}`, '', `${UCATS[cat].short[0]} Hub: ${SITE}${hubPath(GROUP_OF[cat], 'en')}`, '');
     for (const t of items) {
       lines.push(`- [${t.names[0]}](${SITE}${utilPath(t, 'en')}): ${t.shorts[0]}`);
       if (full) lines.push(`  ${t.about[0]}`, `  How to use: ${t.steps.join(' ')}`);
@@ -641,6 +626,22 @@ function legalPage(lang, key) {
   </main>
   ${footer(lang, paths)}
 </body>
+</html>
+`;
+}
+
+function redirectPage(to) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting…</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="${SITE}${to}">
+  <meta http-equiv="refresh" content="0; url=${to}">
+</head>
+<body><p><a href="${to}">${to}</a></p><script>location.replace(${JSON.stringify(to)}+location.search+location.hash)</script></body>
 </html>
 `;
 }
@@ -716,7 +717,7 @@ function sitemap() {
   const groups = [
     ...Object.keys(PAGES).map(pathsFor),
     ...TOOLS.map(toolPaths),
-    ...UCAT_ORDER.filter(cat => utilsOf(cat).length).map(cat => Object.fromEntries(LANGS.map(l => [l, hubPath(cat, l)]))),
+    ...GROUP_ORDER.filter(g => g !== 'pdf').map(g => Object.fromEntries(LANGS.map(l => [l, hubPath(g, l)]))),
     ...UTOOLS.map(t => Object.fromEntries(LANGS.map(l => [l, utilPath(t, l)]))),
   ];
   const entries = [];
@@ -778,8 +779,12 @@ for (const lang of LANGS) {
   for (const tool of TOOLS) write(`${lang}/${tool.slugs[lang]}/index.html`, toolPage(lang, tool));
   write(`${lang}/${PAGES.privacy[lang]}/index.html`, legalPage(lang, 'privacy'));
   write(`${lang}/${PAGES.imprint[lang]}/index.html`, legalPage(lang, 'imprint'));
-  for (const cat of UCAT_ORDER) if (utilsOf(cat).length) { write(`${lang}/${UCATS[cat].slug}/index.html`, utilHubPage(lang, cat)); pages++; }
-  for (const tool of UTOOLS) { write(`${lang}/${tool.id}/index.html`, utilityPage(lang, tool)); pages++; }
+  for (const g of GROUP_ORDER) if (g !== 'pdf') { write(`${lang}/${GROUPS[g].slug[LI[lang]]}/index.html`, utilHubPage(lang, g)); pages++; }
+  for (const tool of UTOOLS) { write(`${lang}/${tool.slugs[lang]}/index.html`, utilityPage(lang, tool)); pages++; }
+  // Old URLs (English tool id in every language, the ten former category hubs) forward to the new ones
+  const taken = new Set([...UTOOLS.map(t => t.slugs[lang]), ...GROUP_ORDER.filter(g => g !== 'pdf').map(g => GROUPS[g].slug[LI[lang]])]);
+  for (const t of UTOOLS) if (!taken.has(t.id)) write(`${lang}/${t.id}/index.html`, redirectPage(utilPath(t, lang)));
+  for (const cat of UCAT_ORDER) if (!taken.has(UCATS[cat].slug)) write(`${lang}/${UCATS[cat].slug}/index.html`, redirectPage(hubPath(GROUP_OF[cat], lang)));
   pages += TOOLS.length + 4;
 }
 
@@ -787,7 +792,7 @@ for (const lang of LANGS) {
 for (const lang of LANGS) {
   const li = LI[lang]; const idx = [
     ...TOOLS.map(t => ({ n: content[lang].tools[t.id].name, d: content[lang].tools[t.id].short, u: toolPath(t, lang), c: content[lang].nav.pdfTools })),
-    ...UTOOLS.map(t => ({ n: t.names[li], d: t.shorts[li], u: utilPath(t, lang), c: UCATS[t.cat].name[li], k: t.names[0] })),
+    ...UTOOLS.map(t => ({ n: t.names[li], d: t.shorts[li], u: utilPath(t, lang), c: groupName(GROUP_OF[t.cat], lang), k: t.names[0] })),
   ];
   write(`assets/i18n/search.${lang}.js`, `// Generated by build/build.mjs\nexport default ${JSON.stringify(idx)};\n`);
 }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Gemeinkostenverteilung Rechner – Kostenlos online</title>
+  <meta name="description" content="Gemeinkosten nach Mitarbeiterzahl, Fläche oder Umsatz auf Abteilungen verteilen. Kostenlos, läuft im Browser, nichts wird hochgeladen.">
+  
+  <link rel="canonical" href="https://ohfis.com/de/gemeinkostenverteilung-rechner/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/overhead-allocation-calculator/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/gemeinkostenverteilung-rechner/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/kalkulator-alokacji-kosztow-ogolnych/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/kalkulacka-rozdeleni-rezijnich-nakladu/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/overhead-allocation-calculator/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/de/gemeinkostenverteilung-rechner/">
+  <meta property="og:title" content="Gemeinkostenverteilung Rechner – Kostenlos online">
+  <meta property="og:description" content="Gemeinkosten nach Mitarbeiterzahl, Fläche oder Umsatz auf Abteilungen verteilen. Kostenlos, läuft im Browser, nichts wird hochgeladen.">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=f5925d7f">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Gemeinkostenverteilung Rechner","url":"https://ohfis.com/de/gemeinkostenverteilung-rechner/","description":"Gemeinkosten nach Mitarbeiterzahl, Fläche oder Umsatz auf Abteilungen verteilen. Kostenlos, läuft im Browser, nichts wird hochgeladen.","inLanguage":"de","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://ohfis.com/de/"},{"@type":"ListItem","position":2,"name":"Business & Team","item":"https://ohfis.com/de/business-und-team-werkzeuge/"},{"@type":"ListItem","position":3,"name":"Gemeinkostenverteilung Rechner"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"So benutzt du es: Gemeinkostenverteilung Rechner","step":[{"@type":"HowToStep","position":1,"text":"Geben Sie den Kostentopf ein."},{"@type":"HowToStep","position":2,"text":"Listen Sie Abteilungen mit Mitarbeiterzahl, Fläche und Umsatz auf."},{"@type":"HowToStep","position":3,"text":"Wählen Sie den Schlüssel und lesen Sie die Anteile ab."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Welcher Verteilungsschlüssel ist am fairsten?","acceptedAnswer":{"@type":"Answer","text":"Der, der den Kosten am nächsten steht: Fläche für Miete, Mitarbeiterzahl für personenbezogene Kosten."}},{"@type":"Question","name":"Kann ich einen eigenen Treiber nutzen?","acceptedAnswer":{"@type":"Answer","text":"Nutzen Sie die Umsatzspalte für jeden eigenen numerischen Treiber."}},{"@type":"Question","name":"Werden meine Dateien hochgeladen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Datei wird von deinem eigenen Browser geöffnet und verarbeitet. Das kannst du selbst prüfen: Öffne beim Arbeiten den Netzwerk-Tab deines Browsers oder trenne die Internetverbindung, nachdem die Seite geladen ist."}},{"@type":"Question","name":"Ist dieses Tool kostenlos?","acceptedAnswer":{"@type":"Answer","text":"Ja, vollständig. Es gibt keine Anmeldung, keinen Bezahltarif und kein Wasserzeichen auf deinen Dateien."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Zum Inhalt springen</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/de/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Hauptnavigation">
+        <a href="/de/pdf-tools/">PDF &amp; Dokumente</a><a href="/de/text-werkzeuge/">Text &amp; Notizen</a><a href="/de/tabellen-csv-werkzeuge/">Tabellen &amp; CSV</a><a href="/de/bild-und-medien-werkzeuge/">Bilder &amp; Medien</a><a href="/de/zeit-und-kalender-werkzeuge/">Zeit &amp; Kalender</a><a href="/de/business-und-team-werkzeuge/" aria-current="page">Business &amp; Team</a><a href="/de/it-und-web-werkzeuge/">IT &amp; Web</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Sprache">de</summary>
+          <ul>
+            <li><a href="/en/overhead-allocation-calculator/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/gemeinkostenverteilung-rechner/" hreflang="de" lang="de" data-set-lang="de" aria-current="true">Deutsch</a></li><li><a href="/pl/kalkulator-alokacji-kosztow-ogolnych/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/kalkulacka-rozdeleni-rezijnich-nakladu/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Zwischen hell und dunkel wechseln" title="Zwischen hell und dunkel wechseln">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menü" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/de/">Startseite</a></li><li><a href="/de/business-und-team-werkzeuge/">Business &amp; Team</a></li><li><span aria-current="page">Gemeinkostenverteilung Rechner</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Gemeinkostenverteilung Rechner</h1>
+        <p>Gemeinkosten nach Mitarbeiterzahl, Fläche oder Umsatz auf Abteilungen verteilen.</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="overhead-allocation-calculator" data-cat="finance"><p class="pt-hint">Tool wird geladen…</p><noscript><p class="pt-drop__error">Dieses Tool braucht JavaScript, weil deine Datei in deinem Browser verarbeitet wird.</p></noscript></div>
+        <ul class="s-trust"><li>Kein Upload</li><li>Kostenlos</li><li>Kein Konto</li><li>Einmal geladen, auch offline nutzbar</li></ul>
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>So funktioniert: Gemeinkostenverteilung Rechner</h2>
+        
+        <p>Miete, Nebenkosten und gemeinsame Software nützen allen Teams. Geben Sie den Gesamttopf und für jede Abteilung Mitarbeiterzahl, Fläche und Umsatz ein, wählen Sie den Verteilungsschlüssel und sehen Sie, wie viele Kosten jede Abteilung trägt.</p><p>Jede Abteilung erhält Topf × (ihr Treiber ÷ Summe aller Treiber). Der beste Treiber ist der, der erklärt, warum die Kosten entstehen: Mitarbeiterzahl für Softwarelizenzen und IT-Support, Fläche für Miete und Heizung, Umsatz für Managementzeit. Ein Wechsel des Schlüssels zeigt, wie empfindlich das Ergebnis von Ihrer Wahl abhängt, was oft die eigentliche Diskussion ist.</p>
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>So benutzt du es</h2>
+        <ol class="s-steps"><li><p>Geben Sie den Kostentopf ein.</p></li><li><p>Listen Sie Abteilungen mit Mitarbeiterzahl, Fläche und Umsatz auf.</p></li><li><p>Wählen Sie den Schlüssel und lesen Sie die Anteile ab.</p></li></ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>Häufige Fragen</h2>
+        <div class="s-faq">
+          <details open><summary>Welcher Verteilungsschlüssel ist am fairsten?</summary><p>Der, der den Kosten am nächsten steht: Fläche für Miete, Mitarbeiterzahl für personenbezogene Kosten.</p></details>
+          <details><summary>Kann ich einen eigenen Treiber nutzen?</summary><p>Nutzen Sie die Umsatzspalte für jeden eigenen numerischen Treiber.</p></details>
+          <details><summary>Werden meine Dateien hochgeladen?</summary><p>Nein. Die Datei wird von deinem eigenen Browser geöffnet und verarbeitet. Das kannst du selbst prüfen: Öffne beim Arbeiten den Netzwerk-Tab deines Browsers oder trenne die Internetverbindung, nachdem die Seite geladen ist.</p></details>
+          <details><summary>Ist dieses Tool kostenlos?</summary><p>Ja, vollständig. Es gibt keine Anmeldung, keinen Bezahltarif und kein Wasserzeichen auf deinen Dateien.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="s-section">
+    <div class="s-wrap">
+      <h2>Auch nützlich</h2>
+      <p class="s-section__lede">Passende Tools auf unseren anderen Seiten, kostenlos und im Browser.</p>
+      <div class="s-links"><a href="https://culators.com/de/percent-calculator/" rel="noopener"><strong>Prozentrechner</strong><small>Culators ↗</small></a></div>
+    </div>
+  </section>
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>Das könnte auch helfen</h2>
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="finance" href="/de/break-even-analyse-rechner/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M15 9.2a6 6 0 1 1-5.8 5.8"/><path d="M8 7.5h2.2a1.3 1.3 0 0 1 0 2.6H8.4a1.3 1.3 0 0 0 0 2.6H11"/></svg>
+          <span class="s-card__title">Break-even-Analyse Rechner</span>
+          <span class="s-card__desc">Wie viele Einheiten müssen Sie verkaufen, um die Fixkosten zu decken? Mit Diagramm und Sicherheitsmarge.</span>
+        </a><a class="s-card" data-cat="finance" href="/de/abschreibungsplan-rechner/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M15 9.2a6 6 0 1 1-5.8 5.8"/><path d="M8 7.5h2.2a1.3 1.3 0 0 1 0 2.6H8.4a1.3 1.3 0 0 0 0 2.6H11"/></svg>
+          <span class="s-card__title">Abschreibungsplan-Rechner</span>
+          <span class="s-card__desc">Lineare, degressive und digitale Abschreibungspläne.</span>
+        </a><a class="s-card" data-cat="finance" href="/de/working-capital-liquiditaetsgrad-rechner/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M15 9.2a6 6 0 1 1-5.8 5.8"/><path d="M8 7.5h2.2a1.3 1.3 0 0 1 0 2.6H8.4a1.3 1.3 0 0 0 0 2.6H11"/></svg>
+          <span class="s-card__title">Working-Capital- &amp; Liquiditätsgrad-Rechner</span>
+          <span class="s-card__desc">Working Capital, Liquidität 3. Grades, Quick Ratio und Cash Ratio berechnen.</span>
+        </a><a class="s-card" data-cat="data" href="/de/prozentuale-veraenderung-berechnen/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Prozentuale Veränderung berechnen (Spalten)</span>
+          <span class="s-card__desc">Eine Spalte mit prozentualer Veränderung aus zwei Zahlenspalten hinzufügen.</span>
+        </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/de/datenschutz/">Datenschutz</a>
+        <a href="/de/impressum/">Impressum</a>
+        <span class="s-footer__note">Läuft in deinem Browser. Kein Upload, kein Konto, kein Tracking.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+  <script type="module" src="/assets/js/tools/main.js?v=b91dabba"></script>
+</body>
+</html>

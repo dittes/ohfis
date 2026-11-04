@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Narzędzia pomocnicze IT i web – Online za darmo</title>
+  <meta name="description" content="Hashe, enkodery, cron, JWT, kolory, sieci i fragmenty webowe. Za darmo, działa w przeglądarce, nic nie jest przesyłane.">
+  
+  <link rel="canonical" href="https://ohfis.com/pl/narzedzia-it-i-web/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/it-web-tools/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/it-und-web-werkzeuge/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/narzedzia-it-i-web/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/it-a-web-nastroje/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/it-web-tools/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/pl/narzedzia-it-i-web/">
+  <meta property="og:title" content="Narzędzia pomocnicze IT i web – Online za darmo">
+  <meta property="og:description" content="Hashe, enkodery, cron, JWT, kolory, sieci i fragmenty webowe. Za darmo, działa w przeglądarce, nic nie jest przesyłane.">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=f5925d7f">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"IT i web"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Narzędzia pomocnicze IT i web","description":"Hashe, enkodery, cron, JWT, kolory, sieci i fragmenty webowe. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","url":"https://ohfis.com/pl/narzedzia-it-i-web/","inLanguage":"pl","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://ohfis.com/pl/generator-sum-kontrolnych-plikow/","name":"Generator sum kontrolnych plików (SHA-256, MD5, SHA-1)"},{"@type":"ListItem","position":2,"url":"https://ohfis.com/pl/kalkulator-podsieci/","name":"Kalkulator podsieci (CIDR, maska, zakres IP)"},{"@type":"ListItem","position":3,"url":"https://ohfis.com/pl/tlumacz-wyrazen-cron/","name":"Tłumacz wyrażeń cron"},{"@type":"ListItem","position":4,"url":"https://ohfis.com/pl/kody-statusu-http-sciagawka/","name":"Kody statusu HTTP – ściągawka"},{"@type":"ListItem","position":5,"url":"https://ohfis.com/pl/konwerter-curl-na-javascript-i-python/","name":"Konwerter cURL na JavaScript i Python"},{"@type":"ListItem","position":6,"url":"https://ohfis.com/pl/dekoder-ciagu-user-agent/","name":"Dekoder ciągu User-Agent"},{"@type":"ListItem","position":7,"url":"https://ohfis.com/pl/enkoder-i-dekoder-encji-html/","name":"Enkoder i dekoder encji HTML"},{"@type":"ListItem","position":8,"url":"https://ohfis.com/pl/enkoder-i-dekoder-base64/","name":"Enkoder i dekoder Base64 (tekst i pliki)"},{"@type":"ListItem","position":9,"url":"https://ohfis.com/pl/konwerter-kolorow/","name":"Konwerter kolorów (HEX, RGB, HSL, CMYK)"},{"@type":"ListItem","position":10,"url":"https://ohfis.com/pl/generator-uuid-guid/","name":"Generator UUID / GUID (v4 i v7)"},{"@type":"ListItem","position":11,"url":"https://ohfis.com/pl/konwerter-systemow-liczbowych/","name":"Konwerter systemów liczbowych (binarny, ósemkowy, dziesiętny, hex)"},{"@type":"ListItem","position":12,"url":"https://ohfis.com/pl/generator-naglowka-basic-auth/","name":"Generator nagłówka Basic Auth"},{"@type":"ListItem","position":13,"url":"https://ohfis.com/pl/kalkulator-przezroczystosci-hex/","name":"Kalkulator przezroczystości hex (krycie na hex)"},{"@type":"ListItem","position":14,"url":"https://ohfis.com/pl/generator-znacznika-meta-viewport/","name":"Generator znacznika meta viewport"},{"@type":"ListItem","position":15,"url":"https://ohfis.com/pl/generator-znacznikow-html-favicony/","name":"Generator znaczników HTML favicony"},{"@type":"ListItem","position":16,"url":"https://ohfis.com/pl/kreator-parametrow-zapytania-url/","name":"Kreator parametrów zapytania URL"},{"@type":"ListItem","position":17,"url":"https://ohfis.com/pl/generator-adresow-url-omijajacych-cache/","name":"Generator adresów URL omijających cache"},{"@type":"ListItem","position":18,"url":"https://ohfis.com/pl/sprawdzanie-wygasniecia-certyfikatu-ssl-i-przypomnienie/","name":"Sprawdzanie wygaśnięcia certyfikatu SSL i przypomnienie"},{"@type":"ListItem","position":19,"url":"https://ohfis.com/pl/analizator-naglowkow-e-mail/","name":"Analizator nagłówków e-mail"},{"@type":"ListItem","position":20,"url":"https://ohfis.com/pl/generator-i-walidator-robots-txt/","name":"Generator i walidator robots.txt"},{"@type":"ListItem","position":21,"url":"https://ohfis.com/pl/walidator-i-formater-sitemap-xml/","name":"Walidator i formater sitemap XML"},{"@type":"ListItem","position":22,"url":"https://ohfis.com/pl/podglad-open-graph-i-udostepniania/","name":"Podgląd Open Graph i udostępniania"},{"@type":"ListItem","position":23,"url":"https://ohfis.com/pl/generator-cienia-css-box-shadow/","name":"Generator cienia CSS box-shadow"},{"@type":"ListItem","position":24,"url":"https://ohfis.com/pl/wyjasnianie-i-testowanie-wyrazen-regularnych/","name":"Wyjaśnianie i testowanie wyrażeń regularnych"},{"@type":"ListItem","position":25,"url":"https://ohfis.com/pl/wyszukiwarka-numerow-portow/","name":"Wyszukiwarka numerów portów (TCP/UDP)"},{"@type":"ListItem","position":26,"url":"https://ohfis.com/pl/wyszukiwarka-typow-mime/","name":"Wyszukiwarka typów MIME (rozszerzenie do Content-Type)"},{"@type":"ListItem","position":27,"url":"https://ohfis.com/pl/generator-rekordow-spf-i-dmarc/","name":"Generator rekordów SPF i DMARC"},{"@type":"ListItem","position":28,"url":"https://ohfis.com/pl/plac-zabaw-i-sciagawka-css-flexbox/","name":"Plac zabaw i ściągawka CSS Flexbox"},{"@type":"ListItem","position":29,"url":"https://ohfis.com/pl/tester-podpisu-webhooka/","name":"Tester podpisu webhooka (HMAC SHA-256)"}]}}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Przejdź do treści</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/pl/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Główna nawigacja">
+        <a href="/pl/narzedzia-pdf/">PDF i dokumenty</a><a href="/pl/narzedzia-tekstowe/">Tekst i notatki</a><a href="/pl/arkusze-i-csv/">Arkusze i CSV</a><a href="/pl/grafika-i-media/">Grafika i media</a><a href="/pl/czas-i-kalendarz/">Czas i kalendarz</a><a href="/pl/biznes-i-zespol/">Biznes i zespół</a><a href="/pl/narzedzia-it-i-web/" aria-current="page">IT i web</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Język">pl</summary>
+          <ul>
+            <li><a href="/en/it-web-tools/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/it-und-web-werkzeuge/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/narzedzia-it-i-web/" hreflang="pl" lang="pl" data-set-lang="pl" aria-current="true">Polski</a></li><li><a href="/cs/it-a-web-nastroje/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Przełącz między trybem jasnym i ciemnym" title="Przełącz między trybem jasnym i ciemnym">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/pl/">Strona główna</a></li><li><span aria-current="page">IT i web</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Narzędzia pomocnicze IT i web</h1>
+        <p>Hashe, enkodery, cron, JWT, kolory, sieci i fragmenty webowe. Każde narzędzie działa w przeglądarce. Nic, co wkleisz lub otworzysz, nie jest przesyłane.</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cat">
+        
+        <div class="s-cards"><a class="s-card" data-cat="dev" href="/pl/generator-sum-kontrolnych-plikow/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generator sum kontrolnych plików (SHA-256, MD5, SHA-1)</span>
+          <span class="s-card__desc">Oblicz i porównaj hashe plików w przeglądarce, aby zweryfikować pobrania.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/kalkulator-podsieci/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Kalkulator podsieci (CIDR, maska, zakres IP)</span>
+          <span class="s-card__desc">Sieć, broadcast, użyteczne hosty i podział na podsieci dla dowolnego zakresu IPv4.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/tlumacz-wyrazen-cron/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Tłumacz wyrażeń cron</span>
+          <span class="s-card__desc">Przetłumacz harmonogramy cron na zrozumiały język i zobacz najbliższe uruchomienia.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/kody-statusu-http-sciagawka/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Kody statusu HTTP – ściągawka</span>
+          <span class="s-card__desc">Wyszukaj każdy kod statusu HTTP z prostym wyjaśnieniem i poradą.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/konwerter-curl-na-javascript-i-python/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Konwerter cURL na JavaScript i Python</span>
+          <span class="s-card__desc">Zamień polecenie curl na działający kod fetch i Python requests.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/dekoder-ciagu-user-agent/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Dekoder ciągu User-Agent</span>
+          <span class="s-card__desc">Sprawdź przeglądarkę, system, urządzenie i silnik z ciągu user-agent.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/enkoder-i-dekoder-encji-html/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Enkoder i dekoder encji HTML</span>
+          <span class="s-card__desc">Zamień znaki specjalne na encje HTML i z powrotem.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/enkoder-i-dekoder-base64/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Enkoder i dekoder Base64 (tekst i pliki)</span>
+          <span class="s-card__desc">Koduj i dekoduj Base64 i adresy data URL, dla tekstu i plików.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/konwerter-kolorow/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Konwerter kolorów (HEX, RGB, HSL, CMYK)</span>
+          <span class="s-card__desc">Konwertuj kolory między HEX, RGB, HSL, HSV i CMYK, z selektorem i pipetą.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/generator-uuid-guid/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generator UUID / GUID (v4 i v7)</span>
+          <span class="s-card__desc">Generuj partie bezpiecznych losowych UUID, także sortowalnych w czasie v7.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/konwerter-systemow-liczbowych/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Konwerter systemów liczbowych (binarny, ósemkowy, dziesiętny, hex)</span>
+          <span class="s-card__desc">Konwertuj liczby całkowite między podstawami 2–36, o dowolnej wielkości.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/generator-naglowka-basic-auth/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generator nagłówka Basic Auth</span>
+          <span class="s-card__desc">Utwórz nagłówek Authorization: Basic z nazwy użytkownika i hasła.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/kalkulator-przezroczystosci-hex/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Kalkulator przezroczystości hex (krycie na hex)</span>
+          <span class="s-card__desc">Zamień procenty krycia na dwucyfrowe wartości alfa hex, np. 50% = 80.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/generator-znacznika-meta-viewport/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generator znacznika meta viewport</span>
+          <span class="s-card__desc">Zbuduj poprawny znacznik viewport dla stron responsywnych.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/generator-znacznikow-html-favicony/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generator znaczników HTML favicony</span>
+          <span class="s-card__desc">Wygeneruj znaczniki link i manifest dla ikon na desktop i mobile.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/kreator-parametrow-zapytania-url/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Kreator parametrów zapytania URL</span>
+          <span class="s-card__desc">Zamień pary klucz-wartość na poprawnie zakodowany ciąg zapytania URL.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/generator-adresow-url-omijajacych-cache/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generator adresów URL omijających cache</span>
+          <span class="s-card__desc">Dodaj parametr wersji lub znacznik czasu, aby przeglądarki pobrały najnowszy plik.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/sprawdzanie-wygasniecia-certyfikatu-ssl-i-przypomnienie/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Sprawdzanie wygaśnięcia certyfikatu SSL i przypomnienie</span>
+          <span class="s-card__desc">Odczytaj certyfikat, zobacz ile dni zostało i pobierz przypomnienia do kalendarza.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/analizator-naglowkow-e-mail/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Analizator nagłówków e-mail</span>
+          <span class="s-card__desc">Prześledź trasę wiadomości, opóźnienia oraz wyniki SPF, DKIM i DMARC.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/generator-i-walidator-robots-txt/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generator i walidator robots.txt</span>
+          <span class="s-card__desc">Utwórz plik robots.txt lub sprawdź istniejący pod kątem błędów składni.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/walidator-i-formater-sitemap-xml/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Walidator i formater sitemap XML</span>
+          <span class="s-card__desc">Zwaliduj sitemapę względem standardu i sformatuj ją.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/podglad-open-graph-i-udostepniania/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Podgląd Open Graph i udostępniania</span>
+          <span class="s-card__desc">Zobacz podgląd linku na Facebooku, X, LinkedIn i Slacku i pobierz znaczniki meta.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/generator-cienia-css-box-shadow/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generator cienia CSS box-shadow</span>
+          <span class="s-card__desc">Projektuj warstwowe cienie wizualnie i kopiuj czysty CSS.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/wyjasnianie-i-testowanie-wyrazen-regularnych/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Wyjaśnianie i testowanie wyrażeń regularnych</span>
+          <span class="s-card__desc">Rozłóż wyrażenie regularne na zrozumiałe części i testuj na żywo.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/wyszukiwarka-numerow-portow/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Wyszukiwarka numerów portów (TCP/UDP)</span>
+          <span class="s-card__desc">Sprawdź, jaka usługa używa portu i jaki port ma dana usługa.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/wyszukiwarka-typow-mime/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Wyszukiwarka typów MIME (rozszerzenie do Content-Type)</span>
+          <span class="s-card__desc">Znajdź właściwy Content-Type dla rozszerzenia pliku lub rozszerzenie dla typu MIME.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/generator-rekordow-spf-i-dmarc/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generator rekordów SPF i DMARC</span>
+          <span class="s-card__desc">Zbuduj rekordy TXT DNS, które chronią e-maile Twojej domeny przed podszywaniem.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/plac-zabaw-i-sciagawka-css-flexbox/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Plac zabaw i ściągawka CSS Flexbox</span>
+          <span class="s-card__desc">Przeklikaj ustawienia flexbox, zobacz wynik na żywo i skopiuj CSS.</span>
+        </a><a class="s-card" data-cat="dev" href="/pl/tester-podpisu-webhooka/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Tester podpisu webhooka (HMAC SHA-256)</span>
+          <span class="s-card__desc">Oblicz podpisy webhooków w stylu GitHub, Stripe i Slack i sprawdź otrzymany.</span>
+        </a></div>
+      </div></div>
+    </section>
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Najczęstsze pytania</h2>
+      <div class="s-faq">
+        <details open><summary>Czy moje pliki są gdzieś przesyłane?</summary><p>Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony.</p></details>
+        <details><summary>Czy to narzędzie jest darmowe?</summary><p>Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/pl/prywatnosc/">Prywatność</a>
+        <a href="/pl/nota-prawna/">Nota prawna</a>
+        <span class="s-footer__note">Działa w przeglądarce. Bez przesyłania, bez konta, bez śledzenia.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+</body>
+</html>

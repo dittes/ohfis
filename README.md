@@ -43,6 +43,9 @@ Pages under `en/ de/ pl/ cs/`, `sitemap.xml`, `llms*.txt`, `robots.txt`, `servic
 
 - All 228 utility tools have their explanations (how it works, steps, FAQs) translated into German, Polish and Czech by hand, in `build/tools/i18n/<lang>/NN.mjs`. A tool without a translation falls back to the English text (marked `lang="en"` with a note). Interface strings that are not tool-specific are localised in `build/content`.
 - The translations are written by an AI model without a native-speaker review; corrections are welcome as edits to those files.
+- Navigation: seven sections (PDF & Documents, Text & Notes, Spreadsheets & CSV, Images & Media, Time & Calendar, Business & Team, IT & Web), defined as `GROUPS` in `build/tools/registry.mjs`. The ten finer categories still exist inside a section page. The footer only holds the legal links; the language is switched in the header.
+- URLs are translated in every language. PDF tool slugs are set in `build/registry.mjs`; utility tool slugs are generated from the translated tool name (English keeps the tool id) and section slugs come from `GROUPS`. The former English slugs and category URLs stay alive as small redirect pages. `tests/urls.test.mjs` checks canonicals, redirects, links and the navigation.
+- Logo: flat blue tile with a white page and an "O" ring (`build/icons.mjs`); `build/make-icons.mjs` renders the PNG icons and the social card.
 - Content-Security-Policy allows only this origin (plus `wasm-unsafe-eval`, `blob:` and `data:`), so tools cannot send data elsewhere. Features that need a server (URL unshortening, network jitter tests) are therefore not part of the site.
 - Links to files-online.com, open-online.com, test.institute and culators.com are placed where they help (hardware tests, file viewers, standard calculators), not on every page.
 - Sunrise and moon calculations follow NOAA and Meeus; tests compare against published almanac values.

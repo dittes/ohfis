@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Darmowe narzędzia do tekstu i notatek online – Online za darmo</title>
+  <meta name="description" content="Czyść, konwertuj, licz i porównuj tekst; notatniki, listy kontrolne, hasła, kody QR i szyfrowane notatki. Za darmo, działa w przeglądarce, nic nie jest przesyłane.">
+  
+  <link rel="canonical" href="https://ohfis.com/pl/narzedzia-tekstowe/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/text-tools/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/text-werkzeuge/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/narzedzia-tekstowe/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/textove-nastroje/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-tools/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/pl/narzedzia-tekstowe/">
+  <meta property="og:title" content="Darmowe narzędzia do tekstu i notatek online – Online za darmo">
+  <meta property="og:description" content="Czyść, konwertuj, licz i porównuj tekst; notatniki, listy kontrolne, hasła, kody QR i szyfrowane notatki. Za darmo, działa w przeglądarce, nic nie jest przesyłane.">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=f5925d7f">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"Tekst i notatki"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Darmowe narzędzia do tekstu i notatek online","description":"Czyść, konwertuj, licz i porównuj tekst; notatniki, listy kontrolne, hasła, kody QR i szyfrowane notatki. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","url":"https://ohfis.com/pl/narzedzia-tekstowe/","inLanguage":"pl","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://ohfis.com/pl/generator-hasel/","name":"Generator haseł"},{"@type":"ListItem","position":2,"url":"https://ohfis.com/pl/generator-fraz-haslowych/","name":"Generator fraz hasłowych (Diceware)"},{"@type":"ListItem","position":3,"url":"https://ohfis.com/pl/dekoder-i-weryfikator-jwt/","name":"Dekoder i weryfikator JWT"},{"@type":"ListItem","position":4,"url":"https://ohfis.com/pl/generator-kodu-qr-do-wi-fi/","name":"Generator kodu QR do Wi-Fi"},{"@type":"ListItem","position":5,"url":"https://ohfis.com/pl/generator-kodu-qr-vcard/","name":"Generator kodu QR vCard (wizytówka)"},{"@type":"ListItem","position":6,"url":"https://ohfis.com/pl/generator-kodow-qr/","name":"Generator kodów QR"},{"@type":"ListItem","position":7,"url":"https://ohfis.com/pl/zaszyfrowana-notatka-jako-link/","name":"Zaszyfrowana notatka jako link"},{"@type":"ListItem","position":8,"url":"https://ohfis.com/pl/notatnik-online-z-autozapisem/","name":"Notatnik online z autozapisem"},{"@type":"ListItem","position":9,"url":"https://ohfis.com/pl/lista-kontrolna-z-paskiem-postepu/","name":"Lista kontrolna z paskiem postępu"},{"@type":"ListItem","position":10,"url":"https://ohfis.com/pl/tablica-kanban/","name":"Tablica Kanban (do zrobienia, w toku, gotowe)"},{"@type":"ListItem","position":11,"url":"https://ohfis.com/pl/licznik-klikniec/","name":"Licznik kliknięć (zliczanie)"},{"@type":"ListItem","position":12,"url":"https://ohfis.com/pl/generator-spisu-tresci-markdown/","name":"Generator spisu treści Markdown"},{"@type":"ListItem","position":13,"url":"https://ohfis.com/pl/wypelnianie-zmiennych-szablonu/","name":"Wypełnianie zmiennych szablonu ({{name}})"},{"@type":"ListItem","position":14,"url":"https://ohfis.com/pl/macierz-decyzyjna/","name":"Macierz decyzyjna (ważona punktacja)"},{"@type":"ListItem","position":15,"url":"https://ohfis.com/pl/formatowanie-codziennego-standupu/","name":"Formatowanie codziennego standupu"},{"@type":"ListItem","position":16,"url":"https://ohfis.com/pl/wklej-jako-zwykly-tekst/","name":"Wklej jako zwykły tekst (usuń formatowanie)"},{"@type":"ListItem","position":17,"url":"https://ohfis.com/pl/markdown-na-sformatowany-e-mail/","name":"Markdown na sformatowany e-mail"},{"@type":"ListItem","position":18,"url":"https://ohfis.com/pl/schowek-fragmentow-tekstu/","name":"Schowek fragmentów tekstu (kopiuj jednym kliknięciem)"},{"@type":"ListItem","position":19,"url":"https://ohfis.com/pl/konwerter-tekstu-sformatowanego-na-czysty-html/","name":"Konwerter tekstu sformatowanego na czysty HTML"},{"@type":"ListItem","position":20,"url":"https://ohfis.com/pl/tlumacz-tekstu-na-brajla/","name":"Tłumacz tekstu na brajla"},{"@type":"ListItem","position":21,"url":"https://ohfis.com/pl/karta-kontaktow-alarmowych/","name":"Karta kontaktów alarmowych (PDF do druku)"},{"@type":"ListItem","position":22,"url":"https://ohfis.com/pl/minutnik-pisania-z-licznikiem-slow/","name":"Minutnik pisania z licznikiem słów"},{"@type":"ListItem","position":23,"url":"https://ohfis.com/pl/usuwanie-niewidocznych-znakow/","name":"Usuwanie niewidocznych znaków"},{"@type":"ListItem","position":24,"url":"https://ohfis.com/pl/zmiana-wielkosci-liter/","name":"Zmiana wielkości liter"},{"@type":"ListItem","position":25,"url":"https://ohfis.com/pl/usuwanie-duplikatow-linii/","name":"Usuwanie duplikatów linii"},{"@type":"ListItem","position":26,"url":"https://ohfis.com/pl/lista-do-tekstu-rozdzielonego-przecinkami/","name":"Lista do tekstu rozdzielonego przecinkami"},{"@type":"ListItem","position":27,"url":"https://ohfis.com/pl/wyodrebnianie-e-maili-telefonow-i-adresow-url/","name":"Wyodrębnianie e-maili, telefonów i adresów URL"},{"@type":"ListItem","position":28,"url":"https://ohfis.com/pl/porownywanie-tekstow/","name":"Porównywanie tekstów (diff)"},{"@type":"ListItem","position":29,"url":"https://ohfis.com/pl/tabela-na-markdown/","name":"Tabela na Markdown"},{"@type":"ListItem","position":30,"url":"https://ohfis.com/pl/licznik-znakow/","name":"Licznik znaków"},{"@type":"ListItem","position":31,"url":"https://ohfis.com/pl/kalkulator-czasu-przemowienia/","name":"Kalkulator czasu przemówienia"},{"@type":"ListItem","position":32,"url":"https://ohfis.com/pl/generator-danych-testowych/","name":"Generator danych testowych"},{"@type":"ListItem","position":33,"url":"https://ohfis.com/pl/cudzyslowy-typograficzne-na-proste/","name":"Cudzysłowy typograficzne na proste"},{"@type":"ListItem","position":34,"url":"https://ohfis.com/pl/usuwanie-podzialow-wierszy/","name":"Usuwanie podziałów wierszy"},{"@type":"ListItem","position":35,"url":"https://ohfis.com/pl/dodawanie-prefiksu-i-sufiksu-do-linii/","name":"Dodawanie prefiksu i sufiksu do linii"},{"@type":"ListItem","position":36,"url":"https://ohfis.com/pl/sortowanie-linii-alfabetycznie/","name":"Sortowanie linii alfabetycznie"},{"@type":"ListItem","position":37,"url":"https://ohfis.com/pl/wyodrebnianie-adresow-e-mail/","name":"Wyodrębnianie adresów e-mail"},{"@type":"ListItem","position":38,"url":"https://ohfis.com/pl/wyodrebnianie-url-i-usuwanie-parametrow-sledzacych/","name":"Wyodrębnianie URL i usuwanie parametrów śledzących"},{"@type":"ListItem","position":39,"url":"https://ohfis.com/pl/generator-slugow-url/","name":"Generator slugów URL"},{"@type":"ListItem","position":40,"url":"https://ohfis.com/pl/szyfr-rot13/","name":"Szyfr ROT13"},{"@type":"ListItem","position":41,"url":"https://ohfis.com/pl/usuwanie-emoji/","name":"Usuwanie emoji"},{"@type":"ListItem","position":42,"url":"https://ohfis.com/pl/alfabet-fonetyczny-nato/","name":"Alfabet fonetyczny NATO"},{"@type":"ListItem","position":43,"url":"https://ohfis.com/pl/losowa-kolejnosc-linii/","name":"Losowa kolejność linii"},{"@type":"ListItem","position":44,"url":"https://ohfis.com/pl/filtrowanie-linii/","name":"Filtrowanie linii (grep)"},{"@type":"ListItem","position":45,"url":"https://ohfis.com/pl/laczenie-dwoch-list-w-kolumny/","name":"Łączenie dwóch list w kolumny"},{"@type":"ListItem","position":46,"url":"https://ohfis.com/pl/tabulatory-na-spacje/","name":"Tabulatory na spacje"},{"@type":"ListItem","position":47,"url":"https://ohfis.com/pl/licznik-czestotliwosci-slow/","name":"Licznik częstotliwości słów"},{"@type":"ListItem","position":48,"url":"https://ohfis.com/pl/dzielenie-tekstu-na-czesci/","name":"Dzielenie tekstu na części"},{"@type":"ListItem","position":49,"url":"https://ohfis.com/pl/detektor-korporacyjnego-zargonu/","name":"Detektor korporacyjnego żargonu"},{"@type":"ListItem","position":50,"url":"https://ohfis.com/pl/tekst-z-wcieciami-na-json-html-i-xml/","name":"Tekst z wcięciami na JSON, HTML i XML"},{"@type":"ListItem","position":51,"url":"https://ohfis.com/pl/tekst-na-hex-binarny-i-base32/","name":"Tekst na hex, binarny i Base32"},{"@type":"ListItem","position":52,"url":"https://ohfis.com/pl/tlumacz-alfabetu-morse-a/","name":"Tłumacz alfabetu Morse’a"}]}}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Przejdź do treści</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/pl/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Główna nawigacja">
+        <a href="/pl/narzedzia-pdf/">PDF i dokumenty</a><a href="/pl/narzedzia-tekstowe/" aria-current="page">Tekst i notatki</a><a href="/pl/arkusze-i-csv/">Arkusze i CSV</a><a href="/pl/grafika-i-media/">Grafika i media</a><a href="/pl/czas-i-kalendarz/">Czas i kalendarz</a><a href="/pl/biznes-i-zespol/">Biznes i zespół</a><a href="/pl/narzedzia-it-i-web/">IT i web</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Język">pl</summary>
+          <ul>
+            <li><a href="/en/text-tools/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/text-werkzeuge/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/narzedzia-tekstowe/" hreflang="pl" lang="pl" data-set-lang="pl" aria-current="true">Polski</a></li><li><a href="/cs/textove-nastroje/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Przełącz między trybem jasnym i ciemnym" title="Przełącz między trybem jasnym i ciemnym">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/pl/">Strona główna</a></li><li><span aria-current="page">Tekst i notatki</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Darmowe narzędzia do tekstu i notatek online</h1>
+        <p>Czyść, konwertuj, licz i porównuj tekst; notatniki, listy kontrolne, hasła, kody QR i szyfrowane notatki. Każde narzędzie działa w przeglądarce. Nic, co wkleisz lub otworzysz, nie jest przesyłane.</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cat">
+        <div class="s-cat__head"><h2>Narzędzia tekstowe</h2></div>
+        <div class="s-cards"><a class="s-card" data-cat="text" href="/pl/usuwanie-niewidocznych-znakow/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Usuwanie niewidocznych znaków</span>
+          <span class="s-card__desc">Znajdź i usuń niewidoczne znaki, takie jak spacje zerowej szerokości i BOM.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/zmiana-wielkosci-liter/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Zmiana wielkości liter</span>
+          <span class="s-card__desc">Zamień tekst na WIELKIE, małe, Tytułowe, camelCase, snake_case i inne.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/usuwanie-duplikatow-linii/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Usuwanie duplikatów linii</span>
+          <span class="s-card__desc">Usuń powtarzające się linie i sprawdź, ile razy wystąpiły.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/lista-do-tekstu-rozdzielonego-przecinkami/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Lista do tekstu rozdzielonego przecinkami</span>
+          <span class="s-card__desc">Zamień linie w listy z przecinkami, tabulatorami lub cudzysłowami, tablice i listy SQL.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/wyodrebnianie-e-maili-telefonow-i-adresow-url/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Wyodrębnianie e-maili, telefonów i adresów URL</span>
+          <span class="s-card__desc">Wyciągnij e-maile, numery telefonów, UUID, adresy IP i daty z surowego tekstu.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/porownywanie-tekstow/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Porównywanie tekstów (diff)</span>
+          <span class="s-card__desc">Porównaj dwa teksty i zobacz każde dodane lub usunięte słowo lub linię.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/tabela-na-markdown/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Tabela na Markdown</span>
+          <span class="s-card__desc">Wklej komórki z Excela lub CSV i uzyskaj tabelę Markdown lub HTML.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/licznik-znakow/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Licznik znaków</span>
+          <span class="s-card__desc">Policz znaki, słowa i bajty względem limitów X, LinkedIn, Google Ads i SMS.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/kalkulator-czasu-przemowienia/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Kalkulator czasu przemówienia</span>
+          <span class="s-card__desc">Oszacuj, ile potrwa przemówienie lub skrypt w wolnym, naturalnym i szybkim tempie.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/generator-danych-testowych/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Generator danych testowych</span>
+          <span class="s-card__desc">Generuj realistyczne imiona, e-maile i adresy jako dane testowe zamiast Lorem Ipsum.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/cudzyslowy-typograficzne-na-proste/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Cudzysłowy typograficzne na proste</span>
+          <span class="s-card__desc">Zamień zaokrąglone cudzysłowy, myślniki, wielokropki i ligatury na zwykły ASCII.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/usuwanie-podzialow-wierszy/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Usuwanie podziałów wierszy</span>
+          <span class="s-card__desc">Połącz tekst skopiowany z PDF w płynne akapity, zachowując prawdziwe akapity.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/dodawanie-prefiksu-i-sufiksu-do-linii/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Dodawanie prefiksu i sufiksu do linii</span>
+          <span class="s-card__desc">Dodaj tekst, numery lub tagi przed lub po każdej linii jednym kliknięciem.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/sortowanie-linii-alfabetycznie/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Sortowanie linii alfabetycznie</span>
+          <span class="s-card__desc">Sortuj listy A–Z, Z–A, według długości lub naturalnie (v2 przed v10).</span>
+        </a><a class="s-card" data-cat="text" href="/pl/wyodrebnianie-adresow-e-mail/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Wyodrębnianie adresów e-mail</span>
+          <span class="s-card__desc">Wyciągnij wszystkie adresy e-mail z tekstu, usuń duplikaty i pogrupuj według domeny.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/wyodrebnianie-url-i-usuwanie-parametrow-sledzacych/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+          <span class="s-card__title">Wyodrębnianie URL i usuwanie parametrów śledzących</span>
+          <span class="s-card__desc">Wypisz linki z tekstu i usuń utm_*, fbclid i inne znaczniki śledzące.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/generator-slugow-url/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+          <span class="s-card__title">Generator slugów URL</span>
+          <span class="s-card__desc">Zamień tytuły w czyste, pozbawione akcentów slugi URL przyjazne SEO.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/szyfr-rot13/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Szyfr ROT13</span>
+          <span class="s-card__desc">Koduj i dekoduj ROT13 oraz inne szyfry Cezara.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/usuwanie-emoji/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Usuwanie emoji</span>
+          <span class="s-card__desc">Usuń emoji i piktogramy z tekstu lub zredukuj wszystko do czystego ASCII.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/alfabet-fonetyczny-nato/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Alfabet fonetyczny NATO</span>
+          <span class="s-card__desc">Literuj nazwy, kody i numery seryjne: Alfa, Bravo, Charlie…</span>
+        </a><a class="s-card" data-cat="text" href="/pl/losowa-kolejnosc-linii/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Losowa kolejność linii</span>
+          <span class="s-card__desc">Przetasuj listę w losowej kolejności uczciwym algorytmem Fisher-Yates.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/filtrowanie-linii/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Filtrowanie linii (grep)</span>
+          <span class="s-card__desc">Zachowaj lub usuń linie zawierające szukany tekst.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/laczenie-dwoch-list-w-kolumny/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Łączenie dwóch list w kolumny</span>
+          <span class="s-card__desc">Wklej dwie listy i połącz je obok siebie, gotowe do Excela.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/tabulatory-na-spacje/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Tabulatory na spacje</span>
+          <span class="s-card__desc">Ujednolić wcięcia kodu do 2, 4 lub 8 spacji albo z powrotem do tabulatorów.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/licznik-czestotliwosci-slow/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Licznik częstotliwości słów</span>
+          <span class="s-card__desc">Uszereguj najczęściej używane słowa i frazy z pominięciem słów pospolitych.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/dzielenie-tekstu-na-czesci/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Dzielenie tekstu na części</span>
+          <span class="s-card__desc">Pokrój długi tekst na części o określonej długości bez dzielenia słów.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/detektor-korporacyjnego-zargonu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Detektor korporacyjnego żargonu</span>
+          <span class="s-card__desc">Podświetl korporacyjny żargon i zobacz proste zamienniki.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/tekst-z-wcieciami-na-json-html-i-xml/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Tekst z wcięciami na JSON, HTML i XML</span>
+          <span class="s-card__desc">Zamień wcięty konspekt na zagnieżdżony JSON, listy HTML, XML, Markdown lub YAML.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/tekst-na-hex-binarny-i-base32/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Tekst na hex, binarny i Base32</span>
+          <span class="s-card__desc">Konwertuj tekst między hex, binarnym, dziesiętnym, ósemkowym, Base32 i Base64.</span>
+        </a><a class="s-card" data-cat="text" href="/pl/tlumacz-alfabetu-morse-a/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Tłumacz alfabetu Morse’a</span>
+          <span class="s-card__desc">Tłumacz tekst na alfabet Morse’a i z powrotem, z odtwarzaniem dźwięku.</span>
+        </a></div>
+      </div><div class="s-cat">
+        <div class="s-cat__head"><h2>Notatki i prywatność</h2></div>
+        <div class="s-cards"><a class="s-card" data-cat="notes" href="/pl/generator-hasel/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generator haseł</span>
+          <span class="s-card__desc">Twórz silne losowe hasła z własnymi regułami, bezpośrednio w przeglądarce.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/generator-fraz-haslowych/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generator fraz hasłowych (Diceware)</span>
+          <span class="s-card__desc">Łatwe do zapamiętania frazy hasłowe z listy słów EFF.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/dekoder-i-weryfikator-jwt/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Dekoder i weryfikator JWT</span>
+          <span class="s-card__desc">Odczytaj nagłówek, ładunek i ważność tokenu JWT bez wysyłania go gdziekolwiek.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/generator-kodu-qr-do-wi-fi/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generator kodu QR do Wi-Fi</span>
+          <span class="s-card__desc">Utwórz drukowalny kod QR, dzięki któremu goście dołączą do Wi-Fi jednym skanem.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/generator-kodu-qr-vcard/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generator kodu QR vCard (wizytówka)</span>
+          <span class="s-card__desc">Utwórz kod QR, który zapisuje Twoje dane kontaktowe w książce adresowej telefonu.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/generator-kodow-qr/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generator kodów QR</span>
+          <span class="s-card__desc">Twórz kody QR dla linków, tekstu, e-maili i SMS-ów, za darmo i bez śledzenia.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/zaszyfrowana-notatka-jako-link/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Zaszyfrowana notatka jako link</span>
+          <span class="s-card__desc">Zaszyfruj krótką wiadomość w przeglądarce i udostępnij ją jako link z osobnym kluczem.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/notatnik-online-z-autozapisem/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Notatnik online z autozapisem</span>
+          <span class="s-card__desc">Prosty notatnik zapisujący się automatycznie w przeglądarce, z wieloma kartami.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/lista-kontrolna-z-paskiem-postepu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Lista kontrolna z paskiem postępu</span>
+          <span class="s-card__desc">Odhaczaj pozycje i obserwuj procent ukończenia, zapisywane w przeglądarce.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/tablica-kanban/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Tablica Kanban (do zrobienia, w toku, gotowe)</span>
+          <span class="s-card__desc">Osobista tablica z trzema kolumnami i przeciąganiem, zapisana lokalnie.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/licznik-klikniec/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Licznik kliknięć (zliczanie)</span>
+          <span class="s-card__desc">Duży licznik na ekranie dla uczestników, głosów lub zapasów, ze skrótami klawiszowymi.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/generator-spisu-tresci-markdown/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generator spisu treści Markdown</span>
+          <span class="s-card__desc">Wygeneruj spis treści z linkami na podstawie nagłówków dokumentu Markdown.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/wypelnianie-zmiennych-szablonu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Wypełnianie zmiennych szablonu ({{name}})</span>
+          <span class="s-card__desc">Wypełniaj {{zmienne}} w szablonach e-maili, gotowych odpowiedziach i promptach AI.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/macierz-decyzyjna/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Macierz decyzyjna (ważona punktacja)</span>
+          <span class="s-card__desc">Oceń opcje względem ważonych kryteriów, aby podjąć obiektywną decyzję.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/formatowanie-codziennego-standupu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Formatowanie codziennego standupu</span>
+          <span class="s-card__desc">Zamień luźne notatki w przejrzysty raport Wczoraj / Dziś / Blokery dla Slacka.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/wklej-jako-zwykly-tekst/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Wklej jako zwykły tekst (usuń formatowanie)</span>
+          <span class="s-card__desc">Pole pośrednie, które usuwa czcionki, kolory i linki przed wklejeniem gdzie indziej.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/markdown-na-sformatowany-e-mail/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Markdown na sformatowany e-mail</span>
+          <span class="s-card__desc">Pisz w Markdown i wklejaj sformatowany tekst prosto do Gmaila lub Outlooka.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/schowek-fragmentow-tekstu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Schowek fragmentów tekstu (kopiuj jednym kliknięciem)</span>
+          <span class="s-card__desc">Trzymaj teksty wklejane codziennie i kopiuj je jednym kliknięciem.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/konwerter-tekstu-sformatowanego-na-czysty-html/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Konwerter tekstu sformatowanego na czysty HTML</span>
+          <span class="s-card__desc">Wklej z Worda lub Dokumentów Google i otrzymaj czysty HTML bez stylów i śmieci.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/tlumacz-tekstu-na-brajla/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Tłumacz tekstu na brajla</span>
+          <span class="s-card__desc">Zamień tekst na brajla w Unicode i z powrotem, ze znakami wielkich liter i liczb.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/karta-kontaktow-alarmowych/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Karta kontaktów alarmowych (PDF do druku)</span>
+          <span class="s-card__desc">Zrób jednostronicową kartę z numerami, informacjami medycznymi i notatkami na lodówkę.</span>
+        </a><a class="s-card" data-cat="notes" href="/pl/minutnik-pisania-z-licznikiem-slow/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Minutnik pisania z licznikiem słów</span>
+          <span class="s-card__desc">Pisz przez ustalony czas z licznikiem słów na żywo, tempem i celem.</span>
+        </a></div>
+      </div></div>
+    </section>
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Najczęstsze pytania</h2>
+      <div class="s-faq">
+        <details open><summary>Czy moje pliki są gdzieś przesyłane?</summary><p>Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony.</p></details>
+        <details><summary>Czy to narzędzie jest darmowe?</summary><p>Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/pl/prywatnosc/">Prywatność</a>
+        <a href="/pl/nota-prawna/">Nota prawna</a>
+        <span class="s-footer__note">Działa w przeglądarce. Bez przesyłania, bez konta, bez śledzenia.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+</body>
+</html>

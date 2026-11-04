@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Nástroje pro CSV a tabulky – Online zdarma</title>
+  <meta name="description" content="Opravujte, převádějte, slučujte a porovnávejte data CSV a tabulek. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  
+  <link rel="canonical" href="https://ohfis.com/cs/tabulky-a-csv/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/spreadsheet-csv-tools/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/tabellen-csv-werkzeuge/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/arkusze-i-csv/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tabulky-a-csv/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/spreadsheet-csv-tools/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OHFIS">
+  <meta property="og:url" content="https://ohfis.com/cs/tabulky-a-csv/">
+  <meta property="og:title" content="Nástroje pro CSV a tabulky – Online zdarma">
+  <meta property="og:description" content="Opravujte, převádějte, slučujte a porovnávejte data CSV a tabulek. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=f5925d7f">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Tabulky a CSV"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Nástroje pro CSV a tabulky","description":"Opravujte, převádějte, slučujte a porovnávejte data CSV a tabulek. Zdarma, běží v prohlížeči, nic se nenahrává.","url":"https://ohfis.com/cs/tabulky-a-csv/","inLanguage":"cs","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://ohfis.com/cs/zmena-oddelovace-csv/","name":"Změna oddělovače CSV"},{"@type":"ListItem","position":2,"url":"https://ohfis.com/cs/prohlizec-velkych-souboru-csv/","name":"Prohlížeč velkých souborů CSV"},{"@type":"ListItem","position":3,"url":"https://ohfis.com/cs/obnoveni-uvodnich-nul-v-csv/","name":"Obnovení úvodních nul v CSV"},{"@type":"ListItem","position":4,"url":"https://ohfis.com/cs/generator-vzorcu-svyhledat-a-xlookup/","name":"Generátor vzorců SVYHLEDAT a XLOOKUP"},{"@type":"ListItem","position":5,"url":"https://ohfis.com/cs/prevodnik-seriovych-cisel-dat-excelu/","name":"Převodník sériových čísel dat Excelu"},{"@type":"ListItem","position":6,"url":"https://ohfis.com/cs/prevod-json-na-csv/","name":"Převod JSON na CSV"},{"@type":"ListItem","position":7,"url":"https://ohfis.com/cs/prevod-csv-na-json/","name":"Převod CSV na JSON"},{"@type":"ListItem","position":8,"url":"https://ohfis.com/cs/transpozice-tabulky/","name":"Transpozice tabulky (řádky na sloupce)"},{"@type":"ListItem","position":9,"url":"https://ohfis.com/cs/generator-kontingencni-tabulky/","name":"Generátor kontingenční tabulky"},{"@type":"ListItem","position":10,"url":"https://ohfis.com/cs/rozdeleni-sloupce-na-vice-sloupcu/","name":"Rozdělení sloupce na více sloupců"},{"@type":"ListItem","position":11,"url":"https://ohfis.com/cs/porovnani-dvou-souboru-csv/","name":"Porovnání dvou souborů CSV"},{"@type":"ListItem","position":12,"url":"https://ohfis.com/cs/prevod-csv-na-sql-insert/","name":"Převod CSV na SQL INSERT"},{"@type":"ListItem","position":13,"url":"https://ohfis.com/cs/formatovani-tabulek-markdown/","name":"Formátování tabulek Markdown"},{"@type":"ListItem","position":14,"url":"https://ohfis.com/cs/tester-vlastnich-ciselnych-formatu-excelu/","name":"Tester vlastních číselných formátů Excelu"},{"@type":"ListItem","position":15,"url":"https://ohfis.com/cs/prevod-csv-na-geojson/","name":"Převod CSV na GeoJSON"},{"@type":"ListItem","position":16,"url":"https://ohfis.com/cs/zmena-poradi-a-mazani-sloupcu-csv/","name":"Změna pořadí a mazání sloupců CSV"},{"@type":"ListItem","position":17,"url":"https://ohfis.com/cs/normalizace-z-skore-a-min-max/","name":"Normalizace z-skóre a min-max"},{"@type":"ListItem","position":18,"url":"https://ohfis.com/cs/formatovani-telefonnich-cisel/","name":"Formátování telefonních čísel (E.164)"},{"@type":"ListItem","position":19,"url":"https://ohfis.com/cs/vyplneni-prazdnych-bunek-v-tabulce/","name":"Vyplnění prázdných buněk v tabulce"},{"@type":"ListItem","position":20,"url":"https://ohfis.com/cs/formatovani-vzorcu-excelu/","name":"Formátování vzorců Excelu"},{"@type":"ListItem","position":21,"url":"https://ohfis.com/cs/rozdeleni-adres/","name":"Rozdělení adres (ulice, město, PSČ)"},{"@type":"ListItem","position":22,"url":"https://ohfis.com/cs/prevod-meny-na-cislo/","name":"Převod měny na číslo"},{"@type":"ListItem","position":23,"url":"https://ohfis.com/cs/procentualni-zmena-sloupcu/","name":"Procentuální změna sloupců"},{"@type":"ListItem","position":24,"url":"https://ohfis.com/cs/odstraneni-mezer-v-bunkach-csv/","name":"Odstranění mezer v buňkách CSV"},{"@type":"ListItem","position":25,"url":"https://ohfis.com/cs/cisteni-hlavicek-csv/","name":"Čištění hlaviček CSV (snake_case)"},{"@type":"ListItem","position":26,"url":"https://ohfis.com/cs/slouceni-souboru-csv/","name":"Sloučení souborů CSV"},{"@type":"ListItem","position":27,"url":"https://ohfis.com/cs/kalkulacka-velikosti-vzorku/","name":"Kalkulačka velikosti vzorku"},{"@type":"ListItem","position":28,"url":"https://ohfis.com/cs/oprava-kodovani-csv/","name":"Oprava kódování CSV (UTF-8)"},{"@type":"ListItem","position":29,"url":"https://ohfis.com/cs/prekladac-vzorcu-excelu/","name":"Překladač vzorců Excelu (EN ⇄ DE, FR, ES)"},{"@type":"ListItem","position":30,"url":"https://ohfis.com/cs/unpivot-tabulky/","name":"Unpivot tabulky (křížová tabulka na seznam)"}]}}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Přejít na obsah</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/cs/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>OHFIS</span></a>
+      <nav class="s-nav" aria-label="Hlavní navigace">
+        <a href="/cs/pdf-nastroje/">PDF a dokumenty</a><a href="/cs/textove-nastroje/">Text a poznámky</a><a href="/cs/tabulky-a-csv/" aria-current="page">Tabulky a CSV</a><a href="/cs/obrazky-a-media/">Obrázky a média</a><a href="/cs/cas-a-kalendar/">Čas a kalendář</a><a href="/cs/byznys-a-tym/">Byznys a tým</a><a href="/cs/it-a-web-nastroje/">IT a web</a>
+      </nav>
+      <div class="s-actions">
+        <details class="s-lang">
+          <summary aria-label="Jazyk">cs</summary>
+          <ul>
+            <li><a href="/en/spreadsheet-csv-tools/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/tabellen-csv-werkzeuge/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/arkusze-i-csv/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/tabulky-a-csv/" hreflang="cs" lang="cs" data-set-lang="cs" aria-current="true">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Přepnout světlý a tmavý režim" title="Přepnout světlý a tmavý režim">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Nabídka" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/cs/">Domů</a></li><li><span aria-current="page">Tabulky a CSV</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Nástroje pro CSV a tabulky</h1>
+        <p>Opravujte, převádějte, slučujte a porovnávejte data CSV a tabulek. Každý nástroj běží v prohlížeči. Nic, co vložíte nebo otevřete, se nenahrává.</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cat">
+        
+        <div class="s-cards"><a class="s-card" data-cat="data" href="/cs/zmena-oddelovace-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Změna oddělovače CSV</span>
+          <span class="s-card__desc">Zjistěte oddělovač CSV a převeďte ho na čárku, středník, tabulátor nebo svislítko.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/prohlizec-velkych-souboru-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Prohlížeč velkých souborů CSV</span>
+          <span class="s-card__desc">Otevřete soubory CSV o stovkách MB, procházejte miliony řádků a prohledávejte je.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/obnoveni-uvodnich-nul-v-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Obnovení úvodních nul v CSV</span>
+          <span class="s-card__desc">Opravte PSČ a ID, která v Excelu přišla o úvodní nuly.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/generator-vzorcu-svyhledat-a-xlookup/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generátor vzorců SVYHLEDAT a XLOOKUP</span>
+          <span class="s-card__desc">Vytvořte správné vyhledávací vzorce z písmen sloupců v angličtině, němčině, francouzštině nebo španělštině.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/prevodnik-seriovych-cisel-dat-excelu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Převodník sériových čísel dat Excelu</span>
+          <span class="s-card__desc">Převeďte sériová čísla Excelu, např. 45231, na data a zpět.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/prevod-json-na-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Převod JSON na CSV</span>
+          <span class="s-card__desc">Zploštěte pole JSON a vnořené objekty do tabulky CSV pro Excel.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/prevod-csv-na-json/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Převod CSV na JSON</span>
+          <span class="s-card__desc">Převeďte CSV na objekty JSON s typovanými hodnotami a volitelným vnořením.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/transpozice-tabulky/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Transpozice tabulky (řádky na sloupce)</span>
+          <span class="s-card__desc">Prohoďte řádky a sloupce vložených buněk tabulky.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/generator-kontingencni-tabulky/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Generátor kontingenční tabulky</span>
+          <span class="s-card__desc">Seskupte data a spočítejte součty, průměry a počty bez Excelu.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/rozdeleni-sloupce-na-vice-sloupcu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Rozdělení sloupce na více sloupců</span>
+          <span class="s-card__desc">Rozdělte jména, adresy nebo kódy do samostatných sloupců podle oddělovače, pozice nebo vzoru.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/porovnani-dvou-souboru-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Porovnání dvou souborů CSV</span>
+          <span class="s-card__desc">Najděte přidané, odebrané a změněné řádky a buňky mezi dvěma soubory CSV.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/prevod-csv-na-sql-insert/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Převod CSV na SQL INSERT</span>
+          <span class="s-card__desc">Převeďte řádky tabulky na příkazy INSERT nebo UPDATE pro MySQL, PostgreSQL, SQLite nebo SQL Server.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/formatovani-tabulek-markdown/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Formátování tabulek Markdown</span>
+          <span class="s-card__desc">Zarovnejte neupravené tabulky Markdownu do přehledných mřížek.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/tester-vlastnich-ciselnych-formatu-excelu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Tester vlastních číselných formátů Excelu</span>
+          <span class="s-card__desc">Vyzkoušejte vlastní formátovací kódy, např. #,##0.00 nebo [&gt;=1000]0.0,&quot;K&quot;, na ukázkových hodnotách.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/prevod-csv-na-geojson/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Převod CSV na GeoJSON</span>
+          <span class="s-card__desc">Převeďte seznam souřadnic na GeoJSON FeatureCollection s body.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/zmena-poradi-a-mazani-sloupcu-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Změna pořadí a mazání sloupců CSV</span>
+          <span class="s-card__desc">Přetažením změňte pořadí sloupců nebo je odeberte před sdílením tabulky.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/normalizace-z-skore-a-min-max/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Normalizace z-skóre a min-max</span>
+          <span class="s-card__desc">Standardizujte číselné sloupce na z-skóre nebo je přeškálujte na 0–1.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/formatovani-telefonnich-cisel/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Formátování telefonních čísel (E.164)</span>
+          <span class="s-card__desc">Sjednoťte telefonní čísla v seznamu do formátu E.164 nebo čitelného mezinárodního stylu.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/vyplneni-prazdnych-bunek-v-tabulce/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Vyplnění prázdných buněk v tabulce</span>
+          <span class="s-card__desc">Vyplňte prázdné buňky hodnotou shora, pevnou hodnotou nebo průměrem sloupce.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/formatovani-vzorcu-excelu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Formátování vzorců Excelu</span>
+          <span class="s-card__desc">Rozdělte dlouhé vnořené vzorce Excelu na čitelné odsazené řádky.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/rozdeleni-adres/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Rozdělení adres (ulice, město, PSČ)</span>
+          <span class="s-card__desc">Rozdělte jednořádkové adresy na ulici, číslo, jednotku, město, stát a PSČ.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/prevod-meny-na-cislo/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M15 9.2a6 6 0 1 1-5.8 5.8"/><path d="M8 7.5h2.2a1.3 1.3 0 0 1 0 2.6H8.4a1.3 1.3 0 0 0 0 2.6H11"/></svg>
+          <span class="s-card__title">Převod měny na číslo</span>
+          <span class="s-card__desc">Změňte „$1,234.56“, „1.234,56 €“ a „(500)“ na obyčejná čísla.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/procentualni-zmena-sloupcu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Procentuální změna sloupců</span>
+          <span class="s-card__desc">Přidejte sloupec procentuální změny porovnávající dva číselné sloupce.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/odstraneni-mezer-v-bunkach-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Odstranění mezer v buňkách CSV</span>
+          <span class="s-card__desc">Odstraňte úvodní, koncové a skryté mezery z každé buňky.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/cisteni-hlavicek-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Čištění hlaviček CSV (snake_case)</span>
+          <span class="s-card__desc">Změňte nepořádné názvy sloupců na čisté názvy bezpečné pro databáze.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/slouceni-souboru-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Sloučení souborů CSV</span>
+          <span class="s-card__desc">Spojte několik souborů CSV do jednoho a přiřaďte sloupce podle názvu.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/kalkulacka-velikosti-vzorku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M15 9.2a6 6 0 1 1-5.8 5.8"/><path d="M8 7.5h2.2a1.3 1.3 0 0 1 0 2.6H8.4a1.3 1.3 0 0 0 0 2.6H11"/></svg>
+          <span class="s-card__title">Kalkulačka velikosti vzorku</span>
+          <span class="s-card__desc">Kolik respondentů potřebujete pro danou hladinu spolehlivosti a toleranci chyby?</span>
+        </a><a class="s-card" data-cat="data" href="/cs/oprava-kodovani-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Oprava kódování CSV (UTF-8)</span>
+          <span class="s-card__desc">Opravte rozbité znaky jako MÃ¼ller a převeďte soubory do UTF-8.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/prekladac-vzorcu-excelu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Překladač vzorců Excelu (EN ⇄ DE, FR, ES)</span>
+          <span class="s-card__desc">Převádějte vzorce mezi anglickým, německým, francouzským a španělským Excelem včetně oddělovačů.</span>
+        </a><a class="s-card" data-cat="data" href="/cs/unpivot-tabulky/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Unpivot tabulky (křížová tabulka na seznam)</span>
+          <span class="s-card__desc">Převeďte širokou křížovou tabulku se sloupcem na měsíc na přehledný dlouhý seznam.</span>
+        </a></div>
+      </div></div>
+    </section>
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Časté dotazy</h2>
+      <div class="s-faq">
+        <details open><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
+        <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/cs/soukromi/">Soukromí</a>
+        <a href="/cs/tiraz/">Tiráž</a>
+        <span class="s-footer__note">Běží ve vašem prohlížeči. Bez nahrávání, bez účtu, bez sledování.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=21b41bad" defer></script>
+</body>
+</html>
