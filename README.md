@@ -41,7 +41,8 @@ Pages under `en/ de/ pl/ cs/`, `sitemap.xml`, `llms*.txt`, `robots.txt`, `servic
 
 ## Design notes
 
-- Body text of the tools is English on every language version (marked `lang="en"`); names, short descriptions, menus and the home page are translated.
+- All 228 utility tools have their explanations (how it works, steps, FAQs) translated into German, Polish and Czech by hand, in `build/tools/i18n/<lang>/NN.mjs`. A tool without a translation falls back to the English text (marked `lang="en"` with a note). Interface strings that are not tool-specific are localised in `build/content`.
+- The translations are written by an AI model without a native-speaker review; corrections are welcome as edits to those files.
 - Content-Security-Policy allows only this origin (plus `wasm-unsafe-eval`, `blob:` and `data:`), so tools cannot send data elsewhere. Features that need a server (URL unshortening, network jitter tests) are therefore not part of the site.
 - Links to files-online.com, open-online.com, test.institute and culators.com are placed where they help (hardware tests, file viewers, standard calculators), not on every page.
 - Sunrise and moon calculations follow NOAA and Meeus; tests compare against published almanac values.

@@ -1,0 +1,32 @@
+export default {
+'year-progress-bar': [[
+`Uvidíte jedním pohledem, jak daleko pokročil rok, čtvrtletí, měsíc a týden, s procenty, čísly dnů a zbývajícími dny, dále zbývající týdny roku, číslo týdne ISO a pracovní dny do 31. prosince (volitelně minus svátky země).`,
+`Postup roku je číslo dne dělené délkou roku (365 nebo 366), takže 1. červenec je v přestupném roce 49,7 % a jinak 49,9 %; zvolený den se počítá jako dokončený. Týden běží od pondělí do neděle. Pracovní dny jsou dny pondělí až pátek od zvoleného data do konce roku včetně, minus svátky ze zabudovaných sad (jen celostátní, žádné regionální). Pro plánování můžete zvolit libovolné datum, nejen dnešní.`],
+[`Vyberte datum (výchozí je dnes).`,`Zvolte sadu svátků, chcete-li pracovní dny.`,`Přečtěte si ukazatele průběhu a zbývající dny.`],
+[[`Počítá se zvolený den jako hotový?`,`Ano. Číslo dne zahrnuje zvolený den.`],[`Jsou zahrnuty regionální svátky?`,`Ne, jen celostátní.`]]],
+'fiscal-year-mapper': [[
+`Zvolte měsíc, ve kterém začíná váš fiskální rok, a datum a získáte fiskální rok, fiskální čtvrtletí, začátek a konec tohoto fiskálního roku a jak daleko v něm jste. Tabulka přiřazuje každý kalendářní měsíc jeho fiskálnímu čtvrtletí a období. Předvolby existují pro federální vládu USA, Spojené království a Indii, Austrálii a prostý kalendářní rok.`,
+`Fiskální rok obsahující datum začíná v počátečním měsíci téhož roku, pokud je datum v něm nebo po něm, jinak v předchozím roce. Označení roku závisí na konvenci: můžete ho pojmenovat podle kalendářního roku, v němž začíná (FY2025 = duben 2025 až březen 2026), nebo v němž končí (federální FY2025 USA = říjen 2024 až září 2025). Čtvrtletí jsou po sobě jdoucí tříměsíční bloky od počátečního měsíce. Maloobchodní kalendáře 4-4-5 s 52týdenními roky jsou jiný systém a zde nejsou pokryty.`],
+[`Zvolte první měsíc fiskálního roku a konvenci pojmenování.`,`Zadejte datum.`,`Přečtěte si fiskální rok, čtvrtletí a mapu měsíců.`],
+[[`Co je federální fiskální rok USA?`,`Od 1. října do 30. září, pojmenovaný podle roku, v němž končí.`],[`Proč moje firma ukazuje jiné označení roku?`,`Konvence pojmenování se liší. Použijte volbu „začíná“ nebo „končí“, aby odpovídala vaší.`]]],
+'availability-formatter': [[
+`Vypište časové rozsahy, kdy jste v daný den volní, uveďte své časové pásmo a pásma ostatních a získáte úhlednou zprávu k vložení do e-mailu nebo chatu: každý slot s místními časy, zkratkou pásma a poznámkou, pokud připadá na jiné datum. Ušetří vám počítání z hlavy při domlouvání hovorů napříč kontinenty.`,
+`Každý rozsah se čte jako nástěnný čas ve vašem časovém pásmu ve zvolený den, převede se na přesný okamžik databází časových pásem prohlížeče (takže letní čas v ten den je správný, včetně přechodů) a pak se zobrazí v každém dalším pásmu. Rozumí časům jako 9, 9:30, 2pm nebo 14:00 a rozsahům s „-“ nebo „to“. Názvy pásem používají formát IANA jako Europe/Berlin; zkratky jako EST se nepřijímají, protože jsou nejednoznačné.`],
+[`Vyberte datum a své časové pásmo.`,`Zadejte své volné rozsahy a ostatní pásma.`,`Zkopírujte formátovanou zprávu.`],
+[[`Proč musím používat názvy jako America/New_York?`,`Obsahují pravidla letního času; samotné EST nebo CST jsou nejednoznačné.`],[`Zvládá změny letního času?`,`Ano, pro zvolené datum.`]]],
+'flight-time-calculator': [[
+`Zadejte datum, čas a časové pásmo odletu, dobu letu a pásmo příletu a získáte místní datum a čas příletu, posun časových pásem a celkovou dobu cesty. Přidejte přestup a druhý let a uvidíte konečný přílet v posledním pásmu, s krátkou radou k jet lagu.`,
+`Nástěnný čas odletu se převede na přesný okamžik databází časových pásem prohlížeče (takže se zohlední letní čas v ten den, i v týdnech, kdy USA a Evropa mění čas v různé dny), přičte se doba letu a okamžik se zobrazí v pásmu příletu. Posun je rozdíl obou posunů UTC. Lety přes půlnoc a přes datovou hranici ukazují správné místní datum. Použijte plánovaný blokový čas z letenky; zpoždění se nezohledňují. Pravidlo palce pro jet lag (asi den na hodinu posunu) je přiblížení, ne lékařská rada.`],
+[`Zadejte odlet a dobu letu.`,`Přidejte přestup a druhý let, pokud ho máte.`,`Přečtěte si čas příletu a posun.`],
+[[`Proč je přílet následující den?`,`Protože let v pásmu příletu překročí půlnoc. Zobrazené datum je tamní místní datum.`],[`Zohledňuje letní čas?`,`Ano, pro data cesty.`]]],
+'weekly-hours-budget': [[
+`Zadejte své týdenní hodiny, kolik chcete nechat volných na schůzky, e-maily a překvapení, a seznam pracovních položek s hodinami. Plánovač ukáže plánované hodiny, využitelné hodiny po rezervě, volnou kapacitu nebo přeplnění, podíl každé položky a hodiny na den.`,
+`Využitelné hodiny jsou dostupné hodiny minus procento rezervy, volná kapacita je využitelné minus plánované hodiny a podíl každého řádku se ukazuje jak z plánu, tak z celého týdne. Rezerva 20–30 % je typická pro lidi s mnoha vyrušeními. Plánovač počítá zadané hodiny: neodhaduje, jak dlouho úkoly trvají (k tomu použijte odhad PERT), a nic se neukládá ani neodesílá.`],
+[`Zadejte své hodiny a rezervu.`,`Vypište úkoly s hodinami.`,`Odebírejte nebo přesouvejte práci, dokud se plán nevejde.`],
+[[`Jak velká má být rezerva?`,`20 % pro soustředěnou práci, 30–40 % pro role s mnoha schůzkami a žádostmi o podporu.`],[`Proč se plán zdá příliš plný?`,`Plánovací omyl: úkoly trvají déle, než se čeká. Odhadujte třemi hodnotami nástrojem PERT.`]]],
+'okr-timeline-generator': [[
+`Zvolte první den čtvrtletí, jeho délku v týdnech a den v týdnu pro check-iny a získáte datovaný harmonogram: kickoff, jeden check-in týdně, přezkum v polovině čtvrtletí, hodnocení a retrospektivu poslední den. Zkopírujte tabulku do kalendáře nebo plánovacího dokumentu.`,
+`Harmonogram se počítá od počátečního data: první check-in je ve zvolený den v týdnu prvního plného týdne, přezkum poloviny čtvrtletí v prostředním týdnu, hodnocení čtyři dny před koncem a čtvrtletí končí po zvoleném počtu týdnů (výchozí 13). Je to rytmus, ne metodika: přizpůsobte ho své firmě. Svátky se nezohledňují, proto check-in přesuňte, pokud na jeden připadne.`],
+[`Zvolte začátek čtvrtletí, délku a den v týdnu pro check-in.`,`Přečtěte si datovaný harmonogram.`,`Zkopírujte ho do kalendáře.`],
+[[`Jak často kontrolovat OKR?`,`Týdenní krátké check-iny o jistotě a překážkách, hlubší přezkum uprostřed a hodnoticí schůzka na konci.`],[`Jaké je dobré skóre OKR?`,`Asi 0,7 u ambiciózních cílů; pokaždé 1,0 naznačuje, že cíle byly příliš snadné.`]]],
+};

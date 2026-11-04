@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Formátování dostupnosti (časová okna ve více časových pásmech)","url":"https://ohfis.com/cs/availability-formatter/","description":"Změňte volná časová okna na zprávu se všemi časovými pásmy. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Čas a kalendář","item":"https://ohfis.com/cs/time-calendar-tools/"},{"@type":"ListItem","position":3,"name":"Formátování dostupnosti (časová okna ve více časových pásmech)"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Formátování dostupnosti (časová okna ve více časových pásmech)","step":[{"@type":"HowToStep","position":1,"text":"Pick the date and your time zone."},{"@type":"HowToStep","position":2,"text":"Enter your free ranges and the other zones."},{"@type":"HowToStep","position":3,"text":"Copy the formatted message."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why must I use names like America/New_York?","acceptedAnswer":{"@type":"Answer","text":"They contain the daylight-saving rules; EST or CST alone are ambiguous."}},{"@type":"Question","name":"Does it handle daylight saving changes?","acceptedAnswer":{"@type":"Answer","text":"Yes, for the date you choose."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Formátování dostupnosti (časová okna ve více časových pásmech)","step":[{"@type":"HowToStep","position":1,"text":"Vyberte datum a své časové pásmo."},{"@type":"HowToStep","position":2,"text":"Zadejte své volné rozsahy a ostatní pásma."},{"@type":"HowToStep","position":3,"text":"Zkopírujte formátovanou zprávu."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Proč musím používat názvy jako America/New_York?","acceptedAnswer":{"@type":"Answer","text":"Obsahují pravidla letního času; samotné EST nebo CST jsou nejednoznačné."}},{"@type":"Question","name":"Zvládá změny letního času?","acceptedAnswer":{"@type":"Answer","text":"Ano, pro zvolené datum."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Formátování dostupnosti (časová okna ve více časových pásmech)</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">List the time ranges you are free on a day, name your time zone and the zones of the other people, and get a neat message to paste into an email or chat: each slot with its local times, the zone abbreviation and a note if it falls on another date. It saves the mental arithmetic when arranging calls across continents.</p><p lang="en">Each range is read as wall-clock time in your time zone on the chosen date, converted to an exact instant with the time-zone database in your browser (so daylight saving time on that date is correct, including transitions) and then shown in each other zone. Times like 9, 9:30, 2pm or 14:00 and ranges with &quot;-&quot; or &quot;to&quot; are understood. Zone names use the IANA format such as Europe/Berlin; abbreviations like EST are not accepted because they are ambiguous.</p>
+        
+        <p>Vypište časové rozsahy, kdy jste v daný den volní, uveďte své časové pásmo a pásma ostatních a získáte úhlednou zprávu k vložení do e-mailu nebo chatu: každý slot s místními časy, zkratkou pásma a poznámkou, pokud připadá na jiné datum. Ušetří vám počítání z hlavy při domlouvání hovorů napříč kontinenty.</p><p>Každý rozsah se čte jako nástěnný čas ve vašem časovém pásmu ve zvolený den, převede se na přesný okamžik databází časových pásem prohlížeče (takže letní čas v ten den je správný, včetně přechodů) a pak se zobrazí v každém dalším pásmu. Rozumí časům jako 9, 9:30, 2pm nebo 14:00 a rozsahům s „-“ nebo „to“. Názvy pásem používají formát IANA jako Europe/Berlin; zkratky jako EST se nepřijímají, protože jsou nejednoznačné.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Pick the date and your time zone.</p></li><li><p lang="en">Enter your free ranges and the other zones.</p></li><li><p lang="en">Copy the formatted message.</p></li></ol>
+        <ol class="s-steps"><li><p>Vyberte datum a své časové pásmo.</p></li><li><p>Zadejte své volné rozsahy a ostatní pásma.</p></li><li><p>Zkopírujte formátovanou zprávu.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Why must I use names like America/New_York?</summary><p lang="en">They contain the daylight-saving rules; EST or CST alone are ambiguous.</p></details>
-          <details><summary lang="en">Does it handle daylight saving changes?</summary><p lang="en">Yes, for the date you choose.</p></details>
+          <details open><summary>Proč musím používat názvy jako America/New_York?</summary><p>Obsahují pravidla letního času; samotné EST nebo CST jsou nejednoznačné.</p></details>
+          <details><summary>Zvládá změny letního času?</summary><p>Ano, pro zvolené datum.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
