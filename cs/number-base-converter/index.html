@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Převodník číselných soustav (binární, osmičková, desítková, hex)","url":"https://ohfis.com/cs/number-base-converter/","description":"Převádějte celá čísla mezi soustavami 2 až 36 libovolné velikosti. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"IT a webové nástroje","item":"https://ohfis.com/cs/it-web-tools/"},{"@type":"ListItem","position":3,"name":"Převodník číselných soustav (binární, osmičková, desítková, hex)"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Převodník číselných soustav (binární, osmičková, desítková, hex)","step":[{"@type":"HowToStep","position":1,"text":"Enter the number and choose its base."},{"@type":"HowToStep","position":2,"text":"Read the other bases."},{"@type":"HowToStep","position":3,"text":"Copy the value you need."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I convert hex to decimal?","acceptedAnswer":{"@type":"Answer","text":"Each hex digit is worth 16 times the one to its right: FF = 15×16 + 15 = 255."}},{"@type":"Question","name":"What is the largest number it can handle?","acceptedAnswer":{"@type":"Answer","text":"There is no fixed limit; memory is the only constraint."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Převodník číselných soustav (binární, osmičková, desítková, hex)","step":[{"@type":"HowToStep","position":1,"text":"Zadejte číslo a zvolte jeho soustavu."},{"@type":"HowToStep","position":2,"text":"Přečtěte si ostatní soustavy."},{"@type":"HowToStep","position":3,"text":"Zkopírujte potřebnou hodnotu."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak převést hex na desítkové?","acceptedAnswer":{"@type":"Answer","text":"Každá šestnáctková číslice má šestnáctinásobnou hodnotu té vpravo: FF = 15×16 + 15 = 255."}},{"@type":"Question","name":"Jak velké číslo zvládne?","acceptedAnswer":{"@type":"Answer","text":"Pevný limit není; omezením je jen paměť."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Převodník číselných soustav (binární, osmičková, desítková, hex)</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Enter a number in any base from 2 to 36 and see it in binary, octal, decimal, hexadecimal and one more base of your choice. Prefixes such as 0x and 0b and underscores are understood, and numbers can be of any size, because the tool uses arbitrary-precision integers instead of floating point.</p><p lang="en">The input is read digit by digit in the chosen base into a BigInt, so values beyond 2^53 are exact (where JavaScript's normal numbers would lose digits), and then written in each target base with toString(base). Invalid digits are named in the error message. The bit count shows how many binary digits the number needs, which tells you whether it fits into 8, 16, 32 or 64 bits.</p>
+        
+        <p>Zadejte číslo v libovolné soustavě od 2 do 36 a uvidíte ho binárně, osmičkově, desítkově, šestnáctkově a v jedné další soustavě podle výběru. Předpony jako 0x a 0b a podtržítka se chápou a čísla mohou být libovolně velká, protože nástroj používá celá čísla libovolné přesnosti místo pohyblivé řádové čárky.</p><p>Vstup se čte číslici po číslici ve zvolené soustavě do BigInt, takže hodnoty nad 2^53 jsou přesné (kde by běžná čísla JavaScriptu ztrácela číslice), a pak se zapíše v každé cílové soustavě pomocí toString(base). Neplatné číslice jsou pojmenovány v chybové zprávě. Počet bitů ukazuje, kolik binárních číslic číslo potřebuje, tedy zda se vejde do 8, 16, 32 nebo 64 bitů.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Enter the number and choose its base.</p></li><li><p lang="en">Read the other bases.</p></li><li><p lang="en">Copy the value you need.</p></li></ol>
+        <ol class="s-steps"><li><p>Zadejte číslo a zvolte jeho soustavu.</p></li><li><p>Přečtěte si ostatní soustavy.</p></li><li><p>Zkopírujte potřebnou hodnotu.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How do I convert hex to decimal?</summary><p lang="en">Each hex digit is worth 16 times the one to its right: FF = 15×16 + 15 = 255.</p></details>
-          <details><summary lang="en">What is the largest number it can handle?</summary><p lang="en">There is no fixed limit; memory is the only constraint.</p></details>
+          <details open><summary>Jak převést hex na desítkové?</summary><p>Každá šestnáctková číslice má šestnáctinásobnou hodnotu té vpravo: FF = 15×16 + 15 = 255.</p></details>
+          <details><summary>Jak velké číslo zvládne?</summary><p>Pevný limit není; omezením je jen paměť.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

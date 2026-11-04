@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Generátor značky meta viewport","url":"https://ohfis.com/cs/meta-viewport-generator/","description":"Vytvořte správnou značku viewport pro responzivní stránky. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"IT a webové nástroje","item":"https://ohfis.com/cs/it-web-tools/"},{"@type":"ListItem","position":3,"name":"Generátor značky meta viewport"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Generátor značky meta viewport","step":[{"@type":"HowToStep","position":1,"text":"Choose the width and initial scale."},{"@type":"HowToStep","position":2,"text":"Add viewport-fit if you design for notched phones."},{"@type":"HowToStep","position":3,"text":"Copy the tag into your \u003chead>."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need this tag?","acceptedAnswer":{"@type":"Answer","text":"Yes for every responsive website. Without it, phones show a scaled-down desktop layout."}},{"@type":"Question","name":"Should I disable zooming?","acceptedAnswer":{"@type":"Answer","text":"No. It harms accessibility and most browsers ignore it anyway."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Generátor značky meta viewport","step":[{"@type":"HowToStep","position":1,"text":"Zvolte šířku a počáteční měřítko."},{"@type":"HowToStep","position":2,"text":"Přidejte viewport-fit, navrhujete-li pro telefony s výřezem."},{"@type":"HowToStep","position":3,"text":"Zkopírujte značku do \u003chead>."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Potřebuji tuto značku?","acceptedAnswer":{"@type":"Answer","text":"Ano, pro každý responzivní web. Bez ní telefony zobrazí zmenšené rozvržení pro stolní počítač."}},{"@type":"Question","name":"Mám zakázat přibližování?","acceptedAnswer":{"@type":"Answer","text":"Ne. Škodí přístupnosti a většina prohlížečů to stejně ignoruje."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Generátor značky meta viewport</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">The viewport meta tag tells mobile browsers to use the device width instead of pretending to be a 980-pixel desktop. Choose the options and copy the tag; the generator keeps pinch-zoom enabled because disabling it fails accessibility requirements.</p><p lang="en">&quot;width=device-width, initial-scale=1&quot; is the recommended default. viewport-fit=cover lets content extend under the notch on iPhones (combine it with safe-area insets in CSS), and a fixed width is only for special cases. maximum-scale and user-scalable=no are intentionally not offered: they block users with low vision from zooming (WCAG 1.4.4).</p>
+        
+        <p>Značka meta viewport říká mobilním prohlížečům, aby použily šířku zařízení místo předstírání 980pixelového stolního počítače. Zvolte možnosti a zkopírujte značku; generátor ponechává zapnuté přibližování gestem, protože jeho vypnutí porušuje požadavky na přístupnost.</p><p>„width=device-width, initial-scale=1“ je doporučená výchozí hodnota. viewport-fit=cover dovolí obsahu sahat pod výřez na iPhonech (kombinujte s safe-area insets v CSS) a pevná šířka je jen pro zvláštní případy. maximum-scale a user-scalable=no se záměrně nenabízejí: brání slabozrakým uživatelům v přibližování (WCAG 1.4.4).</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Choose the width and initial scale.</p></li><li><p lang="en">Add viewport-fit if you design for notched phones.</p></li><li><p lang="en">Copy the tag into your &lt;head&gt;.</p></li></ol>
+        <ol class="s-steps"><li><p>Zvolte šířku a počáteční měřítko.</p></li><li><p>Přidejte viewport-fit, navrhujete-li pro telefony s výřezem.</p></li><li><p>Zkopírujte značku do &lt;head&gt;.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Do I need this tag?</summary><p lang="en">Yes for every responsive website. Without it, phones show a scaled-down desktop layout.</p></details>
-          <details><summary lang="en">Should I disable zooming?</summary><p lang="en">No. It harms accessibility and most browsers ignore it anyway.</p></details>
+          <details open><summary>Potřebuji tuto značku?</summary><p>Ano, pro každý responzivní web. Bez ní telefony zobrazí zmenšené rozvržení pro stolní počítač.</p></details>
+          <details><summary>Mám zakázat přibližování?</summary><p>Ne. Škodí přístupnosti a většina prohlížečů to stejně ignoruje.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

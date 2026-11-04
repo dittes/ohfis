@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Převodník barev (HEX, RGB, HSL, CMYK)","url":"https://ohfis.com/cs/color-converter/","description":"Převádějte barvy mezi HEX, RGB, HSL, HSV a CMYK s výběrem a pipetou. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"IT a webové nástroje","item":"https://ohfis.com/cs/it-web-tools/"},{"@type":"ListItem","position":3,"name":"Převodník barev (HEX, RGB, HSL, CMYK)"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Převodník barev (HEX, RGB, HSL, CMYK)","step":[{"@type":"HowToStep","position":1,"text":"Enter a colour or use the picker or eyedropper."},{"@type":"HowToStep","position":2,"text":"Read all formats."},{"@type":"HowToStep","position":3,"text":"Copy the one you need."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I convert HEX to RGB?","acceptedAnswer":{"@type":"Answer","text":"Split the six digits into pairs and read each as a base-16 number: #2557D6 → 25, 57, D6 → 37, 87, 214."}},{"@type":"Question","name":"Can I convert RGB to CMYK exactly?","acceptedAnswer":{"@type":"Answer","text":"Not exactly: screens and printers have different colour ranges. The formula is a close estimate; use a colour-managed workflow for print jobs."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Převodník barev (HEX, RGB, HSL, CMYK)","step":[{"@type":"HowToStep","position":1,"text":"Zadejte barvu nebo použijte výběr či kapátko."},{"@type":"HowToStep","position":2,"text":"Přečtěte si všechny formáty."},{"@type":"HowToStep","position":3,"text":"Zkopírujte ten, který potřebujete."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak převést HEX na RGB?","acceptedAnswer":{"@type":"Answer","text":"Rozdělte šest číslic na dvojice a každou čtěte jako šestnáctkové číslo: #2557D6 → 25, 57, D6 → 37, 87, 214."}},{"@type":"Question","name":"Lze RGB převést na CMYK přesně?","acceptedAnswer":{"@type":"Answer","text":"Ne přesně: obrazovky a tiskárny mají různé barevné rozsahy. Vzorec je dobrý odhad; pro tiskové zakázky použijte pracovní postup se správou barev."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Převodník barev (HEX, RGB, HSL, CMYK)</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Type a colour in any common notation (#2557D6, rgb(37 87 214), hsl(223 70% 48%), cmyk(83 59 0 16) or a name such as coral) and get all the others, ready to copy. Use the picker or, in Chrome and Edge, the eyedropper to sample a colour from anywhere on your screen.</p><p lang="en">RGB is the base. HSL and HSV are derived with the standard formulas, HEX is RGB in base 16 (with the alpha channel as an eighth and ninth digit when present), and CMYK uses the naive conversion K = 1 − max(R, G, B) with C, M and Y derived from it. That CMYK is a rough guide only: real print colours depend on ink, paper and colour profile. Alpha values from rgb(… / 50%) and 8-digit HEX are preserved.</p>
+        
+        <p>Zadejte barvu v libovolném běžném zápisu (#2557D6, rgb(37 87 214), hsl(223 70% 48%), cmyk(83 59 0 16) nebo název jako coral) a získáte všechny ostatní, připravené ke zkopírování. Použijte výběr barev nebo – v Chrome a Edge – kapátko, kterým odeberete barvu odkudkoli na obrazovce.</p><p>Základem je RGB. HSL a HSV se odvozují standardními vzorci, HEX je RGB v šestnáctkové soustavě (s alfa kanálem jako osmou a devátou číslicí, je-li přítomen) a CMYK používá prostý převod K = 1 − max(R, G, B), z něhož vychází C, M a Y. Toto CMYK je jen hrubé vodítko: skutečné tiskové barvy závisejí na barvě, papíru a profilu. Hodnoty alfa z rgb(… / 50%) a 8místného HEX se zachovají.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Enter a colour or use the picker or eyedropper.</p></li><li><p lang="en">Read all formats.</p></li><li><p lang="en">Copy the one you need.</p></li></ol>
+        <ol class="s-steps"><li><p>Zadejte barvu nebo použijte výběr či kapátko.</p></li><li><p>Přečtěte si všechny formáty.</p></li><li><p>Zkopírujte ten, který potřebujete.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How do I convert HEX to RGB?</summary><p lang="en">Split the six digits into pairs and read each as a base-16 number: #2557D6 → 25, 57, D6 → 37, 87, 214.</p></details>
-          <details><summary lang="en">Can I convert RGB to CMYK exactly?</summary><p lang="en">Not exactly: screens and printers have different colour ranges. The formula is a close estimate; use a colour-managed workflow for print jobs.</p></details>
+          <details open><summary>Jak převést HEX na RGB?</summary><p>Rozdělte šest číslic na dvojice a každou čtěte jako šestnáctkové číslo: #2557D6 → 25, 57, D6 → 37, 87, 214.</p></details>
+          <details><summary>Lze RGB převést na CMYK přesně?</summary><p>Ne přesně: obrazovky a tiskárny mají různé barevné rozsahy. Vzorec je dobrý odhad; pro tiskové zakázky použijte pracovní postup se správou barev.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
