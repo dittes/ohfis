@@ -3925,6 +3925,150 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/docx-to-markdown/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/pdf-annotation-extractor/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-annotation-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/pdf-annotation-extractor/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-annotation-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/pdf-annotation-extractor/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-annotation-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/pdf-annotation-extractor/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pdf-annotation-extractor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-annotation-extractor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/pdf-grayscale-converter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-grayscale-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/pdf-grayscale-converter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-grayscale-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/pdf-grayscale-converter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-grayscale-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/pdf-grayscale-converter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/pdf-grayscale-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/pdf-grayscale-converter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/printer-test-sheet/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/printer-test-sheet/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/printer-test-sheet/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/printer-test-sheet/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/printer-test-sheet/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/printer-test-sheet/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/printer-test-sheet/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/printer-test-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/printer-test-sheet/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/scan-separator-sheets/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/scan-separator-sheets/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/scan-separator-sheets/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/scan-separator-sheets/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/scan-separator-sheets/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/scan-separator-sheets/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/scan-separator-sheets/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/scan-separator-sheets/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/scan-separator-sheets/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/margin-markup-calculator/</loc>
     <lastmod>2026-11-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/margin-markup-calculator/"/>

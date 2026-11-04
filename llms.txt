@@ -53,6 +53,10 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [Certificate Maker (Printable PDF Certificates)](https://ohfis.com/en/certificate-generator/): Create certificates for many names at once and download them as one PDF.
 - [Markdown to Word (DOCX) Converter](https://ohfis.com/en/markdown-to-docx/): Convert Markdown notes into a real Word document with headings, lists and tables.
 - [Word (DOCX) to Markdown Converter](https://ohfis.com/en/docx-to-markdown/): Extract the structure of a Word document as clean Markdown, locally.
+- [PDF Highlights & Comments Extractor](https://ohfis.com/en/pdf-annotation-extractor/): List every highlight, note and comment in a PDF and export them as Markdown or CSV.
+- [PDF to Grayscale Converter (Black & White)](https://ohfis.com/en/pdf-grayscale-converter/): Convert a colour PDF to grayscale or black and white to save ink and size.
+- [Printer Test Page (Alignment, Scale & Colour)](https://ohfis.com/en/printer-test-sheet/): Print a sheet that checks margins, scale, grey steps, colours, lines and text.
+- [Scan Separator Sheet Maker (Batch Scanning)](https://ohfis.com/en/scan-separator-sheets/): Print numbered separator pages with a QR code to split a stack of scans into documents.
 
 ## Text Tools
 

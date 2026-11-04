@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { addExif } from './fixtures.mjs';
 import * as IMG from '../assets/js/tools/lib/image.js';
 
@@ -35,6 +35,10 @@ async function audioRun(page, wav, name = 'in.wav') { await page.setInputFiles('
 // ---- image helpers (run inside the page) ----
 async function makeImg(page, w, h, draw) { const arr = await page.evaluate(async ([w, h, src]) => { const c = Object.assign(document.createElement('canvas'), { width: w, height: h }); const g = c.getContext('2d'); new Function('g', 'w', 'h', src)(g, w, h); const b = await new Promise(r => c.toBlob(r, 'image/png')); return [...new Uint8Array(await b.arrayBuffer())]; }, [w, h, draw]); return Buffer.from(arr); }
 const pixelAt = (page, selector, x, y) => page.evaluate(async ([sel, x, y]) => { const el = document.querySelector(sel); const blob = await (await fetch(el.src)).blob(); const bmp = await createImageBitmap(blob); const c = Object.assign(document.createElement('canvas'), { width: bmp.width, height: bmp.height }); const g = c.getContext('2d'); g.drawImage(bmp, 0, 0); return [...g.getImageData(x, y, 1, 1).data]; }, [selector, x, y]);
+
+const poppler = (buf, args = []) => { const d = mkdtempSync(join(tmpdir(), 'pop-')); const f = join(d, 'x.pdf'); writeFileSync(f, buf); return { dir: d, file: f }; };
+const pdfText = buf => { const { file } = poppler(buf); const r = spawnSync('pdftotext', ['-layout', file, '-']); return r.stdout.toString(); };
+const pdfPng = (buf, page = 1) => { const { dir, file } = poppler(buf); spawnSync('pdftoppm', ['-png', '-r', '60', '-f', String(page), '-l', String(page), file, join(dir, 'p')]); const files = readdirSync(dir).filter(x => x.endsWith('.png')); return readFileSync(join(dir, files[0])); };
 
 const custom = {
   async 'text-diff-checker'(page) {
@@ -648,6 +652,27 @@ Object.assign(custom, {
   async 'webhook-signature-tester'(page) {
     await area(page).fill('The quick brown fox jumps over the lazy dog'); await page.locator('#tool-root input[type=text]').first().fill('key'); await page.waitForTimeout(500); const hex = await page.locator('[data-sig="hex"]').innerText(); assert.equal(hex, 'f7bc83f430538424b13298e6aa6fb143ef4d59a14946175997479dbc2d1a3cd8'); assert.equal(await page.locator('[data-sig="github"]').innerText(), 'sha256=' + hex);
     await page.locator('#tool-root input[aria-label="Received signature"]').fill('sha256=' + hex); await page.waitForTimeout(400); assert.ok((await rootText(page)).includes('✓ The signature matches')); await page.locator('#tool-root input[aria-label="Received signature"]').fill('sha256=' + hex.replace(/^f/, 'e')); await page.waitForTimeout(400); assert.ok((await rootText(page)).includes('✗ No match'));
+  },
+  async 'pdf-annotation-extractor'(page) {
+    const { PDFDocument, StandardFonts, PDFName, PDFString } = await import('../assets/vendor/pdf-lib/pdf-lib.esm.min.js'); const d = await PDFDocument.create(); const f = await d.embedFont(StandardFonts.Helvetica); const pg = d.addPage([400, 300]); pg.drawText('Important sentence here and more text', { x: 50, y: 200, size: 12, font: f }); const w = f.widthOfTextAtSize('Important sentence', 12); const ctx = d.context;
+    const hl = ctx.register(ctx.obj({ Type: 'Annot', Subtype: 'Highlight', Rect: [48, 197, 50 + w + 2, 212], QuadPoints: [48, 212, 50 + w + 2, 212, 48, 197, 50 + w + 2, 197], C: [1, 1, 0], Contents: PDFString.of('check this'), T: PDFString.of('Tester'), F: 4 })); const note = ctx.register(ctx.obj({ Type: 'Annot', Subtype: 'Text', Rect: [300, 250, 320, 270], Contents: PDFString.of('Remember to cite'), T: PDFString.of('Tester'), F: 4 })); pg.node.set(PDFName.of('Annots'), ctx.obj([hl, note]));
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'annotated.pdf', mimeType: 'application/pdf', buffer: Buffer.from(await d.save()) }); await page.waitForSelector('[data-result=ready]', { timeout: 20000 }); const rows = await page.locator('.ut-table tr').allInnerTexts(); const txt = rows.join('\n'); assert.ok(/1\s+Highlight\s+Tester\s+Important sentence\s+check this/.test(txt.replace(/\t/g, ' ').replace(/ +/g, ' ')), txt); assert.ok(txt.includes('Remember to cite'), 'note');
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Download .md' }).click()]); assert.ok(readFileSync(await dl.path(), 'utf8').includes('“Important sentence”'));
+    await page.getByLabel('Notes and text boxes').uncheck(); await page.waitForTimeout(200); assert.ok(!(await page.locator('.ut-table').innerText()).includes('Remember to cite'), 'filter hides notes');
+  },
+  async 'pdf-grayscale-converter'(page) {
+    const { PDFDocument, rgb } = await import('../assets/vendor/pdf-lib/pdf-lib.esm.min.js'); const d = await PDFDocument.create(); const pg = d.addPage([300, 200]); pg.drawRectangle({ x: 20, y: 20, width: 260, height: 160, color: rgb(0.9, 0.1, 0.1) }); d.addPage([300, 200]);
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'color.pdf', mimeType: 'application/pdf', buffer: Buffer.from(await d.save()) }); await page.getByRole('button', { name: 'Convert to grayscale' }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 30000 });
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /Download/ }).first().click()]); const buf = readFileSync(await dl.path()); const c = await pageCount(buf); assert.equal(c.n, 2); assert.ok(Math.abs(c.sizes[0].width - 300) < 1 && Math.abs(c.sizes[0].height - 200) < 1);
+    const { createRequire } = await import('node:module'); const rq = createRequire('/tmp/claude-0/qrdec/'); try { const { PNG } = rq('pngjs'); const img = PNG.sync.read(pdfPng(buf)); const i = (Math.floor(img.height / 2) * img.width + Math.floor(img.width / 2)) * 4; assert.ok(Math.abs(img.data[i] - img.data[i + 1]) < 4 && Math.abs(img.data[i + 1] - img.data[i + 2]) < 4, `gray pixel ${[...img.data.slice(i, i + 3)]}`); assert.ok(img.data[i] < 200, 'the red area is darker than the white paper'); } catch (e) { if (!/Cannot find module/.test(e.message)) throw e; }
+  },
+  async 'printer-test-sheet'(page) {
+    await page.getByRole('button', { name: /Create test sheet/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 20000 }); const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Download printer-test-sheet/ }).click()]); const buf = readFileSync(await dl.path()); assert.equal((await pageCount(buf)).n, 2);
+    const txt = pdfText(buf); assert.ok(txt.includes('PRINTER TEST SHEET') && txt.includes('exactly 100 mm') && txt.includes('Grey steps'), txt.slice(0, 300)); assert.ok(pdfPng(buf).length > 5000, 'renders');
+  },
+  async 'scan-separator-sheets'(page) {
+    await page.getByRole('button', { name: /Create separator sheets/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 20000 }); const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Download separator/ }).click()]); const buf = readFileSync(await dl.path()); assert.equal((await pageCount(buf)).n, 10); const txt = pdfText(buf); assert.ok(txt.includes('DOC-001') && txt.includes('DOC-010'), JSON.stringify(txt.match(/DOC[^ \n]*/g)));
+    const { createRequire } = await import('node:module'); const rq = createRequire('/tmp/claude-0/qrdec/'); try { const jsQR = rq('jsqr'); const { PNG } = rq('pngjs'); const { dir, file } = poppler(buf); spawnSync('pdftoppm', ['-png', '-r', '110', '-f', '3', '-l', '3', file, join(dir, 'q')]); const img = PNG.sync.read(readFileSync(join(dir, readdirSync(dir).find(x => x.startsWith('q') && x.endsWith('.png'))))); assert.equal(jsQR(new Uint8ClampedArray(img.data), img.width, img.height)?.data, 'DOC-003', 'QR code content'); } catch (e) { if (!/Cannot find module/.test(e.message)) throw e; }
   },
 });
 

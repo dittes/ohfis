@@ -1,7 +1,7 @@
 // Files Online — Service Worker
 // Cache-first for app shell, network-first for CDN resources.
 
-const CACHE_VERSION = 'ebe5c261cc';
+const CACHE_VERSION = '8686a4876a';
 const SHELL_CACHE = `files-online-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `files-online-runtime-${CACHE_VERSION}`;
 

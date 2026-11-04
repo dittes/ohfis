@@ -56,3 +56,13 @@ test('invoice items and totals', () => {
 test('wrapText', () => {
   const w = s => s.length; assert.deepEqual(D.wrapText('aaa bbb ccc', 7, w), ['aaa bbb', 'ccc']); assert.deepEqual(D.wrapText('abcdefghij', 4, w), ['abcd', 'efgh', 'ij']);
 });
+test('quads and text extraction', () => {
+  const r = D.quadsToRects([{ x: 10, y: 20 }, { x: 50, y: 20 }, { x: 10, y: 10 }, { x: 50, y: 10 }]); assert.deepEqual(r, [{ x0: 10, y0: 10, x1: 50, y1: 20 }]);
+  assert.deepEqual(D.quadsToRects([10, 20, 50, 20, 10, 10, 50, 10, 60, 20, 90, 20, 60, 10, 90, 10]).length, 2); assert.deepEqual(D.quadsToRects(null, [1, 2, 3, 4]), [{ x0: 1, y0: 2, x1: 3, y1: 4 }]);
+  const items = [{ str: 'Hello', transform: [1, 0, 0, 12, 10, 12], width: 30, height: 12 }, { str: 'world', transform: [1, 0, 0, 12, 45, 12], width: 30, height: 12 }, { str: 'other', transform: [1, 0, 0, 12, 10, 100], width: 30, height: 12 }];
+  assert.equal(D.textInRects(items, [{ x0: 5, y0: 5, x1: 90, y1: 30 }]), 'Hello world'); assert.equal(D.textInRects(items, [{ x0: 5, y0: 95, x1: 90, y1: 120 }]), 'other'); assert.equal(D.textInRects(items, [{ x0: 200, y0: 0, x1: 300, y1: 10 }]), '');
+  const line = [{ str: 'Important sentence here and more text', transform: [12, 0, 0, 12, 50, 200], width: 206.77, height: 12 }]; assert.equal(D.textInRects(line, [{ x0: 48, y0: 197, x1: 155.2, y1: 212 }]), 'Important sentence', 'partial line is cut at character level');
+});
+test('annotations markdown', () => {
+  const md = D.annotationsMarkdown([{ page: 1, kind: 'Highlight', author: 'Ann', text: 'key point', comment: 'check' }, { page: 3, kind: 'Note', text: '', comment: 'todo' }], 'Report'); assert.match(md, /# Report/); assert.match(md, /## Page 1/); assert.match(md, /\*\*Highlight\*\* \(Ann\): “key point”/); assert.match(md, /## Page 3/);
+});

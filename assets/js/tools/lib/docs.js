@@ -216,3 +216,38 @@ export function wrapText(text, maxW, widthOf) {
   }
   return out;
 }
+
+// ---------- PDF annotation helpers ----------
+/** Flatten pdf.js quadPoints (array of {x,y}, or numbers in groups of 8) into rectangles {x0,y0,x1,y1}. */
+export function quadsToRects(quad, fallbackRect) {
+  const rects = []; if (quad && quad.length) {
+    const pts = typeof quad[0] === 'object' && quad[0] !== null && 'x' in quad[0] ? quad.flatMap(p => [p.x, p.y]) : Array.from(quad.flat ? quad.flat() : quad);
+    for (let i = 0; i + 7 < pts.length; i += 8) { const xs = [pts[i], pts[i + 2], pts[i + 4], pts[i + 6]], ys = [pts[i + 1], pts[i + 3], pts[i + 5], pts[i + 7]]; rects.push({ x0: Math.min(...xs), y0: Math.min(...ys), x1: Math.max(...xs), y1: Math.max(...ys) }); }
+  }
+  if (!rects.length && fallbackRect) rects.push({ x0: fallbackRect[0], y0: fallbackRect[1], x1: fallbackRect[2], y1: fallbackRect[3] });
+  return rects;
+}
+// Relative advance widths of ASCII 32–126 in Helvetica/Arial (per 1000 em); other characters use 556.
+const HELV = [278, 278, 355, 556, 556, 889, 667, 191, 333, 333, 389, 584, 278, 333, 278, 278, 556, 556, 556, 556, 556, 556, 556, 556, 556, 556, 278, 278, 584, 584, 584, 556, 1015, 667, 667, 722, 722, 667, 611, 778, 722, 278, 500, 667, 556, 833, 722, 778, 667, 778, 722, 667, 611, 722, 667, 944, 667, 667, 611, 278, 278, 278, 469, 556, 333, 556, 556, 500, 556, 556, 278, 556, 556, 222, 222, 500, 222, 833, 556, 556, 556, 556, 333, 500, 278, 556, 500, 722, 500, 500, 500, 334, 260, 334, 584];
+const cw = ch => { const c = ch.charCodeAt(0); return c >= 32 && c <= 126 ? HELV[c - 32] : 556; };
+/** Text of the items (pdf.js text content: {str, transform, width, height}) that lies inside one of the rects, in reading order.
+ *  pdf.js often returns a whole line as one item, so partial items are cut at character level using proportional widths. */
+export function textInRects(items, rects) {
+  const pieces = [];
+  for (const it of items) {
+    if (!it.str || !it.str.trim()) continue; const x = it.transform[4], y = it.transform[5], w = it.width || 0, h = it.height || Math.abs(it.transform[3]) || 10, cy = y + h / 2;
+    const rs = rects.filter(r => cy >= r.y0 - 2 && cy <= r.y1 + 2); if (!rs.length) continue;
+    const total = [...it.str].reduce((a, c) => a + cw(c), 0) || 1; let pos = x, out = '';
+    for (const ch of it.str) { const cwid = cw(ch) / total * w, mid = pos + cwid / 2; if (rs.some(r => mid >= r.x0 - 0.5 && mid <= r.x1 + 0.5)) out += ch; pos += cwid; }
+    if (out.trim()) pieces.push({ s: out, x, y });
+  }
+  pieces.sort((a, b) => Math.abs(b.y - a.y) > 3 ? b.y - a.y : a.x - b.x); let res = '', lastY = null;
+  for (const p of pieces) { if (lastY !== null && Math.abs(p.y - lastY) > 3) res += ' '; else if (res && !/\s$/.test(res) && !/^\s/.test(p.s)) res += ' '; res += p.s; lastY = p.y; }
+  return res.replace(/\s+/g, ' ').trim();
+}
+export const ANNOT_KIND = { Highlight: 'Highlight', Underline: 'Underline', StrikeOut: 'Strike-out', Squiggly: 'Squiggly', Text: 'Note', FreeText: 'Text box', Caret: 'Insertion', Stamp: 'Stamp' };
+export function annotationsMarkdown(list, title = 'Annotations') {
+  const out = [`# ${title}`, '']; let page = 0;
+  for (const a of list) { if (a.page !== page) { page = a.page; out.push(`## Page ${page}`, ''); } const head = `**${a.kind}**${a.author ? ` (${a.author})` : ''}`; out.push(`- ${head}${a.text ? `: “${a.text}”` : ''}${a.comment ? `\n  - Comment: ${a.comment}` : ''}`); }
+  return out.join('\n') + '\n';
+}

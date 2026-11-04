@@ -73,6 +73,18 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [Word (DOCX) to Markdown Converter](https://ohfis.com/en/docx-to-markdown/): Extract the structure of a Word document as clean Markdown, locally.
   Drop a .docx file and get Markdown with headings (#), bold, italic, links, bullet and numbered lists (also nested), quotes, code and tables, ready for GitHub, a wiki, a static site or an AI prompt. Copy the text or download it as a .md file.
   How to use: Drop a .docx file. Check the Markdown. Copy it or download the .md file.
+- [PDF Highlights & Comments Extractor](https://ohfis.com/en/pdf-annotation-extractor/): List every highlight, note and comment in a PDF and export them as Markdown or CSV.
+  After reading a paper or contract with highlights and sticky notes, drop the PDF here and get a list by page: the type of annotation, the author, the highlighted text and the comment. Copy it as a Markdown list for your notes or download CSV for a spreadsheet.
+  How to use: Drop the annotated PDF. Choose which kinds of annotations to show. Copy the Markdown or download the CSV.
+- [PDF to Grayscale Converter (Black & White)](https://ohfis.com/en/pdf-grayscale-converter/): Convert a colour PDF to grayscale or black and white to save ink and size.
+  Drop a colour PDF and get a grayscale version for printing, or a pure black-and-white version for scans of text. Choose the resolution (100–300 dpi) and the JPEG quality, and optionally boost the contrast of faded pages. Page sizes are kept, and the before and after file sizes are shown.
+  How to use: Drop the PDF. Choose grayscale or black and white, the resolution and quality. Convert and download the new PDF.
+- [Printer Test Page (Alignment, Scale & Colour)](https://ohfis.com/en/printer-test-sheet/): Print a sheet that checks margins, scale, grey steps, colours, lines and text.
+  Print this one-page PDF to find out whether your printer scales the page, cuts off the edges, prints colours and greys evenly and keeps thin lines and small text sharp. It has a 100 mm bar to measure with a ruler, a frame 5 mm from every edge with corner crosshairs, 11 grey steps, colour blocks, lines from 0.1 to 1 pt, five text sizes and a solid black bar for banding. An optional second page lets you check front and back alignment against the light.
+  How to use: Choose the paper size. Create and print the PDF at 100 % scale. Measure the bar and check the frame, greys and text.
+- [Scan Separator Sheet Maker (Batch Scanning)](https://ohfis.com/en/scan-separator-sheets/): Print numbered separator pages with a QR code to split a stack of scans into documents.
+  Scanning a stack of paperwork in one go is fast, but the pages need to be split into documents afterwards. Print numbered separator sheets, put one between every two documents, scan the whole stack and let your scanning software (or you) split at the sheets. Set the number of sheets, a label prefix, the first number and the paper size; every page has a black title band, a huge label such as DOC-001 and optionally a QR code with the same label.
+  How to use: Set the number of sheets, label prefix and paper. Create the PDF and print it, preferably on coloured paper. Put a sheet between documents and scan the stack.
 
 ## Text Tools
 
