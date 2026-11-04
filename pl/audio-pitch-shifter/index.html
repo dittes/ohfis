@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Zmiana wysokości dźwięku i tempa","url":"https://ohfis.com/pl/audio-pitch-shifter/","description":"Zrób nagranie wyższe, niższe, szybsze lub wolniejsze, jak na taśmie. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","inLanguage":"pl","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"Audio i wideo","item":"https://ohfis.com/pl/audio-video-tools/"},{"@type":"ListItem","position":3,"name":"Zmiana wysokości dźwięku i tempa"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Zmiana wysokości dźwięku i tempa","step":[{"@type":"HowToStep","position":1,"text":"Drop the audio file."},{"@type":"HowToStep","position":2,"text":"Choose semitones or speed percent."},{"@type":"HowToStep","position":3,"text":"Listen and download the WAV."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the speed stay the same when I change the pitch?","acceptedAnswer":{"@type":"Answer","text":"No. Pitch and speed change together in this tool, like a tape."}},{"@type":"Question","name":"How many semitones is one octave?","acceptedAnswer":{"@type":"Answer","text":"12 semitones double the frequency."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Zmiana wysokości dźwięku i tempa","step":[{"@type":"HowToStep","position":1,"text":"Upuść plik audio."},{"@type":"HowToStep","position":2,"text":"Wybierz półtony lub prędkość w procentach."},{"@type":"HowToStep","position":3,"text":"Posłuchaj i pobierz WAV."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy prędkość pozostaje taka sama przy zmianie wysokości?","acceptedAnswer":{"@type":"Answer","text":"Nie. Wysokość i prędkość zmieniają się w tym narzędziu razem, jak na taśmie."}},{"@type":"Question","name":"Ile półtonów to oktawa?","acceptedAnswer":{"@type":"Answer","text":"12 półtonów podwaja częstotliwość."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Przejdź do treści</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak działa: Zmiana wysokości dźwięku i tempa</h2>
-        <p class="pt-hint">Szczegółowe wyjaśnienie jest po angielsku.</p>
-        <p lang="en">Shift a recording by semitones (12 = one octave) or change its speed in percent and download the result as WAV. It is useful to transpose a backing track, slow down a passage to learn it, or fix a recording played at the wrong speed.</p><p lang="en">The audio is resampled with linear interpolation: playing it at ratio r makes the pitch r times higher and the duration 1/r as long, exactly like speeding up a tape. A change of n semitones corresponds to the ratio 2^(n/12). This simple method changes pitch and tempo together; keeping the tempo constant while shifting the pitch (a phase vocoder) is not implemented, and strong changes (more than about ±5 semitones) sound clearly altered. Extreme speed-ups lose very high frequencies.</p>
+        
+        <p>Przesuń nagranie o półtony (12 = oktawa) lub zmień jego prędkość w procentach i pobierz wynik jako WAV. Przydaje się do transponowania podkładu, spowalniania fragmentu do nauki lub naprawy nagrania odtworzonego w złej prędkości.</p><p>Dźwięk jest próbkowany ponownie z interpolacją liniową: odtworzenie w stosunku r sprawia, że wysokość jest r razy wyższa, a czas trwania 1/r tak długi, dokładnie jak przyspieszenie taśmy. Zmiana o n półtonów odpowiada stosunkowi 2^(n/12). Ta prosta metoda zmienia wysokość i tempo razem; utrzymywanie stałego tempa przy zmianie wysokości (wokoder fazowy) nie jest zaimplementowane, a duże zmiany (więcej niż około ±5 półtonów) brzmią wyraźnie zmienione. Skrajne przyspieszenia tracą bardzo wysokie częstotliwości.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak z tego korzystać</h2>
-        <ol class="s-steps"><li><p lang="en">Drop the audio file.</p></li><li><p lang="en">Choose semitones or speed percent.</p></li><li><p lang="en">Listen and download the WAV.</p></li></ol>
+        <ol class="s-steps"><li><p>Upuść plik audio.</p></li><li><p>Wybierz półtony lub prędkość w procentach.</p></li><li><p>Posłuchaj i pobierz WAV.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Najczęstsze pytania</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Does the speed stay the same when I change the pitch?</summary><p lang="en">No. Pitch and speed change together in this tool, like a tape.</p></details>
-          <details><summary lang="en">How many semitones is one octave?</summary><p lang="en">12 semitones double the frequency.</p></details>
+          <details open><summary>Czy prędkość pozostaje taka sama przy zmianie wysokości?</summary><p>Nie. Wysokość i prędkość zmieniają się w tym narzędziu razem, jak na taśmie.</p></details>
+          <details><summary>Ile półtonów to oktawa?</summary><p>12 półtonów podwaja częstotliwość.</p></details>
           <details><summary>Czy moje pliki są gdzieś przesyłane?</summary><p>Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony.</p></details>
           <details><summary>Czy to narzędzie jest darmowe?</summary><p>Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach.</p></details>
         </div>

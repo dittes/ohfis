@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Odstranění ticha ze zvuku","url":"https://ohfis.com/cs/silence-trimmer/","description":"Odstraňte ticho ze začátku a konce nahrávky nebo zkraťte dlouhé pauzy. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Audio a video","item":"https://ohfis.com/cs/audio-video-tools/"},{"@type":"ListItem","position":3,"name":"Odstranění ticha ze zvuku"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Odstranění ticha ze zvuku","step":[{"@type":"HowToStep","position":1,"text":"Drop the audio file."},{"@type":"HowToStep","position":2,"text":"Set the threshold and padding."},{"@type":"HowToStep","position":3,"text":"Listen and download the trimmed WAV."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"The tool cuts off the end of my words.","acceptedAnswer":{"@type":"Answer","text":"Lower the threshold (for example −55 dB) or raise the padding."}},{"@type":"Question","name":"Why is the result empty?","acceptedAnswer":{"@type":"Answer","text":"The whole recording is quieter than the threshold. Use a lower value."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Odstranění ticha ze zvuku","step":[{"@type":"HowToStep","position":1,"text":"Přetáhněte zvukový soubor."},{"@type":"HowToStep","position":2,"text":"Nastavte práh a odsazení."},{"@type":"HowToStep","position":3,"text":"Poslechněte si a stáhněte oříznutý WAV."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Nástroj useká konce mých slov.","acceptedAnswer":{"@type":"Answer","text":"Snižte práh (například −55 dB) nebo zvyšte odsazení."}},{"@type":"Question","name":"Proč je výsledek prázdný?","acceptedAnswer":{"@type":"Answer","text":"Celá nahrávka je tišší než práh. Použijte nižší hodnotu."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Odstranění ticha ze zvuku</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Drop a recording and let the tool find where the sound really starts and ends. It trims the silent edges, keeps a small padding so that nothing sounds cut off, and can also shorten long pauses inside the recording, for example in a voice memo or a lecture.</p><p lang="en">A sample counts as silent if its absolute value is below the threshold (default −45 dBFS, adjustable) in every channel. The edges are trimmed to the first and last loud sample minus the padding. With &quot;shorten long pauses&quot; every silent stretch longer than the chosen length is reduced to the padding on each side, so natural short pauses stay. A very low threshold keeps more noise as &quot;sound&quot;; a threshold that is too high cuts off quiet word endings. The result is a 44.1 kHz WAV and plays in the preview before you download it.</p>
+        
+        <p>Přetáhněte nahrávku a nechte nástroj najít, kde zvuk skutečně začíná a končí. Ořízne tichá okraje, ponechá malé odsazení, aby nic nezní useknutě, a umí také zkrátit dlouhé pauzy uvnitř nahrávky, například v hlasové poznámce nebo přednášce.</p><p>Vzorek se počítá jako tichý, je-li jeho absolutní hodnota pod prahem (výchozí −45 dBFS, nastavitelný) v každém kanálu. Okraje se ořežou na první a poslední hlasitý vzorek minus odsazení. S „zkrátit dlouhé pauzy“ se každý tichý úsek delší než zvolená délka zredukuje na odsazení po každé straně, takže přirozené krátké pauzy zůstanou. Velmi nízký práh ponechá víc šumu jako „zvuk“; příliš vysoký useká tichá zakončení slov. Výsledkem je WAV 44,1 kHz, který se před stažením přehraje v náhledu.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Drop the audio file.</p></li><li><p lang="en">Set the threshold and padding.</p></li><li><p lang="en">Listen and download the trimmed WAV.</p></li></ol>
+        <ol class="s-steps"><li><p>Přetáhněte zvukový soubor.</p></li><li><p>Nastavte práh a odsazení.</p></li><li><p>Poslechněte si a stáhněte oříznutý WAV.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">The tool cuts off the end of my words.</summary><p lang="en">Lower the threshold (for example −55 dB) or raise the padding.</p></details>
-          <details><summary lang="en">Why is the result empty?</summary><p lang="en">The whole recording is quieter than the threshold. Use a lower value.</p></details>
+          <details open><summary>Nástroj useká konce mých slov.</summary><p>Snižte práh (například −55 dB) nebo zvyšte odsazení.</p></details>
+          <details><summary>Proč je výsledek prázdný?</summary><p>Celá nahrávka je tišší než práh. Použijte nižší hodnotu.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

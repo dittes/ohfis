@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Usuwanie ciszy z nagrań audio","url":"https://ohfis.com/pl/silence-trimmer/","description":"Usuń ciszę z początku i końca nagrania lub skróć długie pauzy. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","inLanguage":"pl","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"Audio i wideo","item":"https://ohfis.com/pl/audio-video-tools/"},{"@type":"ListItem","position":3,"name":"Usuwanie ciszy z nagrań audio"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Usuwanie ciszy z nagrań audio","step":[{"@type":"HowToStep","position":1,"text":"Drop the audio file."},{"@type":"HowToStep","position":2,"text":"Set the threshold and padding."},{"@type":"HowToStep","position":3,"text":"Listen and download the trimmed WAV."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"The tool cuts off the end of my words.","acceptedAnswer":{"@type":"Answer","text":"Lower the threshold (for example −55 dB) or raise the padding."}},{"@type":"Question","name":"Why is the result empty?","acceptedAnswer":{"@type":"Answer","text":"The whole recording is quieter than the threshold. Use a lower value."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Usuwanie ciszy z nagrań audio","step":[{"@type":"HowToStep","position":1,"text":"Upuść plik audio."},{"@type":"HowToStep","position":2,"text":"Ustaw próg i margines."},{"@type":"HowToStep","position":3,"text":"Posłuchaj i pobierz przycięty WAV."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Narzędzie ucina końcówki moich słów.","acceptedAnswer":{"@type":"Answer","text":"Obniż próg (na przykład −55 dB) lub zwiększ margines."}},{"@type":"Question","name":"Dlaczego wynik jest pusty?","acceptedAnswer":{"@type":"Answer","text":"Całe nagranie jest cichsze niż próg. Użyj niższej wartości."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Przejdź do treści</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak działa: Usuwanie ciszy z nagrań audio</h2>
-        <p class="pt-hint">Szczegółowe wyjaśnienie jest po angielsku.</p>
-        <p lang="en">Drop a recording and let the tool find where the sound really starts and ends. It trims the silent edges, keeps a small padding so that nothing sounds cut off, and can also shorten long pauses inside the recording, for example in a voice memo or a lecture.</p><p lang="en">A sample counts as silent if its absolute value is below the threshold (default −45 dBFS, adjustable) in every channel. The edges are trimmed to the first and last loud sample minus the padding. With &quot;shorten long pauses&quot; every silent stretch longer than the chosen length is reduced to the padding on each side, so natural short pauses stay. A very low threshold keeps more noise as &quot;sound&quot;; a threshold that is too high cuts off quiet word endings. The result is a 44.1 kHz WAV and plays in the preview before you download it.</p>
+        
+        <p>Upuść nagranie i pozwól narzędziu znaleźć, gdzie dźwięk naprawdę się zaczyna i kończy. Przycina ciche brzegi, zostawia mały margines, by nic nie brzmiało uciętym, i może też skracać długie pauzy wewnątrz nagrania, np. w notatce głosowej lub wykładzie.</p><p>Próbka liczy się jako cicha, jeśli jej wartość bezwzględna jest poniżej progu (domyślnie −45 dBFS, regulowany) w każdym kanale. Brzegi są przycinane do pierwszej i ostatniej głośnej próbki minus margines. Przy „skróć długie pauzy” każdy cichy odcinek dłuższy niż wybrana długość jest redukowany do marginesu po każdej stronie, więc naturalne krótkie pauzy zostają. Bardzo niski próg zachowuje więcej szumu jako „dźwięk”; zbyt wysoki ucina ciche końcówki słów. Wynikiem jest WAV 44,1 kHz odtwarzany w podglądzie przed pobraniem.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak z tego korzystać</h2>
-        <ol class="s-steps"><li><p lang="en">Drop the audio file.</p></li><li><p lang="en">Set the threshold and padding.</p></li><li><p lang="en">Listen and download the trimmed WAV.</p></li></ol>
+        <ol class="s-steps"><li><p>Upuść plik audio.</p></li><li><p>Ustaw próg i margines.</p></li><li><p>Posłuchaj i pobierz przycięty WAV.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Najczęstsze pytania</h2>
         <div class="s-faq">
-          <details open><summary lang="en">The tool cuts off the end of my words.</summary><p lang="en">Lower the threshold (for example −55 dB) or raise the padding.</p></details>
-          <details><summary lang="en">Why is the result empty?</summary><p lang="en">The whole recording is quieter than the threshold. Use a lower value.</p></details>
+          <details open><summary>Narzędzie ucina końcówki moich słów.</summary><p>Obniż próg (na przykład −55 dB) lub zwiększ margines.</p></details>
+          <details><summary>Dlaczego wynik jest pusty?</summary><p>Całe nagranie jest cichsze niż próg. Użyj niższej wartości.</p></details>
           <details><summary>Czy moje pliki są gdzieś przesyłane?</summary><p>Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony.</p></details>
           <details><summary>Czy to narzędzie jest darmowe?</summary><p>Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach.</p></details>
         </div>

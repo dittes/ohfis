@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Online diktafon (s ořezem)","url":"https://ohfis.com/cs/voice-recorder/","description":"Nahrávejte z mikrofonu, kontrolujte hladinu, ořízněte a stáhněte. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Audio a video","item":"https://ohfis.com/cs/audio-video-tools/"},{"@type":"ListItem","position":3,"name":"Online diktafon (s ořezem)"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Online diktafon (s ořezem)","step":[{"@type":"HowToStep","position":1,"text":"Allow the microphone and press Record."},{"@type":"HowToStep","position":2,"text":"Press Stop and listen to the result."},{"@type":"HowToStep","position":3,"text":"Set start and end to trim, then download."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is my recording sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. It stays in your browser until you download it."}},{"@type":"Question","name":"Why is the recording WebM and not MP3?","acceptedAnswer":{"@type":"Answer","text":"Browsers record in their own formats. The trimmed WAV works almost everywhere; MP3 encoding is not built in."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Online diktafon (s ořezem)","step":[{"@type":"HowToStep","position":1,"text":"Povolte mikrofon a stiskněte Nahrávat."},{"@type":"HowToStep","position":2,"text":"Stiskněte Stop a poslechněte si výsledek."},{"@type":"HowToStep","position":3,"text":"Nastavte začátek a konec k ořezu a stáhněte."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Odesílá se moje nahrávka někam?","acceptedAnswer":{"@type":"Answer","text":"Ne. Zůstává ve vašem prohlížeči, dokud ji nestáhnete."}},{"@type":"Question","name":"Proč je nahrávka WebM a ne MP3?","acceptedAnswer":{"@type":"Answer","text":"Prohlížeče nahrávají ve vlastních formátech. Oříznutý WAV funguje téměř všude; kódování MP3 není zabudováno."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Online diktafon (s ořezem)</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Press record, speak, press stop. A level meter shows whether the microphone picks you up, a timer shows the length and, when you are done, you can play the recording, cut it to the part you want and download it as WAV, or keep the original browser recording (WebM/OGG/M4A).</p><p lang="en">The recording uses MediaRecorder on the microphone stream with echo cancellation and noise suppression switched off so that you get the raw signal; the level meter reads an analyser node. After you stop, the file is decoded to measure its peak and to make an exact-length WAV export for the trim function. The audio exists only in memory in this tab: nothing is uploaded, and it is gone when you close the page unless you download it. The browser asks for microphone permission; the microphone is released when you press Stop.</p>
+        
+        <p>Stiskněte nahrávání, mluvte, stiskněte stop. Ukazatel hladiny ukáže, zda vás mikrofon zachytává, časovač délku a po skončení můžete nahrávku přehrát, oříznout na potřebnou část a stáhnout jako WAV nebo ponechat původní nahrávku prohlížeče (WebM/OGG/M4A).</p><p>Nahrávání používá MediaRecorder na proudu z mikrofonu s vypnutým potlačením ozvěny a šumu, abyste dostali surový signál; ukazatel hladiny čte uzel analyzátoru. Po zastavení se soubor dekóduje, aby se změřila jeho špička a vytvořil přesný WAV export pro funkci ořezu. Zvuk existuje jen v paměti této karty: nic se nenahrává a po zavření stránky zmizí, pokud ho nestáhnete. Prohlížeč žádá o povolení mikrofonu; mikrofon se uvolní po stisku Stop.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Allow the microphone and press Record.</p></li><li><p lang="en">Press Stop and listen to the result.</p></li><li><p lang="en">Set start and end to trim, then download.</p></li></ol>
+        <ol class="s-steps"><li><p>Povolte mikrofon a stiskněte Nahrávat.</p></li><li><p>Stiskněte Stop a poslechněte si výsledek.</p></li><li><p>Nastavte začátek a konec k ořezu a stáhněte.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Is my recording sent anywhere?</summary><p lang="en">No. It stays in your browser until you download it.</p></details>
-          <details><summary lang="en">Why is the recording WebM and not MP3?</summary><p lang="en">Browsers record in their own formats. The trimmed WAV works almost everywhere; MP3 encoding is not built in.</p></details>
+          <details open><summary>Odesílá se moje nahrávka někam?</summary><p>Ne. Zůstává ve vašem prohlížeči, dokud ji nestáhnete.</p></details>
+          <details><summary>Proč je nahrávka WebM a ne MP3?</summary><p>Prohlížeče nahrávají ve vlastních formátech. Oříznutý WAV funguje téměř všude; kódování MP3 není zabudováno.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
