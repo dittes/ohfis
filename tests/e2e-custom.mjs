@@ -986,4 +986,40 @@ Object.assign(custom, {
   },
 });
 
+// ---- noise reducer, BPM and key ----
+Object.assign(custom, {
+  async 'noise-reducer'(page) {
+    const sr = 22050, n = sr * 4; let seed = 7; const rnd = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296 - 0.5; }; const x = Float32Array.from({ length: n }, (_, i) => (i >= sr && i < sr * 3 ? 0.4 * Math.sin(2 * Math.PI * 440 * i / sr) : 0) + rnd() * 0.14);
+    const rms = a => Math.sqrt(a.reduce((q, v) => q + v * v, 0) / a.length); const d = await audioRun(page, Buffer.from(AU.encodeWav([x], sr)));
+    const drop = 20 * Math.log10(rms(x.subarray(0, sr / 2)) / rms(d.chs[0].subarray(0, d.sr / 2))); assert.ok(drop > 9, 'hiss reduced by ' + drop + ' dB');
+    const tone = (a, rate) => { let re = 0, im = 0; const o = Math.round(rate * 1.3); for (let i = 0; i < 8192; i++) { const w = 0.5 - 0.5 * Math.cos(2 * Math.PI * i / 8192); re += a[o + i] * w * Math.cos(2 * Math.PI * 440 * i / rate); im += a[o + i] * w * Math.sin(2 * Math.PI * 440 * i / rate); } return Math.hypot(re, im); }; assert.ok(20 * Math.log10(tone(d.chs[0], d.sr) / tone(x, sr)) > -2.5, 'tone preserved: ' + 20 * Math.log10(tone(d.chs[0], d.sr) / tone(x, sr)));
+    await numAt(page, 2).fill('0'); await numAt(page, 3).fill('0.8'); await page.waitForTimeout(2500); await page.waitForSelector('[data-result=ready]'); assert.match(await rootText(page), /Noise learned from\s*0–0\.8 s/);
+  },
+  async 'bpm-key-detector'(page) {
+    const sr = 22050, secs = 24, x = new Float32Array(sr * secs), step = 60 / 120; for (let t = 0; t < secs; t += step) { const at = Math.floor(t * sr); for (let k = 0; k < 400 && at + k < x.length; k++) x[at + k] += Math.sin(k * 0.6) * Math.exp(-k / 60) * 0.7; }
+    const hz = (m) => 440 * Math.pow(2, (m - 69) / 12); for (const [start, notes] of [[0, [57, 60, 64]], [6, [62, 65, 69]], [12, [64, 68, 71]], [18, [57, 60, 64]]]) for (const m of notes) for (let i = start * sr; i < (start + 6) * sr; i++) x[i] += 0.12 * (Math.sin(2 * Math.PI * hz(m) * i / sr) + 0.4 * Math.sin(4 * Math.PI * hz(m) * i / sr));
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'song.wav', mimeType: 'audio/wav', buffer: Buffer.from(AU.encodeWav([x], sr)) }); await page.waitForSelector('[data-result=ready]', { timeout: 60000 }); const t = await rootText(page);
+    const bpm = Number(/Tempo\s*([\d.]+) BPM/.exec(t)[1]); assert.ok(Math.abs(bpm - 120) < 1.5 || Math.abs(bpm - 60) < 1 || Math.abs(bpm - 240) < 2, 'tempo ' + bpm); assert.match(t, /Key\s*A minor/); assert.match(t, /Camelot \(DJ wheel\)\s*8A/); assert.match(t, /Half \/ double/);
+  },
+});
+
+// ---- business documents ----
+Object.assign(custom, {
+  async 'delivery-note-generator'(page) {
+    await page.locator('#tool-root select').first().selectOption('de'); await page.getByRole('button', { name: 'Create PDF' }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 30000 }); const r = await dlWav(page); const txt = pdfText(r.buf);
+    assert.ok(txt.includes('Lieferschein') && txt.includes('LS-2025-001') && /lieferadresse/i.test(txt) && txt.includes('Desk lamp LED') && txt.includes('Office chair'), txt.replace(/\s+/g, ' ').slice(0, 500)); assert.ok(txt.includes('Unterschrift') || txt.includes('Name, Datum, Unterschrift'), 'signature line'); assert.ok(!/€/.test(txt), 'no prices on a delivery note'); assert.match(r.name, /^delivery-note-LS-2025-001\.pdf$/);
+    await page.locator('#tool-root select').first().selectOption('pl'); await page.locator('#tool-root textarea').nth(2).fill(''); await page.getByRole('button', { name: 'Create PDF' }).click(); await page.waitForSelector('.pt-drop__error:visible'); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /at least one item/);
+  },
+  async 'receipt-generator'(page) {
+    await page.getByRole('button', { name: 'Create PDF' }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 30000 }); const r = await dlWav(page); const txt = pdfText(r.buf).replace(/\s+/g, ' ');
+    assert.ok(txt.includes('Receipt') && txt.includes('119,00') || txt.includes('119.00'), txt.slice(0, 300)); assert.match(txt, /Net\s+€\s*100[.,]00/); assert.match(txt, /VAT 19 %\s+€\s*19[.,]00/); assert.ok(txt.includes('Consulting services, March') && txt.includes('Cash') && txt.includes('Signature'));
+    await page.locator('#tool-root input[type=number]').first().fill('0'); await page.getByRole('button', { name: 'Create PDF' }).click(); await page.waitForSelector('.pt-drop__error:visible'); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /above zero/);
+  },
+  async 'payment-reminder-generator'(page) {
+    await page.locator('#tool-root select').first().selectOption('de'); await page.waitForTimeout(200); assert.match(await page.locator('#tool-root textarea').nth(2).inputValue().then(v => v.replace(/\s+/g, ' ')), /Rechnung 2025-001 über € 1[.,\u202f\u00a0 ]?250[.,]00/); await page.locator('#tool-root select').nth(2).selectOption('2'); await page.waitForTimeout(200); assert.match(await page.locator('#tool-root textarea').nth(2).inputValue(), /letzte|Letzte|weitere Schritte/);
+    const nums = page.locator('#tool-root input[type=number]'); await nums.nth(1).fill('9'); await nums.nth(2).fill('10'); await page.getByRole('button', { name: 'Create PDF' }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 30000 }); const r = await dlWav(page); const txt = pdfText(r.buf).replace(/\s+/g, ' ');
+    assert.ok(txt.includes('Zahlungserinnerung') && txt.includes('Letzte Mahnung') && txt.includes('Sehr geehrte Damen und Herren') && txt.includes('Mit freundlichen Grüßen'), txt.slice(0, 500)); assert.match(txt, /Offener Betrag\s+€\s*1[.,]?250[.,]00/); assert.match(txt, /Verzugszinsen \(9 %\)/); assert.match(txt, /Mahngebühr\s+€\s*10[.,]00/); assert.match(txt, /Jetzt fälliger Gesamtbetrag\s+€\s*1[.,]?2[67]\d[.,]\d\d/); assert.match(txt, /Tage überfällig\s+14/);
+  },
+});
+
 export default custom;

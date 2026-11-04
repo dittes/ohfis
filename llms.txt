@@ -65,6 +65,9 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [Compare Two PDFs (Text and Visual Differences)](https://ohfis.com/en/pdf-compare/): Find what changed between two versions of a PDF, page by page.
 - [Search Text in a PDF (Find Words and Pages)](https://ohfis.com/en/pdf-text-search/): List every match of a word in a PDF with page number and context.
 - [EPUB to PDF Converter](https://ohfis.com/en/epub-to-pdf/): Turn the text of an EPUB e-book into a PDF you can print or read anywhere.
+- [Delivery Note Generator (PDF)](https://ohfis.com/en/delivery-note-generator/): Create a delivery note with items and a signature field for the recipient.
+- [Receipt Generator (PDF)](https://ohfis.com/en/receipt-generator/): Create a receipt for a payment, with VAT shown and a signature line.
+- [Payment Reminder Letter Generator (PDF)](https://ohfis.com/en/payment-reminder-generator/): Write a polite or firm reminder for an unpaid invoice, with interest and deadline.
 
 ## Text Tools
 
@@ -348,6 +351,8 @@ Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.c
 - [Audio Converter (to MP3 or WAV)](https://ohfis.com/en/audio-converter/): Convert M4A, OGG, FLAC, Opus or video sound to MP3 or WAV.
 - [Webcam Video Recorder](https://ohfis.com/en/webcam-video-recorder/): Record a video from your webcam and save it, without installing anything.
 - [Text to Speech (Read Text Aloud)](https://ohfis.com/en/text-to-speech/): Have your browser read a text aloud with a voice and speed you choose.
+- [Audio Noise Reducer (Remove Background Noise)](https://ohfis.com/en/noise-reducer/): Reduce steady hiss, hum and fan noise in a recording.
+- [BPM and Key Detector (Find Tempo and Key of a Song)](https://ohfis.com/en/bpm-key-detector/): Find the tempo in BPM and the musical key of an audio file.
 
 ## Video Tools
 

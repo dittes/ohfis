@@ -11,7 +11,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - ◐ partly built: 14
 - 🔗 link-out or covered elsewhere: 8
 - ❌ not built: 13
-- Utility tools on the site: 275 (plus 26 PDF tools from the first redesign)
+- Utility tools on the site: 280 (plus 26 PDF tools from the first redesign)
 
 ## PDF, documents & print
 
@@ -360,6 +360,9 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - [pdf-compare](/en/pdf-compare/)
 - [pdf-text-search](/en/pdf-text-search/)
 - [epub-to-pdf](/en/epub-to-pdf/)
+- [delivery-note-generator](/en/delivery-note-generator/)
+- [receipt-generator](/en/receipt-generator/)
+- [payment-reminder-generator](/en/payment-reminder-generator/)
 - [exif-viewer](/en/exif-viewer/)
 - [heic-to-jpg](/en/heic-to-jpg/)
 - [images-to-gif](/en/images-to-gif/)
@@ -371,6 +374,8 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - [audio-converter](/en/audio-converter/)
 - [webcam-video-recorder](/en/webcam-video-recorder/)
 - [text-to-speech](/en/text-to-speech/)
+- [noise-reducer](/en/noise-reducer/)
+- [bpm-key-detector](/en/bpm-key-detector/)
 - [qr-code-generator](/en/qr-code-generator/)
 - [readability-score](/en/readability-score/)
 - [text-summarizer](/en/text-summarizer/)

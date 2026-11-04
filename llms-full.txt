@@ -109,6 +109,15 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [EPUB to PDF Converter](https://ohfis.com/en/epub-to-pdf/): Turn the text of an EPUB e-book into a PDF you can print or read anywhere.
   Drop an EPUB and get a PDF with a title page, the chapters with their headings, paragraphs, lists and quotes, and page numbers. Choose A5 (book), A4 or Letter, the font size and the margins. Handy to print a book, to read it on a device without an EPUB reader or to annotate it.
   How to use: Drop the EPUB file. The PDF is created with your page size and font settings; change them and drop the file again for another version. Download the PDF.
+- [Delivery Note Generator (PDF)](https://ohfis.com/en/delivery-note-generator/): Create a delivery note with items and a signature field for the recipient.
+  Enter sender, recipient and delivery address, the items with quantity and unit, an order reference and an optional note, and download a clean one-page PDF delivery note with a signature line for the recipient. The document language can be English, German, Polish or Czech, independent of the page language.
+  How to use: Fill in sender, recipient, number and date. List the items, one per line: description; quantity; unit. Create the PDF and print or send it.
+- [Receipt Generator (PDF)](https://ohfis.com/en/receipt-generator/): Create a receipt for a payment, with VAT shown and a signature line.
+  Enter who paid, who received the money, the amount, what it was for, the payment method and, if you like, the VAT rate included in the amount. The tool splits the gross amount into net and VAT and creates a one-page PDF receipt with a signature line. The document language can be English, German, Polish or Czech.
+  How to use: Enter issuer, payer, number, date and amount. Set the VAT rate included in the amount (0 for none) and what the payment was for. Create the PDF, print it and sign it.
+- [Payment Reminder Letter Generator (PDF)](https://ohfis.com/en/payment-reminder-generator/): Write a polite or firm reminder for an unpaid invoice, with interest and deadline.
+  Enter the invoice number, date, due date and the outstanding amount, choose the level (friendly reminder, second reminder, final notice) and get a ready letter with the days overdue, optional late interest and reminder fee, the total now due and a new deadline. The wording is a neutral template in English, German, Polish or Czech that you can edit before creating the PDF.
+  How to use: Enter the invoice data and the outstanding amount. Choose the level; edit the message if you like. Create the PDF and send it.
 
 ## Text Tools
 
@@ -868,6 +877,12 @@ Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.c
 - [Text to Speech (Read Text Aloud)](https://ohfis.com/en/text-to-speech/): Have your browser read a text aloud with a voice and speed you choose.
   Paste a text, choose one of the voices on your device, set speed, pitch and volume and press play. Useful for proofreading (mistakes are easy to hear), for learning pronunciation or for listening to an article instead of reading it. Pause, resume and stop at any time.
   How to use: Type or paste the text. Choose the voice (it should match the language of the text) and the speed. Press "Read aloud".
+- [Audio Noise Reducer (Remove Background Noise)](https://ohfis.com/en/noise-reducer/): Reduce steady hiss, hum and fan noise in a recording.
+  Drop a recording and reduce steady background noise such as hiss, hum, fan or traffic rumble, by 6 to 40 dB. The noise level is learned automatically from the quietest tenth of the recording, or from a stretch you mark as noise-only, and then pushed down wherever the sound is not clearly louder than the noise. Listen to the result, compare, and download WAV or MP3.
+  How to use: Drop the recording. Set the reduction and, if you know a noise-only stretch, its start and end. Listen to the preview and download the result.
+- [BPM and Key Detector (Find Tempo and Key of a Song)](https://ohfis.com/en/bpm-key-detector/): Find the tempo in BPM and the musical key of an audio file.
+  Drop a song or a recording and get its tempo in beats per minute, the half and double tempo, other candidates, the musical key (such as A minor) and the Camelot code used by DJs for harmonic mixing. Useful to match tracks, to practise along or to label a sample library.
+  How to use: Drop the audio file. Wait a moment while it is analysed (up to 3 minutes from the middle of the song). Read the tempo, key and the alternatives.
 
 ## Video Tools
 

@@ -4573,6 +4573,114 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/epub-to-pdf/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/delivery-note-generator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/delivery-note-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lieferschein-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-dowodu-dostawy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-dodaciho-listu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/delivery-note-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/lieferschein-erstellen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/delivery-note-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lieferschein-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-dowodu-dostawy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-dodaciho-listu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/delivery-note-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/generator-dowodu-dostawy/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/delivery-note-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lieferschein-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-dowodu-dostawy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-dodaciho-listu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/delivery-note-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/generator-dodaciho-listu/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/delivery-note-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/lieferschein-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-dowodu-dostawy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-dodaciho-listu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/delivery-note-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/receipt-generator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/receipt-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/quittung-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-pokwitowania/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-prijmoveho-dokladu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/receipt-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/quittung-erstellen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/receipt-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/quittung-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-pokwitowania/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-prijmoveho-dokladu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/receipt-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/generator-pokwitowania/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/receipt-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/quittung-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-pokwitowania/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-prijmoveho-dokladu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/receipt-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/generator-prijmoveho-dokladu/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/receipt-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/quittung-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-pokwitowania/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-prijmoveho-dokladu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/receipt-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/payment-reminder-generator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/payment-reminder-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zahlungserinnerung-und-mahnung-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-wezwania-do-zaplaty/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-upominky-platby/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/payment-reminder-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/zahlungserinnerung-und-mahnung-erstellen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/payment-reminder-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zahlungserinnerung-und-mahnung-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-wezwania-do-zaplaty/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-upominky-platby/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/payment-reminder-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/generator-wezwania-do-zaplaty/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/payment-reminder-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zahlungserinnerung-und-mahnung-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-wezwania-do-zaplaty/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-upominky-platby/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/payment-reminder-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/generator-upominky-platby/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/payment-reminder-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zahlungserinnerung-und-mahnung-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-wezwania-do-zaplaty/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-upominky-platby/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/payment-reminder-generator/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/margin-markup-calculator/</loc>
     <lastmod>2026-11-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/margin-markup-calculator/"/>
@@ -7487,6 +7595,78 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/czytanie-tekstu-na-glos/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/predcitani-textu/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/text-to-speech/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/noise-reducer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/noise-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-rauschen-entfernen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/redukcja-szumu-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/odstraneni-sumu-ze-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/noise-reducer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/audio-rauschen-entfernen/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/noise-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-rauschen-entfernen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/redukcja-szumu-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/odstraneni-sumu-ze-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/noise-reducer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/redukcja-szumu-audio/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/noise-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-rauschen-entfernen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/redukcja-szumu-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/odstraneni-sumu-ze-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/noise-reducer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/odstraneni-sumu-ze-zvuku/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/noise-reducer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-rauschen-entfernen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/redukcja-szumu-audio/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/odstraneni-sumu-ze-zvuku/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/noise-reducer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/bpm-key-detector/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/bpm-key-detector/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/bpm-und-tonart-erkennung/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wykrywanie-bpm-i-tonacji/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/detektor-bpm-a-toniny/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/bpm-key-detector/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/bpm-und-tonart-erkennung/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/bpm-key-detector/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/bpm-und-tonart-erkennung/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wykrywanie-bpm-i-tonacji/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/detektor-bpm-a-toniny/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/bpm-key-detector/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/wykrywanie-bpm-i-tonacji/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/bpm-key-detector/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/bpm-und-tonart-erkennung/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wykrywanie-bpm-i-tonacji/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/detektor-bpm-a-toniny/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/bpm-key-detector/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/detektor-bpm-a-toniny/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/bpm-key-detector/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/bpm-und-tonart-erkennung/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wykrywanie-bpm-i-tonacji/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/detektor-bpm-a-toniny/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/bpm-key-detector/"/>
   </url>
   <url>
     <loc>https://ohfis.com/en/password-generator/</loc>

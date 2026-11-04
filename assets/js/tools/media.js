@@ -4,6 +4,7 @@ import { calcTool } from './calctool.js';
 import * as A from './lib/audio.js';
 import { encodeMp3 } from './lib/mp3.js';
 import * as SP from './lib/speech.js';
+import * as AN from './lib/analysis.js';
 
 const sizeFmt = n => n < 1024 ? `${n} B` : n < 1048576 ? `${(n / 1024).toFixed(1)} KB` : `${(n / 1048576).toFixed(2)} MB`;
 const dur = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}.${String(Math.floor(s % 1 * 10))}`;
@@ -258,5 +259,27 @@ export const tools = {
     text.addEventListener('input', () => { const n = SP.readingSeconds(text.value, Number(rate.value) || 1); info.textContent = text.value.trim() ? `About ${Math.floor(n / 60)}:${String(n % 60).padStart(2, '0')} min at this speed` : ''; });
     ui.append(text, h('div', { class: 'ut-options' }, field('Voice', voice), field('Speed (0.5–2)', rate), field('Pitch (0.5–2)', pitch), field('Volume (%)', vol)), h('div', { class: 'ut-actions' }, playBtn, pauseBtn, stopBtn), info, err, h('p', { class: 'pt-hint' }, 'The voices come from your device or browser, so they differ between computers and phones, and the language of the voice must match the language of the text. Reading happens locally; the text is not sent anywhere. Browsers do not let pages save the speech as an audio file; to record it, use the Screen Recorder with system audio.'));
     addEventListener('pagehide', stop);
+  },
+
+  'noise-reducer'(root) {
+    audioFileTool(root, { suffix: '-denoised', formats: true, note: 'Works best on steady noise such as hiss, hum, fan or traffic rumble. By default the noise is learned from the quietest tenth of the recording; if you know a stretch with only noise (for example the first second), enter it below for a better result.',
+      options: [{ key: 'db', label: 'Noise reduction (dB)', type: 'number', value: 15, min: 6, max: 40, step: 1, hint: 'Higher removes more but can make speech sound thin' }, { key: 'sens', label: 'Sensitivity (1–5)', type: 'number', value: 2.5, min: 1, max: 5, step: 0.5, hint: 'Higher treats more of the sound as noise' }, { key: 'a', label: 'Noise-only part: from (seconds)', type: 'number', value: 0, min: 0, step: 0.1 }, { key: 'b', label: 'to (seconds, 0 = detect automatically)', type: 'number', value: 0, min: 0, step: 0.1 }],
+      async process(chs, sr, o) { await new Promise(r => setTimeout(r, 30)); const range = o.b > o.a ? [o.a, o.b] : null; const out = AN.reduceNoise(chs, sr, { reductionDb: o.db, sensitivity: o.sens, noiseRange: range }); const l = A.limitPeak(out); return { chs: l.chs, info: [['Noise learned from', range ? `${o.a}–${o.b} s` : 'quietest 10 %'], ['Reduction', `${o.db} dB`]] }; } });
+  },
+  'bpm-key-detector'(root) {
+    const ui = wrap(root); const info = h('div', { class: 'ut-stats' }), err = h('p', { class: 'pt-drop__error', role: 'alert', hidden: true }), out = h('div'), status = h('p', { class: 'pt-hint' });
+    async function load([f]) {
+      err.hidden = true; out.replaceChildren(); info.replaceChildren(); status.textContent = t('processing');
+      try {
+        const d = await decodeFile(f); const mono = A.toMono(d.chs)[0], total = mono.length / d.sr; const len = Math.min(mono.length, Math.round(180 * d.sr)), off = Math.max(0, Math.round((mono.length - len) / 2)); const seg = mono.subarray(off, off + len); const k = Math.max(1, Math.round(d.sr / 22050)), rate = d.sr / k, ds = new Float32Array(Math.floor(seg.length / k)); for (let i = 0; i < ds.length; i++) { let sum = 0; for (let j = 0; j < k; j++) sum += seg[i * k + j]; ds[i] = sum / k; }
+        await new Promise(r => setTimeout(r, 20)); const bpm = AN.detectBpm(ds, rate), key = AN.detectKey(ds, rate); status.textContent = '';
+        info.replaceChildren(stat('File', f.name), stat('Length', dur(total)), stat('Analysed', len / d.sr < total ? `${Math.round(len / d.sr)} s from the middle` : 'whole file'));
+        const rows = [['Tempo', bpm ? `${bpm.bpm} BPM` : 'not found (too short, or no steady beat)']]; if (bpm) { rows.push(['Half / double', `${Math.round(bpm.bpm / 2 * 10) / 10} / ${Math.round(bpm.bpm * 2 * 10) / 10} BPM`], ['Other candidates', bpm.candidates.slice(1).join(', ') || '–'], ['Tempo confidence', `${Math.round(bpm.confidence * 100)} %`]); }
+        rows.push(['Key', key ? key.key : 'not found'], ...(key ? [['Camelot (DJ wheel)', key.camelot], ['Next best key', key.runnerUp], ['Key certainty', key.confidence > 0.12 ? 'clear' : key.confidence > 0.05 ? 'moderate' : 'uncertain, the music may change key or be atonal']] : []));
+        out.replaceChildren(table([['Result', 'Value'], ...rows]), h('span', { 'data-result': 'ready', class: 'pt-hint' }, 'Analysis done.'));
+      } catch (e) { err.textContent = e.message || String(e); err.hidden = false; status.textContent = ''; }
+    }
+    const drop = h('div', { class: 'ut-drop' }, h('p', {}, 'Drop a song or recording here, or'), filePicker({ accept: 'audio/*,.wav,.mp3,.m4a,.ogg,.flac,.aac,.opus,video/mp4,video/webm', label: t('chooseFile'), onFiles: load })); ['dragover', 'drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); if (ev === 'drop' && e.dataTransfer.files[0]) load([e.dataTransfer.files[0]]); }));
+    ui.append(drop, status, info, err, out, h('p', { class: 'pt-hint' }, 'The tempo comes from the rhythm of the sound (onsets) and the key from the strength of the twelve notes over time. Both work best on music with a clear, steady beat and a stable key; speech, ambient music and songs with tempo or key changes give unreliable results. Half or double the tempo is a common ambiguity, so check the alternatives. Everything is analysed in your browser.'));
   },
 };
