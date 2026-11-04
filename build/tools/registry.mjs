@@ -6,7 +6,7 @@
 export const UCATS = {
   documents: { slug: 'documents-print', icon: 'doc',
     name: ['Documents & Print', 'Dokumente & Druck', 'Dokumenty i druk', 'Dokumenty a tisk'],
-    short: ['Booklets, labels, Bates numbers, invoices and Word conversion.', 'Broschüren, Etiketten, Bates-Nummern, Rechnungen und Word-Umwandlung.', 'Broszury, etykiety, numeracja Batesa, faktury i konwersja Worda.', 'Brožury, štítky, Batesovo číslování, faktury a převod Wordu.'],
+    short: ['Booklets, labels, Bates numbers and Word conversion.', 'Broschüren, Etiketten, Bates-Nummern und Word-Umwandlung.', 'Broszury, etykiety, numeracja Batesa i konwersja Worda.', 'Brožury, štítky, Batesovo číslování a převod Wordu.'],
     h1: ['Document and print tools', 'Tools für Dokumente und Druck', 'Narzędzia do dokumentów i druku', 'Nástroje pro dokumenty a tisk'] },
   text: { slug: 'text-tools', icon: 'text',
     name: ['Text Tools', 'Text-Tools', 'Narzędzia tekstowe', 'Textové nástroje'],

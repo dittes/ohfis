@@ -41,7 +41,7 @@
 
 ## Documents & Print
 
-Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfis.com/en/pdf-tools/
+Booklets, labels, Bates numbers and Word conversion. Hub: https://ohfis.com/en/pdf-tools/
 
 - [PDF Booklet Maker (Print as Folded Booklet)](https://ohfis.com/en/booklet-maker/): Rearrange PDF pages so a duplex printout folds into a booklet.
 - [PDF Multiple Pages per Sheet (N-up)](https://ohfis.com/en/n-up-pdf/): Put 2, 4, 6 or 9 PDF pages on one sheet to save paper.
@@ -49,7 +49,6 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [Add Margins or Note Space to a PDF](https://ohfis.com/en/add-margins-to-pdf/): Enlarge each page with white space for notes, binding or printing.
 - [Paper Size Calculator (A4, Letter, Pixels & PPI)](https://ohfis.com/en/paper-size-calculator/): Convert paper sizes to mm, inches and pixels, or find the print size of an image.
 - [Mailing Label Printer (Avery Templates to PDF)](https://ohfis.com/en/mailing-labels/): Turn a list of addresses into a print-ready PDF for Avery label sheets.
-- [Free Invoice Generator (PDF, No Sign-Up)](https://ohfis.com/en/invoice-builder/): Write items, tax and a discount and download a clean PDF invoice.
 - [Certificate Maker (Printable PDF Certificates)](https://ohfis.com/en/certificate-generator/): Create certificates for many names at once and download them as one PDF.
 - [Markdown to Word (DOCX) Converter](https://ohfis.com/en/markdown-to-docx/): Convert Markdown notes into a real Word document with headings, lists and tables.
 - [Word (DOCX) to Markdown Converter](https://ohfis.com/en/docx-to-markdown/): Extract the structure of a Word document as clean Markdown, locally.
@@ -67,7 +66,6 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [EPUB to PDF Converter](https://ohfis.com/en/epub-to-pdf/): Turn the text of an EPUB e-book into a PDF you can print or read anywhere.
 - [Delivery Note Generator (PDF)](https://ohfis.com/en/delivery-note-generator/): Create a delivery note with items and a signature field for the recipient.
 - [Receipt Generator (PDF)](https://ohfis.com/en/receipt-generator/): Create a receipt for a payment, with VAT shown and a signature line.
-- [Payment Reminder Letter Generator (PDF)](https://ohfis.com/en/payment-reminder-generator/): Write a polite or firm reminder for an unpaid invoice, with interest and deadline.
 
 ## Text Tools
 

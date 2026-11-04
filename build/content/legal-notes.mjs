@@ -31,7 +31,7 @@ const T = {
   },
 };
 
-const LEGAL_IDS = new Set(['invoice-builder', 'delivery-note-generator', 'receipt-generator', 'payment-reminder-generator', 'certificate-generator', 'vat-calculator', 'ics-event-generator']);
+const LEGAL_IDS = new Set(['delivery-note-generator', 'receipt-generator', 'certificate-generator', 'vat-calculator', 'ics-event-generator']);
 LEGAL_IDS.delete('ics-event-generator');
 const REDACT_IDS = new Set(['redact', 'image-blur-redact', 'image-metadata-remover', 'metadata']);
 

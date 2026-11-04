@@ -407,12 +407,6 @@ Object.assign(custom, {
     await page.locator('#tool-root input[type=number]').nth(1).fill('30'); await page.getByRole('button', { name: /Create label sheet/ }).click(); await page.waitForTimeout(1500);
     const [dl2] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Download labels/ }).click()]); assert.equal((await pageCount(readFileSync(await dl2.path()))).n, 3, '60 labels need 3 sheets of 21');
   },
-  async 'invoice-builder'(page) {
-    let txt = await rootText(page); assert.ok(txt.includes('985.00'), 'subtotal: ' + txt.slice(0, 600)); assert.ok(txt.includes('1,182.00'), 'total with 20% tax');
-    await page.getByRole('button', { name: /Create invoice PDF/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 20000 });
-    const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /Download invoice/ }).click()]); const buf = readFileSync(await dl.path()); assert.equal((await pageCount(buf)).n, 1); assert.match(dl.suggestedFilename(), /invoice-2025-001\.pdf/);
-    await page.locator('#tool-root textarea').nth(2).fill('Broken line'); await page.waitForTimeout(400); assert.ok((await rootText(page)).includes('needs at least a description and a price'), 'error shown');
-  },
   async 'certificate-generator'(page) {
     await page.getByRole('button', { name: /Create certificates/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 20000 });
     const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /certificates\.pdf/ }).click()]); const c = await pageCount(readFileSync(await dl.path())); assert.equal(c.n, 2); assert.ok(c.sizes[0].width > c.sizes[0].height, 'landscape');
@@ -1014,11 +1008,6 @@ Object.assign(custom, {
     await page.getByRole('button', { name: 'Create PDF' }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 30000 }); const r = await dlWav(page); const txt = pdfText(r.buf).replace(/\s+/g, ' ');
     assert.ok(txt.includes('Receipt') && txt.includes('119,00') || txt.includes('119.00'), txt.slice(0, 300)); assert.match(txt, /Net\s+€\s*100[.,]00/); assert.match(txt, /VAT 19 %\s+€\s*19[.,]00/); assert.ok(txt.includes('Consulting services, March') && txt.includes('Cash') && txt.includes('Signature'));
     await page.locator('#tool-root input[type=number]').first().fill('0'); await page.getByRole('button', { name: 'Create PDF' }).click(); await page.waitForSelector('.pt-drop__error:visible'); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /above zero/);
-  },
-  async 'payment-reminder-generator'(page) {
-    await page.locator('#tool-root select').first().selectOption('de'); await page.waitForTimeout(200); assert.match(await page.locator('#tool-root textarea').nth(2).inputValue().then(v => v.replace(/\s+/g, ' ')), /Rechnung 2025-001 über € 1[.,\u202f\u00a0 ]?250[.,]00/); await page.locator('#tool-root select').nth(2).selectOption('2'); await page.waitForTimeout(200); assert.match(await page.locator('#tool-root textarea').nth(2).inputValue(), /letzte|Letzte|weitere Schritte/);
-    const nums = page.locator('#tool-root input[type=number]'); await nums.nth(1).fill('9'); await nums.nth(2).fill('10'); await page.getByRole('button', { name: 'Create PDF' }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 30000 }); const r = await dlWav(page); const txt = pdfText(r.buf).replace(/\s+/g, ' ');
-    assert.ok(txt.includes('Zahlungserinnerung') && txt.includes('Letzte Mahnung') && txt.includes('Sehr geehrte Damen und Herren') && txt.includes('Mit freundlichen Grüßen'), txt.slice(0, 500)); assert.match(txt, /Offener Betrag\s+€\s*1[.,]?250[.,]00/); assert.match(txt, /Verzugszinsen \(9 %\)/); assert.match(txt, /Mahngebühr\s+€\s*10[.,]00/); assert.match(txt, /Jetzt fälliger Gesamtbetrag\s+€\s*1[.,]?2[67]\d[.,]\d\d/); assert.match(txt, /Tage überfällig\s+14/);
   },
 });
 

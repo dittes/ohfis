@@ -41,7 +41,7 @@
 
 ## Documents & Print
 
-Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfis.com/en/pdf-tools/
+Booklets, labels, Bates numbers and Word conversion. Hub: https://ohfis.com/en/pdf-tools/
 
 - [PDF Booklet Maker (Print as Folded Booklet)](https://ohfis.com/en/booklet-maker/): Rearrange PDF pages so a duplex printout folds into a booklet.
   Upload a PDF and get a new PDF in which two pages sit side by side on each landscape sheet, in the order that makes a stack of double-sided sheets fold into a booklet. Print it duplex, flip on the short edge, fold the stack in half and staple the fold.
@@ -61,9 +61,6 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [Mailing Label Printer (Avery Templates to PDF)](https://ohfis.com/en/mailing-labels/): Turn a list of addresses into a print-ready PDF for Avery label sheets.
   Paste or load your addresses (one block per label, separated by a blank line), choose the label sheet and get a PDF whose text lands exactly in the label cells. You can skip labels that are already used on a partly used sheet, print several copies of each label and let the font size shrink automatically so long addresses fit.
   How to use: Enter the addresses, with a blank line between labels, or load a text file. Choose the label sheet and options. Download the PDF and print it at actual size; test on plain paper first.
-- [Free Invoice Generator (PDF, No Sign-Up)](https://ohfis.com/en/invoice-builder/): Write items, tax and a discount and download a clean PDF invoice.
-  Fill in who you are, who you bill, the invoice number and dates, and list the items one per line as "description; quantity; unit price". The totals update as you type (subtotal, discount, tax, total) and a click creates a tidy PDF with a table that continues onto a second page if needed.
-  How to use: Enter sender, recipient, number, dates, currency and tax rate. List the items, one per line. Check the totals and download the PDF.
 - [Certificate Maker (Printable PDF Certificates)](https://ohfis.com/en/certificate-generator/): Create certificates for many names at once and download them as one PDF.
   Choose a title and wording, a colour and the paper, paste a list of names (one per line) and get a landscape certificate for each of them in a single PDF, ready to print for a course, a team, a class or a competition. The first certificate can also be saved as a PNG.
   How to use: Enter the title, text, date and signer. Paste the names, one per line. Download the PDF with one certificate per name.
@@ -115,9 +112,6 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [Receipt Generator (PDF)](https://ohfis.com/en/receipt-generator/): Create a receipt for a payment, with VAT shown and a signature line.
   Enter who paid, who received the money, the amount, what it was for, the payment method and, if you like, the VAT rate included in the amount. The tool splits the gross amount into net and VAT and creates a one-page PDF receipt with a signature line. The document language can be English, German, Polish or Czech.
   How to use: Enter issuer, payer, number, date and amount. Set the VAT rate included in the amount (0 for none) and what the payment was for. Create the PDF, print it and sign it.
-- [Payment Reminder Letter Generator (PDF)](https://ohfis.com/en/payment-reminder-generator/): Write a polite or firm reminder for an unpaid invoice, with interest and deadline.
-  Enter the invoice number, date, due date and the outstanding amount, choose the level (friendly reminder, second reminder, final notice) and get a ready letter with the days overdue, optional late interest and reminder fee, the total now due and a new deadline. The wording is a neutral template in English, German, Polish or Czech that you can edit before creating the PDF.
-  How to use: Enter the invoice data and the outstanding amount. Choose the level; edit the message if you like. Create the PDF and send it.
 
 ## Text Tools
 

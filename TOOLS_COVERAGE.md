@@ -7,11 +7,11 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 ## Summary
 
 - Requested items: 277
-- ✅ built: 242
-- ◐ partly built: 14
+- ✅ built: 241
+- ◐ partly built: 15
 - 🔗 link-out or covered elsewhere: 8
 - ❌ not built: 13
-- Utility tools on the site: 280 (plus 26 PDF tools from the first redesign)
+- Utility tools on the site: 278 (plus 26 PDF tools from the first redesign)
 
 ## PDF, documents & print
 
@@ -26,7 +26,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 | 7 | Image to Standard PDF Compiler | ✅ | [jpg-to-pdf](/en/jpg-to-pdf/), [png-to-pdf](/en/png-to-pdf/) |
 | 8 | Vector Redaction Pen | ✅ | [redact](/en/redact/) |
 | 9 | Multi-Up Print Imposition Planner | ✅ | [n-up-pdf](/en/n-up-pdf/), [booklet-maker](/en/booklet-maker/) |
-| 10 | Invoice & Receipt PDF Builder | ✅ | [invoice-builder](/en/invoice-builder/) |
+| 10 | Invoice & Receipt PDF Builder | ◐ | [receipt-generator](/en/receipt-generator/) |
 | 11 | PDF Metadata Stripper | ✅ | [metadata](/en/metadata/) |
 | 12 | AcroForm Field Flattener | ✅ | [flatten](/en/flatten/) |
 | 13 | Bates Legal Numbering Stamper | ✅ | [bates-numbering](/en/bates-numbering/) |
@@ -361,8 +361,6 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - [pdf-text-search](/en/pdf-text-search/)
 - [epub-to-pdf](/en/epub-to-pdf/)
 - [delivery-note-generator](/en/delivery-note-generator/)
-- [receipt-generator](/en/receipt-generator/)
-- [payment-reminder-generator](/en/payment-reminder-generator/)
 - [exif-viewer](/en/exif-viewer/)
 - [heic-to-jpg](/en/heic-to-jpg/)
 - [images-to-gif](/en/images-to-gif/)
