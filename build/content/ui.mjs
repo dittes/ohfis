@@ -43,6 +43,8 @@ export const PAGE = {
   alsoLede: ['Related tools on our other sites, free and in your browser.', 'Passende Tools auf unseren anderen Seiten, kostenlos und im Browser.', 'Powiązane narzędzia na naszych innych stronach, za darmo i w przeglądarce.', 'Související nástroje na našich dalších webech, zdarma a v prohlížeči.'],
   browse: ['Browse by category', 'Nach Kategorie stöbern', 'Przeglądaj według kategorii', 'Procházet podle kategorií'],
   count: ['{n} tools', '{n} Tools', '{n} narzędzi', '{n} nástrojů'],
+  showAll: ['Show all {n} tools', 'Alle {n} Tools ansehen', 'Pokaż wszystkie narzędzia ({n})', 'Zobrazit všech {n} nástrojů'],
+  menuOf: ['Open menu: {name}', 'Menü öffnen: {name}', 'Otwórz menu: {name}', 'Otevřít nabídku: {name}'],
   moreTools: ['More tools', 'Weitere Tools', 'Więcej narzędzi', 'Další nástroje'],
   allIn: ['All {name} →', 'Alle {name} →', 'Wszystkie: {name} →', 'Všechny: {name} →'],
   pdfShort: ['Merge, split, compress, convert, edit, sign and protect PDFs.', 'PDFs zusammenfügen, teilen, komprimieren, umwandeln, bearbeiten, unterschreiben und schützen.', 'Łącz, dziel, kompresuj, konwertuj, edytuj, podpisuj i zabezpieczaj PDF.', 'Spojujte, dělte, komprimujte, převádějte, upravujte, podepisujte a chraňte PDF.'],
