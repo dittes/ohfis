@@ -489,7 +489,7 @@ Object.assign(custom, {
     const state = await page.evaluate(() => window.__ctxState || 'n/a'); void state; await page.getByRole('button', { name: /Stop/ }).first().click(); await page.waitForTimeout(300); assert.ok(await page.getByRole('button', { name: 'Play' }).count() > 0, 'back to Play');
   },
   async 'bpm-tap-counter'(page) {
-    const tap = page.getByRole('button', { name: 'TAP' }); for (let i = 0; i < 6; i++) { await tap.click(); await page.waitForTimeout(500); } const txt = await rootText(page); const m = /(\d{2,3}(?:\.\d)?)\s*BPM/i.exec(txt) || /BPM[^\d]*(\d{2,3}(?:\.\d)?)/i.exec(txt); assert.ok(m && Number(m[1]) > 100 && Number(m[1]) < 125, 'tempo of ~0.5 s taps (100-125 BPM), got: ' + txt.slice(0, 200));
+    const tap = page.getByRole('button', { name: 'TAP' }); for (let i = 0; i < 6; i++) { await tap.click(); await page.waitForTimeout(500); } const txt = await rootText(page); const m = /(\d{2,3}(?:\.\d)?)/.exec(txt); assert.ok(m && Number(m[1]) > 100 && Number(m[1]) < 125, 'tempo of ~0.5 s taps (100-125 BPM), got: ' + txt.slice(0, 200));
   },
 });
 
