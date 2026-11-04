@@ -64,3 +64,18 @@ test('org chart layout', () => {
   for (const row of Object.values(Object.groupBy ? Object.groupBy(l.nodes, n => n.depth) : {})) { const xs = row.map(n => n.x).sort((a, b) => a - b); for (let i = 1; i < xs.length; i++) assert.ok(xs[i] - xs[i - 1] >= l.nodeW + 24 - 1e-9, 'no overlap'); }
   assert.equal(Math.min(...l.nodes.map(n => n.x)), 0); const forest = N.layoutTree(parseOutline('A\nB\n  B1')); assert.equal(forest.nodes.length, 3); assert.equal(forest.edges.length, 1); assert.ok(forest.width > 0 && forest.height > 0);
 });
+
+test('braille: letters, capitals, numbers, round trip', () => {
+  assert.equal(N.toBraille('abc'), '⠁⠃⠉'); assert.equal(N.toBraille('Hello'), '⠠⠓⠑⠇⠇⠕'); assert.equal(N.toBraille('NASA'), '⠠⠠⠝⠁⠎⠁'); assert.equal(N.toBraille('2025'), '⠼⠃⠚⠃⠑'); assert.equal(N.toBraille('a 1'), '⠁⠀⠼⠁');
+  for (const s of ['Hello, World!', 'The year 2025 is here.', 'NASA launched 10 rockets', "It's fine - really?"]) assert.equal(N.fromBraille(N.toBraille(s)), s, s);
+  assert.equal(N.toBraille('café'), N.toBraille('cafe'), 'accents are dropped in grade 1 English');
+});
+test('brain dump organiser', () => {
+  const r = N.organizeBrainDump('Need to call Anna about the contract tomorrow\nWhat if we moved the launch?\nWorried about the budget\nAre we ready for the demo?\nBuy milk ASAP\nRandom thought about lunch');
+  assert.equal(r.groups.tasks.length, 2); assert.equal(r.groups.questions.length, 1); assert.equal(r.groups.ideas.length, 1); assert.equal(r.groups.worries.length, 1); assert.equal(r.groups.notes.length, 1); assert.equal(r.groups.urgent.length, 1); assert.equal(r.groups.deadlines[0].date, 'tomorrow'); assert.deepEqual(r.people, ['Anna']);
+  const md = N.brainDumpMarkdown(r); assert.match(md, /## ✅ Tasks/); assert.match(md, /- \[ \] Need to call Anna/); assert.match(md, /## 👥 People mentioned/);
+});
+test('webhook signatures match known HMAC vectors', async () => {
+  const s = await N.webhookSignatures('key', 'The quick brown fox jumps over the lazy dog', { timestamp: 1700000000 }); assert.equal(s.hex, 'f7bc83f430538424b13298e6aa6fb143ef4d59a14946175997479dbc2d1a3cd8'); assert.equal(s.github, 'sha256=' + s.hex); assert.match(s.stripe, /^t=1700000000,v1=[0-9a-f]{64}$/); assert.match(s.slack, /^v0=[0-9a-f]{64}$/);
+  assert.equal(s.githubSha1, 'sha1=de7c9b85b8b78aa6bc8a7a36f70a90701c9db4d9'); assert.ok(N.safeEqual(s.hex, s.hex) && !N.safeEqual(s.hex, s.hex.replace(/^f/, 'e')) && !N.safeEqual('a', 'ab'));
+});

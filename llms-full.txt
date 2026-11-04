@@ -586,6 +586,9 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 - [CSS Flexbox Playground & Cheat Sheet](https://ohfis.com/en/css-flexbox-playground/): Click through flexbox settings, see the result live and copy the CSS.
   Change flex-direction, justify-content, align-items, flex-wrap, align-content, gap and the number of items and watch the boxes rearrange immediately. The matching CSS is shown below and can be copied.
   How to use: Change the container properties. Watch the boxes move. Copy the CSS.
+- [Webhook Signature Tester (HMAC SHA-256)](https://ohfis.com/en/webhook-signature-tester/): Calculate GitHub, Stripe and Slack style webhook signatures and check the one you received.
+  Paste the raw request body and the signing secret and see the signatures a sender would produce: GitHub's sha256= and legacy sha1=, Stripe's t=…,v1=…, Slack's v0=…, plain hex, Base64 (used by Shopify and others) and SHA-512. Paste the signature header you actually received and the tool tells you whether it matches one of them, which quickly shows if the problem is the secret, the body, the timestamp or the header format.
+  How to use: Paste the raw body and the secret. Optionally enter the timestamp and the received signature. Compare the calculated signatures with the header you got.
 
 ## Notes & Privacy
 
@@ -642,6 +645,21 @@ Scratchpads, checklists, passwords, QR codes and encrypted notes. Hub: https://o
 - [Markdown to Formatted Email](https://ohfis.com/en/markdown-to-email/): Write in Markdown and paste rich, styled text straight into Gmail or Outlook.
   Draft in plain Markdown (headings, bold, italics, lists, quotes, links, code) and copy a formatted version that keeps its look when pasted into an email composer. A live preview shows what you will get, and you can also copy the HTML itself.
   How to use: Write your message in Markdown. Check the preview. Click "Copy for email" and paste into your email.
+- [Snippet Vault (Click-to-Copy Text Snippets)](https://ohfis.com/en/snippet-vault/): Keep the texts you paste every day and copy them with one click.
+  Save the phrases you type again and again: an email signature, a canned reply, your address, a tax number, a code block, a meeting link. Search them, click Copy and paste anywhere. Snippets can be edited, deleted, exported as a JSON backup and imported again.
+  How to use: Add a title and the text, then press Add snippet. Search the list and press Copy. Export a backup before clearing browser data.
+- [Rich Text to Clean HTML Converter](https://ohfis.com/en/rich-text-to-html/): Paste from Word or Google Docs and get tidy HTML without styles, fonts and junk.
+  Copy formatted text from Word, Google Docs, a web page or an email, paste it into the box and get clean HTML with only meaningful tags: paragraphs, headings, bold, italic, links, lists, quotes, code and simple tables. Fonts, colours, sizes, classes, ids and tracking markup are removed, so the text takes on the style of your own website. A preview and a character count show what was removed.
+  How to use: Copy formatted text and paste it into the box. Choose whether to keep links, tables and headings. Copy the clean HTML.
+- [Braille Translator (Text to Braille)](https://ohfis.com/en/braille-translator/): Convert text to Unicode braille and back, with capital and number signs.
+  Type text and see it in braille cells you can copy, or paste braille characters and read them as text. Capital letters, whole capitalised words and numbers get their indicator signs, and common punctuation is supported. The result consists of Unicode braille patterns (U+2800 block), so it can be used on signs, labels, teaching material and in documents with a braille font.
+  How to use: Choose the direction. Type or paste the text or braille. Copy the result.
+- [Emergency Contact Sheet (Printable PDF)](https://ohfis.com/en/emergency-contact-sheet/): Make a one-page sheet of phone numbers, medical info and notes for the fridge.
+  Enter your address, the phone numbers of family, neighbours and doctors, allergies and medication, and notes for a babysitter or house sitter, and download a clean one-page PDF with a clear red header and large phone numbers, ready to print and put on the fridge or next to the landline.
+  How to use: Fill in the household, contacts and medical information. Create the PDF and print it. Update it twice a year.
+- [Writing Sprint Timer with Word Count](https://ohfis.com/en/writing-sprint-timer/): Write for a set time with a live word count, pace and goal tracking.
+  Set a sprint length and a word goal, press start and write: the clock counts down, a progress bar fills, and the page shows the words written in this sprint, your pace in words per minute and the percentage of the goal. At the end you get a short summary. Copy or download the text when you are done.
+  How to use: Choose the length and the word goal. Press Start sprint and write. Read the summary and copy your text.
 
 ## Team & Meetings
 
@@ -665,6 +683,9 @@ Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.
 - [Passive-Aggressive Tone Checker for Emails](https://ohfis.com/en/tone-auditor/): Highlight guilt-tripping, over-apologising and passive-aggressive phrases with kinder alternatives.
   Before you press send, paste your email or chat message and see which phrases may sound passive-aggressive ("as per my last email"), blaming ("you never"), guilt-tripping, condescending ("obviously"), vague ("ASAP") or over-apologetic. Each flagged phrase comes with a plain suggestion, and messages with too many apologies, exclamation marks or capitals get a gentle note.
   How to use: Paste your draft message. Read the highlighted phrases and the suggestions. Rewrite what could land badly, then send.
+- [Brain Dump Organizer (Sort Thoughts into Tasks)](https://ohfis.com/en/brain-dump-organizer/): Paste everything on your mind and get tasks, questions, ideas and worries sorted.
+  Write down everything that is on your mind in any order: to-dos, worries, questions, ideas, half sentences. The organiser splits it into items and sorts them into urgent items, tasks, items with a date, questions, ideas, worries and notes, lists the people you mention and gives you a Markdown checklist to copy into your notes or task tool.
+  How to use: Type or paste your thoughts, one per line or as sentences. Check the sorted groups. Copy the Markdown checklist.
 
 ## Audio & Video
 

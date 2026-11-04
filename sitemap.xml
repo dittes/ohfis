@@ -3529,6 +3529,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/css-flexbox-playground/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/webhook-signature-tester/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webhook-signature-tester/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/webhook-signature-tester/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webhook-signature-tester/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/webhook-signature-tester/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webhook-signature-tester/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/webhook-signature-tester/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/webhook-signature-tester/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webhook-signature-tester/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/booklet-maker/</loc>
     <lastmod>2026-11-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/booklet-maker/"/>
@@ -6985,6 +7021,186 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/markdown-to-email/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/snippet-vault/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/snippet-vault/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/snippet-vault/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/snippet-vault/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/snippet-vault/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/snippet-vault/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/snippet-vault/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/snippet-vault/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/snippet-vault/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/rich-text-to-html/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rich-text-to-html/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/rich-text-to-html/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rich-text-to-html/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/rich-text-to-html/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rich-text-to-html/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/rich-text-to-html/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/rich-text-to-html/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rich-text-to-html/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/braille-translator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/braille-translator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/braille-translator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/braille-translator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/braille-translator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/braille-translator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/braille-translator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/braille-translator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/braille-translator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/emergency-contact-sheet/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/emergency-contact-sheet/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/emergency-contact-sheet/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/emergency-contact-sheet/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/emergency-contact-sheet/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/emergency-contact-sheet/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/emergency-contact-sheet/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/emergency-contact-sheet/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/emergency-contact-sheet/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/writing-sprint-timer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/writing-sprint-timer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/writing-sprint-timer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/writing-sprint-timer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/writing-sprint-timer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/writing-sprint-timer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/writing-sprint-timer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/writing-sprint-timer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/writing-sprint-timer/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/pert-estimator/</loc>
     <lastmod>2026-11-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/pert-estimator/"/>
@@ -7199,6 +7415,42 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tone-auditor/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tone-auditor/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/tone-auditor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/brain-dump-organizer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/brain-dump-organizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/brain-dump-organizer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/brain-dump-organizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/brain-dump-organizer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/brain-dump-organizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/brain-dump-organizer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/brain-dump-organizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/brain-dump-organizer/"/>
   </url>
   <url>
     <loc>https://ohfis.com/en/zero-width-character-remover/</loc>

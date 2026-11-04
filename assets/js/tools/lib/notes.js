@@ -99,3 +99,96 @@ export function layoutTree(roots, { nodeW = 150, nodeH = 44, gapX = 24, gapY = 4
   const root = place(forest, forest.virtual ? -1 : 0); const real = nodes.filter(n => !n.virtual); const minX = Math.min(...real.map(n => n.x)), maxX = Math.max(...real.map(n => n.x)), maxY = Math.max(...real.map(n => n.y)), minY = Math.min(...real.map(n => n.y));
   return { nodes: real.map(n => ({ ...n, x: n.x - minX, y: n.y - minY })), edges: edges.filter(([a]) => !a.virtual).map(([a, b]) => [{ x: a.x - minX, y: a.y - minY }, { x: b.x - minX, y: b.y - minY }]), width: maxX - minX + nodeW, height: maxY - minY + nodeH, nodeW, nodeH };
 }
+
+// ---------- Braille (Grade 1, English) ----------
+const BR_LETTERS = { a: [1], b: [1, 2], c: [1, 4], d: [1, 4, 5], e: [1, 5], f: [1, 2, 4], g: [1, 2, 4, 5], h: [1, 2, 5], i: [2, 4], j: [2, 4, 5], k: [1, 3], l: [1, 2, 3], m: [1, 3, 4], n: [1, 3, 4, 5], o: [1, 3, 5], p: [1, 2, 3, 4], q: [1, 2, 3, 4, 5], r: [1, 2, 3, 5], s: [2, 3, 4], t: [2, 3, 4, 5], u: [1, 3, 6], v: [1, 2, 3, 6], w: [2, 4, 5, 6], x: [1, 3, 4, 6], y: [1, 3, 4, 5, 6], z: [1, 3, 5, 6] };
+const cell = dots => String.fromCharCode(0x2800 + dots.reduce((s, d) => s + (1 << (d - 1)), 0));
+const BR_PUNCT = { ',': [2], ';': [2, 3], ':': [2, 5], '.': [2, 5, 6], '!': [2, 3, 5], '?': [2, 3, 6], "'": [3], '-': [3, 6], '"': [2, 3, 6], '(': [5, 2, 3, 6], ')': [5, 3, 4, 5] };
+const NUM_SIGN = cell([3, 4, 5, 6]), CAP_SIGN = cell([6]);
+const BR_MAP = new Map(), BR_REV = new Map();
+for (const [c, d] of Object.entries(BR_LETTERS)) { BR_MAP.set(c, cell(d)); BR_REV.set(cell(d), c); }
+for (const [c, d] of Object.entries(BR_PUNCT)) { BR_MAP.set(c, d.length === 4 && c === '(' ? cell([5]) + cell([1, 2, 6]) : c === ')' ? cell([5]) + cell([3, 4, 5]) : cell(d)); }
+/** Text → Unicode braille (uncontracted). Numbers use the number sign, capitals the capital sign (⠠, doubled for words in capitals). */
+export function toBraille(text) {
+  let out = '', numMode = false; const s = String(text).normalize('NFC');
+  for (const m of s.matchAll(/[\p{L}\p{M}]+|\d+|\s+|./gsu)) {
+    const tok = m[0];
+    if (/^\d/.test(tok)) { out += (numMode ? '' : NUM_SIGN); for (const ch of tok) out += BR_MAP.get('abcdefghij'[+ch === 0 ? 9 : +ch - 1]); numMode = true; continue; }
+    numMode = false;
+    if (/^\s+$/.test(tok)) { out += tok.replace(/[^\S\n]/g, '⠀'); continue; }
+    if (/^\p{L}/u.test(tok)) { const letters = [...tok.normalize('NFD').replace(/[̀-ͯ]/g, '')].filter(c => /[a-zA-Z]/.test(c)); const allCaps = letters.length > 1 && letters.every(c => c === c.toUpperCase()); if (allCaps) out += CAP_SIGN + CAP_SIGN; for (const [i, c] of letters.entries()) { if (!allCaps && c !== c.toLowerCase()) out += CAP_SIGN; out += BR_MAP.get(c.toLowerCase()); void i; } continue; }
+    out += tok === '’' ? BR_MAP.get("'") : tok === '“' || tok === '”' ? BR_MAP.get('"') : BR_MAP.get(tok) ?? '⠿';
+  }
+  return out;
+}
+/** Unicode braille → text (uncontracted grade 1). */
+export function fromBraille(br) {
+  let out = '', num = false, cap = 0; const letterOf = ch => BR_REV.get(ch);
+  for (const ch of String(br)) {
+    if (ch === '⠀') { out += ' '; num = false; cap = 0; continue; } if (ch === '\n') { out += ch; num = false; cap = 0; continue; }
+    if (ch === NUM_SIGN) { num = true; continue; } if (ch === CAP_SIGN) { cap++; continue; }
+    const l = letterOf(ch);
+    if (l) { if (num && 'abcdefghij'.includes(l)) { out += String('abcdefghij'.indexOf(l) + 1).slice(-1) === '0' ? '0' : ((('abcdefghij'.indexOf(l) + 1) % 10)); continue; } num = false; out += cap ? l.toUpperCase() : l; if (cap === 1) cap = 0; continue; }
+    num = false; const p = [...Object.entries(BR_PUNCT)].find(([, d]) => cell(d) === ch && d.length < 4); out += p ? p[0] : ch; if (cap === 1) cap = 0;
+  }
+  return out;
+}
+
+// ---------- Brain dump organiser (rule based) ----------
+const MONTHS = 'jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec';
+const DATE_RE = new RegExp(`\\b(today|tonight|tomorrow|next week|this week|end of (?:the )?(?:day|week|month|quarter|year)|eod|eow|monday|tuesday|wednesday|thursday|friday|saturday|sunday|\\d{1,2}[./-]\\d{1,2}(?:[./-]\\d{2,4})?|\\d{4}-\\d{2}-\\d{2}|(?:${MONTHS})[a-z]*\\.? \\d{1,2}|\\d{1,2}(?:st|nd|rd|th)? (?:${MONTHS})[a-z]*)\\b`, 'i');
+const TASK_RE = /^(?:[-*•\d.)\s]*)?(?:to ?do:?|task:?|need to|have to|must|should|remember to|don'?t forget(?: to)?|make sure|call|email|e-mail|send|write|book|buy|order|pay|schedule|fix|finish|prepare|review|update|check|ask|follow up|clean|plan|renew|cancel|submit|print|sign|reply|organi[sz]e|pick up|set up)\b/i;
+const IDEA_RE = /\b(idea|what if|maybe|could we|we could|might|brainstorm|perhaps|how about)\b/i;
+const WORRY_RE = /\b(worr(?:y|ied|ies)|afraid|anxious|risk|problem|issue|stuck|blocked|concern(?:ed)?|scared|nervous|deadline|late|behind)\b/i;
+const URGENT_RE = /\b(urgent|asap|immediately|right away|critical|overdue|today|tonight|!{2,})/i;
+/** Split a messy dump into lines/sentences and sort into groups. */
+export function organizeBrainDump(text) {
+  const items = String(text).replace(/\r/g, '').split(/\n+|(?<=[.!?])\s+(?=[A-ZÄÖÜŁŚŻČŘŠŽ])/).map(l => l.replace(/^[\s\-*•\d.)]+/, '').trim()).filter(l => l.length > 1);
+  const groups = { urgent: [], tasks: [], deadlines: [], questions: [], ideas: [], worries: [], notes: [] }; const people = new Set();
+  for (const it of items) {
+    for (const m of it.matchAll(/@([\p{L}][\p{L}\d._-]*)/gu)) people.add(m[1]); for (const m of it.matchAll(/\b(?:ask|tell|email|call|ping|remind|meet(?: with)?|with|from|for) ([A-ZÄÖÜŁŚŻČŘŠŽ][\p{L}]+)(?=[\s,.!?]|$)/gu)) people.add(m[1]);
+    const urgent = URGENT_RE.test(it), date = DATE_RE.exec(it)?.[0] || null; let g = 'notes';
+    if (/^(what if|how about|could we|we could|maybe|perhaps)\b/i.test(it)) g = 'ideas'; else if (/\?\s*$/.test(it)) g = 'questions'; else if (IDEA_RE.test(it)) g = 'ideas'; else if (TASK_RE.test(it)) g = 'tasks'; else if (WORRY_RE.test(it)) g = 'worries'; else if (date) g = 'tasks';
+    const row = { text: it, date, urgent }; groups[g].push(row); if (urgent && g !== 'urgent') groups.urgent.push(row); if (date && (g === 'tasks')) groups.deadlines.push(row);
+  }
+  return { groups, people: [...people].sort(), count: items.length };
+}
+export function brainDumpMarkdown(r) {
+  const T = { urgent: '🔥 Urgent', tasks: '✅ Tasks', deadlines: '📅 With a date', questions: '❓ Questions', ideas: '💡 Ideas', worries: '⚠️ Worries and risks', notes: '📝 Notes' }; const out = [];
+  for (const [k, title] of Object.entries(T)) { const rows = r.groups[k]; if (!rows.length) continue; out.push(`## ${title}`, ...rows.map(x => k === 'tasks' || k === 'urgent' || k === 'deadlines' ? `- [ ] ${x.text}${x.date && !x.text.toLowerCase().includes(x.date.toLowerCase()) ? ` (${x.date})` : ''}` : `- ${x.text}`), ''); }
+  if (r.people.length) out.push('## 👥 People mentioned', r.people.join(', '), ''); return out.join('\n').trim() + '\n';
+}
+
+// ---------- Webhook signatures ----------
+const hex = buf => [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+const b64 = buf => btoa(String.fromCharCode(...new Uint8Array(buf)));
+async function hmac(secret, msg, hash = 'SHA-256') { const k = await crypto.subtle.importKey('raw', new TextEncoder().encode(secret), { name: 'HMAC', hash }, false, ['sign']); return crypto.subtle.sign('HMAC', k, new TextEncoder().encode(msg)); }
+export async function webhookSignatures(secret, body, { timestamp = Math.floor(Date.now() / 1000) } = {}) {
+  const h1 = hex(await hmac(secret, body)), h1b = b64(await hmac(secret, body)), stripe = hex(await hmac(secret, `${timestamp}.${body}`)), slack = hex(await hmac(secret, `v0:${timestamp}:${body}`)), sha1 = hex(await hmac(secret, body, 'SHA-1')), sha512 = hex(await hmac(secret, body, 'SHA-512'));
+  return { hex: h1, base64: h1b, github: `sha256=${h1}`, githubSha1: `sha1=${sha1}`, stripe: `t=${timestamp},v1=${stripe}`, slack: `v0=${slack}`, sha512, timestamp };
+}
+/** Constant-time comparison of two strings. */
+export function safeEqual(a, b) { if (a.length !== b.length) return false; let r = 0; for (let i = 0; i < a.length; i++) r |= a.charCodeAt(i) ^ b.charCodeAt(i); return r === 0; }
+
+// ---------- Rich text → clean HTML (needs a DOM: pass document.implementation or use in the browser) ----------
+const KEEP = new Set(['p', 'br', 'strong', 'em', 'u', 'a', 'ul', 'ol', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote', 'code', 'pre', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'sup', 'sub', 'hr', 's']);
+const MAP = { b: 'strong', i: 'em', strike: 's', del: 's', div: 'p' };
+export function cleanHtml(html, { keepLinks = true, keepTables = true, keepHeadings = true, doc = globalThis.document } = {}) {
+  const src = new DOMParser().parseFromString(`<body>${html}</body>`, 'text/html'); const out = doc.createElement('div');
+  const walk = (node, parent) => {
+    for (const n of node.childNodes) {
+      if (n.nodeType === 3) { parent.append(doc.createTextNode(n.nodeValue.replace(/ /g, ' '))); continue; } if (n.nodeType !== 1) continue;
+      let tag = n.tagName.toLowerCase(); if (['script', 'style', 'meta', 'link', 'head', 'title', 'noscript', 'iframe', 'object', 'embed', 'svg', 'img', 'canvas', 'video', 'audio', 'button', 'input', 'form', 'select', 'textarea'].includes(tag)) continue;
+      const st = (n.getAttribute('style') || '').toLowerCase(); let wrap = null;
+      if (tag === 'span' || tag === 'font') { const b = /font-weight:\s*(bold|[6-9]00)/.test(st), i = /font-style:\s*italic/.test(st), u = /text-decoration[^;]*underline/.test(st); let host = parent; const mk = t => { const e = doc.createElement(t); host.append(e); host = e; }; if (b) mk('strong'); if (i) mk('em'); if (u) mk('u'); walk(n, host); continue; }
+      tag = MAP[tag] || tag;
+      if ((tag === 'a' && !keepLinks) || (/^h[1-6]$/.test(tag) && !keepHeadings) || (/^(table|thead|tbody|tr|th|td)$/.test(tag) && !keepTables)) { if (/^h[1-6]$/.test(tag)) { const p = doc.createElement('p'); const s = doc.createElement('strong'); p.append(s); parent.append(p); walk(n, s); } else walk(n, parent); continue; }
+      if (!KEEP.has(tag)) { walk(n, parent); continue; }
+      const el = doc.createElement(tag); if (tag === 'a') { const href = n.getAttribute('href') || ''; if (/^(https?:|mailto:|tel:)/i.test(href)) el.setAttribute('href', href); else { walk(n, parent); continue; } } if ((tag === 'th' || tag === 'td') && n.getAttribute('colspan')) el.setAttribute('colspan', n.getAttribute('colspan'));
+      wrap = el; parent.append(el); walk(n, el);
+    }
+  };
+  walk(src.body, out);
+  for (const p of [...out.querySelectorAll('p,li,td,th,strong,em,u')]) if (!p.textContent.trim() && !p.querySelector('br,table,ul,ol')) p.remove();
+  return out.innerHTML.replace(/<p><\/p>/g, '').replace(/(<\/(?:p|li|ul|ol|table|tr|h\d|blockquote)>)(?=<)/g, '$1\n').trim();
+}

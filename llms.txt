@@ -244,6 +244,7 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 - [MIME Type Lookup (File Extension to Content-Type)](https://ohfis.com/en/mime-type-lookup/): Find the correct Content-Type for a file extension, or the extension for a MIME type.
 - [SPF & DMARC Record Generator](https://ohfis.com/en/spf-dmarc-generator/): Build the DNS TXT records that stop others from spoofing your domain's email.
 - [CSS Flexbox Playground & Cheat Sheet](https://ohfis.com/en/css-flexbox-playground/): Click through flexbox settings, see the result live and copy the CSS.
+- [Webhook Signature Tester (HMAC SHA-256)](https://ohfis.com/en/webhook-signature-tester/): Calculate GitHub, Stripe and Slack style webhook signatures and check the one you received.
 
 ## Notes & Privacy
 
@@ -266,6 +267,11 @@ Scratchpads, checklists, passwords, QR codes and encrypted notes. Hub: https://o
 - [Daily Standup Update Formatter](https://ohfis.com/en/daily-standup-formatter/): Turn rough notes into a clean Yesterday / Today / Blockers update for Slack.
 - [Paste as Plain Text (Remove Formatting)](https://ohfis.com/en/plain-text-paste/): A staging box that strips fonts, colours and links before you paste elsewhere.
 - [Markdown to Formatted Email](https://ohfis.com/en/markdown-to-email/): Write in Markdown and paste rich, styled text straight into Gmail or Outlook.
+- [Snippet Vault (Click-to-Copy Text Snippets)](https://ohfis.com/en/snippet-vault/): Keep the texts you paste every day and copy them with one click.
+- [Rich Text to Clean HTML Converter](https://ohfis.com/en/rich-text-to-html/): Paste from Word or Google Docs and get tidy HTML without styles, fonts and junk.
+- [Braille Translator (Text to Braille)](https://ohfis.com/en/braille-translator/): Convert text to Unicode braille and back, with capital and number signs.
+- [Emergency Contact Sheet (Printable PDF)](https://ohfis.com/en/emergency-contact-sheet/): Make a one-page sheet of phone numbers, medical info and notes for the fridge.
+- [Writing Sprint Timer with Word Count](https://ohfis.com/en/writing-sprint-timer/): Write for a set time with a live word count, pace and goal tracking.
 
 ## Team & Meetings
 
@@ -277,6 +283,7 @@ Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.
 - [Tournament Bracket Maker](https://ohfis.com/en/tournament-bracket-maker/): Create printable single-elimination brackets or round-robin schedules.
 - [Org Chart Maker from Indented Text](https://ohfis.com/en/org-chart-maker/): Turn an indented list of people into an organisation chart and download it as an image.
 - [Passive-Aggressive Tone Checker for Emails](https://ohfis.com/en/tone-auditor/): Highlight guilt-tripping, over-apologising and passive-aggressive phrases with kinder alternatives.
+- [Brain Dump Organizer (Sort Thoughts into Tasks)](https://ohfis.com/en/brain-dump-organizer/): Paste everything on your mind and get tasks, questions, ideas and worries sorted.
 
 ## Audio & Video
 
