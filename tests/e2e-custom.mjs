@@ -928,4 +928,62 @@ Object.assign(custom, {
   },
 });
 
+// ---- HEIC and GIF ----
+Object.assign(custom, {
+  async 'heic-to-jpg'(page) {
+    const dir = tmp(); const src = join(dir, 'in.png'); await makeImage(page, src, { w: 320, h: 200, paint: "x.fillStyle='#d02020'; x.fillRect(0,0,w/2,h); x.fillStyle='#2040d0'; x.fillRect(w/2,0,w/2,h);" });
+    const heic = join(dir, 'photo.heic'); const r = spawnSync('python3', ['-c', 'import sys;from PIL import Image;import pillow_heif;pillow_heif.register_heif_opener();im=Image.open(sys.argv[1]).convert("RGB");im.save(sys.argv[2],quality=90)', src, heic]); assert.equal(r.status, 0, r.stderr.toString());
+    await page.setInputFiles('#tool-root input[type=file]', heic); await page.waitForSelector('.ut-img img', { timeout: 60000 }); await page.waitForTimeout(500); assert.match(await rootText(page), /320 × 200/);
+    const d = await saveDownload(page, () => page.locator('.ut-img button, .ut-img a').first().click()); assert.equal(d.name, 'photo.jpg'); const im = await decode(page, d.path); assert.deepEqual([im.w, im.h], [320, 200]); const px = (x, y) => im.data.slice((y * im.w + x) * 4, (y * im.w + x) * 4 + 3); assert.ok(px(10, 10)[0] > 170 && px(10, 10)[2] < 90, 'left is red: ' + px(10, 10)); assert.ok(px(300, 10)[2] > 150 && px(300, 10)[0] < 90, 'right is blue: ' + px(300, 10));
+    await page.locator('#tool-root input[type=number]').fill('160'); await page.waitForTimeout(1500); assert.match(await rootText(page), /160 × 100/);
+  },
+  async 'images-to-gif'(page) {
+    const dir = tmp(); const mk = async (n, col) => { const f = join(dir, n); await makeImage(page, f, { w: 200, h: 100, paint: `x.fillStyle='${col}'; x.fillRect(0,0,w,h);` }); return f; };
+    const files = [await mk('a.png', '#ff0000'), await mk('b.png', '#00ff00'), await mk('c.png', '#0000ff')]; await page.setInputFiles('#tool-root input[type=file]', files); await page.waitForSelector('[data-result=ready]', { timeout: 30000 });
+    assert.match(await rootText(page), /Frames\s*3/); const f = await dlWav(page); assert.equal(f.name, 'animation.gif');
+    const info = JSON.parse(spawnSync('python3', ['-c', 'import sys,json;from PIL import Image;im=Image.open(sys.argv[1]);out=[]\nfor i in range(im.n_frames):\n    im.seek(i);c=im.convert("RGB").getpixel((5,5));out.append([c,im.info.get("duration")])\nprint(json.dumps([im.size,im.n_frames,im.info.get("loop"),out]))', f.path]).stdout.toString()); assert.deepEqual(info[0], [480, 240]); assert.equal(info[1], 3); assert.equal(info[2], 0);
+    assert.ok(info[3][0][0][0] > 240 && info[3][0][0][1] < 15, 'frame 1 red'); assert.ok(info[3][1][0][1] > 240, 'frame 2 green'); assert.ok(info[3][2][0][2] > 240, 'frame 3 blue'); assert.equal(info[3][0][1], 500);
+    await page.locator('.ut-row button', { hasText: '↓' }).first().click(); await page.waitForTimeout(800); const f2 = await dlWav(page); const first = spawnSync('python3', ['-c', 'import sys;from PIL import Image;print(Image.open(sys.argv[1]).convert("RGB").getpixel((5,5)))', f2.path]).stdout.toString(); assert.match(first, /\(0, 255, 0\)|\(0, 2[45]\d, 0\)/, 'reordered: green first ' + first);
+  },
+});
+
+// ---- PDF: compress to size, compare, search; EPUB ----
+const textPdf = async (pages) => { const { PDFDocument, StandardFonts } = await import('../assets/vendor/pdf-lib/pdf-lib.esm.min.js'); const d = await PDFDocument.create(), f = await d.embedFont(StandardFonts.Helvetica); for (const lines of pages) { const p = d.addPage([400, 500]); lines.forEach((l, i) => p.drawText(l, { x: 30, y: 450 - i * 18, size: 12, font: f })); } return Buffer.from(await d.save()); };
+Object.assign(custom, {
+  async 'pdf-compress-to-size'(page) {
+    const dir = tmp(); const jpg = join(dir, 'noise.jpg'); await makeImage(page, jpg, { w: 1400, h: 1400, type: 'image/jpeg', paint: "for (let i=0;i<w;i+=2) for (let j=0;j<h;j+=2) { x.fillStyle='rgb('+((i*7+j*13)%256)+','+((i*3+j*5+(i*j)%97)%256)+','+((i*11+j)%256)+')'; x.fillRect(i,j,2,2); }" });
+    const { PDFDocument, StandardFonts } = await import('../assets/vendor/pdf-lib/pdf-lib.esm.min.js'); const d = await PDFDocument.create(), f = await d.embedFont(StandardFonts.Helvetica), img = await d.embedJpg(readFileSync(jpg)); for (let i = 0; i < 2; i++) { const p = d.addPage([595, 842]); p.drawImage(img, { x: 20, y: 120, width: 555, height: 555 }); p.drawText('Page ' + (i + 1) + ' remains searchable', { x: 30, y: 780, size: 14, font: f }); }
+    const src = Buffer.from(await d.save()); assert.ok(src.length > 400000, 'source is large: ' + src.length);
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'big.pdf', mimeType: 'application/pdf', buffer: src }); await page.waitForFunction(() => ![...document.querySelectorAll('#tool-root button')].find(b => /Compress to this size/.test(b.textContent)).disabled);
+    await page.locator('#tool-root input[type=text]').fill('300 KB'); await page.getByRole('button', { name: 'Compress to this size' }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 120000 });
+    const r = await dlWav(page); assert.ok(r.buf.length <= 300 * 1024, 'under the target: ' + r.buf.length); assert.ok(r.buf.length < src.length / 2); assert.match(r.name, /^big-/); assert.ok(pdfText(r.buf).includes('remains searchable'), 'text kept'); assert.equal((await pageCount(r.buf)).n, 2); assert.match(await rootText(page), /Target\s*300\.0 KB/);
+    await page.locator('#tool-root input[type=text]').fill('1 KB'); await page.getByRole('button', { name: 'Compress to this size' }).click(); await page.waitForFunction(() => /Enter a target size/.test(document.getElementById('tool-root').innerText), null, { timeout: 5000 });
+    await page.locator('#tool-root input[type=text]').fill('50 KB'); await page.getByRole('button', { name: 'Compress to this size' }).click(); await page.waitForFunction(() => /smallest possible result|Target reached/.test(document.getElementById('tool-root').innerText), null, { timeout: 120000 });
+  },
+  async 'pdf-compare'(page) {
+    const a = await textPdf([['Contract', 'The price is 10 euros per month.', 'Signed in Berlin.'], ['Second page stays the same.']]), b = await textPdf([['Contract', 'The price is 12 euros per year.', 'Signed in Berlin.'], ['Second page stays the same.']]);
+    await page.locator('#tool-root input[type=file]').nth(0).setInputFiles({ name: 'a.pdf', mimeType: 'application/pdf', buffer: a }); await page.locator('#tool-root input[type=file]').nth(1).setInputFiles({ name: 'b.pdf', mimeType: 'application/pdf', buffer: b }); await page.waitForSelector('[data-result=ready]', { timeout: 30000 });
+    let t = await rootText(page); assert.match(t, /Pages with text changes\s*1/); assert.match(t, /Words added\s*2/); assert.match(t, /Words removed\s*2/); assert.match(t, /1\s+2\s+2\s+\d/); assert.match(t, /2\s+0\s+0\s+same/);
+    assert.deepEqual((await page.locator('.ut-dw del').allInnerTexts()).map(x => x.trim()).sort(), ['10', 'month']); assert.ok((await page.locator('.ut-dw ins').allInnerTexts()).join(' ').includes('12'));
+    await page.getByRole('button', { name: 'Visual differences' }).click(); await page.waitForFunction(() => /of the pixels differ/.test(document.getElementById('tool-root').innerText), null, { timeout: 30000 }); const pct = Number(/([\d.]+) % of the pixels differ/.exec(await rootText(page))[1]); assert.ok(pct > 0.05 && pct < 10, 'visual difference ' + pct);
+    await page.getByRole('button', { name: 'Show page 1' }).count(); await page.locator('.ut-actions button', { hasText: 'Page 1' }).first().click();
+  },
+  async 'pdf-text-search'(page) {
+    const pdf = await textPdf([['Invoice 2024-001', 'Payment due in 14 days.'], ['Nothing here.'], ['The invoice was paid. Invoice closed.']]);
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'doc.pdf', mimeType: 'application/pdf', buffer: pdf }); await page.waitForSelector('[data-result=ready]', { timeout: 30000 }); await page.locator('#tool-root input[type=text]').first().fill('invoice'); await page.waitForFunction(() => /Matches\s*3/.test(document.getElementById('tool-root').innerText), null, { timeout: 8000 }).catch(async e => { throw new Error('no 3 matches :: ' + (await rootText(page)).replace(/\s+/g, ' ').slice(0, 300)); });
+    let t = await rootText(page); assert.match(t, /Pages with matches\s*2/); assert.deepEqual(await page.locator('.ut-table tr td:first-child').allInnerTexts(), ['1', '3', '3']); assert.equal(await page.locator('.ut-table mark').first().innerText(), 'Invoice');
+    await page.locator('#tool-root input[type=checkbox]').nth(0).check(); await page.waitForTimeout(500); assert.match(await rootText(page), /Matches\s*1/); await page.locator('#tool-root input[type=checkbox]').nth(0).uncheck(); await page.locator('#tool-root input[type=checkbox]').nth(2).check(); await page.locator('#tool-root input[type=text]').first().fill('pay\\w+|due'); await page.waitForTimeout(600); assert.match(await rootText(page), /Matches\s*2/);
+    await page.locator('#tool-root input[type=text]').first().fill('('); await page.waitForTimeout(500); assert.ok(await page.locator('.pt-drop__error:visible').count() > 0);
+    await page.locator('#tool-root input[type=checkbox]').nth(2).uncheck(); await page.locator('#tool-root input[type=text]').first().fill('invoice'); await page.waitForTimeout(500); const csv = await saveDownload(page, () => page.getByRole('button', { name: 'Download CSV' }).click()); assert.match(readFileSync(csv.path, 'utf8'), /^page,match,context\n"1","Invoice"/);
+  },
+  async 'epub-to-pdf'(page) {
+    const enc = s => new TextEncoder().encode(s); const files = { mimetype: enc('application/epub+zip'), 'META-INF/container.xml': enc('<?xml version="1.0"?><container><rootfiles><rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/></rootfiles></container>'),
+      'OEBPS/content.opf': enc('<?xml version="1.0"?><package xmlns="http://www.idpf.org/2007/opf"><metadata xmlns:dc="http://purl.org/dc/elements/1.1/"><dc:title>Testbuch Grüße</dc:title><dc:creator>Erika Muster</dc:creator></metadata><manifest><item id="a" href="a.xhtml" media-type="application/xhtml+xml"/><item id="b" href="b.xhtml" media-type="application/xhtml+xml"/></manifest><spine><itemref idref="a"/><itemref idref="b"/></spine></package>'),
+      'OEBPS/a.xhtml': enc('<html xmlns="http://www.w3.org/1999/xhtml"><body><h1>Kapitel Eins</h1><p>' + 'Dies ist ein langer Absatz mit Umlauten äöü und Satzzeichen. '.repeat(40) + '</p><ul><li>Erster Punkt</li><li>Zweiter Punkt</li></ul></body></html>'), 'OEBPS/b.xhtml': enc('<html xmlns="http://www.w3.org/1999/xhtml"><body><h1>Kapitel Zwei</h1><p>Der Schluss.</p></body></html>') };
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'buch.epub', mimeType: 'application/epub+zip', buffer: Buffer.from(F2.zipSync(files)) }); await page.waitForSelector('[data-result=ready]', { timeout: 60000 });
+    const r = await dlWav(page); assert.equal(r.name, 'buch.pdf'); const txt = pdfText(r.buf); assert.ok(txt.includes('Testbuch Grüße') && txt.includes('Erika Muster'), 'title page'); assert.ok(txt.includes('Kapitel Eins') && txt.includes('Kapitel Zwei') && txt.includes('äöü'), 'chapters and umlauts'); assert.ok(/Erster Punkt/.test(txt) && txt.includes('•'), 'list'); const pc = await pageCount(r.buf); assert.ok(pc.n >= 4, 'pages ' + pc.n); assert.match(await rootText(page), /Author\s*Erika Muster/);
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'x.epub', buffer: Buffer.from(F2.zipSync({ 'a.txt': new Uint8Array([1]) })) }); await page.waitForSelector('.pt-drop__error:visible'); assert.match(await page.locator('.pt-drop__error:visible').innerText(), /not an EPUB/);
+  },
+});
+
 export default custom;

@@ -97,6 +97,18 @@ Booklets, labels, Bates numbers, invoices and Word conversion. Hub: https://ohfi
 - [Word Document Word Counter (DOCX)](https://ohfis.com/en/docx-word-counter/): Count words, characters, paragraphs and reading time in a .docx file.
   Drop a .docx file and get the word count, characters with and without spaces, paragraphs, sentences, an estimated page count and the reading and speaking time. Options include or exclude footnotes, endnotes, headers and footers.
   How to use: Drop the .docx file. Choose whether footnotes, headers and footers are counted. Read the numbers.
+- [Compress PDF to a Target Size (2 MB, 500 KB …)](https://ohfis.com/en/pdf-compress-to-size/): Shrink a PDF step by step until it fits an upload limit.
+  Forms and portals often accept only PDFs up to 2 MB, 5 MB or 500 KB. Enter the size you need and the tool compresses your PDF step by step, from gentle (only the file structure) to strong (images reduced to 48 dpi), and stops at the first result that fits. Text stays selectable and sharp.
+  How to use: Drop the PDF. Enter the target size, for example 2 MB. Press "Compress to this size" and download the result.
+- [Compare Two PDFs (Text and Visual Differences)](https://ohfis.com/en/pdf-compare/): Find what changed between two versions of a PDF, page by page.
+  Drop the original and the changed PDF and see which pages differ, how many words were added or removed and exactly which words, with deleted words struck through and added words underlined. A second view compares the rendered pages pixel by pixel and shows changes in images, colours and layout in magenta.
+  How to use: Choose PDF A (the original) and PDF B (the changed version). Read the list of pages and click one to see the differences. Switch to the visual view for layout and image changes.
+- [Search Text in a PDF (Find Words and Pages)](https://ohfis.com/en/pdf-text-search/): List every match of a word in a PDF with page number and context.
+  Drop a PDF, type what you are looking for and get a list of every match with its page number and the words around it, plus the number of matches and the pages that contain them. Options match case, whole words only or a regular expression, and the list can be copied or downloaded as CSV.
+  How to use: Drop the PDF. Type the search term and set the options. Read the matches or copy the page numbers.
+- [EPUB to PDF Converter](https://ohfis.com/en/epub-to-pdf/): Turn the text of an EPUB e-book into a PDF you can print or read anywhere.
+  Drop an EPUB and get a PDF with a title page, the chapters with their headings, paragraphs, lists and quotes, and page numbers. Choose A5 (book), A4 or Letter, the font size and the margins. Handy to print a book, to read it on a device without an EPUB reader or to annotate it.
+  How to use: Drop the EPUB file. The PDF is created with your page size and font settings; change them and drop the file again for another version. Download the PDF.
 
 ## Text Tools
 
@@ -370,6 +382,12 @@ Resize, convert, blur, crop and clean images without uploading them. Hub: https:
 - [EXIF Viewer (Photo Metadata and GPS)](https://ohfis.com/en/exif-viewer/): See the camera, date and GPS location hidden in a photo.
   Drop a photo and see what it tells about itself: camera make and model, lens, date taken, exposure, ISO, software and, if present, the GPS location with a link to a map. A warning appears when a location is stored, because anyone who receives the file can see where the photo was taken.
   How to use: Drop the photo. Read the tags and check for a GPS location. Remove the metadata with the Image Metadata Remover if you plan to share the photo.
+- [HEIC to JPG Converter (iPhone Photos)](https://ohfis.com/en/heic-to-jpg/): Turn HEIC photos from an iPhone into JPG, PNG or WebP on your device.
+  Drop HEIC or HEIF photos and get JPG (works everywhere), PNG (lossless) or WebP files, one by one or as a ZIP. You can also limit the width, which makes the files much smaller for e-mail or upload forms that do not accept HEIC.
+  How to use: Drop the HEIC photos. Choose JPG, PNG or WebP, the quality and an optional maximum width. Download the files or the ZIP.
+- [Images to GIF (Make an Animated GIF from Pictures)](https://ohfis.com/en/images-to-gif/): Put several pictures in order and make an animated GIF slideshow.
+  Add two or more images, put them in the order you want, set the time per image, the width and the repeat setting and download one animated GIF. Good for a simple animation, a product slideshow or a step-by-step illustration.
+  How to use: Add the images and put them in order. Set the time per image, the width and the repeat setting. Check the preview and download the GIF.
 
 ## Time & Calendar
 

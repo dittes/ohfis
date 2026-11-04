@@ -11,7 +11,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - ◐ partly built: 14
 - 🔗 link-out or covered elsewhere: 8
 - ❌ not built: 13
-- Utility tools on the site: 269 (plus 26 PDF tools from the first redesign)
+- Utility tools on the site: 275 (plus 26 PDF tools from the first redesign)
 
 ## PDF, documents & print
 
@@ -356,7 +356,13 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - [zip-creator](/en/zip-creator/)
 - [pdf-to-html](/en/pdf-to-html/)
 - [docx-word-counter](/en/docx-word-counter/)
+- [pdf-compress-to-size](/en/pdf-compress-to-size/)
+- [pdf-compare](/en/pdf-compare/)
+- [pdf-text-search](/en/pdf-text-search/)
+- [epub-to-pdf](/en/epub-to-pdf/)
 - [exif-viewer](/en/exif-viewer/)
+- [heic-to-jpg](/en/heic-to-jpg/)
+- [images-to-gif](/en/images-to-gif/)
 - [audio-cutter](/en/audio-cutter/)
 - [audio-joiner](/en/audio-joiner/)
 - [audio-volume-changer](/en/audio-volume-changer/)

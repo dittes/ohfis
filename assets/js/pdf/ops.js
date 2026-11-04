@@ -390,7 +390,7 @@ export async function compress(bytes, { level = 'medium', onProgress } = {}) {
   const { PDFName, PDFRawStream, PDFDict, PDFRef, PDFNumber } = lib;
   const doc = await loadDoc(bytes);
   const ctx = doc.context;
-  const opts = COMPRESS_LEVELS[level];
+  const opts = typeof level === 'object' ? level : COMPRESS_LEVELS[level];
 
   const longEdgePt = Math.max(...doc.getPages().map(p => Math.max(p.getWidth(), p.getHeight())));
 

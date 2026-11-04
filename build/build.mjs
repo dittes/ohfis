@@ -43,10 +43,13 @@ const THEME_BOOT = `(function(){try{var t=localStorage.getItem('ohfis-theme');if
 const inlineHash = src => `'sha256-${createHash('sha256').update(src).digest('base64')}'`;
 
 /** Pages without CDN libraries get a policy that makes "no upload" verifiable. */
-function csp(inlineScripts = [THEME_BOOT]) {
+// Tools whose WebAssembly library builds functions at run time (Emscripten/embind) need 'unsafe-eval' on their own page.
+// connect-src stays 'self', so nothing can be sent anywhere.
+const NEEDS_EVAL = new Set(['heic-to-jpg']);
+function csp(inlineScripts = [THEME_BOOT], { unsafeEval = false } = {}) {
   return [
     "default-src 'self'",
-    `script-src 'self' 'wasm-unsafe-eval' ${inlineScripts.map(inlineHash).join(' ')}`,
+    `script-src 'self' 'wasm-unsafe-eval'${unsafeEval ? " 'unsafe-eval'" : ''} ${inlineScripts.map(inlineHash).join(' ')}`,
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: blob:",
     "media-src 'self' blob:",
@@ -86,7 +89,7 @@ const P = (key, lang, vars) => { let v = PAGE[key][LI[lang]]; if (vars) for (con
 
 // ─── Shared page parts ────────────────────────────────────────────────────────
 
-function head({ lang, title, desc, paths, jsonLd = [], useCsp = true, extraCss = [], ogType = 'website', noindex = false }) {
+function head({ lang, title, desc, paths, jsonLd = [], useCsp = true, extraCss = [], ogType = 'website', noindex = false, unsafeEval = false }) {
   const url = `${SITE}${paths[lang]}`;
   const alternates = LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE}${paths[l]}">`).join('\n  ');
   const ogAlt = LANGS.filter(l => l !== lang).map(l => `<meta property="og:locale:alternate" content="${LOCALES[l]}">`).join('\n  ');
@@ -96,7 +99,7 @@ function head({ lang, title, desc, paths, jsonLd = [], useCsp = true, extraCss =
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  ${useCsp ? `<meta http-equiv="Content-Security-Policy" content="${e(csp())}">` : ''}
+  ${useCsp ? `<meta http-equiv="Content-Security-Policy" content="${e(csp([THEME_BOOT], { unsafeEval }))}">` : ''}
   <title>${e(title)}</title>
   <meta name="description" content="${e(desc)}">
   ${noindex ? '<meta name="robots" content="noindex">' : ''}
@@ -498,7 +501,7 @@ function utilityPage(lang, tool0) {
   const nOwn = tool.faqs.length;
   const related = (tool.related || []).filter(exists).slice(0, 4);
   const jsonLd = [ldApp(lang, name, desc, paths[lang]), ldCrumbs(crumbs), ldHowTo(`${P('howToUse', lang)}: ${name}`, tool.steps), ldFaq(faqs)];
-  return `${head({ lang, title, desc, paths, jsonLd })}
+  return `${head({ lang, title, desc, paths, jsonLd, unsafeEval: NEEDS_EVAL.has(tool.id) })}
 <body class="s-page">
   ${header(lang, paths, grp)}
   <main id="main">
