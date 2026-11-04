@@ -1,0 +1,2975 @@
+Sem vložte CSV nebo buňky zkopírované z Excelu / Tabulek Google, nebo otevřete soubor
+Zjistit automaticky
+Čárka ,
+Středník ;
+Tabulátor
+Svislá čára |
+Tabulátor (pro vložení do Excelu)
+Dát každou hodnotu do uvozovek
+Přidat UTF-8 BOM (pomáhá Excelu s diakritikou)
+LF (Mac, Linux)
+CRLF (Windows)
+Oddělovač vstupu
+Výstupní formát
+Oddělovač výstupu
+Konce řádků
+Hledat ve všech sloupcích…
+Hledat
+Přetáhněte sem soubor CSV libovolné velikosti nebo
+Vybrat soubor CSV
+Soubor se indexuje na pozadí a čtou se jen řádky, ke kterým rolujete, takže i soubory nad 200 MB zůstávají plynulé.
+Řádek č.
+Přejít na řádek
+První řádek je záhlaví
+Doplnit čísla na tento počet číslic (0 = zjistit z dat)
+Sloupce k opravě
+
+
+
+
+Zabalit do IFERROR
+Přesná shoda
+Buňka s hledanou hodnotou
+Sloupec, ve kterém se hledá
+Sloupec, který se vrátí
+První řádek dat
+Poslední řádek dat
+Název listu (volitelné)
+Vyhledávací tabulka na jiném listu
+Nenalezeno
+Text, pokud nic nenajde
+Jazyk tabulkového procesoru
+XLOOKUP (Excel 365/2021, Tabulky Google používají jinou syntaxi)
+
+INDEX + POZVYHLEDAT (funguje všude, hledá i doleva)
+SVYHLEDAT počítá sloupce od prvního sloupce tabulky: sloupec F je v D:F číslo 3.
+Excel pro Windows (1900)
+Excel pro Mac 2008 a starší (1904)
+Systém data
+Pořadová čísla nebo data ISO (jedno na řádek)
+Převedeno
+Dnes jako pořadové číslo
+Vložte pole JSON s objekty nebo objekt, který je obsahuje
+Oddělovač klíčů pro vnořené objekty
+Jeden sloupec na položku (tags.0, tags.1)
+Spojit hodnoty znakem ;
+Ponechat jako text JSON
+Pole
+Převést čísla, true/false a prázdné buňky
+Změnit záhlaví s tečkou (a.b) na vnořené objekty
+Přehledně formátovat
+JSON Lines (jeden objekt na řádek)
+Součet
+Průměr
+Počet řádků
+Počet neprázdných
+Počet unikátních
+Minimum
+Maximum
+Medián
+Spočítat
+Řádky (seskupit podle)
+— žádné —
+Sloupce (volitelné)
+Hodnoty
+Oddělovač
+Pozice znaků
+Regulární výraz (zachytávací skupiny)
+Rozdělit podle
+Oddělovač / vzor
+Pro pozice: čísla jako 2,5
+Oddělovač je regulární výraz
+Maximální počet částí (0 = všechny)
+Ponechat původní sloupec
+Sloupec k rozdělení
+Původní CSV
+Změněné CSV
+Porovnat řádek po řádku (bez klíče)
+Párovat řádky
+Originál
+Změněno
+Stáhnout zprávu (CSV)
+moje_tabulka
+Název tabulky
+
+
+
+
+Databáze
+UPDATE (potřebuje klíčový sloupec)
+Příkaz
+Přidat CREATE TABLE (typy odhadnuté z dat)
+Řádků na INSERT
+Prázdné buňky se stanou NULL
+Klíčový sloupec pro UPDATE
+Kompaktně (bez zarovnání)
+Ponechat jak je napsáno
+Vlevo
+Na střed
+Vpravo
+Vynutit zarovnání
+Neuspořádaná tabulka Markdown
+Zarovnaná tabulka
+Formát čísla
+Tisíce, 2 desetinná místa
+Procenta
+Dolary
+Účetnický
+Vědecký
+Úvodní nuly
+Tisíce jako K
+Miliony jako M
+Automaticky K / M
+Datum ISO
+Dlouhé datum
+Čas
+Hodiny nad 24
+Záporné červeně
+Vždy zobrazit znaménko
+Textová přípona
+Testovací hodnoty
+Kód formátu
+Stejné kódy jako ve Formát buněk → Vlastní
+Předvolby
+Testovací hodnoty (jedna na řádek)
+Podporuje zástupné znaky 0 # ?, oddělovače tisíců, škálovací čárky, %, E+, text v uvozovkách, _ a * jako mezeru, až čtyři oddíly, podmínky [>100], barvy (ignorovány), data a časy. Zlomky (# ?/?) nejsou podporovány.
+
+Sloupec se zeměpisnou šířkou
+Sloupec se zeměpisnou délkou
+Sem vložte CSV
+Táhněte sloupce, používejte šipky, zrušením zaškrtnutí smažete
+Kopírovat pro Excel (tabulátor)
+Z-skóre (průměr 0, směrodatná odchylka 1)
+Škálování min–max (0 až 1)
+Škálování max-abs (−1 až 1)
+Metoda
+Výběrová směrodatná odchylka (n−1)
+Desetinná místa
+Číselné sloupce k normalizaci
+Spojené státy (+1)
+Kanada (+1)
+Spojené království (+44)
+Německo (+49)
+Rakousko (+43)
+Švýcarsko (+41)
+Francie (+33)
+Itálie (+39)
+Španělsko (+34)
+Nizozemsko (+31)
+Belgie (+32)
+Polsko (+48)
+Česko (+420)
+Slovensko (+421)
+Švédsko (+46)
+Dánsko (+45)
+Norsko (+47)
+Finsko (+358)
+Irsko (+353)
+Portugalsko (+351)
+Austrálie (+61)
+Nový Zéland (+64)
+Indie (+91)
+Brazílie (+55)
+Mexiko (+52)
+Japonsko (+81)
+Jihoafrická republika (+27)
+Turecko (+90)
+Ukrajina (+380)
+Maďarsko (+36)
+Rumunsko (+40)
+Řecko (+30)
+Výchozí země (pro čísla bez +)
+Mezinárodní  +1 415 555 0132
+Národní (jen US/CA)
+Jen číslice
+Výstup
+Přidat sloupec „valid“
+Sloupec s telefonem
+Hodnota z buňky nad
+Hodnota z buňky pod
+Pevná hodnota
+Nula
+Průměr sloupce (čísla)
+Medián sloupce (čísla)
+Nejčastější hodnota
+Minimum sloupce
+Maximum sloupce
+Vyplnit hodnotou
+Pevná hodnota
+Sloupce k vyplnění
+Zalomit řádky delší než
+Odsazení (mezery)
+Vzorec
+Naformátovaný vzorec
+Jedna adresa na řádek
+Adresy (jedna na řádek)
+Brát jako oddělovač tisíců
+Americký styl (čárka = tisíce, tečka = desetiny)
+Evropský styl (tečka = tisíce, čárka = desetiny)
+Samotná čárka nebo tečka se třemi číslicemi za ní, např. 1,234
+Zaokrouhlit na desetinná místa (-1 = ponechat)
+Přidat sloupec s měnou
+Sloupce s částkami
+Přidat znak %
+Sloupec se starou hodnotou
+Sloupec s novou hodnotou
+Sloučit opakované mezery v buňkách
+Brát nezlomitelné mezery jako mezery
+Odstranit znaky s nulovou šířkou
+
+
+
+Styl
+Maximální délka (0 = bez omezení)
+Párovat sloupce podle názvu záhlaví
+Soubory mají stejná záhlaví
+Bez záhlaví: řádky jen poskládat pod sebe
+Přidat sloupec „source_file“
+Přetáhněte sem několik souborů CSV nebo
+Vybrat soubory CSV
+Jak sloučit
+Vymazat soubory
+Nechte prázdné, pokud je velmi velká
+Velikost populace
+Hladina spolehlivosti
+Mez chyby (± %)
+Očekávaný podíl (%)
+50 = nejopatrnější
+Potřebná velikost vzorku
+Bez korekce na konečnou populaci
+z-skóre
+
+
+
+
+
+
+
+
+
+Opravit i text, který už je poškozený (MÃ¼ller → Müller)
+Uložit s UTF-8 BOM (pro Excel)
+Otevřete soubor nebo vložte poškozený text (např. MÃ¼ller, GrÃ¶ÃŸe)
+Opravený text
+Kódování souboru
+Originál (jak byl načten)
+Opraveno (UTF-8)
+Stáhnout soubor UTF-8
+
+Přeložený vzorec
+Vzorec je napsán v
+Přeložit do
+⇄ Prohodit
+Přeloženo
+Názvy funkcí, oddělovače argumentů (, nebo ;) a desetinné znaky se převedou. Tabulky Google používají anglické názvy s oddělovači vaší oblasti. Konstanty polí {…} a text v uvozovkách zůstanou beze změny.
+měsíc
+Název nového sloupce „attribute“
+částka
+Název nového sloupce „value“
+Přeskočit prázdné buňky
+Sloupce, které zůstanou jako identifikátory
+
+
+
+
+Hex velkými písmeny
+Vložte kontrolní součet k porovnání
+Očekávaný kontrolní součet
+nebo napište či vložte text k hashování
+Přetáhněte sem soubor k hashování nebo
+Porovnat se zveřejněným kontrolním součtem
+IP adresa a prefix nebo maska
+Rozdělit na podsítě s prefixem (volitelné)
+Síť
+Použitelní hostitelé
+Rozsah
+Maska
+Výraz cron (5 polí: minuta hodina den-v-měsíci měsíc den-v-týdnu)
+můj místní čas
+Zobrazit další spuštění v
+Počet spuštění
+Každých 5 minut
+Každou hodinu
+Ve všední dny v 9:00
+Každý den o půlnoci
+V neděli ve 2:30
+První den každého měsíce
+Ve všední dny v 8:00 a 17:00
+Každý Nový rok
+Srozumitelně
+V 09:00, ve všední dny
+Pole: minuta 0–59, hodina 0–23, den v měsíci 1–31, měsíc 1–12 nebo JAN–DEC, den v týdnu 0–6 nebo SUN–SAT (7 také znamená neděli). * = každý, */n = každý n-tý, a-b = rozsah, a,b = seznam. Jsou-li omezeny den v měsíci i den v týdnu zároveň, úloha se spustí, pokud vyhovuje kterýkoli z nich (standardní chování cronu).
+Hledat podle kódu nebo textu, např. 404, redirect, rate limit
+Hledat stavové kódy
+Všechny třídy
+1xx Informační
+2xx Úspěch
+3xx Přesměrování
+4xx Chyba klienta
+5xx Chyba serveru
+Třída
+
+Server přijal hlavičky požadavku; klient má poslat tělo.
+Co dělat: Obvykle neviditelné. Důležité jen při použití „Expect: 100-continue“.
+
+Server souhlasí se změnou protokolu, například na WebSocket.
+Co dělat: Pokud se WebSocket neotevře, zkontrolujte hlavičky Upgrade a Connection přes všechny proxy.
+
+WebDAV: server požadavek přijal a stále na něm pracuje.
+Co dělat: Vzácné; berte jako „čekat“.
+
+Umožní prohlížeči předem načíst zdroje, zatímco server připravuje konečnou odpověď.
+Co dělat: Používá se s hlavičkami Link pro rychlejší načítání stránek.
+Požadavek byl úspěšný.
+Co dělat: U GET tělo obsahuje zdroj, u POST výsledek akce.
+
+Požadavek byl úspěšný a vytvořil nový zdroj.
+Co dělat: Hledejte hlavičku Location s adresou URL nového zdroje.
+
+Požadavek byl přijat ke zpracování, ale práce není dokončena.
+Co dělat: Dotazujte se na URL stavu, kterou vám API poskytne.
+
+Odpověď byla upravena proxy.
+Co dělat: Obvykle neškodné.
+
+Úspěch bez těla odpovědi.
+Co dělat: Typické pro DELETE a PUT bez výsledku. Nepokoušejte se parsovat JSON.
+
+Úspěch; klient má obnovit formulář nebo zobrazení.
+Co dělat: Vzácné.
+
+Server vrací jen požadovaný rozsah bajtů.
+Co dělat: Používá se pro streamování videa a obnovitelná stahování (hlavička Range).
+
+Existuje několik možných odpovědí.
+Co dělat: Vzácné; vyberte jeden z nabízených odkazů.
+
+Zdroj má novou trvalou adresu URL.
+Co dělat: Aktualizujte odkazy a záložky. Vyhledávače přenesou pozici na novou adresu.
+Dočasné přesměrování na jinou adresu URL.
+Co dělat: Používejte dál původní adresu; prohlížeče mohou změnit POST na GET.
+
+Po POST přesměruje na jinou adresu metodou GET.
+Co dělat: Klasický vzor post/redirect/get.
+
+Verze z mezipaměti je stále platná.
+Co dělat: Není to chyba: prohlížeč použije mezipaměť (ETag nebo Last-Modified se shodovaly).
+
+Dočasné přesměrování se zachováním metody HTTP.
+Co dělat: Jako 302, ale POST zůstává POST.
+
+Trvalé přesměrování se zachováním metody HTTP.
+Co dělat: Jako 301, ale POST zůstává POST.
+
+Server nemůže požadavku porozumět kvůli chybě klienta.
+Co dělat: Zkontrolujte syntaxi JSON, povinná pole, kódování URL a velikosti hlaviček.
+
+Je vyžadováno ověření nebo selhalo.
+Co dělat: Pošlete platné přihlašovací údaje nebo nový token. Zkontrolujte hlavičku Authorization.
+
+Vyhrazeno pro platební systémy.
+Co dělat: Některá API je používají, když chybí limit tarifu nebo platba.
+
+Jste ověřeni, ale nemáte oprávnění k přístupu.
+Co dělat: Zkontrolujte oprávnění, seznamy povolených IP, CORS a pravidla firewallu (WAF).
+
+Zdroj na této adrese URL neexistuje.
+Co dělat: Zkontrolujte adresu kvůli překlepům, lomítkům na konci a velikosti písmen; zdroj mohl být odstraněn.
+
+Metoda HTTP není pro tuto adresu URL podporována.
+Co dělat: Podívejte se na hlavičku Allow; možná potřebujete POST místo GET.
+
+Server nemůže vytvořit odpověď odpovídající hlavičkám Accept.
+Co dělat: Uvolněte hlavičku Accept.
+
+Proxy vyžaduje ověření.
+Co dělat: Nastavte přihlašovací údaje k proxy.
+
+Serveru vypršel čas při čekání na požadavek.
+Co dělat: Zkuste to znovu; zkontrolujte pomalé sítě a velká nahrávání.
+
+Požadavek je v konfliktu s aktuálním stavem zdroje.
+Co dělat: Typické při konfliktech úprav a duplicitních záznamech. Obnovte a zkuste znovu.
+
+Zdroj byl trvale odstraněn.
+Co dělat: Odstraňte odkazy; vyhledávače stránku vyřadí rychleji než u 404.
+
+Je vyžadována hlavička Content-Length.
+Co dělat: Přidejte ji nebo pošlete tělo, které klient dokáže změřit.
+
+Podmínka v hlavičkách požadavku selhala (If-Match atd.).
+Co dělat: Zdroj se změnil; načtěte nejnovější verzi.
+
+Tělo požadavku je větší, než server povoluje.
+Co dělat: Zmenšete nahrávaný soubor nebo zvyšte client_max_body_size / limit.
+
+Adresa URL je delší, než server přijímá.
+Co dělat: Místo dlouhého řetězce dotazu použijte POST s tělem.
+
+Server nepodporuje typ obsahu požadavku.
+Co dělat: Nastavte správný Content-Type, např. application/json.
+
+Požadovaný rozsah bajtů leží mimo zdroj.
+Co dělat: Porovnejte hlavičku Range s velikostí souboru.
+
+Hlavičku Expect nelze splnit.
+Co dělat: Odeberte „Expect: 100-continue“.
+
+Aprílový žert z RFC 2324.
+Co dělat: Některé servery jej používají k odmítání botů.
+
+Požadavek byl odeslán na server, který na něj nemůže odpovědět.
+Co dělat: Typické při opakovaném použití spojení HTTP/2 a špatném hostiteli TLS.
+
+Syntaxe je správná, ale obsah neprošel validací.
+Co dělat: Přečtěte si tělo chyby, kde jsou zprávy k jednotlivým polím.
+
+Zdroj je zamčen (WebDAV).
+Co dělat: Počkejte nebo odemkněte.
+
+Server nezpracuje požadavek, který by mohl být zopakován.
+Co dělat: Zkuste to znovu po navázání spojení.
+
+Klient musí přejít na jiný protokol.
+Co dělat: Použijte HTTPS nebo novější verzi HTTP.
+
+Server vyžaduje podmíněný požadavek.
+Co dělat: Přidejte If-Match.
+
+Jste omezováni limitem požadavků.
+Co dělat: Zpomalte a respektujte hlavičku Retry-After; přidejte exponenciální prodlevy.
+
+Hlavičky (často cookies) jsou příliš velké.
+Co dělat: Smažte cookies nebo zmenšete hlavičky.
+
+Obsah je z právních důvodů zablokován.
+Co dělat: Na straně klienta nelze opravit.
+
+Server narazil na neočekávaný stav.
+Co dělat: Chyba nebo špatná konfigurace na serveru; zkontrolujte logy serveru.
+
+Server nepodporuje požadovanou funkci.
+Co dělat: Metoda nebo funkce není dostupná.
+
+Brána nebo proxy obdržela neplatnou odpověď od nadřazeného serveru.
+Co dělat: Aplikace za proxy spadla nebo je nedostupná; zkontrolujte stav nadřazeného serveru a časové limity.
+
+Server dočasně nemůže požadavek zpracovat.
+Co dělat: Přetížení nebo údržba; zkuste to později a respektujte Retry-After.
+
+Brána nedostala včas odpověď od nadřazeného serveru.
+Co dělat: Zvyšte časové limity proxy nebo zrychlete backend.
+
+Verze HTTP není podporována.
+Co dělat: Použijte HTTP/1.1.
+
+Server nemůže uložit reprezentaci (WebDAV).
+Co dělat: Uvolněte místo na disku.
+
+Server zjistil nekonečnou smyčku (WebDAV).
+Co dělat: Zkontrolujte přesměrování nebo odkazy.
+
+Pro přístup k síti se musíte ověřit.
+Co dělat: Typické pro captive portály (hotelová Wi-Fi); otevřete prohlížeč a přihlaste se.
+
+Příkaz curl
+Příkaz curl (zkopírujte jej z karty Síť v prohlížeči: Kopírovat jako cURL)
+Vložte řetězec user-agent
+User agent
+Použít můj prohlížeč
+Prohlížeč
+
+Verze
+Operační systém
+
+Typ zařízení
+Bot / skript
+Vykreslovací jádro
+
+Bot nebo skript
+ano
+Vypadá to na crawler nebo automatizovaného klienta. Pamatujte, že se jako Googlebot může vydávat kdokoli; v případě potřeby to ověřte zpětným dotazem DNS.
+Řetězce user-agent jsou ze své podstaty nespolehlivé: prohlížeče se kvůli kompatibilitě napodobují a Chrome zmrazuje části řetězce. V kódu používejte detekci funkcí a tohle berte jako diagnostickou pomůcku.
+Kódovat (text → entity)
+Dekódovat (entity → text)
+Směr
+Jen & < > " '
+Také znaky mimo ASCII, kde je to možné jako pojmenované entity (é → &eacute;)
+Také znaky mimo ASCII, jako čísla (é → &#233;)
+Kódovat
+Desítkově &#233;
+Šestnáctkově &#xE9;
+Styl čísel
+Napište text ke kódování nebo vložte Base64 / adresu data: k dekódování
+Abeceda bezpečná pro URL (- a _)
+Ponechat doplnění =
+Bez zalomení řádků
+Po 64 znacích
+Po 76 znacích (MIME)
+Kódovat text
+Dekódovat na text
+Stáhnout dekódovaný soubor
+Režim
+Délka řádku
+Zakódovat soubor
+Barva
+Vybrat barvu
+Vybrat z obrazovky
+Barva (HEX, RGB, HSL nebo CMYK)
+Výběr
+CMYK (jednoduchý vzorec)
+Proměnná CSS
+CMYK je zde naivní převod ze sRGB. Tištěné barvy závisejí na barvě, papíru a barevném profilu; u firemních barev požádejte tiskárnu o nátisk.
+UUID v4 (náhodné)
+UUID v7 (řazené podle času, vhodné pro klíče v databázi)
+Kolik
+Standardně (malá písmena)
+VELKÁ PÍSMENA
+Bez pomlček
+{Styl Microsoft}
+'v uvozovkách', pro seznamy SQL
+Formát
+Klikněte na „Vygenerovat“ nebo změňte nastavení pro novou dávku
+UUID v4 má 122 náhodných bitů z crypto.getRandomValues. Šance, že se dvě shodují, je zanedbatelná i při miliardách ID.
+Vygenerovat novou dávku
+Číslo
+Předpony 0x, 0b, 0o a podtržítka jsou povoleny. Libovolná velikost.
+Dvojková (2)
+Osmičková (8)
+Desítková (10)
+Šestnáctková (16)
+Soustava 3
+Soustava 4
+Soustava 5
+Soustava 6
+Soustava 7
+Soustava 9
+Soustava 11
+Soustava 12
+Soustava 13
+Soustava 14
+Soustava 15
+Soustava 17
+Soustava 18
+Soustava 19
+Soustava 20
+Soustava 21
+Soustava 22
+Soustava 23
+Soustava 24
+Soustava 25
+Soustava 26
+Soustava 27
+Soustava 28
+Soustava 29
+Soustava 30
+Soustava 31
+Soustava 32
+Soustava 33
+Soustava 34
+Soustava 35
+Soustava 36
+Soustava vstupu
+Další výstupní soustava (2–36)
+Dvojkově
+Osmičkově
+Desítkově
+Šestnáctkově
+Je potřeba 8 bitů. Převod používá celá čísla libovolné přesnosti, takže 64bitové a větší hodnoty jsou přesné.
+
+Uživatelské jméno
+sezame otevři se
+Heslo
+Hodnota je Base64 z „jméno:heslo“. Base64 je kódování, ne šifrování: kdokoli, kdo hlavičku uvidí, přečte heslo, proto používejte ověření Basic jen přes HTTPS.
+curl: curl -u "Aladdin:open sesame" https://example.com   ·   nebo   -H "Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+Krytí (%)
+Barva (volitelné, pro sestavení celého kódu)
+Přípona alfa
+8místná šestnáctková barva
+Alfa = krytí ÷ 100 × 255, zaokrouhleno a zapsáno jako dvě šestnáctkové číslice: 50 % → 128 → 80. CSS přijímá #RRGGBBAA ve všech moderních prohlížečích; Android používá #AARRGGBB (alfa na začátku).
+device-width (doporučeno)
+Pevná šířka v pixelech…
+Šířka
+Šířka (px)
+Počáteční měřítko
+Povolit zoom gestem (přístupnost)
+viewport-fit=cover (využít celou obrazovku u telefonů s výřezem)
+Barva rozhraní prohlížeče (theme-color, volitelné)
+Zoom gestem zůstává zapnutý, což WCAG vyžaduje kvůli přístupnosti.
+Bez této značky vykreslují mobilní prohlížeče stránku v šířce asi 980 px a zmenšují ji.
+Složka s ikonami
+Ikona SVG (favicon.svg)
+Klasický favicon.ico (16/32 px)
+Ikony PNG 32 px (favicon-32x32.png)
+Apple touch icon 180 px
+Manifest webové aplikace (ikony 192 a 512 px)
+Barva motivu
+Vložte značky do <head>. Prohlížeče použijí SVG, kde je podporováno, a jinak .ico; ikona Apple by měla mít 180×180 px bez průhlednosti. Soubory obrázků vytvoříte v Generátoru favicon a ikon aplikací.
+Základní URL (volitelné)
+Parametry: key=value, jeden na řádek
+Kódovat mezery jako + (styl formuláře) místo %20
+
+
+
+Opakované klíče
+Klíče a hodnoty se kódují procentově jako UTF-8 (vyhrazené znaky jako & = ? # a mezery se zakódují). Nekódujte celou adresu URL podruhé.
+Adresy URL (jedna na řádek)
+Název parametru
+Aktuální časové razítko (mění se pokaždé)
+Náhodný řetězec
+Pevná verze…
+Hodnota
+Změněný řetězec dotazu způsobí, že prohlížeče a CDN berou soubor jako nový, takže při testování uvidíte nejnovější verzi. V produkci je lepší verze nebo hash obsahu v názvu souboru.
+Certifikát (PEM)
+Jen datum vypršení
+Mám
+Certifikát (-----BEGIN CERTIFICATE-----)
+Zkopírujte jej ze souboru .crt / .pem na serveru nebo z prohlížeče certifikátů. Tuto stránku nikdy neopustí.
+Datum vypršení
+
+Doména (pro název připomínky)
+Vložte certifikát, abyste viděli jeho platnost.
+Stáhnout připomínky (.ics): 30, 14 a 7 dní předem
+Vložte úplné nezpracované hlavičky e-mailu (v Gmailu: ⋮ → Zobrazit originál; v Outlooku: Soubor → Vlastnosti → Hlavičky internetu)
+Hlavičky e-mailu
+Nezpracované hlavičky
+Zkontrolovat existující robots.txt
+Vytvořit nový robots.txt
+
+/admin/⏎/tmp/
+
+Blokovat crawlery pro trénování AI (GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot, Bytespider)
+Co chcete udělat?
+Skupiny
+Mapy webu
+Chyby
+Varování
+✓ Nebyly nalezeny žádné problémy.
+Vložte svůj sitemap.xml
+XML mapy webu
+
+
+Bezplatné nástroje, které běží ve vašem prohlížeči. Nic se nenahrává.
+
+Náhledový obrázek
+URL obrázku pro značky
+Název stránky
+Popis
+URL stránky
+Název webu
+URL obrázku (pro značky)
+Náhledový obrázek (zůstává ve vašem zařízení)
+Název
+
+
+
+Přidat náhledový obrázek (1200 × 630 px)
+
+
+
+
+
+HTML pro váš <head>
+Pozadí
+Barva rámečku
+Přidat vrstvu
+Stránka
+Rámeček
+Poloměr rohů (px)
+Vrstva 1
+Uvnitř
+Barva stínu
+
+
+
+Vrstva 2
+
+Regulární výraz
+Příznaky
+Testovací text (jeden nebo více řádků)
+Regulární výraz (JavaScript)
+Co znamená
+Testovací text
+
+
+
+
+
+
+
+
+
+
+
+není e-mail
+
+Hledat podle portu nebo služby, např. 3306, ssh, databáze
+Hledat porty
+
+Přípona (.docx), název souboru nebo typ MIME (image/png)
+Textové typy obvykle potřebují znakovou sadu, například „text/html; charset=utf-8“. Vždy posílejte typ, který server skutečně poskytuje; prohlížeče u některých typů obsah také odhadují.
+
+např. _spf.google.com, sendgrid.net (oddělené čárkou)
+Povolit odesílání mým serverům MX (mx)
+Povolit odesílání mému záznamu A (a)
+~all (soft fail: označit jako podezřelé, doporučeno na začátek)
+-all (hard fail: odmítnout vše ostatní)
+?all (neutrální)
++all (povolit všem, nedoporučeno)
+none (jen sledovat)
+quarantine (do spamu)
+reject (zablokovat)
+Stejně jako hlavní politika
+
+
+
+
+volitelná adresa pro forenzní zprávy
+Volně
+Přísně
+SPF: kdo smí posílat poštu za vaši doménu
+Zahrnout další odesílatele (domény)
+Adresy nebo rozsahy IPv4
+Adresy nebo rozsahy IPv6
+Všechno ostatní
+DMARC: co příjemci dělají při selhání
+Politika
+Politika pro subdomény
+Použít na % pošty
+Souhrnné zprávy na (rua)
+Forenzní zprávy na (ruf)
+Zarovnání DKIM
+Zarovnání SPF
+Klíče DKIM vytváří váš poskytovatel pošty; přidejte záznam DKIM, který vám dá. Po zveřejnění počkejte na aktualizaci DNS a pošlete testovací zprávu, abyste v hlavičkách ověřili SPF, DKIM a DMARC.
+Záznam SPF
+Záznam TXT u: 
+
+Záznam DMARC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flex-direction
+
+
+flex-wrap
+
+mezera (px)
+Počet položek
+Obsah požadavku
+
+Tajný klíč
+Časové razítko
+Vložte přijatou hlavičku podpisu k porovnání
+Přijatý podpis
+Surové tělo požadavku (přesně tak, jak bylo přijato)
+Podpisový klíč
+Časové razítko (sekundy Unix, pro Stripe a Slack)
+Přijatý podpis (volitelné)
+Podpis je HMAC surových bajtů těla. Přeformátování JSON, odstranění zalomení řádku nebo jeho předchozí parsování výsledek změní. Podpisy porovnávejte v konstantním čase a odmítejte stará časová razítka (například starší než 5 minut), abyste zabránili opakování. Tajný klíč i obsah se zpracovávají jen ve vašem prohlížeči; přesto používejte testovací klíč, ne produkční.
+GitHub / obecné (X-Hub-Signature-256)
+GitHub starší SHA-1 (X-Hub-Signature)
+Stripe (Stripe-Signature, podepsáno „timestamp.payload“)
+Slack (X-Slack-Signature, podepsáno „v0:timestamp:payload“)
+HMAC-SHA256 šestnáctkově
+HMAC-SHA256 Base64 (Shopify, mnoho dalších)
+HMAC-SHA512 šestnáctkově
+Příliš žluťoučký kůň úpěl ďábelské ódy 0123456789
+Náhledový text
+Úryvek CSS
+Přetáhněte sem písmo TTF, OTF nebo WOFF nebo
+CSS pro váš web
+Kopírovat CSS
+Písma TTF a OTF se převádějí na WOFF (menší, pro weby); písma WOFF se rozbalí na TTF nebo OTF. Tvary glyfů se nemění. WOFF2, nejmenší webový formát, vyžaduje kompresi Brotli a není podporován. Před použitím písma na webu zkontrolujte jeho licenci. Nic se nenahrává.
+2 mezery
+4 mezery
+Odsazení
+Minifikovat (jeden řádek)
+Seřadit klíče A–Z
+Povolit komentáře a koncové čárky
+Z
+Standardní SQL
+
+
+
+
+
+
+Dialekt
+VELKÁ PÍSMENA
+malá písmena
+Jak je napsáno
+Klíčová slova
+Naformátované SQL
+
+Nahrazení
+Nahrazení, např. <$1>
+g (všechny shody)
+i (ignorovat velikost písmen)
+m (^ $ na každém řádku)
+s (. odpovídá zalomení řádku)
+u (Unicode)
+Text k testu
+Výsledek nahrazení
+Výsledek nahrazení
+Nahrazení (volitelné, $1 $<name> $&)
+Zvýrazněné shody
+Regulární výrazy JavaScript (stejný engine jako ve vašem prohlížeči). Test běží v pracovním vlákně na pozadí a po 2 sekundách se zastaví, takže špatný vzor tuto stránku nezamrazí. Nic se nenahrává.
+Shody
+
+Náhled (tlačítko kopírování zkopíruje HTML)
+Slova
+Znaky
+Typ
+CSS, HTML nebo JSON
+Minifikováno
+Odstavce
+Věty
+Začít „Lorem ipsum dolor sit amet“
+Obalit odstavce značkami <p>
+Vygenerovaný text
+Množství
+Jednotka
+Vygenerovat nový text
+Zástupný text z latinsky vypadajících slov bez významu. Stejné nastavení vždy dává stejný text, dokud neklepnete na „Vygenerovat nový text“.
+Přetáhněte sem jeden nebo více souborů nebo
+Typ se čte z prvních bajtů souboru (jeho „magic number“), ne z názvu, takže funguje i u souborů se špatnou nebo chybějící příponou. Z každého souboru se čte jen prvních 70 KB. Textové soubory se poznají podle obsahu (JSON, HTML, XML, SVG, skript, prostý text); rozpoznává se asi 60 běžných binárních formátů. Nic se nenahrává.
+Strom složek
+Nebo vložte seznam cest, jednu na řádek:⏎src/app.js⏎src/lib/util.js⏎README.md
+Cesty
+Zobrazit velikosti souborů
+Jen složky
+
+Ignorovat
+Podle názvu
+Podle velikosti (největší první)
+Přetáhněte sem složku nebo
+Vybrat složku
+Maximální hloubka (0 = vše)
+Ignorovat (oddělené čárkou, povoleno *)
+Řazení
+Kopírovat jako blok kódu Markdown
+Čtou se jen názvy souborů a složek a velikosti, nikdy obsah, a nic se nenahrává. Prázdné složky se zobrazí, pokud je prohlížeč nahlásí.
+Dvě stránky vedle sebe (automaticky)
+US Letter
+Tabloid
+Velikost archu (naležato)
+Vazba zprava (arabština, hebrejština, manga)
+Vytvořit PDF brožury
+Přetáhněte sem PDF nebo
+Tiskněte oboustranně, otáčejte přes kratší okraj a pak stoh přeložte napůl. Počet stran se doplní prázdnými stránkami na násobek 4.
+Sloupce
+Řádky
+Letter
+Legal
+Velikost archu
+Automaticky
+Na výšku
+Na šířku
+Orientace
+Vnější okraj (mm)
+Mezera mezi stránkami (mm)
+Nakreslit tenký rámeček kolem každé stránky
+Vytvořit PDF n-up
+
+
+Předpona
+Počáteční číslo
+Číslice (doplněné nulami)
+Přípona
+Vpravo dole
+Uprostřed dole
+Vlevo dole
+Vpravo nahoře
+Uprostřed nahoře
+Vlevo nahoře
+Poloha
+Velikost písma (pt)
+Vzdálenost od okraje (mm)
+Bílé pozadí za číslem
+Přidat Batesova čísla
+Nahoře (mm)
+Vpravo (mm)
+Dole (mm)
+Vlevo (mm)
+Nakreslit linky pro poznámky v přidaných okrajích
+Přidat okraje
+Velikost papírového formátu v mm, palcích a pixelech
+Tisková velikost obrázku s daným počtem pixelů
+Co chcete zjistit?
+Executive
+Half Letter
+Vizitka (EU)
+Vizitka (US)
+Fotka 10×15
+Fotka 13×18
+Vlastní velikost (mm)
+Formát papíru
+Šířka (mm)
+Výška (mm)
+72 (body PDF, obrazovka)
+96 (pixely CSS)
+150 (koncept tisku)
+300 (foto / časopis)
+600 (jemná perokresba)
+Rozlišení (pixelů na palec)
+Šířka obrázku (pixely)
+Výška obrázku (pixely)
+Milimetry
+Palce
+Body PDF
+Pixely při 300 ppi
+Poměr stran
+Plocha
+Formáty řady A zachovávají poměr 1 : √2, takže po přeložení archu na polovinu vznikne další menší formát se stejnými proporcemi.
+Avery 5160 / 8160 (US Letter, 30 štítků, 1″ × 2⅝″)
+Avery 5163 / 8163 (US Letter, 10 štítků, 2″ × 4″)
+Avery 5167 / 8167 (US Letter, 80 zpětných adres, ½″ × 1¾″)
+Avery L7160 / J8160 (A4, 21 štítků, 63,5 × 38,1 mm)
+Avery L7163 / J8163 (A4, 14 štítků, 99,1 × 38,1 mm)
+Avery L7161 / J8161 (A4, 18 štítků, 63,5 × 46,6 mm)
+Avery L7162 / J8162 (A4, 16 štítků, 99,1 × 33,9 mm)
+Nakreslit tenké obrysy štítků (pro zkušební tisk na obyčejný papír)
+Anna Příkladná⏎Dlouhá 12⏎110 00 Praha 1⏎⏎Ben Vzorový⏎Parková 3⏎602 00 Brno
+Adresy
+Načíst textový/CSV soubor
+Arch štítků
+Přeskočit již použité štítky
+Začít na částečně použitém archu
+Kopií od každého
+Největší velikost písma (pt)
+Automaticky se zmenší, aby se vešlo
+Adresy (prázdný řádek mezi štítky)
+Vytvořit PDF s archem štítků
+Vždy vytiskněte jeden zkušební arch na obyčejný papír v měřítku 100 % („Skutečná velikost“, ne „Přizpůsobit stránce“) a přiložte jej k archu štítků, abyste zkontrolovali zarovnání. Jiné značky štítků stejné velikosti používají stejné rozložení.
+Diplom za uznání
+Jedno jméno na řádek (každému jeden diplom)
+Jana Nováková, ředitelka
+Vaše organizace
+Modrá
+Vínová
+Zelená
+Antracitová
+Zlatá
+A4 na šířku
+US Letter na šířku
+Datum
+Podepsal(a)
+Organizace
+Papír
+Příjemci (jeden na řádek)
+Text
+Vytvořit diplomy (PDF)
+
+# Nadpis⏎⏎Sem napište nebo vložte Markdown…
+Dokument
+
+
+
+
+Název dokumentu
+Písmo
+Vytvořit dokument Word
+Podporováno: nadpisy, tučné, kurzíva, kód v textu, odkazy, odrážkové a číslované seznamy (vnořené), citace, bloky kódu, tabulky a čáry. Obrázky nejsou zahrnuty.
+Výstup Markdown
+Přetáhněte sem soubor Word (.docx) nebo
+Nadpisy, tučné písmo, kurzíva, odkazy, seznamy, tabulky a citace zůstanou zachovány. Obrázky, komentáře, poznámky pod čarou a textová pole se nepřevádějí.
+Zvýraznění, podtržení, přeškrtnutí
+Poznámky a textová pole
+Přetáhněte sem PDF se zvýrazněním a komentáři nebo
+Označený text je text pod každým zvýrazněním, takže je dostupný jen u PDF s textovou vrstvou. Anotace vytvořené některými aplikacemi (například kresby perem) se nevypisují. Vše běží ve vašem prohlížeči.
+100 dpi (nejmenší)
+150 dpi (obrazovka a kancelářský tisk)
+200 dpi (dobrý tisk)
+300 dpi (ostré, velké)
+Odstíny šedi
+Černobíle (skeny textu)
+Zvýšit kontrast (pomáhá u vybledlých skenů)
+Převést na odstíny šedi
+Rozlišení
+Kvalita JPEG (%)
+Každá stránka se vykreslí jako obrázek a znovu složí do PDF stejné velikosti, takže výsledek už nemá označitelný text, odkazy ani formulářová pole. Pokud potřebujete prohledávatelný text, spusťte potom nástroj OCR. Barva se odstraní z textu, obrázků i pozadí stejně; vektorová grafika se změní na pixely.
+Přidat druhou stranu pro kontrolu zarovnání při oboustranném tisku
+Vytvořit zkušební arch (PDF)
+Tiskněte ve 100 % bez škálování a potom pravítkem zkontrolujte měřítko, rámeček ze všech čtyř stran, odstíny šedi, text a černý pruh. Pro rychlou zkušební stránku na obrazovce můžete použít také test.institute.
+
+ODDĚLOVACÍ LIST
+Přidat QR kód se štítkem (pro skenovací software, který čte kódy)
+Počet listů
+Nadpis na černém pásu
+Předpona štítku
+První číslo
+Číslice
+Vytvořit oddělovací listy (PDF)
+Pokud můžete, tiskněte na barevný papír: stoh pak snadno rozdělíte pohledem. Velký štítek (například DOC-001) ukazuje dávku a QR kód obsahuje stejný text pro skenery a software, který dokumenty dělí podle čárových kódů.
+Filtrovat soubory…
+Filtrovat soubory
+Uložit vybrané jako ZIP
+Vybrat vše
+Nevybrat nic
+Přetáhněte sem soubor ZIP, TAR nebo GZ nebo
+Seznam se načte bez rozbalování čehokoli; soubor se rozbalí, až když ho uložíte. ZIP chráněné heslem, archivy RAR a 7z nejsou podporovány. Vše zůstává ve vašem prohlížeči.
+archiv
+Název archivu
+Bez komprese (nejrychlejší)
+Rychle
+Normálně (doporučeno)
+Nejmenší
+Vybrat soubory
+Přetáhněte sem soubory nebo
+Komprese
+Soubory, které jsou už komprimované (JPG, MP3, MP4, PDF, DOCX …), se ukládají beze změny, protože další komprese jen stojí čas. Soubory ZIP vytvořené zde nemají heslo, protože klasická ochrana heslem v tomto formátu je slabá; pro tajemství použijte „Zabezpečit PDF“ nebo šifrovanou poznámku. Nic se nenahrává.
+Kód HTML
+Rozpoznat nadpisy podle velikosti písma
+Označit zalomení stránek
+Kompletní stránka HTML (s <head> a základním stylem)
+Výsledek je čisté, jednoduché HTML s nadpisy, odstavci a seznamy, nikoli kopie rozvržení stránky. Tabulky, sloupce, obrázky a přesná písma se nepřenášejí; naskenovaná PDF vyžadují nejprve OCR. Vše běží ve vašem prohlížeči.
+Zahrnout poznámky pod čarou a vysvětlivky
+Zahrnout záhlaví a zápatí
+Přetáhněte sem dokument Word (.docx) nebo
+Počítá se text hlavního dokumentu; textová pole, komentáře a sledovaná odstranění nejsou zahrnuta. Počet stran je jen odhad (500 slov na stranu), protože skutečné rozvržení závisí na písmech a okrajích, které zná jen Word.
+Cílová velikost
+Komprimovat na tuto velikost
+například 2 MB, 500 KB nebo 10 MB
+Nástroj komprimuje krok za krokem, od jemné (jen struktura souboru) po silnou (obrázky zmenšené na 48 dpi), a zastaví se u prvního výsledku, který se vejde. Text zůstává označitelný. Pokud je cíl pod tím, čeho lze dosáhnout, dostanete nejmenší výsledek a poznámku. Vše běží ve vašem prohlížeči.
+Zatím žádný soubor
+Vybrat PDF A (originál)
+Vybrat PDF B (změněné)
+Textové zobrazení porovnává slova každé stránky a najde změněné klauzule, čísla a jména, i když se rozvržení posunulo. Vizuální zobrazení porovnává vykreslené stránky pixel po pixelu a najde změny v obrázcích, barvách a rozvržení. Naskenovaná PDF nemají text; nejprve použijte „PDF OCR“. Nic se nenahrává.
+Hledat
+Hledat…
+Rozlišovat velikost písmen
+Jen celá slova
+Prohledá textovou vrstvu PDF ve vašem prohlížeči a vypíše každou shodu s číslem stránky a okolními slovy. Text uložený jako obrázek (skeny) nelze bez OCR najít. Slova rozdělená zalomením řádku se přes zalomení nemusí najít.
+A5 (kniha)
+Čísla stránek
+Přetáhněte sem e-knihu EPUB nebo
+Velikost stránky
+Okraj (mm)
+Text knihy se sází jako jednoduché PDF: nadpisy, odstavce, seznamy a citace, titulní strana a čísla stránek. Obrázky, obálky, tabulky a původní písma se nepřenášejí; e-knihy s DRM nelze otevřít. Změňte nastavení a potom soubor přetáhněte znovu, čímž vytvoříte novou verzi. Vše běží ve vašem prohlížeči.
+
+
+Měna
+Odesílatel
+Příjemce
+Položky
+Poznámky
+Položky (popis; množství; jednotka, jedna na řádek)
+Číslo objednávky
+Poznámka (volitelné)
+Jazyk dokumentu
+Symbol měny
+Odesílatel (vy)
+Dodací adresa
+Vytvořit PDF
+Dodací list uvádí, co bylo dodáno, a umožňuje příjemci potvrdit převzetí. Neobsahuje ceny. Nic se nenahrává.
+Poradenské služby, březen
+Hotově
+Převodem
+Kartou
+Celková částka (brutto)
+DPH % v ceně (0 = žádná)
+Za co (na co se platilo)
+Způsob platby
+Místo (volitelné)
+Vystavitel (vy)
+Zaplatil
+Příjmový doklad potvrzuje platbu; ověřte si, co vaše země vyžaduje (například údaje o DPH nebo pořadové číslo). Tento nástroj dokument jen sází; neposkytuje daňové poradenství. Nic se nenahrává.
+Náklady a prodejní cena
+Náklady a marže %
+Náklady a přirážka %
+Prodejní cena a marže %
+Prodejní cena a přirážka %
+Znám
+Náklady
+Prodejní cena
+Hrubá marže %
+Přirážka %
+Zisk
+Hrubá marže
+Přirážka
+Marže = zisk ÷ cena. Přirážka = zisk ÷ náklady. Přirážka 50 % je jen marže 33,3 %; marže 50 % vyžaduje přirážku 100 %.
+Počáteční částka
+Měsíční vklad
+Roční úroková sazba (%)
+Roky
+Ročně
+Čtvrtletně
+Měsíčně
+Denně
+Připisování úroků
+na konci každého měsíce
+na začátku každého měsíce
+Vklady se provádějí
+Jen pro zobrazení
+Konečný zůstatek
+Celkem vloženo
+Získané úroky
+Zůstatek
+Vloženo
+Hotovost v bance
+Měsíční náklady
+Měsíční tržby nyní
+Měsíční růst tržeb (%)
+Čistý burn nyní
+
+Runway při dnešním burn
+
+Runway s růstem
+
+Stav hotovosti
+Průměrné tržby na účet za měsíc
+Hrubá marže (%)
+Měsíční churn (%)
+Náklady na získání zákazníka (CAC)
+Životnost zákazníka
+
+Hodnota zákazníka za život (LTV)
+LTV : CAC
+Návratnost CAC
+
+Poměr 3:1 nebo lepší je obvyklé měřítko zdravého předplatitelského podnikání.
+Fixní náklady za období
+Cena za jednotku
+Variabilní náklady na jednotku
+Cílový zisk (volitelné)
+Očekávaný počet jednotek za období (volitelné)
+Bod zvratu (jednotky)
+Bod zvratu (tržby)
+Příspěvek na jednotku
+Míra příspěvku
+Bezpečnostní rezerva
+
+Tržby
+Celkové náklady
+brutto (včetně DPH)
+netto (bez DPH)
+Částka je
+Země (navrhne sazby)
+Sazba DPH (%)
+Částka bez DPH
+
+Částka s DPH
+Základní a snížená sazba v Německu: 19 %, 7 %. Sazby se mění; aktuální sazbu si ověřte na finančním úřadě.
+Bez DPH = s DPH ÷ (1 + sazba). DPH = s DPH − bez DPH.
+Diskontní sazba (% za období)
+Peněžní toky, jeden na období (první = dnes, záporný = investice)
+Čistá současná hodnota
+Vnitřní výnosové procento
+Diskontovaná doba návratnosti
+
+Projekt vydělává víc než vaše diskontní sazba.
+Jako XNPV v Excelu při stejně dlouhých obdobích je první peněžní tok v čase 0 a nediskontuje se. Funkce NPV() v Excelu diskontuje první hodnotu o jedno období, takže počáteční investici přičtěte mimo funkci.
+Roční výnos nebo míra růstu (%)
+Pravidlo 72
+
+Přesná doba zdvojnásobení
+
+Pravidlo 69,3 (spojité)
+
+Chyba pravidla 72
+72 dělené úrokovou sazbou odhaduje, za kolik let se vaše peníze zdvojnásobí. Nejpřesnější je pro sazby mezi 6 % a 10 %. Přesná doba = ln 2 ÷ ln(1 + sazba).
+Pásma: počáteční množství a jednotková cena, jedno na řádek
+Formát: „od, cena“
+Postupně (každé pásmo platí jen pro jednotky v něm)
+Objemově (dosažené pásmo určuje cenu VŠECH jednotek)
+Model
+Množství
+Celková cena
+Průměrná cena za jednotku
+Celková cena podle množství
+Dosažené tržby
+Kvóta
+Provizní pásma: „do % kvóty, sazba %“, jedno na řádek (* znamená bez limitu)
+Plnění kvóty
+Provize
+Efektivní sazba
+Typická výše platby
+Plateb za měsíc
+Zpracovatelé: „název, procento, pevný poplatek“ na řádek
+Předvyplněno ceníkem z roku 2024; upravte podle své smlouvy.
+Nejlevnější
+
+Poplatek za platbu
+Úspora za rok oproti nejdražšímu
+Poplatek = částka × procento + pevný poplatek. Sazby se liší podle země, typu karty a smlouvy, takže seznam upravte podle vlastního ceníku.
+Roční plat (hrubý)
+Smluvní hodiny týdně
+Neplacené přesčasy týdně
+Cesta za den jedním směrem (minuty)
+Dny na pracovišti týdně
+Týdny volna za rok (dovolená + svátky)
+Náklady spojené s prací za rok (cestování, oblečení, péče o děti…)
+Nominální hodinová sazba
+Efektivní hodinová sazba
+Skutečně strávené hodiny za rok
+z toho dojíždění
+Sazba ztracená extra hodinami
+Efektivní sazba = (plat − náklady spojené s prací) ÷ (smluvní hodiny + neplacené přesčasy + hodiny dojíždění).
+Plat zaměstnance, kterému chcete dorovnat (za rok)
+Benefity a náklady zaměstnavatele (% platu)
+Vlastní roční provozní náklady (pojištění, software, účetní)
+Týdny volna za rok
+Pracovní hodiny týdně
+Fakturovatelný podíl pracovních hodin (%)
+Dodatečná rezerva na daně nebo riziko (%)
+Hodinová sazba k účtování
+Denní sazba (8 h)
+Celkové roční náklady k pokrytí
+Fakturovatelné hodiny za rok
+Sazba = (plat × (1 + benefity %) + vlastní náklady) ÷ fakturovatelné hodiny ÷ (1 − daňová rezerva). Fakturovatelné hodiny = odpracované týdny × hodiny týdně × fakturovatelný podíl, protože živnostníci nemohou fakturovat administrativu, obchod a prostoje.
+Investovaná částka (náklady)
+Vrácená hodnota (tržby nebo konečná hodnota)
+Doba v letech (volitelné)
+Návratnost investice (ROI)
+Čistý zisk
+Roční ROI
+ROI = (vrácená hodnota − náklady) ÷ náklady. Roční ROI = (hodnota ÷ náklady)^(1/roky) − 1, díky čemuž lze srovnávat projekty různé délky.
+Celá měsíční částka
+Datum nastěhování nebo zahájení
+Skutečný počet dní v měsíci
+30denní měsíc (běžné v nájmech)
+Roční nájem ÷ 365
+Platba za první měsíc
+Dní v měsíci
+Obsazené dny
+Denní sazba
+
+Zkontrolujte nájemní smlouvu: některé smlouvy počítají 30denní měsíc, jiné skutečné dny.
+Anna, Ben, Klára
+Lidé
+Lidé (oddělení čárkou)
+Daň (částka)
+Spropitné (% položek)
+
+Název položky
+Cena
+Anna
+Ben
+Klára
+Odebrat položku
+
+Víno
+Přidat položku
+Daň a spropitné se dělí v poměru k tomu, co si kdo objednal. Podíly se zaokrouhlují na haléř, aby dávaly přesný součet.
+Pořizovací cena
+Zbytková hodnota
+Doba použitelnosti (roky)
+Rovnoměrně
+Degresivně
+Metoda součtu číslic let
+Degresivní koeficient (2 = dvojnásobný)
+Odepisovatelná částka
+Náklad v prvním roce
+Konečná účetní hodnota
+Rovnoměrně = (cena − zbytková hodnota) ÷ doba. Degresivně = účetní hodnota × koeficient ÷ doba, v posledním roce se přejde na zbývající částku. Metoda součtu číslic let přesouvá odpisy na začátek: rok n dostane (doba − n + 1) ÷ Σ(1…doba). Daňová pravidla mají vlastní tabulky; ověřte je s účetním.
+Odpis za rok
+Dluhy: „název, zůstatek, úrok % ročně, minimální splátka“ na řádek
+Celková měsíční splátka, kterou si můžete dovolit
+Lavina (nejvyšší úrok první)
+
+Sněhová koule (nejmenší zůstatek první)
+
+Lavina ušetří
+Obě metody platí minima u každého dluhu a vše zbylé posílají na jeden cíl. Lavina míří na nejvyšší úrok a vždy vyjde nejlevněji; sněhová koule míří nejdřív na nejmenší zůstatek, což přináší rychlejší úspěchy.
+Zákazníci dnes
+Tržby na zákazníka za měsíc
+Noví zákazníci za měsíc
+Měsíční rozšíření tržeb na zákazníka (%)
+Měsíců k predikci
+Zákazníci po 24 měsících
+Měsíční tržby tehdy
+Podíl dnešních zákazníků po roce
+Polovina kohorty odejde po
+
+
+Zákazníci
+
+
+
+
+
+
+
+Oficiální sazba
+Vzdálenost
+Tam a zpět (dvojnásobná vzdálenost)
+Nebo použijte vlastní sazbu za jednotku
+Přepíše oficiální sazbu
+Náhrada
+
+Započtená vzdálenost
+Použitá sazba
+
+Oficiální sazby se každý rok mění a mají podmínky (jen služební použití, maximální částky, zdanění nad limit). Sazby v seznamu slouží k orientaci; aktuální hodnotu ověřte na finančním úřadě.
+Účet celkem
+Rozdělit mezi
+Sazby spropitného k porovnání (%)
+Zvyky se liší: v USA je obvyklých 15–20 %, ve velké části Evropy 5–10 % nebo zaokrouhlení nahoru a v mnoha zemích je obsluha zahrnuta.
+Oběžná aktiva (hotovost, pohledávky, zásoby…)
+Krátkodobé závazky (závazky vůči dodavatelům, krátkodobý dluh…)
+z toho zásoby
+z toho hotovost a ekvivalenty
+Čistý pracovní kapitál
+Běžná likvidita
+Pohotová likvidita
+Okamžitá likvidita
+Běžná likvidita = oběžná aktiva ÷ krátkodobé závazky (nad 1,2–2 bývá komfortní). Pohotová likvidita vylučuje zásoby. Okamžitá likvidita používá jen hotovost. Zdravé úrovně se liší podle odvětví.
+Stará cena
+Prodané jednotky za starou cenu
+Nová cena
+Prodané jednotky za novou cenu
+Cenová elasticita poptávky
+Poptávka je
+elastická
+Tržby před
+Tržby po
+Změna tržeb
+Vzorec středního bodu: procentní změna množství ÷ procentní změna ceny, obě měřené proti průměru staré a nové hodnoty. Pod −1 (elastická) zvýšení ceny tržby snižuje; mezi −1 a 0 (neelastická) je zvyšuje.
+Sdílená režie k rozdělení (nájem, energie, software…)
+Oddělení: „název, počet lidí, plocha, tržby“ na řádek
+Počet lidí
+Plocha
+Rozdělit podle
+Každé oddělení dostane fond v poměru ke svému podílu na zvoleném klíči. Vyberte klíč, který nejlépe vysvětluje, proč náklad vzniká: počet lidí pro licence softwaru, plocha pro nájem, tržby pro čas vedení.
+Kola financování: „název, investice, hodnota pre-money“ na řádek
+Zakladatelé po všech kolech
+Hodnota tohoto podílu
+Noví investoři dostanou investice ÷ post-money společnosti; stávající držitelé se ředí poměrně. Opční fondy, konvertibilní půjčky a SAFE se nemodelují.
+Podíl zakladatelů (%)
+Poslat částku a zjistit, co dorazí
+Přijmout částku a zjistit, kolik poslat
+Chci
+Částka (zdrojová měna při odesílání, cílová při přijímání)
+Střední kurz (cílové jednotky na 1 zdrojovou jednotku)
+Vyhledejte na stránce s kurzy; 1 EUR = 1,09 USD znamená 1,09
+Marže poskytovatele na kurzu (%)
+Banky často 2–5 %, specializované služby 0,3–1 %
+Pevný poplatek (zdrojová měna)
+Bezpečnostní rezerva na pohyby kurzu (%)
+Posíláte
+
+Příjemce dostane
+
+Kurz včetně pevného poplatku
+Ztraceno na marži a poplatcích
+
+Rozpočet s rezervou 2 %
+
+Střední kurz je „skutečný“ kurz mezi kupujícími a prodávajícími. Poskytovatelé vydělávají tím, že jej snižují (marže) a účtují poplatky; ztracená částka je skutečná cena převodu. Porovnávejte částku, která nakonec dorazí, ne inzerovaný poplatek.
+Čtvereční stopy
+Čtvereční metry
+Jednotka plochy
+Pronajímatelná plocha
+Základní nájem za jednotku ročně
+Provozní náklady / CAM / NNN za jednotku ročně
+Ostatní fixní náklady za měsíc (parkování, energie, pojištění)
+Roční valorizace nájmu (%)
+Doba nájmu (roky)
+Nájem zdarma (měsíce)
+Měsíční náklad, rok 1
+Celkem za dobu nájmu
+Průměrný náklad za čtvereční stopu ročně
+Podíl základního nájmu v roce 1
+Uváděné nájmy často nezahrnují provozní náklady: smlouvy „triple net“ (NNN) připočítávají daně, pojištění a údržbu. Porovnávejte celkový náklad za čtvereční stopu. Zkontrolujte, jak smlouva definuje pronajímatelnou plochu a kdo platí opravy a zvýšení při prodloužení.
+Kolik bude částka stát v budoucnu
+Kolik je dnes hodna částka z minulosti
+Průměrná míra inflace mezi dvěma cenami
+Průměrná roční inflace (%)
+Počet let
+Cena na začátku
+Cena na konci
+
+Kupní síla dnešní částky tehdy
+Zvýšení ceny
+Použijte dlouhodobý průměr: eurozóna a USA cílily mnoho let na asi 2 %, ale v letech 2022–23 měly mnohem vyšší míry. Skutečná inflace se liší podle zboží.
+Očekávaná částka
+Očekávaná částka (počáteční hotovost + tržby)
+Počáteční hotovost v kase plus hotovostní tržby
+Spočítejte každou nominální hodnotu jednou, zadejte počet bankovek nebo mincí a porovnejte s očekávanou částkou. Částky se počítají v celých haléřích, aby nevznikaly chyby zaokrouhlení. Stránka nic neukládá.
+Počet 100
+Počet 50
+Počet 20
+Počet 10
+Počet 5
+Počet 2
+Počet 1
+Počet 0,5
+Počet 0,25
+Počet 0,1
+Počet 0,05
+Počet 0,01
+Napočítáno
+
+Očekáváno
+
+Chybí
+Bankovky a mince
+
+Převést na
+Kvalita (JPG, WebP, AVIF)
+Pozadí pro průhledné oblasti (JPG)
+Stáhnout vše (ZIP)
+Vybrat obrázky
+Převádí JPG, PNG, WebP, GIF, BMP, SVG na zvolený formát. Výstup AVIF není v tomto prohlížeči dostupný.
+Vložit do maximální šířky / výšky
+Přesná šířka a výška (může deformovat)
+Procento originálu
+Změnit velikost podle
+Výška (px, 0 = automaticky)
+Měřítko (%)
+Povolit zvětšování malých obrázků
+Ponechat původní formát
+Kvalita
+Obrázky se zpracovávají ve vašem zařízení a nikdy se nenahrávají.
+WebP (nejmenší)
+JPG (nejkompatibilnější)
+PNG (bezztrátový, zmenší jen málo)
+Omezit také nejdelší stranu na (px, 0 = ponechat)
+Porovnejte výsledek s originálem pod každým obrázkem. Snižujte kvalitu, dokud neuvidíte rozdíl, a pak se vraťte o jeden krok zpět.
+Zachovat barevný profil (doporučeno, aby se barvy nezměnily)
+Zachovat příznak otočení (doporučeno, aby se fotka neotočila)
+JPG, PNG a WebP se čistí bez opětovného kódování: data obrázku se kopírují beze změny, takže kvalita je stejná. Ostatní formáty se znovu uloží jako PNG.
+Obrázek k úpravě
+Rozostření
+Pixelizace
+Černý obdélník (nejbezpečnější)
+Síla
+Přetáhněte sem snímek obrazovky nebo fotku nebo
+Vybrat obrázek
+Efekt
+Zpět
+Stáhnout PNG
+Jiný obrázek
+Přetáhněte obdélník přes část, kterou chcete skrýt. Pixelizace a rozostření snižují detaily, ale u hesel, tváří nebo čísel účtů je černý obdélník jediná metoda, kterou nelze zvrátit. Stažený soubor je nové PNG bez metadat.
+Průhledné pozadí
+Volně
+Přetáhněte sem obrázek nebo
+Tvar ořezu
+Otočit o (stupně)
+Barva výplně
+Převrátit vodorovně
+Převrátit svisle
+Stáhnout JPG
+Stáhnout WebP
+Tažením po obrázku vyberte oblast, která se má zachovat. Otočení a převrácení se použijí před ořezem.
+© Vaše jméno
+Text vodoznaku
+Opakovaně přes celý obrázek
+Úhlopříčně přes obrázek
+Velikost textu (% šířky obrázku)
+Krytí
+Tmavý obrys pro čitelnost
+Stejný formát
+Odsazení
+Zaoblené rohy
+Přetáhněte čtvercové logo (PNG, SVG nebo JPG, alespoň 512 × 512 px) nebo
+Odsazení kolem loga
+Barva pozadí
+Barva textu
+
+Ukázka velkého textu
+Běžný text: Příliš žluťoučký kůň úpěl ďábelské ódy.
+Kontrastní poměr
+
+
+
+
+
+Kontrast WCAG 2.1 = (L1 + 0,05) ÷ (L2 + 0,05), kde L je relativní svítivost světlejší a tmavší barvy. Velký text je alespoň 24 px nebo 18,66 px tučně. Poloprůhledné barvy se kontrolují tak, jak jsou zadány, bez smíchání s pozadím.
+Vybrat barvu z obrazovky
+Počet barev
+Barvy se hledají seskupením podobných pixelů a zprůměrováním každé skupiny (k-means), váženě podle počtu pixelů sdílejících barvu; podíl ukazuje, jakou část obrázku každá barva pokrývá.
+1:1 (čtverec)
+9:16 (stories)
+1,91:1 (náhled odkazu)
+4:5 (portrét na Instagramu)
+Cílový poměr stran
+Průhledné odsazení (PNG)
+Barva odsazení
+Vyplnit rozmazanou kopií obrázku
+Data URI
+Značka HTML <img>
+CSS background-image
+Jen Base64
+Nebo vložte data URI či řetězec Base64 a uvidíte obrázek
+Base64 na obrázek
+Přiblížení
+Průhledné mimo kruh
+Přetáhněte sem portrétní fotku nebo
+Šířka kroužku (px)
+Barva kroužku
+Výstupní velikost
+Přetažením obrázku vycentrujte obličej a použijte posuvník přiblížení. Stažené PNG má mimo kruh průhledné pozadí.
+Okno macOS
+Okno Windows
+Okno prohlížeče
+Bez rámečku
+Stín
+Text adresního řádku
+Přetáhněte sem snímek obrazovky nebo
+Vybrat snímek obrazovky
+Tip: vložte snímek obrazovky pomocí Ctrl+V / ⌘V.
+Rámeček okna
+Odsazení (px)
+Začátek přechodu
+Konec přechodu
+Úhel přechodu (°)
+Text adresy
+Kopírovat obrázek
+Jiný snímek obrazovky
+Obrázek A (originál)
+Vybrat
+Obrázek B (změněný)
+Práh citlivosti (0 = každá změna)
+Barva zvýraznění
+Každý pixel A se porovnává se stejným pixelem B. Pixely, jejichž barva se liší více než o práh, se vymalují barvou zvýraznění; nezměněné oblasti se zobrazí vybledle.
+Černobíle (odstíny šedi)
+Duoton (dvě barvy)
+Sépie (teplý vintage vzhled)
+Invertovat barvy (negativ)
+Náhled tmavého režimu (invertovat, zachovat odstíny)
+Čistě černobíle (práh)
+Jen jas a kontrast
+Práh
+Jas
+Kontrast
+Uložit jako
+Černobíle, duoton, sépie, inverze, tmavý režim a jas/kontrast. Obrázky se zpracovávají ve vašem zařízení.
+Zjistit z okraje obrázku (automaticky)
+Bílá
+Černá
+Barva k odstranění
+Tolerance
+Měkký okraj
+Funguje nejlépe na jednobarevném, rovnoměrně osvětleném pozadí (bílý papír, studiové pozadí, zelená obrazovka). Odstraňuje barvu, ne osobu: u složitých scén použijte nástroj založený na AI.
+Vložte kód SVG nebo otevřete soubor .svg
+Vstup SVG
+Optimalizované SVG
+Odstranit <title> a <desc> (škodí přístupnosti)
+Odstranit nepoužívané atributy id
+Desetinná místa pro souřadnice
+2 stačí pro většinu ikon
+Kód SVG
+Optimalizováno
+Jen bezpečné optimalizace: odstraní se metadata editoru, komentáře, jmenné prostory a bílé znaky a čísla se zaokrouhlí. Cesty se nepřepisují, takže kresba zůstane stejná. Před použitím výsledku zkontrolujte náhled; velmi malé ikony mohou potřebovat více desetinných míst.
+Němčina
+Polština
+Čeština
+Angličtina + němčina
+Angličtina + polština
+Angličtina + čeština
+Rozpoznaný text
+Přetáhněte sem obrázek s textem (snímek obrazovky, foto dokumentu, sken) nebo
+Jazyk textu
+Rozpoznávací jádro (Tesseract, zkompilované do WebAssembly) a jazyková data se načítají z tohoto webu a běží ve vašem prohlížeči: obrázek se nenahrává. První spuštění trvá o pár sekund déle. Nejlepší výsledky dává rovný, ostrý, kontrastní text; ručně psané písmo není podporováno.
+Vedle sebe
+Pod sebou
+Mřížka (2 × 2)
+Rozdělená obrazovka s dělicí čárou (2 obrázky)
+Čtverec 1:1
+Na výšku 9:16
+Přidejte obrázky v pořadí, v jakém se mají zobrazit
+Přidat obrázky
+Rozvržení
+Tvar plátna
+Mezera (px)
+Stáhnout JPEG
+Obrázky se ořezávají tak, aby vyplnily svou buňku (cover). Pro srovnání před a po použijte rozvržení s rozdělenou obrazovkou.
+KDYŽ KÓD FUNGUJE
+Horní text
+NA PRVNÍ POKUS
+Dolní text
+Barva obrysu
+Velká písmena
+Vyberte obrázek pro svůj meme
+Velikost textu (% šířky)
+Obrázek zůstává ve vašem zařízení. Používá se Impact, pokud ho váš systém má; jinak tučné bezpatkové písmo. Používejte jen obrázky, které smíte sdílet.
+2 (černobíle)
+256 (maximum pro PNG-8)
+Dithering (plynulejší přechody, větší soubor)
+Zmenšit velmi velké obrázky na šířku nejvýše (px, 0 = ponechat)
+Snižuje počet barev a ukládá malé indexované PNG (jako pngquant). Skvělé pro loga, ikony, snímky obrazovky a ilustrace; fotky mohou ukazovat pruhování, pokud nepoužijete dithering.
+Přetáhněte sem fotku (JPEG, PNG nebo WebP) nebo
+Metadata se čtou ze souboru ve vašem prohlížeči; fotka se nenahrává. Komunikátory a sociální sítě je často odstraňují, ale přílohy e-mailů a odkazy na cloud je obvykle zachovávají.
+JPG (funguje všude)
+PNG (bezztrátový, větší)
+WebP (malý)
+Kvalita (JPG, WebP)
+Maximální šířka (px, 0 = originál)
+Fotky HEIC/HEIF z iPhonů a některých telefonů s Androidem. Dekódují se ve vašem zařízení (libheif, WebAssembly); nic se nenahrává. Převádějí se i jiné typy obrázků.
+Donekonečna
+Opakovat jednou
+Přehrát jednou
+256 (nejlepší)
+32 (menší)
+16 (nejmenší)
+Šedá
+Přetáhněte sem dva nebo více obrázků (v pořadí animace) nebo
+Čas na obrázek (ms)
+Opakování
+Barvy
+Pozadí (pro průhledné oblasti a okraje)
+Obrázky různých tvarů se vloží do rámu prvního obrázku bez deformace. Každý snímek dostane vlastní barevnou paletu. Vše se děje ve vašem prohlížeči.
+Sinus (čistý tón)
+Obdélník
+Trojúhelník
+Pila
+Frekvence (logaritmická)
+Hlasitost
+Oba reproduktory
+Jen levý
+Jen pravý
+Přehrát
+Přeběh 20 Hz → 20 kHz (30 s)
+Basy 100 Hz
+
+
+
+Frekvence (Hz)
+Posuvník (logaritmický)
+Vlna
+Kanál
+⚠ Začněte s nízkou hlasitostí a pomalu ji zvyšujte. Čisté tóny, zejména vysoké, mohou být hlasité a únavné a 15–20 kHz může ve sluchátkách bolet.
+
+Sem vložte svůj scénář
+Scénář
+Rychlost
+Velikost textu
+Zrcadlit text (pro teleprompter se sklem)
+Čtecí linka
+Pozastavit / pokračovat
+Zavřít
+Spustit teleprompter
+
+Klepejte na tlačítko (nebo mačkejte mezerník) do rytmu
+Klik metronomu v klepaném tempu
+
+Špička: nejhlasitější bod na cílovou hodnotu
+Hlasitost (RMS): průměrná úroveň na cílovou hodnotu
+Cílová úroveň (dBFS)
+Špička: −1 je běžné. RMS: asi −16 pro podcasty.
+
+
+Kvalita WAV
+Přetáhněte sem zvukový soubor nebo
+
+Práh ticha (dBFS)
+Cokoli tišší než toto se počítá jako ticho.
+Ponechaná rezerva (ms)
+Zkrátit i dlouhé pauzy uvnitř nahrávky
+Pauzy delší než (ms)
+
+Smíchat do mono
+Prohodit levý a pravý
+Ztlumit levý kanál
+Ztlumit pravý kanál
+Obrátit polaritu levého kanálu
+Obrátit polaritu pravého kanálu
+Obrátit oba kanály
+Posunout mono mix doleva / doprava
+Operace
+Panorama (−100 vlevo … +100 vpravo)
+
+Půltóny
+Rychlost v procentech
+Změnit o
+Půltóny (−12 = o oktávu níž, +12 = o oktávu výš)
+Rychlost (%)
+
+● Nahrávat
+■ Stop
+Ponechat od (sekundy)
+Ponechat do (sekundy)
+Nahrávka zůstává ve vašem prohlížeči. Stáhněte ji před zavřením stránky. Mikrofon se vypne, jakmile stisknete Stop.
+Zahrnout zvuk systému / karty (pokud ho prohlížeč nabízí)
+Zahrnout můj mikrofon
+● Spustit nahrávání
+
+Výchozí kamera
+Výchozí
+1920 × 1080 (Full HD)
+
+
+
+Spustit kameru
+Kamera
+Požadované rozlišení
+Požadovaná snímkovací frekvence
+
+Změřit 8 sekund ticha
+Buďte potichu a nechte místnost tak, jak je při běžném nahrávání. Test měří průměrnou úroveň hluku pozadí.
+Ding
+Bzučák
+Bubnový vír
+Smutný pozoun
+Potlesk
+Svist
+Poplašný roh
+Nový level
+Špatná odpověď
+Správná odpověď
+Pípnutí časovače
+Přidat vlastní zvuky
+
+Zachovat přirozenou výšku hlasu
+Vyberte video k náhledu v jiné rychlosti
+
+Barevná karta
+Úroveň šedi
+
+Neutrální šedá (18 %)
+Denní bílá 6500 K
+Teplá bílá 3200 K
+Studená bílá 7500 K
+Červená
+Celá obrazovka
+Libovolná barva
+Úroveň šedi 0–255
+Šestnáctková hodnota
+Spustit kontrolu znovu
+
+Měřit 5 sekund
+Sledujte pohyblivý pruh, zda nesekají, zatímco prohlížeč počítá snímky.
+Výška (px)
+Úhlopříčka obrazovky v palcích (volitelné)
+Změnit měřítko na šířku (px, volitelné)
+Přesný poměr
+Nejbližší standard
+16:9 · Širokoúhlý (HD, Full HD, 4K)
+Megapixely
+Hustota pixelů
+
+Fyzická velikost
+Při šířce 1280 px
+Běžný ořez: pro získání obrazu 16:9 při stejné šířce použijte výšku 1080 px.
+Šířka monitoru 1 (px)
+Výška monitoru 1 (px)
+Úhlopříčka monitoru 1 (palce)
+Šířka monitoru 2 (px)
+Výška monitoru 2 (px)
+Úhlopříčka monitoru 2 (palce)
+Hustota monitoru 1
+
+Hustota monitoru 2
+
+Poměr hustot
+Fyzická velikost monitoru 1
+Fyzická velikost monitoru 2
+Rozdíl výšky
+
+Operační systémy nabízejí jen pevné kroky škálování (100, 125, 150, 175, 200 %); vyberte nejbližší.
+Vyberte video, ze kterého se mají vyjmout snímky
+◀ 1 snímek
+1 snímek ▶
+Snímková frekvence 
+Uložit snímek (PNG)
+Uložit snímek (JPEG)
+
+Ponechat část mezi začátkem a koncem
+Odstranit část mezi začátkem a koncem
+Začátek (sekundy)
+Konec (sekundy, 0 = konec souboru)
+Náběh (ms)
+Dozvuk (ms)
+WAV (bezztrátový, velký)
+MP3 (malý)
+
+
+
+
+
+
+
+Datový tok MP3
+
+Přetáhněte sem dva nebo více zvukových souborů nebo
+Prolnutí mezi skladbami (ms)
+0 = přehrát jednu po druhé
+
+Změna hlasitosti (dB)
+Kladné = hlasitěji, záporné = tišeji
+Zabránit přebuzení (omezit nejhlasitější špičku na 0 dBFS)
+
+
+
+
+
+Plochý (beze změny)
+Zvýraznění basů
+Zvýraznění výšek
+Čistota hlasu
+Loudness (křivka „úsměv“)
+Teplý a jemný
+Předvolba
+
+Převést na mono (poloviční velikost)
+
+Nahrát zvuk z mikrofonu
+Zapnout kameru
+
+Napište nebo vložte text k přečtení nahlas
+Výchozí hlas
+Nejsou nainstalovány žádné hlasy
+▶ Číst nahlas
+Pozastavit
+Hlas
+Rychlost (0,5–2)
+Výška tónu (0,5–2)
+Hlasitost (%)
+
+Redukce šumu (dB)
+Vyšší odstraní víc, ale řeč může znít tence
+Citlivost (1–5)
+Vyšší bere víc zvuku jako šum
+Část jen se šumem: od (sekundy)
+do (sekundy, 0 = zjistit automaticky)
+
+Přetáhněte sem skladbu nebo nahrávku nebo
+
+Délka
+Vyhnout se podobným znakům (I l 1 O 0)
+Vygenerovat nové
+
+
+
+
+Sada znaků
+Pomlčka -
+Mezera
+Tečka .
+Podtržítko _
+Žádný
+Velká počáteční písmena slov
+Přidat číslici k jednomu slovu
+Oddělovač
+
+
+
+Seznam slov
+7 776 slov (EFF)
+
+Volitelné: tajný klíč pro ověření HS256 / HS384 / HS512
+JSON Web Token
+Tajný klíč (volitelné)
+Ověření probíhá lokálně pomocí Web Crypto; tajný klíč se nikam neposílá.
+Wi-Fi pro hosty
+Název sítě (SSID)
+WPA / WPA2 / WPA3
+WEP (staré)
+Bez hesla
+Zabezpečení
+
+Skrytá síť
+Malé (256 px)
+Střední (512 px)
+Velké (1024 px)
+Pro tisk (2048 px)
+Nízká (7 %)
+Střední (15 %)
+Kvartil (25 %)
+Vysoká (30 %)
+Barva QR kódu
+Oprava chyb
+Velikost PNG
+Stáhnout SVG
+Kopírovat obsah
+
+Jméno
+
+Příjmení
+Vzor s.r.o.
+Firma
+Pozice
+Telefon
+Mobil
+
+E-mail
+Web
+Ulice
+Město
+Země
+
+Odkaz na web
+Prostý text
+SMS zpráva
+Obsah
+Odkaz, text, e-mailová adresa nebo telefonní číslo
+Předmět
+Zpráva
+
+Napište soukromou zprávu (stručně: putuje v odkazu)
+Náhodný klíč (klíč pošlete zvlášť)
+Vlastní heslo
+Vaše zpráva
+Chránit pomocí
+
+Pište sem. Vše se automaticky ukládá v tomto prohlížeči.
+Poznámkový blok
+Stáhnout .txt
+
++ Nový blok
+Přejmenovat
+Uloženo
+✓ v tomto prohlížeči
+Přidejte položku a stiskněte Enter
+Nová položka
+Kopírovat jako text
+Zrušit výběr všech
+Odebrat dokončené
+Váš seznam se ukládá jen v tomto prohlížeči.
+Napsat koncept
+Nahoru
+Smazat položku
+Projít s týmem
+Zveřejnit
+Kopírovat jako Markdown
+Obnovit nástěnku
+
+Naplánovat projekt
+Doleva
+Doprava
+Smazat kartu
++ Přidat kartu
+Přidat kartu do „K udělání“
+Rozpracováno (0)
+Přidat kartu do „Rozpracováno“
+Hotovo (0)
+Přidat kartu do „Hotovo“
+Počítat po 1
+Počítat po 2
+Počítat po 5
+Počítat po 10
+Odečíst
+
+Vložte svůj dokument Markdown
+Číslovaný seznam
+Vložit obsah do dokumentu
+Obsah
+Od úrovně nadpisu
+Do úrovně
+
+Dobrý den {{name}}, vaše objednávka {{order_id}} bude odeslána {{date}}.
+Šablona
+Vyplněný text
+Šablona se zástupnými znaky {{placeholders}}
+
++ Kritérium
+
+Možnost A
+Název možnosti
+Možnost B
+Možnost C
++ Možnost
+Kritérium
+Odebrat kritérium
+🏆 Nejvyšší vážené skóre
+První dvě jsou velmi blízko. Před rozhodnutím zkontrolujte váhy a skóre.
+Co jste dělali včera? Jedna položka na řádek
+Co budete dělat dnes?
+Překážky (nechte prázdné, pokud žádné)
+Slack / Teams (tučné, odrážky)
+Aktualizace standupu
+Včera
+Dnes
+Překážky
+Připraveno k vložení
+Vložte sem (Ctrl+V). Písma, barvy, odkazy a formátování se odstraní.
+Vyrovnávací paměť prostého textu
+Odstranit mezery a prázdné řádky na koncích
+Sloučit více prázdných řádků
+Nahradit typografické uvozovky a zvláštní mezery
+Kopírovat jako prostý text
+
+# Ahoj⏎⏎Sem napište **Markdown**…
+Kopírovat do e-mailu
+Kopírovat HTML
+
+Hledat úryvky…
+Hledat úryvky
+Název (např. IBAN, adresa, odpověď)
+Název úryvku
+Text kopírovaný jedním kliknutím
+Text úryvku
+Přidat úryvek
+Exportovat vše (JSON)
+Importovat
+
+E-mailový podpis
+Upravit
+Smazat
+Úryvky
+Uloženo
+jen v tomto prohlížeči
+Vložte sem formátovaný text
+Zachovat odkazy
+Zachovat tabulky
+Zachovat nadpisy
+Vyčistit HTML
+Zkopírujte text z Wordu, Dokumentů Google, webové stránky nebo e-mailu, klikněte do pole a vložte (Ctrl+V).
+
+Text → Braille
+Braille → Text
+Napište text nebo vložte znaky Braillova písma (⠓⠑⠇⠇⠕)…
+
+Rodina Novákových
+Domácnost nebo osoba
+Adresa
+Kontakty (jeden na řádek: jméno; telefon)
+Zdravotní údaje (alergie, léky, krevní skupina)
+Poznámky (klíče, zvířata, nápovědy ke kódu alarmu)
+Vytvořit tiskový list (PDF)
+
+Spusťte sprint a pak pište bez zastavení a bez úprav…
+Oblast psaní
+Spustit sprint
+Ukončit teď
+Délka sprintu (minuty)
+Cíl slov (0 = žádný)
+Nejdřív pište, upravujte později. Text se uchovává jen na této stránce: před zavřením jej zkopírujte nebo stáhněte. Nic se nenahrává.
+Úkoly: „název, optimisticky, nejpravděpodobněji, pesimisticky“ na řádek
+Libovolná jednotka (dny, hodiny, story pointy).
+Cílový součet (stejná jednotka, volitelné)
+Očekávaný součet
+Směrodatná odchylka
+S 80% jistotou do
+S 95% jistotou do
+
+
+Jedno jméno na řádek
+Jména
+Odebrat vítěze po každém zatočení
+Zvuk tikání
+Kolo jmen
+Zamíchat jména
+Zatočit kolem
+
+Účastníci
+Anna != Ben   (Anna nesmí darovat Benovi)⏎Klára != David
+Vyloučení
+Skrýt dvojice přede mnou (zobrazit jen soukromé odkazy)
+Vyloučení (volitelné)
+Páry, lidé, kteří se už znají…
+
+Soukromé odkazy: pošlete každému jeho vlastní
+otevřít
+Kopírovat vše (jméno: odkaz)
+Losovat znovu
+Jeden tým nebo hráč na řádek, nejlépe nasazený první
+Účastníci
+Vyřazovací systém
+Každý s každým
+Účastníci (nejlépe nasazený první)
+Kola
+Volné losy
+
+Generální ředitel⏎  Technický ředitel⏎    Vývojář⏎  Finanční ředitel
+Organizační struktura
+Šířka políčka (px)
+Barva zvýraznění
+Struktura (odsazení = podléhá)
+
+Vložte e-mail nebo zprávu, kterou se chystáte odeslat
+Napište vše, co máte na mysli, jedna myšlenka na řádek nebo ve větách…
+Výpis myšlenek
+Váš výpis myšlenek
+Kopírovat jako kontrolní seznam Markdown
+Stáhnout .md
+
+Úkoly
+Otázky
+Nápady
+Obavy
+Nahradit nezlomitelné mezery běžnými
+Zachovat spojovače uvnitř emoji (ZWJ)
+Text se skrytými znaky
+Vyčištěný text
+
+
+
+
+
+
+
+
+
+Ignorovat velikost písmen
+Odstranit mezery kolem řádků
+Vynechat prázdné řádky
+Zachovat původní pořadí
+Nejprve nejčastější
+Pořadí
+Zobrazit, kolikrát se každý řádek vyskytl
+Unikátní řádky
+Unikátní
+Odstraněno
+nový řádek
+čárka
+středník
+tabulátor
+mezera
+svislá čára
+čárka a mezera
+nic
+
+
+
+Obalit každou položku do
+prostý text
+pole [ … ]
+seznam SQL ( … )
+Výsledek zabalit jako
+E-mailové adresy
+Adresy URL
+Telefonní čísla
+UUID
+Adresy IPv4
+Šestnáctkové barvy
+Hashtagy
+@zmínky
+Data (ISO nebo D.M.R)
+Čísla
+Čísla IBAN
+Vlastní regulární výraz…
+Najít
+Vlastní vzor (regex JavaScript)
+Odstranit duplicity
+Zobrazeno
+Původní text
+Změněný text
+Řádek po řádku
+Slovo po slově
+Znak po znaku
+Ignorovat bílé znaky
+Ignorovat velikost písmen
+Porovnat
+Prohodit
+Kopírovat patch
+Stáhnout .patch
+Přidané řádky
+Odstraněné řádky
+Beze změny
+Vložte buňky zkopírované z Excelu, Tabulek Google, CSV nebo tabulky Markdown
+Data tabulky
+Tabulka Markdown
+Tabulka HTML
+Zjistit automaticky
+Čárka
+Středník
+2+ mezery
+První řádek je záhlaví
+Zarovnat sloupce ve zdroji
+Zarovnání
+Limity platforem
+Bez mezer
+Viditelné symboly (grafémy)
+Bajty UTF-8
+Příspěvek na X / Twitteru
+Příspěvek na LinkedInu
+Titulek na LinkedInu
+Popisek na Instagramu
+Příspěvek na Facebooku (doporučeno)
+Nadpis Google Ads
+Popis Google Ads
+Meta titulek (≈ 600 px)
+Meta popis
+Název na YouTube
+Popisek na TikToku
+SMS (GSM-7, 160 na část)
+
+Vložte sem projev nebo scénář
+Vaše tempo (slov za minutu)
+Pauza na odstavec (sekundy)
+Přidává se po každém prázdném řádku
+Pomalu · 110 wpm
+Přirozeně · 150 wpm
+Energicky · 180 wpm
+Vaše tempo · 140 wpm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tabulka
+Vygenerovaná data
+Jazyk jmen
+Vygenerovat nová data
+E-maily používají vyhrazenou doménu example.com a telefonní čísla fiktivní rozsahy, takže nic nedorazí do skutečné schránky ani na skutečný telefon.
+Pomlčky: – → -  a — → --
+Výpustka … → ...
+Ligatury ﬁ ﬂ æ → fi fl ae
+Zvláštní mezery → běžná mezera, odstranit znaky s nulovou šířkou
+Odrážky • → *
+Zachovat zalomení odstavců (prázdné řádky)
+Spojit slova rozdělená spojovníkem na konci řádku
+Ponechat položky odrážkových a číslovaných seznamů na vlastních řádcích
+Text před každým řádkem
+Text za každým řádkem
+Vložit počítadlo tam, kde je {n}
+Počítadlo začíná na
+Číslice počítadla (doplněné nulami)
+Přeskočit prázdné řádky
+Abecedně (A–Z)
+Přirozená čísla (v2 před v10)
+Číselná hodnota v řádku
+Seřadit podle
+Obrátit pořadí
+Vložte libovolný text, zdroj HTML nebo export schránky
+Seskupit podle domény
+E-maily
+Unikátní e-maily
+Domény
+Vložte text s odkazy nebo jednu nepřehlednou adresu URL
+Odstranit celý řetězec dotazu
+Odstranit #fragmenty
+Vyčistit odkazy v mém textu
+Vypsat jen unikátní vyčištěné adresy URL
+Nalezené adresy URL
+Po odstranění sledování
+Odstraněné parametry
+Malá písmena
+Vynechat malá slova (a, v, na, se …)
+Maximální délka (0 = bez limitu)
+Názvy (jeden na řádek)
+Slugy
+Posun (13 = ROT13, stejný pro kódování i dekódování)
+Otáčet i číslice (ROT5)
+Převést také na čisté ASCII (café → cafe, vše ostatní odstranit)
+Nahradit čím
+Zobrazit malá písmena malými
+Text k hláskování
+Hláskovací abeceda NATO
+Zamíchané řádky
+Zamíchat znovu
+chyba
+obsahuje
+začíná na
+končí na
+rovná se
+Řádek…
+Ponechat řádky, které NEODPOVÍDAJÍ
+Použít regulární výraz
+Ponechané řádky
+Seznam A (jedna položka na řádek)
+Seznam B (jedna položka na řádek)
+Čárka + mezera
+Svislá čára
+Pomlčka
+Doplnit sloupec A, aby sloupce lícovaly
+Sloučeno
+Seznam A
+Seznam B
+Tabulátory → mezery
+Mezery → tabulátory
+Převést
+Mezer na tabulátor
+Odstranit koncové bílé znaky
+Měnit jen odsazení (ne tabulátory uvnitř řádků)
+Jednotlivá slova
+Dvouslovné fráze
+Tříslovné fráze
+Počet
+Ignorovat běžná slova v
+Minimální počet
+Stáhnout CSV
+Termínů celkem
+Různých
+Slova v textu
+Vložte dlouhý text k rozdělení
+Preferovat hranice odstavců
+Nikdy nerozdělovat uprostřed slova
+Maximální počet znaků na část
+Překryv (znaky)
+Stáhnout vše (.txt)
+Části
+Nejdelší
+Vložte svůj e-mail, zprávu nebo inzerát na práci
+Zvýrazněno
+Alternativy v jednoduchém jazyce
+Módní fráze
+Na 100 slov
+Žádný žargon nenalezen.
+Vnořený seznam HTML
+Seznam Markdown
+Osnova s odsazením
+Text
+Šestnáctkově
+Dvojkově
+Desítkově
+Osmičkově
+
+
+nový řádek
+Oddělovač mezi bajty
+Napište text nebo vložte Morseovku (tečky, čárky, / mezi slovy)
+Text → Morse
+Morse → text
+Přehrát jako zvuk
+Rychlost (slov za minutu)
+Výška tónu (Hz)
+Jiný jazyk (jen skóre nezávislá na jazyce)
+Označit věty delší než (slova)
+Skóre
+Věty v souhrnu
+Jazyk
+Text k shrnutí
+Shrnutí
+Text A (například originál)
+Text A
+Text B (například text ke kontrole)
+Text B
+Nejkratší společná pasáž (slova za sebou)
+
+Aktuální čas Unix (sekundy)
+Časová razítka nebo data (jedno na řádek)
+Sekundy, milisekundy, mikrosekundy, ISO 8601 nebo RRRR-MM-DD hh:mm:ss (UTC)
+Zobrazit místní čas v
+Rozdíl
+
+Dnů celkem
+Týdny
+Pracovní dny (po–pá)
+Hodiny
+Minuty
+Datum po N pracovních dnech
+Pracovní dny mezi dvěma daty
+Počáteční datum
+Pracovní dny k přičtení (záporné = zpět)
+Koncové datum
+Bez svátků
+Spojené státy (federální)
+Spojené království (Anglie a Wales)
+Německo (celostátní)
+Polsko
+Česko
+Rakousko
+Státní svátky
+Sobota a neděle
+Pátek a sobota
+Jen neděle
+Bez víkendu (7denní týden)
+Víkend
+Další volné dny (RRRR-MM-DD, jeden na řádek)
+Firemní uzavírky, dny dovolené…
+Počítat počáteční a koncový den
+
+Kalendářní dny
+Počítáno od 2026-11-04; samotný počáteční den se nepočítá.
+Zahájení projektu
+Název události
+Celodenní událost
+Začátek
+Konec
+Časové pásmo
+Místo nebo odkaz na video
+Účastníci (e-maily, jeden na řádek)
+5 minut předem
+15 minut předem
+1 hodinu předem
+1 den předem
+Připomenutí
+Neopakuje se
+Týdně
+Počet opakování
+Stáhnout soubor .ics
+Otevřít v Kalendáři Google
+Přidat město nebo časové pásmo…
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Začátek práce (hodina)
+Konec práce (hodina)
+
+
+
+
+
+
+Pruhy ukazují 24 hodin UTC (vlevo = 00:00). Tmavě zelená: všichni jsou v pracovní době. Světle zelená: toto město pracuje. Šedá: víkend.
+V tento den v těchto pracovních hodinách není čas, který by vyhovoval všem. Zkuste delší pracovní dobu nebo jiné datum.
+Hovor týmu
+Název schůzky
+Datum a čas
+Časové pásmo tohoto času
+V pásmu vašeho prohlížeče
+
+
+Zahájit schůzku
+Lidé na schůzce
+Průměrný roční plat (včetně benefitů)
+Pracovní hodiny za rok
+1 800 ≈ 225 dní × 8 h
+Plánovaná délka (minuty)
+Bez zvuku
+Bílý šum
+Růžový šum
+Hnědý šum (hluboké dunění)
+Déšť
+Šum kavárny
+Soustředění
+Přeskočit
+Soustředění (min)
+Krátká pauza (min)
+Dlouhá pauza (min)
+Sezení před dlouhou pauzou
+Zvuk na pozadí
+Zvuky se generují ve vašem prohlížeči pomocí Web Audio API; nic se nestahuje. Odpočet se zobrazuje i v názvu karty prohlížeče.
+Bez zaokrouhlení
+1 minuta
+5 minut
+6 minut (0,1 h)
+15 minut (0,25 h)
+30 minut
+Zaokrouhlit na
+Nejbližší
+Dolů
+Zaokrouhlení
+Hodiny a minuty nebo desetinné hodiny (jedny na řádek)
+Desetinné hodiny  ·  h:mm
+Celkem h:mm
+Po začátek
+Po konec
+Po minuty pauzy
+Út začátek
+Út konec
+Út minuty pauzy
+St začátek
+St konec
+St minuty pauzy
+Čt začátek
+Čt konec
+Čt minuty pauzy
+Pá začátek
+Pá konec
+Pá minuty pauzy
+So začátek
+So konec
+So minuty pauzy
+Ne začátek
+Ne konec
+Ne minuty pauzy
+volitelné
+Týdenní přesčasy po (hodiny)
+Denní přesčasy po (hodiny, 0 = vypnuto)
+Hodinová sazba (volitelné)
+Násobitel přesčasů
+Hodin celkem
+Běžné
+Přesčasy
+Výpočty (jeden na řádek)
+Výsledky
+Leden
+Únor
+Březen
+Duben
+Květen
+Červen
+Červenec
+Srpen
+Září
+Říjen
+Listopad
+Prosinec
+Fiskální rok začíná v
+Týden ISO
+Den v týdnu
+Středa
+Den v roce
+Dnů do konce roku
+Kalendářní čtvrtletí
+Fiskální čtvrtletí
+Týdnů v roce ISO
+Přestupný rok
+První datum
+každých N dní
+každých N týdnů
+každých N měsíců
+každých N let
+např. po, st
+V pracovní dny (jen týdně)
+Nechte prázdné, aby se použil den v týdnu prvního data
+stejný den v měsíci
+první pracovní den v měsíci
+druhý pracovní den
+třetí pracovní den
+čtvrtý pracovní den
+poslední pracovní den
+Měsíčně v
+Kolik dat
+Přesunout víkendová data na pondělí
+Přeskočit i státní svátky
+Kalendářní datum (UTC)
+nebo číslo juliánského dne
+Pokud je vyplněno, převede se místo toho na datum
+
+Juliánský den (JD)
+Upravený JD
+Pořadové datum
+Sekundy Unix
+
+Sekundy
+1 min
+2 min
+3 min
+5 min
+10 min
+15 min
+20 min
+30 min
+45 min
+60 min
+Celá obrazovka
+Hodiny v poslední čtvrtině zoranžoví a v posledních 10 procentech zčervenají a při nule pípnou. Pro promítání na projektoru použijte celou obrazovku.
+Kolo
+Exportovat kola (CSV)
+Klávesnice: mezerník spouští a zastavuje, L zaznamená kolo. Přesnost zajišťuje performance.now(), monotónní hodiny, které změny systémového času neovlivňují.
+Stiskněte Kolo (nebo klávesu L) pro zaznamenání mezičasů.
+24hodinové hodiny
+
+
+
+
+
+
+
+První sprint začíná
+Pracovních dnů na sprint
+Počet sprintů
+Státní svátky (pro orientaci)
+Sprinty běží jen v pracovní dny (pondělí až pátek). Svátky jsou uvedeny, abyste mohli upravit rozsah; sprint automaticky nezkracují.
+Vlastní souřadnice
+
+
+
+Praha
+Varšava
+Vídeň
+
+Řím
+
+
+
+
+
+Mexiko
+
+Káhira
+
+
+
+Singapur
+
+
+
+Místo
+Zeměpisná šířka (°S)
+Zeměpisná délka (°V)
+Zobrazit časy v
+Použít mou polohu
+Východ slunce
+Západ slunce
+Sluneční poledne
+Denní světlo
+
+Oproti včerejšku
+
+Zlatá hodinka (večer)
+
+Fáze
+🌘 Ubývající srpek
+Osvětleno
+Stáří Měsíce
+
+Příští nov
+
+Nadcházející novy a úplňky
+
+Svátky pro pracovní dny
+Rok 2026
+
+Čtvrtletí Q4
+
+Měsíc
+
+Týden (po–ne)
+
+Dnů do konce roku
+Zbývající týdny
+Zbývající pracovní dny (včetně dneška)
+
+Počet dnů zahrnuje zvolený den. Pracovní dny jsou pondělí až pátek bez státních svátků zvolené země.
+začíná (FR2025 = dub 2025–bře 2026)
+končí (FR2025 = dub 2024–bře 2025)
+Fiskální rok se jmenuje podle kalendářního roku, ve kterém
+USA federální (říj)
+UK / Indie (dub)
+Kalendářní rok
+Austrálie (čvc)
+Fiskální rok
+Rok trvá
+Průběh
+
+
+America/New_York, Europe/London
+např. America/New_York, Asia/Tokyo
+Vaše časové pásmo
+Zobrazit také v (oddělené čárkou)
+Volné časové rozsahy (jeden na řádek)
+Vložte text do e-mailu nebo chatu. Letní čas se řeší pro zvolené datum a jiný kalendářní den v jiném pásmu se označí.
+
+Datum odletu
+Čas odletu (místní)
+Časové pásmo odletu
+Doba letu (hh:mm)
+Časové pásmo příletu
+Přestup (hh:mm, volitelné)
+Druhý let (hh:mm, volitelné)
+Konečné časové pásmo (při druhém letu)
+Přílet
+
+Posun časových pásem
+Doba letu
+
+
+Časy používají pravidla letního času pásem pro zobrazená data. Použijte plánovanou dobu letu z letenky; kalkulačka vaši leteckou společnost nezná.
+Dostupné hodiny týdně
+Rezerva na schůzky, e-maily a překvapení (%)
+Plánovaná práce: „název, hodiny“ na řádek
+Plánováno
+Použitelné po rezervě
+Volná kapacita
+Na pracovní den (5 dní)
+Plán se vejde. Plány obvykle trvají déle, než se čeká, a k tomu je rezerva.
+Čtvrtletí začíná
+Délka v týdnech
+Pondělí
+Úterý
+Čtvrtek
+Pátek
+Týdenní den kontroly
+Události
+Kontroly
+Čtvrtletí končí
+
+◷ použít aktuální pozici
+Konec (sekundy, 0 = do konce)
+Rychlý režim (bez překódování, střihy na klíčových snímcích)
+Rychle (větší soubor)
+Vyvážené
+Vysoká kvalita (pomaleji)
+Kvalita / rychlost
+Oříznout video
+Zrušit
+Přetáhněte sem video nebo
+
+Stejně jako první klip
+1080 × 1920 (na výšku)
+Velikost snímku
+Spojit videa
+Přetáhněte sem dvě nebo více videí nebo
+
+MP4 (H.264, funguje všude)
+WebM (VP8, pro web)
+Animovaný GIF (bez zvuku)
+MP3 (jen zvuk)
+M4A / AAC (jen zvuk)
+WAV (jen zvuk, velký)
+Ponechat původní velikost
+Maximální šířka
+Snímků GIF za sekundu
+Odstranit zvuk
+
+Kvalita (CRF, 18–38)
+Vyšší = menší soubor
+Maximální výška
+Nejrychleji (větší soubor)
+Pomalu (menší soubor)
+Komprimovat video
+
+Bez ořezu
+Na poměr stran (vystředěno)
+Obdélník (pixely)
+Oříznout
+16:9 (na šířku)
+9:16 (na výšku, Stories/Reels)
+4:5 (portrét)
+21:9 (kino)
+Vlevo (px)
+Nahoře (px)
+Bez otočení
+90° po směru hodin
+90° proti směru hodin
+Otočit
+Převrátit vodorovně (zrcadlově)
+Použít
+
+Výška (standardní velikosti)
+Přesná šířka a výška
+1080 p (Full HD)
+Výška
+Změnit velikost videa
+
+Rychlost (×)
+0,5 = poloviční rychlost, 2 = dvakrát rychleji
+Změnit rychlost
+
+Kolikrát celkem přehrát
+Rychlý režim (bez překódování)
+Vytvořit smyčku
+
+Kladné = hlasitěji
+Úplně odstranit zvuk
+
+Nahradit původní zvuk
+Smíchat s původním zvukem
+Co udělat
+Hlasitost původního zvuku (%)
+Hlasitost nového zvuku (%)
+Skončit s kratším z obou (jinak může zvuk běžet dál)
+Přidat zvuk
+Vybrat zvukový soubor
+
+Váš text
+Velikost písma (px)
+Žlutá
+Barva (hex)
+Uprostřed vlevo
+Uprostřed vpravo
+Tmavé pole za textem
+Zobrazit od (sekundy)
+Zobrazit do (sekundy, 0 = konec)
+Přidat text
+
+Velikost (% šířky videa)
+Odsazení od okraje (px)
+Přidat obrázek
+Vybrat obrázek nebo logo
+
+Odstranit logo
+
+Délka (sekundy, 0 = do konce)
+Snímků za sekundu
+Ještě jednou
+Neopakovat
+Vytvořit GIF
+
+Rozsah hledání (px, 4–64)
+Větší = opraví větší otřesy, ale může se unášet
+Vyplnit zrcadlením
+Nechat černé
+Okraje
+Stabilizovat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Text je příliš dlouhý pro živý test (limit 300 000 znaků).
+Vzor trval příliš dlouho (přes 2 sekundy). Může způsobit katastrofální zpětné prohledávání, například vnořenými opakováními jako (a+)+. Upravte jej konkrétněji.
+Soubory nad 2 GB jsou pro tento hashovací nástroj v prohlížeči příliš velké
+Zadejte krytí
+Zadejte platné datum
+Toto je písmo WOFF2. WOFF2 používá kompresi Brotli, kterou tento nástroj nedokáže rozbalit. Použijte původní soubor TTF, OTF nebo WOFF.
+Kolekce písem (.ttc) nejsou podporovány. Nejprve vyjměte jedno písmo.
+Nevypadá to na soubor písma (TTF, OTF nebo WOFF).
+Formátovač SQL se nepodařilo načíst.
+Vaše firma s.r.o.⏎Příkladná 1⏎110 00 Praha 1
+Jméno zákazníka⏎Zákaznická 5⏎602 00 Brno
+Stolní lampa LED; 2; ks⏎Kancelářská židle; 4; ks⏎Sada kabelů; 1; sada
+Alex Příkladný⏎Sam Vzorový
+jako uznání mimořádného nasazení a skvěle odvedené práce.
+Nebyl nalezen žádný text. Toto PDF může být sken: nejprve ho proveďte přes „PDF OCR“.
+Zadejte cílovou velikost, například 2 MB nebo 500 KB.
+Přidejte alespoň jednu položku.
+Zadejte částku větší než nula.
+Zadejte alespoň jednu adresu. Štítky oddělte prázdným řádkem.
+Toto není soubor .docx (chybí word/document.xml). Staré soubory .doc je nutné nejprve uložit jako .docx.
+Nevypadá to na archiv ZIP, TAR ani GZ.
+V tomto EPUB nebyl nalezen čitelný text.
+Vyplňte všechna pole
+Vyplňte obě hodnoty
+Zadejte alespoň dva číselné peněžní toky
+Zkontrolujte provizní pásma
+Přidejte alespoň jednoho zpracovatele
+Investice musí být větší než nula
+Vyberte datum
+Zbytková hodnota nesmí překročit náklady
+Zkontrolujte seznam dluhů
+Obě ceny se musí lišit
+Zkontrolujte kola
+Sazba musí být větší než nula
+Zadejte kladnou počáteční cenu a počet let
+Vyberte soubory s obrázky (JPG, PNG, WebP, GIF, AVIF, BMP, SVG).
+Obrázek A ✓
+Obrázek B ✓
+Nevypadá to na kód SVG (chybí prvek <svg>).
+Optimalizované SVG není platné XML: vstup už může být poškozený.
+Načítání jádra pro rozpoznávání textu…
+Kódování selhalo
+Tento prohlížeč tento formát zakódovat nedokáže
+Dekodér HEIC se nepodařilo spustit.
+Tento soubor HEIC se nepodařilo dekódovat (poškozený nebo nepodporovaná varianta).
+Dekódování selhalo
+Stop
+
+Konec scénáře
+Klepejte dál…
+Váš prohlížeč nedokáže nahrávat obrazovku (chybí getDisplayMedia). Použijte aktuální prohlížeč pro počítač.
+Váš prohlížeč nedokáže přehrát tento formát videa. MP4 (H.264), WebM a MOV z telefonů obvykle fungují.
+Tento prohlížeč nedokáže zachytit přehrávání videa pro export. Použijte místo toho rychlost náhledu.
+Váš prohlížeč nedokáže přehrát tento formát videa. MP4 (H.264), WebM a většina videí z telefonů funguje.
+Váš prohlížeč nemá přístup ke kameře (chybí mediaDevices). Otevřete tuto stránku přes https v aktuálním prohlížeči.
+Váš prohlížeč nemá syntézu řeči. Zkuste aktuální Chrome, Edge, Safari nebo Firefox.
+Hotovo.
+Nejprve zadejte text.
+Pokračovat
+Váš prohlížeč nedokázal dekódovat tento zvukový soubor. Zkuste WAV, MP3, M4A, OGG nebo FLAC.
+Zadejte šířku a výšku.
+Vyplňte všech šest hodnot.
+Konec musí být po začátku.
+Je to příliš mnoho dat pro jeden QR kód. Zkraťte obsah nebo snižte opravu chyb.
+
+
+
+Dobrý den {{name}},⏎⏎děkujeme za objednávku {{order_id}}. Bude odeslána {{date}}.⏎⏎S pozdravem⏎{{sender}}
+Opravena chyba přihlášení⏎Zkontrolovány 2 pull requesty
+Začít funkci exportu⏎Plánování týmu
+Čekám na přístupové údaje k API
+
+Aktualizovat úryvek
+Příkladná 12⏎110 00 Praha 1
+
+Alergie: penicilin⏎Krevní skupina: A+⏎Léky: žádné
+Záložní klíč u souseda v č. 14.⏎Toxikologické středisko: 112
+Zadejte obsah kódu
+není seznam
+
+
+
+🏆 Vítěz
+
+
+Přidejte alespoň jeden úkol
+
+
+
+
+
+
+
+
+
+
+SOS Pomoc
+Start
+Zadejte zeměpisnou šířku od −90 do 90, zeměpisnou délku od −180 do 180 a datum.
+vlastní
+Zadejte dvě platná data
+Zadejte platné počáteční datum
+Zadejte počet pracovních dnů
+Zadejte platné koncové datum
+Dejte události název
+Vyberte datum a čas
+Zadejte platné první datum
+Zadejte platné datum nebo juliánský den
+Zadejte platné datum.
+Vyberte datum.
+Zadejte alespoň jeden časový rozsah.
+Časový rozsah musí končit po svém začátku.
+Vyberte datum odletu.
+Zadejte dobu letu.
+Zadejte dostupné hodiny týdně.
+Přidejte alespoň jeden úkol.
+Vyberte počáteční datum.
+Načítání videojádra (asi 31 MB, jen jednou)…
+Zpracování…
+Zrušeno.

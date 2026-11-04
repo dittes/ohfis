@@ -3,31 +3,38 @@
 
 const LANG = document.documentElement.lang || 'en';
 let DICT = {};
+let TR = {};
 export const lang = LANG;
 export async function loadDict() {
   if (LANG === 'en') { DICT = (await import('/assets/i18n/ut.en.js')).default; return; }
   try { DICT = (await import(`/assets/i18n/ut.${LANG}.js`)).default; } catch { DICT = (await import('/assets/i18n/ut.en.js')).default; }
+  // Per-language table of the English interface and sample texts written inside the tools (English text → translation)
+  try { TR = (await import(`/assets/i18n/tr.${LANG}.js`)).default; } catch { TR = {}; }
 }
+/** Translate an English interface string; unknown strings (and anything that is not a string) come back unchanged. */
+export const tr = s => { if (typeof s !== 'string') return s; globalThis.__trSeen?.add(s); return TR[s] ?? s; };
 export const t = (key, vars) => {
   let s = DICT[key] ?? key;
   if (vars) for (const [k, v] of Object.entries(vars)) s = s.replaceAll(`{${k}}`, v);
   return s;
 };
 
+// Tags whose text is data (table cells, code, results), never an interface string
+const RAW_TAGS = new Set(['td', 'th', 'pre', 'code', 'textarea', 'script', 'style', 'kbd', 'samp']);
 export function h(tag, props = {}, ...kids) {
   const el = document.createElement(tag);
   for (const [k, v] of Object.entries(props || {})) {
     if (v == null || v === false) continue;
     if (k === 'class') el.className = v;
     else if (k.startsWith('on')) el.addEventListener(k.slice(2).toLowerCase(), v);
-    else if (k === 'value') el.value = v;
+    else if (k === 'value') el.value = (tag === 'input' && props.type === 'text') || tag === 'textarea' ? tr(v) : v;
     else if (k === 'checked' || k === 'disabled' || k === 'selected') el[k] = !!v;
     else if (k === 'style' && typeof v === 'object') Object.assign(el.style, v);
-    else el.setAttribute(k, v === true ? '' : v);
+    else el.setAttribute(k, v === true ? '' : (k === 'placeholder' || k === 'aria-label' || k === 'title') ? tr(v) : v);
   }
   for (const kid of kids.flat(Infinity)) {
     if (kid == null || kid === false) continue;
-    el.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
+    el.append(kid.nodeType ? kid : document.createTextNode(typeof kid === 'string' && !RAW_TAGS.has(tag) ? tr(kid) : String(kid)));
   }
   return el;
 }
@@ -82,7 +89,7 @@ export function field(label, control, hint) {
 export const textInput = (value = '', props = {}) => h('input', { type: 'text', class: 'pt-input', value, ...props });
 export const numInput = (value, props = {}) => h('input', { type: 'number', class: 'pt-input', value, ...props });
 export const select = (options, value, props = {}) => h('select', { class: 'pt-input', ...props },
-  options.map(o => { const [v, l] = Array.isArray(o) ? o : [o, o]; return h('option', { value: v, selected: String(v) === String(value) }, l); }));
+  options.map(o => { const [v, l] = Array.isArray(o) ? o : [o, o]; return h('option', { value: v, selected: String(v) === String(value) }, tr(l)); }));
 export const check = (label, checked = false, props = {}) => {
   const input = h('input', { type: 'checkbox', checked, ...props });
   return Object.assign(h('label', { class: 'pt-check' }, input, h('span', {}, label)), { input });

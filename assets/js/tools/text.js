@@ -1,5 +1,5 @@
 // text.js — UI for the text tools. Logic lives in lib/text.js (unit-tested).
-import { h, t, textTool, wrap, field, select, check, numInput, textInput, area, btn, copyText, download, stat, table, fmtNum, copyBar, debounce } from './kit.js';
+import { tr, h, t, textTool, wrap, field, select, check, numInput, textInput, area, btn, copyText, download, stat, table, fmtNum, copyBar, debounce } from './kit.js';
 import * as T from './lib/text.js';
 import * as TM from './lib/textmore.js';
 import * as D from './lib/diff.js';
@@ -71,7 +71,7 @@ export const tools = {
     a.addEventListener('input', debounce(run, 150)); b.addEventListener('input', debounce(run, 150));
     ui.append(h('div', { class: 'ut-options' }, field('Compare', mode), ws, ci),
       h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('strong', {}, 'Original'), a), h('div', { class: 'ut-col' }, h('strong', {}, 'Changed'), b)),
-      h('div', { class: 'ut-actions' }, btn('Swap', () => { [a.value, b.value] = [b.value, a.value]; run(); }), btn('Sample', () => { a.value = 'Dear team,\nThe launch is on Monday.\nPlease send the slides.\nThanks'; b.value = 'Dear team,\nThe launch is on Tuesday.\nPlease send the final slides.\nThanks,\nAnn'; run(); }, 'ghost'),
+      h('div', { class: 'ut-actions' }, btn('Swap', () => { [a.value, b.value] = [b.value, a.value]; run(); }), btn('Sample', () => { a.value = tr('Dear team,\nThe launch is on Monday.\nPlease send the slides.\nThanks'); b.value = tr('Dear team,\nThe launch is on Tuesday.\nPlease send the final slides.\nThanks,\nAnn'); run(); }, 'ghost'),
         btn('Copy patch', () => copyText(patch)), btn('Download .patch', () => download('changes.patch', patch))),
       stats, out); run();
   },
@@ -88,7 +88,7 @@ export const tools = {
       prev.replaceChildren(table(rows, { header: hd.input.checked }));
     }
     ui.append(h('div', { class: 'ut-options' }, field('Output', fmt), field('Input separator', dl), field('Alignment', al), hd, pretty),
-      h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('div', { class: 'ut-colhead' }, h('strong', {}, 'Table data'), btn('Sample', () => { input.value = 'Item\tQty\tPrice\nPen\t10\t1.50\nNotebook\t3\t4.20'; update(); }, 'ghost')), input),
+      h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('div', { class: 'ut-colhead' }, h('strong', {}, 'Table data'), btn('Sample', () => { input.value = tr('Item\tQty\tPrice\nPen\t10\t1.50\nNotebook\t3\t4.20'); update(); }, 'ghost')), input),
         h('div', { class: 'ut-col' }, h('div', { class: 'ut-colhead' }, h('strong', {}, 'Result'), copyBar(() => out.value, 'table.' + (fmt.value === 'md' ? 'md' : 'html'))), out)), h('strong', {}, 'Preview'), prev);
   },
   'character-counter'(root) {
@@ -151,7 +151,7 @@ export const tools = {
   'email-extractor'(root) {
     const ui = wrap(root); const input = area({ placeholder: 'Paste any text, HTML source or a mailbox export', rows: 9, onInput: run }); const grp = check('Group by domain', false, { onChange: run }); const out = area({ readonly: true, rows: 9, 'aria-label': 'Emails' }); const stats = h('div', { class: 'ut-stats' });
     function run() { const r = T.extractEmails(input.value); out.value = grp.input.checked ? Object.entries(r.byDomain).map(([d, e]) => `# ${d} (${e.length})\n${e.join('\n')}`).join('\n\n') : r.emails.join('\n'); stats.replaceChildren(stat('Found', num(r.total)), stat('Unique', num(r.emails.length)), stat('Domains', num(Object.keys(r.byDomain).length))); }
-    ui.append(h('div', { class: 'ut-options' }, grp), h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('div', { class: 'ut-colhead' }, h('strong', {}, t('input')), btn(t('sample'), () => { input.value = 'Contact: Ann <ann@example.com>, BOB@Example.com; sales@shop.example.org.\nCC: ann@example.com'; run(); }, 'ghost')), input), h('div', { class: 'ut-col' }, h('div', { class: 'ut-colhead' }, h('strong', {}, 'Unique emails'), copyBar(() => out.value, 'emails.txt')), out)), stats); run();
+    ui.append(h('div', { class: 'ut-options' }, grp), h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('div', { class: 'ut-colhead' }, h('strong', {}, t('input')), btn(t('sample'), () => { input.value = tr('Contact: Ann <ann@example.com>, BOB@Example.com; sales@shop.example.org.\nCC: ann@example.com'); run(); }, 'ghost')), input), h('div', { class: 'ut-col' }, h('div', { class: 'ut-colhead' }, h('strong', {}, 'Unique emails'), copyBar(() => out.value, 'emails.txt')), out)), stats); run();
   },
   'url-extractor-tracking-remover'(root) {
     const ui = wrap(root); const input = area({ placeholder: 'Paste text with links, or a single messy URL', rows: 9, onInput: run });
@@ -162,7 +162,7 @@ export const tools = {
       out.value = mode.value === 'clean' ? T.cleanUrlsInText(input.value, o) : found.map(f => f.url).join('\n');
       const removed = new Set(found.flatMap(f => f.removed)); stats.replaceChildren(stat('URLs found', num(found.length)), stat('With tracking removed', num(found.filter(f => f.removed.length).length)), stat('Parameters stripped', [...removed].join(', ') || '–'));
     }
-    ui.append(h('div', { class: 'ut-options' }, field('Output', mode), all, hash), h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('div', { class: 'ut-colhead' }, h('strong', {}, t('input')), btn(t('sample'), () => { input.value = 'Read https://example.com/post?id=7&utm_source=news&utm_medium=email&fbclid=IwAR1 and https://example.org/?gclid=abc#top'; run(); }, 'ghost')), input), h('div', { class: 'ut-col' }, h('div', { class: 'ut-colhead' }, h('strong', {}, t('output')), copyBar(() => out.value, 'urls.txt')), out)), stats); run();
+    ui.append(h('div', { class: 'ut-options' }, field('Output', mode), all, hash), h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('div', { class: 'ut-colhead' }, h('strong', {}, t('input')), btn(t('sample'), () => { input.value = tr('Read https://example.com/post?id=7&utm_source=news&utm_medium=email&fbclid=IwAR1 and https://example.org/?gclid=abc#top'); run(); }, 'ghost')), input), h('div', { class: 'ut-col' }, h('div', { class: 'ut-colhead' }, h('strong', {}, t('output')), copyBar(() => out.value, 'urls.txt')), out)), stats); run();
   },
   'slug-generator'(root) {
     textTool(root, { options: [{ key: 'sep', label: 'Separator', type: 'select', value: '-', choices: [['-', 'Hyphen -'], ['_', 'Underscore _'], ['', 'None']] }, { key: 'lower', label: 'Lower case', type: 'check', value: true }, { key: 'stop', label: 'Drop small words (a, the, of …)', type: 'check', value: false }, { key: 'max', label: 'Max length (0 = no limit)', type: 'number', value: 0, min: 0 }],
@@ -191,7 +191,7 @@ export const tools = {
     const sep = select([['\t', 'Tab (paste into Excel)'], [', ', 'Comma + space'], [' | ', 'Pipe'], [' - ', 'Dash'], [' ', 'Space'], [';', 'Semicolon']], '\t', { onChange: run }), pad = check('Pad column A so columns line up', false, { onChange: run }); const out = area({ readonly: true, rows: 8, 'aria-label': 'Merged' });
     function run() { out.value = T.mergeColumns(a.value, b.value, { sep: sep.value, pad: pad.input.checked }); }
     ui.append(h('div', { class: 'ut-options' }, field('Separator', sep), pad), h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('strong', {}, 'List A'), a), h('div', { class: 'ut-col' }, h('strong', {}, 'List B'), b)),
-      h('div', { class: 'ut-actions' }, btn(t('sample'), () => { a.value = 'Ann\nBen\nCleo'; b.value = 'Berlin\nParis\nRome'; run(); }, 'ghost'), btn(t('copy'), () => copyText(out.value), 'primary')), out); run();
+      h('div', { class: 'ut-actions' }, btn(t('sample'), () => { a.value = tr('Ann\nBen\nCleo'); b.value = tr('Berlin\nParis\nRome'); run(); }, 'ghost'), btn(t('copy'), () => copyText(out.value), 'primary')), out); run();
   },
   'tabs-to-spaces'(root) {
     textTool(root, { options: [{ key: 'mode', label: 'Convert', type: 'select', value: 'tabs-to-spaces', choices: [['tabs-to-spaces', 'Tabs → spaces'], ['spaces-to-tabs', 'Spaces → tabs']] }, { key: 'size', label: 'Spaces per tab', type: 'select', value: '4', choices: ['2', '3', '4', '8'] }, { key: 'trail', label: 'Trim trailing whitespace', type: 'check', value: false }, { key: 'lead', label: 'Only change indentation (not tabs inside lines)', type: 'check', value: true }],
@@ -203,21 +203,21 @@ export const tools = {
     function run() { const r = T.wordFrequency(input.value, { n: Number(n.value), stop: stop.value, min: Number(min.value) || 1, limit: 200 }); csv = 'term,count,percent\n' + r.rows.map(x => `${x.word},${x.count},${x.pct.toFixed(2)}`).join('\n');
       stats.replaceChildren(stat('Total terms', num(r.total)), stat('Distinct', num(r.unique)), stat('Words in text', num(r.tokens)));
       out.replaceChildren(table([['Term', 'Count', 'Density'], ...r.rows.map(x => [x.word, num(x.count), x.pct.toFixed(2) + ' %'])], { max: 200 })); }
-    ui.append(h('div', { class: 'ut-options' }, field('Count', n), field('Ignore common words in', stop), field('Minimum count', min)), input, h('div', { class: 'ut-actions' }, btn(t('sample'), () => { input.value = 'Remote work changed how teams work. Teams that work remotely need clear goals, clear communication and regular check-ins. Remote work works when goals are clear.'; run(); }, 'ghost'), btn('Download CSV', () => download('word-frequency.csv', csv, 'text/csv'))), stats, out); run();
+    ui.append(h('div', { class: 'ut-options' }, field('Count', n), field('Ignore common words in', stop), field('Minimum count', min)), input, h('div', { class: 'ut-actions' }, btn(t('sample'), () => { input.value = tr('Remote work changed how teams work. Teams that work remotely need clear goals, clear communication and regular check-ins. Remote work works when goals are clear.'); run(); }, 'ghost'), btn('Download CSV', () => download('word-frequency.csv', csv, 'text/csv'))), stats, out); run();
   },
   'text-splitter'(root) {
     const ui = wrap(root); const input = area({ placeholder: 'Paste the long text to split', rows: 9, onInput: run }); const max = numInput(2000, { min: 1, onInput: run }), ov = numInput(0, { min: 0, onInput: run }), bp = check('Prefer paragraph boundaries', false, { onChange: run }), bw = check('Never cut inside a word', true, { onChange: run }); const out = h('div', { class: 'ut-chunks' }), stats = h('div', { class: 'ut-stats' }); let chunks = [];
     function run() { try { chunks = T.chunkText(input.value, Math.max(1, Number(max.value) || 1), { overlap: Number(ov.value) || 0, byWords: bw.input.checked, byParagraph: bp.input.checked }); } catch { chunks = []; }
       stats.replaceChildren(stat('Chunks', num(chunks.length)), stat('Longest', num(Math.max(0, ...chunks.map(c => c.length)))));
       out.replaceChildren(...chunks.slice(0, 200).map((c, i) => h('div', { class: 'ut-chunk' }, h('div', { class: 'ut-colhead' }, h('strong', {}, `Part ${i + 1}`), h('span', { class: 'pt-hint' }, `${num(c.length)} characters`), btn(t('copy'), () => copyText(c), 'ghost')), h('pre', {}, c)))); }
-    ui.append(h('div', { class: 'ut-options' }, field('Max characters per chunk', max), field('Overlap (characters)', ov), bw, bp), input, h('div', { class: 'ut-actions' }, btn(t('sample'), () => { input.value = 'Lorem ipsum dolor sit amet. '.repeat(40); max.value = 300; run(); }, 'ghost'), btn('Download all (.txt)', () => download('chunks.txt', chunks.map((c, i) => `--- Part ${i + 1} ---\n${c}`).join('\n\n')))), stats, out); run();
+    ui.append(h('div', { class: 'ut-options' }, field('Max characters per chunk', max), field('Overlap (characters)', ov), bw, bp), input, h('div', { class: 'ut-actions' }, btn(t('sample'), () => { input.value = tr('Lorem ipsum dolor sit amet. ').repeat(40); max.value = 300; run(); }, 'ghost'), btn('Download all (.txt)', () => download('chunks.txt', chunks.map((c, i) => `--- Part ${i + 1} ---\n${c}`).join('\n\n')))), stats, out); run();
   },
   'buzzword-detector'(root) {
     const ui = wrap(root); const input = area({ placeholder: 'Paste your email, report or job post', rows: 9, onInput: run }); const out = h('div', { class: 'ut-richout' }), list = h('div'), stats = h('div', { class: 'ut-stats' });
     function run() { const s = input.value; const hits = T.findBuzzwords(s); const parts = []; let pos = 0; for (const x of hits) { if (x.index < pos) continue; parts.push(s.slice(pos, x.index)); parts.push(h('mark', { title: `Try: ${x.replacement}` }, s.slice(x.index, x.index + x.length))); pos = x.index + x.length; } parts.push(s.slice(pos)); out.replaceChildren(...parts);
       const by = {}; hits.forEach(x => { (by[x.word] ||= { r: x.replacement, n: 0 }).n++; }); stats.replaceChildren(stat('Buzzwords', num(hits.length)), stat('Words', num(T.wordCount(s))), stat('Per 100 words', T.wordCount(s) ? fmtNum(hits.length / T.wordCount(s) * 100, 1) : '0'));
       list.replaceChildren(Object.keys(by).length ? table([['Jargon', 'Say instead', 'Times'], ...Object.entries(by).map(([w, v]) => [w, v.r, v.n])]) : h('p', { class: 'pt-hint' }, 'No jargon found.')); }
-    ui.append(input, h('div', { class: 'ut-actions' }, btn(t('sample'), () => { input.value = 'Going forward we will leverage our core competencies to move the needle. Let us circle back after a deep dive into the low-hanging fruit and align stakeholders.'; run(); }, 'ghost')), stats, h('h2', { class: 'ut-h' }, 'Highlighted'), out, h('h2', { class: 'ut-h' }, 'Plain-language alternatives'), list); run();
+    ui.append(input, h('div', { class: 'ut-actions' }, btn(t('sample'), () => { input.value = tr('Going forward we will leverage our core competencies to move the needle. Let us circle back after a deep dive into the low-hanging fruit and align stakeholders.'); run(); }, 'ghost')), stats, h('h2', { class: 'ut-h' }, 'Highlighted'), out, h('h2', { class: 'ut-h' }, 'Plain-language alternatives'), list); run();
   },
   'outline-converter'(root) {
     textTool(root, { options: [{ key: 'fmt', label: 'Convert to', type: 'select', value: 'json', choices: [['json', 'JSON'], ['html', 'HTML nested list'], ['xml', 'XML'], ['markdown', 'Markdown list'], ['yaml', 'YAML']] }, { key: 'tab', label: 'Spaces per tab', type: 'number', value: 2, min: 1, max: 8 }],
@@ -239,12 +239,12 @@ export const tools = {
       ctx ||= new (window.AudioContext || window.webkitAudioContext)(); await ctx.resume(); const unit = 1200 / (Number(wpm.value) || 15) / 1000; const gain = ctx.createGain(); gain.gain.value = 0; gain.connect(ctx.destination);
       const osc = ctx.createOscillator(); osc.frequency.value = Number(freq.value) || 600; osc.connect(gain); osc.start(); let at = ctx.currentTime + 0.05;
       for (const [on, ms] of T.morseTimeline(code, unit * 1000)) { if (on) { gain.gain.setTargetAtTime(0.4, at, 0.004); gain.gain.setTargetAtTime(0, at + ms / 1000 - 0.01, 0.004); } at += ms / 1000; }
-      playing = true; playBtn.textContent = 'Stop'; const timer = setTimeout(done, (at - ctx.currentTime) * 1000 + 100);
-      function done() { osc.stop(); gain.disconnect(); playing = false; playBtn.textContent = 'Play as sound'; } stop = () => { clearTimeout(timer); done(); };
+      playing = true; playBtn.textContent = tr('Stop'); const timer = setTimeout(done, (at - ctx.currentTime) * 1000 + 100);
+      function done() { osc.stop(); gain.disconnect(); playing = false; playBtn.textContent = tr('Play as sound'); } stop = () => { clearTimeout(timer); done(); };
     }
     const playBtn = btn('Play as sound', play, 'primary');
     ui.append(h('div', { class: 'ut-options' }, field('Direction', dir), field('Speed (words per minute)', wpm), field('Pitch (Hz)', freq)), h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('strong', {}, t('input')), input), h('div', { class: 'ut-col' }, h('strong', {}, t('output')), out)),
-      h('div', { class: 'ut-actions' }, playBtn, btn(t('copy'), () => copyText(out.value)), btn(t('sample'), () => { input.value = 'SOS Help'; run(); }, 'ghost'))); run();
+      h('div', { class: 'ut-actions' }, playBtn, btn(t('copy'), () => copyText(out.value)), btn(t('sample'), () => { input.value = tr('SOS Help'); run(); }, 'ghost'))); run();
   },
 
   'readability-score'(root) {

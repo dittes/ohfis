@@ -1,5 +1,5 @@
 // video.js — video tools. FFmpeg (WebAssembly) runs in a worker on this page; the command lines come from lib/video.js.
-import { h, t, area, btn, select, check, field, numInput, textInput, filePicker, download, stat, wrap, debounce } from './kit.js';
+import { tr, h, t, area, btn, select, check, field, numInput, textInput, filePicker, download, stat, wrap, debounce } from './kit.js';
 import * as V from './lib/video.js';
 import { runFFmpeg, probeFile, reset, explain } from './lib/ffrun.js';
 
@@ -34,7 +34,7 @@ function videoTool(root, spec) {
   const ready = () => spec.many ? files.length >= 2 : files.length >= 1 && (!spec.extra || extra);
   async function load(list0) {
     err.hidden = true; result.replaceChildren(); out.replaceChildren(); if (!spec.many) { files = []; infos = []; }
-    for (const f of list0) { try { status.textContent = 'Loading the video engine (about 31 MB, only once)…'; const log = await probeFile(f, s => { if (s === 'loading') status.textContent = 'Loading the video engine (about 31 MB, only once)…'; }); const i = V.parseProbe(log); if (!i.hasVideo && !spec.audioOnlyOk) throw new Error(`${f.name} does not look like a video file.`); files.push(f); infos.push(i); } catch (e) { err.textContent = e.message || String(e); err.hidden = false; } }
+    for (const f of list0) { try { status.textContent = tr('Loading the video engine (about 31 MB, only once)…'); const log = await probeFile(f, s => { if (s === 'loading') status.textContent = tr('Loading the video engine (about 31 MB, only once)…'); }); const i = V.parseProbe(log); if (!i.hasVideo && !spec.audioOnlyOk) throw new Error(`${f.name} does not look like a video file.`); files.push(f); infos.push(i); } catch (e) { err.textContent = e.message || String(e); err.hidden = false; } }
     status.textContent = ''; if (!spec.many && files[0]) { if (srcUrl) URL.revokeObjectURL(srcUrl); srcUrl = URL.createObjectURL(files[0]); player.src = srcUrl; player.hidden = false; const i = infos[0]; if (spec.onLoad) spec.onLoad(i, ctl); read(); drawRect(); }
     renderList(); showInfo(); go.disabled = !ready();
   }
@@ -46,7 +46,7 @@ function videoTool(root, spec) {
       const b = spec.build(opts, ctx); const inputs = files.map((f, k) => ({ name: `in${k}.mp4`, file: f })); const extraFiles = [];
       if (spec.extra) extraFiles.push({ name: `in1.${spec.extra.ext}`, file: extra });
       if (b.needsFont) { extraFiles.push({ name: 'font.ttf', data: new Uint8Array(await (await fetch('/assets/vendor/fonts/DejaVuSans.ttf')).arrayBuffer()) }); extraFiles.push({ name: 'text.txt', data: new TextEncoder().encode(b.textFile) }); }
-      const r = await runFFmpeg(inputs, b.args, `out.${b.ext}`, { extraFiles, onProgress: p => { bar.value = p; status.textContent = `Processing… ${Math.round(p * 100)} %`; }, onStatus: s => { if (s === 'running') status.textContent = 'Processing…'; } });
+      const r = await runFFmpeg(inputs, b.args, `out.${b.ext}`, { extraFiles, onProgress: p => { bar.value = p; status.textContent = `Processing… ${Math.round(p * 100)} %`; }, onStatus: s => { if (s === 'running') status.textContent = tr('Processing…'); } });
       const mime = { mp4: 'video/mp4', webm: 'video/webm', gif: 'image/gif', mp3: 'audio/mpeg', m4a: 'audio/mp4', wav: 'audio/wav' }[b.ext]; const blob = new Blob([r.data], { type: mime }), fn = `${baseName(files[0].name)}${spec.suffix}.${b.ext}`;
       if (outUrl) URL.revokeObjectURL(outUrl); outUrl = URL.createObjectURL(blob);
       const media = b.ext === 'gif' ? h('img', { src: outUrl, alt: 'Result', style: { maxWidth: '100%', borderRadius: '8px' } }) : ['mp3', 'm4a', 'wav'].includes(b.ext) ? h('audio', { src: outUrl, controls: true, style: { width: '100%' } }) : h('video', { src: outUrl, controls: true, playsinline: true, style: { width: '100%', maxHeight: '420px', background: '#000', borderRadius: '8px' } });
@@ -56,7 +56,7 @@ function videoTool(root, spec) {
     } catch (e) { err.textContent = e.message?.startsWith('FFmpeg') || e.log ? e.message : (e.message || explain(String(e))); err.hidden = false; status.textContent = ''; if (e.cancelled) err.hidden = true; }
     finally { busy = false; go.disabled = !ready(); cancel.hidden = true; bar.hidden = true; }
   }
-  const go = btn(spec.button || 'Process video', process, 'primary', { disabled: true }), cancel = btn('Cancel', () => { reset(); busy = false; status.textContent = 'Cancelled.'; bar.hidden = true; cancel.hidden = true; go.disabled = !ready(); }, 'ghost', { hidden: true });
+  const go = btn(spec.button || 'Process video', process, 'primary', { disabled: true }), cancel = btn('Cancel', () => { reset(); busy = false; status.textContent = tr('Cancelled.'); bar.hidden = true; cancel.hidden = true; go.disabled = !ready(); }, 'ghost', { hidden: true });
   const extraName = h('span', { class: 'pt-hint' }, ''); const extraBox = spec.extra ? h('div', { class: 'ut-actions' }, filePicker({ accept: spec.extra.accept, label: spec.extra.label, onFiles: loadExtra }), extraName) : null;
   const drop = h('div', { class: 'ut-drop' }, h('p', {}, spec.many ? 'Drop two or more videos here, or' : 'Drop a video here, or'), filePicker({ accept: VIDEO_ACCEPT, multiple: !!spec.many, label: t('chooseFile'), onFiles: load })); ['dragover', 'drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); if (ev === 'drop' && e.dataTransfer.files.length) load(spec.many ? [...e.dataTransfer.files] : [e.dataTransfer.files[0]]); }));
   ui.append(drop, list, spec.many ? null : stage, info, extraBox, h('div', { class: 'ut-options' }, nodes), h('div', { class: 'ut-actions' }, go, cancel), bar, status, err, result, out, h('p', { class: 'pt-hint' }, (spec.note ? spec.note + ' ' : '') + 'The video is processed by FFmpeg inside your browser; it is never uploaded. Large videos need a lot of memory and time on a phone; the first use downloads the video engine (about 31 MB), which your browser then keeps.'));

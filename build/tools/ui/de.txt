@@ -1,0 +1,2975 @@
+CSV oder aus Excel / Google Sheets kopierte Zellen hier einfügen oder eine Datei öffnen
+Automatisch erkennen
+Komma ,
+Semikolon ;
+Tabulator
+Pipe |
+Tabulator (zum Einfügen in Excel)
+Jeden Wert in Anführungszeichen setzen
+UTF-8-BOM hinzufügen (hilft Excel bei Umlauten)
+LF (Mac, Linux)
+CRLF (Windows)
+Trennzeichen der Eingabe
+Ausgabeformat
+Trennzeichen der Ausgabe
+Zeilenenden
+Alle Spalten durchsuchen…
+Suchen
+CSV-Datei beliebiger Größe hier ablegen oder
+CSV-Datei wählen
+Die Datei wird in einem Hintergrund-Thread indiziert und nur die Zeilen, zu denen du scrollst, werden gelesen. So bleiben auch Dateien über 200 MB flüssig.
+Zeile Nr.
+Gehe zu Zeile
+Erste Zeile ist eine Kopfzeile
+Zahlen auf diese Stellenzahl auffüllen (0 = aus den Daten ermitteln)
+Zu reparierende Spalten
+
+
+
+
+In WENNFEHLER einpacken
+Genaue Übereinstimmung
+Zelle mit dem gesuchten Wert
+Spalte, in der gesucht wird
+Spalte, die zurückgegeben wird
+Erste Datenzeile
+Letzte Datenzeile
+Blattname (optional)
+Suchtabelle auf einem anderen Blatt
+Nicht gefunden
+Text, wenn nichts gefunden wird
+Sprache der Tabellenkalkulation
+XLOOKUP (Excel 365/2021, Google Sheets nutzt eine andere Syntax)
+
+INDEX + VERGLEICH (funktioniert überall, sucht auch nach links)
+SVERWEIS zählt die Spalten ab der ersten Spalte der Tabelle: Spalte F ist in D:F die Nummer 3.
+Windows-Excel (1900)
+Mac-Excel 2008 und älter (1904)
+Datumssystem
+Seriennummern oder ISO-Daten (eines pro Zeile)
+Umgerechnet
+Heute als Seriennummer
+JSON-Array aus Objekten oder ein Objekt, das eines enthält, einfügen
+Trennzeichen für verschachtelte Objekte
+Eine Spalte pro Element (tags.0, tags.1)
+Werte mit ; verbinden
+Als JSON-Text behalten
+Arrays
+Zahlen, true/false und leere Zellen umwandeln
+Kopfzeilen mit Punkt (a.b) in verschachtelte Objekte umwandeln
+Formatiert ausgeben
+JSON Lines (ein Objekt pro Zeile)
+Summe
+Durchschnitt
+Zeilen zählen
+Nicht leere zählen
+Eindeutige Werte zählen
+Minimum
+Maximum
+Median
+Berechnen
+Zeilen (gruppieren nach)
+— keine —
+Spalten (optional)
+Werte
+Trennzeichen
+Zeichenpositionen
+Regulärer Ausdruck (Erfassungsgruppen)
+Teilen nach
+Trennzeichen / Muster
+Für Positionen: Zahlen wie 2,5
+Trennzeichen ist ein regulärer Ausdruck
+Höchstzahl der Teile (0 = alle)
+Ursprüngliche Spalte behalten
+Zu teilende Spalte
+Ursprüngliche CSV
+Geänderte CSV
+Zeile für Zeile vergleichen (ohne Schlüssel)
+Zeilen zuordnen
+Original
+Geändert
+Bericht herunterladen (CSV)
+meine_tabelle
+Tabellenname
+
+
+
+
+Datenbank
+UPDATE (braucht eine Schlüsselspalte)
+Anweisung
+CREATE TABLE hinzufügen (Typen aus den Daten geraten)
+Zeilen pro INSERT
+Leere Zellen werden zu NULL
+Schlüsselspalte für UPDATE
+Kompakt (ohne Auffüllen)
+Wie geschrieben lassen
+Links
+Zentriert
+Rechts
+Ausrichtung erzwingen
+Unordentliche Markdown-Tabelle
+Ausgerichtete Tabelle
+Zahlenformat
+Tausender, 2 Nachkommastellen
+Prozent
+Dollar
+Buchhaltung
+Wissenschaftlich
+Führende Nullen
+Tausender als K
+Millionen als M
+Automatisch K / M
+ISO-Datum
+Langes Datum
+Uhrzeit
+Stunden über 24
+Negative in Rot
+Vorzeichen immer anzeigen
+Textzusatz
+Testwerte
+Formatcode
+Dieselben Codes wie bei Zellen formatieren → Benutzerdefiniert
+Vorlagen
+Testwerte (eine pro Zeile)
+Unterstützt die Platzhalter 0 # ?, Tausendertrennzeichen, Skalierungskommas, %, E+, Text in Anführungszeichen, _ und * als Abstand, bis zu vier Abschnitte, [>100]-Bedingungen, Farben (ignoriert), Datum und Uhrzeit. Brüche (# ?/?) werden nicht unterstützt.
+
+Spalte mit dem Breitengrad
+Spalte mit dem Längengrad
+CSV hier einfügen
+Spalten ziehen, Pfeile nutzen, Häkchen entfernen zum Löschen
+Für Excel kopieren (Tabulator)
+Z-Wert (Mittelwert 0, Standardabweichung 1)
+Min-Max-Skalierung (0 bis 1)
+Max-Abs-Skalierung (−1 bis 1)
+Methode
+Stichproben-Standardabweichung (n−1)
+Nachkommastellen
+Numerische Spalten zum Normalisieren
+Vereinigte Staaten (+1)
+Kanada (+1)
+Vereinigtes Königreich (+44)
+Deutschland (+49)
+Österreich (+43)
+Schweiz (+41)
+Frankreich (+33)
+Italien (+39)
+Spanien (+34)
+Niederlande (+31)
+Belgien (+32)
+Polen (+48)
+Tschechien (+420)
+Slowakei (+421)
+Schweden (+46)
+Dänemark (+45)
+Norwegen (+47)
+Finnland (+358)
+Irland (+353)
+Portugal (+351)
+Australien (+61)
+Neuseeland (+64)
+Indien (+91)
+Brasilien (+55)
+Mexiko (+52)
+Japan (+81)
+Südafrika (+27)
+Türkei (+90)
+Ukraine (+380)
+Ungarn (+36)
+Rumänien (+40)
+Griechenland (+30)
+Standardland (für Nummern ohne +)
+International  +1 415 555 0132
+National (nur US/CA)
+Nur Ziffern
+Ausgabe
+Spalte „gültig“ hinzufügen
+Telefonspalte
+Wert der Zelle darüber
+Wert der Zelle darunter
+Ein fester Wert
+Null
+Spaltendurchschnitt (Zahlen)
+Spaltenmedian (Zahlen)
+Häufigster Wert
+Spaltenminimum
+Spaltenmaximum
+Auffüllen mit
+Fester Wert
+Zu füllende Spalten
+Zeilen umbrechen, die länger sind als
+Einzug (Leerzeichen)
+Formel
+Formatierte Formel
+Eine Adresse pro Zeile
+Adressen (eine pro Zeile)
+Als Tausendertrennzeichen behandeln
+US-Stil (Komma = Tausender, Punkt = Dezimal)
+Europäischer Stil (Punkt = Tausender, Komma = Dezimal)
+Ein einzelnes Komma oder ein Punkt mit 3 Ziffern danach, wie 1,234
+Auf Nachkommastellen runden (-1 = behalten)
+Währungsspalte hinzufügen
+Spalten mit Beträgen
+%-Zeichen hinzufügen
+Spalte mit altem Wert
+Spalte mit neuem Wert
+Mehrfache Leerzeichen in Zellen zusammenfassen
+Geschützte Leerzeichen als Leerzeichen behandeln
+Zeichen ohne Breite entfernen
+
+
+
+Stil
+Maximale Länge (0 = keine)
+Spalten nach Kopfzeilenname zuordnen
+Dateien haben identische Kopfzeilen
+Keine Kopfzeilen: Zeilen einfach untereinander setzen
+Spalte „source_file“ hinzufügen
+Mehrere CSV-Dateien hier ablegen oder
+CSV-Dateien wählen
+So wird kombiniert
+Dateien entfernen
+Leer lassen, wenn sehr groß
+Grundgesamtheit
+Konfidenzniveau
+Fehlermarge (± %)
+Erwarteter Anteil (%)
+50 = am vorsichtigsten
+Erforderliche Stichprobengröße
+Ohne Endlichkeitskorrektur
+z-Wert
+
+
+
+
+
+
+
+
+
+Auch Text reparieren, der schon verstümmelt ist (MÃ¼ller → Müller)
+Mit UTF-8-BOM speichern (für Excel)
+Datei öffnen oder verstümmelten Text einfügen (z. B. MÃ¼ller, GrÃ¶ÃŸe)
+Korrigierter Text
+Dateicodierung
+Original (wie gelesen)
+Korrigiert (UTF-8)
+UTF-8-Datei herunterladen
+
+Übersetzte Formel
+Formel ist geschrieben in
+Übersetzen nach
+⇄ Tauschen
+Übersetzt
+Funktionsnamen, Argumenttrenner (, oder ;) und Dezimalzeichen werden umgewandelt. Google Sheets nutzt die englischen Namen mit den Trennern deiner Region. Array-Konstanten {…} und Text in Anführungszeichen bleiben unverändert.
+Monat
+Name der neuen Spalte „attribute“
+Betrag
+Name der neuen Spalte „value“
+Leere Zellen überspringen
+Spalten, die als Kennung bleiben
+
+
+
+
+Hex in Großbuchstaben
+Prüfsumme zum Vergleichen einfügen
+Erwartete Prüfsumme
+oder Text zum Hashen eintippen oder einfügen
+Datei zum Hashen hier ablegen oder
+Mit einer veröffentlichten Prüfsumme vergleichen
+IP-Adresse und Präfix oder Maske
+In Subnetze mit Präfix aufteilen (optional)
+Netzwerk
+Nutzbare Hosts
+Bereich
+Maske
+Cron-Ausdruck (5 Felder: Minute Stunde Tag-des-Monats Monat Wochentag)
+meine Ortszeit
+Nächste Ausführungen anzeigen in
+Anzahl der Ausführungen
+Alle 5 Minuten
+Jede Stunde
+Werktags um 9:00
+Jeden Tag um Mitternacht
+Sonntags um 2:30
+Am ersten Tag jedes Monats
+Werktags um 8:00 und 17:00
+Jedes Neujahr
+In einfachem Deutsch
+Um 09:00 Uhr, an Werktagen
+Felder: Minute 0–59, Stunde 0–23, Tag des Monats 1–31, Monat 1–12 oder JAN–DEC, Wochentag 0–6 oder SUN–SAT (7 bedeutet ebenfalls Sonntag). * = jeder, */n = alle n, a-b = Bereich, a,b = Liste. Sind Tag des Monats und Wochentag beide eingeschränkt, läuft der Job, wenn eines von beiden passt (übliches Cron-Verhalten).
+Nach Code oder Text suchen, z. B. 404, redirect, rate limit
+Statuscodes durchsuchen
+Alle Klassen
+1xx Information
+2xx Erfolg
+3xx Weiterleitung
+4xx Clientfehler
+5xx Serverfehler
+Klasse
+
+Der Server hat die Request-Header erhalten; der Client soll den Body senden.
+Was tun: Normalerweise unsichtbar. Nur relevant, wenn du „Expect: 100-continue“ verwendest.
+
+Der Server stimmt einem Protokollwechsel zu, zum Beispiel zu WebSocket.
+Was tun: Öffnet sich ein WebSocket nicht, prüfe die Header Upgrade und Connection über alle Proxys hinweg.
+
+WebDAV: Der Server hat die Anfrage angenommen und arbeitet noch daran.
+Was tun: Selten; als „warten“ behandeln.
+
+Lässt den Browser Ressourcen vorladen, während der Server die endgültige Antwort vorbereitet.
+Was tun: Wird mit Link-Headern für schnellere Seitenladezeiten genutzt.
+Die Anfrage war erfolgreich.
+Was tun: Bei GET enthält der Body die Ressource, bei POST das Ergebnis der Aktion.
+
+Die Anfrage war erfolgreich und hat eine neue Ressource angelegt.
+Was tun: Suche nach einem Location-Header mit der URL der neuen Ressource.
+
+Die Anfrage wurde zur Bearbeitung angenommen, die Arbeit ist aber noch nicht abgeschlossen.
+Was tun: Frage die Status-URL ab, die dir die API nennt.
+
+Die Antwort wurde von einem Proxy verändert.
+Was tun: Meist harmlos.
+
+Erfolg ohne Antwort-Body.
+Was tun: Typisch für DELETE und für PUT ohne Ergebnis. Versuche nicht, JSON zu parsen.
+
+Erfolg; der Client soll das Formular oder die Ansicht zurücksetzen.
+Was tun: Selten.
+
+Der Server liefert nur den angeforderten Byte-Bereich.
+Was tun: Wird für Video-Streaming und fortsetzbare Downloads genutzt (Range-Header).
+
+Es gibt mehrere mögliche Antworten.
+Was tun: Selten; wähle einen der angebotenen Links.
+
+Die Ressource hat eine neue dauerhafte URL.
+Was tun: Links und Lesezeichen aktualisieren. Suchmaschinen übertragen das Ranking auf die neue URL.
+Vorübergehende Weiterleitung auf eine andere URL.
+Was tun: Die ursprüngliche URL weiter nutzen; Browser können aus POST ein GET machen.
+
+Leitet nach einem POST per GET auf eine andere URL weiter.
+Was tun: Das klassische Post/Redirect/Get-Muster.
+
+Die zwischengespeicherte Version ist noch gültig.
+Was tun: Kein Fehler: Der Browser nutzt seinen Cache (ETag oder Last-Modified stimmten überein).
+
+Vorübergehende Weiterleitung, die die HTTP-Methode beibehält.
+Was tun: Wie 302, aber POST bleibt POST.
+
+Dauerhafte Weiterleitung, die die HTTP-Methode beibehält.
+Was tun: Wie 301, aber POST bleibt POST.
+
+Der Server kann die Anfrage wegen eines Clientfehlers nicht verstehen.
+Was tun: JSON-Syntax, Pflichtfelder, URL-Kodierung und Header-Größen prüfen.
+
+Authentifizierung ist erforderlich oder fehlgeschlagen.
+Was tun: Gültige Zugangsdaten oder ein frisches Token senden. Den Authorization-Header prüfen.
+
+Für Bezahlsysteme reserviert.
+Was tun: Manche APIs nutzen es, wenn ein Tariflimit erreicht oder eine Zahlung offen ist.
+
+Du bist authentifiziert, darfst hierauf aber nicht zugreifen.
+Was tun: Berechtigungen, IP-Freigabelisten, CORS und Firewall-Regeln (WAF) prüfen.
+
+Die Ressource existiert unter dieser URL nicht.
+Was tun: URL auf Tippfehler, Schrägstriche am Ende und Groß-/Kleinschreibung prüfen; die Ressource wurde womöglich entfernt.
+
+Die HTTP-Methode wird für diese URL nicht unterstützt.
+Was tun: Den Allow-Header ansehen; vielleicht brauchst du POST statt GET.
+
+Der Server kann keine Antwort erzeugen, die zu den Accept-Headern passt.
+Was tun: Den Accept-Header lockern.
+
+Ein Proxy verlangt eine Authentifizierung.
+Was tun: Proxy-Zugangsdaten einrichten.
+
+Der Server hat zu lange auf die Anfrage gewartet.
+Was tun: Erneut versuchen; langsame Netzwerke und große Uploads prüfen.
+
+Die Anfrage steht im Konflikt mit dem aktuellen Zustand der Ressource.
+Was tun: Typisch bei Bearbeitungskonflikten und doppelten Einträgen. Aktualisieren und erneut versuchen.
+
+Die Ressource wurde dauerhaft entfernt.
+Was tun: Links entfernen; Suchmaschinen nehmen die Seite schneller auf als bei 404 heraus.
+
+Ein Content-Length-Header ist erforderlich.
+Was tun: Ihn hinzufügen oder mit einem Body senden, den der Client ausmessen kann.
+
+Eine Bedingung in den Request-Headern ist fehlgeschlagen (If-Match usw.).
+Was tun: Die Ressource hat sich geändert; die neueste Version abrufen.
+
+Der Request-Body ist größer, als der Server erlaubt.
+Was tun: Den Upload verkleinern oder client_max_body_size bzw. das Limit erhöhen.
+
+Die URL ist länger, als der Server akzeptiert.
+Was tun: POST mit Body statt eines langen Query-Strings verwenden.
+
+Der Server unterstützt den Inhaltstyp der Anfrage nicht.
+Was tun: Den richtigen Content-Type setzen, z. B. application/json.
+
+Der angeforderte Byte-Bereich liegt außerhalb der Ressource.
+Was tun: Den Range-Header mit der Dateigröße abgleichen.
+
+Der Expect-Header kann nicht erfüllt werden.
+Was tun: „Expect: 100-continue“ entfernen.
+
+Aprilscherz aus RFC 2324.
+Was tun: Manche Server nutzen es, um Bots abzuweisen.
+
+Die Anfrage ging an einen Server, der sie nicht beantworten kann.
+Was tun: Typisch bei Wiederverwendung von HTTP/2-Verbindungen und falschem TLS-Host.
+
+Die Syntax stimmt, aber der Inhalt hat die Validierung nicht bestanden.
+Was tun: Den Fehler-Body auf Meldungen zu einzelnen Feldern lesen.
+
+Die Ressource ist gesperrt (WebDAV).
+Was tun: Warten oder entsperren.
+
+Der Server verarbeitet keine Anfrage, die wiederholt werden könnte.
+Was tun: Nach dem Handshake erneut versuchen.
+
+Der Client muss auf ein anderes Protokoll wechseln.
+Was tun: HTTPS oder eine neuere HTTP-Version nutzen.
+
+Der Server verlangt eine bedingte Anfrage.
+Was tun: If-Match hinzufügen.
+
+Du wirst per Ratenlimit gebremst.
+Was tun: Langsamer anfragen und den Retry-After-Header beachten; exponentielles Back-off einbauen.
+
+Die Header (oft Cookies) sind zu groß.
+Was tun: Cookies löschen oder die Header-Größe verringern.
+
+Der Inhalt ist aus rechtlichen Gründen gesperrt.
+Was tun: Auf Clientseite nicht behebbar.
+
+Der Server ist auf einen unerwarteten Zustand gestoßen.
+Was tun: Ein Fehler oder eine Fehlkonfiguration auf dem Server; die Server-Logs prüfen.
+
+Der Server unterstützt die angeforderte Funktion nicht.
+Was tun: Die Methode oder Funktion ist nicht verfügbar.
+
+Ein Gateway oder Proxy hat vom vorgelagerten Server eine ungültige Antwort erhalten.
+Was tun: Die Anwendung hinter dem Proxy ist abgestürzt oder nicht erreichbar; Zustand und Timeouts des Upstreams prüfen.
+
+Der Server kann die Anfrage vorübergehend nicht bearbeiten.
+Was tun: Überlastung oder Wartung; später erneut versuchen und Retry-After beachten.
+
+Das Gateway hat vom vorgelagerten Server nicht rechtzeitig eine Antwort erhalten.
+Was tun: Proxy-Timeouts erhöhen oder das Backend beschleunigen.
+
+Die HTTP-Version wird nicht unterstützt.
+Was tun: HTTP/1.1 verwenden.
+
+Der Server kann die Darstellung nicht speichern (WebDAV).
+Was tun: Speicherplatz freigeben.
+
+Der Server hat eine Endlosschleife erkannt (WebDAV).
+Was tun: Weiterleitungen oder Links prüfen.
+
+Du musst dich authentifizieren, um das Netzwerk zu nutzen.
+Was tun: Typisch bei Captive Portals (Hotel-WLAN); Browser öffnen und anmelden.
+
+curl-Befehl
+curl-Befehl (aus dem Netzwerk-Tab des Browsers kopieren: Als cURL kopieren)
+User-Agent-String einfügen
+User-Agent
+Meinen Browser verwenden
+Browser
+
+Version
+Betriebssystem
+
+Gerätetyp
+Bot / Skript
+Rendering-Engine
+
+Bot oder Skript
+ja
+Das sieht nach einem Crawler oder automatisierten Client aus. Beachte: Jeder Client kann sich als Googlebot ausgeben; prüfe es bei Bedarf mit einem Reverse-DNS-Lookup.
+User-Agent-Strings sind von Grund auf unzuverlässig: Browser ahmen sich aus Kompatibilitätsgründen gegenseitig nach, und Chrome friert Teile des Strings ein. Nutze für Code die Funktionserkennung und verstehe dies als Diagnosehilfe.
+Kodieren (Text → Entities)
+Dekodieren (Entities → Text)
+Richtung
+Nur & < > " '
+Auch Nicht-ASCII-Zeichen, wo möglich als benannte Entities (é → &eacute;)
+Auch Nicht-ASCII-Zeichen, als Zahlen (é → &#233;)
+Kodieren
+Dezimal &#233;
+Hex &#xE9;
+Zahlenstil
+Zu kodierenden Text eintippen oder Base64 / eine data:-URL zum Dekodieren einfügen
+URL-sicheres Alphabet (- und _)
+Füllzeichen = behalten
+Keine Zeilenumbrüche
+Alle 64 Zeichen
+Alle 76 Zeichen (MIME)
+Text kodieren
+In Text dekodieren
+Dekodierte Datei herunterladen
+Modus
+Zeilenlänge
+Datei kodieren
+Farbe
+Farbe wählen
+Vom Bildschirm wählen
+Farbe (HEX, RGB, HSL oder CMYK)
+Farbwähler
+CMYK (einfache Formel)
+CSS-Variable
+CMYK ist hier die naive Umrechnung aus sRGB. Gedruckte Farben hängen von Farbe, Papier und Farbprofil ab; frage deine Druckerei bei Markenfarben nach einem Proof.
+UUID v4 (zufällig)
+UUID v7 (zeitlich sortiert, gut für Datenbankschlüssel)
+Wie viele
+Standard (Kleinbuchstaben)
+GROSSBUCHSTABEN
+Ohne Bindestriche
+{Microsoft-Stil}
+'in Anführungszeichen', für SQL-Listen
+Format
+Auf „Erzeugen“ klicken oder eine Einstellung ändern für einen neuen Satz
+UUID v4 hat 122 Zufallsbits aus crypto.getRandomValues. Die Chance, dass zwei gleich sind, ist selbst bei Milliarden IDs vernachlässigbar.
+Neuen Satz erzeugen
+Zahl
+Die Präfixe 0x, 0b, 0o und Unterstriche werden akzeptiert. Beliebige Größe.
+Binär (2)
+Oktal (8)
+Dezimal (10)
+Hexadezimal (16)
+Basis 3
+Basis 4
+Basis 5
+Basis 6
+Basis 7
+Basis 9
+Basis 11
+Basis 12
+Basis 13
+Basis 14
+Basis 15
+Basis 17
+Basis 18
+Basis 19
+Basis 20
+Basis 21
+Basis 22
+Basis 23
+Basis 24
+Basis 25
+Basis 26
+Basis 27
+Basis 28
+Basis 29
+Basis 30
+Basis 31
+Basis 32
+Basis 33
+Basis 34
+Basis 35
+Basis 36
+Basis der Eingabe
+Zusätzliche Ausgabebasis (2–36)
+Binär
+Oktal
+Dezimal
+Hexadezimal
+8 Bit nötig. Die Umrechnung nutzt Ganzzahlen beliebiger Genauigkeit, daher sind 64-Bit-Werte und größere exakt.
+
+Benutzername
+Sesam öffne dich
+Passwort
+Der Wert ist das Base64 von „Benutzername:Passwort“. Base64 ist eine Kodierung, keine Verschlüsselung: Jeder, der den Header sieht, kann das Passwort lesen, nutze Basic-Authentifizierung also nur über HTTPS.
+curl: curl -u "Aladdin:open sesame" https://example.com   ·   oder   -H "Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+Deckkraft (%)
+Farbe (optional, für den vollständigen Code)
+Alpha-Suffix
+8-stellige Hex-Farbe
+Alpha = Deckkraft ÷ 100 × 255, gerundet und als zwei Hex-Ziffern geschrieben: 50 % → 128 → 80. CSS akzeptiert #RRGGBBAA in allen modernen Browsern; Android nutzt #AARRGGBB (Alpha zuerst).
+device-width (empfohlen)
+Feste Breite in Pixeln…
+Breite
+Breite (px)
+Anfangsskalierung
+Pinch-Zoom erlauben (Barrierefreiheit)
+viewport-fit=cover (ganzen Bildschirm bei Handys mit Notch nutzen)
+Farbe der Browser-Oberfläche (theme-color, optional)
+Pinch-Zoom bleibt aktiviert, was WCAG für Barrierefreiheit verlangt.
+Ohne dieses Tag stellen mobile Browser die Seite mit etwa 980 px Breite dar und verkleinern sie.
+Ordner mit den Icons
+SVG-Icon (favicon.svg)
+Klassische favicon.ico (16/32 px)
+PNG-Icons 32 px (favicon-32x32.png)
+Apple-Touch-Icon 180 px
+Web-App-Manifest (Icons mit 192 und 512 px)
+Themenfarbe
+Setze die Tags in den <head>. Browser nutzen das SVG, wo es unterstützt wird, und fallen auf die .ico zurück; das Apple-Icon sollte 180×180 px ohne Transparenz haben. Mit dem Favicon- und App-Icon-Generator erstellst du die Bilddateien.
+Basis-URL (optional)
+Parameter: key=value, einer pro Zeile
+Leerzeichen als + kodieren (Formularstil) statt als %20
+
+
+
+Wiederholte Schlüssel
+Schlüssel und Werte werden als UTF-8 prozentkodiert (reservierte Zeichen wie & = ? # und Leerzeichen werden maskiert). Kodiere nicht die ganze URL ein zweites Mal.
+URLs (eine pro Zeile)
+Parametername
+Aktueller Zeitstempel (ändert sich jedes Mal)
+Zufällige Zeichenfolge
+Feste Version…
+Wert
+Eine geänderte Query-String lässt Browser und CDNs die Datei als neu behandeln, sodass du beim Testen die neueste Version siehst. Für die Produktion ist eine Version oder ein Inhalts-Hash im Dateinamen besser.
+Das Zertifikat (PEM)
+Nur das Ablaufdatum
+Ich habe
+Zertifikat (-----BEGIN CERTIFICATE-----)
+Kopiere es aus der .crt-/.pem-Datei deines Servers oder dem Zertifikatsanzeiger des Browsers. Es verlässt diese Seite nie.
+Ablaufdatum
+
+Domain (für den Erinnerungstitel)
+Zertifikat einfügen, um die Gültigkeit zu sehen.
+Erinnerungen herunterladen (.ics): 30, 14 und 7 Tage vorher
+Die vollständigen E-Mail-Header im Rohformat einfügen (in Gmail: ⋮ → Original anzeigen; in Outlook: Datei → Eigenschaften → Internetkopfzeilen)
+E-Mail-Header
+Rohe Header
+Vorhandene robots.txt prüfen
+Neue robots.txt erstellen
+
+/admin/⏎/tmp/
+
+KI-Trainings-Crawler blockieren (GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot, Bytespider)
+Was möchtest du tun?
+Gruppen
+Sitemaps
+Fehler
+Warnungen
+✓ Keine Probleme gefunden.
+Deine sitemap.xml einfügen
+Sitemap-XML
+
+
+Kostenlose Tools, die in deinem Browser laufen. Nichts wird hochgeladen.
+
+Vorschaubild
+Bild-URL für die Tags
+Seitentitel
+Beschreibung
+Seiten-URL
+Name der Website
+Bild-URL (für die Tags)
+Vorschaubild (bleibt auf deinem Gerät)
+Titel
+
+
+
+Vorschaubild hinzufügen (1200 × 630 px)
+
+
+
+
+
+HTML für deinen <head>
+Hintergrund
+Boxfarbe
+Ebene hinzufügen
+Seite
+Box
+Eckenradius (px)
+Ebene 1
+Innen
+Schattenfarbe
+
+
+
+Ebene 2
+
+Regulärer Ausdruck
+Flags
+Testtext (eine oder mehrere Zeilen)
+Regulärer Ausdruck (JavaScript)
+Was er bedeutet
+Testtext
+
+
+
+
+
+
+
+
+
+
+
+keine E-Mail
+
+Nach Port oder Dienst suchen, z. B. 3306, ssh, Datenbank
+Ports durchsuchen
+
+Endung (.docx), Dateiname oder MIME-Typ (image/png)
+Texttypen brauchen meist einen Zeichensatz, zum Beispiel „text/html; charset=utf-8“. Sende immer den Typ, den dein Server tatsächlich ausliefert; Browser erkennen bei manchen Typen den Inhalt auch selbst.
+
+z. B. _spf.google.com, sendgrid.net (durch Komma getrennt)
+Meinen MX-Servern das Senden erlauben (mx)
+Meinem A-Record das Senden erlauben (a)
+~all (Soft Fail: als verdächtig markieren, zum Einstieg empfohlen)
+-all (Hard Fail: alles andere ablehnen)
+?all (neutral)
++all (alle erlauben, nicht empfohlen)
+none (nur beobachten)
+quarantine (in den Spam)
+reject (blockieren)
+Wie die Hauptrichtlinie
+
+
+
+
+optionale Adresse für Forensik-Berichte
+Locker
+Strikt
+SPF: Wer darf Mails für deine Domain senden
+Weitere Absender einbinden (Domains)
+IPv4-Adressen oder -Bereiche
+IPv6-Adressen oder -Bereiche
+Alles andere
+DMARC: Was Empfänger bei Fehlern tun
+Richtlinie
+Richtlinie für Subdomains
+Auf % der Mails anwenden
+Aggregierte Berichte an (rua)
+Forensik-Berichte an (ruf)
+DKIM-Alignment
+SPF-Alignment
+DKIM-Schlüssel erstellt dein Mail-Anbieter; trage den DKIM-Eintrag ein, den er dir gibt. Warte nach dem Veröffentlichen, bis das DNS aktualisiert ist, und sende eine Testnachricht, um SPF, DKIM und DMARC in den Headern zu prüfen.
+SPF-Eintrag
+TXT-Eintrag bei: 
+
+DMARC-Eintrag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flex-direction
+
+
+flex-wrap
+
+Abstand (px)
+Anzahl der Elemente
+Payload
+
+Geheimnis
+Zeitstempel
+Eingegangenen Signatur-Header zum Vergleichen einfügen
+Empfangene Signatur
+Roher Request-Body (genau wie empfangen)
+Signatur-Geheimnis
+Zeitstempel (Unix-Sekunden, für Stripe und Slack)
+Empfangene Signatur (optional)
+Die Signatur ist ein HMAC der rohen Bytes des Bodys. Wenn du das JSON umformatierst, einen Zeilenumbruch entfernst oder es vorher parst, ändert sich das Ergebnis. Vergleiche Signaturen in konstanter Zeit und lehne alte Zeitstempel ab (zum Beispiel älter als 5 Minuten), um Replays zu verhindern. Geheimnis und Payload werden nur in deinem Browser verarbeitet; nutze trotzdem ein Test-Geheimnis, nicht das aus der Produktion.
+GitHub / allgemein (X-Hub-Signature-256)
+GitHub alt SHA-1 (X-Hub-Signature)
+Stripe (Stripe-Signature, signiert „timestamp.payload“)
+Slack (X-Slack-Signature, signiert „v0:timestamp:payload“)
+Hex-HMAC-SHA256
+Base64-HMAC-SHA256 (Shopify, viele andere)
+Hex-HMAC-SHA512
+Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich 0123456789
+Vorschautext
+CSS-Schnipsel
+TTF-, OTF- oder WOFF-Schrift hier ablegen oder
+CSS für deine Website
+CSS kopieren
+TTF- und OTF-Schriften werden in WOFF umgewandelt (kleiner, für Websites); WOFF-Schriften werden zu TTF oder OTF entpackt. Die Glyphenformen bleiben unverändert. WOFF2, das kleinste Webformat, braucht Brotli-Kompression und wird nicht unterstützt. Prüfe die Schriftlizenz, bevor du eine Schrift auf einer Website einsetzt. Nichts wird hochgeladen.
+2 Leerzeichen
+4 Leerzeichen
+Einrückung
+Minimieren (eine Zeile)
+Schlüssel A–Z sortieren
+Kommentare und abschließende Kommas erlauben
+Von
+Standard-SQL
+
+
+
+
+
+
+Dialekt
+GROSSBUCHSTABEN
+Kleinbuchstaben
+Wie geschrieben
+Schlüsselwörter
+Formatiertes SQL
+
+Ersetzung
+Ersetzung, z. B. <$1>
+g (alle Treffer)
+i (Groß-/Kleinschreibung ignorieren)
+m (^ $ pro Zeile)
+s (. trifft Zeilenumbruch)
+u (Unicode)
+Zu testender Text
+Ergebnis der Ersetzung
+Ergebnis der Ersetzung
+Ersetzung (optional, $1 $<name> $&)
+Treffer hervorgehoben
+Reguläre Ausdrücke in JavaScript (dieselbe Engine wie in deinem Browser). Der Test läuft in einem Hintergrund-Worker und wird nach 2 Sekunden gestoppt, damit ein schlechtes Muster diese Seite nicht einfrieren kann. Nichts wird hochgeladen.
+Treffer
+
+Vorschau (die Kopieren-Schaltfläche kopiert das HTML)
+Wörter
+Zeichen
+Typ
+CSS, HTML oder JSON
+Minimiert
+Absätze
+Sätze
+Mit „Lorem ipsum dolor sit amet“ beginnen
+Absätze in <p>-Tags setzen
+Erzeugter Text
+Menge
+Einheit
+Neuen Text erzeugen
+Platzhaltertext aus lateinisch wirkenden Wörtern ohne Bedeutung. Dieselben Einstellungen ergeben immer denselben Text, bis du auf „Neuen Text erzeugen“ klickst.
+Eine oder mehrere Dateien hier ablegen oder
+Der Typ wird aus den ersten Bytes der Datei gelesen (ihrer „Magic Number“), nicht aus dem Namen; es funktioniert also auch bei Dateien mit falscher oder fehlender Endung. Von jeder Datei werden nur die ersten 70 KB gelesen. Textdateien werden an ihrem Inhalt erkannt (JSON, HTML, XML, SVG, Skript, reiner Text); etwa 60 gängige Binärformate werden erkannt. Nichts wird hochgeladen.
+Ordnerbaum
+Oder eine Liste von Pfaden einfügen, einen pro Zeile:⏎src/app.js⏎src/lib/util.js⏎README.md
+Pfade
+Dateigrößen anzeigen
+Nur Ordner
+
+Ignorieren
+Nach Name
+Nach Größe (größte zuerst)
+Ordner hier ablegen oder
+Ordner wählen
+Maximale Tiefe (0 = alle)
+Ignorieren (durch Komma getrennt, * erlaubt)
+Sortierung
+Als Markdown-Codeblock kopieren
+Gelesen werden nur Datei- und Ordnernamen sowie Größen, nie der Inhalt, und nichts wird hochgeladen. Leere Ordner werden angezeigt, wenn dein Browser sie meldet.
+Zwei Seiten nebeneinander (automatisch)
+US Letter
+Tabloid
+Bogengröße (Querformat)
+Bindung rechts (Arabisch, Hebräisch, Manga)
+Broschüren-PDF erstellen
+PDF hier ablegen oder
+Doppelseitig drucken, an der kurzen Kante wenden, dann den Stapel in der Mitte falten. Die Seitenzahl wird mit leeren Seiten auf ein Vielfaches von 4 aufgefüllt.
+Spalten
+Zeilen
+Letter
+Legal
+Bogengröße
+Automatisch
+Hochformat
+Querformat
+Ausrichtung
+Außenrand (mm)
+Abstand zwischen den Seiten (mm)
+Dünnen Rahmen um jede Seite zeichnen
+N-up-PDF erstellen
+
+
+Präfix
+Startnummer
+Stellen (mit Nullen aufgefüllt)
+Suffix
+Unten rechts
+Unten mittig
+Unten links
+Oben rechts
+Oben mittig
+Oben links
+Position
+Schriftgröße (pt)
+Abstand zum Rand (mm)
+Weißer Hintergrund hinter der Nummer
+Bates-Nummern hinzufügen
+Oben (mm)
+Rechts (mm)
+Unten (mm)
+Links (mm)
+Linien für Notizen in die hinzugefügten Ränder zeichnen
+Ränder hinzufügen
+Größe eines Papierformats in mm, Zoll und Pixeln
+Druckgröße eines Bildes mit gegebenen Pixeln
+Was möchtest du wissen?
+Executive
+Half Letter
+Visitenkarte (EU)
+Visitenkarte (US)
+Foto 10×15
+Foto 13×18
+Eigene Größe (mm)
+Papierformat
+Breite (mm)
+Höhe (mm)
+72 (PDF-Punkte, Bildschirm)
+96 (CSS-Pixel)
+150 (Entwurfsdruck)
+300 (Foto / Zeitschrift)
+600 (feine Strichzeichnung)
+Auflösung (Pixel pro Zoll)
+Bildbreite (Pixel)
+Bildhöhe (Pixel)
+Millimeter
+Zoll
+PDF-Punkte
+Pixel bei 300 ppi
+Seitenverhältnis
+Fläche
+Formate der A-Reihe behalten das Verhältnis 1 : √2, ein halbierter Bogen ergibt also das nächstkleinere Format mit denselben Proportionen.
+Avery 5160 / 8160 (US Letter, 30 Etiketten, 1″ × 2⅝″)
+Avery 5163 / 8163 (US Letter, 10 Etiketten, 2″ × 4″)
+Avery 5167 / 8167 (US Letter, 80 Absenderetiketten, ½″ × 1¾″)
+Avery L7160 / J8160 (A4, 21 Etiketten, 63,5 × 38,1 mm)
+Avery L7163 / J8163 (A4, 14 Etiketten, 99,1 × 38,1 mm)
+Avery L7161 / J8161 (A4, 18 Etiketten, 63,5 × 46,6 mm)
+Avery L7162 / J8162 (A4, 16 Etiketten, 99,1 × 33,9 mm)
+Dünne Etikettenränder zeichnen (für Testdrucke auf Normalpapier)
+Anna Beispiel⏎Hauptstraße 12⏎10115 Berlin⏎⏎Ben Muster⏎Parkweg 3⏎80331 München
+Adressen
+Text-/CSV-Datei laden
+Etikettenbogen
+Bereits benutzte Etiketten überspringen
+Auf einem teilweise benutzten Bogen beginnen
+Kopien von jedem
+Größte Schriftgröße (pt)
+Wird automatisch verkleinert, damit es passt
+Adressen (Leerzeile zwischen den Etiketten)
+Etiketten-PDF erstellen
+Drucke immer einen Testbogen auf Normalpapier mit 100 % Maßstab („Tatsächliche Größe“, nicht „An Seite anpassen“) und halte ihn gegen einen Etikettenbogen, um die Ausrichtung zu prüfen. Andere Etikettenmarken mit derselben Größe nutzen dasselbe Layout.
+Urkunde der Anerkennung
+Ein Name pro Zeile (je eine Urkunde)
+Erika Mustermann, Geschäftsführerin
+Deine Organisation
+Blau
+Burgunder
+Grün
+Anthrazit
+Gold
+A4 quer
+US Letter quer
+Datum
+Unterzeichnet von
+Organisation
+Papier
+Empfänger (einer pro Zeile)
+Text
+Urkunden erstellen (PDF)
+
+# Titel⏎⏎Hier Markdown schreiben oder einfügen…
+Dokument
+
+
+
+
+Dokumenttitel
+Schrift
+Word-Dokument erstellen
+Unterstützt: Überschriften, fett, kursiv, Inline-Code, Links, Aufzählungen und nummerierte Listen (verschachtelt), Zitate, Codeblöcke, Tabellen und Linien. Bilder sind nicht enthalten.
+Markdown-Ausgabe
+Word-Datei (.docx) hier ablegen oder
+Überschriften, fett, kursiv, Links, Listen, Tabellen und Zitate bleiben erhalten. Bilder, Kommentare, Fußnoten und Textfelder werden nicht umgewandelt.
+Markierungen, Unterstreichungen, Durchstreichungen
+Notizen und Textfelder
+PDF mit Markierungen und Kommentaren hier ablegen oder
+Der markierte Text ist der Text unter jeder Markierung und daher nur bei PDFs mit Textebene verfügbar. Anmerkungen mancher Apps (zum Beispiel Freihandzeichnungen) werden nicht aufgelistet. Alles läuft in deinem Browser.
+100 dpi (am kleinsten)
+150 dpi (Bildschirm und Büro-Druck)
+200 dpi (guter Druck)
+300 dpi (scharf, groß)
+Graustufen
+Schwarzweiß (Textscans)
+Kontrast erhöhen (hilft bei verblassten Scans)
+In Graustufen umwandeln
+Auflösung
+JPEG-Qualität (%)
+Jede Seite wird als Bild gerendert und als PDF mit derselben Seitengröße neu aufgebaut, sodass das Ergebnis keinen markierbaren Text, keine Links und keine Formularfelder mehr hat. Führe danach das OCR-Tool aus, wenn du durchsuchbaren Text brauchst. Farbe wird aus Text, Bildern und Hintergründen gleichermaßen entfernt; Vektorgrafiken werden zu Pixeln.
+Zweite Seite zur Prüfung der Duplex-Ausrichtung hinzufügen
+Testseite erstellen (PDF)
+Drucke mit 100 % ohne Skalierung und prüfe dann den Maßstabsbalken mit einem Lineal, den Rahmen an allen vier Seiten, die Grauabstufungen, den Text und den schwarzen Balken. Für eine schnelle Testseite auf dem Bildschirm kannst du auch test.institute nutzen.
+
+TRENNBLATT
+QR-Code mit dem Etikett hinzufügen (für Scan-Software, die Codes liest)
+Anzahl der Blätter
+Titel im schwarzen Band
+Etikett-Präfix
+Erste Nummer
+Stellen
+Trennblätter erstellen (PDF)
+Drucke nach Möglichkeit auf farbigem Papier: Den Stapel kannst du dann leicht mit bloßem Auge teilen. Das große Etikett (zum Beispiel DOC-001) zeigt den Stapel, und der QR-Code enthält denselben Text für Scanner und Software, die Dokumente an Barcodes trennt.
+Dateien filtern…
+Dateien filtern
+Ausgewählte als ZIP speichern
+Alle auswählen
+Keine auswählen
+ZIP-, TAR- oder GZ-Datei hier ablegen oder
+Die Liste wird gelesen, ohne etwas zu entpacken; eine Datei wird erst entpackt, wenn du sie speicherst. Passwortgeschützte ZIPs sowie RAR- und 7z-Archive werden nicht unterstützt. Alles bleibt in deinem Browser.
+archiv
+Archivname
+Speichern (keine Kompression, am schnellsten)
+Schnell
+Normal (empfohlen)
+Am kleinsten
+Dateien wählen
+Dateien hier ablegen oder
+Kompression
+Bereits komprimierte Dateien (JPG, MP3, MP4, PDF, DOCX …) werden unverändert gespeichert, weil erneutes Komprimieren nur Zeit kostet. Hier erstellte ZIP-Dateien haben kein Passwort, weil der klassische Passwortschutz des Formats schwach ist; nutze für Geheimnisse „PDF schützen“ oder eine verschlüsselte Notiz. Nichts wird hochgeladen.
+HTML-Code
+Überschriften an der Schriftgröße erkennen
+Seitenumbrüche markieren
+Vollständige HTML-Seite (mit <head> und einfacher Gestaltung)
+Das Ergebnis ist sauberes, einfaches HTML mit Überschriften, Absätzen und Listen, keine Kopie des Seitenlayouts. Tabellen, Spalten, Bilder und exakte Schriften werden nicht übernommen; gescannte PDFs brauchen zuerst OCR. Alles läuft in deinem Browser.
+Fuß- und Endnoten einbeziehen
+Kopf- und Fußzeilen einbeziehen
+Word-Dokument (.docx) hier ablegen oder
+Gezählt wird der Text des Hauptdokuments; Textfelder, Kommentare und nachverfolgte Löschungen sind nicht enthalten. Die Seitenzahl ist nur eine Schätzung (500 Wörter pro Seite), weil das echte Layout von Schriften und Rändern abhängt, die nur Word kennt.
+Zielgröße
+Auf diese Größe komprimieren
+zum Beispiel 2 MB, 500 KB oder 10 MB
+Das Tool komprimiert schrittweise, von sanft (nur die Dateistruktur) bis stark (Bilder auf 48 dpi verkleinert), und stoppt beim ersten Ergebnis, das passt. Text bleibt markierbar. Liegt das Ziel unter dem Erreichbaren, erhältst du das kleinste Ergebnis und einen Hinweis. Alles läuft in deinem Browser.
+Noch keine Datei
+PDF A wählen (Original)
+PDF B wählen (geändert)
+Die Textansicht vergleicht die Wörter jeder Seite und findet geänderte Klauseln, Zahlen und Namen, auch wenn sich das Layout verschoben hat. Die visuelle Ansicht vergleicht die gerenderten Seiten Pixel für Pixel und findet Änderungen bei Bildern, Farben und Layout. Gescannte PDFs haben keinen Text; nutze zuerst „PDF OCR“. Nichts wird hochgeladen.
+Suchen nach
+Suchen nach…
+Groß-/Kleinschreibung beachten
+Nur ganze Wörter
+Durchsucht die Textebene des PDFs in deinem Browser und listet jeden Treffer mit Seitenzahl und den umgebenden Wörtern auf. Als Bild gespeicherter Text (Scans) ist ohne OCR nicht auffindbar. Durch einen Zeilenumbruch getrennte Wörter werden über den Umbruch hinweg womöglich nicht gefunden.
+A5 (Buch)
+Seitenzahlen
+EPUB-E-Book hier ablegen oder
+Seitengröße
+Rand (mm)
+Der Text des Buchs wird als einfaches PDF gesetzt: Überschriften, Absätze, Listen und Zitate, eine Titelseite und Seitenzahlen. Bilder, Cover, Tabellen und die Originalschriften werden nicht übernommen; E-Books mit DRM lassen sich nicht öffnen. Ändere die Einstellungen und lege die Datei dann erneut ab, um eine neue Version zu erstellen. Alles läuft in deinem Browser.
+
+
+Währung
+Absender
+Empfänger
+Positionen
+Notizen
+Positionen (Beschreibung; Menge; Einheit, eine pro Zeile)
+Bestellnummer
+Hinweis (optional)
+Sprache des Dokuments
+Währungssymbol
+Absender (du)
+Lieferadresse
+PDF erstellen
+Ein Lieferschein listet auf, was geliefert wurde, und lässt den Empfänger den Erhalt bestätigen. Er enthält keine Preise. Nichts wird hochgeladen.
+Beratungsleistungen, März
+Bar
+Überweisung
+Karte
+Gesamtbetrag (brutto)
+Enthaltene MwSt. % (0 = keine)
+Für (wofür gezahlt wurde)
+Zahlungsart
+Ort (optional)
+Aussteller (du)
+Gezahlt von
+Eine Quittung bestätigt eine Zahlung; prüfe, was dein Land verlangt (zum Beispiel Angaben zur Umsatzsteuer oder eine fortlaufende Nummer). Dieses Tool setzt das Dokument; es gibt keine Steuerberatung. Nichts wird hochgeladen.
+Kosten und Verkaufspreis
+Kosten und Marge %
+Kosten und Aufschlag %
+Verkaufspreis und Marge %
+Verkaufspreis und Aufschlag %
+Ich kenne
+Kosten
+Verkaufspreis
+Bruttomarge %
+Aufschlag %
+Gewinn
+Bruttomarge
+Aufschlag
+Marge = Gewinn ÷ Preis. Aufschlag = Gewinn ÷ Kosten. Ein Aufschlag von 50 % ist nur eine Marge von 33,3 %; für eine Marge von 50 % braucht es 100 % Aufschlag.
+Startbetrag
+Monatliche Einzahlung
+Jahreszins (%)
+Jahre
+Jährlich
+Vierteljährlich
+Monatlich
+Täglich
+Zinseszins
+am Ende jedes Monats
+am Anfang jedes Monats
+Einzahlungen erfolgen
+Nur zur Anzeige
+Endguthaben
+Insgesamt eingezahlt
+Erhaltene Zinsen
+Guthaben
+Eingezahlt
+Guthaben auf der Bank
+Monatliche Kosten
+Monatlicher Umsatz heute
+Monatliches Umsatzwachstum (%)
+Netto-Burn heute
+
+Runway bei heutigem Burn
+
+Runway mit Wachstum
+
+Kassenbestand
+Durchschnittlicher Umsatz pro Konto und Monat
+Bruttomarge (%)
+Monatliche Abwanderung (%)
+Kundengewinnungskosten (CAC)
+Kundenlebensdauer
+
+Customer Lifetime Value (LTV)
+LTV : CAC
+CAC-Amortisation
+
+Ein Verhältnis von 3:1 oder besser gilt als üblicher Richtwert für ein gesundes Abo-Geschäft.
+Fixkosten pro Zeitraum
+Preis pro Einheit
+Variable Kosten pro Einheit
+Zielgewinn (optional)
+Erwartete Einheiten pro Zeitraum (optional)
+Break-even-Menge
+Break-even-Umsatz
+Deckungsbeitrag pro Einheit
+Deckungsbeitragsquote
+Sicherheitsabstand
+
+Umsatz
+Gesamtkosten
+brutto (inkl. MwSt.)
+netto (ohne MwSt.)
+Der Betrag ist
+Land (schlägt Sätze vor)
+MwSt.-Satz (%)
+Nettobetrag
+
+Bruttobetrag
+Normal- und ermäßigter Satz in Deutschland: 19 %, 7 %. Sätze ändern sich; bestätige den aktuellen Satz bei deinem Finanzamt.
+Netto = Brutto ÷ (1 + Satz). MwSt. = Brutto − Netto.
+Diskontsatz (% pro Periode)
+Zahlungsströme, einer pro Periode (erster = heute, negativ = Investition)
+Kapitalwert
+Interner Zinsfuß
+Diskontierte Amortisation
+
+Das Projekt verdient mehr als dein Diskontsatz.
+Wie Excels XNPV mit gleich langen Perioden liegt der erste Zahlungsstrom bei Zeitpunkt 0 und wird nicht abgezinst. Excels NPV() zinst den ersten Wert um eine Periode ab, also addiere die Anfangsinvestition außerhalb der Funktion.
+Jahresrendite oder Wachstumsrate (%)
+72er-Regel
+
+Genaue Verdopplungszeit
+
+69,3er-Regel (stetig)
+
+Fehler der 72er-Regel
+72 geteilt durch den Zinssatz schätzt, wie viele Jahre es dauert, dein Geld zu verdoppeln. Am genauesten ist sie für Zinssätze zwischen 6 % und 10 %. Genaue Zeit = ln 2 ÷ ln(1 + Satz).
+Staffeln: Startmenge und Stückpreis, eine pro Zeile
+Format: „ab, Preis“
+Gestaffelt (jede Staffel gilt nur für Einheiten darin)
+Menge (die erreichte Staffel bestimmt den Preis ALLER Einheiten)
+Modell
+Menge
+Gesamtpreis
+Durchschnittspreis pro Einheit
+Gesamtpreis nach Menge
+Erzielter Umsatz
+Quote
+Provisionsstufen: „bis % der Quote, Satz %“, eine pro Zeile (* für unbegrenzt)
+Quotenerfüllung
+Provision
+Effektiver Satz
+Typischer Zahlungsbetrag
+Zahlungen pro Monat
+Zahlungsdienstleister: „Name, Prozent, Fixgebühr“ pro Zeile
+Vorbelegt mit den Listenpreisen von 2024; passe sie an deinen Vertrag an.
+Am günstigsten
+
+Gebühr pro Zahlung
+Ersparnis pro Jahr gegenüber dem teuersten
+Gebühr = Betrag × Prozentsatz + Fixgebühr. Die Sätze unterscheiden sich nach Land, Kartentyp und Vertrag, also passe die Liste an deine eigenen Preise an.
+Jahresgehalt (brutto)
+Vertragsstunden pro Woche
+Unbezahlte Mehrstunden pro Woche
+Pendeln pro Tag, einfache Strecke (Minuten)
+Tage am Arbeitsplatz pro Woche
+Wochen frei pro Jahr (Urlaub + Feiertage)
+Berufsbedingte Kosten pro Jahr (Fahrten, Kleidung, Kinderbetreuung…)
+Nomineller Stundenlohn
+Effektiver Stundenlohn
+Tatsächlich aufgewendete Stunden pro Jahr
+davon Pendeln
+Durch Extras verlorener Satz
+Effektiver Satz = (Gehalt − berufsbedingte Kosten) ÷ (Vertragsstunden + unbezahlte Mehrstunden + Pendelstunden).
+Angestelltengehalt, das du erreichen willst (pro Jahr)
+Nebenleistungen und Arbeitgeberkosten (% des Gehalts)
+Deine eigenen jährlichen Betriebskosten (Versicherung, Software, Steuerberater)
+Wochen frei pro Jahr
+Arbeitsstunden pro Woche
+Abrechenbarer Anteil der Arbeitszeit (%)
+Zusätzlicher Puffer für Steuern oder Risiko (%)
+Zu berechnender Stundensatz
+Tagessatz (8 h)
+Jährliche Gesamtkosten, die gedeckt werden müssen
+Abrechenbare Stunden pro Jahr
+Satz = (Gehalt × (1 + Nebenleistungen %) + eigene Kosten) ÷ abrechenbare Stunden ÷ (1 − Steuerpuffer). Abrechenbare Stunden = gearbeitete Wochen × Stunden pro Woche × abrechenbarer Anteil, weil Selbstständige Verwaltung, Akquise und Leerlauf nicht abrechnen können.
+Investierter Betrag (Kosten)
+Zurückgeflossener Wert (Erlös oder Endwert)
+Zeitraum in Jahren (optional)
+Kapitalrendite (ROI)
+Nettogewinn
+Annualisierter ROI
+ROI = (zurückgeflossener Wert − Kosten) ÷ Kosten. Annualisierter ROI = (Wert ÷ Kosten)^(1/Jahre) − 1, wodurch Projekte unterschiedlicher Länge vergleichbar werden.
+Voller Monatsbetrag
+Einzugs- oder Startdatum
+Tatsächliche Tage dieses Monats
+30-Tage-Monat (bei Mietverträgen üblich)
+Jahresmiete ÷ 365
+Betrag für den ersten Monat
+Tage im Monat
+Belegte Tage
+Tagessatz
+
+Prüfe deinen Mietvertrag: Manche Verträge rechnen mit einem 30-Tage-Monat, andere mit den tatsächlichen Tagen.
+Anna, Ben, Clara
+Personen
+Personen (durch Komma getrennt)
+Steuer (Betrag)
+Trinkgeld (% der Posten)
+
+Postenname
+Preis
+Anna
+Ben
+Clara
+Posten entfernen
+
+Wein
+Posten hinzufügen
+Steuer und Trinkgeld werden im Verhältnis zu dem aufgeteilt, was jede Person bestellt hat. Die Anteile werden auf den Cent gerundet, sodass sie genau die Gesamtsumme ergeben.
+Anschaffungskosten
+Restwert
+Nutzungsdauer (Jahre)
+Linear
+Degressiv
+Digital (arithmetisch-degressiv)
+Degressionsfaktor (2 = doppelt)
+Abschreibungsfähiger Betrag
+Aufwand im ersten Jahr
+Endbuchwert
+Linear = (Kosten − Restwert) ÷ Nutzungsdauer. Degressiv = Buchwert × Faktor ÷ Nutzungsdauer, im letzten Jahr wird auf den Restbetrag gewechselt. Die digitale Abschreibung ist vorlastig: Jahr n erhält (Nutzungsdauer − n + 1) ÷ Σ(1…Nutzungsdauer). Steuerliche Regeln (MACRS, AfA) haben eigene Tabellen; bestätige sie mit deinem Steuerberater.
+Abschreibung pro Jahr
+Schulden: „Name, Restbetrag, Zinsen % pro Jahr, Mindestrate“ pro Zeile
+Gesamte monatliche Rate, die du dir leisten kannst
+Lawine (höchster Zinssatz zuerst)
+
+Schneeball (kleinster Restbetrag zuerst)
+
+Lawine spart
+Beide Methoden zahlen auf jede Schuld die Mindestrate und schicken alles Übrige an ein Ziel. Die Lawine zielt auf den höchsten Zinssatz und kostet immer am wenigsten; der Schneeball zielt zuerst auf den kleinsten Restbetrag, was schnellere Erfolge bringt.
+Kunden heute
+Umsatz pro Kunde und Monat
+Neue Kunden pro Monat
+Monatliche Umsatzausweitung pro Kunde (%)
+Zu prognostizierende Monate
+Kunden nach 24 Monaten
+Monatlicher Umsatz dann
+Anteil der heutigen Kunden nach einem Jahr
+Die Hälfte einer Kohorte ist weg nach
+
+
+Kunden
+
+
+
+
+
+
+
+Offizieller Satz
+Entfernung
+Hin- und Rückfahrt (doppelte Entfernung)
+Oder eigenen Satz pro Einheit verwenden
+Überschreibt den offiziellen Satz
+Erstattung
+
+Berücksichtigte Entfernung
+Verwendeter Satz
+
+Die offiziellen Sätze ändern sich jedes Jahr und haben Bedingungen (nur geschäftliche Nutzung, Höchstbeträge, steuerpflichtig oberhalb der Grenze). Die Sätze in der Liste dienen zur Orientierung; prüfe den aktuellen Wert bei deinem Finanzamt.
+Rechnungsbetrag
+Aufteilen auf
+Zu vergleichende Trinkgeldsätze (%)
+Die Bräuche unterscheiden sich: In den USA sind 15–20 % üblich, in weiten Teilen Europas 5–10 % oder Aufrunden, und in vielen Ländern ist die Bedienung inbegriffen.
+Umlaufvermögen (Kasse, Forderungen, Vorräte…)
+Kurzfristige Verbindlichkeiten (Lieferantenschulden, kurzfristige Kredite…)
+davon Vorräte
+davon Kasse und Zahlungsmitteläquivalente
+Nettoumlaufvermögen
+Liquidität 3. Grades
+Liquidität 2. Grades
+Liquidität 1. Grades
+Liquidität 3. Grades = Umlaufvermögen ÷ kurzfristige Verbindlichkeiten (über 1,2–2 ist meist komfortabel). Die Liquidität 2. Grades schließt Vorräte aus. Die Liquidität 1. Grades nutzt nur Kasse. Gesunde Werte hängen von der Branche ab.
+Alter Preis
+Verkaufte Einheiten zum alten Preis
+Neuer Preis
+Verkaufte Einheiten zum neuen Preis
+Preiselastizität der Nachfrage
+Die Nachfrage ist
+elastisch
+Umsatz vorher
+Umsatz nachher
+Umsatzänderung
+Mittelpunktformel: prozentuale Mengenänderung ÷ prozentuale Preisänderung, beide gemessen am Mittelwert aus altem und neuem Wert. Unter −1 (elastisch) senkt eine Preiserhöhung den Umsatz; zwischen −1 und 0 (unelastisch) erhöht sie ihn.
+Zu verteilende Gemeinkosten (Miete, Nebenkosten, Software…)
+Abteilungen: „Name, Mitarbeiterzahl, Fläche, Umsatz“ pro Zeile
+Mitarbeiterzahl
+Fläche
+Verteilen nach
+Jede Abteilung erhält den Topf im Verhältnis zu ihrem Anteil am gewählten Schlüssel. Wähle den Schlüssel, der am besten erklärt, warum die Kosten entstehen: Mitarbeiterzahl für Software-Lizenzen, Fläche für Miete, Umsatz für Management-Zeit.
+Finanzierungsrunden: „Name, Investition, Pre-Money-Bewertung“ pro Zeile
+Gründer nach allen Runden
+Wert dieses Anteils
+Neue Investoren erhalten Investition ÷ Post-Money des Unternehmens; bestehende Anteilseigner werden anteilig verwässert. Optionspools, Wandeldarlehen und SAFEs werden nicht modelliert.
+Anteil der Gründer (%)
+Einen Betrag senden und sehen, was ankommt
+Einen Betrag empfangen und sehen, was zu senden ist
+Ich möchte
+Betrag (Ausgangswährung beim Senden, Zielwährung beim Empfangen)
+Mittelkurs (Zieleinheiten pro 1 Ausgangseinheit)
+Auf einer Kursseite nachschlagen; 1 EUR = 1,09 USD bedeutet 1,09
+Marge des Anbieters auf den Kurs (%)
+Banken oft 2–5 %, spezialisierte Dienste 0,3–1 %
+Fixgebühr (Ausgangswährung)
+Sicherheitspuffer für Kursbewegungen (%)
+Du sendest
+
+Sie erhalten
+
+Kurs inkl. Fixgebühr
+Durch Marge und Gebühren verloren
+
+Budget mit 2 % Puffer
+
+Der Mittelkurs ist der „echte“ Kurs zwischen Käufern und Verkäufern. Anbieter verdienen, indem sie ihn senken (die Marge) und Gebühren erheben; der verlorene Betrag sind die wahren Kosten der Überweisung. Vergleiche den Betrag, der am Ende ankommt, nicht die beworbene Gebühr.
+Quadratfuß
+Quadratmeter
+Flächeneinheit
+Vermietbare Fläche
+Grundmiete pro Einheit pro JAHR
+Betriebskosten / CAM / NNN pro Einheit pro Jahr
+Weitere Fixkosten pro Monat (Parkplatz, Nebenkosten, Versicherung)
+Jährliche Mieterhöhung (%)
+Mietdauer (Jahre)
+Mietfreie Zeit (Monate)
+Monatliche Kosten, Jahr 1
+Gesamt über die Laufzeit
+Durchschnittliche Kosten pro Quadratfuß und Jahr
+Anteil der Grundmiete im Jahr 1
+Genannte Mieten schließen oft die Betriebskosten aus: „Triple-Net“-Mietverträge (NNN) schlagen Steuern, Versicherung und Instandhaltung obendrauf. Vergleiche die Gesamtkosten pro Quadratfuß. Prüfe, wie der Mietvertrag die vermietbare Fläche definiert und wer Reparaturen und Erhöhungen bei Verlängerung zahlt.
+Was ein Betrag in der Zukunft kosten wird
+Was ein Betrag aus der Vergangenheit heute wert ist
+Die durchschnittliche Inflationsrate zwischen zwei Preisen
+Durchschnittliche jährliche Inflation (%)
+Anzahl der Jahre
+Preis am Anfang
+Preis am Ende
+
+Kaufkraft des heutigen Betrags dann
+Preiserhöhung
+Nutze einen langfristigen Durchschnitt: Der Euroraum und die USA strebten viele Jahre etwa 2 % an, hatten 2022–23 aber deutlich höhere Raten. Die tatsächliche Inflation unterscheidet sich je nach Ware.
+Erwarteter Betrag
+Erwarteter Betrag (Wechselgeld + Umsatz)
+Anfangsbestand der Kasse plus Bareinnahmen
+Zähle jede Stückelung einmal, gib die Anzahl der Scheine oder Münzen ein und vergleiche mit dem erwarteten Betrag. Die Beträge werden in ganzen Cent gerechnet, um Rundungsfehler zu vermeiden. Die Seite speichert nichts.
+Anzahl 100
+Anzahl 50
+Anzahl 20
+Anzahl 10
+Anzahl 5
+Anzahl 2
+Anzahl 1
+Anzahl 0,5
+Anzahl 0,25
+Anzahl 0,1
+Anzahl 0,05
+Anzahl 0,01
+Gezählt
+
+Erwartet
+
+Fehlbetrag
+Scheine und Münzen
+
+Umwandeln in
+Qualität (JPG, WebP, AVIF)
+Hintergrund für transparente Bereiche (JPG)
+Alle herunterladen (ZIP)
+Bilder wählen
+Wandelt JPG, PNG, WebP, GIF, BMP, SVG in das gewählte Format um. AVIF-Ausgabe ist in diesem Browser nicht verfügbar.
+In eine maximale Breite / Höhe einpassen
+Genaue Breite und Höhe (kann verzerren)
+Prozent des Originals
+Größe ändern nach
+Höhe (px, 0 = automatisch)
+Skalierung (%)
+Vergrößern kleiner Bilder erlauben
+Originalformat behalten
+Qualität
+Bilder werden auf deinem Gerät verarbeitet und nie hochgeladen.
+WebP (am kleinsten)
+JPG (am kompatibelsten)
+PNG (verlustfrei, spart nur wenig)
+Außerdem die längste Seite begrenzen auf (px, 0 = behalten)
+Vergleiche das Ergebnis unter jedem Bild mit dem Original. Senke die Qualität, bis du einen Unterschied siehst, und gehe dann einen Schritt zurück.
+Farbprofil behalten (empfohlen, damit sich Farben nicht ändern)
+Drehungs-Flag behalten (empfohlen, damit das Foto nicht gedreht wird)
+JPG, PNG und WebP werden ohne erneute Kodierung bereinigt: Die Bilddaten werden unverändert kopiert, die Qualität bleibt also identisch. Andere Formate werden als PNG neu gespeichert.
+Zu bearbeitendes Bild
+Weichzeichnen
+Verpixeln
+Schwarzer Kasten (am sichersten)
+Stärke
+Screenshot oder Foto hier ablegen oder
+Bild wählen
+Effekt
+Rückgängig
+PNG herunterladen
+Anderes Bild
+Ziehe ein Rechteck über den Teil, den du verbergen willst. Verpixeln und Weichzeichnen verringern Details, aber bei Passwörtern, Gesichtern oder Kontonummern ist ein schwarzer Kasten die einzige Methode, die sich nicht umkehren lässt. Der Download ist ein neues PNG ohne Metadaten.
+Transparenter Hintergrund
+Frei
+Bild hier ablegen oder
+Zuschnittsform
+Drehen um (Grad)
+Füllfarbe
+Horizontal spiegeln
+Vertikal spiegeln
+JPG herunterladen
+WebP herunterladen
+Ziehe auf dem Bild, um den Bereich auszuwählen, der bleiben soll. Drehen und Spiegeln werden vor dem Zuschneiden angewendet.
+© Dein Name
+Wasserzeichen-Text
+Über das Bild wiederholt
+Diagonal über das Bild
+Textgröße (% der Bildbreite)
+Deckkraft
+Dunkle Kontur für bessere Lesbarkeit
+Gleiches Format
+Innenabstand
+Abgerundete Ecken
+Quadratisches Logo ablegen (PNG, SVG oder JPG, mindestens 512 × 512 px) oder
+Abstand um das Logo
+Hintergrundfarbe
+Textfarbe
+
+Beispiel für großen Text
+Normaler Fließtext: Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich.
+Kontrastverhältnis
+
+
+
+
+
+WCAG-2.1-Kontrast = (L1 + 0,05) ÷ (L2 + 0,05), wobei L die relative Leuchtdichte der helleren und dunkleren Farbe ist. Großer Text ist mindestens 24 px oder 18,66 px fett. Halbtransparente Farben werden wie angegeben geprüft, nicht mit dem Hintergrund gemischt.
+Farbe vom Bildschirm wählen
+Anzahl der Farben
+Farben werden gefunden, indem ähnliche Pixel gruppiert und jede Gruppe gemittelt wird (k-Means), gewichtet danach, wie viele Pixel sich eine Farbe teilen; der Anteil zeigt, wie viel vom Bild jede Farbe abdeckt.
+1:1 (quadratisch)
+9:16 (Stories)
+1,91:1 (Link-Vorschau)
+4:5 (Instagram-Hochformat)
+Ziel-Seitenverhältnis
+Transparenter Rand (PNG)
+Randfarbe
+Mit einer verschwommenen Kopie des Bildes füllen
+Data-URI
+HTML-<img>-Tag
+CSS-background-image
+Nur Base64
+Oder eine Data-URI oder Base64-Zeichenfolge einfügen, um das Bild zu sehen
+Base64 in Bild
+Zoom
+Transparent außerhalb des Kreises
+Porträtfoto hier ablegen oder
+Ringbreite (px)
+Ringfarbe
+Ausgabegröße
+Ziehe das Bild, um das Gesicht zu zentrieren, und nutze den Zoom-Regler. Das heruntergeladene PNG hat außerhalb des Kreises einen transparenten Hintergrund.
+macOS-Fenster
+Windows-Fenster
+Browserfenster
+Kein Rahmen
+Schatten
+Text der Adressleiste
+Screenshot hier ablegen oder
+Screenshot wählen
+Tipp: Füge einen Screenshot mit Strg+V / ⌘V ein.
+Fensterrahmen
+Innenabstand (px)
+Farbverlauf Start
+Farbverlauf Ende
+Farbverlaufswinkel (°)
+Adresstext
+Bild kopieren
+Anderer Screenshot
+Bild A (Original)
+Wählen
+Bild B (geändert)
+Empfindlichkeitsschwelle (0 = jede Änderung)
+Hervorhebungsfarbe
+Jedes Pixel von A wird mit dem gleichen Pixel von B verglichen. Pixel, deren Farbe stärker als die Schwelle abweicht, werden in der Hervorhebungsfarbe gemalt; unveränderte Bereiche werden verblasst gezeigt.
+Schwarzweiß (Graustufen)
+Duotone (zwei Farben)
+Sepia (warmer Vintage-Look)
+Farben invertieren (Negativ)
+Dunkelmodus-Vorschau (invertieren, Farbtöne behalten)
+Reines Schwarzweiß (Schwellenwert)
+Nur Helligkeit und Kontrast
+Schwellenwert
+Helligkeit
+Kontrast
+Speichern als
+Schwarzweiß, Duotone, Sepia, Invertieren, Dunkelmodus und Helligkeit/Kontrast. Bilder werden auf deinem Gerät verarbeitet.
+Am Bildrand erkennen (automatisch)
+Weiß
+Schwarz
+Zu entfernende Farbe
+Toleranz
+Weiche Kante
+Funktioniert am besten bei einem einfarbigen, gleichmäßig beleuchteten Hintergrund (weißes Blatt, Studiohintergrund, Greenscreen). Es entfernt eine Farbe, keine Person: Bei komplexen Szenen nutze einen KI-basierten Entferner.
+SVG-Code einfügen oder eine .svg-Datei öffnen
+SVG-Eingabe
+Optimiertes SVG
+<title> und <desc> entfernen (schadet der Barrierefreiheit)
+Unbenutzte id-Attribute entfernen
+Nachkommastellen für Koordinaten
+2 reichen für die meisten Icons
+SVG-Code
+Optimiert
+Nur sichere Optimierungen: Editor-Metadaten, Kommentare, Namensräume und Leerraum werden entfernt, Zahlen werden gerundet. Pfade werden nicht umgeschrieben, die Zeichnung bleibt also gleich. Prüfe die Vorschau, bevor du das Ergebnis nutzt; sehr kleine Icons brauchen womöglich mehr Nachkommastellen.
+Deutsch
+Polnisch
+Tschechisch
+Englisch + Deutsch
+Englisch + Polnisch
+Englisch + Tschechisch
+Erkannter Text
+Bild mit Text hier ablegen (Screenshot, Foto eines Dokuments, Scan) oder
+Sprache des Textes
+Die Erkennungs-Engine (Tesseract, zu WebAssembly kompiliert) und die Sprachdaten werden von dieser Website geladen und laufen in deinem Browser: Das Bild wird nicht hochgeladen. Der erste Lauf dauert ein paar Sekunden länger. Die besten Ergebnisse liefert gerader, scharfer, kontrastreicher Text; Handschrift wird nicht unterstützt.
+Nebeneinander
+Untereinander
+Raster (2 × 2)
+Geteilter Bildschirm mit Trennlinie (2 Bilder)
+Quadrat 1:1
+Hochkant 9:16
+Füge die Bilder in der Reihenfolge hinzu, in der sie erscheinen sollen
+Bilder hinzufügen
+Layout
+Form der Leinwand
+Abstand (px)
+JPEG herunterladen
+Bilder werden zugeschnitten, um ihre Zelle zu füllen (cover). Nutze das Layout mit geteiltem Bildschirm für Vorher-Nachher-Vergleiche.
+WENN DER CODE FUNKTIONIERT
+Oberer Text
+BEIM ERSTEN VERSUCH
+Unterer Text
+Konturfarbe
+Großbuchstaben
+Wähle das Bild für dein Meme
+Textgröße (% der Breite)
+Das Bild bleibt auf deinem Gerät. Impact wird genutzt, wenn dein System es hat; sonst eine fette Serifenlose. Nutze nur Bilder, die du weitergeben darfst.
+2 (Schwarzweiß)
+256 (Maximum für PNG-8)
+Dithering (weichere Verläufe, größere Datei)
+Sehr große Bilder auf eine Breite von höchstens verkleinern (px, 0 = behalten)
+Verringert die Anzahl der Farben und speichert ein kleines indiziertes PNG (wie pngquant). Gut für Logos, Icons, Screenshots und Illustrationen; Fotos können Streifenbildung zeigen, wenn du kein Dithering nutzt.
+Foto (JPEG, PNG oder WebP) hier ablegen oder
+Die Metadaten werden in deinem Browser aus der Datei gelesen; das Foto wird nicht hochgeladen. Messenger und soziale Netzwerke entfernen sie oft, E-Mail-Anhänge und Cloud-Links behalten sie meist.
+JPG (funktioniert überall)
+PNG (verlustfrei, größer)
+WebP (klein)
+Qualität (JPG, WebP)
+Maximale Breite (px, 0 = Original)
+HEIC/HEIF-Fotos von iPhones und einigen Android-Handys. Sie werden auf deinem Gerät dekodiert (libheif, WebAssembly); nichts wird hochgeladen. Andere Bildtypen werden ebenfalls umgewandelt.
+Endlos
+Einmal wiederholen
+Einmal abspielen
+256 (am besten)
+32 (kleiner)
+16 (am kleinsten)
+Grau
+Zwei oder mehr Bilder hier ablegen (in der Reihenfolge der Animation) oder
+Zeit pro Bild (ms)
+Wiederholen
+Farben
+Hintergrund (für transparente Bereiche und Ränder)
+Bilder unterschiedlicher Formen werden ohne Verzerrung in den Rahmen des ersten Bildes eingepasst. Jedes Einzelbild bekommt eine eigene Farbpalette. Alles passiert in deinem Browser.
+Sinus (reiner Ton)
+Rechteck
+Dreieck
+Sägezahn
+Frequenz (logarithmisch)
+Lautstärke
+Beide Lautsprecher
+Nur links
+Nur rechts
+Abspielen
+Sweep 20 Hz → 20 kHz (30 s)
+Bass 100 Hz
+
+
+
+Frequenz (Hz)
+Regler (logarithmisch)
+Welle
+Kanal
+⚠ Beginne mit niedriger Lautstärke und drehe langsam auf. Reine Töne, besonders hohe, können laut und anstrengend sein, und 15–20 kHz können über Kopfhörer wehtun.
+Der Ton wird live von einem Oszillator in der Web Audio API erzeugt. Mit dem Kanalschalter prüfst du linken/rechten Lautsprecher, und mit dem Sweep findest du die Frequenz eines Klapperns, Brummens oder Spulenfiepens: Höre auf den Moment, in dem das Geräusch laut wird. Die meisten Erwachsenen hören über etwa 16 kHz nichts mehr, und Laptop-Lautsprecher geben unter etwa 100 Hz nichts wieder.
+Skript hier einfügen
+Skript
+Geschwindigkeit
+Textgröße
+Text spiegeln (für einen Glas-Teleprompter)
+Leselinie
+Pause / Fortsetzen
+Schließen
+Teleprompter starten
+Bei Standardgeschwindigkeit braucht ein Skript mit 150 Wörtern etwa zwei Minuten zum Durchlaufen. Dein Skript bleibt in deinem Browser. Platziere die Kamera über der Leselinie, damit deine Augen nah am Objektiv bleiben.
+Tippe im Takt auf die Schaltfläche (oder drücke die Leertaste)
+Metronom-Klick im getippten Tempo
+BPM = 60.000 ÷ die durchschnittliche Zeit zwischen den Taps (in Millisekunden) über deine letzten 12 Taps. Taps, die mehr als 2,5 Sekunden auseinanderliegen, beginnen eine neue Messung. Tippe mindestens 8 Schläge für einen stabilen Wert. Das Tempo wird aus deinen Taps gemessen, nicht aus einer Audiodatei.
+Spitze: lautester Punkt auf den Zielwert
+Lautheit (RMS): mittlerer Pegel auf den Zielwert
+Zielpegel (dBFS)
+Spitze: −1 ist üblich. RMS: etwa −16 für Podcasts.
+
+
+WAV-Qualität
+Audiodatei hier ablegen oder
+Die Spitzennormalisierung bringt das lauteste Sample auf den Zielwert; die Lautheitsnormalisierung (RMS) gleicht den mittleren Pegel an und hält die Spitzen unter −1 dBFS. Die Datei wird von deinem Browser dekodiert, hier verarbeitet und als WAV-Datei (44,1 kHz) gespeichert. Nichts wird hochgeladen. WAV-Dateien sind größer als MP3.
+Stille-Schwelle (dBFS)
+Alles, was leiser ist, gilt als Stille.
+Zu behaltender Puffer (ms)
+Auch lange Pausen innerhalb der Aufnahme kürzen
+Pausen länger als (ms)
+Die Datei wird von deinem Browser dekodiert, hier verarbeitet und als WAV-Datei (44,1 kHz) gespeichert. Nichts wird hochgeladen. WAV-Dateien sind größer als MP3.
+Auf Mono heruntermischen
+Links und rechts tauschen
+Linken Kanal stummschalten
+Rechten Kanal stummschalten
+Polarität des linken Kanals umkehren
+Polarität des rechten Kanals umkehren
+Beide Kanäle umkehren
+Mono-Mix nach links / rechts schwenken
+Vorgang
+Panorama (−100 links … +100 rechts)
+Nutze „Polarität umkehren“, um zu testen, ob zwei Lautsprecher oder Mikrofone gleichphasig sind. Die Datei wird von deinem Browser dekodiert, hier verarbeitet und als WAV-Datei (44,1 kHz) gespeichert. Nichts wird hochgeladen. WAV-Dateien sind größer als MP3.
+Halbtöne
+Geschwindigkeit in Prozent
+Ändern um
+Halbtöne (−12 = eine Oktave tiefer, +12 = eine Oktave höher)
+Geschwindigkeit (%)
+Das ändert Tonhöhe und Geschwindigkeit zusammen, wie beim Beschleunigen eines Tonbands: Höhere Töne laufen schneller, tiefere langsamer. Die Dauer bleibt nicht konstant. Die Datei wird von deinem Browser dekodiert, hier verarbeitet und als WAV-Datei (44,1 kHz) gespeichert. Nichts wird hochgeladen. WAV-Dateien sind größer als MP3.
+● Aufnehmen
+■ Stopp
+Behalten ab (Sekunden)
+Behalten bis (Sekunden)
+Die Aufnahme bleibt in deinem Browser. Lade sie herunter, bevor du die Seite schließt. Das Mikrofon wird ausgeschaltet, sobald du auf Stopp drückst.
+System-/Tab-Audio einbeziehen (wenn der Browser es anbietet)
+Mein Mikrofon einbeziehen
+● Aufnahme starten
+Dein Browser fragt, welchen Bildschirm, welches Fenster oder welchen Tab du teilen willst. Das Video wird lokal im Arbeitsspeicher aufgenommen; sehr lange Aufnahmen brauchen viel RAM, lade sie also in Teilen herunter. System-Audio ist nur bei der Aufnahme eines Tabs oder in manchen Browsern des ganzen Bildschirms verfügbar.
+Standardkamera
+Standard
+1920 × 1080 (Full HD)
+
+
+
+Kamera starten
+Kamera
+Auflösung anfordern
+Bildrate anfordern
+Browser geben dir den nächstliegenden Modus, den die Kamera unterstützt; die „jetzt“-Werte sind das, was du tatsächlich bekommst. Wenig Licht zwingt Kameras oft auf eine niedrigere Bildrate. Das Bild wird nur auf dieser Seite angezeigt und nie aufgezeichnet oder gesendet.
+8 Sekunden Stille messen
+Sei leise und lass den Raum so, wie er bei einer normalen Aufnahme ist. Der Test misst den Durchschnittspegel des Hintergrundrauschens.
+Ding
+Summer
+Trommelwirbel
+Traurige Posaune
+Applaus
+Wusch
+Signalhorn
+Level geschafft
+Falsche Antwort
+Richtige Antwort
+Timer-Piepton
+Eigene Sounds hinzufügen
+Die Sounds werden live von deinem Browser synthetisiert. Drücke 1–9 und 0, um die ersten zehn abzuspielen. Um Sounds in einen Videoanruf zu spielen, teile den Browser-Tab mit Audio oder leite diesen Tab über ein virtuelles Audiokabel. Eigene Sounds bleiben auf deinem Gerät und gehen verloren, wenn du die Seite schließt.
+Stimmlage natürlich halten
+Video wählen, das in anderer Geschwindigkeit angesehen werden soll
+Die Vorschau ändert nur die Wiedergabegeschwindigkeit. Der Export nimmt das Video während des Abspielens auf, dauert also so lange wie das beschleunigte Video und wird als WebM gespeichert.
+Farbkarte
+Graustufe
+Nutze die Karte für den Weißabgleich (vor eine Webcam halten), zur Beurteilung der Bildschirmhelligkeit, zur Prüfung auf Farbstiche oder hängende Pixel oder als schnelles Licht. Vollbild füllt den ganzen Bildschirm.
+Neutralgrau (18 %)
+Tageslichtweiß 6500 K
+Warmweiß 3200 K
+Kaltweiß 7500 K
+Rot
+Vollbild
+Beliebige Farbe
+Graustufe 0–255
+Hex-Wert
+Prüfung erneut ausführen
+Dein Browser rendert Grafik per Software. Aktiviere die Hardwarebeschleunigung in den Browsereinstellungen (Chrome/Edge: Einstellungen → System → „Grafikbeschleunigung verwenden, wenn verfügbar“; Firefox: Einstellungen → Allgemein → Leistung) und aktualisiere deinen Grafiktreiber, dann starte den Browser neu.
+5 Sekunden messen
+Achte auf Ruckeln des bewegten Balkens, während der Browser die Bilder zählt.
+Höhe (px)
+Bildschirmdiagonale in Zoll (optional)
+Auf Breite skalieren (px, optional)
+Genaues Verhältnis
+Nächster Standard
+16:9 · Breitbild (HD, Full HD, 4K)
+Megapixel
+Pixeldichte
+
+Physische Größe
+Bei Breite 1280 px
+Üblicher Zuschnitt: Um das Bild bei gleicher Breite in 16:9 zu bringen, nutze eine Höhe von 1080 px.
+Breite Monitor 1 (px)
+Höhe Monitor 1 (px)
+Diagonale Monitor 1 (Zoll)
+Breite Monitor 2 (px)
+Höhe Monitor 2 (px)
+Diagonale Monitor 2 (Zoll)
+Dichte Monitor 1
+
+Dichte Monitor 2
+
+Dichteverhältnis
+Physische Größe Monitor 1
+Physische Größe Monitor 2
+Höhenunterschied
+Stelle die Skalierung von Monitor 1 auf etwa 119 % der des anderen ein (zum Beispiel 100 % am Bildschirm mit der geringeren Dichte und 119 % am dichteren), damit Text in derselben physischen Größe erscheint.
+Betriebssysteme bieten nur feste Skalierungsstufen (100, 125, 150, 175, 200 %); wähle die nächstliegende.
+Video wählen, aus dem Standbilder entnommen werden
+◀ 1 Bild
+1 Bild ▶
+Bildrate 
+Bild speichern (PNG)
+Bild speichern (JPEG)
+Das Bild wird in der Originalauflösung des Videos entnommen. Das Weiterschalten geht von der eingegebenen Bildrate aus (standardmäßig 30); Browser verraten den Seiten die genaue Rate nicht. Nichts wird hochgeladen.
+Den Teil zwischen Start und Ende behalten
+Den Teil zwischen Start und Ende entfernen
+Start (Sekunden)
+Ende (Sekunden, 0 = Dateiende)
+Einblenden (ms)
+Ausblenden (ms)
+WAV (verlustfrei, groß)
+MP3 (klein)
+
+
+
+
+
+
+
+MP3-Bitrate
+Gib Start und Ende in Sekunden ein (Ende 0 = bis zum Dateiende). „Behalten“ speichert nur diesen Teil; „Entfernen“ schneidet ihn heraus und fügt den Rest zusammen. Die Datei wird von deinem Browser dekodiert, hier verarbeitet und als WAV- oder MP3-Datei (44,1 kHz) gespeichert. Nichts wird hochgeladen. MP3 ist viel kleiner als WAV; WAV behält jedes Detail.
+Zwei oder mehr Audiodateien hier ablegen oder
+Überblendung zwischen den Titeln (ms)
+0 = nacheinander abspielen
+Dateien werden von deinem Browser mit 44,1 kHz dekodiert, sodass Titel mit unterschiedlichen Abtastraten ohne Tonhöhenänderung zusammengefügt werden. Mono-Titel werden zu Stereo verbreitert, wenn du sie mit Stereo-Titeln mischst. Nichts wird hochgeladen.
+Lautstärkeänderung (dB)
+Positiv = lauter, negativ = leiser
+Übersteuerung verhindern (lauteste Spitze auf 0 dBFS begrenzen)
++6 dB ist etwa doppelt so laut, −6 dB etwa halb so laut. Mit „Übersteuerung verhindern“ wird das Ergebnis herunterskaliert, wenn es verzerren würde. Die Datei wird von deinem Browser dekodiert, hier verarbeitet und als WAV- oder MP3-Datei (44,1 kHz) gespeichert. Nichts wird hochgeladen. MP3 ist viel kleiner als WAV; WAV behält jedes Detail.
+Die ganze Aufnahme wird rückwärts abgespielt, linker und rechter Kanal gleichermaßen. Die Datei wird von deinem Browser dekodiert, hier verarbeitet und als WAV- oder MP3-Datei (44,1 kHz) gespeichert. Nichts wird hochgeladen. MP3 ist viel kleiner als WAV; WAV behält jedes Detail.
+
+
+
+Neutral (keine Änderung)
+Bassanhebung
+Höhenanhebung
+Sprachklarheit
+Loudness („Smiley“-Kurve)
+Warm und weich
+Voreinstellung
+Fünf Bänder: Bass-Shelf (60 Hz), untere Mitten (250 Hz), Mitten (1 kHz), obere Mitten (4 kHz) und Höhen-Shelf (12 kHz). Jedes kann um bis zu 12 dB angehoben oder abgesenkt werden; das Ergebnis ist gegen Übersteuerung geschützt. Die Datei wird von deinem Browser dekodiert, hier verarbeitet und als WAV- oder MP3-Datei (44,1 kHz) gespeichert. Nichts wird hochgeladen. MP3 ist viel kleiner als WAV; WAV behält jedes Detail.
+In Mono umwandeln (halbe Größe)
+Jedes Audio, das dein Browser abspielen kann (MP3, M4A/AAC, OGG, FLAC, WAV, Opus oder die Tonspur eines Videos), lässt sich als WAV oder MP3 speichern. Das erneute Umwandeln einer verlustbehafteten Datei in MP3 verliert etwas mehr Qualität. Die Datei wird von deinem Browser dekodiert, hier verarbeitet und als WAV- oder MP3-Datei (44,1 kHz) gespeichert. Nichts wird hochgeladen. MP3 ist viel kleiner als WAV; WAV behält jedes Detail.
+Ton vom Mikrofon aufnehmen
+Kamera einschalten
+Die Vorschau ist wie ein Spiegel gespiegelt; das gespeicherte Video nicht. Die Aufnahme bleibt im Arbeitsspeicher, wird nie hochgeladen, und die Kamera wird ausgeschaltet, wenn du die Seite verlässt. Browser speichern WebM (Chrome, Firefox, Edge) oder MP4 (Safari).
+Text zum Vorlesen eintippen oder einfügen
+Standardstimme
+Keine Stimmen installiert
+▶ Vorlesen
+Pause
+Stimme
+Geschwindigkeit (0,5–2)
+Tonhöhe (0,5–2)
+Lautstärke (%)
+Die Stimmen kommen von deinem Gerät oder Browser, unterscheiden sich also zwischen Computern und Handys, und die Sprache der Stimme muss zur Sprache des Textes passen. Das Vorlesen geschieht lokal; der Text wird nirgendwohin gesendet. Browser erlauben es Seiten nicht, die Sprache als Audiodatei zu speichern; zum Aufnehmen nutze den Bildschirmrekorder mit System-Audio.
+Rauschminderung (dB)
+Höher entfernt mehr, kann Sprache aber dünn klingen lassen
+Empfindlichkeit (1–5)
+Höher behandelt mehr vom Klang als Rauschen
+Nur-Rauschen-Abschnitt: von (Sekunden)
+bis (Sekunden, 0 = automatisch erkennen)
+Funktioniert am besten bei gleichmäßigem Rauschen wie Zischen, Brummen, Lüfter oder Verkehrsgrollen. Standardmäßig wird das Rauschen aus dem leisesten Zehntel der Aufnahme gelernt; wenn du einen Abschnitt kennst, der nur Rauschen enthält (zum Beispiel die erste Sekunde), gib ihn unten für ein besseres Ergebnis ein. Die Datei wird von deinem Browser dekodiert, hier verarbeitet und als WAV- oder MP3-Datei (44,1 kHz) gespeichert. Nichts wird hochgeladen. MP3 ist viel kleiner als WAV; WAV behält jedes Detail.
+Song oder Aufnahme hier ablegen oder
+Das Tempo stammt aus dem Rhythmus des Klangs (Einsätze) und die Tonart aus der Stärke der zwölf Töne über die Zeit. Beides funktioniert am besten bei Musik mit klarem, gleichmäßigem Beat und stabiler Tonart; Sprache, Ambient-Musik und Songs mit Tempo- oder Tonartwechseln liefern unzuverlässige Ergebnisse. Das halbe oder doppelte Tempo ist eine häufige Mehrdeutigkeit, prüfe also die Alternativen. Alles wird in deinem Browser analysiert.
+Länge
+Verwechselbare Zeichen vermeiden (I l 1 O 0)
+Neu erzeugen
+Passwörter werden in deinem Browser mit crypto.getRandomValues erzeugt (derselben sicheren Quelle, die Browser für Verschlüsselungsschlüssel nutzen) und nirgendwohin gesendet. Entropie = Länge × log₂(Poolgröße); die Brute-Force-Zeit geht von einem Offline-Angriff auf einen schnellen Hash aus und ist ein grober Richtwert.
+
+
+
+Zeichenpool
+Bindestrich -
+Leerzeichen
+Punkt .
+Unterstrich _
+Keiner
+Wörter großschreiben
+Eine Ziffer an ein Wort anhängen
+Trennzeichen
+Die Wörter werden zufällig aus der EFF Large Wordlist gezogen (© Electronic Frontier Foundation, CC BY 3.0). Jedes Wort bringt 12,9 Bit Entropie, fünf Wörter ergeben also etwa 65 Bit und sechs etwa 78 Bit: lang, aber leicht zu merken. Verwende eine Passphrase nie doppelt.
+
+
+Wortliste
+7.776 Wörter (EFF)
+
+Optional: Geheimnis zur Prüfung von HS256 / HS384 / HS512
+JSON Web Token
+Geheimnis (optional)
+Die Prüfung läuft lokal mit Web Crypto; das Geheimnis wird nirgendwohin gesendet.
+Gäste-WLAN
+Netzwerkname (SSID)
+WPA / WPA2 / WPA3
+WEP (alt)
+Kein Passwort
+Sicherheit
+
+Verstecktes Netzwerk
+Klein (256 px)
+Mittel (512 px)
+Groß (1024 px)
+Druck (2048 px)
+Niedrig (7 %)
+Mittel (15 %)
+Quartil (25 %)
+Hoch (30 %)
+QR-Farbe
+Fehlerkorrektur
+PNG-Größe
+SVG herunterladen
+Inhalt kopieren
+Gäste scannen den Code mit der Handykamera und tippen zum Beitreten. Drucke ihn aus und stelle ihn in einen Rahmen. Das Passwort steckt nur im QR-Code selbst, nichts wird hochgeladen.
+Vorname
+
+Nachname
+Muster GmbH
+Firma
+Position
+Telefon
+Mobil
+
+E-Mail
+Website
+Straße
+Ort
+Land
+Beim Scannen des Codes wird angeboten, den Kontakt im Adressbuch des Handys zu speichern (vCard 3.0). Mehr Felder ergeben einen dichteren Code, der schwerer zu scannen ist; halte ihn für kleinen Druck kurz.
+Website-Link
+Reiner Text
+SMS-Nachricht
+Inhalt
+Link, Text, E-Mail-Adresse oder Telefonnummer
+Betreff
+Nachricht
+Der Code enthält die Daten selbst, läuft also nie ab und hängt von keinem Dienst ab. Teste ihn vor dem Drucken mit einem Handy und lass einen freien Rand um ihn herum.
+Die private Nachricht schreiben (kurz halten: Sie reist im Link mit)
+Zufälliger Schlüssel (Schlüssel separat senden)
+Mein eigenes Passwort
+Deine Nachricht
+Schützen mit
+Die Notiz wird in deinem Browser mit AES-256-GCM verschlüsselt. Der verschlüsselte Text steht in dem Teil des Links nach dem #, der nie an einen Webserver gesendet wird, und diese Seite speichert nichts. Zu den Grenzen: Der Link kann sich nicht „selbst zerstören“, weil es keinen Server gibt, der ihn löscht. Jeder, der den Link und den Schlüssel oder das Passwort hat, kann die Notiz für immer lesen.
+Hier tippen. Alles wird automatisch in diesem Browser gespeichert.
+Notizblock
+.txt herunterladen
+Notizen liegen nur in diesem Browser (localStorage). Sie überstehen Neustarts und Abstürze, aber das Löschen von Websitedaten, der private Modus oder ein anderes Gerät haben sie nicht. Speichere hier keine Passwörter.
++ Neuer Block
+Umbenennen
+Gespeichert
+✓ in diesem Browser
+Eintrag hinzufügen und Enter drücken
+Neuer Eintrag
+Als Text kopieren
+Alle abwählen
+Erledigte entfernen
+Deine Liste wird nur in diesem Browser gespeichert.
+Entwurf schreiben
+Nach oben
+Eintrag löschen
+Mit dem Team prüfen
+Veröffentlichen
+Als Markdown kopieren
+Board zurücksetzen
+Ziehe Karten zwischen Spalten oder nutze die Pfeile. Das Board wird nur in diesem Browser gespeichert, ist also ein privates persönliches Board, kein Teamwerkzeug.
+Projekt planen
+Nach links
+Nach rechts
+Karte löschen
++ Karte hinzufügen
+Karte zu „Zu erledigen“ hinzufügen
+In Arbeit (0)
+Karte zu „In Arbeit“ hinzufügen
+Erledigt (0)
+Karte zu „Erledigt“ hinzufügen
+Um 1 zählen
+Um 2 zählen
+Um 5 zählen
+Um 10 zählen
+Abziehen
+Tastatur: Leertaste, ↑ oder + zählt hoch; ↓ oder − zählt runter. Die Zahl wird in diesem Browser gemerkt.
+Dein Markdown-Dokument einfügen
+Nummerierte Liste
+Inhaltsverzeichnis in das Dokument einfügen
+Inhaltsverzeichnis
+Ab Überschriftenebene
+Bis Ebene
+Anker folgen den Regeln von GitHub: Kleinbuchstaben, Satzzeichen entfernt, Leerzeichen werden zu Bindestrichen, doppelte Überschriften erhalten -1, -2. Überschriften in Codeblöcken werden ignoriert.
+Hallo {{name}}, deine Bestellung {{order_id}} wird am {{date}} versandt.
+Vorlage
+Ausgefüllter Text
+Vorlage mit {{Platzhaltern}}
+Schreibe {{name}} irgendwo in den Text und fülle dann die Felder aus, die erscheinen. Platzhalter, die du leer lässt, bleiben sichtbar, damit du sie bemerkst. Funktioniert für E-Mail-Vorlagen, Standardantworten und KI-Prompts.
++ Kriterium
+Bewerte jede Option pro Kriterium von 0 bis 10 und gib jedem Kriterium ein Gewicht. Das Ergebnis ist der gewichtete Durchschnitt: Σ(Punkte × Gewicht) ÷ Σ Gewichte. Das Tool strukturiert die Diskussion; es ersetzt kein Urteilsvermögen.
+Option A
+Optionsname
+Option B
+Option C
++ Option
+Kriterium
+Kriterium entfernen
+🏆 Höchste gewichtete Punktzahl
+Die ersten beiden liegen sehr nah beieinander. Prüfe Gewichte und Punkte, bevor du entscheidest.
+Was hast du gestern gemacht? Ein Punkt pro Zeile
+Was machst du heute?
+Blocker (leer lassen, wenn keine)
+Slack / Teams (fett, Aufzählungen)
+Standup-Update
+Gestern
+Heute
+Blocker
+Zum Einfügen bereit
+Hier einfügen (Strg+V). Schriften, Farben, Links und Formatierung werden entfernt.
+Reintext-Zwischenablage
+Leerzeichen und Leerzeilen an den Enden entfernen
+Mehrere Leerzeilen zusammenfassen
+Typografische Anführungszeichen und Sonderleerzeichen ersetzen
+Als reinen Text kopieren
+
+# Hallo⏎⏎Hier **Markdown** schreiben…
+Für E-Mail kopieren
+HTML kopieren
+
+Textbausteine durchsuchen…
+Textbausteine durchsuchen
+Titel (z. B. IBAN, Adresse, Antwort)
+Titel des Bausteins
+Text, der mit einem Klick kopiert wird
+Text des Bausteins
+Baustein hinzufügen
+Alle exportieren (JSON)
+Importieren
+
+E-Mail-Signatur
+Bearbeiten
+Löschen
+Textbausteine
+Gespeichert
+nur in diesem Browser
+Formatierten Text hier einfügen
+Links behalten
+Tabellen behalten
+Überschriften behalten
+HTML bereinigen
+Text aus Word, Google Docs, einer Webseite oder einer E-Mail kopieren, das Feld anklicken und einfügen (Strg+V).
+
+Text → Braille
+Braille → Text
+Text eintippen oder Braillezeichen einfügen (⠓⠑⠇⠇⠕)…
+
+Familie Schmidt
+Haushalt oder Person
+Adresse
+Kontakte (einer pro Zeile: Name; Telefon)
+Medizinische Angaben (Allergien, Medikamente, Blutgruppe)
+Notizen (Schlüssel, Haustiere, Hinweise zum Alarmcode)
+Druckbares Blatt erstellen (PDF)
+
+Sprint starten, dann ohne Pause und ohne Bearbeiten schreiben…
+Schreibbereich
+Sprint starten
+Jetzt beenden
+Sprintdauer (Minuten)
+Wortziel (0 = keines)
+Erst schreiben, später bearbeiten. Der Text bleibt nur auf dieser Seite: Kopiere oder lade ihn herunter, bevor du schließt. Nichts wird hochgeladen.
+Aufgaben: „Name, optimistisch, wahrscheinlich, pessimistisch“ pro Zeile
+Beliebige Einheit (Tage, Stunden, Story Points).
+Zielsumme (gleiche Einheit, optional)
+Erwartete Summe
+Standardabweichung
+Zu 80 % sicher innerhalb von
+Zu 95 % sicher innerhalb von
+
+
+Ein Name pro Zeile
+Namen
+Gewinner nach jeder Drehung entfernen
+Tickgeräusch
+Namensrad
+Namen mischen
+Rad drehen
+
+Teilnehmende
+Anna != Ben   (Anna darf nicht an Ben schenken)⏎Clara != Dirk
+Ausschlüsse
+Paare vor mir verbergen (nur private Links zeigen)
+Ausschlüsse (optional)
+Paare, Menschen, die sich schon kennen…
+
+Private Links: schicke jeder Person ihren eigenen
+öffnen
+Alle kopieren (Name: Link)
+Erneut ziehen
+Ein Team oder Spieler pro Zeile, bester Gesetzter zuerst
+Teilnehmer
+K.-o.-System
+Jeder gegen jeden
+Teilnehmer (bester Gesetzter zuerst)
+Runden
+Freilose
+
+Geschäftsführung⏎  Technik⏎    Entwickler⏎  Finanzen
+Organisationsstruktur
+Boxbreite (px)
+Akzentfarbe
+Struktur (Einrückung = berichtet an)
+
+Die E-Mail oder Nachricht einfügen, die du gleich senden willst
+Schreib alles auf, was dir durch den Kopf geht, ein Gedanke pro Zeile oder als Sätze…
+Gedankensammlung
+Deine Gedankensammlung
+Als Markdown-Checkliste kopieren
+.md herunterladen
+
+Aufgaben
+Fragen
+Ideen
+Sorgen
+Geschützte Leerzeichen durch normale ersetzen
+Verbinder innerhalb von Emojis behalten (ZWJ)
+Text mit versteckten Zeichen
+Bereinigter Text
+
+
+
+
+
+
+
+
+
+Groß-/Kleinschreibung ignorieren
+Leerzeichen um Zeilen entfernen
+Leere Zeilen entfernen
+Ursprüngliche Reihenfolge behalten
+Häufigste zuerst
+Reihenfolge
+Anzeigen, wie oft jede Zeile vorkam
+Eindeutige Zeilen
+Eindeutig
+Entfernt
+Zeilenumbruch
+Komma
+Semikolon
+Tabulator
+Leerzeichen
+Pipe
+Komma + Leerzeichen
+nichts
+
+
+
+Jedes Element einfassen in
+Reiner Text
+Array [ … ]
+SQL-Liste ( … )
+Ergebnis ausgeben als
+E-Mail-Adressen
+URLs
+Telefonnummern
+UUIDs
+IPv4-Adressen
+Hex-Farben
+Hashtags
+@Erwähnungen
+Daten (ISO oder T.M.J)
+Zahlen
+IBANs
+Eigener regulärer Ausdruck…
+Suchen
+Eigenes Muster (JavaScript-Regex)
+Duplikate entfernen
+Angezeigt
+Originaltext
+Geänderter Text
+Zeile für Zeile
+Wort für Wort
+Zeichen für Zeichen
+Leerraum ignorieren
+Groß-/Kleinschreibung ignorieren
+Vergleichen
+Tauschen
+Patch kopieren
+.patch herunterladen
+Hinzugefügte Zeilen
+Entfernte Zeilen
+Unverändert
+Zellen aus Excel, Google Sheets, CSV oder einer Markdown-Tabelle einfügen
+Tabellendaten
+Markdown-Tabelle
+HTML-Tabelle
+Automatisch erkennen
+Komma
+Semikolon
+2+ Leerzeichen
+Erste Zeile ist die Kopfzeile
+Spalten im Quelltext ausrichten
+Ausrichtung
+Limits der Plattformen
+Ohne Leerzeichen
+Sichtbare Zeichen (Graphemcluster)
+UTF-8-Bytes
+X-/Twitter-Beitrag
+LinkedIn-Beitrag
+LinkedIn-Schlagzeile
+Instagram-Bildunterschrift
+Facebook-Beitrag (empfohlen)
+Google-Ads-Überschrift
+Google-Ads-Beschreibung
+Meta-Titel (≈ 600 px)
+Meta-Beschreibung
+YouTube-Titel
+TikTok-Bildunterschrift
+SMS (GSM-7, 160 pro Teil)
+
+Rede oder Skript hier einfügen
+Dein Tempo (Wörter pro Minute)
+Pause pro Absatz (Sekunden)
+Nach jeder Leerzeile hinzugefügt
+Langsam · 110 wpm
+Natürlich · 150 wpm
+Energisch · 180 wpm
+Dein Tempo · 140 wpm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tabelle
+Erzeugte Daten
+Sprache der Namen
+Neue Daten erzeugen
+E-Mails nutzen die reservierte Domain example.com und Telefonnummern fiktive Bereiche, sodass nichts in einem echten Postfach oder auf einem echten Telefon ankommt.
+Gedankenstriche: – → -  und — → --
+Auslassungspunkte … → ...
+Ligaturen ﬁ ﬂ æ → fi fl ae
+Sonderleerzeichen → normales Leerzeichen, Zeichen ohne Breite entfernen
+Aufzählungspunkte • → *
+Absatzumbrüche behalten (Leerzeilen)
+Am Zeilenende mit Bindestrich getrennte Wörter wieder verbinden
+Aufzählungs- und nummerierte Listenpunkte in eigenen Zeilen lassen
+Text vor jeder Zeile
+Text nach jeder Zeile
+Zähler einfügen, wo {n} steht
+Zähler beginnt bei
+Zählerstellen (mit Nullen aufgefüllt)
+Leere Zeilen überspringen
+Alphabetisch (A–Z)
+Natürliche Zahlen (v2 vor v10)
+Zahlenwert in der Zeile
+Sortieren nach
+Reihenfolge umkehren
+Beliebigen Text, HTML-Quelltext oder einen Postfach-Export einfügen
+Nach Domain gruppieren
+E-Mails
+Eindeutige E-Mails
+Domains
+Text mit Links oder eine einzelne unübersichtliche URL einfügen
+Die ganze Query-String entfernen
+#Fragmente entfernen
+Links in meinem Text bereinigen
+Nur eindeutige bereinigte URLs auflisten
+Gefundene URLs
+Mit entferntem Tracking
+Entfernte Parameter
+Kleinbuchstaben
+Kleine Wörter weglassen (der, die, das, und …)
+Maximale Länge (0 = unbegrenzt)
+Titel (einer pro Zeile)
+Slugs
+Verschiebung (13 = ROT13, zum Kodieren und Dekodieren gleich)
+Auch Ziffern rotieren (ROT5)
+Auch in reines ASCII umwandeln (café → cafe, alles andere entfernen)
+Ersetzen durch
+Kleinbuchstaben klein anzeigen
+Zu buchstabierender Text
+NATO-Buchstabieralphabet
+Gemischte Zeilen
+Erneut mischen
+Fehler
+enthält
+beginnt mit
+endet mit
+ist gleich
+Zeile…
+Zeilen behalten, die NICHT passen
+Regulären Ausdruck verwenden
+Behaltene Zeilen
+Liste A (ein Eintrag pro Zeile)
+Liste B (ein Eintrag pro Zeile)
+Komma + Leerzeichen
+Pipe
+Bindestrich
+Spalte A auffüllen, damit die Spalten fluchten
+Zusammengeführt
+Liste A
+Liste B
+Tabs → Leerzeichen
+Leerzeichen → Tabs
+Umwandeln
+Leerzeichen pro Tab
+Nachgestellten Leerraum entfernen
+Nur Einrückung ändern (nicht Tabs innerhalb von Zeilen)
+Einzelne Wörter
+Zwei-Wort-Phrasen
+Drei-Wort-Phrasen
+Anzahl
+Häufige Wörter ignorieren in
+Mindestanzahl
+CSV herunterladen
+Begriffe gesamt
+Verschiedene
+Wörter im Text
+Den langen Text zum Aufteilen einfügen
+Absatzgrenzen bevorzugen
+Nie mitten im Wort schneiden
+Maximale Zeichen pro Abschnitt
+Überlappung (Zeichen)
+Alle herunterladen (.txt)
+Abschnitte
+Längster
+Deine E-Mail, deinen Bericht oder deine Stellenanzeige einfügen
+Hervorgehoben
+Alternativen in einfacher Sprache
+Floskeln
+Pro 100 Wörter
+Kein Fachjargon gefunden.
+Verschachtelte HTML-Liste
+Markdown-Liste
+Eingerückte Gliederung
+Text
+Hex
+Binär
+Dezimal
+Oktal
+
+
+Zeilenumbruch
+Trennzeichen zwischen Bytes
+Text eintippen oder Morsecode einfügen (Punkte, Striche, / zwischen Wörtern)
+Text → Morse
+Morse → Text
+Als Ton abspielen
+Geschwindigkeit (Wörter pro Minute)
+Tonhöhe (Hz)
+Andere Sprache (nur sprachunabhängige Werte)
+Sätze markieren, die länger sind als (Wörter)
+Werte
+Sätze in der Zusammenfassung
+Sprache
+Zu fassender Text
+Zusammenfassung
+Text A (zum Beispiel das Original)
+Text A
+Text B (zum Beispiel der zu prüfende Text)
+Text B
+Kürzeste gemeinsame Passage (Wörter in Folge)
+
+Aktuelle Unix-Zeit (Sekunden)
+Zeitstempel oder Daten (einer pro Zeile)
+Sekunden, Millisekunden, Mikrosekunden, ISO 8601 oder JJJJ-MM-TT hh:mm:ss (UTC)
+Lokale Zeit anzeigen in
+Differenz
+
+Tage gesamt
+Wochen
+Werktage (Mo–Fr)
+Stunden
+Minuten
+Ein Datum nach N Arbeitstagen
+Arbeitstage zwischen zwei Daten
+Startdatum
+Hinzuzufügende Arbeitstage (negativ = zurück)
+Enddatum
+Keine Feiertage
+Vereinigte Staaten (bundesweit)
+Vereinigtes Königreich (England & Wales)
+Deutschland (bundesweit)
+Polen
+Tschechien
+Österreich
+Feiertage
+Samstag und Sonntag
+Freitag und Samstag
+Nur Sonntag
+Kein Wochenende (7-Tage-Woche)
+Wochenende
+Zusätzliche freie Tage (JJJJ-MM-TT, einer pro Zeile)
+Betriebsferien, Urlaubstage…
+Start- und Endtag mitzählen
+
+Kalendertage
+Gezählt ab 2026-11-04; der Starttag selbst wird nicht mitgezählt.
+Projektstart
+Titel der Veranstaltung
+Ganztägige Veranstaltung
+Beginn
+Ende
+Zeitzone
+Ort oder Videolink
+Teilnehmende (E-Mail-Adressen, eine pro Zeile)
+5 Minuten vorher
+15 Minuten vorher
+1 Stunde vorher
+1 Tag vorher
+Erinnerung
+Wiederholt sich nicht
+Wöchentlich
+Anzahl der Wiederholungen
+.ics-Datei herunterladen
+In Google Kalender öffnen
+Stadt oder Zeitzone hinzufügen…
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Arbeitsbeginn (Stunde)
+Arbeitsende (Stunde)
+
+
+
+
+
+
+Die Balken zeigen 24 Stunden UTC (links = 00:00). Dunkelgrün: alle sind in der Arbeitszeit. Hellgrün: diese Stadt arbeitet. Grau: Wochenende.
+An diesem Datum passt innerhalb dieser Arbeitszeiten keine Uhrzeit für alle. Versuche längere Arbeitszeiten oder ein anderes Datum.
+Team-Call
+Titel des Meetings
+Datum und Uhrzeit
+Zeitzone dieser Uhrzeit
+In der Zeitzone deines Browsers
+
+
+Meeting starten
+Personen im Meeting
+Durchschnittliches Jahresgehalt (inkl. Nebenleistungen)
+Arbeitsstunden pro Jahr
+1.800 ≈ 225 Tage × 8 h
+Geplante Dauer (Minuten)
+Kein Ton
+Weißes Rauschen
+Rosa Rauschen
+Braunes Rauschen (tiefes Grollen)
+Regen
+Café-Gemurmel
+Fokus
+Überspringen
+Fokus (Min.)
+Kurze Pause (Min.)
+Lange Pause (Min.)
+Sitzungen bis zur langen Pause
+Hintergrundgeräusch
+Die Töne werden in deinem Browser mit der Web Audio API erzeugt; nichts wird heruntergeladen. Der Countdown erscheint auch im Titel des Browser-Tabs.
+Nicht runden
+1 Minute
+5 Minuten
+6 Minuten (0,1 h)
+15 Minuten (0,25 h)
+30 Minuten
+Runden auf
+Nächstliegende
+Abrunden
+Rundung
+Stunden und Minuten oder Dezimalstunden (eine pro Zeile)
+Dezimalstunden  ·  h:mm
+Gesamt h:mm
+Mo Beginn
+Mo Ende
+Mo Pausenminuten
+Di Beginn
+Di Ende
+Di Pausenminuten
+Mi Beginn
+Mi Ende
+Mi Pausenminuten
+Do Beginn
+Do Ende
+Do Pausenminuten
+Fr Beginn
+Fr Ende
+Fr Pausenminuten
+Sa Beginn
+Sa Ende
+Sa Pausenminuten
+So Beginn
+So Ende
+So Pausenminuten
+optional
+Wöchentliche Überstunden ab (Stunden)
+Tägliche Überstunden ab (Stunden, 0 = aus)
+Stundensatz (optional)
+Überstundenfaktor
+Stunden gesamt
+Regulär
+Überstunden
+Berechnungen (eine pro Zeile)
+Ergebnisse
+Januar
+Februar
+März
+April
+Mai
+Juni
+Juli
+August
+September
+Oktober
+November
+Dezember
+Geschäftsjahr beginnt im
+ISO-Woche
+Wochentag
+Mittwoch
+Tag des Jahres
+Verbleibende Tage im Jahr
+Kalenderquartal
+Geschäftsquartal
+Wochen im ISO-Jahr
+Schaltjahr
+Erstes Datum
+alle N Tage
+alle N Wochen
+alle N Monate
+alle N Jahre
+z. B. Mo, Mi
+An Wochentagen (nur wöchentlich)
+Leer lassen, um den Wochentag des ersten Datums zu nutzen
+gleicher Tag des Monats
+erster Wochentag des Monats
+zweiter Wochentag
+dritter Wochentag
+vierter Wochentag
+letzter Wochentag
+Monatlich am
+Wie viele Daten
+Wochenenddaten auf Montag verschieben
+Auch Feiertage überspringen
+Kalenderdatum (UTC)
+oder Julianische Tageszahl
+Wenn ausgefüllt, wird stattdessen diese in ein Datum umgewandelt
+
+Julianischer Tag (JD)
+Modifizierter JD
+Ordinaldatum
+Unix-Sekunden
+
+Sekunden
+1 Min.
+2 Min.
+3 Min.
+5 Min.
+10 Min.
+15 Min.
+20 Min.
+30 Min.
+45 Min.
+60 Min.
+Vollbild
+Die Uhr wird im letzten Viertel orange und in den letzten 10 Prozent rot und piept bei null. Nutze den Vollbildmodus für die Anzeige auf einem Beamer.
+Runde
+Runden exportieren (CSV)
+Tastatur: Leertaste startet und stoppt, L speichert eine Runde. Die Genauigkeit stammt von performance.now(), einer monotonen Uhr, die von Änderungen der Systemzeit nicht beeinflusst wird.
+Drücke Runde (oder die Taste L), um Zwischenzeiten zu speichern.
+24-Stunden-Uhr
+
+
+
+
+
+
+
+Erster Sprint beginnt
+Arbeitstage pro Sprint
+Anzahl der Sprints
+Feiertage (zur Orientierung)
+Sprints laufen nur an Arbeitstagen (Montag bis Freitag). Feiertage werden aufgelistet, damit du den Umfang anpassen kannst; sie verkürzen den Sprint nicht automatisch.
+Eigene Koordinaten
+
+London
+
+Prag
+Warschau
+Wien
+
+Rom
+
+
+
+
+
+Mexiko-Stadt
+
+Kairo
+
+
+
+Singapur
+
+
+
+Ort
+Breitengrad (°N)
+Längengrad (°O)
+Zeiten anzeigen in
+Meinen Standort verwenden
+Sonnenaufgang
+Sonnenuntergang
+Sonnenhöchststand
+Tageslicht
+
+Im Vergleich zu gestern
+
+Goldene Stunde (abends)
+
+Phase
+🌘 Abnehmende Sichel
+Beleuchtet
+Mondalter
+
+Nächster Neumond
+
+Kommende Neu- und Vollmonde
+
+Feiertage für Arbeitstage
+Jahr 2026
+
+Quartal Q4
+
+Monat
+
+Woche (Mo–So)
+
+Verbleibende Tage im Jahr
+Verbleibende Wochen
+Verbleibende Arbeitstage (inkl. heute)
+
+Die Tageszählung schließt den gewählten Tag ein. Arbeitstage sind Montag bis Freitag abzüglich der Feiertage des gewählten Landes.
+beginnt (GJ2025 = Apr 2025–Mär 2026)
+endet (GJ2025 = Apr 2024–Mär 2025)
+Das Geschäftsjahr ist nach dem Kalenderjahr benannt, in dem es
+US-Bund (Okt)
+UK / Indien (Apr)
+Kalenderjahr
+Australien (Jul)
+Geschäftsjahr
+Das Jahr läuft
+Fortschritt
+
+
+America/New_York, Europe/London
+z. B. America/New_York, Asia/Tokyo
+Deine Zeitzone
+Auch anzeigen in (durch Komma getrennt)
+Freie Zeiträume (einer pro Zeile)
+Füge den Text in eine E-Mail oder einen Chat ein. Die Sommerzeit wird für das gewählte Datum berücksichtigt, und ein anderer Kalendertag in einer anderen Zone wird markiert.
+
+Abflugdatum
+Abflugzeit (Ortszeit)
+Zeitzone des Abflugs
+Flugzeit (hh:mm)
+Zeitzone der Ankunft
+Zwischenstopp (hh:mm, optional)
+Zweiter Flug (hh:mm, optional)
+Endgültige Zeitzone (bei zweitem Flug)
+Ankunft
+
+Zeitverschiebung
+Flugzeit
+
+
+Die Zeiten nutzen die Sommerzeitregeln der Zonen für die angezeigten Daten. Nutze die planmäßige Flugzeit aus deinem Ticket; der Rechner kennt deine Fluggesellschaft nicht.
+Verfügbare Stunden pro Woche
+Reserve für Meetings, E-Mail und Überraschungen (%)
+Geplante Arbeit: „Name, Stunden“ pro Zeile
+Geplant
+Nutzbar nach Reserve
+Freie Kapazität
+Pro Arbeitstag (5 Tage)
+Der Plan passt. Pläne dauern meist länger als erwartet, dafür ist die Reserve da.
+Quartal beginnt am
+Länge in Wochen
+Montag
+Dienstag
+Donnerstag
+Freitag
+Wöchentlicher Check-in-Tag
+Termine
+Check-ins
+Quartal endet
+
+◷ aktuelle Position verwenden
+Ende (Sekunden, 0 = bis zum Ende)
+Schneller Modus (ohne Neukodierung, Schnitte an Keyframes)
+Schnell (größere Datei)
+Ausgewogen
+Hohe Qualität (langsamer)
+Qualität / Geschwindigkeit
+Video kürzen
+Abbrechen
+Video hier ablegen oder
+
+Wie der erste Clip
+1080 × 1920 (hochkant)
+Bildgröße
+Videos verbinden
+Zwei oder mehr Videos hier ablegen oder
+
+MP4 (H.264, läuft überall)
+WebM (VP8, fürs Web)
+Animiertes GIF (ohne Ton)
+MP3 (nur Audio)
+M4A / AAC (nur Audio)
+WAV (nur Audio, groß)
+Originalgröße behalten
+Maximale Breite
+GIF-Bilder pro Sekunde
+Ton entfernen
+
+Qualität (CRF, 18–38)
+Höher = kleinere Datei
+Maximale Höhe
+Am schnellsten (größere Datei)
+Langsam (kleinere Datei)
+Video komprimieren
+
+Kein Zuschnitt
+Auf ein Seitenverhältnis (zentriert)
+Rechteck (Pixel)
+Zuschneiden
+16:9 (quer)
+9:16 (hochkant, Stories/Reels)
+4:5 (Hochformat)
+21:9 (Kino)
+Links (px)
+Oben (px)
+Keine Drehung
+90° im Uhrzeigersinn
+90° gegen den Uhrzeigersinn
+Drehen
+Horizontal spiegeln (Spiegelbild)
+Anwenden
+
+Höhe (Standardgrößen)
+Genaue Breite und Höhe
+1080 p (Full HD)
+Höhe
+Videogröße ändern
+
+Geschwindigkeit (×)
+0,5 = halbe Geschwindigkeit, 2 = doppelt so schnell
+Geschwindigkeit ändern
+
+Wie oft insgesamt abspielen
+Schneller Modus (ohne Neukodierung)
+Schleife erstellen
+
+Positiv = lauter
+Ton komplett entfernen
+
+Originalton ersetzen
+Mit dem Originalton mischen
+Was tun
+Lautstärke des Originaltons (%)
+Lautstärke des neuen Audios (%)
+Mit dem kürzeren der beiden enden (sonst läuft das Audio weiter)
+Audio hinzufügen
+Audiodatei wählen
+
+Dein Text
+Schriftgröße (px)
+Gelb
+Farbe (Hex)
+Mitte links
+Mitte rechts
+Dunkler Kasten hinter dem Text
+Anzeigen ab (Sekunden)
+Anzeigen bis (Sekunden, 0 = Ende)
+Text hinzufügen
+
+Größe (% der Videobreite)
+Abstand vom Rand (px)
+Bild hinzufügen
+Bild oder Logo wählen
+
+Logo entfernen
+
+Länge (Sekunden, 0 = bis zum Ende)
+Bilder pro Sekunde
+Noch einmal
+Nicht wiederholen
+GIF erstellen
+
+Suchbereich (px, 4–64)
+Größer = korrigiert stärkeres Wackeln, kann aber abdriften
+Durch Spiegeln auffüllen
+Schwarz lassen
+Ränder
+Stabilisieren
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Der Text ist zu lang für den Live-Test (Limit 300 000 Zeichen).
+Das Muster hat zu lange gebraucht (über 2 Sekunden). Es kann katastrophales Backtracking auslösen, zum Beispiel durch verschachtelte Wiederholungen wie (a+)+. Mach es spezifischer.
+Dateien über 2 GB sind für diesen Browser-Hasher zu groß
+Gib eine Deckkraft ein
+Gib ein gültiges Datum ein
+Das ist eine WOFF2-Schrift. WOFF2 nutzt Brotli-Kompression, die dieses Tool nicht entpacken kann. Nutze die ursprüngliche TTF-, OTF- oder eine WOFF-Datei.
+Schriftsammlungen (.ttc) werden nicht unterstützt. Extrahiere zuerst eine einzelne Schrift.
+Das sieht nicht nach einer Schriftdatei aus (TTF, OTF oder WOFF).
+Der SQL-Formatierer konnte nicht geladen werden.
+Deine Firma GmbH⏎Beispielstraße 1⏎12345 Musterstadt
+Kundenname⏎Kundenstraße 5⏎54321 Kundenstadt
+Schreibtischlampe LED; 2; Stk.⏎Bürostuhl; 4; Stk.⏎Kabelset; 1; Set
+Alex Beispiel⏎Sam Muster
+in Anerkennung herausragenden Einsatzes und einer hervorragenden Leistung.
+Es wurde kein Text gefunden. Dieses PDF ist womöglich ein Scan: Führe es zuerst durch „PDF OCR“.
+Gib eine Zielgröße wie 2 MB oder 500 KB ein.
+Füge mindestens eine Position hinzu.
+Gib einen Betrag über null ein.
+Gib mindestens eine Adresse ein. Trenne Etiketten mit einer Leerzeile.
+Das ist keine .docx-Datei (kein word/document.xml). Alte .doc-Dateien müssen zuerst als .docx gespeichert werden.
+Das sieht nicht nach einem ZIP-, TAR- oder GZ-Archiv aus.
+In diesem EPUB wurde kein lesbarer Text gefunden.
+Alle Felder ausfüllen
+Beide Werte ausfüllen
+Gib mindestens zwei numerische Zahlungsströme ein
+Prüfe die Provisionsstufen
+Füge mindestens einen Zahlungsdienstleister hinzu
+Die Investition muss größer als null sein
+Wähle ein Datum
+Der Restwert darf die Kosten nicht übersteigen
+Prüfe die Schuldenliste
+Die beiden Preise müssen sich unterscheiden
+Prüfe die Runden
+Der Satz muss größer als null sein
+Gib einen positiven Startpreis und eine Anzahl Jahre ein
+Wähle Bilddateien (JPG, PNG, WebP, GIF, AVIF, BMP, SVG).
+Bild A ✓
+Bild B ✓
+Das sieht nicht nach SVG-Code aus (kein <svg>-Element).
+Das optimierte SVG ist kein gültiges XML: Die Eingabe ist womöglich schon fehlerhaft.
+Texterkennung wird geladen…
+Kodierung fehlgeschlagen
+Dieser Browser kann dieses Format nicht kodieren
+Der HEIC-Decoder konnte nicht gestartet werden.
+Diese HEIC-Datei konnte nicht dekodiert werden (beschädigt oder nicht unterstützte Variante).
+Dekodierung fehlgeschlagen
+Stopp
+
+Ende des Skripts
+Weiter tippen…
+Dein Browser kann den Bildschirm nicht aufnehmen (getDisplayMedia fehlt). Nutze einen aktuellen Desktop-Browser.
+Dein Browser kann dieses Videoformat nicht abspielen. MP4 (H.264), WebM und MOV vom Handy funktionieren meist.
+Dieser Browser kann die Videowiedergabe nicht für den Export aufnehmen. Nutze stattdessen die Vorschaugeschwindigkeit.
+Dein Browser kann dieses Videoformat nicht abspielen. MP4 (H.264), WebM und die meisten Handyvideos funktionieren.
+Dein Browser kann nicht auf eine Kamera zugreifen (mediaDevices fehlt). Öffne diese Seite über https in einem aktuellen Browser.
+Dein Browser hat keine Sprachsynthese. Probiere ein aktuelles Chrome, Edge, Safari oder Firefox.
+Fertig.
+Gib zuerst einen Text ein.
+Fortsetzen
+Diese Audiodatei konnte von deinem Browser nicht dekodiert werden. Probiere WAV, MP3, M4A, OGG oder FLAC.
+Gib Breite und Höhe ein.
+Fülle alle sechs Werte aus.
+Das Ende muss nach dem Anfang liegen.
+Das sind zu viele Daten für einen QR-Code. Kürze den Inhalt oder senke die Fehlerkorrektur.
+
+
+
+Hallo {{name}},⏎⏎vielen Dank für deine Bestellung {{order_id}}. Sie wird am {{date}} versandt.⏎⏎Viele Grüße⏎{{sender}}
+Login-Fehler behoben⏎2 Pull Requests geprüft
+Mit dem Export-Feature beginnen⏎Team-Planung
+Warten auf API-Zugangsdaten
+
+Textbaustein aktualisieren
+Beispielstraße 12⏎12345 Musterstadt
+
+Allergien: Penicillin⏎Blutgruppe: A+⏎Medikamente: keine
+Ersatzschlüssel beim Nachbarn in Nr. 14.⏎Giftnotruf: 112
+Gib den Inhalt für den Code ein
+keine Liste
+
+
+
+🏆 Sieger
+
+
+Füge mindestens eine Aufgabe hinzu
+
+
+
+
+
+
+
+
+
+
+SOS Hilfe
+Start
+Gib einen Breitengrad zwischen −90 und 90, einen Längengrad zwischen −180 und 180 und ein Datum ein.
+eigene
+Gib zwei gültige Daten ein
+Gib ein gültiges Startdatum ein
+Gib die Anzahl der Arbeitstage ein
+Gib ein gültiges Enddatum ein
+Gib der Veranstaltung einen Titel
+Wähle Datum und Uhrzeit
+Gib ein gültiges erstes Datum ein
+Gib ein gültiges Datum oder einen Julianischen Tag ein
+Gib ein gültiges Datum ein.
+Wähle ein Datum.
+Gib mindestens einen Zeitraum ein.
+Ein Zeitraum muss nach seinem Beginn enden.
+Wähle das Abflugdatum.
+Gib die Flugzeit ein.
+Gib die verfügbaren Stunden pro Woche ein.
+Füge mindestens eine Aufgabe hinzu.
+Wähle das Startdatum.
+Videoengine wird geladen (etwa 31 MB, nur einmal)…
+Wird verarbeitet…
+Abgebrochen.
