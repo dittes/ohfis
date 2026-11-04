@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Online teleprompter","url":"https://ohfis.com/cs/teleprompter/","description":"Posouvající se skript na celou obrazovku s nastavitelnou rychlostí, velikostí a zrcadlením. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Audio a video","item":"https://ohfis.com/cs/audio-video-tools/"},{"@type":"ListItem","position":3,"name":"Online teleprompter"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Online teleprompter","step":[{"@type":"HowToStep","position":1,"text":"Paste your script and set the speed and size."},{"@type":"HowToStep","position":2,"text":"Press \"Start teleprompter\" (full screen)."},{"@type":"HowToStep","position":3,"text":"Pause with Space, change speed with ↑ and ↓, close with Esc."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How fast should a teleprompter scroll?","acceptedAnswer":{"@type":"Answer","text":"About 130–160 words per minute for natural speech. Rehearse once and adjust the speed."}},{"@type":"Question","name":"Where should the camera be?","acceptedAnswer":{"@type":"Answer","text":"As close to the reading line as possible, so your eyes stay near the lens."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Online teleprompter","step":[{"@type":"HowToStep","position":1,"text":"Vložte skript a nastavte rychlost a velikost."},{"@type":"HowToStep","position":2,"text":"Stiskněte „Spustit teleprompter“ (celá obrazovka)."},{"@type":"HowToStep","position":3,"text":"Pozastavte mezerníkem, rychlost měňte ↑ a ↓, zavřete Esc."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak rychle má teleprompter rolovat?","acceptedAnswer":{"@type":"Answer","text":"Asi 130–160 slov za minutu pro přirozenou řeč. Jednou si zkuste a rychlost upravte."}},{"@type":"Question","name":"Kde má být kamera?","acceptedAnswer":{"@type":"Answer","text":"Co nejblíže čtecí lince, aby oči zůstaly blízko objektivu."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Online teleprompter</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Paste your script, set the speed and text size and start: the text scrolls smoothly in full screen while you look into the camera. A red reading line marks where to read, Space pauses, the arrow keys change the speed on the fly, and mirror mode flips the text for teleprompters that read through glass.</p><p lang="en">The script is split into paragraphs and moved upward with a CSS transform inside a requestAnimationFrame loop, using elapsed time so the speed is the same on 60 Hz and 120 Hz screens. Speed is in pixels per second; at the default setting and size a 150-word script takes about two minutes. Browsers may refuse full screen without a user action, so the prompter starts from the button. Your script stays on your device.</p>
+        
+        <p>Vložte skript, nastavte rychlost a velikost textu a spusťte: text se plynule posouvá na celé obrazovce, zatímco se díváte do kamery. Červená čtecí linka značí, kde číst, mezerník pozastaví, šipky mění rychlost za běhu a zrcadlový režim text obrátí pro teleprompery čtoucí přes sklo.</p><p>Skript se rozdělí na odstavce a posouvá nahoru transformací CSS ve smyčce requestAnimationFrame s využitím uplynulého času, takže je rychlost na obrazovkách 60 Hz i 120 Hz stejná. Rychlost je v pixelech za sekundu; při výchozím nastavení a velikosti trvá skript o 150 slovech asi dvě minuty. Prohlížeče mohou bez akce uživatele celou obrazovku odmítnout, proto prompter startuje z tlačítka. Váš skript zůstává ve vašem zařízení.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Paste your script and set the speed and size.</p></li><li><p lang="en">Press &quot;Start teleprompter&quot; (full screen).</p></li><li><p lang="en">Pause with Space, change speed with ↑ and ↓, close with Esc.</p></li></ol>
+        <ol class="s-steps"><li><p>Vložte skript a nastavte rychlost a velikost.</p></li><li><p>Stiskněte „Spustit teleprompter“ (celá obrazovka).</p></li><li><p>Pozastavte mezerníkem, rychlost měňte ↑ a ↓, zavřete Esc.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How fast should a teleprompter scroll?</summary><p lang="en">About 130–160 words per minute for natural speech. Rehearse once and adjust the speed.</p></details>
-          <details><summary lang="en">Where should the camera be?</summary><p lang="en">As close to the reading line as possible, so your eyes stay near the lens.</p></details>
+          <details open><summary>Jak rychle má teleprompter rolovat?</summary><p>Asi 130–160 slov za minutu pro přirozenou řeč. Jednou si zkuste a rychlost upravte.</p></details>
+          <details><summary>Kde má být kamera?</summary><p>Co nejblíže čtecí lince, aby oči zůstaly blízko objektivu.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
