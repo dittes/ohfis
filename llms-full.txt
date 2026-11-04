@@ -313,6 +313,24 @@ Resize, convert, blur, crop and clean images without uploading them. Hub: https:
 - [Image Difference Checker](https://ohfis.com/en/image-diff/): Compare two images and highlight every changed pixel in a colour of your choice.
   Spot what changed between two design mockups, screenshots or photos. Load an original and a changed version and every differing pixel is painted in magenta (or a colour you choose); unchanged areas are faded so the differences stand out. You get the share of changed pixels and can download the diff image.
   How to use: Load image A and image B. Adjust the sensitivity and highlight colour. Read the changed percentage and download the diff.
+- [Black & White, Duotone & Invert Image Effects](https://ohfis.com/en/image-color-effects/): Turn photos black and white, duotone, sepia, inverted or dark-mode, in batch.
+  Apply one effect to one or many images: grayscale, a duotone with two colours of your choice, sepia, an inverted negative, a dark-mode preview that keeps hues, or a hard black-and-white threshold for scans. Brightness and contrast sliders work with every effect. Results are listed with a preview and can be downloaded one by one or as a ZIP.
+  How to use: Drop one or more images. Choose an effect and adjust the sliders. Download the images or the ZIP.
+- [Background Remover for Plain Backgrounds (Transparent PNG)](https://ohfis.com/en/background-remover/): Make a plain white, black or green background transparent in your browser.
+  Upload a product photo on white, a logo on a coloured square or a green-screen shot and get a PNG in which that background colour is transparent. The tool detects the background from the border of the image, or you choose white, black or any colour, and sliders set the tolerance (how different a colour may be and still count as background) and the softness of the edge.
+  How to use: Drop images with a plain background. Choose automatic detection or a colour and set tolerance and softness. Download the transparent PNGs.
+- [SVG Optimizer & Minifier](https://ohfis.com/en/svg-optimizer/): Shrink SVG files by removing editor junk and rounding numbers, with preview.
+  Paste SVG code or open a .svg file exported from Illustrator, Inkscape or Figma and get a smaller file: XML declaration, DOCTYPE, comments, editor metadata and namespaces are removed, numbers are rounded to the decimal places you choose and whitespace is collapsed. A live preview and the saved percentage help you check the result before you download it.
+  How to use: Paste the SVG or open the file. Set the decimal places and options. Check the preview and copy or download the result.
+- [Image to Text (OCR) – Extract Text from Photos & Screenshots](https://ohfis.com/en/image-to-text-ocr/): Copy the text out of a screenshot, scan or photo of a document, locally.
+  Drop a screenshot, a photo of a page or a scan and get the text to copy or download as .txt. Languages: English, German, Polish and Czech, alone or combined with English. A progress bar shows the recognition and the result lists the word count and the engine's confidence.
+  How to use: Choose the language of the text. Drop or choose the image. Wait for the recognition, then copy or download the text.
+- [Photo Collage & Split Screen Maker](https://ohfis.com/en/image-collage-maker/): Combine 2–4 images side by side, stacked, in a grid or as a before/after split.
+  Add several images and place them side by side, stacked, in a 2 × 2 grid or as a split screen with a divider for before-and-after comparisons. Choose the canvas shape (16:9, 4:3, square, vertical), the width, gap, rounded corners and background colour, then download the result as PNG or JPEG.
+  How to use: Add the images in order. Choose the layout, size, gap and colours. Download the collage.
+- [Meme Generator (Top & Bottom Text)](https://ohfis.com/en/meme-generator/): Put classic Impact-style captions on any picture and download it.
+  Choose a picture, type a top and a bottom line and get the familiar white text with black outline. Text size, colours and capital letters can be changed, long lines wrap automatically, and the finished meme downloads as PNG or JPEG without a watermark.
+  How to use: Choose the image. Type the top and bottom text and adjust the style. Download the meme.
 
 ## Time & Calendar
 
@@ -706,6 +724,9 @@ Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.c
 - [Dual Monitor Size & Scaling Matcher](https://ohfis.com/en/dual-monitor-matcher/): Compare two screens and find the scaling that makes text the same size.
   Enter resolution and diagonal of both monitors. The calculator shows the pixel density of each, the physical size, the height difference and the display scaling to set so that windows and text look equally large on both screens when you drag them across.
   How to use: Enter the resolution and diagonal of both monitors. Read the density ratio and the advice. Set the scaling in the operating-system display settings.
+- [Video Frame Capture (Screenshot from Video)](https://ohfis.com/en/video-frame-capture/): Pick the exact frame in a video and save it as a full-resolution PNG or JPEG.
+  Open a video from your device, scrub to the moment you want, step frame by frame or second by second and save the frame as a PNG or JPEG at the full resolution of the video. Saved frames are listed with their time code so you can collect several.
+  How to use: Choose the video. Scrub or step to the frame. Press "Save frame".
 
 ## Related sites by the same operator
 

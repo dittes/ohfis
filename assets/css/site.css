@@ -917,3 +917,8 @@ body.s-page { letter-spacing: -.003em; }
 .ut-denoms{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;margin:12px 0}
 .ut-denom{display:grid;grid-template-columns:64px 1fr 76px;gap:8px;align-items:center;font-variant-numeric:tabular-nums}
 .ut-denom span{font-weight:700;text-align:right}.ut-denom output{text-align:right;opacity:.8}
+
+.ut-shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin:12px 0}
+.ut-shot{margin:0;border:1px solid var(--s-border,#d0d5dd);border-radius:10px;padding:8px;font-size:13px}
+.ut-shot img{width:100%;height:auto;border-radius:6px;display:block;margin-bottom:6px}
+.ut-inline{display:inline-flex;gap:6px;align-items:center}.ut-inline input{width:64px}

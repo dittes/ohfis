@@ -32,6 +32,10 @@ import * as AU from '../assets/js/tools/lib/audio.js';
 function testWav({ lead = 1, tone = 1, tail = 1, amp = 0.1, sr = 44100 } = {}) { const n = Math.round((lead + tone + tail) * sr), a = new Float32Array(n); for (let i = Math.round(lead * sr); i < Math.round((lead + tone) * sr); i++) a[i] = amp * Math.sin(2 * Math.PI * 440 * i / sr); return Buffer.from(AU.encodeWav([a, a.slice()], sr)); }
 async function audioRun(page, wav, name = 'in.wav') { await page.setInputFiles('#tool-root input[type=file]', { name, mimeType: 'audio/wav', buffer: wav }); await page.waitForSelector('[data-result=ready]', { timeout: 20000 }); const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /Download/ }).first().click()]); return AU.decodeWav(new Uint8Array(readFileSync(await dl.path()))); }
 
+// ---- image helpers (run inside the page) ----
+async function makeImg(page, w, h, draw) { const arr = await page.evaluate(async ([w, h, src]) => { const c = Object.assign(document.createElement('canvas'), { width: w, height: h }); const g = c.getContext('2d'); new Function('g', 'w', 'h', src)(g, w, h); const b = await new Promise(r => c.toBlob(r, 'image/png')); return [...new Uint8Array(await b.arrayBuffer())]; }, [w, h, draw]); return Buffer.from(arr); }
+const pixelAt = (page, selector, x, y) => page.evaluate(async ([sel, x, y]) => { const el = document.querySelector(sel); const blob = await (await fetch(el.src)).blob(); const bmp = await createImageBitmap(blob); const c = Object.assign(document.createElement('canvas'), { width: bmp.width, height: bmp.height }); const g = c.getContext('2d'); g.drawImage(bmp, 0, 0); return [...g.getImageData(x, y, 1, 1).data]; }, [selector, x, y]);
+
 const custom = {
   async 'text-diff-checker'(page) {
     await area(page, 0).fill('a\nb\nc'); await area(page, 1).fill('a\nx\nc'); await page.waitForTimeout(400);
@@ -581,6 +585,40 @@ Object.assign(custom, {
   async 'cash-drawer-counter'(page) {
     await page.getByLabel('Count of 20', { exact: true }).fill('3'); await page.getByLabel('Count of 0.1', { exact: true }).fill('3'); await page.getByLabel('Count of 0.05', { exact: true }).fill('1'); await page.locator('#tool-root input[aria-label="Expected amount"]').fill('60'); await page.waitForTimeout(300); const txt = await rootText(page); assert.ok(/Counted\s*60\.35 USD/.test(txt) && /Over by\s*0\.35 USD/.test(txt), txt.slice(0, 400));
     await page.locator('#tool-root input[aria-label="Expected amount"]').fill('60.35'); await page.waitForTimeout(200); assert.ok(/Balanced\s*✓/.test(await rootText(page)));
+  },
+  async 'image-color-effects'(page) {
+    const png = await makeImg(page, 20, 20, "g.fillStyle='#e03c20';g.fillRect(0,0,w,h)"); await page.setInputFiles('#tool-root input[type=file]', { name: 'red.png', mimeType: 'image/png', buffer: png }); await page.waitForSelector('.ut-img img', { timeout: 10000 });
+    let p = await pixelAt(page, '.ut-img img', 5, 5); assert.ok(p[0] === p[1] && p[1] === p[2], 'grayscale: ' + p); await page.locator('#tool-root select').first().selectOption('invert'); await page.waitForTimeout(600); p = await pixelAt(page, '.ut-img img', 5, 5); assert.deepEqual(p.slice(0, 3), [255 - 0xe0, 255 - 0x3c, 255 - 0x20], 'invert'); assert.equal(p[3], 255);
+    await page.locator('#tool-root select').first().selectOption('bw'); await page.waitForTimeout(600); p = await pixelAt(page, '.ut-img img', 5, 5); assert.ok((p[0] === 0 || p[0] === 255) && p[0] === p[1], 'threshold ' + p);
+  },
+  async 'background-remover'(page) {
+    const png = await makeImg(page, 40, 40, "g.fillStyle='#00ff00';g.fillRect(0,0,w,h);g.fillStyle='#d02020';g.fillRect(10,10,20,20)"); await page.setInputFiles('#tool-root input[type=file]', { name: 'gs.png', mimeType: 'image/png', buffer: png }); await page.waitForSelector('.ut-img img', { timeout: 10000 });
+    const corner = await pixelAt(page, '.ut-img img', 1, 1), centre = await pixelAt(page, '.ut-img img', 20, 20); assert.equal(corner[3], 0, 'background transparent'); assert.equal(centre[3], 255, 'subject kept'); assert.ok(centre[0] > 180 && centre[1] < 60, 'subject colour kept: ' + centre);
+  },
+  async 'svg-optimizer'(page) {
+    await area(page).fill('<?xml version="1.0"?>\n<!-- made with Inkscape -->\n<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="100" height="100" viewBox="0 0 100.000 100.000">\n  <metadata>x</metadata>\n  <circle inkscape:label="c" cx="50.000" cy="50.000" r="40.123456" fill="#f00"/>\n</svg>'); await page.waitForTimeout(500); const o = await out(page).inputValue(); assert.ok(o.startsWith('<svg') && !o.includes('Inkscape') && !o.includes('metadata') && o.includes('r="40.12"'), o);
+    const txt = await rootText(page); assert.ok(/Saved\s*\d+ %/.test(txt), txt.slice(0, 300)); assert.ok(await page.locator('#tool-root img[alt^="Preview"]').count() === 1, 'preview'); await area(page).fill('hello'); await page.waitForTimeout(400); assert.ok(await page.locator('.pt-drop__error:visible').count() > 0);
+  },
+  async 'image-to-text-ocr'(page) {
+    const png = await makeImg(page, 700, 160, "g.fillStyle='#fff';g.fillRect(0,0,w,h);g.fillStyle='#000';g.font='bold 64px Arial, Helvetica, sans-serif';g.fillText('HELLO WORLD 2025',30,100)"); await page.setInputFiles('#tool-root input[type=file]', { name: 'text.png', mimeType: 'image/png', buffer: png }); await page.waitForSelector('[data-result=ready]', { timeout: 90000 });
+    const txt = await out(page).inputValue().catch(() => ''); const all = (await area(page).inputValue()) || txt; assert.ok(/HELLO/i.test(all) && /WORLD/i.test(all) && all.includes('2025'), 'OCR text: ' + JSON.stringify(all));
+  },
+  async 'image-collage-maker'(page) {
+    const a = await makeImg(page, 200, 120, "g.fillStyle='#ff0000';g.fillRect(0,0,w,h)"), b = await makeImg(page, 200, 120, "g.fillStyle='#0000ff';g.fillRect(0,0,w,h)"); await page.setInputFiles('#tool-root input[type=file]', [{ name: 'a.png', mimeType: 'image/png', buffer: a }, { name: 'b.png', mimeType: 'image/png', buffer: b }]); await page.waitForTimeout(600);
+    const px = await page.evaluate(() => { const c = document.querySelector('#tool-root canvas'), g = c.getContext('2d'); return { w: c.width, h: c.height, l: [...g.getImageData(100, 450, 1, 1).data], r: [...g.getImageData(1500, 450, 1, 1).data], gap: [...g.getImageData(800, 450, 1, 1).data] }; }); assert.equal(px.w, 1600); assert.equal(px.h, 900); assert.deepEqual(px.l.slice(0, 3), [255, 0, 0]); assert.deepEqual(px.r.slice(0, 3), [0, 0, 255]); assert.deepEqual(px.gap.slice(0, 3), [255, 255, 255], 'gap uses background');
+    await page.locator('#tool-root select').first().selectOption('v'); await page.waitForTimeout(300); const top = await page.evaluate(() => [...document.querySelector('#tool-root canvas').getContext('2d').getImageData(800, 100, 1, 1).data]); assert.deepEqual(top.slice(0, 3), [255, 0, 0], 'stacked: first on top');
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Download PNG' }).click()]); assert.equal(readFileSync(await dl.path()).subarray(1, 4).toString(), 'PNG');
+  },
+  async 'meme-generator'(page) {
+    const png = await makeImg(page, 400, 300, "g.fillStyle='#2040a0';g.fillRect(0,0,w,h)"); await page.setInputFiles('#tool-root input[type=file]', { name: 'bg.png', mimeType: 'image/png', buffer: png }); await page.waitForTimeout(500);
+    const r = await page.evaluate(() => { const c = document.querySelector('#tool-root canvas'), g = c.getContext('2d'); const white = (y0, y1) => { const d = g.getImageData(0, y0, c.width, y1 - y0).data; let n = 0; for (let i = 0; i < d.length; i += 4) if (d[i] > 240 && d[i + 1] > 240 && d[i + 2] > 240) n++; return n; }; return { w: c.width, h: c.height, top: white(0, c.height * 0.25), mid: white(c.height * 0.4, c.height * 0.6), bottom: white(c.height * 0.75, c.height) }; });
+    assert.equal(r.w, 400); assert.ok(r.top > 100 && r.bottom > 100 && r.mid === 0, JSON.stringify(r));
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Download PNG' }).click()]); assert.equal(readFileSync(await dl.path()).subarray(1, 4).toString(), 'PNG');
+  },
+  async 'video-frame-capture'(page) {
+    const tmp = mkdtempSync(join(tmpdir(), 'vf-')); const f = join(tmp, 'v.webm'); const r = spawnSync('ffmpeg', ['-y', '-f', 'lavfi', '-i', 'testsrc=duration=3:size=160x120:rate=15', '-c:v', 'libvpx', '-b:v', '200k', f]); assert.equal(r.status, 0);
+    await page.setInputFiles('#tool-root input[type=file]', f); await page.waitForFunction(() => /Size\s*160 × 120/.test(document.getElementById('tool-root').innerText), null, { timeout: 10000 }); await page.getByRole('button', { name: '+1 s' }).click(); await page.waitForTimeout(500);
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Save frame (PNG)' }).click()]); const png = readFileSync(await dl.path()); assert.equal(png.subarray(1, 4).toString(), 'PNG'); assert.equal(png.readUInt32BE(16), 160); assert.equal(png.readUInt32BE(20), 120); assert.match(dl.suggestedFilename(), /0-01-0/, 'time code in file name ' + dl.suggestedFilename()); assert.equal(await page.locator('.ut-shot').count(), 1);
   },
 });
 

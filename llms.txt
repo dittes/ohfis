@@ -143,6 +143,12 @@ Resize, convert, blur, crop and clean images without uploading them. Hub: https:
 - [Circular Avatar & Profile Picture Cropper](https://ohfis.com/en/avatar-circle-cropper/): Crop a headshot into a round profile picture with an optional colour ring.
 - [Screenshot Beautifier (Frame, Shadow, Gradient)](https://ohfis.com/en/screenshot-beautifier/): Wrap screenshots in a macOS, Windows or browser frame on a gradient background.
 - [Image Difference Checker](https://ohfis.com/en/image-diff/): Compare two images and highlight every changed pixel in a colour of your choice.
+- [Black & White, Duotone & Invert Image Effects](https://ohfis.com/en/image-color-effects/): Turn photos black and white, duotone, sepia, inverted or dark-mode, in batch.
+- [Background Remover for Plain Backgrounds (Transparent PNG)](https://ohfis.com/en/background-remover/): Make a plain white, black or green background transparent in your browser.
+- [SVG Optimizer & Minifier](https://ohfis.com/en/svg-optimizer/): Shrink SVG files by removing editor junk and rounding numbers, with preview.
+- [Image to Text (OCR) – Extract Text from Photos & Screenshots](https://ohfis.com/en/image-to-text-ocr/): Copy the text out of a screenshot, scan or photo of a document, locally.
+- [Photo Collage & Split Screen Maker](https://ohfis.com/en/image-collage-maker/): Combine 2–4 images side by side, stacked, in a grid or as a before/after split.
+- [Meme Generator (Top & Bottom Text)](https://ohfis.com/en/meme-generator/): Put classic Impact-style captions on any picture and download it.
 
 ## Time & Calendar
 
@@ -294,6 +300,7 @@ Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.c
 - [Screen Refresh Rate & Frame Drop Test](https://ohfis.com/en/screen-refresh-rate-test/): Measure the real refresh rate, jitter and dropped frames of your browser.
 - [Aspect Ratio Calculator (16:9, 4:3, Resize)](https://ohfis.com/en/aspect-ratio-calculator/): Find the ratio of a resolution, scale to a new width, and get screen PPI.
 - [Dual Monitor Size & Scaling Matcher](https://ohfis.com/en/dual-monitor-matcher/): Compare two screens and find the scaling that makes text the same size.
+- [Video Frame Capture (Screenshot from Video)](https://ohfis.com/en/video-frame-capture/): Pick the exact frame in a video and save it as a full-resolution PNG or JPEG.
 
 ## Related sites by the same operator
 

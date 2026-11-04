@@ -53,3 +53,20 @@ test('geometry helpers', () => {
   assert.deepEqual(M.padToRatio(1000, 1000, 16 / 9), { w: 1778, h: 1000, x: 389, y: 0 }); assert.deepEqual(M.padToRatio(1600, 600, 1), { w: 1600, h: 1600, x: 0, y: 500 }); assert.deepEqual(M.padToRatio(1600, 900, 16 / 9), { w: 1600, h: 900, x: 0, y: 0 }); assert.deepEqual(M.rotatedBounds(100, 50, 90), { w: 50, h: 100 }); assert.deepEqual(M.rotatedBounds(100, 100, 45), { w: 141, h: 141 });
   const ico = M.buildICO([{ size: 16, png: bytes([1, 2, 3]) }, { size: 256, png: bytes([4, 5]) }]); const dv = new DataView(ico.buffer); assert.equal(dv.getUint16(2, true), 1); assert.equal(dv.getUint16(4, true), 2); assert.equal(ico[6], 16); assert.equal(ico[22], 0); assert.equal(dv.getUint32(6 + 12, true), 38); assert.equal(dv.getUint32(22 + 12, true), 41); assert.deepEqual([...ico.slice(38)], [1, 2, 3, 4, 5]); assert.equal(M.mimeToExt('image/webp'), 'webp');
 });
+
+test('colour effects', () => {
+  const px = () => Uint8ClampedArray.from([200, 100, 50, 255]); let d = px(); M.grayscale(d); assert.ok(d[0] === d[1] && d[1] === d[2] && Math.abs(d[0] - 117) < 2); d = px(); M.threshold(d, 100); assert.deepEqual([...d], [255, 255, 255, 255]); d = px(); M.threshold(d, 200); assert.deepEqual([...d], [0, 0, 0, 255]);
+  d = px(); M.sepia(d); assert.ok(d[0] > d[2]); d = Uint8ClampedArray.from([100, 100, 100, 255]); M.brightnessContrast(d, 50, 0); assert.equal(d[0], 150); d = px(); M.darkModeSim(d); assert.ok(d[3] === 255);
+  const white = Uint8ClampedArray.from([255, 255, 255, 255]); M.darkModeSim(white); assert.ok(white[0] < 40, 'white turns dark: ' + white[0]);
+});
+test('removeColor and borderColor', () => {
+  const w = 4, h = 4, d = new Uint8ClampedArray(w * h * 4); for (let i = 0; i < d.length; i += 4) { d[i] = 0; d[i + 1] = 255; d[i + 2] = 0; d[i + 3] = 255; } const c = (x, y) => (y * w + x) * 4; for (const [x, y] of [[1, 1], [2, 1], [1, 2], [2, 2]]) { d[c(x, y)] = 200; d[c(x, y) + 1] = 20; d[c(x, y) + 2] = 20; }
+  assert.deepEqual(M.borderColor(d, w, h), [0, 255, 0]); const n = M.removeColor(d, [0, 255, 0], 10, 0); assert.equal(n, 12); assert.equal(d[c(0, 0) + 3], 0); assert.equal(d[c(1, 1) + 3], 255);
+  const e = Uint8ClampedArray.from([10, 10, 10, 255]); M.removeColor(e, [0, 0, 0], 2, 20); assert.ok(e[3] < 255 && e[3] > 0, 'feathered alpha ' + e[3]);
+});
+test('SVG optimizer keeps the drawing and removes bloat', () => {
+  const src = `<?xml version="1.0" encoding="UTF-8"?>\n<!-- Generator: Inkscape -->\n<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="100.000px" height="50.5000" viewBox="0 0 100.000 50.5">\n  <metadata>junk</metadata>\n  <path inkscape:label="x" id="p1" d="M 10.123456 20.987654 L 30.5 40.25 Z" fill="#f00"/>\n  <circle cx="5.000" cy="5.0" r="2.50000"/>\n</svg>`;
+  const o = M.optimizeSVG(src, { precision: 2 }); assert.ok(o.after < o.before * 0.7, `${o.before} → ${o.after}`); assert.ok(!/Inkscape|metadata|inkscape:|<\?xml/.test(o.svg), o.svg); assert.match(o.svg, /d="M10\.12 20\.99L30\.5 40\.25Z"/); assert.match(o.svg, /cx="5"/); assert.match(o.svg, /viewBox="0 0 100 50\.5"/); assert.match(o.svg, /fill="#f00"/);
+  assert.ok(!/id="p1"/.test(M.optimizeSVG(src, { removeIds: true }).svg)); assert.ok(/id="p1"/.test(M.optimizeSVG(src).svg));
+  const used = M.optimizeSVG('<svg><defs><linearGradient id="g"/></defs><rect fill="url(#g)"/></svg>', { removeIds: true }).svg; assert.ok(used.includes('id="g"'), 'referenced ids kept');
+});

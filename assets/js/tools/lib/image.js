@@ -108,3 +108,35 @@ export function rotatedBounds(w, h, deg) { const r = deg * Math.PI / 180, c = Ma
 export function buildICO(images) { const n = images.length; const head = new Uint8Array(6 + n * 16); const dv = new DataView(head.buffer); dv.setUint16(2, 1, true); dv.setUint16(4, n, true); let off = head.length; images.forEach((im, i) => { const e = 6 + i * 16; head[e] = im.size >= 256 ? 0 : im.size; head[e + 1] = im.size >= 256 ? 0 : im.size; dv.setUint16(e + 4, 1, true); dv.setUint16(e + 6, 32, true); dv.setUint32(e + 8, im.png.length, true); dv.setUint32(e + 12, off, true); off += im.png.length; }); return concat([head, ...images.map(i => i.png)]); }
 export const mimeToExt = m => ({ 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/avif': 'avif', 'image/gif': 'gif' })[m] || 'img';
 export const PAPER = { A0: [841, 1189], A1: [594, 841], A2: [420, 594], A3: [297, 420], A4: [210, 297], A5: [148, 210], A6: [105, 148], B4: [250, 353], B5: [176, 250], Letter: [215.9, 279.4], Legal: [215.9, 355.6], Tabloid: [279.4, 431.8], Executive: [184.15, 266.7] };
+
+// ---------- Colour effects ----------
+export function grayscale(d) { for (let i = 0; i < d.length; i += 4) { const l = d[i] * 0.2126 + d[i + 1] * 0.7152 + d[i + 2] * 0.0722; d[i] = d[i + 1] = d[i + 2] = l; } }
+export function sepia(d) { for (let i = 0; i < d.length; i += 4) { const r = d[i], g = d[i + 1], b = d[i + 2]; d[i] = r * 0.393 + g * 0.769 + b * 0.189; d[i + 1] = r * 0.349 + g * 0.686 + b * 0.168; d[i + 2] = r * 0.272 + g * 0.534 + b * 0.131; } }
+export function threshold(d, level = 128) { for (let i = 0; i < d.length; i += 4) { const v = d[i] * 0.2126 + d[i + 1] * 0.7152 + d[i + 2] * 0.0722 >= level ? 255 : 0; d[i] = d[i + 1] = d[i + 2] = v; } }
+export function brightnessContrast(d, brightness = 0, contrast = 0) { const f = (259 * (contrast + 255)) / (255 * (259 - contrast)); for (let i = 0; i < d.length; i += 4) for (let k = 0; k < 3; k++) d[i + k] = f * (d[i + k] - 128 + brightness) + 128; }
+/** Dark-mode style: invert lightness but keep hue roughly (invert, then rotate hue by 180°). */
+export function darkModeSim(d) { for (let i = 0; i < d.length; i += 4) { let r = 255 - d[i], g = 255 - d[i + 1], b = 255 - d[i + 2]; const rot = (r, g, b) => { const c = Math.cos(Math.PI), s = Math.sin(Math.PI); return [(0.213 + c * 0.787 - s * 0.213) * r + (0.715 - c * 0.715 - s * 0.715) * g + (0.072 - c * 0.072 + s * 0.928) * b, (0.213 - c * 0.213 + s * 0.143) * r + (0.715 + c * 0.285 + s * 0.14) * g + (0.072 - c * 0.072 - s * 0.283) * b, (0.213 - c * 0.213 - s * 0.787) * r + (0.715 - c * 0.715 + s * 0.715) * g + (0.072 + c * 0.928 + s * 0.072) * b]; }; [d[i], d[i + 1], d[i + 2]] = rot(r, g, b); } }
+
+/** Make pixels close to `target` [r,g,b] transparent. tolerance 0–100 (% of the maximum colour distance), feather 0–50 softens the edge. Returns number of pixels changed. */
+export function removeColor(d, target, tolerance = 20, feather = 10) {
+  const max = Math.sqrt(3 * 255 * 255), lo = tolerance / 100 * max, hi = lo + feather / 100 * max; let n = 0;
+  for (let i = 0; i < d.length; i += 4) { const dist = Math.hypot(d[i] - target[0], d[i + 1] - target[1], d[i + 2] - target[2]); if (dist <= lo) { d[i + 3] = 0; n++; } else if (dist < hi) { d[i + 3] = Math.round(d[i + 3] * (dist - lo) / (hi - lo)); n++; } }
+  return n;
+}
+/** Most common colour along the image border (a good guess for the background). */
+export function borderColor(d, w, h) { const m = new Map(); const add = (x, y) => { const i = (y * w + x) * 4, k = ((d[i] >> 3) << 10) | ((d[i + 1] >> 3) << 5) | (d[i + 2] >> 3); const e = m.get(k) || [0, 0, 0, 0]; e[0]++; e[1] += d[i]; e[2] += d[i + 1]; e[3] += d[i + 2]; m.set(k, e); }; for (let x = 0; x < w; x++) { add(x, 0); add(x, h - 1); } for (let y = 1; y < h - 1; y++) { add(0, y); add(w - 1, y); } let best = null; for (const e of m.values()) if (!best || e[0] > best[0]) best = e; return [Math.round(best[1] / best[0]), Math.round(best[2] / best[0]), Math.round(best[3] / best[0])]; }
+
+// ---------- SVG optimizer (conservative, text based) ----------
+const roundNum = (s, p) => { const n = Number(s); if (!Number.isFinite(n)) return s; const r = Number(n.toFixed(p)); return String(r).replace(/^(-?)0\./, '$1.'); };
+export function optimizeSVG(src, { precision = 2, removeTitle = false, removeIds = false } = {}) {
+  let s = String(src).replace(/^﻿/, ''); const before = s.length;
+  s = s.replace(/<\?xml[\s\S]*?\?>/g, '').replace(/<!DOCTYPE[\s\S]*?>/gi, '').replace(/<!--[\s\S]*?-->/g, '');
+  s = s.replace(/<metadata[\s\S]*?<\/metadata>/gi, '').replace(/<sodipodi:namedview[\s\S]*?(\/>|<\/sodipodi:namedview>)/gi, '').replace(/<inkscape:[^>]*?(\/>|>[\s\S]*?<\/inkscape:[^>]*>)/gi, '');
+  if (removeTitle) s = s.replace(/<title[\s\S]*?<\/title>/gi, '').replace(/<desc[\s\S]*?<\/desc>/gi, '');
+  s = s.replace(/\s(?:xmlns:(?:inkscape|sodipodi|dc|cc|rdf|xlink(?![^>]*xlink:))|inkscape:[\w-]+|sodipodi:[\w-]+|xml:space)="[^"]*"/g, '');
+  if (removeIds) { const used = new Set([...s.matchAll(/(?:url\(#|href="#)([^)"]+)/g)].map(m => m[1])); s = s.replace(/\sid="([^"]*)"/g, (m, id) => used.has(id) ? m : ''); }
+  s = s.replace(/\b(d|points|viewBox|transform)="([^"]*)"/g, (m, a, v) => `${a}="${v.replace(/-?\d*\.?\d+(?:e-?\d+)?/gi, n => roundNum(n, precision)).replace(/\s+/g, ' ').replace(/\s*([a-zA-Z])\s*/g, '$1').replace(/,\s+/g, ',').trim()}"`);
+  s = s.replace(/\b(x|y|cx|cy|r|rx|ry|width|height|x1|x2|y1|y2|stroke-width|opacity|fill-opacity|stroke-opacity|offset)="(-?\d*\.?\d+)(px)?"/g, (m, a, v) => `${a}="${roundNum(v, precision)}"`);
+  s = s.replace(/\s*=\s*"/g, '="').replace(/>\s+</g, '><').replace(/\s{2,}/g, ' ').replace(/\s+(\/?>)/g, '$1').trim();
+  return { svg: s, before, after: s.length };
+}
