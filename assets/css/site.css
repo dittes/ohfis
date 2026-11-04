@@ -892,3 +892,7 @@ body.s-page { letter-spacing: -.003em; }
 .ut-wheel { max-width: min(100%, 420px); height: auto; } .ut-bracket { max-width: none; background: #fff; display: block; }
 .ut-prompt { position: fixed; inset: 0; z-index: 100; background: #000; color: #fff; overflow: hidden; } .ut-prompt__text { position: absolute; left: 8%; right: 8%; top: 0; font-weight: 700; line-height: 1.4; text-align: center; will-change: transform; } .ut-prompt__text p { margin: 0 0 1.1em; } .ut-prompt__line { position: absolute; left: 0; right: 0; top: 42%; height: 3px; background: rgba(255, 90, 90, .7); z-index: 2; pointer-events: none; }
 .ut-prompt__bar { position: absolute; left: 0; right: 0; bottom: 0; display: flex; gap: 10px; align-items: center; justify-content: center; padding: 10px; background: rgba(0, 0, 0, .75); z-index: 3; } .ut-prompt__info { color: #cdd3de; font-size: 13px; margin-right: auto; }
+
+/* flexbox playground */
+.ut-flexbox{min-height:220px;border:2px dashed var(--s-border,#c8ced8);border-radius:10px;padding:10px;margin:12px 0;background:var(--s-surface-2,#f6f8fb)}
+.ut-flexitem{min-width:56px;min-height:36px;padding:8px 14px;background:var(--s-blue,#2d6cdf);color:#fff;border-radius:6px;font-weight:700;display:flex;align-items:center;justify-content:center}

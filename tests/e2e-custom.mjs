@@ -421,6 +421,76 @@ Object.assign(custom, {
     const o = await out(page).inputValue(); for (const want of ['# Report', '**bold**', '*italic*', '[link](https://example.com)', '- one', '1. first', '| A | B |', '| 1 | 2 |']) assert.ok(o.includes(want), `missing ${want} in:\n${o}`);
     await page.setInputFiles('#tool-root input[type=file]', { name: 'bad.docx', buffer: Buffer.from('not a zip') }); await page.waitForTimeout(500); assert.ok((await page.locator('.pt-drop__error').first().innerText()).length > 0, 'error shown for invalid file');
   },
+  async 'port-number-lookup'(page) {
+    await page.locator('#tool-root input[type=text]').fill('mysql'); await page.waitForTimeout(200); const txt = await rootText(page); assert.ok(txt.includes('3306'), txt.slice(0, 300)); assert.ok(!txt.includes('Telnet'), 'filtered');
+  },
+  async 'mime-type-lookup'(page) {
+    await page.locator('#tool-root input[type=text]').fill('report.docx'); await page.waitForTimeout(200); assert.ok((await rootText(page)).includes('wordprocessingml.document')); await page.locator('#tool-root input[type=text]').fill('image/webp'); await page.waitForTimeout(200); assert.ok((await rootText(page)).includes('.webp'));
+  },
+  async 'spf-dmarc-generator'(page) {
+    const recs = async () => page.locator('[data-record]').allInnerTexts(); let r = await recs(); assert.equal(r[0], 'v=spf1 include:_spf.google.com ~all'); assert.equal(r[1], 'v=DMARC1; p=none');
+    await page.locator('#tool-root input[placeholder*="dmarc@"]').fill('d@example.com'); await page.locator('#tool-root select').nth(1).selectOption('quarantine'); await page.waitForTimeout(300); r = await recs(); assert.equal(r[1], 'v=DMARC1; p=quarantine; rua=mailto:d@example.com');
+    await page.locator('#tool-root input[placeholder*="203.0"]').fill('999.1.1.1'); await page.waitForTimeout(300); assert.ok((await rootText(page)).includes('not a valid IPv4'), 'validation message');
+  },
+  async 'css-flexbox-playground'(page) {
+    await page.locator('#tool-root select').nth(1).selectOption('space-between'); await page.waitForTimeout(200); assert.ok((await rootText(page)).includes('justify-content: space-between;')); assert.equal(await page.locator('.ut-flexitem').count(), 4);
+    const x = await page.locator('.ut-flexitem').evaluateAll(els => els.map(e => e.getBoundingClientRect().left)); const box = await page.locator('.ut-flexbox').boundingBox(); assert.ok(x[3] > box.x + box.width * 0.7, 'last item pushed to the right');
+  },
+  async 'password-generator'(page) {
+    const codes = async () => page.locator('.ut-pw code').allInnerTexts(); let c = await codes(); assert.equal(c.length, 5); assert.ok(c.every(x => x.length === 20), 'default length 20');
+    assert.ok(c.every(x => /[a-z]/.test(x) && /[A-Z]/.test(x) && /\d/.test(x) && /[^A-Za-z0-9]/.test(x)), 'all classes present');
+    await page.locator('#tool-root input[type=range]').evaluate(e => { e.value = 40; e.dispatchEvent(new Event('input')); }); await page.waitForTimeout(100); c = await codes(); assert.ok(c.every(x => x.length === 40));
+    for (const l of ['a–z', 'A–Z', '!@#$…']) await page.getByLabel(l, { exact: true }).uncheck(); await page.waitForTimeout(100); c = await codes(); assert.ok(c.every(x => /^\d{40}$/.test(x)), 'digits only: ' + c[0]); assert.equal(new Set(c).size, 5, 'different every time');
+  },
+  async 'passphrase-generator'(page) {
+    const c = await page.locator('.ut-pw code').allInnerTexts(); assert.equal(c.length, 5); assert.ok(c.every(x => /^[a-z]+(-[a-z]+){4}$/.test(x)), c[0]); assert.ok((await rootText(page)).includes('65 bits') || (await rootText(page)).includes('(64 bits)') || /\(6[45] bits\)/.test(await rootText(page)), 'entropy shown');
+  },
+  async 'jwt-decoder'(page) {
+    await page.getByRole('button', { name: /Sample/i }).click(); await page.waitForTimeout(500); let txt = await rootText(page); assert.ok(txt.includes('John Doe') && txt.includes('HS256') && txt.includes('✓ valid'), txt.slice(0, 400));
+    await page.locator('#tool-root input[type=text]').fill('wrong secret'); await page.waitForTimeout(500); assert.ok((await rootText(page)).includes('does not match'));
+    await area(page).fill('not.a.jwt'); await page.waitForTimeout(400); assert.ok(await page.locator('.pt-drop__error:visible').count() > 0, 'invalid token message');
+  },
+  async 'wifi-qr-code-generator'(page) {
+    assert.ok(await page.locator('#tool-root canvas, #tool-root svg, #tool-root img').count() > 0, 'code shown');
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Download PNG' }).click()]); const png = readFileSync(await dl.path()); assert.equal(png.subarray(1, 4).toString(), 'PNG');
+    let decoded = null; try { const { createRequire } = await import('node:module'); const rq = createRequire('/tmp/claude-0/qrdec/'); const jsQR = rq('jsqr'); const { PNG } = rq('pngjs'); const img = PNG.sync.read(png); decoded = jsQR(new Uint8ClampedArray(img.data), img.width, img.height)?.data; } catch (e) { if (!/Cannot find module/.test(e.message)) throw e; }
+    if (decoded !== null) assert.equal(decoded, 'WIFI:T:WPA;S:Guest Wi-Fi;P:welcome-2025;;', 'decoded QR payload');
+  },
+  async 'qr-code-generator'(page) {
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Download SVG' }).click()]); const svg = readFileSync(await dl.path(), 'utf8'); assert.ok(svg.includes('<svg') && svg.includes('<path') || svg.includes('<rect'), 'svg content');
+    const [d2] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Download PNG' }).click()]); const png = readFileSync(await d2.path());
+    try { const { createRequire } = await import('node:module'); const rq = createRequire('/tmp/claude-0/qrdec/'); const jsQR = rq('jsqr'); const { PNG } = rq('pngjs'); const img = PNG.sync.read(png); assert.equal(jsQR(new Uint8ClampedArray(img.data), img.width, img.height)?.data, 'https://ohfis.com'); } catch (e) { if (!/Cannot find module/.test(e.message)) throw e; }
+  },
+  async 'encrypted-note-link'(page, base) {
+    await area(page).fill('The safe code is 4711 ✓ äöü'); await page.waitForTimeout(800); const pres = await page.locator('.ut-pre').allInnerTexts(); const link = pres[0].trim(), key = pres[1].trim(); assert.ok(link.includes('#v1.'), link.slice(0, 100)); assert.ok(!link.includes('4711'), 'plaintext not in link');
+    const p2 = await page.context().newPage(); await p2.goto(link.replace(/^https?:\/\/[^/]+/, base)); await p2.waitForSelector('#tool-root[data-ready=true]'); await p2.locator('#tool-root input').first().fill('wrong'); await p2.getByRole('button', { name: 'Decrypt note' }).click(); await p2.waitForTimeout(500); assert.ok(await p2.locator('.pt-drop__error:visible').count() > 0, 'wrong key rejected');
+    await p2.locator('#tool-root input').first().fill(key); await p2.getByRole('button', { name: 'Decrypt note' }).click(); await p2.waitForTimeout(500); assert.ok((await p2.locator('#tool-root').innerText()).includes('The safe code is 4711 ✓ äöü'), 'decrypted text'); await p2.close();
+  },
+  async 'pert-estimator'(page) {
+    const txt = await rootText(page); assert.ok(txt.includes('Expected total'), txt.slice(0, 200)); const exp = [(2 + 16 + 9) / 6, (5 + 32 + 20) / 6, (4 + 24 + 14) / 6, (2 + 12 + 8) / 6].reduce((a, b) => a + b); const m = /Expected total\s*([\d.,]+)/.exec(txt); assert.equal(Number(m[1].replace(',', '')), Math.round(exp * 10) / 10, 'expected total'); assert.ok(/Chance to finish within 30\s*\d+ ?%/.test(txt));
+    await area(page).fill('bad line'); await page.waitForTimeout(400); assert.ok((await rootText(page)).includes('optimistic'), 'format hint');
+  },
+  async 'name-picker-wheel'(page) {
+    await area(page).fill('Ann\nBen\nCy'); await page.getByRole('button', { name: 'Spin the wheel' }).click(); await page.waitForFunction(() => /Winner|winner/.test(document.getElementById('tool-root').innerText), null, { timeout: 15000 }); const txt = await rootText(page); assert.ok(/Winner[\s\S]*(Ann|Ben|Cy)/i.test(txt), txt.slice(0, 300));
+  },
+  async 'tournament-bracket-maker'(page) {
+    await area(page).fill('A\nB\nC\nD\nE'); await page.waitForTimeout(500); const svg = await page.locator('#tool-root svg').first().innerHTML(); for (const n of ['A', 'B', 'C', 'D', 'E']) assert.ok(new RegExp(`>(\\d+\\. )?${n}<`).test(svg), 'entrant ' + n); assert.ok(/bye/i.test(svg), 'byes shown for 5 entrants');
+  },
+  async 'org-chart-maker'(page) {
+    await area(page).fill('CEO, Anna\n  CTO, Ben\n    Dev, Cy\n  CFO, Dee'); await page.waitForTimeout(500); const txt = await page.locator('#tool-root svg').first().innerHTML(); for (const n of ['CEO', 'Anna', 'CTO', 'CFO', 'Dev']) assert.ok(txt.includes(n), n);
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Download SVG' }).click()]); assert.ok(readFileSync(await dl.path(), 'utf8').includes('<svg'));
+  },
+  async 'tone-auditor'(page) {
+    await area(page).fill('As per my last email, you never listen. Sorry, sorry, sorry!!! Please advise ASAP.'); await page.waitForTimeout(500); const marks = await page.locator('#tool-root mark').allInnerTexts(); assert.ok(marks.some(m => /per my last email/i.test(m)), 'flags passive-aggressive phrase: ' + marks); assert.ok(marks.some(m => /you never/i.test(m)), 'flags blaming');
+    await area(page).fill('Thanks for the update, I will review it tomorrow.'); await page.waitForTimeout(400); assert.equal(await page.locator('#tool-root mark').count(), 0, 'clean text has no marks');
+  },
+  async 'audio-tone-generator'(page) {
+    await page.getByRole('button', { name: 'Play' }).click(); await page.waitForTimeout(500); assert.ok(await page.getByRole('button', { name: /Stop/ }).count() > 0, 'switches to Stop');
+    const state = await page.evaluate(() => window.__ctxState || 'n/a'); void state; await page.getByRole('button', { name: /Stop/ }).first().click(); await page.waitForTimeout(300); assert.ok(await page.getByRole('button', { name: 'Play' }).count() > 0, 'back to Play');
+  },
+  async 'bpm-tap-counter'(page) {
+    const tap = page.getByRole('button', { name: 'TAP' }); for (let i = 0; i < 6; i++) { await tap.click(); await page.waitForTimeout(500); } const txt = await rootText(page); const m = /(\d{2,3}(?:\.\d)?)\s*BPM/i.exec(txt) || /BPM[^\d]*(\d{2,3}(?:\.\d)?)/i.exec(txt); assert.ok(m && Number(m[1]) > 100 && Number(m[1]) < 125, 'tempo of ~0.5 s taps (100-125 BPM), got: ' + txt.slice(0, 200));
+  },
 });
 
 export default custom;

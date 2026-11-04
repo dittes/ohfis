@@ -529,6 +529,18 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 - [Regular Expression Explainer & Tester](https://ohfis.com/en/regex-explainer/): Break a regular expression into plain-language parts and test it live.
   Paste a regular expression and see it explained token by token in nested form: what each group, class, quantifier and anchor means. A test area highlights the matches line by line, so you can see whether it does what you think.
   How to use: Paste your regular expression and set flags. Read the explanation of each part. Edit the test text to check matches and non-matches.
+- [Port Number Lookup (Common TCP/UDP Ports)](https://ohfis.com/en/port-number-lookup/): Find which service uses a port, and which port a service uses.
+  Type a port number or the name of a service and see the protocol (TCP or UDP), the usual service and a short note about it, including which ports should never be exposed to the internet, such as SMB (445), RDP (3389), databases or Docker's unencrypted API (2375).
+  How to use: Type a port number or a service name. Read the protocol and the note. Check whether the port should be reachable from the internet.
+- [MIME Type Lookup (File Extension to Content-Type)](https://ohfis.com/en/mime-type-lookup/): Find the correct Content-Type for a file extension, or the extension for a MIME type.
+  Which Content-Type should a server send for a .docx, a .webp or a .wasm file? Search by extension, file name or by MIME type and get the registered value, including the long names of Office formats.
+  How to use: Type an extension such as .docx or a MIME type such as image/png. Copy the matching Content-Type. Configure your server or upload accordingly.
+- [SPF & DMARC Record Generator](https://ohfis.com/en/spf-dmarc-generator/): Build the DNS TXT records that stop others from spoofing your domain's email.
+  Choose which services may send email for your domain (Google, SendGrid, your own servers, IP ranges) and how strictly receivers should treat everything else, and get a ready SPF record. Then pick a DMARC policy, a reporting address and alignment and get the DMARC record. Both come with the exact host name to create them under and with warnings about common mistakes.
+  How to use: Enter your sending services and choose the SPF ending. Pick the DMARC policy and a report address. Create the two TXT records at your DNS provider.
+- [CSS Flexbox Playground & Cheat Sheet](https://ohfis.com/en/css-flexbox-playground/): Click through flexbox settings, see the result live and copy the CSS.
+  Change flex-direction, justify-content, align-items, flex-wrap, align-content, gap and the number of items and watch the boxes rearrange immediately. The matching CSS is shown below and can be copied.
+  How to use: Change the container properties. Watch the boxes move. Copy the CSS.
 
 ## Notes & Privacy
 

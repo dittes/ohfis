@@ -91,3 +91,13 @@ test('robots.txt validation and generation', () => {
   assert.match(I.validateRobots('User-agent: *\nDisallow: /').issues.map(i => i.msg).join(), /blocks the whole site/); assert.match(I.validateRobots('').issues[0].msg, /No User-agent/);
   assert.equal(I.buildRobots({ agents: [{ ua: '*', disallow: ['/admin/'], allow: ['/admin/public'] }], sitemaps: ['https://x.com/s.xml'] }), 'User-agent: *\nAllow: /admin/public\nDisallow: /admin/\n\nSitemap: https://x.com/s.xml\n'); assert.match(I.buildRobots({ blockAI: true }), /User-agent: GPTBot\nDisallow: \//); assert.equal(I.buildRobots({}), 'User-agent: *\nDisallow:\n');
 });
+
+test('SPF builder', () => {
+  const r = I.buildSPF({ includes: ['_spf.google.com', 'sendgrid.net'], ip4: ['203.0.113.0/24'], mx: true, all: '-all' }); assert.equal(r.record, 'v=spf1 mx ip4:203.0.113.0/24 include:_spf.google.com include:sendgrid.net -all'); assert.equal(r.lookups, 3);
+  assert.throws(() => I.buildSPF({ ip4: ['999.1.1.1'] })); assert.throws(() => I.buildSPF({ includes: ['bad domain'] }));
+  assert.ok(I.buildSPF({ all: '+all' }).warnings.length);
+});
+test('DMARC builder', () => {
+  assert.equal(I.buildDMARC({ policy: 'quarantine', rua: 'a@x.com, b@x.com', pct: 25 }).record, 'v=DMARC1; p=quarantine; pct=25; rua=mailto:a@x.com,mailto:b@x.com');
+  assert.equal(I.buildDMARC({ policy: 'reject', sub: 'none', adkim: 's' }).record, 'v=DMARC1; p=reject; sp=none; adkim=s'); assert.throws(() => I.buildDMARC({ rua: 'nope' })); assert.throws(() => I.buildDMARC({ pct: 150 }));
+});

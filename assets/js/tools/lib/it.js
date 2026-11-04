@@ -254,3 +254,27 @@ export function buildRobots({ agents = [{ ua: '*', disallow: [], allow: [] }], s
   const out = []; for (const a of agents) { out.push(`User-agent: ${a.ua}`); if (!a.disallow.length && !a.allow.length) out.push('Disallow:'); a.allow.forEach(p => out.push(`Allow: ${p}`)); a.disallow.forEach(p => out.push(`Disallow: ${p}`)); out.push(''); }
   if (blockAI) for (const b of ['GPTBot', 'ClaudeBot', 'CCBot', 'Google-Extended', 'PerplexityBot', 'Bytespider']) out.push(`User-agent: ${b}`, 'Disallow: /', ''); sitemaps.forEach(s => out.push(`Sitemap: ${s}`)); return out.join('\n').trim() + '\n';
 }
+
+// ---------- Email authentication records ----------
+/** Build an SPF record. opts: { includes:[], ip4:[], ip6:[], mx, a, all: '~all'|'-all'|'?all'|'+all' } */
+export function buildSPF({ includes = [], ip4 = [], ip6 = [], mx = false, a = false, all = '~all' } = {}) {
+  const clean = l => l.map(x => String(x).trim()).filter(Boolean);
+  const v4 = /^(\d{1,3}\.){3}\d{1,3}(\/\d{1,2})?$/, v6 = /^[0-9a-f:]+(\/\d{1,3})?$/i, host = /^[a-z0-9_]([a-z0-9._-]*[a-z0-9])?$/i;
+  const parts = ['v=spf1']; if (mx) parts.push('mx'); if (a) parts.push('a');
+  for (const ip of clean(ip4)) { if (!v4.test(ip) || ip.split('/')[0].split('.').some(n => +n > 255)) throw new Error(`"${ip}" is not a valid IPv4 address or range.`); parts.push('ip4:' + ip); }
+  for (const ip of clean(ip6)) { if (!v6.test(ip) || !ip.includes(':')) throw new Error(`"${ip}" is not a valid IPv6 address or range.`); parts.push('ip6:' + ip); }
+  for (const d of clean(includes)) { if (!host.test(d) || !d.includes('.')) throw new Error(`"${d}" is not a valid domain name.`); parts.push('include:' + d); }
+  if (!['~all', '-all', '?all', '+all'].includes(all)) throw new Error('Unknown ending.'); parts.push(all);
+  const record = parts.join(' '); const lookups = clean(includes).length + (mx ? 1 : 0) + (a ? 1 : 0);
+  const warnings = []; if (lookups > 10) warnings.push(`This record needs at least ${lookups} DNS lookups; SPF allows at most 10 (includes may add more).`); if (all === '+all') warnings.push('"+all" lets anyone send mail as your domain. Use ~all or -all.'); if (record.length > 255) warnings.push('The record is longer than 255 characters and must be split into several quoted strings in DNS.');
+  return { record, lookups, warnings };
+}
+/** Build a DMARC TXT record. */
+export function buildDMARC({ policy = 'none', sub = '', pct = 100, rua = '', ruf = '', adkim = 'r', aspf = 'r' } = {}) {
+  if (!['none', 'quarantine', 'reject'].includes(policy)) throw new Error('Policy must be none, quarantine or reject.'); const p = Number(pct); if (!(p >= 0 && p <= 100)) throw new Error('Percentage must be between 0 and 100.');
+  const mails = s => String(s).split(/[\s,;]+/).filter(Boolean).map(m => { if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)) throw new Error(`"${m}" is not a valid email address.`); return 'mailto:' + m; });
+  const parts = ['v=DMARC1', `p=${policy}`]; if (sub && sub !== policy) parts.push(`sp=${sub}`); if (p !== 100) parts.push(`pct=${p}`); const r = mails(rua); if (r.length) parts.push('rua=' + r.join(',')); const f = mails(ruf); if (f.length) parts.push('ruf=' + f.join(','));
+  if (adkim === 's') parts.push('adkim=s'); if (aspf === 's') parts.push('aspf=s');
+  const warnings = []; if (policy === 'none') warnings.push('p=none only monitors. Move to quarantine and then reject once your reports look clean.'); if (!r.length) warnings.push('Without rua= you will not receive aggregate reports, so you cannot see who sends mail as your domain.');
+  return { record: parts.join('; '), warnings };
+}
