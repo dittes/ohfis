@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Zrzut klatki z wideo (zapisz kadr)","url":"https://ohfis.com/pl/video-frame-capture/","description":"Wybierz dokładną klatkę wideo i zapisz ją jako PNG lub JPEG w pełnej rozdzielczości. Za darmo, działa w przeglądarce, nic nie jest przesyłane.","inLanguage":"pl","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://ohfis.com/pl/"},{"@type":"ListItem","position":2,"name":"Audio i wideo","item":"https://ohfis.com/pl/audio-video-tools/"},{"@type":"ListItem","position":3,"name":"Zrzut klatki z wideo (zapisz kadr)"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Zrzut klatki z wideo (zapisz kadr)","step":[{"@type":"HowToStep","position":1,"text":"Choose the video."},{"@type":"HowToStep","position":2,"text":"Scrub or step to the frame."},{"@type":"HowToStep","position":3,"text":"Press \"Save frame\"."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is the saved frame blurry?","acceptedAnswer":{"@type":"Answer","text":"Videos are compressed; a frame between keyframes may be softer. Step a frame or two to a sharper one."}},{"@type":"Question","name":"Can I take frames from a YouTube video?","acceptedAnswer":{"@type":"Answer","text":"No. Open a video file from your device."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak z tego korzystać: Zrzut klatki z wideo (zapisz kadr)","step":[{"@type":"HowToStep","position":1,"text":"Wybierz wideo."},{"@type":"HowToStep","position":2,"text":"Przewiń lub przejdź do klatki."},{"@type":"HowToStep","position":3,"text":"Naciśnij „Zapisz klatkę”."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Dlaczego zapisana klatka jest rozmyta?","acceptedAnswer":{"@type":"Answer","text":"Wideo jest skompresowane; klatka między klatkami kluczowymi może być bardziej miękka. Przejdź o klatkę lub dwie do ostrzejszej."}},{"@type":"Question","name":"Czy mogę brać klatki z filmu z YouTube?","acceptedAnswer":{"@type":"Answer","text":"Nie. Otwórz plik wideo z urządzenia."}},{"@type":"Question","name":"Czy moje pliki są gdzieś przesyłane?","acceptedAnswer":{"@type":"Answer","text":"Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony."}},{"@type":"Question","name":"Czy to narzędzie jest darmowe?","acceptedAnswer":{"@type":"Answer","text":"Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Przejdź do treści</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak działa: Zrzut klatki z wideo (zapisz kadr)</h2>
-        <p class="pt-hint">Szczegółowe wyjaśnienie jest po angielsku.</p>
-        <p lang="en">Open a video from your device, scrub to the moment you want, step frame by frame or second by second and save the frame as a PNG or JPEG at the full resolution of the video. Saved frames are listed with their time code so you can collect several.</p><p lang="en">The tool plays the video in an HTML video element and draws the current frame onto a canvas of the video's native size, then exports it. Seeking uses the browser's decoder, so it supports the formats your browser plays (MP4 with H.264, WebM, most phone videos). Browsers do not report the exact frame rate to web pages, so frame stepping assumes the rate you enter (30 by default); with variable-frame-rate videos a step may skip or repeat a frame. The video is never uploaded.</p>
+        
+        <p>Otwórz wideo z urządzenia, przewiń do wybranego momentu, przechodź klatka po klatce lub sekunda po sekundzie i zapisz klatkę jako PNG lub JPEG w pełnej rozdzielczości wideo. Zapisane klatki są wypisane z kodem czasowym, więc możesz zebrać kilka.</p><p>Narzędzie odtwarza wideo w elemencie wideo HTML i rysuje bieżącą klatkę na płótnie o natywnym rozmiarze wideo, a potem eksportuje. Przewijanie używa dekodera przeglądarki, więc obsługuje formaty, które przeglądarka odtwarza (MP4 z H.264, WebM, większość filmów z telefonów). Przeglądarki nie podają stronom dokładnej liczby klatek, więc krokowanie zakłada wpisaną wartość (domyślnie 30); przy wideo o zmiennej liczbie klatek krok może pominąć lub powtórzyć klatkę. Wideo nigdy nie jest przesyłane.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak z tego korzystać</h2>
-        <ol class="s-steps"><li><p lang="en">Choose the video.</p></li><li><p lang="en">Scrub or step to the frame.</p></li><li><p lang="en">Press &quot;Save frame&quot;.</p></li></ol>
+        <ol class="s-steps"><li><p>Wybierz wideo.</p></li><li><p>Przewiń lub przejdź do klatki.</p></li><li><p>Naciśnij „Zapisz klatkę”.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Najczęstsze pytania</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Why is the saved frame blurry?</summary><p lang="en">Videos are compressed; a frame between keyframes may be softer. Step a frame or two to a sharper one.</p></details>
-          <details><summary lang="en">Can I take frames from a YouTube video?</summary><p lang="en">No. Open a video file from your device.</p></details>
+          <details open><summary>Dlaczego zapisana klatka jest rozmyta?</summary><p>Wideo jest skompresowane; klatka między klatkami kluczowymi może być bardziej miękka. Przejdź o klatkę lub dwie do ostrzejszej.</p></details>
+          <details><summary>Czy mogę brać klatki z filmu z YouTube?</summary><p>Nie. Otwórz plik wideo z urządzenia.</p></details>
           <details><summary>Czy moje pliki są gdzieś przesyłane?</summary><p>Nie. Plik otwiera i przetwarza Twoja własna przeglądarka. Możesz to sprawdzić: otwórz kartę sieci w przeglądarce podczas pracy albo odłącz internet po załadowaniu strony.</p></details>
           <details><summary>Czy to narzędzie jest darmowe?</summary><p>Tak, w całości. Nie ma rejestracji, płatnej wersji ani znaku wodnego na plikach.</p></details>
         </div>

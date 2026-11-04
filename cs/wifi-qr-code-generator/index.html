@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Generátor QR kódu pro Wi-Fi","url":"https://ohfis.com/cs/wifi-qr-code-generator/","description":"Vytvořte tisknutelný QR kód, kterým se hosté připojí k Wi-Fi jedním naskenováním. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Poznámky a soukromí","item":"https://ohfis.com/cs/notes-privacy-tools/"},{"@type":"ListItem","position":3,"name":"Generátor QR kódu pro Wi-Fi"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Generátor QR kódu pro Wi-Fi","step":[{"@type":"HowToStep","position":1,"text":"Enter the network name, security type and password."},{"@type":"HowToStep","position":2,"text":"Download or print the QR code."},{"@type":"HowToStep","position":3,"text":"Test it with a phone before putting it up."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which security type should I choose?","acceptedAnswer":{"@type":"Answer","text":"WPA/WPA2/WPA3 for almost every modern router. WEP is obsolete and \"no password\" is for open networks."}},{"@type":"Question","name":"Is the password visible in the code?","acceptedAnswer":{"@type":"Answer","text":"Yes, to anyone who scans it. That is the point; use a separate guest network."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Generátor QR kódu pro Wi-Fi","step":[{"@type":"HowToStep","position":1,"text":"Zadejte název sítě, typ zabezpečení a heslo."},{"@type":"HowToStep","position":2,"text":"Stáhněte nebo vytiskněte QR kód."},{"@type":"HowToStep","position":3,"text":"Vyzkoušejte ho telefonem, než ho vyvěsíte."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jaký typ zabezpečení zvolit?","acceptedAnswer":{"@type":"Answer","text":"WPA/WPA2/WPA3 pro téměř každý moderní router. WEP je zastaralý a „bez hesla“ je pro otevřené sítě."}},{"@type":"Question","name":"Je heslo v kódu viditelné?","acceptedAnswer":{"@type":"Answer","text":"Ano, pro každého, kdo ho naskenuje. To je smysl; použijte samostatnou síť pro hosty."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Generátor QR kódu pro Wi-Fi</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Enter the network name and password, choose the security type and get a QR code that iPhones and Android phones understand: the camera app offers to join the network. Download it as PNG or SVG, or print it for the office, the cafe or the guest room.</p><p lang="en">The code contains a standard Wi-Fi string, WIFI:T:WPA;S:name;P:password;; , in which the special characters \ ; , : &quot; in the name and password are escaped with a backslash. The QR code is generated locally with a standard encoder (error correction level selectable, quiet zone included), so the password is never sent anywhere. Anyone who scans the printed code gets the password, so use a guest network and change the password when needed.</p>
+        
+        <p>Zadejte název sítě a heslo, zvolte typ zabezpečení a získáte QR kód, kterému rozumějí iPhony i telefony s Androidem: aplikace fotoaparátu nabídne připojení k síti. Stáhněte ho jako PNG nebo SVG nebo vytiskněte pro kancelář, kavárnu nebo pokoj pro hosty.</p><p>Kód obsahuje standardní řetězec Wi-Fi, WIFI:T:WPA;S:název;P:heslo;; , ve kterém jsou speciální znaky  ; , : &quot; v názvu a hesle escapovány zpětným lomítkem. QR kód se generuje lokálně standardním kodérem (úroveň opravy chyb k volbě, tichá zóna zahrnuta), takže se heslo nikam neodesílá. Kdokoli, kdo vytištěný kód naskenuje, získá heslo, proto použijte síť pro hosty a heslo podle potřeby změňte.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Enter the network name, security type and password.</p></li><li><p lang="en">Download or print the QR code.</p></li><li><p lang="en">Test it with a phone before putting it up.</p></li></ol>
+        <ol class="s-steps"><li><p>Zadejte název sítě, typ zabezpečení a heslo.</p></li><li><p>Stáhněte nebo vytiskněte QR kód.</p></li><li><p>Vyzkoušejte ho telefonem, než ho vyvěsíte.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Which security type should I choose?</summary><p lang="en">WPA/WPA2/WPA3 for almost every modern router. WEP is obsolete and &quot;no password&quot; is for open networks.</p></details>
-          <details><summary lang="en">Is the password visible in the code?</summary><p lang="en">Yes, to anyone who scans it. That is the point; use a separate guest network.</p></details>
+          <details open><summary>Jaký typ zabezpečení zvolit?</summary><p>WPA/WPA2/WPA3 pro téměř každý moderní router. WEP je zastaralý a „bez hesla“ je pro otevřené sítě.</p></details>
+          <details><summary>Je heslo v kódu viditelné?</summary><p>Ano, pro každého, kdo ho naskenuje. To je smysl; použijte samostatnou síť pro hosty.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

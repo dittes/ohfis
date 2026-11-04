@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Generátor hesel z frází (Diceware)","url":"https://ohfis.com/cs/passphrase-generator/","description":"Zapamatovatelná hesla z frází ze seznamu slov EFF. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Poznámky a soukromí","item":"https://ohfis.com/cs/notes-privacy-tools/"},{"@type":"ListItem","position":3,"name":"Generátor hesel z frází (Diceware)"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Generátor hesel z frází (Diceware)","step":[{"@type":"HowToStep","position":1,"text":"Choose the number of words (six for important accounts)."},{"@type":"HowToStep","position":2,"text":"Pick a separator and options."},{"@type":"HowToStep","position":3,"text":"Memorise or store the passphrase; never reuse it."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many words do I need?","acceptedAnswer":{"@type":"Answer","text":"Five words (65 bits) is good; six (78 bits) is excellent for a master password."}},{"@type":"Question","name":"Is it as secure as a random password?","acceptedAnswer":{"@type":"Answer","text":"Per character no, but a six-word passphrase has the entropy of a 12-character random password and is far easier to remember."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Generátor hesel z frází (Diceware)","step":[{"@type":"HowToStep","position":1,"text":"Zvolte počet slov (šest pro důležité účty)."},{"@type":"HowToStep","position":2,"text":"Vyberte oddělovač a možnosti."},{"@type":"HowToStep","position":3,"text":"Frázi si zapamatujte nebo uložte; nikdy ji nepoužívejte znovu."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kolik slov potřebuji?","acceptedAnswer":{"@type":"Answer","text":"Pět slov (65 bitů) je dobré; šest (78 bitů) je výborné pro hlavní heslo."}},{"@type":"Question","name":"Je stejně bezpečná jako náhodné heslo?","acceptedAnswer":{"@type":"Answer","text":"Na znak ne, ale šestislovná fráze má entropii náhodného 12znakového hesla a pamatuje se mnohem snáz."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Generátor hesel z frází (Diceware)</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">A passphrase of five or six random words is much easier to type and remember than a string of symbols, and just as strong. Choose the number of words, a separator and optional capitalisation or a digit, and see the exact entropy.</p><p lang="en">Words are picked uniformly at random from the EFF Large Wordlist, a list of 7,776 common, easy-to-spell words (one for every roll of five dice), using crypto.getRandomValues. Each word adds log₂(7776) = 12.9 bits, so five words give about 65 bits and six about 78 bits. The security comes from the randomness of the choice, not from the words being obscure: do not swap words for ones you like better. The EFF wordlist is © Electronic Frontier Foundation and licensed under CC BY 3.0 US.</p>
+        
+        <p>Heslová fráze z pěti nebo šesti náhodných slov se mnohem snáz píše a pamatuje než řetězec symbolů a je stejně silná. Zvolte počet slov, oddělovač a volitelně velká písmena nebo číslici a uvidíte přesnou entropii.</p><p>Slova se vybírají rovnoměrně náhodně z EFF Large Wordlist, seznamu 7776 běžných, snadno napsatelných slov (jedno pro každý hod pěti kostkami), pomocí crypto.getRandomValues. Každé slovo přidá log₂(7776) = 12,9 bitu, takže pět slov dává asi 65 bitů a šest asi 78 bitů. Bezpečnost pochází z náhodnosti výběru, ne z toho, že jsou slova nejasná: neměňte slova za oblíbenější. Seznam slov EFF je © Electronic Frontier Foundation a licencován pod CC BY 3.0 US.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Choose the number of words (six for important accounts).</p></li><li><p lang="en">Pick a separator and options.</p></li><li><p lang="en">Memorise or store the passphrase; never reuse it.</p></li></ol>
+        <ol class="s-steps"><li><p>Zvolte počet slov (šest pro důležité účty).</p></li><li><p>Vyberte oddělovač a možnosti.</p></li><li><p>Frázi si zapamatujte nebo uložte; nikdy ji nepoužívejte znovu.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How many words do I need?</summary><p lang="en">Five words (65 bits) is good; six (78 bits) is excellent for a master password.</p></details>
-          <details><summary lang="en">Is it as secure as a random password?</summary><p lang="en">Per character no, but a six-word passphrase has the entropy of a 12-character random password and is far easier to remember.</p></details>
+          <details open><summary>Kolik slov potřebuji?</summary><p>Pět slov (65 bitů) je dobré; šest (78 bitů) je výborné pro hlavní heslo.</p></details>
+          <details><summary>Je stejně bezpečná jako náhodné heslo?</summary><p>Na znak ne, ale šestislovná fráze má entropii náhodného 12znakového hesla a pamatuje se mnohem snáz.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
