@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Obrázek na Base64 a Base64 na obrázek","url":"https://ohfis.com/cs/image-to-base64/","description":"Převeďte obrázek na data URI, HTML nebo CSS úryvek, nebo zobrazte Base64 jako obrázek. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Obrazové nástroje","item":"https://ohfis.com/cs/image-tools/"},{"@type":"ListItem","position":3,"name":"Obrázek na Base64 a Base64 na obrázek"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Obrázek na Base64 a Base64 na obrázek","step":[{"@type":"HowToStep","position":1,"text":"Drop an image and choose the output format."},{"@type":"HowToStep","position":2,"text":"Copy the data URI, HTML tag or CSS."},{"@type":"HowToStep","position":3,"text":"To reverse, paste Base64 into the second box."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I inline images as Base64?","acceptedAnswer":{"@type":"Answer","text":"Only small ones (under about 5 KB). Larger images are better as separate cached files."}},{"@type":"Question","name":"Why is the Base64 larger than the file?","acceptedAnswer":{"@type":"Answer","text":"Base64 encodes 3 bytes as 4 characters, an increase of about 33%."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Obrázek na Base64 a Base64 na obrázek","step":[{"@type":"HowToStep","position":1,"text":"Přetáhněte obrázek a zvolte výstupní formát."},{"@type":"HowToStep","position":2,"text":"Zkopírujte datové URI, značku HTML nebo CSS."},{"@type":"HowToStep","position":3,"text":"Chcete-li to obrátit, vložte Base64 do druhého pole."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Mám obrázky vkládat jako Base64?","acceptedAnswer":{"@type":"Answer","text":"Jen malé (pod asi 5 KB). Větší obrázky jsou lepší jako samostatné cachované soubory."}},{"@type":"Question","name":"Proč je Base64 větší než soubor?","acceptedAnswer":{"@type":"Answer","text":"Base64 kóduje 3 bajty jako 4 znaky, tedy asi o 33 % víc."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Obrázek na Base64 a Base64 na obrázek</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Embed a small icon directly into HTML, CSS or an email, or look at what a long Base64 string from an API really is. Drop an image to get a data URI, a ready &lt;img&gt; tag, a CSS background-image rule or the bare Base64; paste Base64 below to see the picture.</p><p lang="en">The file's bytes are encoded as Base64 and prefixed with the media type to make a data URI (data:image/png;base64,…). Base64 uses 4 characters for every 3 bytes, so the text is about one third larger than the file, and inline images cannot be cached separately by the browser, so this is only worthwhile for small icons (a few KB). The reverse direction accepts a full data URI or bare Base64 and detects the image type from its first bytes.</p>
+        
+        <p>Vložte malou ikonu přímo do HTML, CSS nebo e-mailu nebo se podívejte, co dlouhý řetězec Base64 z API doopravdy je. Přetáhněte obrázek a získáte datové URI, hotovou značku &lt;img&gt;, pravidlo CSS background-image nebo holé Base64; vložte Base64 níže a uvidíte obrázek.</p><p>Bajty souboru se zakódují jako Base64 a opatří typem média, čímž vznikne datové URI (data:image/png;base64,…). Base64 používá 4 znaky na každé 3 bajty, takže je text asi o třetinu větší než soubor, a vložené obrázky prohlížeč nemůže cachovat zvlášť, proto se vyplatí jen pro malé ikony (několik KB). Opačný směr přijímá úplné datové URI nebo holé Base64 a typ obrázku pozná z prvních bajtů.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Drop an image and choose the output format.</p></li><li><p lang="en">Copy the data URI, HTML tag or CSS.</p></li><li><p lang="en">To reverse, paste Base64 into the second box.</p></li></ol>
+        <ol class="s-steps"><li><p>Přetáhněte obrázek a zvolte výstupní formát.</p></li><li><p>Zkopírujte datové URI, značku HTML nebo CSS.</p></li><li><p>Chcete-li to obrátit, vložte Base64 do druhého pole.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">Should I inline images as Base64?</summary><p lang="en">Only small ones (under about 5 KB). Larger images are better as separate cached files.</p></details>
-          <details><summary lang="en">Why is the Base64 larger than the file?</summary><p lang="en">Base64 encodes 3 bytes as 4 characters, an increase of about 33%.</p></details>
+          <details open><summary>Mám obrázky vkládat jako Base64?</summary><p>Jen malé (pod asi 5 KB). Větší obrázky jsou lepší jako samostatné cachované soubory.</p></details>
+          <details><summary>Proč je Base64 větší než soubor?</summary><p>Base64 kóduje 3 bajty jako 4 znaky, tedy asi o 33 % víc.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>

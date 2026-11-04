@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="/assets/css/site.css?v=18040e5d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Barevná paleta z obrázku","url":"https://ohfis.com/cs/image-palette-extractor/","description":"Získejte z obrázku dominantní barvy a zkopírujte je jako HEX nebo CSS proměnné. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Obrazové nástroje","item":"https://ohfis.com/cs/image-tools/"},{"@type":"ListItem","position":3,"name":"Barevná paleta z obrázku"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Barevná paleta z obrázku","step":[{"@type":"HowToStep","position":1,"text":"Drop an image."},{"@type":"HowToStep","position":2,"text":"Choose how many colours you want."},{"@type":"HowToStep","position":3,"text":"Click a colour to copy its HEX code, or copy the whole palette."}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How are the colours chosen?","acceptedAnswer":{"@type":"Answer","text":"By clustering similar pixels and averaging each group, weighted by how many pixels it holds."}},{"@type":"Question","name":"Can I pick a colour from anywhere on screen?","acceptedAnswer":{"@type":"Answer","text":"In Chrome and Edge, yes, with the eyedropper button."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Barevná paleta z obrázku","step":[{"@type":"HowToStep","position":1,"text":"Přetáhněte obrázek."},{"@type":"HowToStep","position":2,"text":"Zvolte, kolik barev chcete."},{"@type":"HowToStep","position":3,"text":"Kliknutím na barvu zkopírujte její kód HEX nebo zkopírujte celou paletu."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jak se barvy vybírají?","acceptedAnswer":{"@type":"Answer","text":"Shlukováním podobných pixelů a zprůměrováním každé skupiny, váženým počtem pixelů, které obsahuje."}},{"@type":"Question","name":"Mohu odebrat barvu odkudkoli z obrazovky?","acceptedAnswer":{"@type":"Answer","text":"V Chrome a Edge ano, tlačítkem kapátka."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
 </head>
 <body class="s-page">
   <a class="s-skip" href="#main">Přejít na obsah</a>
@@ -145,22 +145,22 @@
     <section class="s-section">
       <div class="s-wrap s-prose">
         <h2>Jak funguje: Barevná paleta z obrázku</h2>
-        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
-        <p lang="en">Build a colour scheme from a logo, photo or product shot. The tool finds the main colours of your picture, shows each with its HEX code and how much of the image it covers, and copies them as a list or as CSS custom properties. In Chrome and Edge an eyedropper can also sample any pixel on your screen.</p><p lang="en">The image is scaled down to at most 160 pixels wide, each pixel is quantised and counted, and the most representative colours are found with a weighted k-means clustering that starts from well-separated colours (farthest-point initialisation) and then moves each centre to the weighted average of its group. Share is the fraction of pixels that belong to each colour. Transparent pixels are ignored. The result depends on the number of colours you ask for.</p>
+        
+        <p>Sestavte barevné schéma z loga, fotky nebo záběru produktu. Nástroj najde hlavní barvy obrázku, ukáže každou s kódem HEX a podílem na obrázku a zkopíruje je jako seznam nebo proměnné CSS. V Chrome a Edge může kapátko odebrat i libovolný pixel z obrazovky.</p><p>Obrázek se zmenší na nejvýše 160 pixelů šířky, každý pixel se kvantizuje a spočítá a nejreprezentativnější barvy se najdou váženým shlukováním k-means, které začíná dobře oddělenými barvami (inicializace nejvzdálenějším bodem) a pak posune každý střed na vážený průměr jeho skupiny. Podíl je zlomek pixelů patřících ke každé barvě. Průhledné pixely se ignorují. Výsledek závisí na počtu barev, o který požádáte.</p>
       </div>
     </section>
     <section class="s-section s-section--tint" id="how">
       <div class="s-wrap">
         <h2>Jak to použít</h2>
-        <ol class="s-steps"><li><p lang="en">Drop an image.</p></li><li><p lang="en">Choose how many colours you want.</p></li><li><p lang="en">Click a colour to copy its HEX code, or copy the whole palette.</p></li></ol>
+        <ol class="s-steps"><li><p>Přetáhněte obrázek.</p></li><li><p>Zvolte, kolik barev chcete.</p></li><li><p>Kliknutím na barvu zkopírujte její kód HEX nebo zkopírujte celou paletu.</p></li></ol>
       </div>
     </section>
     <section class="s-section" id="faq">
       <div class="s-wrap">
         <h2>Časté dotazy</h2>
         <div class="s-faq">
-          <details open><summary lang="en">How are the colours chosen?</summary><p lang="en">By clustering similar pixels and averaging each group, weighted by how many pixels it holds.</p></details>
-          <details><summary lang="en">Can I pick a colour from anywhere on screen?</summary><p lang="en">In Chrome and Edge, yes, with the eyedropper button.</p></details>
+          <details open><summary>Jak se barvy vybírají?</summary><p>Shlukováním podobných pixelů a zprůměrováním každé skupiny, váženým počtem pixelů, které obsahuje.</p></details>
+          <details><summary>Mohu odebrat barvu odkudkoli z obrazovky?</summary><p>V Chrome a Edge ano, tlačítkem kapátka.</p></details>
           <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
           <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
         </div>
