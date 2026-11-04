@@ -27,6 +27,11 @@ async function runPdf(page, n, label, size) {
   const path = await dl.path(); return { buf: readFileSync(path), name: dl.suggestedFilename() };
 }
 
+// ---- audio helpers ----
+import * as AU from '../assets/js/tools/lib/audio.js';
+function testWav({ lead = 1, tone = 1, tail = 1, amp = 0.1, sr = 44100 } = {}) { const n = Math.round((lead + tone + tail) * sr), a = new Float32Array(n); for (let i = Math.round(lead * sr); i < Math.round((lead + tone) * sr); i++) a[i] = amp * Math.sin(2 * Math.PI * 440 * i / sr); return Buffer.from(AU.encodeWav([a, a.slice()], sr)); }
+async function audioRun(page, wav, name = 'in.wav') { await page.setInputFiles('#tool-root input[type=file]', { name, mimeType: 'audio/wav', buffer: wav }); await page.waitForSelector('[data-result=ready]', { timeout: 20000 }); const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /Download/ }).first().click()]); return AU.decodeWav(new Uint8Array(readFileSync(await dl.path()))); }
+
 const custom = {
   async 'text-diff-checker'(page) {
     await area(page, 0).fill('a\nb\nc'); await area(page, 1).fill('a\nx\nc'); await page.waitForTimeout(400);
@@ -490,6 +495,57 @@ Object.assign(custom, {
   },
   async 'bpm-tap-counter'(page) {
     const tap = page.getByRole('button', { name: 'TAP' }); for (let i = 0; i < 6; i++) { await tap.click(); await page.waitForTimeout(500); } const txt = await rootText(page); const m = /(\d{2,3}(?:\.\d)?)/.exec(txt); assert.ok(m && Number(m[1]) > 100 && Number(m[1]) < 125, 'tempo of ~0.5 s taps (100-125 BPM), got: ' + txt.slice(0, 200));
+  },
+  async 'audio-normalizer'(page) {
+    const d = await audioRun(page, testWav({ amp: 0.1 })); const pk = AU.gainToDb(AU.peak(d.chs)); assert.ok(Math.abs(pk + 1) < 0.2, 'peak ' + pk); assert.equal(d.chs.length, 2); assert.ok(Math.abs(d.chs[0].length / d.sr - 3) < 0.05);
+    await page.locator('#tool-root select').first().selectOption('rms'); await page.waitForTimeout(1500); const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /Download/ }).first().click()]); const r = AU.decodeWav(new Uint8Array(readFileSync(await dl.path()))); assert.ok(AU.gainToDb(AU.peak(r.chs)) <= -0.9, 'rms mode keeps peak below ceiling');
+  },
+  async 'silence-trimmer'(page) {
+    const d = await audioRun(page, testWav({ lead: 1, tone: 1, tail: 1 })); const len = d.chs[0].length / d.sr; assert.ok(len > 1.25 && len < 1.4, 'trimmed length ' + len);
+    await page.setInputFiles('#tool-root input[type=file]', { name: 'quiet.wav', buffer: testWav({ amp: 0.0001 }) }); await page.waitForTimeout(1500); assert.ok((await page.locator('.pt-drop__error:visible').innerText()).includes('quieter than the threshold'), 'empty result message');
+  },
+  async 'audio-channel-mixer'(page) {
+    const d = await audioRun(page, testWav()); assert.equal(d.chs.length, 1, 'mono mixdown');
+  },
+  async 'audio-pitch-shifter'(page) {
+    const d = await audioRun(page, testWav({ lead: 0, tone: 2, tail: 0 })); assert.ok(Math.abs(d.chs[0].length / d.sr - 2 / Math.pow(2, 3 / 12)) < 0.05, 'length for +3 semitones ' + d.chs[0].length / d.sr);
+  },
+  async 'voice-recorder'(page) {
+    await page.getByRole('button', { name: /Record/ }).click(); await page.waitForTimeout(1800); await page.getByRole('button', { name: /Stop/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 15000 });
+    assert.ok(await page.locator('audio').isVisible(), 'player'); const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Download trimmed WAV/ }).click()]); const w = AU.decodeWav(new Uint8Array(readFileSync(await dl.path()))); assert.ok(w.chs[0].length / w.sr > 1.2 && w.chs[0].length / w.sr < 3, 'wav length ' + w.chs[0].length / w.sr);
+  },
+  async 'screen-recorder'(page) {
+    await page.getByRole('button', { name: /Start recording/ }).click(); await page.waitForTimeout(2000); const bad = await page.locator('.pt-drop__error:visible').count(); if (bad) throw new Error('screen capture failed: ' + await page.locator('.pt-drop__error').first().innerText()); await page.getByRole('button', { name: /Stop/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 15000 });
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.locator('#tool-root .ut-actions button', { hasText: /Download screen-recording/ }).click()]); assert.ok(readFileSync(await dl.path()).length > 1000, 'video data');
+  },
+  async 'webcam-info'(page) {
+    await page.getByRole('button', { name: 'Start camera' }).click(); await page.waitForFunction(() => /\d+ × \d+/.test(document.getElementById('tool-root').innerText), null, { timeout: 10000 }); await page.waitForTimeout(2500); const txt = await rootText(page); assert.ok(/Resolution now\s*640 × 480|Resolution now\s*\d+ × \d+/.test(txt), txt.slice(0, 300)); assert.ok(/Measured frame rate\s*\d+(\.\d)? fps/.test(txt), 'measured fps: ' + txt.slice(0, 500));
+  },
+  async 'microphone-noise-floor'(page) {
+    await page.getByRole('button', { name: /Measure/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 20000 }); const txt = await rootText(page); assert.ok(/Average noise floor\s*-?\d+(\.\d)? dBFS/.test(txt), txt.slice(0, 300));
+  },
+  async 'soundboard'(page) {
+    await page.locator('[data-pad="Ding"]').click(); await page.waitForTimeout(200); assert.ok((await rootText(page)).includes('Played: Ding')); await page.keyboard.press('2'); await page.waitForTimeout(200); assert.ok((await rootText(page)).includes('Played: Buzzer'), 'keyboard shortcut'); assert.equal(await page.locator('.ut-pad').count(), 12);
+  },
+  async 'video-speed-adjuster'(page) {
+    const tmp = mkdtempSync(join(tmpdir(), 'vid-')); const f = join(tmp, 'v.webm'); const r = spawnSync('ffmpeg', ['-y', '-f', 'lavfi', '-i', 'testsrc=duration=4:size=160x120:rate=15', '-c:v', 'libvpx', '-b:v', '200k', f]); assert.equal(r.status, 0, 'ffmpeg made a test video');
+    await page.setInputFiles('#tool-root input[type=file]', f); await page.waitForFunction(() => /Original length/.test(document.getElementById('tool-root').innerText), null, { timeout: 10000 }); await page.getByRole('button', { name: '2×' }).click(); await page.waitForTimeout(300); const txt = await rootText(page); assert.ok(/Original length\s*0:04/.test(txt) && /At this speed\s*0:02/.test(txt), txt.slice(0, 300));
+    assert.equal(await page.locator('video').evaluate(v => v.playbackRate), 2);
+  },
+  async 'screen-color-card'(page) {
+    await page.getByRole('button', { name: /Warm white/ }).click(); const bg = await page.locator('.ut-colorcard').evaluate(e => getComputedStyle(e).backgroundColor); assert.equal(bg, 'rgb(255, 180, 107)');
+  },
+  async 'hardware-acceleration-check'(page) {
+    await page.waitForSelector('.ut-table'); const txt = await rootText(page); for (const w of ['WebGL 2', 'Graphics renderer', 'WebGPU', 'Logical CPU cores', '2D canvas speed']) assert.ok(txt.includes(w), 'row ' + w);
+  },
+  async 'screen-refresh-rate-test'(page) {
+    await page.getByRole('button', { name: /Measure for 5 seconds/ }).click(); await page.waitForSelector('[data-result=ready]', { timeout: 15000 }); const txt = await rootText(page); const m = /Measured refresh rate\s*([\d.]+) Hz/.exec(txt); assert.ok(m && +m[1] > 20 && +m[1] < 400, txt.slice(0, 300));
+  },
+  async 'aspect-ratio-calculator'(page) {
+    let txt = await rootText(page); assert.ok(/Exact ratio\s*16:9/.test(txt)); assert.ok(/At width 1280 px\s*1280 × 720 px/.test(txt)); const n = page.locator('#tool-root input[type=number]'); await n.nth(0).fill('1366'); await n.nth(1).fill('768'); await page.waitForTimeout(300); txt = await rootText(page); assert.ok(/Exact ratio\s*683:384/.test(txt) && /Closest standard\s*16:9/.test(txt), txt.slice(0, 300));
+  },
+  async 'dual-monitor-matcher'(page) {
+    const txt = await rootText(page); assert.ok(/Monitor 1 density\s*108\.8 PPI/.test(txt) && /Monitor 2 density\s*91\.8 PPI/.test(txt), txt.slice(0, 300));
   },
 });
 

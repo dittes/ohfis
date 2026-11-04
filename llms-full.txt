@@ -634,6 +634,51 @@ Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.c
 - [BPM Tap Tempo Counter](https://ohfis.com/en/bpm-tap-counter/): Tap along to find the tempo of a song in beats per minute.
   Tap the button or press the space bar on every beat and read the tempo. The tool averages your last twelve taps, shows half-time and double-time values, warns if your taps are uneven and can play a metronome click at the measured tempo.
   How to use: Play the music and tap on every beat (or press Space). Read the BPM after about eight taps. Turn on the click to check it against the song.
+- [Audio Normalizer (Make Audio Louder)](https://ohfis.com/en/audio-normalizer/): Bring a quiet recording up to a standard peak or loudness level.
+  Drop an audio file (WAV, MP3, M4A, OGG, FLAC or the sound of a video) and raise it to a target level. Peak normalisation makes the loudest point reach the target (−1 dBFS is the usual choice); loudness normalisation matches the average level (about −16 dBFS RMS for podcasts) while keeping the peaks below −1 dBFS. You hear the result before downloading it as WAV.
+  How to use: Drop the audio file. Choose peak or loudness mode and the target level. Listen, then download the WAV.
+- [Audio Silence Remover & Trimmer](https://ohfis.com/en/silence-trimmer/): Cut silence from the start and end of a recording, or shorten long pauses.
+  Drop a recording and let the tool find where the sound really starts and ends. It trims the silent edges, keeps a small padding so that nothing sounds cut off, and can also shorten long pauses inside the recording, for example in a voice memo or a lecture.
+  How to use: Drop the audio file. Set the threshold and padding. Listen and download the trimmed WAV.
+- [Audio Channel Tool (Mute, Swap, Invert, Pan, Mono)](https://ohfis.com/en/audio-channel-mixer/): Mix to mono, swap or mute left/right, invert polarity or pan a track.
+  Fix common problems with stereo files in one step: mix a recording down to mono, swap left and right, silence one channel (for example when a microphone was only recorded on one side), invert the polarity of one or both channels to check phase problems, or place a mono signal anywhere between left and right.
+  How to use: Drop the audio file. Choose the operation. Listen and download the WAV.
+- [Audio Pitch & Speed Changer](https://ohfis.com/en/audio-pitch-shifter/): Make a recording higher, lower, faster or slower, like a tape.
+  Shift a recording by semitones (12 = one octave) or change its speed in percent and download the result as WAV. It is useful to transpose a backing track, slow down a passage to learn it, or fix a recording played at the wrong speed.
+  How to use: Drop the audio file. Choose semitones or speed percent. Listen and download the WAV.
+- [Online Voice Recorder (with Trim)](https://ohfis.com/en/voice-recorder/): Record from your microphone, check the level, trim and download.
+  Press record, speak, press stop. A level meter shows whether the microphone picks you up, a timer shows the length and, when you are done, you can play the recording, cut it to the part you want and download it as WAV, or keep the original browser recording (WebM/OGG/M4A).
+  How to use: Allow the microphone and press Record. Press Stop and listen to the result. Set start and end to trim, then download.
+- [Online Screen Recorder](https://ohfis.com/en/screen-recorder/): Record a screen, window or tab, with optional audio, and save it as a video file.
+  Record a demo, a bug or a tutorial directly in the browser. Choose a whole screen, a window or a browser tab in the browser's own picker, optionally add your microphone and the tab's audio, and download the recording as a video file when you press Stop.
+  How to use: Press Start recording and choose what to share. Stop with the button or the browser's sharing bar. Play it back and download the video.
+- [Webcam Resolution & Frame Rate Checker](https://ohfis.com/en/webcam-info/): See what resolution and frame rate your camera really delivers.
+  Start the camera and read its real resolution, the frame rate it delivers right now (measured live), the maximum resolution and frame rate the camera reports, and its aspect ratio. Request 720p, 1080p, 4K or 60 fps and see what you actually get. Switch between several cameras.
+  How to use: Press Start camera and allow access. Choose a camera, resolution and frame rate to request. Read the real values and the measured frame rate.
+- [Microphone Noise Floor Test](https://ohfis.com/en/microphone-noise-floor/): Measure the background noise of your room and microphone in dBFS.
+  Stay silent for eight seconds and the tool measures the average level of everything your microphone picks up: room noise, fans, electrical hiss. A verdict from "excellent" to "very noisy" tells you if the setup is fine for calls and recordings, and the percentile and peak show whether there were short noises.
+  How to use: Allow the microphone and press Measure. Stay quiet for eight seconds. Read the noise floor and the verdict.
+- [Online Soundboard (Applause, Buzzer, Drum Roll)](https://ohfis.com/en/soundboard/): Twelve instant sounds for meetings, quizzes and demos, plus your own.
+  Big pads for the sounds that liven up a meeting or a quiz: ding, buzzer, drum roll, ta-da, sad trombone, applause, whoosh, airhorn, level up, wrong and correct answer and a timer beep. Press 1–9 and 0 on the keyboard to fire the first ten, change the volume, and add your own audio files as extra pads.
+  How to use: Click a pad or press its number key. Set the volume. Optionally add your own sound files.
+- [Video Speed Controller (Slow Motion & Fast Forward)](https://ohfis.com/en/video-speed-adjuster/): Preview a video at 0.25× to 4× speed and export the sped-up version.
+  Open a video from your device and change its speed with a slider or presets between 0.25× and 4×, with or without keeping the voice pitch natural. The tool shows the new running time and can export the result as a WebM file.
+  How to use: Choose a video file. Set the speed and pitch option. Preview, then export if you need a new file.
+- [Screen Colour Card (White Balance & Brightness)](https://ohfis.com/en/screen-color-card/): A full-screen grey, white or coloured card for webcam white balance and screen checks.
+  Show a neutral grey (18 %), daylight white (6500 K), warm (3200 K) or cool (7500 K) card, any colour you pick, or a grey scale with 256 steps, and go fullscreen. Hold it in front of a webcam to set white balance, use it as a soft light for video calls, or check a display for tint, uneven brightness and stuck pixels.
+  How to use: Choose a preset or pick a colour. Press Fullscreen. Hold it in front of the camera or inspect the screen.
+- [Browser Hardware Acceleration Check (GPU, WebGL, Video Decode)](https://ohfis.com/en/hardware-acceleration-check/): Find out whether your browser really uses the graphics card.
+  If videos stutter, video calls lag or the laptop gets hot, the browser may be rendering in software. This check shows the graphics renderer your browser reports, whether it is a software renderer, whether WebGL, WebGL 2 and WebGPU are available, whether H.264, HEVC, VP9 and AV1 1080p video can be decoded power-efficiently (hardware) and how fast a simple canvas test runs.
+  How to use: Open the page; the check runs automatically. Look for ⚠ marks and "software rendering". Enable hardware acceleration in the browser settings and update the graphics driver if needed.
+- [Screen Refresh Rate & Frame Drop Test](https://ohfis.com/en/screen-refresh-rate-test/): Measure the real refresh rate, jitter and dropped frames of your browser.
+  Is your 144 Hz monitor really running at 144 Hz in the browser? Press measure, watch the moving bar for five seconds and get the measured refresh rate, the nearest standard rate, the average frame time, the jitter (standard deviation of frame times) and the number of slow frames, with advice if the animation is uneven.
+  How to use: Close heavy tabs and press "Measure for 5 seconds". Watch the bar for stutter. Compare the Hz with your monitor settings.
+- [Aspect Ratio Calculator (16:9, 4:3, Resize)](https://ohfis.com/en/aspect-ratio-calculator/): Find the ratio of a resolution, scale to a new width, and get screen PPI.
+  Enter a width and a height and see the exact ratio (1920 × 1080 → 16:9), the closest standard format, the decimal value, the orientation and the megapixels. Add the screen diagonal for the pixel density and physical size, or a target width to get the matching height.
+  How to use: Enter width and height. Optionally add a diagonal or a target width. Read the ratio, closest standard and sizes.
+- [Dual Monitor Size & Scaling Matcher](https://ohfis.com/en/dual-monitor-matcher/): Compare two screens and find the scaling that makes text the same size.
+  Enter resolution and diagonal of both monitors. The calculator shows the pixel density of each, the physical size, the height difference and the display scaling to set so that windows and text look equally large on both screens when you drag them across.
+  How to use: Enter the resolution and diagonal of both monitors. Read the density ratio and the advice. Set the scaling in the operating-system display settings.
 
 ## Related sites by the same operator
 

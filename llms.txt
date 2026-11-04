@@ -270,6 +270,21 @@ Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.c
 - [Online Tone Generator (Sine, Square, Sweep)](https://ohfis.com/en/audio-tone-generator/): Play pure tones and frequency sweeps to test speakers and find hums or rattles.
 - [Online Teleprompter](https://ohfis.com/en/teleprompter/): A full-screen scrolling script with adjustable speed, size and mirror mode.
 - [BPM Tap Tempo Counter](https://ohfis.com/en/bpm-tap-counter/): Tap along to find the tempo of a song in beats per minute.
+- [Audio Normalizer (Make Audio Louder)](https://ohfis.com/en/audio-normalizer/): Bring a quiet recording up to a standard peak or loudness level.
+- [Audio Silence Remover & Trimmer](https://ohfis.com/en/silence-trimmer/): Cut silence from the start and end of a recording, or shorten long pauses.
+- [Audio Channel Tool (Mute, Swap, Invert, Pan, Mono)](https://ohfis.com/en/audio-channel-mixer/): Mix to mono, swap or mute left/right, invert polarity or pan a track.
+- [Audio Pitch & Speed Changer](https://ohfis.com/en/audio-pitch-shifter/): Make a recording higher, lower, faster or slower, like a tape.
+- [Online Voice Recorder (with Trim)](https://ohfis.com/en/voice-recorder/): Record from your microphone, check the level, trim and download.
+- [Online Screen Recorder](https://ohfis.com/en/screen-recorder/): Record a screen, window or tab, with optional audio, and save it as a video file.
+- [Webcam Resolution & Frame Rate Checker](https://ohfis.com/en/webcam-info/): See what resolution and frame rate your camera really delivers.
+- [Microphone Noise Floor Test](https://ohfis.com/en/microphone-noise-floor/): Measure the background noise of your room and microphone in dBFS.
+- [Online Soundboard (Applause, Buzzer, Drum Roll)](https://ohfis.com/en/soundboard/): Twelve instant sounds for meetings, quizzes and demos, plus your own.
+- [Video Speed Controller (Slow Motion & Fast Forward)](https://ohfis.com/en/video-speed-adjuster/): Preview a video at 0.25× to 4× speed and export the sped-up version.
+- [Screen Colour Card (White Balance & Brightness)](https://ohfis.com/en/screen-color-card/): A full-screen grey, white or coloured card for webcam white balance and screen checks.
+- [Browser Hardware Acceleration Check (GPU, WebGL, Video Decode)](https://ohfis.com/en/hardware-acceleration-check/): Find out whether your browser really uses the graphics card.
+- [Screen Refresh Rate & Frame Drop Test](https://ohfis.com/en/screen-refresh-rate-test/): Measure the real refresh rate, jitter and dropped frames of your browser.
+- [Aspect Ratio Calculator (16:9, 4:3, Resize)](https://ohfis.com/en/aspect-ratio-calculator/): Find the ratio of a resolution, scale to a new width, and get screen PPI.
+- [Dual Monitor Size & Scaling Matcher](https://ohfis.com/en/dual-monitor-matcher/): Compare two screens and find the scaling that makes text the same size.
 
 ## Related sites by the same operator
 

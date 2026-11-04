@@ -25,7 +25,7 @@ const base = `http://localhost:${server.address().port}`;
 
 const only = process.argv.slice(2);
 const tools = UTOOLS.filter(t => !only.length || only.includes(t.id));
-const browser = await chromium.launch({ args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream', '--autoplay-policy=no-user-gesture-required'] });
+const browser = await chromium.launch({ args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream', '--auto-select-desktop-capture-source=Entire screen', '--autoplay-policy=no-user-gesture-required'] });
 let failed = 0;
 
 async function run(tool) {

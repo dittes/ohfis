@@ -5437,6 +5437,546 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/bpm-tap-counter/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/audio-normalizer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/audio-normalizer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/audio-normalizer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/audio-normalizer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-normalizer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-normalizer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/silence-trimmer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/silence-trimmer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/silence-trimmer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/silence-trimmer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/silence-trimmer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/silence-trimmer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/silence-trimmer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/silence-trimmer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/silence-trimmer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/audio-channel-mixer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-channel-mixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/audio-channel-mixer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-channel-mixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/audio-channel-mixer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-channel-mixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/audio-channel-mixer/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-channel-mixer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-channel-mixer/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/audio-pitch-shifter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-pitch-shifter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/audio-pitch-shifter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-pitch-shifter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/audio-pitch-shifter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-pitch-shifter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/audio-pitch-shifter/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-pitch-shifter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-pitch-shifter/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/voice-recorder/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/voice-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/voice-recorder/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/voice-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/voice-recorder/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/voice-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/voice-recorder/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/voice-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/screen-recorder/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/screen-recorder/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/screen-recorder/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/screen-recorder/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-recorder/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/webcam-info/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webcam-info/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/webcam-info/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webcam-info/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/webcam-info/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webcam-info/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/webcam-info/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/webcam-info/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/webcam-info/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/microphone-noise-floor/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/microphone-noise-floor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/microphone-noise-floor/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/microphone-noise-floor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/microphone-noise-floor/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/microphone-noise-floor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/microphone-noise-floor/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/microphone-noise-floor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/microphone-noise-floor/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/soundboard/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/soundboard/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/soundboard/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/soundboard/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/soundboard/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/soundboard/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/soundboard/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/soundboard/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/soundboard/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/video-speed-adjuster/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/video-speed-adjuster/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/video-speed-adjuster/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/video-speed-adjuster/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/video-speed-adjuster/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/video-speed-adjuster/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/video-speed-adjuster/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/video-speed-adjuster/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/video-speed-adjuster/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/screen-color-card/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-color-card/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/screen-color-card/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-color-card/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/screen-color-card/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-color-card/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/screen-color-card/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-color-card/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-color-card/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/hardware-acceleration-check/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/hardware-acceleration-check/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/hardware-acceleration-check/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/hardware-acceleration-check/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/hardware-acceleration-check/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/hardware-acceleration-check/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/hardware-acceleration-check/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/hardware-acceleration-check/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/hardware-acceleration-check/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/screen-refresh-rate-test/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-refresh-rate-test/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/screen-refresh-rate-test/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-refresh-rate-test/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/screen-refresh-rate-test/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-refresh-rate-test/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/screen-refresh-rate-test/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/screen-refresh-rate-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/screen-refresh-rate-test/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/aspect-ratio-calculator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/aspect-ratio-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/aspect-ratio-calculator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/aspect-ratio-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/aspect-ratio-calculator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/aspect-ratio-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/aspect-ratio-calculator/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/aspect-ratio-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/aspect-ratio-calculator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/dual-monitor-matcher/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/dual-monitor-matcher/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/dual-monitor-matcher/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/dual-monitor-matcher/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/dual-monitor-matcher/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/dual-monitor-matcher/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/dual-monitor-matcher/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/dual-monitor-matcher/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/dual-monitor-matcher/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/password-generator/</loc>
     <lastmod>2026-11-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/password-generator/"/>
