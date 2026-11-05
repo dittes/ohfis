@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Ohfis – Ferramentas on-line grátis para PDF, texto, dados, imagens e mais (sem upload)</title>
+  <meta name="description" content="Ferramentas gratuitas no navegador: editor e conversores de PDF, ferramentas de texto e CSV, de imagem, calculadoras, auxiliares de tempo e de TI. Tudo roda no seu dispositivo, nada é enviado.">
+  
+  <link rel="canonical" href="https://ohfis.com/pt/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/">
+  <link rel="alternate" hreflang="es" href="https://ohfis.com/es/">
+  <link rel="alternate" hreflang="fr" href="https://ohfis.com/fr/">
+  <link rel="alternate" hreflang="pt" href="https://ohfis.com/pt/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohfis">
+  <meta property="og:url" content="https://ohfis.com/pt/">
+  <meta property="og:title" content="Ohfis – Ferramentas on-line grátis para PDF, texto, dados, imagens e mais (sem upload)">
+  <meta property="og:description" content="Ferramentas gratuitas no navegador: editor e conversores de PDF, ferramentas de texto e CSV, de imagem, calculadoras, auxiliares de tempo e de TI. Tudo roda no seu dispositivo, nada é enviado.">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=1fe54eb2">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://ohfis.com/#org","name":"Ohfis","url":"https://ohfis.com/","logo":"https://ohfis.com/assets/icons/icon-512.png"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Ohfis","url":"https://ohfis.com/pt/","description":"Ferramentas gratuitas no navegador: editor e conversores de PDF, ferramentas de texto e CSV, de imagem, calculadoras, auxiliares de tempo e de TI. Tudo roda no seu dispositivo, nada é enviado.","inLanguage":"pt","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que posso fazer no Ohfis?","acceptedAnswer":{"@type":"Answer","text":"Trabalhar com PDFs (juntar, dividir, comprimir, converter, assinar), limpar e converter texto, corrigir dados de CSV e Excel, redimensionar e converter imagens, calcular datas, finanças e cronogramas e usar auxiliares de TI como ferramentas de hash, cron, sub-rede e JWT. Tudo roda no seu navegador."}},{"@type":"Question","name":"Meus arquivos são enviados para um servidor?","acceptedAnswer":{"@type":"Answer","text":"Não. Cada ferramenta roda no seu navegador usando JavaScript e WebAssembly. Seus arquivos são lidos do seu dispositivo, processados na memória e salvos de volta no seu dispositivo."}},{"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"Nada. Não há conta, assinatura nem limite de quantas vezes você usa as ferramentas."}},{"@type":"Question","name":"Quais navegadores e dispositivos funcionam?","acceptedAnswer":{"@type":"Answer","text":"Versões atuais do Chrome, Edge, Firefox e Safari no Windows, macOS, Linux, Android e iOS. Arquivos muito grandes funcionam melhor em um computador."}},{"@type":"Question","name":"Posso usar off-line?","acceptedAnswer":{"@type":"Answer","text":"Sim. Depois que uma ferramenta carrega, ela continua funcionando sem conexão com a internet. Você também pode instalar o Ohfis como aplicativo pelo navegador."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Ir para o conteúdo</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/pt/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>Ohfis</span></a>
+      <nav class="s-nav" aria-label="Navegação principal">
+        <a class="s-navlink" href="/pt/ferramentas-pdf/">PDF</a><a class="s-navlink" href="/pt/documentos-e-impressao/">Documentos</a><a class="s-navlink" href="/pt/ferramentas-de-texto/">Texto</a><a class="s-navlink" href="/pt/ferramentas-de-notas/">Notas</a><a class="s-navlink" href="/pt/ferramentas-de-planilha-e-csv/">Planilhas</a><a class="s-navlink" href="/pt/ferramentas-de-imagem/">Imagens</a><a class="s-navlink" href="/pt/ferramentas-de-video/">Vídeo</a><a class="s-navlink" href="/pt/ferramentas-de-audio/">Áudio</a><a class="s-navlink" href="/pt/ferramentas-de-tempo-e-calendario/">Tempo</a><a class="s-navlink" href="/pt/ferramentas-de-negocios-e-financas/">Negócios</a><a class="s-navlink" href="/pt/ferramentas-de-equipe-e-reunioes/">Equipe</a><a class="s-navlink" href="/pt/ferramentas-de-ti-e-web/">TI</a>
+      </nav>
+      <div class="s-actions">
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.pt.js" data-ph="Pesquisar ferramentas…" data-empty="Nenhuma ferramenta encontrada. Tente outra palavra." data-hint="Digite para pesquisar · ↑↓ para escolher · Enter para abrir · Esc para fechar" data-sections="Navegar por área" data-fav-add="Adicionar aos favoritos" data-fav-remove="Remover dos favoritos" data-fav-title="Favoritos" data-recent-title="Usadas recentemente" data-mine-hint="Salvo apenas neste navegador." aria-label="Pesquisar em todas as ferramentas"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">Pesquisar ferramentas…</span><kbd>/</kbd></button>
+        <details class="s-lang">
+          <summary aria-label="Idioma">pt</summary>
+          <ul>
+            <li><a href="/en/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li><li><a href="/es/" hreflang="es" lang="es" data-set-lang="es">Español</a></li><li><a href="/fr/" hreflang="fr" lang="fr" data-set-lang="fr">Français</a></li><li><a href="/pt/" hreflang="pt" lang="pt" data-set-lang="pt" aria-current="true">Português</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Alternar entre claro e escuro" title="Alternar entre claro e escuro">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="s-hero">
+      <div class="s-wrap s-hero__grid">
+        <div class="s-hero__inner">
+          <h1>Todas as ferramentas de escritório de que você precisa. <span class="s-mark">Seus arquivos nunca saem do seu dispositivo.</span></h1>
+          <p class="s-hero__lede">PDFs, texto, planilhas, imagens, datas, calculadoras e auxiliares para desenvolvedores. Tudo é processado no seu próprio dispositivo: nada é enviado a um servidor.</p>
+          <div class="s-search" role="search"><input type="search" id="tool-search" class="s-search__input" placeholder="Pesquisar em todas as ferramentas…" aria-label="Pesquisar em todas as ferramentas…" autocomplete="off" data-lang="pt"><ul class="s-search__list" id="tool-search-list" hidden></ul></div>
+          <nav class="s-shortcuts" aria-label="Todas as ferramentas de PDF"><a class="s-chip" href="/pt/juntar-pdf/">Juntar PDF</a><a class="s-chip" href="/pt/comprimir-pdf/">Comprimir PDF</a><a class="s-chip" href="/pt/jpg-para-pdf/">JPG para PDF</a><a class="s-chip" href="/pt/conversor-de-maiusculas-e-minusculas/">Conversor de maiúsculas e minúsculas</a><a class="s-chip" href="/pt/contador-de-caracteres/">Contador de caracteres</a><a class="s-chip" href="/pt/remover-linhas-duplicadas/">Remover linhas duplicadas</a><a class="s-chip" href="/pt/conversor-de-delimitador-csv/">Conversor de delimitador CSV</a><a class="s-chip" href="/pt/conversor-de-timestamp-unix/">Conversor de timestamp Unix</a></nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-section" id="categories">
+      <div class="s-wrap">
+        <h2>Navegar por categoria</h2>
+        <div class="s-cards s-cards--cats">
+          <a class="s-card" data-cat="organize" href="/pt/ferramentas-pdf/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h7v9H3z M14 11h7v9h-7z"/><path d="M10 8h4l-1.8-1.8M14 8l-1.8 1.8"/><path d="M10 16h4l-1.8-1.8M10 16l1.8 1.8" opacity="0"/><path d="M6.5 16v3.5H11"/></svg><span class="s-card__title">PDF</span><span class="s-card__desc">Junte, divida, comprima, converta, edite, assine e proteja PDFs.</span><span class="s-card__count">26 ferramentas</span></a><a class="s-card" data-cat="documents" href="/pt/documentos-e-impressao/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M9 12h6M9 15h6M9 18h3"/></svg><span class="s-card__title">Documentos</span><span class="s-card__desc">Booklets, labels, Bates numbers and Word conversion.</span><span class="s-card__count">23 ferramentas</span></a><a class="s-card" data-cat="text" href="/pt/ferramentas-de-texto/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="s-card__title">Texto</span><span class="s-card__desc">Clean, convert, count, compare and extract text.</span><span class="s-card__count">33 ferramentas</span></a><a class="s-card" data-cat="notes" href="/pt/ferramentas-de-notas/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg><span class="s-card__title">Notas</span><span class="s-card__desc">Scratchpads, checklists, passwords, QR codes and encrypted notes.</span><span class="s-card__count">22 ferramentas</span></a><a class="s-card" data-cat="data" href="/pt/ferramentas-de-planilha-e-csv/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg><span class="s-card__title">Planilhas</span><span class="s-card__desc">Fix, convert, merge, compare and reshape CSV and spreadsheet data.</span><span class="s-card__count">30 ferramentas</span></a><a class="s-card" data-cat="images" href="/pt/ferramentas-de-imagem/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><circle cx="8.5" cy="9" r="1.6"/><path d="M3 17l5-4.5 3.5 3 4-4.5 5.5 6"/></svg><span class="s-card__title">Imagens</span><span class="s-card__desc">Resize, convert, blur, crop and clean images without uploading them.</span><span class="s-card__count">25 ferramentas</span></a><a class="s-card" data-cat="video" href="/pt/ferramentas-de-video/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18v14H3z"/><path d="M10 9.5v5l4.5-2.5z"/><path d="M3 9h2M3 15h2M19 9h2M19 15h2"/></svg><span class="s-card__title">Vídeo</span><span class="s-card__desc">Trim, join, convert, compress, crop, resize and edit videos without uploading them.</span><span class="s-card__count">15 ferramentas</span></a><a class="s-card" data-cat="media" href="/pt/ferramentas-de-audio/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg><span class="s-card__title">Áudio</span><span class="s-card__desc">Geradores de tom, teleprompter, gravadores, edição de áudio e testes de tela.</span><span class="s-card__count">29 ferramentas</span></a><a class="s-card" data-cat="time" href="/pt/ferramentas-de-tempo-e-calendario/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span class="s-card__title">Tempo</span><span class="s-card__desc">Time zones, working days, timestamps, calendar files and timers.</span><span class="s-card__count">26 ferramentas</span></a><a class="s-card" data-cat="finance" href="/pt/ferramentas-de-negocios-e-financas/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M15 9.2a6 6 0 1 1-5.8 5.8"/><path d="M8 7.5h2.2a1.3 1.3 0 0 1 0 2.6H8.4a1.3 1.3 0 0 0 0 2.6H11"/></svg><span class="s-card__title">Negócios</span><span class="s-card__desc">Margins, runway, NPV, VAT, pricing and other business maths.</span><span class="s-card__count">35 ferramentas</span></a><a class="s-card" data-cat="team" href="/pt/ferramentas-de-equipe-e-reunioes/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M2.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5M14.5 14.8c2.8-.6 6 .9 6 4.2"/></svg><span class="s-card__title">Equipe</span><span class="s-card__desc">Estimates, decision tools, brackets, pickers and org charts.</span><span class="s-card__count">16 ferramentas</span></a><a class="s-card" data-cat="dev" href="/pt/ferramentas-de-ti-e-web/"><svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><span class="s-card__title">TI</span><span class="s-card__desc">Hashes, encoders, cron, JWT, colours, networks and web snippets.</span><span class="s-card__count">39 ferramentas</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>Todas as ferramentas de PDF</h2>
+        <p class="s-section__lede">Escolha uma ferramenta e solte seu arquivo. Não há nada para instalar nem conta para criar.</p>
+        <div class="s-cat">
+        <div class="s-cat__head"><h3>Organizar páginas</h3></div>
+        <div class="s-cards"><a class="s-card" data-cat="organize" href="/pt/juntar-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h7v9H3z M14 11h7v9h-7z"/><path d="M10 8h4l-1.8-1.8M14 8l-1.8 1.8"/><path d="M10 16h4l-1.8-1.8M10 16l1.8 1.8" opacity="0"/><path d="M6.5 16v3.5H11"/></svg>
+          <span class="s-card__title">Juntar PDF</span>
+          <span class="s-card__desc">Combine vários PDFs em um único arquivo.</span>
+        </a><a class="s-card" data-cat="organize" href="/pt/dividir-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3h16v7H4z M4 14h16v7H4z"/><path d="M2 12h3M9 12h2M14 12h2M19 12h3" stroke-dasharray="0"/></svg>
+          <span class="s-card__title">Dividir PDF</span>
+          <span class="s-card__desc">Divida um PDF em arquivos separados.</span>
+        </a><a class="s-card" data-cat="organize" href="/pt/extrair-paginas-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10 11h4v5h-4z"/><path d="M12 19v2"/></svg>
+          <span class="s-card__title">Extrair páginas de PDF</span>
+          <span class="s-card__desc">Leve páginas selecionadas para um novo PDF.</span>
+        </a><a class="s-card" data-cat="organize" href="/pt/excluir-paginas-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M9.5 12.5l5 5M14.5 12.5l-5 5"/></svg>
+          <span class="s-card__title">Excluir páginas de PDF</span>
+          <span class="s-card__desc">Remova páginas indesejadas de um PDF.</span>
+        </a><a class="s-card" data-cat="organize" href="/pt/organizar-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h7v8H3z M14 3h7v8h-7z M3 15h7v6H3z M14 15h7v6h-7z"/></svg>
+          <span class="s-card__title">Organizar PDF</span>
+          <span class="s-card__desc">Reordene, gire, adicione e remova páginas.</span>
+        </a><a class="s-card" data-cat="organize" href="/pt/girar-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8h9v12H8z"/><path d="M4 12a8 8 0 0 1 8-9l3 0"/><path d="M12.5 .8L15 3l-2.5 2.2"/></svg>
+          <span class="s-card__title">Girar PDF</span>
+          <span class="s-card__desc">Coloque as páginas na posição certa.</span>
+        </a><a class="s-card" data-cat="organize" href="/pt/cortar-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2v16h16"/><path d="M2 6h16v16"/></svg>
+          <span class="s-card__title">Cortar PDF</span>
+          <span class="s-card__desc">Apare margens e recorte áreas da página.</span>
+        </a></div>
+      </div><div class="s-cat">
+        <div class="s-cat__head"><h3>Otimizar</h3></div>
+        <div class="s-cards"><a class="s-card" data-cat="optimize" href="/pt/comprimir-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M12 9v3.5m0 0l-2-2m2 2l2-2M12 19v-3.5m0 0l-2 2m2-2l2 2"/></svg>
+          <span class="s-card__title">Comprimir PDF</span>
+          <span class="s-card__desc">Deixe um PDF menor para e-mail e compartilhamento.</span>
+        </a><a class="s-card" data-cat="optimize" href="/pt/ocr-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8V3h5M16 3h5v5M21 16v5h-5M8 21H3v-5"/><path d="M8.5 16l3-8.5 3 8.5M9.6 13.2h3.8"/></svg>
+          <span class="s-card__title">OCR de PDF</span>
+          <span class="s-card__desc">Torne PDFs digitalizados pesquisáveis.</span>
+        </a><a class="s-card" data-cat="optimize" href="/pt/achatar-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 18h18"/></svg>
+          <span class="s-card__title">Achatar PDF</span>
+          <span class="s-card__desc">Fixe no lugar respostas de formulário e anotações.</span>
+        </a></div>
+      </div><div class="s-cat">
+        <div class="s-cat__head"><h3>Converter</h3></div>
+        <div class="s-cards"><a class="s-card" data-cat="convert" href="/pt/pdf-para-word/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M9 11l1.3 6 1.7-4.5 1.7 4.5 1.3-6"/></svg>
+          <span class="s-card__title">PDF para Word</span>
+          <span class="s-card__desc">Converta um PDF em um DOCX editável.</span>
+        </a><a class="s-card" data-cat="convert" href="/pt/pdf-para-excel/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M9.5 11.5l5 6M14.5 11.5l-5 6"/></svg>
+          <span class="s-card__title">PDF para Excel</span>
+          <span class="s-card__desc">Tire tabelas de um PDF para uma planilha.</span>
+        </a><a class="s-card" data-cat="convert" href="/pt/pdf-para-jpg/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><circle cx="10" cy="11.5" r="1.3"/><path d="M6 18l3.5-3 2.5 2 2.5-3 3.5 4"/></svg>
+          <span class="s-card__title">PDF para JPG</span>
+          <span class="s-card__desc">Salve páginas de PDF como imagens JPG.</span>
+        </a><a class="s-card" data-cat="convert" href="/pt/pdf-para-png/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><circle cx="10" cy="11.5" r="1.3"/><path d="M6 18l3.5-3 2.5 2 2.5-3 3.5 4"/></svg>
+          <span class="s-card__title">PDF para PNG</span>
+          <span class="s-card__desc">Salve páginas de PDF como imagens PNG nítidas.</span>
+        </a><a class="s-card" data-cat="convert" href="/pt/pdf-para-texto/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M9 11h6M9 14h6M9 17h4"/></svg>
+          <span class="s-card__title">PDF para texto</span>
+          <span class="s-card__desc">Extraia o texto simples de um PDF.</span>
+        </a><a class="s-card" data-cat="convert" href="/pt/jpg-para-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><circle cx="8.5" cy="9" r="1.6"/><path d="M3 17l5-4.5 3.5 3 4-4.5 5.5 6"/></svg>
+          <span class="s-card__title">JPG para PDF</span>
+          <span class="s-card__desc">Transforme fotos e imagens em PDF.</span>
+        </a><a class="s-card" data-cat="convert" href="/pt/png-para-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><circle cx="8.5" cy="9" r="1.6"/><path d="M3 17l5-4.5 3.5 3 4-4.5 5.5 6"/></svg>
+          <span class="s-card__title">PNG para PDF</span>
+          <span class="s-card__desc">Transforme capturas de tela e gráficos em PDF.</span>
+        </a></div>
+      </div><div class="s-cat">
+        <div class="s-cat__head"><h3>Editar e assinar</h3></div>
+        <div class="s-cards"><a class="s-card" data-cat="edit" href="/pt/editar-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M9 18l.6-2.6 5-5 2 2-5 5z"/></svg>
+          <span class="s-card__title">Editar PDF</span>
+          <span class="s-card__desc">Adicione texto, formas, imagens e destaques.</span>
+        </a><a class="s-card" data-cat="edit" href="/pt/assinar-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c3-1 4-9 6-9s0 8 2 8 2-3 3.5-3 .5 2.5 2 2.5 2-1 3.5-1.5"/><path d="M3 21h18"/></svg>
+          <span class="s-card__title">Assinar PDF</span>
+          <span class="s-card__desc">Desenhe, digite ou envie sua assinatura.</span>
+        </a><a class="s-card" data-cat="edit" href="/pt/preencher-formulario-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M9 11h6v2.5H9z M9 16h6v2.5H9z"/></svg>
+          <span class="s-card__title">Preencher formulário PDF</span>
+          <span class="s-card__desc">Preencha formulários PDF preenchíveis.</span>
+        </a><a class="s-card" data-cat="edit" href="/pt/marca-dagua-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M8.5 18l6-8"/><path d="M12 18l3.5-5" opacity=".5"/></svg>
+          <span class="s-card__title">Adicionar marca-d'água</span>
+          <span class="s-card__desc">Carimbe texto nas páginas do seu PDF.</span>
+        </a><a class="s-card" data-cat="edit" href="/pt/numerar-paginas-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Adicionar números de página</span>
+          <span class="s-card__desc">Numere as páginas do seu PDF.</span>
+        </a></div>
+      </div><div class="s-cat">
+        <div class="s-cat__head"><h3>Segurança e privacidade</h3></div>
+        <div class="s-cards"><a class="s-card" data-cat="security" href="/pt/proteger-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 11h12v10H6z"/><path d="M8.5 11V7a3.5 3.5 0 0 1 7 0v4"/><path d="M12 15v2.5"/></svg>
+          <span class="s-card__title">Proteger PDF</span>
+          <span class="s-card__desc">Criptografe um PDF com senha.</span>
+        </a><a class="s-card" data-cat="security" href="/pt/desbloquear-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 11h12v10H6z"/><path d="M8.5 11V7a3.5 3.5 0 0 1 6.8-1.2"/><path d="M12 15v2.5"/></svg>
+          <span class="s-card__title">Desbloquear PDF</span>
+          <span class="s-card__desc">Remova a senha do seu PDF.</span>
+        </a><a class="s-card" data-cat="security" href="/pt/tarjar-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M8.5 11h7v2.6h-7z" fill="currentColor"/><path d="M8.5 16h7v2.6h-7z" fill="currentColor"/></svg>
+          <span class="s-card__title">Tarjar PDF</span>
+          <span class="s-card__desc">Cubra conteúdo sensível de vez.</span>
+        </a><a class="s-card" data-cat="security" href="/pt/metadados-pdf/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h8.5L20 11.5 12 20l-8-8z"/><circle cx="8.5" cy="8.5" r="1.3"/></svg>
+          <span class="s-card__title">Editar metadados de PDF</span>
+          <span class="s-card__desc">Veja, altere ou remova as propriedades do documento.</span>
+        </a></div>
+      </div>
+      </div>
+    </section>
+
+    <section class="s-section" id="privacy">
+      <div class="s-wrap s-privacy">
+        <span class="s-stamp">Fica no seu dispositivo<small>sem upload</small></span>
+        <div class="s-prose">
+          <h2>Privado pela forma como foi construído</h2>
+          <p>A maioria das ferramentas on-line pede que você confie seus documentos a elas. Nós nunca recebemos os seus: não existe servidor que processe arquivos. As ferramentas de PDF até instruem seu navegador, por meio de uma política de segurança, a bloquear qualquer tentativa de enviar dados para outro lugar.</p>
+          <p><a href="/pt/privacidade/">Ler a política de privacidade →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-section">
+      <div class="s-wrap">
+        <h2>Precisa abrir um arquivo?</h2>
+        <p class="s-section__lede">Nosso site irmão abre quase qualquer arquivo, de DOCX e ZIP a STL e Parquet, com a mesma promessa de não enviar nada.</p>
+        <div class="s-sisters">
+          <a class="s-sister" href="https://open-online.com/pt/" rel="noopener"><strong>Open Online</strong><span>Abra quase qualquer arquivo no navegador, de DOCX e ZIP a STL e Parquet.</span><small>open-online.com ↗</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Perguntas frequentes</h2>
+      <div class="s-faq">
+        <details open><summary>O que posso fazer no Ohfis?</summary><p>Trabalhar com PDFs (juntar, dividir, comprimir, converter, assinar), limpar e converter texto, corrigir dados de CSV e Excel, redimensionar e converter imagens, calcular datas, finanças e cronogramas e usar auxiliares de TI como ferramentas de hash, cron, sub-rede e JWT. Tudo roda no seu navegador.</p></details>
+        <details><summary>Meus arquivos são enviados para um servidor?</summary><p>Não. Cada ferramenta roda no seu navegador usando JavaScript e WebAssembly. Seus arquivos são lidos do seu dispositivo, processados na memória e salvos de volta no seu dispositivo.</p></details>
+        <details><summary>Quanto custa?</summary><p>Nada. Não há conta, assinatura nem limite de quantas vezes você usa as ferramentas.</p></details>
+        <details><summary>Quais navegadores e dispositivos funcionam?</summary><p>Versões atuais do Chrome, Edge, Firefox e Safari no Windows, macOS, Linux, Android e iOS. Arquivos muito grandes funcionam melhor em um computador.</p></details>
+        <details><summary>Posso usar off-line?</summary><p>Sim. Depois que uma ferramenta carrega, ela continua funcionando sem conexão com a internet. Você também pode instalar o Ohfis como aplicativo pelo navegador.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/pt/privacidade/">Privacidade</a>
+        <a href="/pt/aviso-legal/">Aviso legal</a>
+        <span class="s-footer__note">Funciona no seu navegador. Sem upload, sem conta, sem rastreamento.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=605e750f" defer></script>
+  <script type="module" src="/assets/js/search.js?v=6006e011"></script>
+</body>
+</html>

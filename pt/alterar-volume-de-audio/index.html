@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Alterar volume de áudio (deixe o MP3 mais alto ou mais baixo) – Ferramenta on-line grátis</title>
+  <meta name="description" content="Deixe uma gravação mais alta ou mais baixa em um número de decibéis. Grátis, funciona no seu navegador, nada é enviado.">
+  
+  <link rel="canonical" href="https://ohfis.com/pt/alterar-volume-de-audio/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-volume-changer/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-lautstaerke-aendern/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/zmiana-glosnosci-audio/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/zmena-hlasitosti-zvuku/">
+  <link rel="alternate" hreflang="es" href="https://ohfis.com/es/cambiar-volumen-de-audio/">
+  <link rel="alternate" hreflang="fr" href="https://ohfis.com/fr/changer-le-volume-audio/">
+  <link rel="alternate" hreflang="pt" href="https://ohfis.com/pt/alterar-volume-de-audio/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-volume-changer/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohfis">
+  <meta property="og:url" content="https://ohfis.com/pt/alterar-volume-de-audio/">
+  <meta property="og:title" content="Alterar volume de áudio (deixe o MP3 mais alto ou mais baixo) – Ferramenta on-line grátis">
+  <meta property="og:description" content="Deixe uma gravação mais alta ou mais baixa em um número de decibéis. Grátis, funciona no seu navegador, nada é enviado.">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=1fe54eb2">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Alterar volume de áudio (deixe o MP3 mais alto ou mais baixo)","url":"https://ohfis.com/pt/alterar-volume-de-audio/","description":"Deixe uma gravação mais alta ou mais baixa em um número de decibéis. Grátis, funciona no seu navegador, nada é enviado.","inLanguage":"pt","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://ohfis.com/pt/"},{"@type":"ListItem","position":2,"name":"Áudio","item":"https://ohfis.com/pt/ferramentas-de-audio/"},{"@type":"ListItem","position":3,"name":"Alterar volume de áudio (deixe o MP3 mais alto ou mais baixo)"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Como usar: Alterar volume de áudio (deixe o MP3 mais alto ou mais baixo)","step":[{"@type":"HowToStep","position":1,"text":"Drop the audio file."},{"@type":"HowToStep","position":2,"text":"Enter the change in dB (positive = louder)."},{"@type":"HowToStep","position":3,"text":"Check the preview and the clipping note, then download."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many dB is twice as loud?","acceptedAnswer":{"@type":"Answer","text":"About +6 dB doubles the signal level; people usually hear +10 dB as twice as loud."}},{"@type":"Question","name":"Why is the result not as loud as I asked?","acceptedAnswer":{"@type":"Answer","text":"The clipping guard limited it. Turn the option off to allow distortion, or use a compressor-like normalisation for very quiet recordings."}},{"@type":"Question","name":"Meus arquivos são enviados?","acceptedAnswer":{"@type":"Answer","text":"Não. O arquivo é aberto e processado pelo seu próprio navegador. Você mesmo pode conferir: abra a aba de rede do navegador enquanto usa a ferramenta ou desconecte da internet depois que a página carregar."}},{"@type":"Question","name":"Esta ferramenta é gratuita?","acceptedAnswer":{"@type":"Answer","text":"Sim, totalmente. Não há cadastro, plano pago nem marca-d'água nos seus arquivos."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Ir para o conteúdo</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/pt/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>Ohfis</span></a>
+      <nav class="s-nav" aria-label="Navegação principal">
+        <a class="s-navlink" href="/pt/ferramentas-pdf/">PDF</a><a class="s-navlink" href="/pt/documentos-e-impressao/">Documentos</a><a class="s-navlink" href="/pt/ferramentas-de-texto/">Texto</a><a class="s-navlink" href="/pt/ferramentas-de-notas/">Notas</a><a class="s-navlink" href="/pt/ferramentas-de-planilha-e-csv/">Planilhas</a><a class="s-navlink" href="/pt/ferramentas-de-imagem/">Imagens</a><a class="s-navlink" href="/pt/ferramentas-de-video/">Vídeo</a><a class="s-navlink" href="/pt/ferramentas-de-audio/" aria-current="page">Áudio</a><a class="s-navlink" href="/pt/ferramentas-de-tempo-e-calendario/">Tempo</a><a class="s-navlink" href="/pt/ferramentas-de-negocios-e-financas/">Negócios</a><a class="s-navlink" href="/pt/ferramentas-de-equipe-e-reunioes/">Equipe</a><a class="s-navlink" href="/pt/ferramentas-de-ti-e-web/">TI</a>
+      </nav>
+      <div class="s-actions">
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.pt.js" data-ph="Pesquisar ferramentas…" data-empty="Nenhuma ferramenta encontrada. Tente outra palavra." data-hint="Digite para pesquisar · ↑↓ para escolher · Enter para abrir · Esc para fechar" data-sections="Navegar por área" data-fav-add="Adicionar aos favoritos" data-fav-remove="Remover dos favoritos" data-fav-title="Favoritos" data-recent-title="Usadas recentemente" data-mine-hint="Salvo apenas neste navegador." aria-label="Pesquisar em todas as ferramentas"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">Pesquisar ferramentas…</span><kbd>/</kbd></button>
+        <details class="s-lang">
+          <summary aria-label="Idioma">pt</summary>
+          <ul>
+            <li><a href="/en/audio-volume-changer/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/audio-lautstaerke-aendern/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/zmiana-glosnosci-audio/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/zmena-hlasitosti-zvuku/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li><li><a href="/es/cambiar-volumen-de-audio/" hreflang="es" lang="es" data-set-lang="es">Español</a></li><li><a href="/fr/changer-le-volume-audio/" hreflang="fr" lang="fr" data-set-lang="fr">Français</a></li><li><a href="/pt/alterar-volume-de-audio/" hreflang="pt" lang="pt" data-set-lang="pt" aria-current="true">Português</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Alternar entre claro e escuro" title="Alternar entre claro e escuro">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/pt/">Início</a></li><li><a href="/pt/ferramentas-de-audio/">Áudio</a></li><li><span aria-current="page">Alterar volume de áudio (deixe o MP3 mais alto ou mais baixo)</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Alterar volume de áudio (deixe o MP3 mais alto ou mais baixo)</h1>
+        <p>Deixe uma gravação mais alta ou mais baixa em um número de decibéis.</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="audio-volume-changer" data-cat="media"><p class="pt-hint">Carregando ferramenta…</p><noscript><p class="pt-drop__error">Esta ferramenta precisa de JavaScript, porque seu arquivo é processado no navegador.</p></noscript></div>
+        <ul class="s-trust"><li>Sem upload</li><li>Grátis</li><li>Sem conta</li><li>Funciona off-line depois de carregada</li></ul>
+        
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>Como funciona Alterar volume de áudio (deixe o MP3 mais alto ou mais baixo)</h2>
+        <p class="pt-hint"></p>
+        <p lang="en">Enter how many decibels louder (+) or quieter (−) the recording should be, listen to the result and save it as WAV or MP3. +6 dB is roughly twice as loud, −6 dB half. Fade in and out can be added in the same step.</p><p lang="en">The gain is applied to every sample. Making a recording louder can push the loudest peaks over the maximum and cause harsh distortion (clipping), so by default the tool scales the result back just enough to avoid it and tells you how much it reduced. If you want the loudest point to reach an exact level automatically, use the Audio Normalizer instead.</p>
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>Como usar</h2>
+        <ol class="s-steps"><li><p lang="en">Drop the audio file.</p></li><li><p lang="en">Enter the change in dB (positive = louder).</p></li><li><p lang="en">Check the preview and the clipping note, then download.</p></li></ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>Perguntas frequentes</h2>
+        <div class="s-faq">
+          <details open><summary lang="en">How many dB is twice as loud?</summary><p lang="en">About +6 dB doubles the signal level; people usually hear +10 dB as twice as loud.</p></details>
+          <details><summary lang="en">Why is the result not as loud as I asked?</summary><p lang="en">The clipping guard limited it. Turn the option off to allow distortion, or use a compressor-like normalisation for very quiet recordings.</p></details>
+          <details><summary>Meus arquivos são enviados?</summary><p>Não. O arquivo é aberto e processado pelo seu próprio navegador. Você mesmo pode conferir: abra a aba de rede do navegador enquanto usa a ferramenta ou desconecte da internet depois que a página carregar.</p></details>
+          <details><summary>Esta ferramenta é gratuita?</summary><p>Sim, totalmente. Não há cadastro, plano pago nem marca-d'água nos seus arquivos.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="s-section">
+    <div class="s-wrap">
+      <h2>Também útil em outros sites</h2>
+      <p class="s-section__lede">Ferramentas relacionadas em nossos outros sites, grátis e no seu navegador.</p>
+      <div class="s-links"><a href="https://test.institute/en/headphone-test/" rel="noopener"><strong>Teste de fones de ouvido e estéreo</strong><small>test.institute ↗</small></a></div>
+    </div>
+  </section>
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>Você também pode precisar de</h2>
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="media" href="/pt/normalizador-de-audio/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Normalizador de áudio (deixe o áudio mais alto)</span>
+          <span class="s-card__desc">Leve uma gravação baixa a um nível padrão de pico ou de volume.</span>
+        </a><a class="s-card" data-cat="media" href="/pt/equalizador-de-audio/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Equalizador de áudio (graves e agudos on-line)</span>
+          <span class="s-card__desc">Molde o som de uma gravação com cinco bandas de frequência e predefinições.</span>
+        </a><a class="s-card" data-cat="media" href="/pt/cortador-de-audio/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Cortador de áudio (corte MP3 e WAV on-line)</span>
+          <span class="s-card__desc">Corte uma parte de uma gravação ou mantenha só a parte de que precisa.</span>
+        </a><a class="s-card" data-cat="media" href="/pt/removedor-e-aparador-de-silencio-de-audio/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Removedor e aparador de silêncio de áudio</span>
+          <span class="s-card__desc">Corte o silêncio do início e do fim de uma gravação ou encurte pausas longas.</span>
+        </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/pt/privacidade/">Privacidade</a>
+        <a href="/pt/aviso-legal/">Aviso legal</a>
+        <span class="s-footer__note">Funciona no seu navegador. Sem upload, sem conta, sem rastreamento.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=605e750f" defer></script>
+  <script type="module" src="/assets/js/tools/main.js?v=143e144b"></script>
+</body>
+</html>

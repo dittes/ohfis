@@ -1,0 +1,3284 @@
+Cole aqui um CSV ou células copiadas do Excel / Google Planilhas, ou abra um arquivo
+Detectar automaticamente
+Vírgula ,
+Ponto e vírgula ;
+Tabulação
+Barra vertical |
+Tabulação (para colar no Excel)
+Colocar todos os valores entre aspas
+Adicionar BOM UTF-8 (ajuda o Excel com acentos)
+LF (Mac, Linux)
+CRLF (Windows)
+Separador de entrada
+Formato de saída
+Separador de saída
+Fins de linha
+Pesquisar em todas as colunas…
+Pesquisar
+Solte aqui um arquivo CSV de qualquer tamanho ou
+Escolher um arquivo CSV
+O arquivo é indexado em uma thread em segundo plano e só as linhas que você rola são lidas, então arquivos de mais de 200 MB continuam fluidos.
+Linha nº
+Ir para a linha
+A primeira linha é um cabeçalho
+Preencher números com este número de dígitos (0 = detectar pelos dados)
+Colunas a reparar
+
+
+
+
+Envolver em SEERRO
+Correspondência exata
+Célula com o valor a procurar
+Coluna em que procurar
+Coluna a retornar
+Primeira linha de dados
+Última linha de dados
+Nome da planilha (opcional)
+Tabela de pesquisa em outra planilha
+Não encontrado
+Texto se não encontrar
+Idioma da planilha
+PROCX (Excel 365/2021, o Google Planilhas usa outra sintaxe)
+
+ÍNDICE + CORRESP (funciona em qualquer lugar, também procura à esquerda)
+PROCV conta colunas a partir da primeira coluna da tabela: a coluna F é o número 3 em D:F.
+Excel para Windows (1900)
+Excel para Mac 2008 e anteriores (1904)
+Sistema de datas
+Números de série ou datas ISO (um por linha)
+Convertido
+Hoje como número de série
+Cole uma matriz JSON de objetos ou um objeto que contenha uma
+Separador de chaves para objetos aninhados
+Uma coluna por item (tags.0, tags.1)
+Juntar valores com ;
+Manter como texto JSON
+Matrizes
+Converter números, verdadeiro/falso e células vazias
+Transformar cabeçalhos com ponto (a.b) em objetos aninhados
+Formatação legível
+JSON Lines (um objeto por linha)
+Soma
+Média
+Contar linhas
+Contar não vazias
+Contagem de distintos
+Mínimo
+Máximo
+Mediana
+Calcular
+Linhas (agrupar por)
+— nenhuma —
+Colunas (opcional)
+Valores
+Delimitador
+Posições de caracteres
+Expressão regular (grupos de captura)
+Dividir por
+Delimitador / padrão
+Para posições: números como 2,5
+O delimitador é uma expressão regular
+Máximo de partes (0 = todas)
+Manter a coluna original
+Coluna a dividir
+CSV original
+CSV alterado
+Comparar linha a linha (sem chave)
+Associar linhas
+Original
+Alterado
+Baixar relatório (CSV)
+minha_tabela
+Nome da tabela
+
+
+
+
+Banco de dados
+UPDATE (precisa de uma coluna-chave)
+Instrução
+Adicionar CREATE TABLE (tipos deduzidos dos dados)
+Linhas por INSERT
+Células vazias viram NULL
+Coluna-chave para UPDATE
+Compacto (sem preenchimento)
+Manter como escrito
+Esquerda
+Centro
+Direita
+Forçar alinhamento
+Tabela Markdown bagunçada
+Tabela alinhada
+Formato de número
+Milhares, 2 casas decimais
+Porcentagem
+Dólares
+Contábil
+Científico
+Zeros à esquerda
+Milhares em K
+Milhões em M
+K / M automático
+Data ISO
+Data longa
+Hora
+Horas acima de 24
+Negativo em vermelho
+Sempre mostrar o sinal
+Sufixo de texto
+Valores de teste
+Código de formato
+Mesmos códigos de Formatar células → Personalizado
+Predefinições
+Valores de teste (um por linha)
+Aceita os marcadores 0 # ?, separadores de milhares, vírgulas de escala, %, E+, texto entre aspas, espaçamento com _ e *, até quatro seções, condições [>100], cores (ignoradas), datas e horas. Frações (# ?/?) não são aceitas.
+
+Coluna de latitude
+Coluna de longitude
+Cole o CSV aqui
+Arraste colunas, use as setas, desmarque para excluir
+Copiar para o Excel (tabulação)
+Z-score (média 0, desvio padrão 1)
+Escala min-max (0 a 1)
+Escala por valor absoluto máximo (−1 a 1)
+Método
+Desvio padrão amostral (n−1)
+Casas decimais
+Colunas numéricas a normalizar
+Estados Unidos (+1)
+Canadá (+1)
+Reino Unido (+44)
+Alemanha (+49)
+Áustria (+43)
+Suíça (+41)
+França (+33)
+Itália (+39)
+Espanha (+34)
+Países Baixos (+31)
+Bélgica (+32)
+Polônia (+48)
+Tchéquia (+420)
+Eslováquia (+421)
+Suécia (+46)
+Dinamarca (+45)
+Noruega (+47)
+Finlândia (+358)
+Irlanda (+353)
+Portugal (+351)
+Austrália (+61)
+Nova Zelândia (+64)
+Índia (+91)
+Brasil (+55)
+México (+52)
+Japão (+81)
+África do Sul (+27)
+Turquia (+90)
+Ucrânia (+380)
+Hungria (+36)
+Romênia (+40)
+Grécia (+30)
+País padrão (para números sem +)
+Internacional  +1 415 555 0132
+Nacional (somente EUA/Canadá)
+Somente dígitos
+Saída
+Adicionar uma coluna "válido"
+Coluna de telefone
+Valor da célula de cima
+Valor da célula de baixo
+Um valor fixo
+Zero
+Média da coluna (números)
+Mediana da coluna (números)
+Valor mais frequente
+Mínimo da coluna
+Máximo da coluna
+Preencher com
+Valor fixo
+Colunas a preencher
+Quebrar linhas maiores que
+Recuo (espaços)
+Fórmula
+Fórmula formatada
+Um endereço por linha
+Endereços (um por linha)
+Tratar como separador de milhares
+Estilo americano (vírgula = milhares, ponto = decimal)
+Estilo europeu/brasileiro (ponto = milhares, vírgula = decimal)
+Uma vírgula ou ponto isolado com 3 dígitos depois, como 1,234
+Arredondar para casas decimais (-1 = manter)
+Adicionar uma coluna de moeda
+Colunas com valores
+Adicionar um sinal %
+Coluna do valor antigo
+Coluna do valor novo
+Reduzir espaços repetidos dentro das células
+Tratar espaços não separáveis como espaços
+Remover caracteres de largura zero
+
+
+
+Estilo
+Tamanho máximo (0 = nenhum)
+Associar colunas pelo nome do cabeçalho
+Os arquivos têm cabeçalhos idênticos
+Sem cabeçalhos: apenas empilhar as linhas
+Adicionar uma coluna "source_file"
+Solte aqui vários arquivos CSV ou
+Escolher arquivos CSV
+Como combinar
+Limpar arquivos
+Deixe vazio se for muito grande
+Tamanho da população
+Nível de confiança
+Margem de erro (± %)
+Proporção esperada (%)
+50 = o mais cauteloso
+Tamanho de amostra necessário
+Sem correção de população
+Escore z
+
+
+
+
+
+
+
+
+
+Reparar também texto que já está corrompido (MÃ¼ller → Müller)
+Salvar com BOM UTF-8 (para o Excel)
+Abra um arquivo ou cole texto corrompido (ex.: MÃ¼ller, GrÃ¶ÃŸe)
+Texto corrigido
+Codificação do arquivo
+Original (como lido)
+Corrigido (UTF-8)
+Baixar arquivo UTF-8
+
+Fórmula traduzida
+A fórmula está escrita em
+Traduzir para
+⇄ Trocar
+Traduzido
+Nomes de funções, separadores de argumentos (, ou ;) e marcas decimais são convertidos. O Google Planilhas usa os nomes em inglês com os separadores da sua região. Constantes de matriz {…} e texto entre aspas não são alterados.
+mês
+Nome da nova coluna "atributo"
+valor
+Nome da nova coluna "valor"
+Ignorar células vazias
+Colunas a manter como identificadores
+
+
+
+
+Hexadecimal em maiúsculas
+Cole um checksum para comparar
+Checksum esperado
+ou digite ou cole texto para gerar o hash
+Solte aqui um arquivo para gerar o hash ou
+Comparar com um checksum publicado
+Endereço IP e prefixo ou máscara
+Dividir em sub-redes com o prefixo (opcional)
+Rede
+Hosts utilizáveis
+Faixa
+Máscara
+Expressão cron (5 campos: minuto hora dia-do-mês mês dia-da-semana)
+meu horário local
+Mostrar as próximas execuções em
+Número de execuções
+A cada 5 minutos
+A cada hora
+Dias úteis às 9:00
+Todo dia à meia-noite
+Domingos às 2:30
+Primeiro dia de cada mês
+Dias úteis às 8:00 e 17:00
+Todo Ano-Novo
+Em linguagem simples
+Às 09:00, em dias úteis
+Campos: minuto 0–59, hora 0–23, dia do mês 1–31, mês 1–12 ou JAN–DEC, dia da semana 0–6 ou SUN–SAT (7 também significa domingo). * = todo, */n = a cada n, a-b = intervalo, a,b = lista. Quando dia do mês e dia da semana são ambos restritos, a execução ocorre se qualquer um coincidir (comportamento padrão do cron).
+Pesquise por código ou texto, ex.: 404, redirecionamento, limite de taxa
+Pesquisar códigos de status
+Todas as classes
+1xx Informativo
+2xx Sucesso
+3xx Redirecionamento
+4xx Erro do cliente
+5xx Erro do servidor
+Classe
+
+O servidor recebeu os cabeçalhos da requisição; o cliente deve enviar o corpo.
+O que fazer: Normalmente invisível. Só é relevante quando você usa "Expect: 100-continue".
+
+O servidor concorda em trocar de protocolo, por exemplo para WebSocket.
+O que fazer: Se um WebSocket não abrir, verifique os cabeçalhos Upgrade e Connection em qualquer proxy.
+
+WebDAV: o servidor aceitou a requisição e ainda está trabalhando nela.
+O que fazer: Raro; trate como "aguarde".
+
+Permite ao navegador pré-carregar recursos enquanto o servidor prepara a resposta final.
+O que fazer: Usado com cabeçalhos Link para páginas mais rápidas.
+A requisição foi bem-sucedida.
+O que fazer: Em GET o corpo contém o recurso; em POST, o resultado da ação.
+
+A requisição foi bem-sucedida e criou um novo recurso.
+O que fazer: Procure um cabeçalho Location com a URL do novo recurso.
+
+A requisição foi aceita para processamento, mas o trabalho não terminou.
+O que fazer: Consulte a URL de status que a API fornece.
+
+A resposta foi modificada por um proxy.
+O que fazer: Geralmente inofensivo.
+
+Sucesso sem corpo de resposta.
+O que fazer: Típico de DELETE e de PUT sem resultado. Não tente analisar JSON.
+
+Sucesso; o cliente deve redefinir o formulário ou a visualização.
+O que fazer: Raro.
+
+O servidor retorna apenas o intervalo de bytes solicitado.
+O que fazer: Usado em streaming de vídeo e downloads retomáveis (cabeçalho Range).
+
+Há várias respostas possíveis.
+O que fazer: Raro; escolha um dos links oferecidos.
+
+O recurso tem uma nova URL permanente.
+O que fazer: Atualize links e favoritos. Os mecanismos de busca transferem o ranking para a nova URL.
+Redirecionamento temporário para outra URL.
+O que fazer: Continue usando a URL original; navegadores podem mudar POST para GET.
+
+Redireciona para outra URL com GET depois de um POST.
+O que fazer: O clássico padrão post/redirect/get.
+
+A versão em cache ainda é válida.
+O que fazer: Não é um erro: o navegador usa o cache (ETag ou Last-Modified coincidiram).
+
+Redirecionamento temporário que mantém o método HTTP.
+O que fazer: Como o 302, mas POST continua POST.
+
+Redirecionamento permanente que mantém o método HTTP.
+O que fazer: Como o 301, mas POST continua POST.
+
+O servidor não consegue entender a requisição por causa de um erro do cliente.
+O que fazer: Verifique a sintaxe do JSON, campos obrigatórios, codificação da URL e tamanho dos cabeçalhos.
+
+Autenticação é necessária ou falhou.
+O que fazer: Envie credenciais válidas ou um token novo. Verifique o cabeçalho Authorization.
+
+Reservado para sistemas de pagamento.
+O que fazer: Algumas APIs usam quando falta um limite de plano ou um pagamento.
+
+Você está autenticado, mas não tem permissão para acessar isto.
+O que fazer: Verifique permissões, listas de IPs permitidos, CORS e regras de firewall (WAF).
+
+O recurso não existe nesta URL.
+O que fazer: Verifique a URL (erros de digitação, barras finais, maiúsculas e minúsculas); o recurso pode ter sido removido.
+
+O método HTTP não é aceito para esta URL.
+O que fazer: Veja o cabeçalho Allow; talvez você precise de POST em vez de GET.
+
+O servidor não consegue produzir uma resposta que corresponda aos cabeçalhos Accept.
+O que fazer: Relaxe o cabeçalho Accept.
+
+Um proxy exige autenticação.
+O que fazer: Configure as credenciais do proxy.
+
+O servidor esgotou o tempo de espera pela requisição.
+O que fazer: Tente de novo; verifique redes lentas e uploads grandes.
+
+A requisição entra em conflito com o estado atual do recurso.
+O que fazer: Típico de conflitos de edição e entradas duplicadas. Atualize e tente de novo.
+
+O recurso foi removido permanentemente.
+O que fazer: Remova links; os mecanismos de busca descartam a página mais rápido do que com um 404.
+
+Um cabeçalho Content-Length é necessário.
+O que fazer: Adicione-o ou envie com um corpo que o cliente consiga medir.
+
+Uma condição nos cabeçalhos da requisição falhou (If-Match etc.).
+O que fazer: O recurso mudou; busque a versão mais recente.
+
+O corpo da requisição é maior do que o servidor permite.
+O que fazer: Reduza o upload ou aumente client_max_body_size / o limite.
+
+A URL é maior do que o servidor aceita.
+O que fazer: Use POST com corpo em vez de uma query string longa.
+
+O servidor não aceita o tipo de conteúdo da requisição.
+O que fazer: Defina o Content-Type correto, ex.: application/json.
+
+O intervalo de bytes solicitado está fora do recurso.
+O que fazer: Confira o cabeçalho Range com o tamanho do arquivo.
+
+O cabeçalho Expect não pode ser atendido.
+O que fazer: Remova "Expect: 100-continue".
+
+Piada de 1º de abril da RFC 2324.
+O que fazer: Alguns servidores usam para rejeitar bots.
+
+A requisição foi enviada a um servidor que não pode respondê-la.
+O que fazer: Típico da reutilização de conexão HTTP/2 com host TLS errado.
+
+A sintaxe está certa, mas o conteúdo falhou na validação.
+O que fazer: Leia o corpo do erro para mensagens por campo.
+
+O recurso está bloqueado (WebDAV).
+O que fazer: Espere ou desbloqueie.
+
+O servidor não processará uma requisição que possa ser repetida.
+O que fazer: Tente de novo depois do handshake.
+
+O cliente deve mudar para outro protocolo.
+O que fazer: Use HTTPS ou uma versão mais nova do HTTP.
+
+O servidor exige uma requisição condicional.
+O que fazer: Adicione If-Match.
+
+Você está sendo limitado por taxa.
+O que fazer: Diminua o ritmo e respeite o cabeçalho Retry-After; adicione recuo exponencial.
+
+Os cabeçalhos (muitas vezes cookies) são grandes demais.
+O que fazer: Limpe os cookies ou reduza o tamanho dos cabeçalhos.
+
+O conteúdo está bloqueado por razões legais.
+O que fazer: Não dá para corrigir no lado do cliente.
+
+O servidor encontrou uma condição inesperada.
+O que fazer: Um bug ou configuração errada no servidor; verifique os logs do servidor.
+
+O servidor não oferece a funcionalidade solicitada.
+O que fazer: O método ou recurso não está disponível.
+
+Um gateway ou proxy recebeu uma resposta inválida do servidor upstream.
+O que fazer: O aplicativo por trás do proxy travou ou está inacessível; verifique a saúde do upstream e os timeouts.
+
+O servidor está temporariamente incapaz de tratar a requisição.
+O que fazer: Sobrecarga ou manutenção; tente mais tarde e respeite o Retry-After.
+
+O gateway não recebeu uma resposta a tempo do servidor upstream.
+O que fazer: Aumente os timeouts do proxy ou acelere o backend.
+
+A versão do HTTP não é aceita.
+O que fazer: Use HTTP/1.1.
+
+O servidor não consegue armazenar a representação (WebDAV).
+O que fazer: Libere espaço em disco.
+
+O servidor detectou um loop infinito (WebDAV).
+O que fazer: Verifique redirecionamentos ou links.
+
+Você precisa se autenticar para acessar a rede.
+O que fazer: Típico de portais cativos (Wi-Fi de hotel); abra um navegador e faça login.
+
+Comando curl
+Comando curl (copie da aba Rede do navegador: Copiar como cURL)
+Cole uma string user-agent
+User agent
+Usar meu navegador
+Navegador
+
+Versão
+Sistema operacional
+
+Tipo de dispositivo
+Bot / script
+Motor de renderização
+
+Bot ou script
+sim
+Parece um rastreador ou um cliente automatizado. Lembre-se de que qualquer cliente pode se passar pelo Googlebot; confirme com uma consulta DNS reversa se isso importar.
+Strings user-agent são pouco confiáveis por natureza: os navegadores imitam uns aos outros por compatibilidade, e o Chrome está congelando partes da string. Use detecção de recursos no código e trate isto como um auxílio de diagnóstico.
+Codificar (texto → entidades)
+Decodificar (entidades → texto)
+Direção
+Somente & < > " '
+Também não ASCII, como entidades nomeadas quando possível (é → &eacute;)
+Também não ASCII, como números (é → &#233;)
+Codificar
+Decimal &#233;
+Hexa &#xE9;
+Estilo numérico
+Digite texto para codificar ou cole Base64 / uma URL data: para decodificar
+Alfabeto seguro para URL (- e _)
+Manter o preenchimento =
+Sem quebras de linha
+A cada 64 caracteres
+A cada 76 caracteres (MIME)
+Codificar texto
+Decodificar para texto
+Baixar arquivo decodificado
+Modo
+Tamanho da linha
+Codificar um arquivo
+Cor
+Escolher uma cor
+Escolher na tela
+Cor (HEX, RGB, HSL ou CMYK)
+Seletor
+CMYK (fórmula simples)
+Variável CSS
+O CMYK aqui é a conversão ingênua a partir de sRGB. Cores impressas dependem da tinta, do papel e do perfil de cor; peça uma prova à gráfica para cores de marca.
+UUID v4 (aleatório)
+UUID v7 (ordenado por tempo, bom para chaves de banco de dados)
+Quantos
+Padrão (minúsculas)
+MAIÚSCULAS
+Sem hifens
+{Estilo Microsoft}
+'entre aspas', para listas SQL
+Formato
+Clique em "Gerar" ou mude uma configuração para um novo lote
+O UUID v4 tem 122 bits aleatórios de crypto.getRandomValues. A chance de dois coincidirem é desprezível, mesmo com bilhões de IDs.
+Gerar novo lote
+Número
+Prefixos 0x, 0b, 0o e sublinhados são aceitos. Qualquer tamanho.
+Binário (2)
+Octal (8)
+Decimal (10)
+Hexadecimal (16)
+Base 3
+Base 4
+Base 5
+Base 6
+Base 7
+Base 9
+Base 11
+Base 12
+Base 13
+Base 14
+Base 15
+Base 17
+Base 18
+Base 19
+Base 20
+Base 21
+Base 22
+Base 23
+Base 24
+Base 25
+Base 26
+Base 27
+Base 28
+Base 29
+Base 30
+Base 31
+Base 32
+Base 33
+Base 34
+Base 35
+Base 36
+Base da entrada
+Base de saída extra (2–36)
+Binário
+Octal
+Decimal
+Hexadecimal
+8 bits necessários. A conversão usa inteiros de precisão arbitrária, então valores de 64 bits ou maiores são exatos.
+
+Usuário
+open sesame
+Senha
+O valor é o Base64 de "usuário:senha". Base64 é uma codificação, não criptografia: qualquer pessoa que veja o cabeçalho pode ler a senha, então use a autenticação Basic apenas por HTTPS.
+curl: curl -u "Aladdin:open sesame" https://example.com   ·   ou   -H "Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+Opacidade (%)
+Cor (opcional, para montar o código completo)
+Sufixo alfa
+Cor hexadecimal de 8 dígitos
+Alfa = arredondar(opacidade ÷ 100 × 255) escrito em dois dígitos hexadecimais: 50% → 128 → 80. O CSS aceita #RRGGBBAA em todos os navegadores modernos; o Android usa #AARRGGBB (alfa primeiro).
+device-width (recomendado)
+Largura fixa em pixels…
+Largura
+Largura (px)
+Escala inicial
+Permitir zoom com pinça (acessibilidade)
+viewport-fit=cover (usar a tela inteira em celulares com notch)
+Cor da interface do navegador (theme-color, opcional)
+O zoom com pinça continua ativado, o que a WCAG exige para acessibilidade.
+Sem esta tag, os navegadores móveis renderizam a página com cerca de 980 px de largura e a encolhem.
+Pasta com os ícones
+Ícone SVG (favicon.svg)
+Favicon clássico favicon.ico (16/32 px)
+Ícones PNG 32 px (favicon-32x32.png)
+Apple touch icon 180 px
+Manifesto de aplicativo web (ícones de 192 e 512 px)
+Cor do tema
+Coloque as tags no <head>. Os navegadores usam o SVG onde houver suporte e recorrem ao .ico; o ícone da Apple deve ter 180×180 px sem transparência. Use o Gerador de favicon e ícone de aplicativo para criar os arquivos de imagem.
+URL base (opcional)
+Parâmetros: chave=valor, um por linha
+Codificar espaços como + (estilo de formulário) em vez de %20
+
+
+
+Chaves repetidas
+Chaves e valores são codificados em porcentagem como UTF-8 (caracteres reservados como & = ? # e espaços são escapados). Não codifique a URL inteira uma segunda vez.
+URLs (uma por linha)
+Nome do parâmetro
+Timestamp atual (muda sempre)
+String aleatória
+Versão fixa…
+Valor
+Uma query string alterada faz navegadores e CDNs tratarem o arquivo como novo, então você vê a versão mais recente durante os testes. Em produção, prefira uma versão ou um hash de conteúdo no nome do arquivo.
+O certificado (PEM)
+Só a data de validade
+Eu tenho
+Certificado (-----BEGIN CERTIFICATE-----)
+Copie do arquivo .crt / .pem do seu servidor ou do visualizador de certificados do navegador. Ele nunca sai desta página.
+Data de validade
+
+Domínio (para o título do lembrete)
+Cole um certificado para ver a validade.
+Baixar lembretes (.ics): 30, 14 e 7 dias antes
+Cole os cabeçalhos brutos completos do e-mail (no Gmail: ⋮ → Mostrar original; no Outlook: Arquivo → Propriedades → Cabeçalhos da Internet)
+Cabeçalhos do e-mail
+Cabeçalhos brutos
+Verificar um robots.txt existente
+Criar um novo robots.txt
+
+/admin/⏎/tmp/
+
+Bloquear rastreadores de treinamento de IA (GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot, Bytespider)
+O que você quer fazer?
+Grupos
+Sitemaps
+Erros
+Avisos
+✓ Nenhum problema encontrado.
+Cole seu sitemap.xml
+Sitemap XML
+
+
+Ferramentas grátis que rodam no seu navegador. Nada é enviado.
+
+Imagem de prévia
+URL da imagem para as tags
+Título da página
+Descrição
+URL da página
+Nome do site
+URL da imagem (para as tags)
+Imagem de prévia (fica no seu dispositivo)
+Título
+
+
+
+Adicione uma imagem de prévia (1200 × 630 px)
+
+
+
+
+
+HTML para o seu <head>
+Fundo
+Cor da caixa
+Adicionar camada
+Página
+Caixa
+Raio dos cantos (px)
+Camada 1
+Interna
+Cor da sombra
+
+
+
+Camada 2
+
+Expressão regular
+Flags
+Texto de teste (uma ou mais linhas)
+Expressão regular (JavaScript)
+O que significa
+Texto de teste
+
+
+
+
+
+
+
+
+
+
+
+não é um e-mail
+
+Pesquise por porta ou serviço, ex.: 3306, ssh, banco de dados
+Pesquisar portas
+
+Extensão (.docx), nome de arquivo ou tipo MIME (image/png)
+Tipos de texto geralmente precisam de um charset, por exemplo "text/html; charset=utf-8". Envie sempre o tipo que seu servidor realmente serve; os navegadores também analisam o conteúdo em alguns tipos.
+
+ex.: _spf.google.com, sendgrid.net (separados por vírgula)
+Permitir que meus servidores MX enviem (mx)
+Permitir que meu registro A envie (a)
+~all (falha branda: marcar como suspeito, recomendado para começar)
+-all (falha rígida: rejeitar todo o resto)
+?all (neutro)
++all (permitir tudo, não recomendado)
+none (apenas monitorar)
+quarantine (enviar para spam)
+reject (bloquear)
+Igual à política principal
+
+
+
+
+endereço opcional para relatórios forenses
+Relaxado
+Estrito
+SPF: quem pode enviar e-mails pelo seu domínio
+Incluir outros remetentes (domínios)
+Endereços ou faixas IPv4
+Endereços ou faixas IPv6
+Todo o resto
+DMARC: o que os destinatários fazem com falhas
+Política
+Política de subdomínios
+Aplicar a % dos e-mails
+Relatórios agregados para (rua)
+Relatórios forenses para (ruf)
+Alinhamento DKIM
+Alinhamento SPF
+As chaves DKIM são criadas pelo seu provedor de e-mail; adicione o registro DKIM que ele fornecer. Depois de publicar, espere o DNS atualizar e envie uma mensagem de teste para conferir SPF, DKIM e DMARC nos cabeçalhos.
+Registro SPF
+Registro TXT em: 
+
+Registro DMARC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flex-direction
+
+
+flex-wrap
+
+gap (px)
+Número de itens
+Payload
+
+Segredo
+Timestamp
+Cole o cabeçalho de assinatura recebido para comparar
+Assinatura recebida
+Corpo bruto da requisição (exatamente como recebido)
+Segredo de assinatura
+Timestamp (segundos Unix, para Stripe e Slack)
+Assinatura recebida (opcional)
+A assinatura é um HMAC dos bytes brutos do corpo. Reformatar o JSON, remover uma quebra de linha ou analisá-lo antes muda o resultado. Compare assinaturas em tempo constante e rejeite timestamps antigos (por exemplo, com mais de 5 minutos) para evitar repetições. O segredo e o payload são processados só no navegador; ainda assim, use um segredo de teste, não o de produção.
+GitHub / genérico (X-Hub-Signature-256)
+GitHub legado SHA-1 (X-Hub-Signature)
+Stripe (Stripe-Signature, assinado "timestamp.payload")
+Slack (X-Slack-Signature, assinado "v0:timestamp:payload")
+HMAC-SHA256 em hexa
+HMAC-SHA256 em Base64 (Shopify e muitos outros)
+HMAC-SHA512 em hexa
+Um pequeno jabuti xereta viu dez cegonhas felizes 0123456789
+Texto de prévia
+Trecho de CSS
+Solte aqui uma fonte TTF, OTF ou WOFF ou
+CSS para o seu site
+Copiar CSS
+Fontes TTF e OTF são convertidas em WOFF (menor, para sites); fontes WOFF são descompactadas em TTF ou OTF. Os formatos dos glifos não são alterados. O WOFF2, o menor formato web, precisa de compressão Brotli e não é aceito. Confira a licença da fonte antes de colocá-la em um site. Nada é enviado.
+2 espaços
+4 espaços
+Indentação
+Minificar (uma linha)
+Ordenar chaves de A a Z
+Permitir comentários e vírgulas finais
+De
+SQL padrão
+
+
+
+
+
+
+Dialeto
+MAIÚSCULAS
+minúsculas
+Como escrito
+Palavras-chave
+SQL formatado
+
+Substituição
+Substituição, ex.: <$1>
+g (todas as correspondências)
+i (ignorar maiúsculas/minúsculas)
+m (^ $ por linha)
+s (. corresponde a quebra de linha)
+u (Unicode)
+Texto a testar
+Resultado da substituição
+Resultado da substituição
+Substituição (opcional, $1 $<nome> $&)
+Correspondências destacadas
+Expressões regulares JavaScript (o mesmo motor do seu navegador). O teste roda em um worker em segundo plano e é interrompido após 2 segundos, então um padrão ruim não consegue travar esta página. Nada é enviado.
+Correspondências
+
+Prévia (o botão de copiar copia o HTML)
+Palavras
+Caracteres
+Tipo
+CSS, HTML ou JSON
+Minificado
+Parágrafos
+Frases
+Começar com "Lorem ipsum dolor sit amet"
+Envolver parágrafos em tags <p>
+Texto gerado
+Quantidade
+Unidade
+Gerar novo texto
+Texto de preenchimento feito de palavras com aparência latina, sem significado. As mesmas configurações sempre dão o mesmo texto até você apertar "Gerar novo texto".
+Solte aqui um ou mais arquivos ou
+O tipo é lido dos primeiros bytes do arquivo (seu "número mágico"), não do nome, então funciona também para arquivos com extensão errada ou ausente. Apenas os primeiros 70 KB de cada arquivo são lidos. Arquivos de texto são identificados pelo conteúdo (JSON, HTML, XML, SVG, script, texto simples); cerca de 60 formatos binários comuns são reconhecidos. Nada é enviado.
+Árvore de pastas
+Ou cole uma lista de caminhos, um por linha:⏎src/app.js⏎src/lib/util.js⏎README.md
+Caminhos
+Mostrar tamanhos de arquivo
+Somente pastas
+
+Ignorar
+Por nome
+Por tamanho (maiores primeiro)
+Solte aqui uma pasta ou
+Escolher uma pasta
+Profundidade máxima (0 = tudo)
+Ignorar (separados por vírgula, * permitido)
+Ordenar
+Copiar como bloco de código Markdown
+Apenas nomes e tamanhos de arquivos e pastas são lidos, nunca o conteúdo, e nada é enviado. Pastas vazias são mostradas quando o navegador as informa.
+Duas páginas lado a lado (automático)
+US Letter
+Tabloid
+Tamanho da folha (paisagem)
+Encadernação da direita para a esquerda (árabe, hebraico, mangá)
+Criar PDF em livreto
+Solte aqui um PDF ou
+Imprima em frente e verso, vire pela borda curta e dobre a pilha ao meio. O número de páginas é completado com páginas em branco até um múltiplo de 4.
+Colunas
+Linhas
+Carta
+Ofício
+Tamanho da folha
+Automático
+Retrato
+Paisagem
+Orientação
+Margem externa (mm)
+Espaço entre as páginas (mm)
+Desenhar uma borda fina ao redor de cada página
+Criar PDF n-up
+
+
+Prefixo
+Número inicial
+Dígitos (preenchidos com zeros)
+Sufixo
+Embaixo à direita
+Embaixo ao centro
+Embaixo à esquerda
+No alto à direita
+No alto ao centro
+No alto à esquerda
+Posição
+Tamanho da fonte (pt)
+Distância da borda (mm)
+Fundo branco atrás do número
+Adicionar números Bates
+Alto (mm)
+Direita (mm)
+Baixo (mm)
+Esquerda (mm)
+Desenhar linhas de caderno para anotações nas margens adicionadas
+Adicionar margens
+Tamanho de um formato de papel em mm, polegadas e pixels
+Tamanho de impressão de uma imagem com pixels dados
+O que você quer saber?
+Executive
+Half Letter
+Cartão de visita (UE)
+Cartão de visita (EUA)
+Foto 10×15
+Foto 13×18
+Tamanho personalizado (mm)
+Formato de papel
+Largura (mm)
+Altura (mm)
+72 (pontos PDF, tela)
+96 (pixels CSS)
+150 (impressão rascunho)
+300 (foto / revista)
+600 (traço fino)
+Resolução (pixels por polegada)
+Largura da imagem (pixels)
+Altura da imagem (pixels)
+Milímetros
+Polegadas
+Pontos PDF
+Pixels a 300 ppi
+Proporção
+Área
+Os tamanhos da série A mantêm a proporção 1 : √2, então dividir uma folha ao meio dá o próximo tamanho menor com as mesmas proporções.
+Avery 5160 / 8160 (US Letter, 30 etiquetas, 1″ × 2⅝″)
+Avery 5163 / 8163 (US Letter, 10 etiquetas, 2″ × 4″)
+Avery 5167 / 8167 (US Letter, 80 etiquetas de remetente, ½″ × 1¾″)
+Avery L7160 / J8160 (A4, 21 etiquetas, 63,5 × 38,1 mm)
+Avery L7163 / J8163 (A4, 14 etiquetas, 99,1 × 38,1 mm)
+Avery L7161 / J8161 (A4, 18 etiquetas, 63,5 × 46,6 mm)
+Avery L7162 / J8162 (A4, 16 etiquetas, 99,1 × 33,9 mm)
+Desenhar contornos finos das etiquetas (para testes em papel comum)
+Ana Exemplo⏎Rua das Flores, 12⏎01310-100 São Paulo⏎⏎Bruno Modelo⏎Av. Central, 3⏎20040-020 Rio de Janeiro
+Endereços
+Carregar um arquivo de texto/CSV
+Folha de etiquetas
+Pular etiquetas já usadas
+Começar em uma folha parcialmente usada
+Cópias de cada
+Maior tamanho de fonte (pt)
+Reduz automaticamente para caber
+Endereços (linha em branco entre as etiquetas)
+Criar PDF da folha de etiquetas
+Imprima sempre uma folha de teste em papel comum a 100 % de escala ("Tamanho real", não "Ajustar à página") e encoste-a em uma folha de etiquetas para conferir o alinhamento. Outras marcas de etiquetas do mesmo tamanho usam o mesmo layout.
+Certificado de Conquista
+Um nome por linha (um certificado para cada)
+Joana Silva, Diretora
+Sua organização
+Azul
+Bordô
+Verde
+Grafite
+Dourado
+A4 paisagem
+US Letter paisagem
+Data
+Assinado por
+Organização
+Papel
+Destinatários (um por linha)
+Texto
+Criar certificados (PDF)
+
+# Título⏎⏎Escreva ou cole Markdown aqui…
+Documento
+
+
+
+
+Título do documento
+Fonte
+Criar documento do Word
+Aceito: títulos, negrito, itálico, código em linha, links, listas com marcadores e numeradas (aninhadas), citações, blocos de código, tabelas e linhas. Imagens não são incluídas.
+Saída em Markdown
+Solte aqui um arquivo do Word (.docx) ou
+Títulos, negrito, itálico, links, listas, tabelas e citações são mantidos. Imagens, comentários, notas de rodapé e caixas de texto não são convertidos.
+Destaques, sublinhados, tachados
+Notas e caixas de texto
+Solte aqui um PDF com destaques e comentários ou
+O texto marcado é o texto que fica sob cada destaque, então só está disponível em PDFs com camada de texto. Anotações feitas por alguns aplicativos (por exemplo, desenhos à tinta) não são listadas. Tudo roda no seu navegador.
+100 dpi (menor)
+150 dpi (tela e impressão de escritório)
+200 dpi (boa impressão)
+300 dpi (nítido, grande)
+Tons de cinza
+Preto e branco (digitalizações de texto)
+Aumentar o contraste (ajuda digitalizações desbotadas)
+Converter para tons de cinza
+Resolução
+Qualidade JPEG (%)
+Cada página é renderizada como imagem e reconstruída em um PDF do mesmo tamanho de página, então o resultado não tem mais texto selecionável, links nem campos de formulário. Passe depois pela ferramenta de OCR se precisar de texto pesquisável. A cor é removida de texto, imagens e fundos igualmente; gráficos vetoriais viram pixels.
+Adicionar uma segunda página para conferir o alinhamento frente e verso
+Criar folha de teste (PDF)
+Imprima a 100 % sem escala e depois confira a barra de escala com uma régua, a moldura nos quatro lados, os degraus de cinza, o texto e a barra preta. Para uma página de teste rápida na tela, você também pode usar test.institute.
+
+FOLHA SEPARADORA
+Adicionar um QR Code com a etiqueta (para programas de digitalização que leem códigos)
+Número de folhas
+Título na faixa preta
+Prefixo da etiqueta
+Primeiro número
+Dígitos
+Criar folhas separadoras (PDF)
+Imprima em papel colorido se puder: a pilha fica fácil de separar a olho. A etiqueta grande (por exemplo DOC-001) mostra o lote; o QR Code contém o mesmo texto para scanners e programas que dividem documentos em códigos de barras.
+Filtrar arquivos…
+Filtrar arquivos
+Salvar selecionados como ZIP
+Selecionar tudo
+Selecionar nada
+Solte aqui um arquivo ZIP, TAR ou GZ ou
+A lista é lida sem descompactar nada; um arquivo só é descompactado quando você o salva. ZIPs protegidos por senha, arquivos RAR e 7z não são aceitos. Tudo fica no seu navegador.
+arquivo
+Nome do arquivo compactado
+Armazenar (sem compressão, mais rápido)
+Rápido
+Normal (recomendado)
+Menor
+Escolher arquivos
+Solte aqui arquivos ou
+Compressão
+Arquivos já comprimidos (JPG, MP3, MP4, PDF, DOCX …) são armazenados como estão, porque comprimi-los de novo só gasta tempo. Arquivos ZIP feitos aqui não têm senha, porque a proteção por senha clássica do formato é fraca; use "Proteger PDF" ou uma nota criptografada para segredos. Nada é enviado.
+Código HTML
+Detectar títulos pelo tamanho da fonte
+Marcar quebras de página
+Página HTML completa (com <head> e estilo básico)
+O resultado é um HTML limpo e simples com títulos, parágrafos e listas, não uma cópia do layout da página. Tabelas, colunas, imagens e fontes exatas não são reproduzidas; PDFs digitalizados precisam antes de OCR. Tudo roda no seu navegador.
+Incluir notas de rodapé e notas de fim
+Incluir cabeçalhos e rodapés
+Solte aqui um documento do Word (.docx) ou
+Conta o texto do documento principal; caixas de texto, comentários e exclusões controladas não são incluídos. A contagem de páginas é apenas uma estimativa (500 palavras por página), porque o layout real depende de fontes e margens, que só o Word conhece.
+Tamanho-alvo
+Comprimir para este tamanho
+por exemplo 2 MB, 500 KB ou 10 MB
+A ferramenta comprime passo a passo, de suave (só a estrutura do arquivo) a forte (imagens reduzidas a 48 dpi), e para no primeiro resultado que couber. O texto continua selecionável. Se o alvo estiver abaixo do que pode ser atingido, você recebe o menor resultado e uma observação. Tudo roda no seu navegador.
+Nenhum arquivo ainda
+Escolher PDF A (original)
+Escolher PDF B (alterado)
+A visão de texto compara as palavras de cada página e encontra cláusulas, números e nomes alterados, mesmo que o layout tenha mudado. A visão visual compara as páginas renderizadas pixel a pixel e encontra mudanças em imagens, cores e layout. PDFs digitalizados não têm texto; use antes o OCR de PDF. Nada é enviado.
+Procurar por
+Procurar por…
+Diferenciar maiúsculas e minúsculas
+Somente palavras inteiras
+Pesquisa a camada de texto do PDF no navegador e lista cada ocorrência com o número da página e as palavras ao redor. Texto armazenado como imagem (digitalizações) não pode ser encontrado sem OCR. Palavras divididas por uma quebra de linha podem não ser encontradas através da quebra.
+A5 (livro)
+Números de página
+Solte aqui um e-book EPUB ou
+Tamanho da página
+Margem (mm)
+O texto do livro é diagramado como um PDF simples: títulos, parágrafos, listas e citações, folha de rosto e números de página. Imagens, capas, tabelas e as fontes originais não são transferidas; e-books protegidos por DRM não podem ser abertos. Altere as configurações e depois solte o arquivo de novo para criar uma nova versão. Tudo roda no seu navegador.
+
+
+Moeda
+Remetente
+Destinatário
+Itens
+Notas
+Itens (descrição; quantidade; unidade, um por linha)
+Referência do pedido
+Observação (opcional)
+Idioma do documento
+Símbolo da moeda
+Remetente (você)
+Endereço de entrega
+Criar PDF
+Um romaneio de entrega lista o que foi entregue e permite ao destinatário confirmar o recebimento. Não traz preços. Nada é enviado.
+Serviços de consultoria, março
+Dinheiro
+Transferência bancária
+Cartão
+Valor total (bruto)
+% de imposto incluído (0 = nenhum)
+Referente a (o que foi pago)
+Forma de pagamento
+Local (opcional)
+Emissor (você)
+Pago por
+Um recibo confirma um pagamento; confira o que seu país exige (por exemplo, dados fiscais ou um número sequencial). Esta ferramenta diagrama o documento; não dá aconselhamento tributário. Nada é enviado.
+Custo e preço de venda
+Custo e margem %
+Custo e markup %
+Preço de venda e margem %
+Preço de venda e markup %
+Eu sei
+Custo
+Preço de venda
+Margem bruta %
+Markup %
+Lucro
+Margem bruta
+Markup
+Margem = lucro ÷ preço. Markup = lucro ÷ custo. Um markup de 50% é só uma margem de 33,3%; uma margem de 50% exige um markup de 100%.
+Valor inicial
+Aporte mensal
+Taxa de juros anual (%)
+Anos
+Anual
+Trimestral
+Mensal
+Diária
+Capitalização
+no fim de cada mês
+no início de cada mês
+Os aportes são feitos
+Usado apenas para exibição
+Saldo final
+Total aportado
+Juros ganhos
+Saldo
+Aportado
+Caixa no banco
+Custos mensais
+Receita mensal atual
+Crescimento mensal da receita (%)
+Burn líquido atual
+
+Runway com o burn de hoje
+
+Runway com crescimento
+
+Saldo de caixa
+Receita média por conta por mês
+Margem bruta (%)
+Churn mensal (%)
+Custo de aquisição de clientes (CAC)
+Tempo de vida do cliente
+
+Valor vitalício (LTV)
+LTV : CAC
+Payback do CAC
+
+Uma razão de 3:1 ou melhor é a referência usual de um negócio de assinatura saudável.
+Custos fixos por período
+Preço por unidade
+Custo variável por unidade
+Lucro-alvo (opcional)
+Unidades esperadas por período (opcional)
+Unidades no ponto de equilíbrio
+Receita no ponto de equilíbrio
+Contribuição por unidade
+Margem de contribuição
+Margem de segurança
+
+Receita
+Custos totais
+bruto (imposto incluído)
+líquido (sem imposto)
+O valor é
+País (sugere alíquotas)
+Alíquota (%)
+Valor líquido
+
+Valor bruto
+Alíquotas normal e reduzida em DE: 19%, 7%. As alíquotas mudam; confirme a atual com a autoridade fiscal.
+Líquido = bruto ÷ (1 + alíquota). Imposto = bruto − líquido.
+Taxa de desconto (% por período)
+Fluxos de caixa, um por período (primeiro = hoje, negativo = investimento)
+Valor presente líquido
+Taxa interna de retorno
+Payback descontado
+
+O projeto rende mais do que a sua taxa de desconto.
+Como o XNPV do Excel com períodos iguais, o primeiro fluxo fica no instante 0 e não é descontado. O VPL() do Excel desconta o primeiro valor em um período, então some o investimento inicial fora da função.
+Retorno anual ou taxa de crescimento (%)
+Regra dos 72
+
+Tempo exato para dobrar
+
+Regra de 69,3 (contínua)
+
+Erro da regra dos 72
+72 dividido pela taxa de juros estima em quantos anos seu dinheiro dobra. É mais precisa para taxas entre 6% e 10%. Tempo exato = ln 2 ÷ ln(1 + taxa).
+Faixas: quantidade inicial e preço unitário, um por linha
+Formato: "a partir de, preço"
+Gradual (cada faixa vale só para as unidades dentro dela)
+Volume (a faixa atingida define o preço de TODAS as unidades)
+Modelo
+Quantidade
+Preço total
+Preço médio por unidade
+Preço total por quantidade
+Vendas realizadas
+Meta
+Faixas de comissão: "até % da meta, taxa %", uma por linha (use * para sem limite)
+Atingimento da meta
+Comissão
+Taxa efetiva
+Valor de pagamento típico
+Pagamentos por mês
+Processadores: "nome, porcentagem, tarifa fixa" por linha
+Preenchido com preços de tabela de 2024; edite para corresponder ao seu contrato.
+Mais barato
+
+Taxa por pagamento
+Economia por ano em relação ao mais caro
+Taxa = valor × porcentagem + tarifa fixa. As taxas variam conforme o país, o tipo de cartão e o contrato, então edite a lista para corresponder aos seus próprios preços.
+Remuneração anual (bruta)
+Horas contratuais por semana
+Horas extras não pagas por semana
+Deslocamento por dia, só ida (minutos)
+Dias no local de trabalho por semana
+Semanas de folga por ano (férias + feriados)
+Custos relacionados ao trabalho por ano (transporte, roupas, creche…)
+Valor-hora nominal
+Valor-hora efetivo
+Horas realmente gastas por ano
+das quais deslocamento
+Valor perdido com os extras
+Valor efetivo = (remuneração − custos relacionados ao trabalho) ÷ (horas contratuais + horas extras não pagas + horas de deslocamento).
+Salário de funcionário que você quer igualar (por ano)
+Benefícios e encargos do empregador (% do salário)
+Seus próprios custos anuais de negócio (seguro, software, contador)
+Semanas de folga por ano
+Horas de trabalho por semana
+Parcela faturável das horas de trabalho (%)
+Margem extra para impostos ou risco (%)
+Valor-hora a cobrar
+Valor da diária (8 h)
+Custo anual total a cobrir
+Horas faturáveis por ano
+Valor = (salário × (1 + benefícios %) + custos próprios) ÷ horas faturáveis ÷ (1 − margem de impostos). Horas faturáveis = semanas trabalhadas × horas por semana × parcela faturável, porque um freelancer não pode cobrar administrativo, vendas e tempo parado.
+Valor investido (custo)
+Valor obtido (receita ou valor final)
+Período em anos (opcional)
+Retorno sobre o investimento
+Ganho líquido
+ROI anualizado
+ROI = (valor obtido − custo) ÷ custo. ROI anualizado = (valor ÷ custo)^(1/anos) − 1, o que torna comparáveis projetos de durações diferentes.
+Valor mensal integral
+Data de mudança ou de início
+Dias reais daquele mês
+Mês de 30 dias (comum em contratos de aluguel)
+Aluguel anual ÷ 365
+Cobrança do primeiro mês
+Dias do mês
+Dias de ocupação
+Valor diário
+
+Confira seu contrato: alguns calculam o proporcional em mês de 30 dias, outros pelos dias reais.
+Ana, Beto, Clara
+Pessoas
+Pessoas (separadas por vírgula)
+Imposto (valor)
+Gorjeta (% dos itens)
+
+Nome do item
+Preço
+Ana
+Beto
+Clara
+Remover item
+
+Vinho
+Adicionar item
+Imposto e gorjeta são divididos em proporção ao que cada pessoa pediu. As parcelas são arredondadas ao centavo para que a soma bata exatamente com o total.
+Custo de compra
+Valor residual
+Vida útil (anos)
+Linear
+Saldo decrescente
+Soma dos dígitos dos anos
+Fator do saldo decrescente (2 = dobro)
+Valor depreciável
+Despesa do primeiro ano
+Valor contábil final
+Linear = (custo − valor residual) ÷ vida útil. Saldo decrescente = valor contábil × fator ÷ vida útil, passando ao valor restante no último ano. A soma dos dígitos dos anos antecipa: o ano n recebe (vida útil − n + 1) ÷ Σ(1…vida útil). Regras fiscais (MACRS, AfA) têm tabelas próprias; confirme com seu contador.
+Depreciação por ano
+Dívidas: "nome, saldo, juros % ao ano, pagamento mínimo" por linha
+Pagamento mensal total que você pode fazer
+Avalanche (maior taxa primeiro)
+
+Bola de neve (menor saldo primeiro)
+
+A avalanche economiza
+Os dois métodos pagam o mínimo de cada dívida e mandam tudo o que sobra para um alvo. A avalanche mira a maior taxa de juros e sempre custa menos; a bola de neve mira primeiro o menor saldo, o que dá vitórias mais rápidas.
+Clientes hoje
+Receita por cliente por mês
+Novos clientes por mês
+Expansão mensal da receita por cliente (%)
+Meses a projetar
+Clientes após 24 meses
+Receita mensal então
+Parcela dos clientes de hoje que restam após um ano
+Metade de uma coorte se perde após
+
+
+Clientes
+
+
+
+
+
+
+
+Taxa oficial
+Distância
+Ida e volta (distância dobrada)
+Ou use sua própria taxa por unidade
+Substitui a taxa oficial
+Reembolso
+
+Distância considerada
+Taxa usada
+
+As taxas oficiais mudam todo ano e têm condições (somente uso profissional, valores máximos, tributável acima do limite). As taxas da lista são para orientação; confira o valor atual com a autoridade fiscal.
+Total da conta
+Dividir entre
+Taxas de gorjeta a comparar (%)
+Os costumes variam: 15–20% é usual nos EUA, 10% no Brasil e 5–10% ou arredondar para cima em boa parte da Europa, e em muitos países o serviço já está incluído.
+Ativo circulante (caixa, recebíveis, estoque…)
+Passivo circulante (contas a pagar, dívida de curto prazo…)
+dos quais estoque
+dos quais caixa e equivalentes
+Capital de giro líquido
+Liquidez corrente
+Liquidez seca
+Liquidez imediata
+Liquidez corrente = ativo circulante ÷ passivo circulante (acima de 1,2–2 costuma ser confortável). A liquidez seca exclui o estoque. A liquidez imediata usa só o caixa. Níveis saudáveis variam por setor.
+Preço antigo
+Unidades vendidas ao preço antigo
+Preço novo
+Unidades vendidas ao preço novo
+Elasticidade-preço da demanda
+A demanda é
+elástica
+Receita antes
+Receita depois
+Variação da receita
+Fórmula do ponto médio: variação % da quantidade ÷ variação % do preço, ambas medidas em relação à média do valor antigo e do novo. Abaixo de −1 (elástica), um aumento de preço reduz a receita; entre −1 e 0 (inelástica), ele a aumenta.
+Custos indiretos compartilhados a ratear (aluguel, contas, software…)
+Departamentos: "nome, pessoas, área, receita" por linha
+Número de pessoas
+Área
+Ratear por
+Cada departamento recebe a parte do total proporcional à sua fatia do critério escolhido. Escolha o critério que melhor explica por que o custo existe: número de pessoas para licenças de software, área para aluguel, receita para tempo de gestão.
+Rodadas de investimento: "nome, investimento, valuation pre-money" por linha
+Fundadores após todas as rodadas
+Valor dessa participação
+Novos investidores recebem investimento ÷ valuation pós-money da empresa; os atuais acionistas são diluídos proporcionalmente. Pools de opções, notas conversíveis e SAFEs não são modelados.
+Participação dos fundadores (%)
+Enviar um valor e ver o que chega
+Receber um valor e ver o que enviar
+Eu quero
+Valor (moeda de origem se enviar, moeda de destino se receber)
+Taxa de câmbio comercial (unidades de destino por 1 unidade de origem)
+Consulte em um site de câmbio; 1 EUR = 1,09 USD significa 1,09
+Margem do provedor na taxa (%)
+Bancos costumam cobrar 2–5 %, serviços especializados 0,3–1 %
+Tarifa fixa (moeda de origem)
+Margem de segurança para oscilação do câmbio (%)
+Você envia
+
+Eles recebem
+
+Taxa incluindo a tarifa fixa
+Perdido em margem e tarifas
+
+Orçamento com margem de segurança de 2 %
+
+A taxa comercial é a taxa "real" entre compradores e vendedores. Os provedores ganham reduzindo-a (a margem) e cobrando tarifas; o valor perdido é o custo verdadeiro da transferência. Compare o valor final que chega, não a tarifa anunciada.
+Pés quadrados
+Metros quadrados
+Unidade de área
+Área locável
+Aluguel-base por unidade por ANO
+Custos operacionais / CAM / NNN por unidade por ano
+Outros custos fixos por mês (estacionamento, contas, seguro)
+Reajuste anual do aluguel (%)
+Prazo do contrato (anos)
+Carência de aluguel (meses)
+Custo mensal, ano 1
+Total no prazo
+Custo médio por pé quadrado por ano
+Parcela do aluguel-base no ano 1
+Os aluguéis anunciados costumam excluir custos operacionais: contratos "triple net" (NNN) somam impostos, seguro e manutenção por cima. Compare o custo total por pé quadrado. Confira como o contrato define a área locável e quem paga reparos e reajustes de renovação.
+Quanto um valor custará no futuro
+Quanto vale hoje um valor do passado
+A taxa média de inflação entre dois preços
+Inflação média anual (%)
+Número de anos
+Preço no início
+Preço no fim
+
+Poder de compra do valor de hoje naquela data
+Aumento de preço
+Use uma média de longo prazo: a zona do euro e os EUA miraram cerca de 2% por muitos anos, mas tiveram taxas bem maiores em 2022–23. A inflação real varia conforme o item.
+Valor esperado
+Valor esperado (troco + vendas)
+Troco inicial mais recebimentos em dinheiro
+Conte cada cédula ou moeda uma vez, informe a quantidade e compare com o valor esperado. Os valores são calculados em centavos inteiros para evitar erros de arredondamento. A página não armazena nada.
+Quantidade de 100
+Quantidade de 50
+Quantidade de 20
+Quantidade de 10
+Quantidade de 5
+Quantidade de 2
+Quantidade de 1
+Quantidade de 0,5
+Quantidade de 0,25
+Quantidade de 0,1
+Quantidade de 0,05
+Quantidade de 0,01
+Contado
+
+Esperado
+
+Faltam
+Notas e moedas
+
+Converter para
+Qualidade (JPG, WebP, AVIF)
+Fundo para áreas transparentes (JPG)
+Baixar tudo (ZIP)
+Escolher imagens
+Converte JPG, PNG, WebP, GIF, BMP, SVG para o formato que você escolher. A saída em AVIF não está disponível neste navegador.
+Ajustar dentro de uma largura / altura máxima
+Largura e altura exatas (pode esticar)
+Porcentagem do original
+Redimensionar por
+Altura (px, 0 = automática)
+Escala (%)
+Permitir ampliar imagens pequenas
+Manter o formato original
+Qualidade
+As imagens são processadas no seu dispositivo e nunca são enviadas.
+WebP (menor)
+JPG (mais compatível)
+PNG (sem perdas, reduz só um pouco)
+Limitar também o lado maior a (px, 0 = manter)
+Compare o resultado com o original abaixo de cada imagem. Reduza a qualidade até notar diferença e volte um passo.
+Manter o perfil de cor (recomendado, para as cores não mudarem)
+Manter o indicador de rotação (recomendado, para a foto não girar)
+JPG, PNG e WebP são limpos sem recodificação: os dados da imagem são copiados sem alteração, então a qualidade é idêntica. Outros formatos são salvos de novo como PNG.
+Imagem a editar
+Desfoque
+Pixelizar
+Caixa preta (mais seguro)
+Intensidade
+Solte aqui uma captura de tela ou foto ou
+Escolher uma imagem
+Efeito
+Desfazer
+Baixar PNG
+Outra imagem
+Arraste um retângulo sobre a parte que quer esconder. Pixelizar e desfocar reduzem o detalhe, mas para senhas, rostos ou números de conta uma caixa preta é o único método irreversível. O download é um novo PNG sem metadados.
+Fundo transparente
+Livre
+Solte aqui uma imagem ou
+Forma do corte
+Girar em (graus)
+Cor de preenchimento
+Espelhar na horizontal
+Espelhar na vertical
+Baixar JPG
+Baixar WebP
+Arraste na imagem para selecionar a área a manter. Rotação e espelhamento são aplicados antes do corte.
+© Seu nome
+Texto da marca-d'água
+Repetido por toda a imagem
+Na diagonal pela imagem
+Tamanho do texto (% da largura da imagem)
+Opacidade
+Contorno escuro para legibilidade
+Mesmo formato
+Margem interna
+Cantos arredondados
+Solte aqui um logotipo quadrado (PNG, SVG ou JPG, de pelo menos 512 × 512 px) ou
+Margem ao redor do logotipo
+Cor de fundo
+Cor do texto
+
+Exemplo de texto grande
+Texto normal do corpo: um pequeno jabuti xereta viu dez cegonhas felizes.
+Taxa de contraste
+
+
+
+
+
+Contraste WCAG 2.1 = (L1 + 0,05) ÷ (L2 + 0,05), onde L é a luminância relativa da cor mais clara e da mais escura. Texto grande tem pelo menos 24 px, ou 18,66 px em negrito. Cores semitransparentes são verificadas como estão, sem mistura com o fundo.
+Escolher uma cor na tela
+Número de cores
+As cores são encontradas agrupando pixels parecidos e fazendo a média de cada grupo (k-means), ponderada pelo número de pixels que compartilham cada cor; a parcela mostra quanto da imagem cada cor cobre.
+1:1 (quadrado)
+9:16 (stories)
+1,91:1 (prévia de link)
+4:5 (retrato do Instagram)
+Proporção desejada
+Margem transparente (PNG)
+Cor da margem
+Preencher com uma cópia desfocada da imagem
+Data URI
+Tag HTML <img>
+CSS background-image
+Somente Base64
+Ou cole uma data URI ou string Base64 para ver a imagem
+Base64 para imagem
+Zoom
+Transparente fora do círculo
+Solte aqui uma foto de retrato ou
+Espessura do anel (px)
+Cor do anel
+Tamanho de saída
+Arraste a imagem para centralizar o rosto e use o controle de zoom. O PNG baixado tem fundo transparente fora do círculo.
+Janela do macOS
+Janela do Windows
+Janela de navegador
+Sem moldura
+Sombra
+Texto da barra de endereço
+Solte aqui uma captura de tela ou
+Escolher uma captura de tela
+Dica: cole uma captura de tela com Ctrl+V / ⌘V.
+Moldura da janela
+Margem interna (px)
+Início do gradiente
+Fim do gradiente
+Ângulo do gradiente (°)
+Texto do endereço
+Copiar imagem
+Outra captura de tela
+Imagem A (original)
+Escolher
+Imagem B (alterada)
+Limite de sensibilidade (0 = qualquer mudança)
+Cor do destaque
+Cada pixel de A é comparado com o mesmo pixel de B. Pixels cuja cor difere mais que o limite são pintados na cor do destaque; áreas inalteradas aparecem esmaecidas.
+Preto e branco (tons de cinza)
+Duotone (duas cores)
+Sépia (vintage quente)
+Inverter cores (negativo)
+Prévia em modo escuro (inverter, manter tons)
+Preto e branco puro (limiar)
+Somente brilho e contraste
+Limiar
+Brilho
+Contraste
+Salvar como
+Preto e branco, duotone, sépia, inversão, modo escuro e brilho/contraste. As imagens são processadas no seu dispositivo.
+Detectar pela borda da imagem (automático)
+Branco
+Preto
+Cor a remover
+Tolerância
+Borda suave
+Funciona melhor em um fundo liso e iluminado de modo uniforme (folha branca, fundo de estúdio, chroma key verde). Ele remove uma cor, não uma pessoa: para cenas complexas, use um removedor baseado em IA.
+Cole código SVG ou abra um arquivo .svg
+Entrada SVG
+SVG otimizado
+Remover <title> e <desc> (prejudica a acessibilidade)
+Remover atributos id não usados
+Casas decimais para coordenadas
+2 bastam para a maioria dos ícones
+Código SVG
+Otimizado
+Apenas otimizações seguras: metadados de editor, comentários, namespaces e espaços em branco são removidos e os números são arredondados. Os caminhos não são reescritos, então o desenho continua o mesmo. Confira a prévia antes de usar o resultado; ícones muito pequenos podem precisar de mais casas decimais.
+Alemão
+Polonês
+Tcheco
+Inglês + alemão
+Inglês + polonês
+Inglês + tcheco
+Texto reconhecido
+Solte aqui uma imagem com texto (captura de tela, foto de documento, digitalização) ou
+Idioma do texto
+O motor de reconhecimento (Tesseract, compilado para WebAssembly) e os dados de idioma são carregados deste site e rodam no navegador: a imagem não é enviada. A primeira execução leva alguns segundos a mais. Os melhores resultados vêm de texto reto, nítido e de alto contraste; escrita à mão não é aceita.
+Lado a lado
+Empilhadas
+Grade (2 × 2)
+Tela dividida com divisória (2 imagens)
+Quadrado 1:1
+Vertical 9:16
+Adicione as imagens na ordem em que devem aparecer
+Adicionar imagens
+Layout
+Formato da tela
+Espaço (px)
+Baixar JPEG
+As imagens são cortadas para preencher a célula (cover). Use o layout de tela dividida para comparações antes/depois.
+QUANDO O CÓDIGO FUNCIONA
+Texto de cima
+DE PRIMEIRA
+Texto de baixo
+Cor do contorno
+Letras maiúsculas
+Escolha a imagem do seu meme
+Tamanho do texto (% da largura)
+A imagem fica no seu dispositivo. A Impact é usada se o seu sistema a tiver; caso contrário, uma sem serifa em negrito. Use apenas imagens que você tem o direito de compartilhar.
+2 (preto e branco)
+256 (máximo para PNG-8)
+Pontilhamento (degradês mais suaves, arquivo maior)
+Reduzir imagens muito grandes para uma largura de no máximo (px, 0 = manter)
+Reduz o número de cores e salva um pequeno PNG indexado (como o pngquant). Ótimo para logotipos, ícones, capturas de tela e ilustrações; fotos podem mostrar faixas, a menos que você use pontilhamento.
+Solte aqui uma foto (JPEG, PNG ou WebP) ou
+Os metadados são lidos do arquivo no navegador; a foto não é enviada. Mensageiros e redes sociais costumam removê-los, mas anexos de e-mail e links na nuvem normalmente os mantêm.
+JPG (funciona em qualquer lugar)
+PNG (sem perdas, maior)
+WebP (pequeno)
+Qualidade (JPG, WebP)
+Largura máxima (px, 0 = original)
+Fotos HEIC/HEIF de iPhones e de alguns celulares Android. Elas são decodificadas no seu dispositivo (libheif, WebAssembly); nada é enviado. Outros tipos de imagem também são convertidos.
+Para sempre
+Repetir uma vez
+Reproduzir uma vez
+256 (melhor)
+32 (menor)
+16 (o menor)
+Cinza
+Solte aqui duas ou mais imagens (na ordem da animação) ou
+Tempo por imagem (ms)
+Repetição
+Cores
+Fundo (para áreas transparentes e bordas)
+Imagens de formatos diferentes são ajustadas ao quadro da primeira imagem sem esticar. Cada quadro tem sua própria paleta de cores. Tudo acontece no seu navegador.
+Senoidal (tom puro)
+Quadrada
+Triangular
+Dente de serra
+Frequência (logarítmica)
+Volume
+Ambos os alto-falantes
+Somente esquerdo
+Somente direito
+Reproduzir
+Varredura 20 Hz → 20 kHz (30 s)
+Grave 100 Hz
+
+
+
+Frequência (Hz)
+Controle deslizante (logarítmico)
+Onda
+Canal
+⚠ Comece com o volume baixo e aumente devagar. Tons puros, especialmente os agudos, podem ser altos e cansativos, e 15–20 kHz podem machucar nos fones de ouvido.
+O tom é gerado ao vivo por um oscilador da Web Audio API. Use a chave de canal para testar os alto-falantes esquerdo/direito e a varredura para achar a frequência de uma vibração, zumbido ou chiado de bobina: ouça o momento em que o ruído fica alto. A maioria dos adultos não ouve acima de cerca de 16 kHz, e os alto-falantes de notebooks não reproduzem abaixo de cerca de 100 Hz.
+Cole seu roteiro aqui
+Roteiro
+Velocidade
+Tamanho do texto
+Espelhar texto (para teleprompter de vidro)
+Linha de leitura
+Pausar / retomar
+Fechar
+Iniciar teleprompter
+Na velocidade padrão, um roteiro de 150 palavras leva cerca de dois minutos para rolar. Seu roteiro fica no navegador. Coloque a câmera acima da linha de leitura para seus olhos ficarem perto da lente.
+Toque no botão (ou aperte a barra de espaço) no ritmo
+Clique de metrônomo no andamento tocado
+BPM = 60.000 ÷ o tempo médio entre os toques (em milissegundos) nos seus últimos 12 toques. Toques com mais de 2,5 segundos de intervalo iniciam uma nova medição. Toque pelo menos 8 tempos para uma leitura estável. O andamento é medido pelos seus toques, não por um arquivo de áudio.
+Pico: o ponto mais alto como alvo
+Volume (RMS): nível médio como alvo
+Nível-alvo (dBFS)
+Pico: −1 é comum. RMS: cerca de −16 para podcasts.
+
+
+Qualidade WAV
+Solte aqui um arquivo de áudio ou
+A normalização de pico faz a amostra mais alta atingir o alvo; a normalização de volume (RMS) iguala o nível médio e mantém os picos abaixo de −1 dBFS. O arquivo é decodificado pelo navegador, processado aqui e salvo como WAV (44,1 kHz). Nada é enviado. Arquivos WAV são maiores que MP3.
+Limiar de silêncio (dBFS)
+Tudo mais baixo que isso conta como silêncio.
+Margem a manter (ms)
+Encurtar também pausas longas dentro da gravação
+Pausas maiores que (ms)
+O arquivo é decodificado pelo navegador, processado aqui e salvo como WAV (44,1 kHz). Nada é enviado. Arquivos WAV são maiores que MP3.
+Mixar em mono
+Trocar esquerda e direita
+Silenciar o canal esquerdo
+Silenciar o canal direito
+Inverter a polaridade do canal esquerdo
+Inverter a polaridade do canal direito
+Inverter ambos os canais
+Pan da mixagem mono para esquerda / direita
+Operação
+Pan (−100 esquerda … +100 direita)
+Use "Inverter polaridade" para testar se dois alto-falantes ou microfones estão em fase. O arquivo é decodificado pelo navegador, processado aqui e salvo como WAV (44,1 kHz). Nada é enviado. Arquivos WAV são maiores que MP3.
+Semitons
+Velocidade em porcentagem
+Alterar por
+Semitons (−12 = uma oitava abaixo, +12 = uma oitava acima)
+Velocidade (%)
+Isso muda tom e velocidade juntos, como acelerar uma fita: notas agudas tocam mais rápido, graves mais devagar. A duração não é mantida constante. O arquivo é decodificado pelo navegador, processado aqui e salvo como WAV (44,1 kHz). Nada é enviado. Arquivos WAV são maiores que MP3.
+● Gravar
+■ Parar
+Manter a partir de (segundos)
+Manter até (segundos)
+A gravação fica no seu navegador. Baixe-a antes de fechar a página. O microfone é desligado assim que você aperta Parar.
+Incluir áudio do sistema / da aba (se o navegador oferecer)
+Incluir meu microfone
+● Iniciar gravação
+Seu navegador pergunta qual tela, janela ou aba compartilhar. O vídeo é gravado localmente na memória; gravações muito longas usam muita RAM, então baixe-as em partes. O áudio do sistema só está disponível ao gravar uma aba ou, em alguns navegadores, a tela inteira.
+Câmera padrão
+Padrão
+1920 × 1080 (Full HD)
+
+
+
+Iniciar câmera
+Câmera
+Resolução solicitada
+Taxa de quadros solicitada
+Os navegadores dão o modo mais próximo que a câmera aceita; os valores "atuais" são o que você realmente recebe. Pouca luz muitas vezes força as câmeras a uma taxa de quadros menor. A imagem aparece só nesta página e nunca é gravada nem enviada.
+Medir 8 segundos de silêncio
+Fique em silêncio e mantenha a sala como está durante uma gravação normal. O teste mede o nível médio do ruído de fundo.
+Ding
+Buzina
+Rufar de tambores
+Trombone triste
+Aplausos
+Whoosh
+Buzina de ar
+Subiu de nível
+Resposta errada
+Resposta certa
+Bipe do cronômetro
+Adicione seus próprios sons
+Os sons são sintetizados ao vivo pelo navegador. Aperte 1–9 e 0 para tocar os dez primeiros. Para tocar sons em uma videochamada, compartilhe a aba do navegador com áudio ou direcione esta aba por um cabo de áudio virtual. Sons personalizados ficam no seu dispositivo e se perdem ao fechar a página.
+Manter natural o tom da voz
+Escolha um vídeo para ver em outra velocidade
+A prévia só muda a velocidade de reprodução. A exportação grava o vídeo enquanto ele toca, então leva tanto tempo quanto o vídeo acelerado e é salva como WebM.
+Cartão de cor
+Nível de cinza
+Use o cartão para balanço de branco (segure-o diante da webcam), para avaliar o brilho da tela, para procurar pixels coloridos ou travados ou como luz rápida. A tela cheia preenche todo o monitor.
+Cinza neutro (18 %)
+Branco luz do dia 6500 K
+Branco quente 3200 K
+Branco frio 7500 K
+Vermelho
+Tela cheia
+Qualquer cor
+Nível de cinza 0–255
+Valor hexadecimal
+Executar a verificação de novo
+Seu navegador está renderizando gráficos por software. Ative a aceleração de hardware nas configurações do navegador (Chrome/Edge: Configurações → Sistema → "Usar aceleração gráfica quando disponível"; Firefox: Configurações → Geral → Desempenho) e atualize o driver da placa de vídeo; depois reinicie o navegador.
+Medir por 5 segundos
+Observe a barra em movimento para ver engasgos enquanto o navegador conta os quadros.
+Altura (px)
+Diagonal da tela em polegadas (opcional)
+Reescalar para a largura (px, opcional)
+Proporção exata
+Padrão mais próximo
+16:9 · Widescreen (HD, Full HD, 4K)
+Megapixels
+Densidade de pixels
+
+Tamanho físico
+Na largura de 1280 px
+Corte comum: para deixar a imagem em 16:9 na mesma largura, use uma altura de 1080 px.
+Largura do monitor 1 (px)
+Altura do monitor 1 (px)
+Diagonal do monitor 1 (polegadas)
+Largura do monitor 2 (px)
+Altura do monitor 2 (px)
+Diagonal do monitor 2 (polegadas)
+Densidade do monitor 1
+
+Densidade do monitor 2
+
+Razão de densidade
+Tamanho físico do monitor 1
+Tamanho físico do monitor 2
+Diferença de altura
+Defina a escala de exibição do monitor 1 em cerca de 119 % da do outro (por exemplo 100 % na tela de menor densidade e 119 % na mais densa) para o texto aparecer com o mesmo tamanho físico.
+Os sistemas operacionais só oferecem passos de escala fixos (100, 125, 150, 175, 200 %); escolha o mais próximo.
+Escolha um vídeo do qual tirar quadros estáticos
+◀ 1 quadro
+1 quadro ▶
+Taxa de quadros 
+Salvar quadro (PNG)
+Salvar quadro (JPEG)
+O quadro é capturado na resolução original do vídeo. O avanço quadro a quadro presume a taxa de quadros que você informar (30 por padrão); os navegadores não informam a taxa exata às páginas. Nada é enviado.
+Manter a parte entre o início e o fim
+Remover a parte entre o início e o fim
+Início (segundos)
+Fim (segundos, 0 = fim do arquivo)
+Fade in (ms)
+Fade out (ms)
+WAV (sem perdas, grande)
+MP3 (pequeno)
+
+
+
+
+
+
+
+Taxa de bits do MP3
+Informe início e fim em segundos (fim 0 = até o fim do arquivo). "Manter" salva só essa parte; "Remover" a corta e junta o resto. O arquivo é decodificado pelo navegador, processado aqui e salvo como WAV ou MP3 (44,1 kHz). Nada é enviado. O MP3 é bem menor que o WAV; o WAV mantém todos os detalhes.
+Solte aqui dois ou mais arquivos de áudio ou
+Crossfade entre faixas (ms)
+0 = tocar uma depois da outra
+Os arquivos são decodificados pelo navegador a 44,1 kHz, então faixas com taxas de amostragem diferentes se juntam sem mudança de tom. Faixas mono são ampliadas para estéreo quando misturadas com faixas estéreo. Nada é enviado.
+Mudança de volume (dB)
+Positivo = mais alto, negativo = mais baixo
+Evitar clipping (limitar o pico mais alto a 0 dBFS)
++6 dB é cerca de duas vezes mais alto, −6 dB cerca de metade. Com "evitar clipping", o resultado é reduzido se fosse distorcer. O arquivo é decodificado pelo navegador, processado aqui e salvo como WAV ou MP3 (44,1 kHz). Nada é enviado. O MP3 é bem menor que o WAV; o WAV mantém todos os detalhes.
+A gravação inteira é tocada de trás para frente, nos canais esquerdo e direito. O arquivo é decodificado pelo navegador, processado aqui e salvo como WAV ou MP3 (44,1 kHz). Nada é enviado. O MP3 é bem menor que o WAV; o WAV mantém todos os detalhes.
+
+
+
+Neutro (sem alteração)
+Reforço de graves
+Reforço de agudos
+Clareza da voz
+Loudness (curva "sorriso")
+Quente e suave
+Predefinição
+Cinco bandas: shelf de graves (60 Hz), médios graves (250 Hz), médios (1 kHz), médios agudos (4 kHz) e shelf de agudos (12 kHz). Cada uma pode subir ou descer até 12 dB; o resultado é protegido contra clipping. O arquivo é decodificado pelo navegador, processado aqui e salvo como WAV ou MP3 (44,1 kHz). Nada é enviado. O MP3 é bem menor que o WAV; o WAV mantém todos os detalhes.
+Converter para mono (metade do tamanho)
+Qualquer áudio que seu navegador consiga tocar (MP3, M4A/AAC, OGG, FLAC, WAV, Opus ou a trilha sonora de um vídeo) pode ser salvo como WAV ou MP3. Converter de novo um arquivo com perdas para MP3 perde um pouco mais de qualidade. O arquivo é decodificado pelo navegador, processado aqui e salvo como WAV ou MP3 (44,1 kHz). Nada é enviado. O MP3 é bem menor que o WAV; o WAV mantém todos os detalhes.
+Gravar som do microfone
+Ligar a câmera
+A prévia é espelhada como um espelho; o vídeo salvo não é. A gravação fica na memória, nunca é enviada, e a câmera é desligada quando você sai da página. Os navegadores salvam WebM (Chrome, Firefox, Edge) ou MP4 (Safari).
+Digite ou cole o texto a ser lido em voz alta
+Voz padrão
+Nenhuma voz instalada
+▶ Ler em voz alta
+Pausar
+Voz
+Velocidade (0,5–2)
+Tom (0,5–2)
+Volume (%)
+As vozes vêm do seu dispositivo ou navegador, então diferem entre computadores e celulares, e o idioma da voz precisa corresponder ao idioma do texto. A leitura acontece localmente; o texto não é enviado a lugar nenhum. Os navegadores não deixam as páginas salvar a fala como arquivo de áudio; para gravá-la, use o Gravador de tela com áudio do sistema.
+Redução de ruído (dB)
+Mais alto remove mais, mas pode deixar a voz fina
+Sensibilidade (1–5)
+Mais alto trata mais do som como ruído
+Trecho só de ruído: de (segundos)
+até (segundos, 0 = detectar automaticamente)
+Funciona melhor com ruído constante como chiado, zumbido, ventoinha ou barulho de trânsito. Por padrão o ruído é aprendido a partir do décimo mais silencioso da gravação; se você conhece um trecho só com ruído (por exemplo o primeiro segundo), informe-o abaixo para um resultado melhor. O arquivo é decodificado pelo navegador, processado aqui e salvo como WAV ou MP3 (44,1 kHz). Nada é enviado. O MP3 é bem menor que o WAV; o WAV mantém todos os detalhes.
+Solte aqui uma música ou gravação ou
+O andamento vem do ritmo do som (ataques) e o tom da intensidade das doze notas ao longo do tempo. Ambos funcionam melhor em música com batida clara e constante e tom estável; fala, música ambiente e músicas com mudança de andamento ou de tom dão resultados pouco confiáveis. Metade ou o dobro do andamento é uma ambiguidade comum, então confira as alternativas. Tudo é analisado no seu navegador.
+Tamanho
+Evitar caracteres parecidos (I l 1 O 0)
+Gerar novo
+As senhas são criadas no seu navegador com crypto.getRandomValues (a mesma fonte segura que os navegadores usam para chaves de criptografia) e nunca são enviadas a lugar nenhum. Entropia = tamanho × log₂(tamanho do conjunto); o tempo de força bruta presume um ataque off-line sobre um hash rápido e é só uma referência aproximada.
+
+
+
+Conjunto de caracteres
+Hífen -
+Espaço
+Ponto .
+Sublinhado _
+Nenhum
+Capitalizar palavras
+Adicionar um dígito a uma palavra
+Separador
+As palavras são sorteadas da EFF Large Wordlist (© Electronic Frontier Foundation, CC BY 3.0). Cada palavra soma 12,9 bits de entropia, então cinco palavras dão cerca de 65 bits e seis cerca de 78 bits: longa, mas fácil de lembrar. Nunca reutilize uma frase-senha.
+
+
+Lista de palavras
+7.776 palavras (EFF)
+
+Opcional: segredo para verificar HS256 / HS384 / HS512
+JSON Web Token
+Segredo (opcional)
+A verificação acontece localmente com Web Crypto; o segredo não é enviado a lugar nenhum.
+Wi-Fi para convidados
+Nome da rede (SSID)
+WPA / WPA2 / WPA3
+WEP (antigo)
+Sem senha
+Segurança
+
+Rede oculta
+Pequeno (256 px)
+Médio (512 px)
+Grande (1024 px)
+Impressão (2048 px)
+Baixa (7%)
+Média (15%)
+Quartil (25%)
+Alta (30%)
+Cor do QR
+Correção de erros
+Tamanho do PNG
+Baixar SVG
+Copiar conteúdo
+Os convidados escaneiam o código com a câmera do celular e tocam para entrar. Imprima e coloque em um porta-retrato. A senha fica armazenada só no próprio QR Code, nada é enviado.
+Nome
+
+Sobrenome
+Acme Ltda.
+Empresa
+Cargo
+Telefone
+Celular
+
+E-mail
+Site
+Rua
+Cidade
+País
+Escanear o código oferece salvar o contato na agenda do celular (vCard 3.0). Mais campos geram um código mais denso, mais difícil de ler; seja breve para impressões pequenas.
+Link de site
+Texto simples
+Mensagem SMS
+Conteúdo
+Link, texto, endereço de e-mail ou número de telefone
+Assunto
+Mensagem
+O código guarda os próprios dados, então nunca expira e não depende de um serviço. Teste com um celular antes de imprimir e deixe uma margem em branco ao redor.
+Escreva a mensagem privada (seja breve: ela viaja dentro do link)
+Chave aleatória (envie a chave separadamente)
+Minha própria senha
+Sua mensagem
+Proteger com
+A nota é criptografada no seu navegador com AES-256-GCM. O texto criptografado fica na parte do link depois do #, que nunca é enviada a um servidor web, e este site não armazena nada. Sejamos honestos sobre os limites: o link não pode "se autodestruir", porque não há servidor para apagá-lo. Quem tiver o link e a chave ou senha pode ler a nota, para sempre.
+Digite aqui. Tudo é salvo automaticamente neste navegador.
+Bloco de rascunho
+Baixar .txt
+As notas ficam só neste navegador (localStorage). Sobrevivem a reinicializações e travamentos, mas não a limpar os dados do site, ao modo privado nem a outro dispositivo. Não guarde senhas aqui.
++ Novo bloco
+Renomear
+Salvo
+✓ neste navegador
+Adicione um item e aperte Enter
+Novo item
+Copiar como texto
+Desmarcar tudo
+Remover concluídos
+Sua lista é salva apenas neste navegador.
+Escrever o rascunho
+Mover para cima
+Excluir item
+Revisar com a equipe
+Publicar
+Copiar como Markdown
+Redefinir quadro
+Arraste cartões entre as colunas ou use as setas. O quadro é salvo só neste navegador, o que o torna um quadro pessoal privado, não uma ferramenta de equipe.
+Planejar o projeto
+Mover para a esquerda
+Mover para a direita
+Excluir cartão
++ Adicionar cartão
+Adicionar cartão em A fazer
+Fazendo (0)
+Adicionar cartão em Fazendo
+Feito (0)
+Adicionar cartão em Feito
+Contar de 1 em 1
+Contar de 2 em 2
+Contar de 5 em 5
+Contar de 10 em 10
+Subtrair
+Teclado: Espaço, ↑ ou + conta para cima; ↓ ou − conta para baixo. O número é lembrado neste navegador.
+Cole seu documento Markdown
+Lista numerada
+Inserir o sumário no documento
+Sumário
+A partir do nível de título
+Até o nível
+As âncoras seguem as regras do GitHub: minúsculas, pontuação removida, espaços viram hifens, títulos repetidos recebem -1, -2. Títulos dentro de blocos de código são ignorados.
+Olá {{name}}, seu pedido {{order_id}} será enviado em {{date}}.
+Modelo
+Texto preenchido
+Modelo com {{marcadores}}
+Escreva {{name}} em qualquer lugar do texto e preencha os campos que aparecem. Marcadores deixados vazios continuam visíveis para você notar. Funciona para modelos de e-mail, respostas prontas e prompts de IA.
++ Critério
+Dê a cada opção uma nota de 0 a 10 por critério e dê um peso a cada critério. O resultado é a média ponderada: Σ(nota × peso) ÷ Σ pesos. A ferramenta estrutura a discussão; não substitui o julgamento.
+Opção A
+Nome da opção
+Opção B
+Opção C
++ Opção
+Critério
+Remover critério
+🏆 Maior nota ponderada
+Os dois primeiros estão muito próximos. Confira os pesos e as notas antes de decidir.
+O que você fez ontem? Um item por linha
+O que você fará hoje?
+Bloqueios (deixe vazio se não houver)
+Slack / Teams (negrito, marcadores)
+Atualização de daily
+Ontem
+Hoje
+Bloqueios
+Pronto para colar
+Cole aqui (Ctrl+V). Fontes, cores, links e formatação são removidos.
+Área de texto simples
+Remover espaços e linhas em branco nas pontas
+Reduzir várias linhas em branco
+Substituir aspas curvas e espaços especiais
+Copiar como texto simples
+
+# Olá⏎⏎Escreva **Markdown** aqui…
+Copiar para e-mail
+Copiar HTML
+
+Pesquisar trechos…
+Pesquisar trechos
+Título (ex.: IBAN, endereço, resposta)
+Título do trecho
+Texto a copiar com um clique
+Texto do trecho
+Adicionar trecho
+Exportar tudo (JSON)
+Importar
+
+Assinatura de e-mail
+Editar
+Excluir
+Trechos
+Armazenado
+somente neste navegador
+Cole aqui texto formatado
+Manter links
+Manter tabelas
+Manter títulos
+Limpar HTML
+Copie texto do Word, do Google Docs, de uma página web ou de um e-mail, clique na caixa e cole (Ctrl+V).
+
+Texto → Braile
+Braile → Texto
+Digite texto ou cole caracteres braile (⠓⠑⠇⠇⠕)…
+
+Família Silva
+Casa ou pessoa
+Endereço
+Contatos (um por linha: nome; telefone)
+Informações médicas (alergias, medicamentos, tipo sanguíneo)
+Notas (chaves, animais, dicas do código do alarme)
+Criar ficha para imprimir (PDF)
+
+Inicie o sprint e escreva sem parar nem editar…
+Área de escrita
+Iniciar sprint
+Terminar agora
+Duração do sprint (minutos)
+Meta de palavras (0 = nenhuma)
+Escreva primeiro, edite depois. O texto só fica nesta página: copie ou baixe antes de fechar. Nada é enviado.
+Tarefas: "nome, otimista, mais provável, pessimista" por linha
+Qualquer unidade (dias, horas, story points).
+Total-alvo (mesma unidade, opcional)
+Total esperado
+Desvio padrão
+80% de confiança dentro de
+95% de confiança dentro de
+
+
+Um nome por linha
+Nomes
+Remover o vencedor após cada giro
+Som de tique-taque
+Roleta de nomes
+Embaralhar nomes
+Girar a roleta
+
+Participantes
+Ana != Beto   (Ana não pode presentear Beto)⏎Clara != Davi
+Exclusões
+Esconder os pares de mim (mostrar só links privados)
+Exclusões (opcional)
+Casais, pessoas que já se conhecem…
+
+Links privados: envie a cada pessoa o dela
+abrir
+Copiar tudo (nome: link)
+Sortear de novo
+Um time ou jogador por linha, melhor cabeça de chave primeiro
+Participantes
+Eliminação simples
+Pontos corridos (todos contra todos)
+Participantes (melhor cabeça de chave primeiro)
+Rodadas
+Folgas
+
+CEO⏎  CTO⏎    Desenvolvedor⏎  CFO
+Estrutura da organização
+Largura da caixa (px)
+Cor de destaque
+Estrutura (recuo = reporta a)
+
+Cole o e-mail ou a mensagem que você vai enviar
+Digite tudo o que está na sua cabeça, um pensamento por linha ou em frases…
+Despejo mental
+Seu despejo mental
+Copiar como lista de verificação Markdown
+Baixar .md
+
+Tarefas
+Perguntas
+Ideias
+Preocupações
+Substituir espaços não separáveis por espaços normais
+Manter os conectores dentro de emojis (ZWJ)
+Texto com caracteres ocultos
+Texto limpo
+
+
+
+
+
+
+
+
+
+Ignorar maiúsculas/minúsculas
+Remover espaços ao redor das linhas
+Descartar linhas vazias
+Manter a ordem original
+Mais frequentes primeiro
+Ordem
+Mostrar quantas vezes cada linha ocorreu
+Linhas únicas
+Únicas
+Removidas
+quebra de linha
+vírgula
+ponto e vírgula
+tabulação
+espaço
+barra vertical
+vírgula e espaço
+nada
+
+
+
+Envolver cada item em
+texto simples
+array [ … ]
+lista SQL ( … )
+Entregar o resultado como
+Endereços de e-mail
+URLs
+Números de telefone
+UUIDs
+Endereços IPv4
+Cores hexa
+Hashtags
+@menções
+Datas (ISO ou D.M.A)
+Números
+IBANs
+Expressão regular personalizada…
+Procurar
+Padrão personalizado (regex JavaScript)
+Remover duplicatas
+Exibidas
+Texto original
+Texto alterado
+Linha a linha
+Palavra a palavra
+Caractere a caractere
+Ignorar espaços em branco
+Ignorar maiúsculas/minúsculas
+Comparar
+Trocar
+Copiar patch
+Baixar .patch
+Linhas adicionadas
+Linhas removidas
+Sem alteração
+Cole células copiadas do Excel, Google Planilhas, CSV ou de uma tabela Markdown
+Dados da tabela
+Tabela Markdown
+Tabela HTML
+Detectar automaticamente
+Vírgula
+Ponto e vírgula
+2 ou mais espaços
+A primeira linha é o cabeçalho
+Alinhar as colunas no código-fonte
+Alinhamento
+Limites das plataformas
+Sem espaços
+Símbolos visíveis (grafemas)
+Bytes UTF-8
+Post no X / Twitter
+Post no LinkedIn
+Título do LinkedIn
+Legenda do Instagram
+Post no Facebook (recomendado)
+Título do Google Ads
+Descrição do Google Ads
+Meta título (≈ 600 px)
+Meta descrição
+Título do YouTube
+Legenda do TikTok
+SMS (GSM-7, 160 por parte)
+
+Cole aqui seu discurso ou roteiro
+Seu ritmo (palavras por minuto)
+Pausa por parágrafo (segundos)
+Adicionada após cada linha em branco
+Lento · 110 ppm
+Natural · 150 ppm
+Enérgico · 180 ppm
+Seu ritmo · 140 ppm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tabela
+Dados gerados
+Idioma dos nomes
+Gerar novos dados
+Os e-mails usam o domínio reservado example.com e os telefones usam faixas fictícias, então nada chega a uma caixa de entrada ou a um telefone de verdade.
+Travessões: – → -  e — → --
+Reticências … → ...
+Ligaduras ﬁ ﬂ æ → fi fl ae
+Espaços especiais → espaço normal, remover largura zero
+Marcadores • → *
+Manter as quebras de parágrafo (linhas em branco)
+Reunir palavras divididas por hífen no fim da linha
+Manter itens de listas com marcadores e numeradas em linhas próprias
+Texto antes de cada linha
+Texto depois de cada linha
+Inserir um contador onde {n} aparecer
+O contador começa em
+Dígitos do contador (preenchido com zeros)
+Pular linhas vazias
+Alfabética (A–Z)
+Números naturais (v2 antes de v10)
+Valor numérico na linha
+Ordenar por
+Ordem inversa
+Cole qualquer texto, código-fonte HTML ou uma exportação de caixa de correio
+Agrupar por domínio
+E-mails
+E-mails únicos
+Domínios
+Cole texto com links ou uma única URL bagunçada
+Remover toda a query string
+Remover #fragmentos
+Limpar os links dentro do meu texto
+Listar apenas URLs limpas únicas
+URLs encontradas
+Com o rastreamento removido
+Parâmetros retirados
+Minúsculas
+Descartar palavras pequenas (a, o, de …)
+Tamanho máximo (0 = sem limite)
+Títulos (um por linha)
+Slugs
+Deslocamento (13 = ROT13, igual para codificar e decodificar)
+Girar também os dígitos (ROT5)
+Converter também para ASCII simples (café → cafe, descartar todo o resto)
+Substituir por
+Mostrar letras minúsculas em minúsculas
+Texto a soletrar
+Soletração fonética da OTAN
+Linhas embaralhadas
+Embaralhar de novo
+erro
+contém
+começa com
+termina com
+é igual a
+Linha…
+Manter linhas que NÃO correspondem
+Usar expressão regular
+Linhas mantidas
+Lista A (um item por linha)
+Lista B (um item por linha)
+Vírgula + espaço
+Barra vertical
+Traço
+Preencher a coluna A para as colunas se alinharem
+Combinado
+Lista A
+Lista B
+Tabulações → espaços
+Espaços → tabulações
+Converter
+Espaços por tabulação
+Remover espaços em branco no fim
+Alterar só a indentação (não as tabulações dentro das linhas)
+Palavras isoladas
+Expressões de duas palavras
+Expressões de três palavras
+Contagem
+Ignorar palavras comuns em
+Contagem mínima
+Baixar CSV
+Total de termos
+Distintos
+Palavras no texto
+Cole o texto longo a dividir
+Preferir limites de parágrafo
+Nunca cortar no meio de uma palavra
+Máximo de caracteres por pedaço
+Sobreposição (caracteres)
+Baixar tudo (.txt)
+Pedaços
+O mais longo
+Cole seu e-mail, relatório ou vaga de emprego
+Destacado
+Alternativas em linguagem simples
+Jargões
+A cada 100 palavras
+Nenhum jargão encontrado.
+Lista HTML aninhada
+Lista Markdown
+Tópicos recuados
+texto
+hexa
+binário
+decimal
+octal
+
+
+nova linha
+Separador entre bytes
+Digite texto ou cole código Morse (pontos, traços, / entre palavras)
+Texto → Morse
+Morse → texto
+Tocar como som
+Velocidade (palavras por minuto)
+Tom (Hz)
+Outro idioma (apenas pontuações independentes do idioma)
+Marcar frases maiores que (palavras)
+Pontuações
+Frases no resumo
+Idioma
+Texto a resumir
+Resumo
+Texto A (por exemplo o original)
+Texto A
+Texto B (por exemplo o texto a verificar)
+Texto B
+Menor trecho compartilhado (palavras seguidas)
+
+Hora Unix atual (segundos)
+Timestamps ou datas (um por linha)
+Segundos, milissegundos, microssegundos, ISO 8601 ou AAAA-MM-DD hh:mm:ss (UTC)
+Mostrar a hora local em
+Diferença
+
+Total de dias
+Semanas
+Dias úteis (seg–sex)
+Horas
+Minutos
+Uma data após N dias úteis
+Dias úteis entre duas datas
+Data de início
+Dias úteis a somar (negativo = voltar)
+Data final
+Sem feriados
+Estados Unidos (federais)
+Reino Unido (Inglaterra e País de Gales)
+Alemanha (nacionais)
+Polônia
+Tchéquia
+Áustria
+Feriados
+Sábado e domingo
+Sexta e sábado
+Somente domingo
+Sem fim de semana (semana de 7 dias)
+Fim de semana
+Folgas extras (AAAA-MM-DD, uma por linha)
+Recessos da empresa, dias de férias…
+Contar o dia de início e o de fim
+
+Dias corridos
+Contando a partir de 2026-11-04; o próprio dia de início não é contado.
+Kickoff do projeto
+Título do evento
+Evento de dia inteiro
+Início
+Fim
+Fuso horário
+Local ou link de videochamada
+Participantes (e-mails, um por linha)
+5 minutos antes
+15 minutos antes
+1 hora antes
+1 dia antes
+Lembrete
+Não se repete
+Semanal
+Número de ocorrências
+Baixar arquivo .ics
+Abrir no Google Agenda
+Adicione uma cidade ou fuso horário…
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Início do expediente (hora)
+Fim do expediente (hora)
+
+
+
+
+
+
+As barras mostram as 24 horas UTC (esquerda = 00:00). Verde-escuro: todos em horário de trabalho. Verde-claro: esta cidade está trabalhando. Cinza: fim de semana.
+Nenhum horário serve para todos nesta data dentro desses horários de trabalho. Tente horários mais amplos ou outra data.
+Chamada de equipe
+Título da reunião
+Data e hora
+Fuso horário dessa hora
+No fuso do seu navegador
+
+
+Iniciar reunião
+Pessoas na reunião
+Salário anual médio (com benefícios)
+Horas de trabalho por ano
+1.800 ≈ 225 dias × 8 h
+Duração prevista (minutos)
+Sem som
+Ruído branco
+Ruído rosa
+Ruído marrom (ronco grave)
+Chuva
+Murmúrio de cafeteria
+Foco
+Pular
+Foco (min)
+Pausa curta (min)
+Pausa longa (min)
+Sessões antes da pausa longa
+Som de fundo
+Os sons são gerados no seu navegador com a Web Audio API; nada é baixado. A contagem regressiva também aparece no título da aba do navegador.
+Sem arredondamento
+1 minuto
+5 minutos
+6 minutos (0,1 h)
+15 minutos (0,25 h)
+30 minutos
+Arredondar para
+Ao mais próximo
+Para baixo
+Arredondamento
+Horas e minutos ou horas decimais (uma por linha)
+Horas decimais  ·  h:mm
+Total h:mm
+Seg entrada
+Seg saída
+Seg minutos de pausa
+Ter entrada
+Ter saída
+Ter minutos de pausa
+Qua entrada
+Qua saída
+Qua minutos de pausa
+Qui entrada
+Qui saída
+Qui minutos de pausa
+Sex entrada
+Sex saída
+Sex minutos de pausa
+Sáb entrada
+Sáb saída
+Sáb minutos de pausa
+Dom entrada
+Dom saída
+Dom minutos de pausa
+opcional
+Horas extras semanais após (horas)
+Horas extras diárias após (horas, 0 = desativado)
+Valor-hora (opcional)
+Multiplicador de horas extras
+Total de horas
+Normais
+Extras
+Cálculos (um por linha)
+Resultados
+Janeiro
+Fevereiro
+Março
+Abril
+Maio
+Junho
+Julho
+Agosto
+Setembro
+Outubro
+Novembro
+Dezembro
+O ano fiscal começa em
+Semana ISO
+Dia da semana
+Quarta-feira
+Dia do ano
+Dias restantes no ano
+Trimestre do calendário
+Trimestre fiscal
+Semanas no ano ISO
+Ano bissexto
+Primeira data
+a cada N dias
+a cada N semanas
+a cada N meses
+a cada N anos
+ex.: seg, qua
+Em dias úteis (somente semanal)
+Deixe vazio para usar o dia da semana da primeira data
+mesmo dia do mês
+primeiro dia da semana do mês
+segundo dia da semana
+terceiro dia da semana
+quarto dia da semana
+último dia da semana
+Mensalmente no
+Quantas datas
+Passar para a segunda-feira as datas de fim de semana
+Pular também os feriados
+Data do calendário (UTC)
+ou número do dia juliano
+Se preenchido, é convertido em data
+
+Dia juliano (JD)
+JD modificado
+Data ordinal
+Segundos Unix
+
+Segundos
+1 min
+2 min
+3 min
+5 min
+10 min
+15 min
+20 min
+30 min
+45 min
+60 min
+Tela cheia
+O relógio fica laranja no último quarto e vermelho nos últimos 10 por cento e apita no zero. Use a tela cheia para exibir em um projetor.
+Volta
+Exportar voltas (CSV)
+Teclado: Espaço inicia e para, L registra uma volta. A precisão vem de performance.now(), um relógio monotônico que não é afetado por mudanças na hora do sistema.
+Aperte Volta (ou a tecla L) para registrar tempos parciais.
+Relógio de 24 horas
+
+
+
+
+
+
+
+Primeiro sprint começa
+Dias úteis por sprint
+Número de sprints
+Feriados (para sua referência)
+Os sprints só contam dias úteis (segunda a sexta). Os feriados são listados para você ajustar o escopo; eles não encurtam o sprint automaticamente.
+Coordenadas personalizadas
+
+Londres
+
+Praga
+Varsóvia
+Viena
+
+Roma
+
+
+
+
+
+Cidade do México
+
+Cairo
+
+
+
+Singapura
+
+
+
+Local
+Latitude (°N)
+Longitude (°E)
+Mostrar horários em
+Usar minha localização
+Nascer do sol
+Pôr do sol
+Meio-dia solar
+Duração do dia
+
+Em comparação com ontem
+
+Hora dourada (tarde)
+
+Fase
+🌘 Lua minguante
+Iluminada
+Idade da Lua
+
+Próxima lua nova
+
+Próximas luas novas e cheias
+
+Feriados para os dias úteis
+Ano 2026
+
+Trimestre T4
+
+Mês
+
+Semana (seg–dom)
+
+Dias restantes no ano
+Semanas restantes
+Dias úteis restantes (incluindo hoje)
+
+As contagens de dias incluem o dia escolhido. Dias úteis são de segunda a sexta menos os feriados do país selecionado.
+começa (AF2025 = abr 2025–mar 2026)
+termina (AF2025 = abr 2024–mar 2025)
+O ano fiscal recebe o nome do ano civil em que
+EUA federal (out)
+Reino Unido / Índia (abr)
+Ano civil
+Austrália (jul)
+Ano fiscal
+O ano vai de
+Progresso
+
+
+America/New_York, Europe/London
+ex.: America/New_York, Asia/Tokyo
+Seu fuso horário
+Mostrar também em (separados por vírgula)
+Faixas de tempo livre (uma por linha)
+Cole o texto em um e-mail ou chat. O horário de verão é considerado para a data escolhida, e um dia de calendário diferente em outro fuso é marcado.
+
+Data de partida
+Horário de partida (local)
+Fuso horário de partida
+Duração do voo (hh:mm)
+Fuso horário de chegada
+Escala (hh:mm, opcional)
+Segundo voo (hh:mm, opcional)
+Fuso horário final (se houver segundo voo)
+Chegada
+
+Mudança de fuso horário
+Duração do voo
+
+
+Os horários usam as regras de horário de verão dos fusos nas datas mostradas. Use a duração programada do voo da sua passagem; a calculadora não conhece sua companhia aérea.
+Horas disponíveis por semana
+Reserva para reuniões, e-mail e imprevistos (%)
+Trabalho planejado: "nome, horas" por linha
+Planejado
+Utilizável após a reserva
+Capacidade livre
+Por dia útil (5 dias)
+O plano cabe. Planos costumam levar mais tempo do que o esperado, e é para isso que serve a reserva.
+O trimestre começa em
+Duração em semanas
+Segunda-feira
+Terça-feira
+Quinta-feira
+Sexta-feira
+Dia do check-in semanal
+Eventos
+Check-ins
+O trimestre termina
+
+◷ usar a posição atual
+Fim (segundos, 0 = até o fim)
+Modo rápido (sem recodificar, corta em quadros-chave)
+Rápido (arquivo maior)
+Equilibrado
+Alta qualidade (mais lento)
+Qualidade / velocidade
+Cortar vídeo
+Cancelar
+Solte aqui um vídeo ou
+
+Igual ao primeiro clipe
+1080 × 1920 (vertical)
+Tamanho do quadro
+Juntar vídeos
+Solte aqui dois ou mais vídeos ou
+
+MP4 (H.264, toca em todo lugar)
+WebM (VP8, para a web)
+GIF animado (sem som)
+MP3 (somente áudio)
+M4A / AAC (somente áudio)
+WAV (somente áudio, grande)
+Manter o tamanho original
+Largura máxima
+Quadros por segundo do GIF
+Remover o som
+
+Qualidade (CRF, 18–38)
+Mais alto = arquivo menor
+Altura máxima
+Mais rápido (arquivo maior)
+Lento (arquivo menor)
+Comprimir vídeo
+
+Sem corte
+Para uma proporção (centralizado)
+Retângulo (pixels)
+Cortar
+16:9 (paisagem)
+9:16 (vertical, Stories/Reels)
+4:5 (retrato)
+21:9 (cinema)
+Esquerda (px)
+Topo (px)
+Sem rotação
+90° no sentido horário
+90° no sentido anti-horário
+Girar
+Espelhar na horizontal
+Aplicar
+
+Altura (tamanhos padrão)
+Largura e altura exatas
+1080 p (Full HD)
+Altura
+Redimensionar vídeo
+
+Velocidade (×)
+0,5 = metade da velocidade, 2 = o dobro
+Alterar velocidade
+
+Quantas vezes reproduzir no total
+Modo rápido (sem recodificar)
+Criar loop
+
+Positivo = mais alto
+Remover o som por completo
+
+Substituir o som original
+Misturar com o som original
+O que fazer
+Volume do som original (%)
+Volume do novo áudio (%)
+Terminar com o mais curto dos dois (senão o áudio pode continuar)
+Adicionar áudio
+Escolha o arquivo de áudio
+
+Seu texto
+Tamanho da fonte (px)
+Amarelo
+Cor (hexa)
+Meio à esquerda
+Meio à direita
+Caixa escura atrás do texto
+Mostrar a partir de (segundos)
+Mostrar até (segundos, 0 = fim)
+Adicionar texto
+
+Tamanho (% da largura do vídeo)
+Margem da borda (px)
+Adicionar imagem
+Escolha a imagem ou o logotipo
+
+Remover logotipo
+
+Duração (segundos, 0 = até o fim)
+Quadros por segundo
+Mais uma vez
+Não repetir
+Criar GIF
+
+Faixa de busca (px, 4–64)
+Maior = corrige tremores maiores, mas pode se desviar
+Preencher por espelhamento
+Deixar preto
+Bordas
+Estabilizar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+O texto é longo demais para o teste ao vivo (limite de 300.000 caracteres).
+O padrão demorou demais (mais de 2 segundos). Pode causar backtracking catastrófico, por exemplo repetições aninhadas como (a+)+. Deixe-o mais específico.
+Arquivos acima de 2 GB são grandes demais para este gerador de hash no navegador
+Informe uma opacidade
+Informe uma data válida
+Esta é uma fonte WOFF2. O WOFF2 usa compressão Brotli, que esta ferramenta não consegue descompactar. Use o TTF, OTF ou WOFF original.
+Coleções de fontes (.ttc) não são aceitas. Extraia antes uma única fonte.
+Isto não parece um arquivo de fonte (TTF, OTF ou WOFF).
+Não foi possível carregar o formatador de SQL.
+Sua Empresa Ltda.⏎Rua Exemplo, 1⏎01000-000 Cidade Exemplo
+Nome do cliente⏎Rua do Cliente, 5⏎02000-000 Cidade do Cliente
+Luminária de mesa LED; 2; un.⏎Cadeira de escritório; 4; un.⏎Kit de cabos; 1; kit
+Alex Exemplo⏎Sam Modelo
+em reconhecimento à dedicação excepcional e ao trabalho bem feito.
+Nenhum texto encontrado. Este PDF pode ser uma digitalização: passe-o antes pelo OCR de PDF.
+Informe um tamanho-alvo como 2 MB ou 500 KB.
+Adicione pelo menos um item.
+Informe um valor maior que zero.
+Informe pelo menos um endereço. Separe as etiquetas com uma linha em branco.
+Este não é um arquivo .docx (sem word/document.xml). Arquivos .doc antigos precisam ser salvos antes como .docx.
+Isto não parece um arquivo ZIP, TAR ou GZ.
+Nenhum texto legível foi encontrado neste EPUB.
+Preencha todos os campos
+Preencha os dois valores
+Informe pelo menos dois fluxos de caixa numéricos
+Confira as faixas de comissão
+Adicione pelo menos um processador
+O investimento precisa ser maior que zero
+Escolha uma data
+O valor residual não pode exceder o custo
+Confira a lista de dívidas
+Os dois preços precisam ser diferentes
+Confira as rodadas
+A taxa precisa ser maior que zero
+Informe um preço inicial positivo e um número de anos
+Escolha arquivos de imagem (JPG, PNG, WebP, GIF, AVIF, BMP, SVG).
+Imagem A ✓
+Imagem B ✓
+Isto não parece código SVG (sem elemento <svg>).
+O SVG otimizado não é XML válido: a entrada já pode estar malformada.
+Carregando o motor de reconhecimento de texto…
+Falha na codificação
+Este navegador não consegue codificar esse formato
+Não foi possível iniciar o decodificador HEIC.
+Não foi possível decodificar este arquivo HEIC (danificado ou variante não aceita).
+Falha na decodificação
+Parar
+
+Fim do roteiro
+Continue tocando…
+Seu navegador não consegue gravar a tela (falta getDisplayMedia). Use um navegador de computador atual.
+Seu navegador não consegue reproduzir este formato de vídeo. MP4 (H.264), WebM e MOV de celulares costumam funcionar.
+Este navegador não consegue capturar a reprodução de vídeo para exportação. Use a velocidade da prévia.
+Seu navegador não consegue reproduzir este formato de vídeo. MP4 (H.264), WebM e a maioria dos vídeos de celular funcionam.
+Seu navegador não consegue acessar uma câmera (falta mediaDevices). Abra esta página por https em um navegador atual.
+Seu navegador não tem síntese de voz. Experimente uma versão atual do Chrome, Edge, Safari ou Firefox.
+Concluído.
+Digite algum texto primeiro.
+Retomar
+Este arquivo de áudio não pôde ser decodificado pelo seu navegador. Experimente WAV, MP3, M4A, OGG ou FLAC.
+Informe uma largura e uma altura.
+Preencha os seis valores.
+O fim precisa ser depois do início.
+São dados demais para um único QR Code. Encurte o conteúdo ou reduza a correção de erros.
+
+
+
+Olá {{name}},⏎⏎Obrigado pelo seu pedido {{order_id}}. Ele será enviado em {{date}}.⏎⏎Atenciosamente,⏎{{sender}}
+Corrigi o bug do login⏎Revisei 2 pull requests
+Começar a funcionalidade de exportação⏎Planejamento da equipe
+Aguardando as credenciais da API
+
+Atualizar trecho
+Rua Exemplo, 12⏎01000-000 Cidade Exemplo
+
+Alergias: penicilina⏎Tipo sanguíneo: A+⏎Medicação: nenhuma
+Chave reserva com o vizinho do nº 14.⏎Centro de intoxicações: 112
+Informe o conteúdo do código
+não é uma lista
+
+
+
+🏆 Campeão
+
+
+Adicione pelo menos uma tarefa
+
+
+
+
+
+
+
+
+
+
+SOS Ajuda
+Início
+Informe uma latitude entre −90 e 90, uma longitude entre −180 e 180 e uma data.
+personalizado
+Informe duas datas válidas
+Informe uma data de início válida
+Informe o número de dias úteis
+Informe uma data final válida
+Dê um título ao evento
+Escolha uma data e uma hora
+Informe uma primeira data válida
+Informe uma data ou dia juliano válido
+Informe uma data válida.
+Escolha uma data.
+Informe pelo menos uma faixa de tempo.
+Uma faixa de tempo precisa terminar depois de começar.
+Escolha a data de partida.
+Informe a duração do voo.
+Informe as horas disponíveis por semana.
+Adicione pelo menos uma tarefa.
+Escolha a data de início.
+Carregando o motor de vídeo (cerca de 31 MB, só uma vez)…
+Processando…
+Cancelado.
+Um nome por linha, habilidade opcional: "Ana: 4"
+Número de times
+Pessoas por time
+Time
+Total de habilidade
+Copiar times
+As pessoas são distribuídas ao acaso; com números de habilidade, um draft em serpentina mantém os times equilibrados. Os nomes nunca saem desta página.
+Manter separados (opcional, um par por linha)
+Um jogador por linha
+Redesign da página de checkout
+Fibonacci (0, 1, 2, 3, 5, 8 …)
+Tamanhos de camiseta
+Potências de dois
+Adicione pelo menos dois jogadores.
+Todos votaram.
+Revelar as cartas
+Passe o dispositivo para
+Escolha uma carta em segredo; o próximo jogador não pode vê-la.
+Votou
+Mais votos
+Dispersão
+Consenso: todos escolheram a mesma carta.
+Sem consenso: deixe o voto mais baixo e o mais alto explicarem e vote de novo.
+Nova rodada
+Copiar resultado
+História ou tarefa
+Baralho de cartas
+Planning poker em turnos: um dispositivo, cada pessoa vota na sua vez. Nada é enviado a lugar nenhum.
+Jogadores
+História
+Deu certo
+A melhorar
+Ações
+Manter
+Problema
+Tentar
+Gostamos
+Aprendemos
+Faltou
+Desejamos
+Deu certo / A melhorar / Ações
+Começar / Parar / Continuar
+Manter / Problema / Tentar
+Quatro L
+Adicione um cartão e aperte Enter
+Remover todos os cartões?
+Limpar quadro
+O quadro é salvo só neste navegador. Use-o em uma tela durante a reunião ou copie o Markdown para compartilhar o resultado.
+Tarefa;Ana;Beto;Clara⏎Escrever o briefing;A;R;C⏎Construir o protótipo;I;A;R⏎Testes com usuários;C;A;R⏎Lançamento;A;R;I
+não tem ninguém Accountable (A)
+tem mais de uma pessoa Accountable (A)
+não tem ninguém Responsible (R)
+Tarefa
+Cada tarefa tem exatamente um A e pelo menos um R.
+R = Responsible (faz o trabalho), A = Accountable (decide, uma só pessoa), C = Consulted (consultado), I = Informed (informado).
+Matriz: primeira linha = papéis, depois uma tarefa por linha (separe com ; , ou tabulação)
+Matriz
+Hora de início
+Itens da pauta
+Boas-vindas e objetivos; 5⏎Rodada de status; 15⏎Tema principal: preços; 25⏎Decisões e responsáveis; 10⏎Encerramento; 5
+Até
+Item
+Termina às
+Total de minutos
+A pauta é mais longa do que o tempo que você tem em
+minutos.
+Cabe no tempo que você tem:
+minutos de folga.
+Copiar pauta
+Tempo disponível (minutos, 0 = ignorar)
+Itens: "título; minutos", um por linha
+Informe uma hora de início como 09:30.
+Forças
+Fraquezas
+Oportunidades
+Ameaças
+Nosso produto
+Onboarding rápido⏎Marca forte
+Equipe pequena⏎Um fornecedor-chave
+Novo mercado na Europa⏎Programa de parceiros
+Novo concorrente⏎Custos em alta
+Imprimir
+Impacto e esforço
+Urgente e importante (Eisenhower)
+Filtro de busca; 5; 2⏎Novo checkout; 5; 5⏎Corrigir erros de digitação; 1; 1⏎Reescrever o backend; 2; 5⏎E-mail de boas-vindas; 4; 2
+O servidor caiu; sim; sim⏎Planejar o próximo trimestre; não; sim⏎Responder e-mail de rotina; sim; não⏎Rolar redes sociais; não; não
+Ganhos rápidos (alto impacto, baixo esforço): fazer primeiro
+Grandes apostas (alto impacto, alto esforço): planejar com cuidado
+Tapa-buracos (baixo impacto, baixo esforço): fazer quando estiver livre
+Sorvedouros (baixo impacto, alto esforço): evitar
+Fazer agora (urgente e importante)
+Planejar (importante, não urgente)
+Delegar (urgente, não importante)
+Descartar (nenhum)
+Itens: "nome; impacto 1–5; esforço 1–5" (Eisenhower: "nome; urgente sim/não; importante sim/não")
+Primeiro dia
+A cada duas semanas
+Ausente
+De plantão
+Copiar escala
+Pessoas em rodízio (uma por linha)
+Duração de um turno
+Número de turnos
+Ausências (opcional): "Nome: 2026-01-12 to 2026-01-18"
+Beto: 2026-01-12 to 2026-01-18
+Ana⏎Beto⏎Clara⏎Davi
+Ana: 5⏎Beto: 3⏎Clara: 4⏎Davi: 2⏎Edu: 3⏎Fabi: 5⏎Gui: 1⏎Helena: 4
+Manter separados
+# meses
+# anos
+# dias
+Clientes após # meses
+#% de confiança dentro de
+Prévia do primeiro de # certificado(s).
+# minutos antes
+# faixa(s) em # fuso(s)
+# mensagens · # unidades
+Semana #: check-in (atualizar confiança, sinalizar riscos)
+Sprint #
+# de # concluídas (# %)
+Time #
+Total de habilidade: #
+Votou: # / #
+# caracteres ✓
+# caracteres (um pouco curto)
+Dia # de #
+Passe o dispositivo para: 
+Fazer primeiro
+Urgente e importante: faça agora.
+Agendar
+Importante, não urgente: marque uma data.
+Delegar
+Urgente, não importante: passe para outra pessoa.
+Descartar
+Nenhum: pare de fazer.
+Urgente
+Não urgente
+Importante
+Não importante
+Corrigir o bug do checkout
+Enviar os documentos fiscais
+Planejar o próximo trimestre
+Aprender a nova ferramenta
+Reservar a sala de reuniões
+Ver as redes sociais
+Parceiros-chave
+Quem são nossos parceiros e fornecedores-chave?
+Atividades-chave
+O que precisamos fazer para entregar o valor?
+Recursos-chave
+De quais ativos precisamos?
+Propostas de valor
+Que valor entregamos, que problema resolvemos?
+Relacionamento com clientes
+Como conquistamos, mantemos e ampliamos clientes?
+Canais
+Como alcançamos nossos clientes?
+Segmentos de clientes
+Para quem estamos criando valor?
+Estrutura de custos
+Quais são os custos mais importantes?
+Fontes de receita
+Pelo que os clientes realmente pagam e como?
+Provedor de pagamentos
+Torrefadores
+Torrefação
+Loja on-line
+Torrefação própria
+Marca
+Café fresco entregue todo mês
+Comércio justo
+Assinatura
+Newsletter
+Feira de produtores
+Amantes de café em casa
+Pequenos escritórios
+Grãos
+Envio
+Equipe
+Assinaturas mensais
+Pedidos avulsos
+1 a 3 principais problemas. Alternativas existentes?
+Solução
+As 3 principais funcionalidades que os resolvem.
+Métricas-chave
+Quais números mostram que funciona?
+Proposta de valor única
+Mensagem única, clara e convincente. Conceito geral?
+Vantagem injusta
+O que não pode ser copiado nem comprado com facilidade?
+Caminho até os clientes.
+Clientes-alvo e early adopters.
+Aquisição de clientes, distribuição, hospedagem, pessoas.
+Modelo de receita, valor vitalício, margem.
+Planejar refeições leva tempo demais
+Comida é desperdiçada
+Plano semanal com o que há na geladeira
+Lista de compras
+Usuários ativos semanais
+Planos cozinhados
+Cozinhe hoje à noite com o que você já tem
+Dados de receitas de 10.000 usuários
+Loja de aplicativos
+Blogs de culinária
+Pais ocupados
+Estudantes
+Desenvolvedores
+Hospedagem
+Plano premium de R$ 20 por mês
+Propósito
+Por que estamos aqui? Qual é a nossa razão de existir?
+Metas e critérios de sucesso
+O que queremos alcançar e como saberemos?
+O que defendemos, como tratamos uns aos outros?
+Papéis e habilidades
+Quem faz o quê, que habilidades temos?
+Metas e necessidades pessoais
+O que cada pessoa quer e precisa da equipe?
+Pontos fortes e ativos
+No que somos bons, que recursos temos?
+Fraquezas e riscos
+O que poderia nos impedir?
+Regras e atividades
+Como trabalhamos juntos: reuniões, comunicação, decisões?
+Tornar o onboarding simples para novos clientes
+Reduzir o tempo de configuração para 10 minutos até junho
+Feedback sincero
+Entregar em partes pequenas
+Ana: design
+Beto: backend
+Clara quer aprender trabalho com dados
+Decisões rápidas
+Só uma pessoa conhece o faturamento
+Daily em pé às 9:30
+As decisões são registradas por escrito
+Pensa e sente
+O que importa para a pessoa? Preocupações e sonhos?
+Vê
+O que ela vê no ambiente?
+Ouve
+O que amigos, chefes e a mídia dizem a ela?
+Diz e faz
+O que ela diz, como se comporta?
+Dores
+Medos, frustrações, obstáculos.
+Ganhos
+Desejos, necessidades, medidas de sucesso.
+Nunca tenho tempo suficiente
+Colegas usando muitas ferramentas
+“Usa só uma planilha”
+“Eu faço amanhã”
+Alternar entre aplicativos
+Perder arquivos
+Um só lugar para tudo
+Sentir que está no controle
+Político
+Governo, impostos, regras de comércio, estabilidade.
+Econômico
+Crescimento, inflação, taxas de juros, poder de compra.
+Social
+Demografia, valores, estilo de vida, tendências.
+Tecnológico
+Novas tecnologias, automação, pesquisa.
+Ambiental
+Clima, recursos, regras de sustentabilidade.
+Leis, proteção de dados, trabalho, normas.
+Eleição no mercado principal
+Alta das taxas de juros
+Mais trabalho remoto
+Ferramentas de IA reduzem custos
+Regras de embalagem ficam mais rígidas
+Novas regras de proteção de dados
+Ameaça de novos entrantes
+Quão fácil é entrar no mercado?
+Poder de barganha dos fornecedores
+Quanto os fornecedores podem ditar condições?
+Rivalidade no setor
+Quão intensa é a concorrência?
+Poder de barganha dos compradores
+Quanto os clientes podem pressionar os preços para baixo?
+Ameaça de substitutos
+O que mais resolve a mesma necessidade?
+Pouco capital necessário
+Poucos fornecedores especializados
+Três grandes players, guerras de preço
+Os clientes podem trocar com facilidade
+Kits faça-você-mesmo
+O Business Model Canvas foi criado por Alexander Osterwalder e Yves Pigneur (Strategyzer AG) e é licenciado sob Creative Commons Atribuição-CompartilhaIgual (CC BY-SA). Este quadro é uma versão adaptada e redesenhada.
+O Lean Canvas foi criado por Ash Maurya como adaptação do Business Model Canvas de Alexander Osterwalder (CC BY-SA). Este quadro é uma versão redesenhada.
+O Team Canvas foi criado por Alex Ivanov (theteamcanvas.com) e é licenciado sob CC BY-SA 4.0. Este quadro é uma versão adaptada e redesenhada.
+O mapa de empatia remonta a Dave Gray e à XPLANE (Gamestorming). Apenas a ideia geral é usada aqui; o layout e a redação são nossos.
+Um método de planejamento genérico; o layout e a redação são nossos.
+Nome deste quadro (opcional)
+Nome do quadro
+Mudar cor
+Mover para
+Excluir nota
+Adicionar nota
+Abrir quadro salvo
+Quadro carregado
+Remover todas as notas e começar com um quadro vazio?
+Seu quadro é salvo só neste navegador. Arraste notas entre as caixas ou use o menu de uma nota para movê-la.
+Arraste para mover
+Este arquivo não é um quadro salvo.
+Salvar como arquivo
+Recomeçar
+Carregar o exemplo
+Copiado
+Baixar PDF
