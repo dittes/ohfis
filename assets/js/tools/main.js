@@ -6,7 +6,7 @@ const root = document.getElementById('tool-root');
 function labelize(scope) {
   const title = document.querySelector('h1')?.textContent.trim() || '';
   scope.querySelectorAll('input:not([type=hidden]):not([type=file]), select, textarea').forEach(el => {
-    if (el.labels?.length || el.getAttribute('aria-label') || el.getAttribute('aria-labelledby') || el.title) return;
+    if (el.disabled || el.labels?.length || el.getAttribute('aria-label') || el.getAttribute('aria-labelledby') || el.title) return;
     let name = el.getAttribute('placeholder') || '';
     if (!name) { const col = el.closest('.ut-col, .ut-field, .pt-field, li, tr, div'); const lab = col?.querySelector('strong, label, h3, h4, legend, .ut-colhead span'); name = lab && !lab.contains(el) ? lab.textContent.trim() : ''; }
     if (!name && el.type === 'range') name = el.closest('div')?.textContent.trim().slice(0, 40) || '';

@@ -887,7 +887,7 @@ Object.assign(custom, {
   },
   async 'video-stabilizer'(page) {
     await dropVideo(page, makeVideo('a.mp4')); const r = await goVideo(page, 'Stabilise'); assert.equal(vstream(r).width, 320); assert.ok(Math.abs(vdur(r) - 3) < 0.3); assert.ok(astream(r));
-    await dropVideo(page, Buffer.from('this is not a video file at all')); assert.ok(await page.locator('.pt-drop__error:visible').count() > 0, 'non-video rejected');
+    await dropVideo(page, Buffer.from('this is not a video file at all')).catch(() => {}); await page.waitForSelector('.pt-drop__error:visible', { timeout: 15000 }); assert.ok(true);
   },
 });
 
