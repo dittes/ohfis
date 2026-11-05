@@ -3100,3 +3100,184 @@ Zagłosowało: # / #
 # znaków (trochę krótko)
 Dzień # z #
 Przekaż urządzenie do: 
+Zrób najpierw
+Pilne i ważne: zajmij się tym od razu.
+Zaplanuj
+Ważne, niepilne: ustal termin.
+Deleguj
+Pilne, nieważne: przekaż komuś.
+Odrzuć
+Ani jedno, ani drugie: przestań to robić.
+Pilne
+Niepilne
+Ważne
+Nieważne
+Naprawić błąd w koszyku
+Wysłać dokumenty podatkowe
+Zaplanować następny kwartał
+Nauczyć się nowego narzędzia
+Zarezerwować salę spotkań
+Sprawdzić media społecznościowe
+Kluczowi partnerzy
+Kim są nasi kluczowi partnerzy i dostawcy?
+Kluczowe działania
+Co musimy robić, aby dostarczyć wartość?
+Kluczowe zasoby
+Jakich zasobów potrzebujemy?
+Propozycje wartości
+Jaką wartość dostarczamy, jaki problem rozwiązujemy?
+Relacje z klientami
+Jak pozyskujemy, utrzymujemy i powiększamy klientów?
+Kanały
+Jak docieramy do klientów?
+Segmenty klientów
+Dla kogo tworzymy wartość?
+Struktura kosztów
+Jakie są najważniejsze koszty?
+Strumienie przychodów
+Za co klienci naprawdę płacą i jak?
+Operator płatności
+Palarnie
+Palenie kawy
+Sklep internetowy
+Palarnia
+Marka
+Świeża kawa dostarczana co miesiąc
+Sprawiedliwy handel
+Subskrypcja
+Newsletter
+Targ
+Domowi miłośnicy kawy
+Małe biura
+Ziarna
+Wysyłka
+Personel
+Miesięczne subskrypcje
+Jednorazowe zamówienia
+1–3 najważniejsze problemy. Istniejące alternatywy?
+Rozwiązanie
+3 najważniejsze funkcje, które je rozwiązują.
+Kluczowe wskaźniki
+Jakie liczby pokazują, że to działa?
+Unikalna propozycja wartości
+Jeden jasny, przekonujący komunikat. Koncepcja ogólna?
+Nieuczciwa przewaga
+Czego nie da się łatwo skopiować ani kupić?
+Droga do klientów.
+Docelowi klienci i wcześni użytkownicy.
+Pozyskiwanie klientów, dystrybucja, hosting, ludzie.
+Model przychodów, wartość klienta, marża.
+Planowanie posiłków trwa za długo
+Jedzenie się marnuje
+Plan tygodnia z tego, co jest w lodówce
+Lista zakupów
+Tygodniowi aktywni użytkownicy
+Ugotowane plany
+Ugotuj dziś z tym, co już masz
+Dane przepisów od 10 000 użytkowników
+Sklep z aplikacjami
+Blogi kulinarne
+Zapracowani rodzice
+Studenci
+Programiści
+Hosting
+Plan premium 4 € miesięcznie
+Cel
+Po co tu jesteśmy? Jaki jest nasz powód istnienia?
+Cele i kryteria sukcesu
+Co chcemy osiągnąć i po czym poznamy sukces?
+Za czym się opowiadamy, jak traktujemy się nawzajem?
+Role i umiejętności
+Kto co robi, jakie mamy umiejętności?
+Cele i potrzeby osobiste
+Czego chce i potrzebuje od zespołu każda osoba?
+Mocne strony i zasoby
+W czym jesteśmy dobrzy, jakie mamy zasoby?
+Słabe strony i ryzyka
+Co może nas zatrzymać?
+Zasady i działania
+Jak współpracujemy: spotkania, komunikacja, decyzje?
+Ułatwić wdrożenie nowym klientom
+Skrócić czas konfiguracji do 10 minut do czerwca
+Szczera informacja zwrotna
+Dostarczać małymi krokami
+Ania: projekt
+Bartek: backend
+Celina chce uczyć się pracy z danymi
+Szybkie decyzje
+Tylko jedna osoba zna rozliczenia
+Codzienny stand-up o 9:30
+Decyzje są zapisywane
+Myśli i czuje
+Co jest dla nich ważne? Obawy i marzenia?
+Widzi
+Co widzą w swoim otoczeniu?
+Słyszy
+Co mówią im znajomi, szefowie i media?
+Mówi i robi
+Co mówią, jak się zachowują?
+Bolączki
+Lęki, frustracje, przeszkody.
+Korzyści
+Pragnienia, potrzeby, miary sukcesu.
+Nigdy nie mam dość czasu
+Koledzy używają wielu narzędzi
+„Użyj po prostu arkusza”
+„Zrobię to jutro”
+Przełączanie między aplikacjami
+Gubienie plików
+Jedno miejsce na wszystko
+Poczucie kontroli
+Polityczne
+Rząd, podatki, zasady handlu, stabilność.
+Ekonomiczne
+Wzrost, inflacja, stopy procentowe, siła nabywcza.
+Społeczne
+Demografia, wartości, styl życia, trendy.
+Technologiczne
+Nowe technologie, automatyzacja, badania.
+Środowiskowe
+Klimat, zasoby, zasady zrównoważonego rozwoju.
+Prawo, ochrona danych, prawo pracy, normy.
+Wybory na głównym rynku
+Rosnące stopy procentowe
+Więcej pracy zdalnej
+Narzędzia AI obniżają koszty
+Zaostrzenie przepisów o opakowaniach
+Nowe przepisy o ochronie danych
+Zagrożenie ze strony nowych graczy
+Jak łatwo wejść na rynek?
+Siła przetargowa dostawców
+W jakim stopniu dostawcy mogą dyktować warunki?
+Rywalizacja w branży
+Jak intensywna jest konkurencja?
+Siła przetargowa nabywców
+W jakim stopniu klienci mogą zbijać ceny?
+Zagrożenie ze strony substytutów
+Co jeszcze zaspokaja tę samą potrzebę?
+Potrzeba mało kapitału
+Niewielu wyspecjalizowanych dostawców
+Trzech dużych graczy, wojny cenowe
+Klienci łatwo zmieniają dostawcę
+Zestawy do samodzielnego wykonania
+Business Model Canvas stworzyli Alexander Osterwalder i Yves Pigneur (Strategyzer AG); jest udostępniany na licencji Creative Commons Uznanie autorstwa – Na tych samych warunkach (CC BY-SA). Ta tablica to zaadaptowana, narysowana na nowo wersja.
+Lean Canvas stworzył Ash Maurya jako adaptację Business Model Canvas Alexandra Osterwaldera (CC BY-SA). Ta tablica to narysowana na nowo wersja.
+Team Canvas stworzył Alex Ivanov (theteamcanvas.com); jest udostępniany na licencji CC BY-SA 4.0. Ta tablica to zaadaptowana, narysowana na nowo wersja.
+Mapa empatii wywodzi się od Dave’a Graya i XPLANE (Gamestorming). Wykorzystano tu tylko ogólną ideę; układ i sformułowania są nasze.
+Ogólna metoda planowania; układ i sformułowania są nasze.
+Nazwa tej tablicy (opcjonalnie)
+Nazwa tablicy
+Zmień kolor
+Przenieś do
+Usuń karteczkę
+Dodaj karteczkę
+Otwórz zapisaną tablicę
+Tablica wczytana
+Usunąć wszystkie karteczki i zacząć od pustej tablicy?
+Twoja tablica jest zapisywana tylko w tej przeglądarce. Przeciągaj karteczki między polami lub użyj menu przy karteczce, aby ją przenieść.
+Przeciągnij, aby przenieść
+Ten plik nie jest zapisaną tablicą.
+Zapisz jako plik
+Zacznij od nowa
+Wczytaj przykład
+Skopiowano

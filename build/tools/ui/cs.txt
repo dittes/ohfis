@@ -3100,3 +3100,184 @@ Odhlasovalo: # / #
 # znaků (trochu krátké)
 Den # z #
 Předejte zařízení hráči: 
+Udělat jako první
+Naléhavé a důležité: zvládněte to hned.
+Naplánovat
+Důležité, nenaléhavé: určete termín.
+Delegovat
+Naléhavé, nedůležité: předejte to dál.
+Vypustit
+Ani jedno: přestaňte to dělat.
+Naléhavé
+Nenaléhavé
+Důležité
+Nedůležité
+Opravit chybu v pokladně
+Odeslat daňové doklady
+Naplánovat příští čtvrtletí
+Naučit se nový nástroj
+Rezervovat zasedací místnost
+Zkontrolovat sociální sítě
+Klíčoví partneři
+Kdo jsou naši klíčoví partneři a dodavatelé?
+Klíčové aktivity
+Co musíme dělat, abychom dodali hodnotu?
+Klíčové zdroje
+Jaké zdroje potřebujeme?
+Hodnotové nabídky
+Jakou hodnotu dodáváme, jaký problém řešíme?
+Vztahy se zákazníky
+Jak zákazníky získáváme, udržujeme a rozšiřujeme?
+Kanály
+Jak se k zákazníkům dostaneme?
+Zákaznické segmenty
+Pro koho vytváříme hodnotu?
+Struktura nákladů
+Jaké jsou nejdůležitější náklady?
+Zdroje příjmů
+Za co zákazníci skutečně platí a jak?
+Poskytovatel plateb
+Pražírny
+Pražení
+E-shop
+Pražírna
+Značka
+Čerstvá káva doručovaná každý měsíc
+Fair trade
+Předplatné
+Newsletter
+Farmářský trh
+Domácí milovníci kávy
+Malé kanceláře
+Zrna
+Doprava
+Personál
+Měsíční předplatné
+Jednorázové objednávky
+1–3 nejdůležitější problémy. Stávající alternativy?
+Řešení
+3 nejdůležitější funkce, které je řeší.
+Klíčové metriky
+Která čísla ukazují, že to funguje?
+Jedinečná hodnotová nabídka
+Jedno jasné, přesvědčivé sdělení. Obecný koncept?
+Nespravedlivá výhoda
+Co nelze snadno zkopírovat ani koupit?
+Cesta k zákazníkům.
+Cíloví zákazníci a první uživatelé.
+Získávání zákazníků, distribuce, hosting, lidé.
+Model příjmů, hodnota zákazníka, marže.
+Plánování jídel trvá příliš dlouho
+Jídlo se plýtvá
+Týdenní plán z toho, co je v lednici
+Nákupní seznam
+Týdenně aktivní uživatelé
+Uvařené plány
+Uvařte dnes z toho, co už máte
+Data receptů od 10 000 uživatelů
+App Store
+Foodblogy
+Zaneprázdnění rodiče
+Studenti
+Vývojáři
+Hosting
+Prémiový tarif 4 € měsíčně
+Účel
+Proč tu jsme? Jaký je náš důvod existence?
+Cíle a kritéria úspěchu
+Čeho chceme dosáhnout a podle čeho to poznáme?
+Za čím stojíme, jak se k sobě chováme?
+Role a dovednosti
+Kdo dělá co, jaké máme dovednosti?
+Osobní cíle a potřeby
+Co chce a potřebuje od týmu každý člověk?
+Silné stránky a zdroje
+V čem jsme dobří, jaké máme zdroje?
+Slabé stránky a rizika
+Co by nás mohlo zastavit?
+Pravidla a aktivity
+Jak spolupracujeme: schůzky, komunikace, rozhodování?
+Usnadnit zaškolení nových zákazníků
+Zkrátit dobu nastavení na 10 minut do června
+Upřímná zpětná vazba
+Dodávat po malých krocích
+Anna: design
+Ben: backend
+Klára se chce učit práci s daty
+Rychlá rozhodnutí
+Fakturaci zná jen jeden člověk
+Denní stand-up v 9:30
+Rozhodnutí se zapisují
+Myslí a cítí
+Co je pro ně důležité? Obavy a sny?
+Vidí
+Co vidí ve svém okolí?
+Slyší
+Co jim říkají přátelé, šéfové a média?
+Říká a dělá
+Co říkají, jak se chovají?
+Bolesti
+Obavy, frustrace, překážky.
+Přínosy
+Přání, potřeby, míry úspěchu.
+Nikdy nemám dost času
+Kolegové používají mnoho nástrojů
+„Použij prostě tabulku“
+„Udělám to zítra“
+Přepínání mezi aplikacemi
+Ztrácení souborů
+Jedno místo pro všechno
+Pocit kontroly
+Politické
+Vláda, daně, obchodní pravidla, stabilita.
+Ekonomické
+Růst, inflace, úrokové sazby, kupní síla.
+Sociální
+Demografie, hodnoty, životní styl, trendy.
+Technologické
+Nové technologie, automatizace, výzkum.
+Environmentální
+Klima, zdroje, pravidla udržitelnosti.
+Zákony, ochrana dat, pracovní právo, normy.
+Volby na hlavním trhu
+Rostoucí úrokové sazby
+Více práce na dálku
+Nástroje AI snižují náklady
+Zpřísnění pravidel pro obaly
+Nová pravidla ochrany dat
+Hrozba nových účastníků
+Jak snadné je vstoupit na trh?
+Vyjednávací síla dodavatelů
+Do jaké míry mohou dodavatelé diktovat podmínky?
+Rivalita v odvětví
+Jak intenzivní je konkurence?
+Vyjednávací síla odběratelů
+Do jaké míry mohou zákazníci tlačit ceny dolů?
+Hrozba substitutů
+Co jiného řeší stejnou potřebu?
+Je potřeba málo kapitálu
+Málo specializovaných dodavatelů
+Tři velcí hráči, cenové války
+Zákazníci mohou snadno přejít jinam
+Stavebnice pro vlastní výrobu
+Business Model Canvas vytvořili Alexander Osterwalder a Yves Pigneur (Strategyzer AG) a je licencován pod Creative Commons Uveďte původ – Zachovejte licenci (CC BY-SA). Tato nástěnka je upravená, znovu nakreslená verze.
+Lean Canvas vytvořil Ash Maurya jako úpravu Business Model Canvas Alexandera Osterwaldera (CC BY-SA). Tato nástěnka je znovu nakreslená verze.
+Team Canvas vytvořil Alex Ivanov (theteamcanvas.com) a je licencován pod CC BY-SA 4.0. Tato nástěnka je upravená, znovu nakreslená verze.
+Mapa empatie pochází od Dava Graye a XPLANE (Gamestorming). Použita je jen obecná myšlenka; rozvržení a formulace jsou naše vlastní.
+Obecná plánovací metoda; rozvržení a formulace jsou naše vlastní.
+Název této nástěnky (volitelné)
+Název nástěnky
+Změnit barvu
+Přesunout do
+Smazat lístek
+Přidat lístek
+Otevřít uloženou nástěnku
+Nástěnka načtena
+Odebrat všechny lístky a začít s prázdnou nástěnkou?
+Vaše nástěnka se ukládá jen v tomto prohlížeči. Přetahujte lístky mezi poli nebo použijte nabídku na lístku k přesunu.
+Přetažením přesunete
+Tento soubor není uložená nástěnka.
+Uložit jako soubor
+Začít znovu
+Načíst příklad
+Zkopírováno

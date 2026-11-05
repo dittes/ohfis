@@ -1,5 +1,6 @@
 // finance.js — UI for business and finance calculators. Formulas: lib/fin.js (unit-tested).
 import { tr, h, t, area, btn, select, check, field, numInput, textInput, copyText, table, fmtNum, wrap } from './kit.js';
+import { boardTool } from './canvasboard.js';
 import { calcTool, money, pct } from './calctool.js';
 import * as F from './lib/fin.js';
 import { utc, parseYMD } from './lib/time.js';
@@ -159,3 +160,12 @@ export const tools = {
     ui.append(h('div', { class: 'ut-options' }, field('Currency', code), field('Expected amount (float + sales)', expected, 'Opening float plus cash takings')), grid, res, h('p', { class: 'pt-hint' }, 'Count each denomination once, enter the number of notes or coins and compare with the expected amount. Amounts are calculated in whole cents to avoid rounding errors. The page does not store anything.')); build();
   },
 };
+
+Object.assign(tools, {
+  'business-model-canvas'(root) { boardTool(root, 'business-model-canvas'); },
+  'lean-canvas'(root) { boardTool(root, 'lean-canvas'); },
+  'eisenhower-matrix-board'(root) { boardTool(root, 'eisenhower-matrix-board'); },
+  'pestel-analysis-board'(root) { boardTool(root, 'pestel-analysis-board'); },
+  'porters-five-forces-board'(root) { boardTool(root, 'porters-five-forces-board'); },
+  'empathy-map-canvas'(root) { boardTool(root, 'empathy-map-canvas'); },
+});

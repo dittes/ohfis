@@ -566,6 +566,24 @@ Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.
 - [Cash Drawer Counter & Float Balancer](https://ohfis.com/en/cash-drawer-counter/): Count notes and coins and compare with the expected amount: over, short or balanced.
   Enter how many of each note and coin are in the till or petty-cash box, and the tool adds them up, compares the total with the amount you expected (opening float plus sales) and shows whether the drawer is over, short or balanced. You can copy the count as a short report for your records.
   How to use: Choose the currency and enter the expected amount. Enter the number of each note and coin. Read the difference and copy the report.
+- [Business Model Canvas (Interactive, with Sticky Notes)](https://ohfis.com/en/business-model-canvas/): Fill in the nine blocks of the Business Model Canvas with sticky notes and export it as PNG or Markdown.
+  The Business Model Canvas describes a business on one page in nine blocks: customer segments, value propositions, channels, customer relationships, revenue streams, key resources, key activities, key partners and cost structure. Add a sticky note to each block, edit it in place, change its colour and drag notes between the blocks while you discuss the model with your team.
+  How to use: Start with the customer segments and the value propositions, then work through the other blocks. Add one idea per sticky note; drag notes to other blocks, recolour or delete them. Download the PNG, copy the Markdown or save the board as a file.
+- [Lean Canvas (Interactive, with Sticky Notes)](https://ohfis.com/en/lean-canvas/): Plan a startup on one page: problem, solution, metrics, unfair advantage and more, with sticky notes.
+  The Lean Canvas is a one-page plan for new products and startups. Instead of partners and resources it starts from the problem: problem, customer segments, unique value proposition, solution, channels, revenue streams, cost structure, key metrics and unfair advantage. Fill the boxes with sticky notes, move them around, and keep the canvas short enough to test the riskiest assumptions first.
+  How to use: Write the top problems and the customer segments first. Add the unique value proposition, solution, channels and the numbers that matter. Export the canvas and test the riskiest assumption with real customers.
+- [Eisenhower Matrix with Sticky Notes (Interactive)](https://ohfis.com/en/eisenhower-matrix-board/): Sort tasks as sticky notes into urgent/important quadrants by dragging, then export or print.
+  The Eisenhower matrix sorts tasks by two questions: is it urgent, and is it important? Do the urgent and important ones first, schedule the important but not urgent ones, delegate the urgent but unimportant ones and drop the rest. Write each task on a sticky note, drag it to the right quadrant and recolour it by person or project.
+  How to use: Add a note in any quadrant and write the task. Drag notes to the quadrant where they belong, or use the menu on the note. Print the matrix or export it as PNG or Markdown.
+- [PESTEL Analysis Board (Sticky Notes)](https://ohfis.com/en/pestel-analysis-board/): Map political, economic, social, technological, environmental and legal factors with sticky notes.
+  A PESTEL analysis looks at the outside world of a business in six areas: political, economic, social, technological, environmental and legal factors. Add one sticky note per factor, sort them into the six boxes and discuss which ones matter most for your plans.
+  How to use: Collect the outside factors that could affect your business. Put each on a sticky note in the matching box. Mark the most important ones by colour and export the board.
+- [Porter's Five Forces Board (Sticky Notes)](https://ohfis.com/en/porters-five-forces-board/): Assess an industry with the five competitive forces and collect evidence on sticky notes.
+  Porter's Five Forces explain how attractive an industry is: the threat of new entrants, the bargaining power of suppliers and of buyers, the threat of substitutes and the rivalry between existing competitors. Write the facts that support each force on sticky notes and see where the pressure on your margins comes from.
+  How to use: Name the industry or market in the board name. Add evidence for each of the five forces on sticky notes. Discuss which forces are strongest and export the board.
+- [Empathy Map Canvas (Sticky Notes)](https://ohfis.com/en/empathy-map-canvas/): Understand a customer or user: what they see, hear, say, do, think and feel, with their pains and gains.
+  An empathy map puts you in the shoes of one customer or user. Write what this person sees, hears, says and does, what they think and feel, and what hurts them (pains) and what they want (gains). Use real observations from interviews instead of assumptions, and give the board the name of the persona.
+  How to use: Name the person or persona in the board name. Fill the boxes with observations from interviews and research. Look for patterns in the pains and gains and export the board.
 
 ## IT & Web Tools
 
@@ -809,6 +827,9 @@ Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.
 - [Rotation Schedule Generator (On-Call, Cleaning, Chair Duty)](https://ohfis.com/en/rotation-schedule-generator/): Create a fair rotation of people over days, weeks or fortnights and skip anyone who is away.
   Many teams share a recurring job: being on call, chairing the weekly meeting, taking notes, watering the plants. Enter the people in the order they should take turns, choose the first day and the length of a turn, and the tool lists who is on duty for every period.
   How to use: List the people in the order of their turns. Choose the first day, the length of a turn and how many turns. Add absences, then copy or download the schedule.
+- [Team Canvas (Interactive, with Sticky Notes)](https://ohfis.com/en/team-canvas/): Align a team on purpose, goals, values, roles, strengths, risks and working rules, with sticky notes.
+  A team canvas helps a new or struggling team agree on the basics on one page: why the team exists (purpose), what it wants to achieve (goals and success criteria), what it stands for (values), who does what (roles and skills), what each person needs, where the team is strong or weak and how it works together (rules and activities).
+  How to use: Start with purpose and goals, then values and roles. Let everybody add sticky notes, then sort and discuss them together. Agree on the rules, export the canvas and review it after a few weeks.
 
 ## Audio & Video
 

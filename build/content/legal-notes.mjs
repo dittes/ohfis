@@ -33,12 +33,14 @@ const T = {
 
 const LEGAL_IDS = new Set(['delivery-note-generator', 'receipt-generator', 'certificate-generator', 'vat-calculator', 'ics-event-generator']);
 LEGAL_IDS.delete('ics-event-generator');
+const CANVAS_IDS = new Set(['business-model-canvas', 'lean-canvas', 'eisenhower-matrix-board', 'pestel-analysis-board', 'porters-five-forces-board', 'empathy-map-canvas', 'team-canvas']);
 const REDACT_IDS = new Set(['redact', 'image-blur-redact', 'image-metadata-remover', 'metadata']);
 
 /** Returns the notice text for a tool (PDF tool or utility) or '' when none applies. */
 export function disclaimerFor(lang, tool) {
   const t = T[lang] || T.en;
   if (LEGAL_IDS.has(tool.id)) return t.legal;
+  if (CANVAS_IDS.has(tool.id)) return '';
   if (tool.cat === 'finance') return t.finance;
   if (REDACT_IDS.has(tool.id)) return t.redact;
   if (tool.id === 'sign') return t.sign;

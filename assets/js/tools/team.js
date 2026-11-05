@@ -1,5 +1,6 @@
 // team.js — UI for team and meeting tools. Logic: lib/notes.js and lib/text.js (unit-tested).
 import { tr, h, t, area, btn, select, check, field, numInput, textInput, copyText, download, table, stat, debounce, fmtNum, wrap, toast } from './kit.js';
+import { boardTool } from './canvasboard.js';
 import { calcTool } from './calctool.js';
 import * as N from './lib/notes.js';
 import { parseOutline, auditTone, findBuzzwords } from './lib/text.js';
@@ -145,4 +146,8 @@ Object.assign(tools, {
       out.append(table([['From', 'To', 'On duty'], ...rows.map(r => [fmt(r.from), fmt(r.to), r.who])]), h('div', { class: 'ut-actions' }, btn('Copy schedule', () => copyText(rows.map(r => `${r.from} – ${r.to}: ${r.who}`).join('\n')), 'primary'), btn('Download CSV', () => download('rotation.csv', 'from,to,who\n' + rows.map(r => `${r.from},${r.to},"${r.who.replace(/"/g, '""')}"`).join('\n'), 'text/csv')))); }
     ui.append(h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, field('People in turn (one per line)', people), h('div', { class: 'ut-options' }, field('First day', start), field('Length of a turn', period), field('Number of turns', count)), field('Away (optional): "Name: 2026-01-12 to 2026-01-18"', away)), out)); run();
   },
+});
+
+Object.assign(tools, {
+  'team-canvas'(root) { boardTool(root, 'team-canvas'); },
 });

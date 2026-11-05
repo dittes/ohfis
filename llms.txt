@@ -234,6 +234,12 @@ Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.
 - [Commercial Lease Cost Calculator](https://ohfis.com/en/lease-cost-calculator/): Work out the all-in monthly and total cost of an office or shop lease.
 - [Inflation Calculator (Future & Past Value)](https://ohfis.com/en/inflation-value-calculator/): What an amount will cost in the future or is worth today, at an inflation rate you choose.
 - [Cash Drawer Counter & Float Balancer](https://ohfis.com/en/cash-drawer-counter/): Count notes and coins and compare with the expected amount: over, short or balanced.
+- [Business Model Canvas (Interactive, with Sticky Notes)](https://ohfis.com/en/business-model-canvas/): Fill in the nine blocks of the Business Model Canvas with sticky notes and export it as PNG or Markdown.
+- [Lean Canvas (Interactive, with Sticky Notes)](https://ohfis.com/en/lean-canvas/): Plan a startup on one page: problem, solution, metrics, unfair advantage and more, with sticky notes.
+- [Eisenhower Matrix with Sticky Notes (Interactive)](https://ohfis.com/en/eisenhower-matrix-board/): Sort tasks as sticky notes into urgent/important quadrants by dragging, then export or print.
+- [PESTEL Analysis Board (Sticky Notes)](https://ohfis.com/en/pestel-analysis-board/): Map political, economic, social, technological, environmental and legal factors with sticky notes.
+- [Porter's Five Forces Board (Sticky Notes)](https://ohfis.com/en/porters-five-forces-board/): Assess an industry with the five competitive forces and collect evidence on sticky notes.
+- [Empathy Map Canvas (Sticky Notes)](https://ohfis.com/en/empathy-map-canvas/): Understand a customer or user: what they see, hear, say, do, think and feel, with their pains and gains.
 
 ## IT & Web Tools
 
@@ -325,6 +331,7 @@ Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.
 - [SWOT Analysis Maker](https://ohfis.com/en/swot-analysis-maker/): Fill in strengths, weaknesses, opportunities and threats and get a clean SWOT grid to copy or print.
 - [Priority Matrix Maker (Impact/Effort and Eisenhower)](https://ohfis.com/en/priority-matrix-maker/): Sort tasks into quick wins, big bets, fill-ins and money pits, or into the Eisenhower quadrants.
 - [Rotation Schedule Generator (On-Call, Cleaning, Chair Duty)](https://ohfis.com/en/rotation-schedule-generator/): Create a fair rotation of people over days, weeks or fortnights and skip anyone who is away.
+- [Team Canvas (Interactive, with Sticky Notes)](https://ohfis.com/en/team-canvas/): Align a team on purpose, goals, values, roles, strengths, risks and working rules, with sticky notes.
 
 ## Audio & Video
 

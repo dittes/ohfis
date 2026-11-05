@@ -3100,3 +3100,184 @@ Abgestimmt: # / #
 # Zeichen (etwas kurz)
 Tag # von #
 Gib das Gerät weiter an: 
+Zuerst erledigen
+Dringend und wichtig: sofort angehen.
+Terminieren
+Wichtig, nicht dringend: einen Termin planen.
+Delegieren
+Dringend, nicht wichtig: abgeben.
+Streichen
+Weder noch: nicht mehr tun.
+Dringend
+Nicht dringend
+Wichtig
+Nicht wichtig
+Fehler im Bezahlvorgang beheben
+Steuerunterlagen verschicken
+Nächstes Quartal planen
+Das neue Tool lernen
+Besprechungsraum buchen
+Social Media checken
+Schlüsselpartner
+Wer sind unsere wichtigsten Partner und Lieferanten?
+Schlüsselaktivitäten
+Was müssen wir tun, um den Wert zu liefern?
+Schlüsselressourcen
+Welche Ressourcen brauchen wir?
+Wertversprechen
+Welchen Wert liefern wir, welches Problem lösen wir?
+Kundenbeziehungen
+Wie gewinnen, halten und vergrößern wir den Kundenstamm?
+Kanäle
+Wie erreichen wir unsere Kunden?
+Kundensegmente
+Für wen schaffen wir Wert?
+Kostenstruktur
+Was sind die wichtigsten Kosten?
+Einnahmequellen
+Wofür zahlen Kunden wirklich, und wie?
+Zahlungsanbieter
+Röstereien
+Rösten
+Online-Shop
+Rösterei
+Marke
+Frischer Kaffee jeden Monat geliefert
+Fairer Handel
+Abonnement
+Newsletter
+Wochenmarkt
+Kaffeeliebhaber zu Hause
+Kleine Büros
+Bohnen
+Versand
+Personal
+Monatliche Abos
+Einmalbestellungen
+Die 1–3 wichtigsten Probleme. Bestehende Alternativen?
+Lösung
+Die 3 wichtigsten Funktionen, die sie lösen.
+Kennzahlen
+Welche Zahlen zeigen, dass es funktioniert?
+Einzigartiges Wertversprechen
+Eine klare, überzeugende Botschaft. Übergeordnetes Konzept?
+Unfairer Vorteil
+Was lässt sich nicht leicht kopieren oder kaufen?
+Weg zu den Kunden.
+Zielkunden und frühe Anwender.
+Kundengewinnung, Vertrieb, Hosting, Personal.
+Erlösmodell, Kundenwert, Marge.
+Essensplanung dauert zu lange
+Lebensmittel werden verschwendet
+Wochenplan aus dem, was im Kühlschrank ist
+Einkaufsliste
+Aktive Nutzer pro Woche
+Gekochte Pläne
+Heute Abend kochen mit dem, was du schon hast
+Rezeptdaten von 10 000 Nutzern
+App Store
+Foodblogs
+Vielbeschäftigte Eltern
+Studierende
+Entwickler
+Hosting
+Premium-Tarif 4 € im Monat
+Zweck
+Warum sind wir hier? Was ist unser Daseinsgrund?
+Ziele und Erfolgskriterien
+Was wollen wir erreichen und woran erkennen wir es?
+Wofür stehen wir, wie gehen wir miteinander um?
+Rollen und Fähigkeiten
+Wer macht was, welche Fähigkeiten haben wir?
+Persönliche Ziele und Bedürfnisse
+Was will und braucht jede Person vom Team?
+Stärken und Ressourcen
+Worin sind wir gut, welche Ressourcen haben wir?
+Schwächen und Risiken
+Was könnte uns aufhalten?
+Regeln und Aktivitäten
+Wie arbeiten wir zusammen: Meetings, Kommunikation, Entscheidungen?
+Das Onboarding für neue Kunden mühelos machen
+Die Einrichtungszeit bis Juni auf 10 Minuten senken
+Ehrliches Feedback
+In kleinen Schritten liefern
+Anna: Design
+Ben: Backend
+Clara möchte Datenarbeit lernen
+Schnelle Entscheidungen
+Nur eine Person kennt die Abrechnung
+Täglicher Stand-up um 9:30
+Entscheidungen werden schriftlich festgehalten
+Denkt und fühlt
+Was ist ihnen wichtig? Sorgen und Träume?
+Sieht
+Was sehen sie in ihrem Umfeld?
+Hört
+Was sagen Freunde, Vorgesetzte und Medien?
+Sagt und tut
+Was sagen sie, wie verhalten sie sich?
+Schmerzpunkte
+Ängste, Frust, Hindernisse.
+Gewinne
+Wünsche, Bedürfnisse, Erfolgsmaße.
+Ich habe nie genug Zeit
+Kollegen nutzen viele Tools
+„Nimm doch einfach eine Tabelle“
+„Das mache ich morgen“
+Wechsel zwischen Apps
+Dateien verlieren
+Ein Ort für alles
+Sich in Kontrolle fühlen
+Politisch
+Regierung, Steuern, Handelsregeln, Stabilität.
+Wirtschaftlich
+Wachstum, Inflation, Zinsen, Kaufkraft.
+Gesellschaftlich
+Demografie, Werte, Lebensstil, Trends.
+Technologisch
+Neue Technik, Automatisierung, Forschung.
+Ökologisch
+Klima, Ressourcen, Nachhaltigkeitsregeln.
+Gesetze, Datenschutz, Arbeitsrecht, Normen.
+Wahl im wichtigsten Markt
+Steigende Zinsen
+Mehr Homeoffice
+KI-Tools senken Kosten
+Verpackungsregeln werden strenger
+Neue Datenschutzregeln
+Bedrohung durch neue Anbieter
+Wie leicht ist der Markteintritt?
+Verhandlungsmacht der Lieferanten
+Wie sehr können Lieferanten die Bedingungen diktieren?
+Rivalität in der Branche
+Wie intensiv ist der Wettbewerb?
+Verhandlungsmacht der Kunden
+Wie stark können Kunden die Preise drücken?
+Bedrohung durch Ersatzprodukte
+Was löst das gleiche Bedürfnis anders?
+Wenig Kapital nötig
+Wenige spezialisierte Lieferanten
+Drei große Anbieter, Preiskämpfe
+Kunden können leicht wechseln
+Selbstbau-Sets
+Das Business Model Canvas wurde von Alexander Osterwalder und Yves Pigneur (Strategyzer AG) entwickelt und steht unter der Creative-Commons-Lizenz Namensnennung – Weitergabe unter gleichen Bedingungen (CC BY-SA). Dieses Board ist eine angepasste, neu gezeichnete Fassung.
+Das Lean Canvas wurde von Ash Maurya als Abwandlung des Business Model Canvas von Alexander Osterwalder entwickelt (CC BY-SA). Dieses Board ist eine neu gezeichnete Fassung.
+Das Team Canvas wurde von Alex Ivanov (theteamcanvas.com) entwickelt und steht unter CC BY-SA 4.0. Dieses Board ist eine angepasste, neu gezeichnete Fassung.
+Die Empathy Map geht auf Dave Gray und XPLANE (Gamestorming) zurück. Hier wird nur die allgemeine Idee genutzt; Aufbau und Formulierungen sind unsere eigenen.
+Eine allgemeine Planungsmethode; Aufbau und Formulierungen sind unsere eigenen.
+Name dieses Boards (optional)
+Name des Boards
+Farbe wechseln
+Verschieben nach
+Notiz löschen
+Notiz hinzufügen
+Gespeichertes Board öffnen
+Board geladen
+Alle Notizen entfernen und mit einem leeren Board beginnen?
+Dein Board wird nur in diesem Browser gespeichert. Ziehe Notizen zwischen den Feldern oder nutze das Menü an einer Notiz, um sie zu verschieben.
+Zum Verschieben ziehen
+Diese Datei ist kein gespeichertes Board.
+Als Datei speichern
+Neu beginnen
+Beispiel laden
+Kopiert

@@ -11,7 +11,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - ◐ partly built: 15
 - 🔗 link-out or covered elsewhere: 8
 - ❌ not built: 13
-- Utility tools on the site: 286 (plus 26 PDF tools from the first redesign)
+- Utility tools on the site: 293 (plus 26 PDF tools from the first redesign)
 
 ## PDF, documents & print
 
@@ -361,6 +361,12 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - [pdf-text-search](/en/pdf-text-search/)
 - [epub-to-pdf](/en/epub-to-pdf/)
 - [delivery-note-generator](/en/delivery-note-generator/)
+- [business-model-canvas](/en/business-model-canvas/)
+- [lean-canvas](/en/lean-canvas/)
+- [eisenhower-matrix-board](/en/eisenhower-matrix-board/)
+- [pestel-analysis-board](/en/pestel-analysis-board/)
+- [porters-five-forces-board](/en/porters-five-forces-board/)
+- [empathy-map-canvas](/en/empathy-map-canvas/)
 - [exif-viewer](/en/exif-viewer/)
 - [heic-to-jpg](/en/heic-to-jpg/)
 - [images-to-gif](/en/images-to-gif/)
@@ -383,6 +389,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - [swot-analysis-maker](/en/swot-analysis-maker/)
 - [priority-matrix-maker](/en/priority-matrix-maker/)
 - [rotation-schedule-generator](/en/rotation-schedule-generator/)
+- [team-canvas](/en/team-canvas/)
 - [readability-score](/en/readability-score/)
 - [text-summarizer](/en/text-summarizer/)
 - [text-similarity-checker](/en/text-similarity-checker/)
