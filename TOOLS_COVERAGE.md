@@ -11,7 +11,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - ◐ partly built: 15
 - 🔗 link-out or covered elsewhere: 8
 - ❌ not built: 13
-- Utility tools on the site: 278 (plus 26 PDF tools from the first redesign)
+- Utility tools on the site: 286 (plus 26 PDF tools from the first redesign)
 
 ## PDF, documents & print
 
@@ -375,6 +375,14 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - [noise-reducer](/en/noise-reducer/)
 - [bpm-key-detector](/en/bpm-key-detector/)
 - [qr-code-generator](/en/qr-code-generator/)
+- [random-team-generator](/en/random-team-generator/)
+- [planning-poker](/en/planning-poker/)
+- [retrospective-board](/en/retrospective-board/)
+- [raci-matrix-generator](/en/raci-matrix-generator/)
+- [meeting-agenda-planner](/en/meeting-agenda-planner/)
+- [swot-analysis-maker](/en/swot-analysis-maker/)
+- [priority-matrix-maker](/en/priority-matrix-maker/)
+- [rotation-schedule-generator](/en/rotation-schedule-generator/)
 - [readability-score](/en/readability-score/)
 - [text-summarizer](/en/text-summarizer/)
 - [text-similarity-checker](/en/text-similarity-checker/)

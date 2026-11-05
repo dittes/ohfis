@@ -487,6 +487,49 @@ Object.assign(custom, {
     await area(page).fill('CEO, Anna\n  CTO, Ben\n    Dev, Cy\n  CFO, Dee'); await page.waitForTimeout(500); const txt = await page.locator('#tool-root svg').first().innerHTML(); for (const n of ['CEO', 'Anna', 'CTO', 'CFO', 'Dev']) assert.ok(txt.includes(n), n);
     const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Download SVG' }).click()]); assert.ok(readFileSync(await dl.path(), 'utf8').includes('<svg'));
   },
+  async 'random-team-generator'(page) {
+    await area(page).fill('A: 5\nB: 5\nC: 1\nD: 1\nE: 3\nF: 3'); await page.waitForTimeout(400); let t = await rootText(page); assert.ok(t.includes('Team 1') && t.includes('Team 2') && !t.includes('Team 3'), t.slice(0, 300));
+    const totals = [...t.matchAll(/Skill total: ([\d.,]+)/g)].map(m => Number(m[1])); assert.deepEqual(totals, [9, 9]);
+    await page.locator('#tool-root input[type=number]').fill('3'); await page.waitForTimeout(400); t = await rootText(page); assert.ok(t.includes('Team 3'));
+    await area(page, 1).fill('A != B'); await page.getByRole('button', { name: 'Shuffle again' }).click(); await page.waitForTimeout(200); const teams = await page.locator('.tm-box').allInnerTexts(); assert.ok(!teams.some(x => x.includes('A (') && x.includes('B (')), 'A and B apart');
+  },
+  async 'planning-poker'(page) {
+    const t = n => page.locator('.tm-card', { hasText: new RegExp(`^${n}$`) }).first();
+    assert.match(await rootText(page), /Pass the device to:\s*Ann/); for (const c of ['3', '5', '5', '8']) await t(c).click();
+    assert.ok((await rootText(page)).includes('Everyone has voted')); await page.getByRole('button', { name: 'Reveal the cards' }).click(); const txt = await rootText(page);
+    assert.ok(/Median\s*5/.test(txt.replace(/\n/g, ' ')) && txt.includes('No consensus'), txt.slice(0, 400));
+    await page.getByRole('button', { name: 'New round' }).click(); assert.match(await rootText(page), /Pass the device to:\s*Ann/);
+  },
+  async 'retrospective-board'(page) {
+    const inp = page.locator('.tm-col input[type=text]').first(); await inp.fill('Fast deploys'); await inp.press('Enter'); const inp2 = page.locator('.tm-col input[type=text]').nth(1); await inp2.fill('Flaky tests'); await inp2.press('Enter'); await inp2.fill('Slow reviews'); await inp2.press('Enter');
+    await page.locator('.tm-cardlist li', { hasText: 'Slow reviews' }).getByRole('button', { name: /👍/ }).click(); await page.waitForTimeout(100); const first = await page.locator('.tm-col').nth(1).locator('li span').first().innerText(); assert.equal(first, 'Slow reviews');
+    await page.reload(); await page.waitForSelector('[data-ready=true]'); assert.ok((await rootText(page)).includes('Fast deploys'), 'saved in the browser');
+    await page.locator('.tm-col select, #tool-root select').first().selectOption('ssc'); assert.ok((await rootText(page)).includes('Continue'));
+  },
+  async 'raci-matrix-generator'(page) {
+    assert.ok((await rootText(page)).includes('Every task has exactly one A')); await area(page).fill('Task;Ann;Ben\nPlan;A;A\nBuild;;R\nShip;A;R'); await page.waitForTimeout(400);
+    const t = await rootText(page); assert.ok(t.includes('Plan: has more than one Accountable') && t.includes('Build: has no one Accountable') && !t.includes('Ship:'), t.slice(0, 400));
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Download CSV' }).click()]); assert.ok(readFileSync(await dl.path(), 'utf8').startsWith('Task,Ann,Ben'));
+  },
+  async 'meeting-agenda-planner'(page) {
+    await area(page).fill('Welcome; 5\nStatus - 20\nDecide | 25 min'); await page.locator('#tool-root input[type=time]').fill('09:30'); await page.waitForTimeout(300); let t = (await rootText(page)).replace(/\s+/g, ' ');
+    assert.ok(t.includes('09:30') && t.includes('09:55') && /Ends at 10:20/.test(t) && /Total minutes 50/.test(t), t.slice(0, 400)); assert.ok(t.includes('Fits into the time you have: 10 minutes left'), t);
+    await page.locator('#tool-root input[type=number]').fill('45'); await page.waitForTimeout(300); assert.ok((await rootText(page)).includes('longer than the time you have by 5'));
+  },
+  async 'swot-analysis-maker'(page) {
+    const txt = await rootText(page); for (const k of ['Strengths', 'Weaknesses', 'Opportunities', 'Threats', 'Our product']) assert.ok(txt.includes(k), k);
+    await area(page).fill('Brand new strength'); await page.waitForTimeout(400); assert.ok((await page.locator('.tm-sw--0').innerText()).includes('Brand new strength'));
+  },
+  async 'priority-matrix-maker'(page) {
+    let t = await page.locator('.tm-matrix').innerText(); assert.ok(/Quick wins[\s\S]*Search filter/.test(t) && /Money pits[\s\S]*Rewrite the backend/.test(t), t);
+    await page.locator('#tool-root select').selectOption('ei'); await page.waitForTimeout(400); t = await page.locator('.tm-matrix').innerText(); assert.ok(/Do now[\s\S]*Server is down/.test(t) && /Drop[\s\S]*Scroll social media/.test(t), t);
+    await page.locator('#tool-root select').selectOption('ie'); await area(page).fill('Bad line; high; 2'); await page.waitForTimeout(400); assert.ok((await rootText(page)).includes('Check the line "Bad line"'));
+  },
+  async 'rotation-schedule-generator'(page) {
+    await page.locator('#tool-root input[type=date]').fill('2026-01-05'); await area(page, 1).fill('Ben: 2026-01-12 to 2026-01-18'); await page.waitForTimeout(400); const rows = await page.locator('#tool-root tr').allInnerTexts();
+    const who = rows.slice(1, 5).map(r => r.split('\t').pop().trim()); assert.deepEqual(who, ['Ann', 'Cleo', 'Dev', 'Ann'], JSON.stringify(rows.slice(1, 5)));
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Download CSV' }).click()]); assert.ok(readFileSync(await dl.path(), 'utf8').startsWith('from,to,who\n2026-01-05,2026-01-11,"Ann"'));
+  },
   async 'tone-auditor'(page) {
     await area(page).fill('As per my last email, you never listen. Sorry, sorry, sorry!!! Please advise ASAP.'); await page.waitForTimeout(500); const marks = await page.locator('#tool-root mark').allInnerTexts(); assert.ok(marks.some(m => /per my last email/i.test(m)), 'flags passive-aggressive phrase: ' + marks); assert.ok(marks.some(m => /you never/i.test(m)), 'flags blaming');
     await area(page).fill('Thanks for the update, I will review it tomorrow.'); await page.waitForTimeout(400); assert.equal(await page.locator('#tool-root mark').count(), 0, 'clean text has no marks');

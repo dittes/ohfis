@@ -317,6 +317,14 @@ Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.
 - [Org Chart Maker from Indented Text](https://ohfis.com/en/org-chart-maker/): Turn an indented list of people into an organisation chart and download it as an image.
 - [Passive-Aggressive Tone Checker for Emails](https://ohfis.com/en/tone-auditor/): Highlight guilt-tripping, over-apologising and passive-aggressive phrases with kinder alternatives.
 - [Brain Dump Organizer (Sort Thoughts into Tasks)](https://ohfis.com/en/brain-dump-organizer/): Paste everything on your mind and get tasks, questions, ideas and worries sorted.
+- [Random Team Generator (Split a Group into Teams)](https://ohfis.com/en/random-team-generator/): Split a list of people into balanced random teams, with optional skill levels and pairs to keep apart.
+- [Planning Poker for Agile Estimation (One Device)](https://ohfis.com/en/planning-poker/): Estimate stories with secret cards on one shared screen, then reveal the votes and see median and spread.
+- [Retrospective Board (Went Well / To Improve / Actions)](https://ohfis.com/en/retrospective-board/): Collect retro cards in columns, vote with thumbs-up and copy the sorted result as Markdown.
+- [RACI Matrix Generator and Checker](https://ohfis.com/en/raci-matrix-generator/): Build a RACI chart for tasks and roles and check that every task has exactly one accountable person.
+- [Meeting Agenda Planner with Times](https://ohfis.com/en/meeting-agenda-planner/): Turn agenda items with durations into a timed agenda and see when the meeting ends.
+- [SWOT Analysis Maker](https://ohfis.com/en/swot-analysis-maker/): Fill in strengths, weaknesses, opportunities and threats and get a clean SWOT grid to copy or print.
+- [Priority Matrix Maker (Impact/Effort and Eisenhower)](https://ohfis.com/en/priority-matrix-maker/): Sort tasks into quick wins, big bets, fill-ins and money pits, or into the Eisenhower quadrants.
+- [Rotation Schedule Generator (On-Call, Cleaning, Chair Duty)](https://ohfis.com/en/rotation-schedule-generator/): Create a fair rotation of people over days, weeks or fortnights and skip anyone who is away.
 
 ## Audio & Video
 

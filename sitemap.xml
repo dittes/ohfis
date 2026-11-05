@@ -8821,6 +8821,294 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/brain-dump-organizer/"/>
   </url>
   <url>
+    <loc>https://ohfis.com/en/random-team-generator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/random-team-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zufalls-teamgenerator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-losowych-zespolow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-nahodnych-tymu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/random-team-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/zufalls-teamgenerator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/random-team-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zufalls-teamgenerator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-losowych-zespolow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-nahodnych-tymu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/random-team-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/generator-losowych-zespolow/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/random-team-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zufalls-teamgenerator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-losowych-zespolow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-nahodnych-tymu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/random-team-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/generator-nahodnych-tymu/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/random-team-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/zufalls-teamgenerator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-losowych-zespolow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-nahodnych-tymu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/random-team-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/planning-poker/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/planning-poker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/planning-poker-fuer-agile-schaetzungen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/planning-poker-do-szacowania-zadan/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/planovaci-poker-pro-agilni-odhady/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/planning-poker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/planning-poker-fuer-agile-schaetzungen/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/planning-poker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/planning-poker-fuer-agile-schaetzungen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/planning-poker-do-szacowania-zadan/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/planovaci-poker-pro-agilni-odhady/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/planning-poker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/planning-poker-do-szacowania-zadan/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/planning-poker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/planning-poker-fuer-agile-schaetzungen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/planning-poker-do-szacowania-zadan/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/planovaci-poker-pro-agilni-odhady/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/planning-poker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/planovaci-poker-pro-agilni-odhady/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/planning-poker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/planning-poker-fuer-agile-schaetzungen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/planning-poker-do-szacowania-zadan/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/planovaci-poker-pro-agilni-odhady/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/planning-poker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/retrospective-board/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/retrospective-board/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/retro-board/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tablica-retrospektywy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/retrospektivni-nastenka/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/retrospective-board/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/retro-board/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/retrospective-board/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/retro-board/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tablica-retrospektywy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/retrospektivni-nastenka/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/retrospective-board/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/tablica-retrospektywy/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/retrospective-board/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/retro-board/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tablica-retrospektywy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/retrospektivni-nastenka/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/retrospective-board/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/retrospektivni-nastenka/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/retrospective-board/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/retro-board/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/tablica-retrospektywy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/retrospektivni-nastenka/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/retrospective-board/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/raci-matrix-generator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/raci-matrix-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/raci-matrix-erstellen-und-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-i-kontrola-macierzy-raci/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-a-kontrola-matice-raci/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/raci-matrix-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/raci-matrix-erstellen-und-pruefen/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/raci-matrix-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/raci-matrix-erstellen-und-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-i-kontrola-macierzy-raci/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-a-kontrola-matice-raci/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/raci-matrix-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/generator-i-kontrola-macierzy-raci/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/raci-matrix-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/raci-matrix-erstellen-und-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-i-kontrola-macierzy-raci/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-a-kontrola-matice-raci/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/raci-matrix-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/generator-a-kontrola-matice-raci/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/raci-matrix-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/raci-matrix-erstellen-und-pruefen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-i-kontrola-macierzy-raci/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-a-kontrola-matice-raci/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/raci-matrix-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/meeting-agenda-planner/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/meeting-agenda-planner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/meeting-agenda-mit-uhrzeiten-planen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/planer-agendy-spotkania-z-godzinami/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/planovac-agendy-schuzky-s-casy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/meeting-agenda-planner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/meeting-agenda-mit-uhrzeiten-planen/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/meeting-agenda-planner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/meeting-agenda-mit-uhrzeiten-planen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/planer-agendy-spotkania-z-godzinami/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/planovac-agendy-schuzky-s-casy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/meeting-agenda-planner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/planer-agendy-spotkania-z-godzinami/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/meeting-agenda-planner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/meeting-agenda-mit-uhrzeiten-planen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/planer-agendy-spotkania-z-godzinami/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/planovac-agendy-schuzky-s-casy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/meeting-agenda-planner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/planovac-agendy-schuzky-s-casy/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/meeting-agenda-planner/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/meeting-agenda-mit-uhrzeiten-planen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/planer-agendy-spotkania-z-godzinami/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/planovac-agendy-schuzky-s-casy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/meeting-agenda-planner/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/swot-analysis-maker/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/swot-analysis-maker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/swot-analyse-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/kreator-analizy-swot/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tvorba-analyzy-swot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/swot-analysis-maker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/swot-analyse-erstellen/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/swot-analysis-maker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/swot-analyse-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/kreator-analizy-swot/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tvorba-analyzy-swot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/swot-analysis-maker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/kreator-analizy-swot/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/swot-analysis-maker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/swot-analyse-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/kreator-analizy-swot/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tvorba-analyzy-swot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/swot-analysis-maker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/tvorba-analyzy-swot/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/swot-analysis-maker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/swot-analyse-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/kreator-analizy-swot/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tvorba-analyzy-swot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/swot-analysis-maker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/priority-matrix-maker/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/priority-matrix-maker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/prioritaetenmatrix/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/macierz-priorytetow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/matice-priorit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/priority-matrix-maker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/prioritaetenmatrix/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/priority-matrix-maker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/prioritaetenmatrix/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/macierz-priorytetow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/matice-priorit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/priority-matrix-maker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/macierz-priorytetow/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/priority-matrix-maker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/prioritaetenmatrix/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/macierz-priorytetow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/matice-priorit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/priority-matrix-maker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/matice-priorit/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/priority-matrix-maker/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/prioritaetenmatrix/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/macierz-priorytetow/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/matice-priorit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/priority-matrix-maker/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/en/rotation-schedule-generator/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rotation-schedule-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rotationsplan-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-harmonogramu-rotacji/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-planu-stridani/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rotation-schedule-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/de/rotationsplan-erstellen/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rotation-schedule-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rotationsplan-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-harmonogramu-rotacji/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-planu-stridani/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rotation-schedule-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/pl/generator-harmonogramu-rotacji/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rotation-schedule-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rotationsplan-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-harmonogramu-rotacji/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-planu-stridani/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rotation-schedule-generator/"/>
+  </url>
+  <url>
+    <loc>https://ohfis.com/cs/generator-planu-stridani/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/rotation-schedule-generator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ohfis.com/de/rotationsplan-erstellen/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/generator-harmonogramu-rotacji/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/generator-planu-stridani/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/rotation-schedule-generator/"/>
+  </url>
+  <url>
     <loc>https://ohfis.com/en/zero-width-character-remover/</loc>
     <lastmod>2026-11-05</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ohfis.com/en/zero-width-character-remover/"/>

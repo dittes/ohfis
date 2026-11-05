@@ -2973,3 +2973,111 @@ Vyberte počáteční datum.
 Načítání videojádra (asi 31 MB, jen jednou)…
 Zpracování…
 Zrušeno.
+Jedno jméno na řádek, volitelně s číslem dovednosti: „Anna: 4“
+Počet týmů
+Lidí v týmu
+Tým
+Součet dovedností
+Kopírovat týmy
+Lidé se rozdělují náhodně; s čísly dovedností zajistí vyvážené týmy způsob hada. Jména tuto stránku nikdy neopustí.
+Oddělit (volitelné, jedna dvojice na řádek)
+Jedna osoba na řádek
+Přepracování platební stránky
+Fibonacci (0, 1, 2, 3, 5, 8 …)
+Velikosti triček
+Mocniny dvou
+Přidejte alespoň dva hráče.
+Všichni odhlasovali.
+Odkrýt karty
+Předejte zařízení hráči
+Vyberte kartu tajně; další hráč ji neuvidí.
+Odhlasovalo
+Nejvíce hlasů
+Rozptyl
+Shoda: všichni zvolili stejnou kartu.
+Bez shody: nechte hlasujícího s nejnižším a nejvyšším hlasem vysvětlit důvody a hlasujte znovu.
+Nové kolo
+Kopírovat výsledek
+Příběh nebo úkol
+Balíček karet
+Plánovací poker na jednom zařízení: jedno zařízení, všichni hlasují postupně. Nic se nikam neposílá.
+Hráči
+Příběh
+Povedlo se
+Zlepšit
+Akce
+Zachovat
+Problém
+Vyzkoušet
+Líbilo se
+Naučili jsme se
+Chybělo
+Toužili jsme po
+Povedlo se / Zlepšit / Akce
+Start / Stop / Continue
+Keep / Problem / Try
+Four Ls
+Přidejte kartu a stiskněte Enter
+Odebrat všechny karty?
+Vyčistit nástěnku
+Nástěnka se ukládá jen v tomto prohlížeči. Používejte ji na schůzce na jedné obrazovce nebo zkopírujte Markdown a sdílejte výsledek.
+Úkol;Anna;Ben;Klára⏎Napsat zadání;A;R;C⏎Postavit prototyp;I;A;R⏎Testy s uživateli;C;A;R⏎Spuštění;A;R;I
+nemá odpovědnou osobu (A)
+má více než jednu odpovědnou osobu (A)
+nemá nikoho, kdo úkol provádí (R)
+Úkol
+Každý úkol má právě jedno A a alespoň jedno R.
+R = provádí (dělá práci), A = odpovídá (rozhoduje, jedna osoba), C = konzultován, I = informován.
+Matice: první řádek = role, pak jeden úkol na řádek (oddělené ; , nebo tabulátorem)
+Matice
+Čas zahájení
+Body agendy
+Uvítání a cíle; 5⏎Kolo statusů; 15⏎Hlavní téma: ceny; 25⏎Rozhodnutí a zodpovědní; 10⏎Závěr; 5
+Do
+Bod
+Konec v
+Minut celkem
+Agenda je delší než dostupný čas o
+minut.
+Vejde se do dostupného času:
+minut zbývá.
+Kopírovat agendu
+Dostupný čas (minuty, 0 = ignorovat)
+Body: „název; minuty“, jeden na řádek
+Zadejte čas zahájení, například 09:30.
+Silné stránky
+Slabé stránky
+Příležitosti
+Hrozby
+Náš produkt
+Rychlé zaškolení⏎Silná značka
+Malý tým⏎Jeden klíčový dodavatel
+Nový trh v Evropě⏎Partnerský program
+Nový konkurent⏎Rostoucí náklady
+Tisk
+Dopad a úsilí
+Naléhavé a důležité (Eisenhower)
+Filtr vyhledávání; 5; 2⏎Nová pokladna; 5; 5⏎Opravit překlepy; 1; 1⏎Přepsat backend; 2; 5⏎Uvítací e-mail; 4; 2
+Server nefunguje; ano; ano⏎Naplánovat příští čtvrtletí; ne; ano⏎Odpovědět na rutinní e-mail; ano; ne⏎Procházet sociální sítě; ne; ne
+Rychlé výhry (vysoký dopad, nízké úsilí): udělejte první
+Velké sázky (vysoký dopad, vysoké úsilí): pečlivě naplánujte
+Výplně (nízký dopad, nízké úsilí): udělejte při volné chvíli
+Žrouti času (nízký dopad, vysoké úsilí): vyhněte se
+Udělat hned (naléhavé a důležité)
+Naplánovat (důležité, nenaléhavé)
+Delegovat (naléhavé, nedůležité)
+Vypustit (ani jedno)
+Body: „název; dopad 1–5; úsilí 1–5“ (Eisenhower: „název; naléhavé ano/ne; důležité ano/ne“)
+První den
+Každé dva týdny
+Nepřítomen
+Ve službě
+Kopírovat plán
+Lidé v pořadí (jeden na řádek)
+Délka kola
+Počet kol
+Nepřítomnost (volitelné): „Jméno: 2026-01-12 to 2026-01-18“
+Ben: 2026-01-12 to 2026-01-18
+Anna⏎Ben⏎Klára⏎David
+Anna: 5⏎Ben: 3⏎Klára: 4⏎David: 2⏎Eva: 3⏎Fiona: 5⏎Gustav: 1⏎Hana: 4
+Oddělit

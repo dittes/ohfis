@@ -4,6 +4,7 @@ import { calcTool } from './calctool.js';
 import * as N from './lib/notes.js';
 import { parseOutline, auditTone, findBuzzwords } from './lib/text.js';
 import { secureRandom } from './lib/text.js';
+import * as TM from './lib/team.js';
 
 const svgNS = 'http://www.w3.org/2000/svg'; const s = (tag, a = {}, ...kids) => { const e = document.createElementNS(svgNS, tag); for (const [k, v] of Object.entries(a)) e.setAttribute(k, v); kids.forEach(k => e.append(k)); return e; };
 const lines = v => v.split(/\r?\n/).map(x => x.trim()).filter(Boolean);
@@ -64,3 +65,84 @@ export const tools = {
     ui.append(h('div', { class: 'ut-colhead' }, h('strong', {}, 'Your brain dump'), h('span', { class: 'ut-colbtns' }, btn(t('sample'), () => { input.value = SAMPLE; run(); }, 'ghost'), btn(t('clear'), () => { input.value = ''; run(); }, 'ghost'))), input, info, out, h('div', { class: 'ut-actions' }, btn('Copy as Markdown checklist', () => copyText(md), 'primary'), btn('Download .md', () => download('brain-dump.md', md), 'secondary')), h('p', { class: 'pt-hint' }, 'A simple rule-based sorter, not artificial intelligence: it looks for action verbs ("call", "send", "need to"), question marks, words like "idea", "what if", "worried", "risk", dates and "urgent"/"asap". It is fast, private and predictable, but it will misfile some lines; drag the result into your own order. Nothing leaves your browser.')); run();
   },
 };
+
+const rng = () => secureRandom(1e9) / 1e9;
+const store = { get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* private mode */ } } };
+const box = (title, kids, cls = '') => h('div', { class: `tm-box ${cls}` }, h('h3', {}, title), ...kids);
+const list = items => h('ul', { class: 'tm-list' }, items.map(x => h('li', {}, x)));
+
+Object.assign(tools, {
+  'random-team-generator'(root) {
+    const ui = wrap(root); const names = area({ rows: 8, placeholder: 'One name per line, optional skill: "Ann: 4"', onInput: debounce(run, 200), 'aria-label': 'Names' }); names.value = tr('Ann: 5\nBen: 3\nCleo: 4\nDev: 2\nEli: 3\nFay: 5\nGus: 1\nHana: 4');
+    const mode = select([['count', 'Number of teams'], ['size', 'People per team']], 'count', { onChange: run }), n = numInput(2, { min: 1, max: 50, step: 1, onInput: debounce(run, 200) });
+    const apart = area({ rows: 3, placeholder: 'Ann != Ben', onInput: debounce(run, 200), 'aria-label': 'Keep apart' }); const out = h('div'); let last = [];
+    function run() { out.replaceChildren(); const people = TM.parsePeople(names.value); if (people.length < 2) return; const pairs = lines(apart.value).map(l => l.split(/\s*!=\s*/).map(x => x.trim())).filter(p => p.length === 2 && p[0] && p[1]);
+      last = TM.makeTeams(people, { mode: mode.value, n: Math.max(1, Math.floor(Number(n.value)) || 1), rng, apart: pairs }); const leveled = people.some(p => p.level != null);
+      out.append(h('div', { class: 'tm-grid' }, last.map((t, i) => box(`${tr('Team')} ${i + 1}`, [list(t.map(p => p.level != null ? `${p.name} (${p.level})` : p.name)), leveled ? h('p', { class: 'pt-hint' }, `${tr('Skill total')}: ${fmtNum(t.reduce((a, p) => a + (p.level || 0), 0), 1)}`) : null]))), h('div', { class: 'ut-actions' }, btn('Shuffle again', run, 'primary'), btn('Copy teams', () => copyText(last.map((t, i) => `${tr('Team')} ${i + 1}: ${t.map(p => p.name).join(', ')}`).join('\n')))), h('p', { class: 'pt-hint' }, 'People are dealt at random; with skill numbers a snake draft keeps the teams balanced. Names never leave this page.')); }
+    ui.append(h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, field('Names', names), h('div', { class: 'ut-options' }, field('Split by', mode), field('How many', n)), field('Keep apart (optional, one pair per line)', apart)), out)); run();
+  },
+  'planning-poker'(root) {
+    const ui = wrap(root); const players = area({ rows: 5, placeholder: 'One player per line', onInput: debounce(reset, 200), 'aria-label': 'Players' }); players.value = tr('Ann\nBen\nCleo\nDev'); const story = textInput(tr('Checkout page redesign'), { 'aria-label': 'Story' });
+    const deck = select([['fibonacci', 'Fibonacci (0, 1, 2, 3, 5, 8 …)'], ['tshirt', 'T-shirt sizes'], ['powers', 'Powers of two']], 'fibonacci', { onChange: reset }); const out = h('div'); let votes = {}, turn = 0, revealed = false;
+    const who = () => lines(players.value);
+    function reset() { votes = {}; turn = 0; revealed = false; draw(); }
+    function draw() { out.replaceChildren(); const P = who(); if (P.length < 2) { out.append(h('p', { class: 'pt-hint' }, 'Add at least two players.')); return; }
+      if (!revealed) { const cur = P[turn]; if (cur == null) { out.append(h('p', {}, tr('Everyone has voted.')), btn('Reveal the cards', () => { revealed = true; draw(); }, 'primary')); }
+        else { out.append(h('p', { class: 'tm-turn' }, `${tr('Pass the device to')}: `, h('strong', {}, cur)), h('p', { class: 'pt-hint' }, 'Pick a card in secret; the next player cannot see it.'), h('div', { class: 'tm-cards' }, TM.DECKS[deck.value].map(c => btn(c, () => { votes[cur] = c; turn++; draw(); }, 'secondary', { class: 's-btn s-btn--secondary tm-card' })))); }
+        out.append(h('p', { class: 'pt-hint' }, `${tr('Voted')}: ${Object.keys(votes).length} / ${P.length}`)); return; }
+      const st = TM.pokerStats(Object.values(votes)); const f = v => v == null ? '–' : fmtNum(v, 1);
+      out.append(h('div', { class: 'tm-cards tm-cards--shown' }, P.map(p => h('div', { class: 'tm-shown' }, h('span', {}, p), h('strong', {}, votes[p] ?? '–')))), h('div', { class: 'ut-cards' }, stat('Median', f(st.median)), stat('Average', f(st.mean)), stat('Most votes', st.mode.join(', ')), stat('Spread', f(st.spread))),
+        h('p', { class: st.consensus ? 'tm-ok' : 'pt-hint' }, st.consensus ? tr('Consensus: everyone chose the same card.') : tr('No consensus: let the lowest and the highest voter explain, then vote again.')), h('div', { class: 'ut-actions' }, btn('New round', reset, 'primary'), btn('Copy result', () => copyText(`${story.value}: ${P.map(p => `${p} ${votes[p] ?? '-'}`).join(', ')} (${tr('Median')} ${f(st.median)})`)))); }
+    ui.append(h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, field('Players', players), field('Story or task', story), field('Card deck', deck), h('p', { class: 'pt-hint' }, 'Hot-seat planning poker: one device, each person votes in turn. Nothing is sent anywhere.')), h('div', { class: 'ut-col' }, out))); draw();
+  },
+  'retrospective-board'(root) {
+    const ui = wrap(root); const PRE = { ssc: ['Start', 'Stop', 'Continue'], wwi: ['Went well', 'To improve', 'Actions'], kpt: ['Keep', 'Problem', 'Try'], fourl: ['Liked', 'Learned', 'Lacked', 'Longed for'] };
+    const preset = select([['wwi', 'Went well / To improve / Actions'], ['ssc', 'Start / Stop / Continue'], ['kpt', 'Keep / Problem / Try'], ['fourl', 'Four Ls']], 'wwi', { onChange: () => { state = { preset: preset.value, cards: [] }; save(); draw(); } });
+    let state = store.get('fo-retro', null) || { preset: 'wwi', cards: [] }; preset.value = state.preset; const board = h('div', { class: 'tm-board' }); const save = () => store.set('fo-retro', state);
+    function md() { return PRE[state.preset].map((c, i) => `## ${tr(c)}\n${state.cards.filter(x => x.col === i).sort((a, b) => b.votes - a.votes).map(x => `- ${x.text}${x.votes ? ` (+${x.votes})` : ''}`).join('\n') || '-'}`).join('\n\n'); }
+    function draw() { board.replaceChildren(...PRE[state.preset].map((col, i) => { const inp = textInput('', { placeholder: 'Add a card and press Enter', 'aria-label': `${tr(col)}`, onKeydown: e => { if (e.key === 'Enter' && inp.value.trim()) { state.cards.push({ col: i, text: inp.value.trim(), votes: 0 }); save(); draw(); } } });
+      return h('div', { class: 'tm-col' }, h('h3', {}, col), inp, h('ul', { class: 'tm-cardlist' }, state.cards.map((c, k) => [c, k]).filter(([c]) => c.col === i).sort((a, b) => b[0].votes - a[0].votes).map(([c, k]) => h('li', {}, h('span', {}, c.text), h('span', { class: 'tm-vote' }, btn(`👍 ${c.votes}`, () => { c.votes++; save(); draw(); }, 'ghost'), btn('×', () => { state.cards.splice(k, 1); save(); draw(); }, 'ghost', { 'aria-label': tr('Delete card') })))))); })); }
+    ui.append(h('div', { class: 'ut-options' }, field('Format', preset), btn('Copy as Markdown', () => copyText(md()), 'primary'), btn('Clear board', () => { if (confirm(tr('Remove all cards?'))) { state.cards = []; save(); draw(); } })), board, h('p', { class: 'pt-hint' }, 'The board is saved in this browser only. Use it on one screen in the meeting, or copy the Markdown to share the result.')); draw();
+  },
+  'raci-matrix-generator'(root) {
+    const ui = wrap(root); const input = area({ rows: 8, placeholder: 'Task;Ann;Ben', onInput: debounce(run, 200), 'aria-label': 'Matrix' }); input.value = tr('Task;Ann;Ben;Cleo\nWrite the brief;A;R;C\nBuild the prototype;I;A;R\nUser tests;C;A;R\nLaunch;A;R;I'); const out = h('div');
+    function run() { out.replaceChildren(); const { roles, rows } = TM.parseRaci(input.value); if (!roles.length || !rows.length) return; const issues = TM.raciCheck(rows);
+      const msg = { noA: 'has no one Accountable (A)', manyA: 'has more than one Accountable (A)', noR: 'has no one Responsible (R)' };
+      out.append(table([['Task', ...roles], ...rows.map(r => [r.task, ...roles.map(x => r.roles[x])])]), issues.length ? h('ul', { class: 'tm-issues' }, issues.map(i => h('li', {}, `${i.task}: ${tr(msg[i.kind])}`))) : h('p', { class: 'tm-ok' }, tr('Every task has exactly one A and at least one R.')),
+        h('div', { class: 'ut-actions' }, btn('Copy as Markdown', () => copyText(`| Task | ${roles.join(' | ')} |\n|---|${roles.map(() => '---').join('|')}|\n${rows.map(r => `| ${r.task} | ${roles.map(x => r.roles[x] || '').join(' | ')} |`).join('\n')}`), 'primary'), btn('Download CSV', () => download('raci.csv', ['Task', ...roles].join(',') + '\n' + rows.map(r => [r.task, ...roles.map(x => r.roles[x])].map(v => `"${(v || '').replace(/"/g, '""')}"`).join(',')).join('\n'), 'text/csv'))),
+        h('p', { class: 'pt-hint' }, 'R = Responsible (does the work), A = Accountable (decides, one person), C = Consulted, I = Informed.')); }
+    ui.append(h('div', { class: 'ut-col' }, h('strong', {}, 'Matrix: first line = roles, then one task per line (separate with ; , or a tab)'), input), out); run();
+  },
+  'meeting-agenda-planner'(root) {
+    const ui = wrap(root); const start = h('input', { type: 'time', class: 'pt-input', value: '09:30', 'aria-label': 'Start time', onInput: run }); const input = area({ rows: 8, placeholder: 'Welcome; 5', onInput: debounce(run, 200), 'aria-label': 'Agenda items' }); input.value = tr('Welcome and goals; 5\nStatus round; 15\nMain topic: pricing; 25\nDecisions and owners; 10\nWrap-up; 5'); const limit = numInput(60, { min: 0, step: 5, onInput: run }); const out = h('div');
+    function run() { out.replaceChildren(); try { const a = TM.agenda(input.value, start.value || '09:30'); if (!a.rows.length) return; const over = Number(limit.value) > 0 && a.total > Number(limit.value);
+      out.append(table([['From', 'To', 'Minutes', 'Item'], ...a.rows.map(r => [r.start, r.end, r.minutes, r.title])]), h('div', { class: 'ut-cards' }, stat('Ends at', a.end), stat('Total minutes', a.total)), over ? h('p', { class: 'tm-issues' }, `${tr('The agenda is longer than the time you have by')} ${a.total - Number(limit.value)} ${tr('minutes.')}`) : h('p', { class: 'tm-ok' }, Number(limit.value) > 0 ? `${tr('Fits into the time you have:')} ${Number(limit.value) - a.total} ${tr('minutes left.')}` : ''),
+        h('div', { class: 'ut-actions' }, btn('Copy agenda', () => copyText(`${a.rows.map(r => `${r.start}–${r.end}  ${r.title} (${r.minutes} min)`).join('\n')}`), 'primary'), btn('Copy as Markdown', () => copyText(`| Time | Item |\n|---|---|\n${a.rows.map(r => `| ${r.start}–${r.end} | ${r.title} |`).join('\n')}`)))); } catch (e) { out.append(h('p', { class: 'pt-drop__error', role: 'alert' }, tr(e.message))); } }
+    ui.append(h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, h('div', { class: 'ut-options' }, field('Start time', start), field('Time available (minutes, 0 = ignore)', limit)), h('strong', {}, 'Items: "title; minutes", one per line'), input), out)); run();
+  },
+  'swot-analysis-maker'(root) {
+    const ui = wrap(root); const Q = [['Strengths', 'Fast onboarding\nStrong brand'], ['Weaknesses', 'Small team\nOne key supplier'], ['Opportunities', 'New market in Europe\nPartner programme'], ['Threats', 'New competitor\nRising costs']];
+    const title = textInput(tr('Our product'), { 'aria-label': 'Title', onInput: debounce(run, 200) }); const areas = Q.map(([k, v]) => { const a = area({ rows: 5, 'aria-label': k, onInput: debounce(run, 200) }); a.value = tr(v); return a; }); const out = h('div');
+    function run() { out.replaceChildren(h('h3', { class: 'tm-swot-title' }, title.value), h('div', { class: 'tm-swot' }, Q.map(([k], i) => h('div', { class: `tm-sw tm-sw--${i}` }, h('h4', {}, k), list(lines(areas[i].value))))), h('div', { class: 'ut-actions' }, btn('Copy as Markdown', () => copyText(`# ${title.value}\n\n${Q.map(([k], i) => `## ${tr(k)}\n${lines(areas[i].value).map(x => `- ${x}`).join('\n')}`).join('\n\n')}`), 'primary'), btn('Print', () => window.print()))); }
+    ui.append(h('div', { class: 'ut-options' }, field('Title', title)), h('div', { class: 'tm-grid' }, Q.map(([k], i) => h('div', { class: 'ut-col' }, h('strong', {}, k), areas[i]))), out); run();
+  },
+  'priority-matrix-maker'(root) {
+    const ui = wrap(root); const mode = select([['ie', 'Impact and effort'], ['ei', 'Urgent and important (Eisenhower)']], 'ie', { onChange: () => { input.value = tr(SAMPLE[mode.value]); run(); } });
+    const SAMPLE = { ie: 'Search filter; 5; 2\nNew checkout; 5; 5\nFix typos; 1; 1\nRewrite the backend; 2; 5\nOnboarding email; 4; 2', ei: 'Server is down; yes; yes\nPlan next quarter; no; yes\nReply to routine email; yes; no\nScroll social media; no; no' };
+    const input = area({ rows: 8, 'aria-label': 'Items', onInput: debounce(run, 200) }); input.value = tr(SAMPLE.ie); const out = h('div');
+    function run() { out.replaceChildren(); try { let cells;
+      if (mode.value === 'ie') { const q = TM.impactEffort(input.value); cells = [['Quick wins (high impact, low effort): do first', q.quick.map(x => x.name)], ['Big bets (high impact, high effort): plan carefully', q.big.map(x => x.name)], ['Fill-ins (low impact, low effort): do when idle', q.fill.map(x => x.name)], ['Money pits (low impact, high effort): avoid', q.pit.map(x => x.name)]]; }
+      else { const q = TM.eisenhower(input.value); cells = [['Do now (urgent and important)', q.do], ['Plan (important, not urgent)', q.plan], ['Delegate (urgent, not important)', q.delegate], ['Drop (neither)', q.drop]]; }
+      out.append(h('div', { class: 'tm-matrix' }, cells.map(([t, items], i) => h('div', { class: `tm-mx tm-mx--${i}` }, h('h4', {}, t), list(items)))), h('div', { class: 'ut-actions' }, btn('Copy as Markdown', () => copyText(cells.map(([t, items]) => `## ${tr(t)}\n${items.map(x => `- ${x}`).join('\n') || '-'}`).join('\n\n')), 'primary'))); } catch (e) { out.append(h('p', { class: 'pt-drop__error', role: 'alert' }, e.message)); } }
+    ui.append(h('div', { class: 'ut-options' }, field('Method', mode)), h('div', { class: 'ut-col' }, h('strong', {}, 'Items: "name; impact 1–5; effort 1–5" (Eisenhower: "name; urgent yes/no; important yes/no")'), input), out); run();
+  },
+  'rotation-schedule-generator'(root) {
+    const ui = wrap(root); const today = new Date(); const monday = new Date(today.getTime() + ((8 - (today.getDay() || 7)) % 7) * 86400000).toISOString().slice(0, 10);
+    const people = area({ rows: 5, 'aria-label': 'People', onInput: debounce(run, 200) }); people.value = tr('Ann\nBen\nCleo\nDev'); const start = h('input', { type: 'date', class: 'pt-input', value: monday, 'aria-label': 'First day', onInput: run });
+    const period = select([['day', 'Daily'], ['week', 'Weekly'], ['fortnight', 'Every two weeks']], 'week', { onChange: run }), count = numInput(12, { min: 1, max: 120, step: 1, onInput: debounce(run, 200) }), away = area({ rows: 3, placeholder: 'Ben: 2026-01-12 to 2026-01-18', 'aria-label': 'Away', onInput: debounce(run, 200) }); const out = h('div');
+    function run() { out.replaceChildren(); const P = lines(people.value); if (!P.length || !start.value) return; const skip = lines(away.value).map(l => { const m = /^(.*?)\s*:\s*(\d{4}-\d{2}-\d{2})\s*(?:to|-|–|\.\.)\s*(\d{4}-\d{2}-\d{2})$/.exec(l); return m ? { person: m[1], from: m[2], to: m[3] } : null; }).filter(Boolean);
+      const rows = TM.rotation(P, start.value, { period: period.value, count: Math.min(120, Math.max(1, Math.floor(Number(count.value)) || 1)), skip }); const fmt = d => new Date(`${d}T12:00:00Z`).toLocaleDateString(document.documentElement.lang || 'en', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+      out.append(table([['From', 'To', 'On duty'], ...rows.map(r => [fmt(r.from), fmt(r.to), r.who])]), h('div', { class: 'ut-actions' }, btn('Copy schedule', () => copyText(rows.map(r => `${r.from} – ${r.to}: ${r.who}`).join('\n')), 'primary'), btn('Download CSV', () => download('rotation.csv', 'from,to,who\n' + rows.map(r => `${r.from},${r.to},"${r.who.replace(/"/g, '""')}"`).join('\n'), 'text/csv')))); }
+    ui.append(h('div', { class: 'ut-io' }, h('div', { class: 'ut-col' }, field('People in turn (one per line)', people), h('div', { class: 'ut-options' }, field('First day', start), field('Length of a turn', period), field('Number of turns', count)), field('Away (optional): "Name: 2026-01-12 to 2026-01-18"', away)), out)); run();
+  },
+});

@@ -2973,3 +2973,111 @@ Wähle das Startdatum.
 Videoengine wird geladen (etwa 31 MB, nur einmal)…
 Wird verarbeitet…
 Abgebrochen.
+Ein Name pro Zeile, optional mit Könnenszahl: „Anna: 4“
+Anzahl der Teams
+Personen pro Team
+Team
+Könnenssumme
+Teams kopieren
+Die Personen werden zufällig verteilt; mit Könnenszahlen sorgt ein Schlangenverfahren für ausgewogene Teams. Die Namen verlassen diese Seite nie.
+Getrennt halten (optional, ein Paar pro Zeile)
+Eine Person pro Zeile
+Neugestaltung der Bezahlseite
+Fibonacci (0, 1, 2, 3, 5, 8 …)
+T-Shirt-Größen
+Zweierpotenzen
+Füge mindestens zwei Personen hinzu.
+Alle haben abgestimmt.
+Karten aufdecken
+Gib das Gerät weiter an
+Wähle heimlich eine Karte; die nächste Person kann sie nicht sehen.
+Abgestimmt
+Meiste Stimmen
+Streuung
+Einigkeit: Alle haben dieselbe Karte gewählt.
+Keine Einigkeit: Lass die niedrigste und die höchste Stimme begründen, dann stimmt erneut ab.
+Neue Runde
+Ergebnis kopieren
+Story oder Aufgabe
+Kartendeck
+Planning Poker am Gerät: ein Gerät, alle stimmen nacheinander ab. Nichts wird irgendwohin gesendet.
+Spieler
+Story
+Gut gelaufen
+Zu verbessern
+Maßnahmen
+Behalten
+Problem
+Ausprobieren
+Gefallen
+Gelernt
+Gefehlt
+Gewünscht
+Gut gelaufen / Zu verbessern / Maßnahmen
+Start / Stop / Continue
+Keep / Problem / Try
+Four Ls
+Karte hinzufügen und Enter drücken
+Alle Karten entfernen?
+Board leeren
+Das Board wird nur in diesem Browser gespeichert. Nutze es im Meeting auf einem Bildschirm oder kopiere das Markdown, um das Ergebnis zu teilen.
+Aufgabe;Anna;Ben;Clara⏎Briefing schreiben;A;R;C⏎Prototyp bauen;I;A;R⏎Nutzertests;C;A;R⏎Launch;A;R;I
+hat keine verantwortliche Person (A)
+hat mehr als eine verantwortliche Person (A)
+hat niemanden, der durchführt (R)
+Aufgabe
+Jede Aufgabe hat genau ein A und mindestens ein R.
+R = Durchführung (macht die Arbeit), A = Verantwortung (entscheidet, eine Person), C = befragt, I = informiert.
+Matrix: erste Zeile = Rollen, dann eine Aufgabe pro Zeile (getrennt durch ; , oder Tabulator)
+Matrix
+Startzeit
+Agenda-Punkte
+Begrüßung und Ziele; 5⏎Statusrunde; 15⏎Hauptthema: Preise; 25⏎Entscheidungen und Zuständige; 10⏎Abschluss; 5
+Bis
+Punkt
+Ende um
+Minuten gesamt
+Die Agenda ist länger als die verfügbare Zeit um
+Minuten.
+Passt in die verfügbare Zeit:
+Minuten übrig.
+Agenda kopieren
+Verfügbare Zeit (Minuten, 0 = ignorieren)
+Punkte: „Titel; Minuten“, einer pro Zeile
+Gib eine Startzeit wie 09:30 ein.
+Stärken
+Schwächen
+Chancen
+Risiken
+Unser Produkt
+Schnelle Einarbeitung⏎Starke Marke
+Kleines Team⏎Ein wichtiger Lieferant
+Neuer Markt in Europa⏎Partnerprogramm
+Neuer Wettbewerber⏎Steigende Kosten
+Drucken
+Nutzen und Aufwand
+Dringend und wichtig (Eisenhower)
+Suchfilter; 5; 2⏎Neuer Checkout; 5; 5⏎Tippfehler beheben; 1; 1⏎Backend neu schreiben; 2; 5⏎Onboarding-E-Mail; 4; 2
+Server ist ausgefallen; ja; ja⏎Nächstes Quartal planen; nein; ja⏎Routine-Mail beantworten; ja; nein⏎Social Media durchscrollen; nein; nein
+Quick Wins (hoher Nutzen, geringer Aufwand): zuerst erledigen
+Große Wetten (hoher Nutzen, hoher Aufwand): sorgfältig planen
+Lückenfüller (geringer Nutzen, geringer Aufwand): bei Leerlauf erledigen
+Zeitfresser (geringer Nutzen, hoher Aufwand): vermeiden
+Sofort tun (dringend und wichtig)
+Planen (wichtig, nicht dringend)
+Delegieren (dringend, nicht wichtig)
+Streichen (weder noch)
+Punkte: „Name; Nutzen 1–5; Aufwand 1–5“ (Eisenhower: „Name; dringend ja/nein; wichtig ja/nein“)
+Erster Tag
+Alle zwei Wochen
+Abwesend
+Im Dienst
+Plan kopieren
+Personen in der Reihenfolge (eine pro Zeile)
+Länge einer Runde
+Anzahl der Runden
+Abwesend (optional): „Name: 2026-01-12 to 2026-01-18“
+Ben: 2026-01-12 to 2026-01-18
+Anna⏎Ben⏎Clara⏎Dirk
+Anna: 5⏎Ben: 3⏎Clara: 4⏎Dirk: 2⏎Eva: 3⏎Fiona: 5⏎Gero: 1⏎Hanna: 4
+Getrennt halten

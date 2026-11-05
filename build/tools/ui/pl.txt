@@ -2973,3 +2973,111 @@ Wybierz datę początkową.
 Ładowanie silnika wideo (ok. 31 MB, tylko raz)…
 Przetwarzanie…
 Anulowano.
+Jedno imię w wierszu, opcjonalnie z liczbą umiejętności: „Ania: 4”
+Liczba zespołów
+Osób w zespole
+Zespół
+Suma umiejętności
+Kopiuj zespoły
+Osoby są rozdzielane losowo; przy liczbach umiejętności metoda węża zapewnia zrównoważone zespoły. Imiona nigdy nie opuszczają tej strony.
+Rozdziel (opcjonalnie, jedna para w wierszu)
+Jedna osoba w wierszu
+Przebudowa strony płatności
+Fibonacci (0, 1, 2, 3, 5, 8 …)
+Rozmiary koszulek
+Potęgi dwójki
+Dodaj co najmniej dwóch graczy.
+Wszyscy zagłosowali.
+Odkryj karty
+Przekaż urządzenie do
+Wybierz kartę w tajemnicy; następny gracz jej nie widzi.
+Zagłosowało
+Najwięcej głosów
+Rozrzut
+Zgoda: wszyscy wybrali tę samą kartę.
+Brak zgody: niech osoba z najniższym i najwyższym głosem wyjaśni, a potem zagłosujcie ponownie.
+Nowa runda
+Kopiuj wynik
+Zadanie lub historyjka
+Talia kart
+Planning poker na jednym urządzeniu: jedno urządzenie, wszyscy głosują po kolei. Nic nie jest nigdzie wysyłane.
+Gracze
+Historyjka
+Dobrze poszło
+Do poprawy
+Działania
+Zachować
+Problem
+Spróbować
+Podobało się
+Nauczyliśmy się
+Brakowało
+Chcieliśmy
+Dobrze poszło / Do poprawy / Działania
+Start / Stop / Continue
+Keep / Problem / Try
+Four Ls
+Dodaj kartę i naciśnij Enter
+Usunąć wszystkie karty?
+Wyczyść tablicę
+Tablica jest zapisywana tylko w tej przeglądarce. Używaj jej na jednym ekranie podczas spotkania lub skopiuj Markdown, aby udostępnić wynik.
+Zadanie;Ania;Bartek;Celina⏎Napisać brief;A;R;C⏎Zbudować prototyp;I;A;R⏎Testy z użytkownikami;C;A;R⏎Premiera;A;R;I
+nie ma osoby odpowiedzialnej (A)
+ma więcej niż jedną osobę odpowiedzialną (A)
+nie ma nikogo, kto wykonuje (R)
+Zadanie
+Każde zadanie ma dokładnie jedno A i co najmniej jedno R.
+R = wykonuje (robi pracę), A = odpowiada (decyduje, jedna osoba), C = konsultowany, I = informowany.
+Macierz: pierwszy wiersz = role, potem jedno zadanie w wierszu (oddzielone ; , lub tabulatorem)
+Macierz
+Godzina rozpoczęcia
+Punkty agendy
+Powitanie i cele; 5⏎Runda statusów; 15⏎Temat główny: ceny; 25⏎Decyzje i właściciele; 10⏎Podsumowanie; 5
+Do
+Punkt
+Koniec o
+Minut łącznie
+Agenda jest dłuższa niż dostępny czas o
+minut.
+Mieści się w dostępnym czasie:
+minut zostało.
+Kopiuj agendę
+Dostępny czas (minuty, 0 = ignoruj)
+Punkty: „tytuł; minuty”, po jednym w wierszu
+Wpisz godzinę rozpoczęcia, np. 09:30.
+Mocne strony
+Słabe strony
+Szanse
+Zagrożenia
+Nasz produkt
+Szybkie wdrożenie⏎Silna marka
+Mały zespół⏎Jeden kluczowy dostawca
+Nowy rynek w Europie⏎Program partnerski
+Nowy konkurent⏎Rosnące koszty
+Drukuj
+Wpływ i wysiłek
+Pilne i ważne (Eisenhower)
+Filtr wyszukiwania; 5; 2⏎Nowy koszyk; 5; 5⏎Poprawić literówki; 1; 1⏎Przepisać backend; 2; 5⏎E-mail powitalny; 4; 2
+Serwer nie działa; tak; tak⏎Zaplanować następny kwartał; nie; tak⏎Odpisać na rutynowy e-mail; tak; nie⏎Przewijać media społecznościowe; nie; nie
+Szybkie wygrane (duży wpływ, mały wysiłek): zrób najpierw
+Duże zakłady (duży wpływ, duży wysiłek): zaplanuj starannie
+Uzupełnienia (mały wpływ, mały wysiłek): zrób, gdy masz czas
+Pożeracze czasu (mały wpływ, duży wysiłek): unikaj
+Zrób teraz (pilne i ważne)
+Zaplanuj (ważne, niepilne)
+Deleguj (pilne, nieważne)
+Odrzuć (ani jedno, ani drugie)
+Punkty: „nazwa; wpływ 1–5; wysiłek 1–5” (Eisenhower: „nazwa; pilne tak/nie; ważne tak/nie”)
+Pierwszy dzień
+Co dwa tygodnie
+Nieobecny
+Na dyżurze
+Kopiuj harmonogram
+Osoby w kolejności (jedna w wierszu)
+Długość tury
+Liczba tur
+Nieobecność (opcjonalnie): „Imię: 2026-01-12 to 2026-01-18”
+Bartek: 2026-01-12 to 2026-01-18
+Ania⏎Bartek⏎Celina⏎Darek
+Ania: 5⏎Bartek: 3⏎Celina: 4⏎Darek: 2⏎Ela: 3⏎Fiona: 5⏎Grzegorz: 1⏎Hania: 4
+Rozdziel

@@ -1008,3 +1008,25 @@ progress { accent-color: var(--s-blue); height: 10px; }
 .s-mine__hint { color: var(--s-ink-3); font-size: 13px; margin: 0; }
 
 .s-more { margin: 24px 0 0; font-weight: 600; } .s-more a { color: var(--s-blue); text-decoration: none; } .s-more a:hover { text-decoration: underline; }
+
+/* Team tools */
+.tm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 12px; }
+.tm-box, .tm-col, .tm-sw, .tm-mx { border: 1px solid var(--s-rule); border-radius: var(--s-radius-lg); background: var(--s-sheet); padding: 12px 14px; min-width: 0; }
+.tm-box h3, .tm-col h3 { font: 650 16px/1.3 var(--s-display); margin: 0 0 8px; }
+.tm-list { margin: 0; padding-left: 18px; } .tm-list li { margin: 2px 0; overflow-wrap: anywhere; }
+.tm-cards { display: flex; flex-wrap: wrap; gap: 8px; }
+.tm-card.s-btn { min-width: 52px; min-height: 64px; font-size: 20px; font-weight: 650; }
+.tm-turn { font-size: 18px; margin: 0; }
+.tm-shown { display: grid; gap: 4px; justify-items: center; padding: 10px 14px; border: 1px solid var(--s-rule); border-radius: var(--s-radius); min-width: 72px; }
+.tm-shown strong { font-size: 26px; }
+.tm-ok { color: #1c7a43; font-weight: 600; margin: 0; } .tm-issues { color: #b3261e; margin: 0; padding-left: 18px; font-weight: 500; }
+.tm-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 12px; align-items: start; }
+.tm-cardlist { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; }
+.tm-cardlist li { display: grid; gap: 4px; padding: 8px 10px; border: 1px solid var(--s-rule); border-radius: 8px; background: var(--s-paper-2); overflow-wrap: anywhere; }
+.tm-vote { display: inline-flex; gap: 4px; justify-self: end; }
+.tm-swot, .tm-matrix { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.tm-swot-title { margin: 0 0 8px; font: 650 20px/1.3 var(--s-display); }
+.tm-sw h4, .tm-mx h4 { margin: 0 0 6px; font: 650 15px/1.3 var(--s-display); }
+.tm-sw--0, .tm-mx--0 { background: rgba(28, 122, 67, .08); } .tm-sw--1, .tm-mx--3 { background: rgba(179, 38, 30, .07); } .tm-sw--2, .tm-mx--1 { background: rgba(37, 87, 214, .07); } .tm-sw--3, .tm-mx--2 { background: rgba(224, 161, 0, .10); }
+@media (max-width: 560px) { .tm-swot, .tm-matrix { grid-template-columns: 1fr; } }
+@media print { .s-header, .s-footer, .ut-options, .ut-actions, .s-section { display: none !important; } }
