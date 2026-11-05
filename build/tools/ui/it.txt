@@ -1,0 +1,3284 @@
+Incolla qui un CSV o celle copiate da Excel / Fogli Google, oppure apri un file
+Rileva automaticamente
+Virgola ,
+Punto e virgola ;
+Tabulazione
+Barra verticale |
+Tabulazione (da incollare in Excel)
+Metti ogni valore tra virgolette
+Aggiungi BOM UTF-8 (aiuta Excel con gli accenti)
+LF (Mac, Linux)
+CRLF (Windows)
+Separatore di input
+Formato di output
+Separatore di output
+Fine riga
+Cerca in tutte le colonne…
+Cerca
+Trascina qui un file CSV di qualsiasi dimensione, oppure
+Scegli un file CSV
+Il file viene indicizzato in un thread in background e vengono lette solo le righe che scorri, quindi i file da oltre 200 MB restano reattivi.
+Riga n.
+Vai alla riga
+La prima riga è un'intestazione
+Riempi i numeri fino a questo numero di cifre (0 = rileva dai dati)
+Colonne da riparare
+
+
+
+
+Racchiudi in SE.ERRORE
+Corrispondenza esatta
+Cella con il valore da cercare
+Colonna in cui cercare
+Colonna da restituire
+Prima riga di dati
+Ultima riga di dati
+Nome del foglio (facoltativo)
+Tabella di ricerca su un altro foglio
+Non trovato
+Testo se non trovato
+Lingua del foglio di calcolo
+CERCA.X (Excel 365/2021, Fogli Google usa una sintassi diversa)
+
+INDICE + CONFRONTA (funziona ovunque, cerca anche a sinistra)
+CERCA.VERT conta le colonne dalla prima colonna della tabella: la colonna F è il numero 3 in D:F.
+Excel per Windows (1900)
+Excel per Mac 2008 e precedenti (1904)
+Sistema di date
+Numeri seriali o date ISO (uno per riga)
+Convertito
+Oggi come numero seriale
+Incolla un array JSON di oggetti, oppure un oggetto che ne contiene uno
+Separatore di chiavi per gli oggetti annidati
+Una colonna per elemento (tags.0, tags.1)
+Unisci i valori con ;
+Mantieni come testo JSON
+Array
+Converti numeri, vero/falso e celle vuote
+Trasforma le intestazioni con punti (a.b) in oggetti annidati
+Formattazione leggibile
+JSON Lines (un oggetto per riga)
+Somma
+Media
+Conta le righe
+Conta i non vuoti
+Conteggio dei distinti
+Minimo
+Massimo
+Mediana
+Calcola
+Righe (raggruppa per)
+— nessuna —
+Colonne (facoltativo)
+Valori
+Delimitatore
+Posizioni dei caratteri
+Espressione regolare (gruppi di cattura)
+Dividi per
+Delimitatore / schema
+Per le posizioni: numeri come 2,5
+Il delimitatore è un'espressione regolare
+Numero massimo di parti (0 = tutte)
+Mantieni la colonna originale
+Colonna da dividere
+CSV originale
+CSV modificato
+Confronta riga per riga (senza chiave)
+Abbina le righe
+Originale
+Modificato
+Scarica il rapporto (CSV)
+la_mia_tabella
+Nome della tabella
+
+
+
+
+Database
+UPDATE (richiede una colonna chiave)
+Istruzione
+Aggiungi CREATE TABLE (tipi dedotti dai dati)
+Righe per INSERT
+Le celle vuote diventano NULL
+Colonna chiave per UPDATE
+Compatto (senza riempimento)
+Mantieni come scritto
+Sinistra
+Centro
+Destra
+Forza l'allineamento
+Tabella Markdown disordinata
+Tabella allineata
+Formato numerico
+Migliaia, 2 decimali
+Percentuale
+Dollari
+Contabilità
+Scientifico
+Zeri iniziali
+Migliaia in K
+Milioni in M
+K / M automatico
+Data ISO
+Data estesa
+Ora
+Ore oltre 24
+Negativi in rosso
+Mostra sempre il segno
+Suffisso di testo
+Valori di prova
+Codice di formato
+Stessi codici di Formato celle → Personalizzato
+Preset
+Valori di prova (uno per riga)
+Supporta i segnaposto 0 # ?, i separatori delle migliaia, le virgole di scala, %, E+, il testo tra virgolette, la spaziatura con _ e *, fino a quattro sezioni, le condizioni [>100], i colori (ignorati), date e ore. Le frazioni (# ?/?) non sono supportate.
+
+Colonna della latitudine
+Colonna della longitudine
+Incolla qui il CSV
+Trascina le colonne, usa le frecce, togli la spunta per eliminare
+Copia per Excel (tabulazione)
+Z-score (media 0, deviazione standard 1)
+Scala min-max (da 0 a 1)
+Scala per valore assoluto massimo (da −1 a 1)
+Metodo
+Deviazione standard campionaria (n−1)
+Decimali
+Colonne numeriche da normalizzare
+Stati Uniti (+1)
+Canada (+1)
+Regno Unito (+44)
+Germania (+49)
+Austria (+43)
+Svizzera (+41)
+Francia (+33)
+Italia (+39)
+Spagna (+34)
+Paesi Bassi (+31)
+Belgio (+32)
+Polonia (+48)
+Cechia (+420)
+Slovacchia (+421)
+Svezia (+46)
+Danimarca (+45)
+Norvegia (+47)
+Finlandia (+358)
+Irlanda (+353)
+Portogallo (+351)
+Australia (+61)
+Nuova Zelanda (+64)
+India (+91)
+Brasile (+55)
+Messico (+52)
+Giappone (+81)
+Sudafrica (+27)
+Turchia (+90)
+Ucraina (+380)
+Ungheria (+36)
+Romania (+40)
+Grecia (+30)
+Paese predefinito (per i numeri senza +)
+Internazionale  +1 415 555 0132
+Nazionale (solo USA/Canada)
+Solo cifre
+Output
+Aggiungi una colonna «valido»
+Colonna del telefono
+Valore della cella sopra
+Valore della cella sotto
+Un valore fisso
+Zero
+Media della colonna (numeri)
+Mediana della colonna (numeri)
+Valore più frequente
+Minimo della colonna
+Massimo della colonna
+Riempi con
+Valore fisso
+Colonne da riempire
+Spezza le righe più lunghe di
+Rientro (spazi)
+Formula
+Formula formattata
+Un indirizzo per riga
+Indirizzi (uno per riga)
+Tratta come separatore delle migliaia
+Stile statunitense (virgola = migliaia, punto = decimali)
+Stile europeo (punto = migliaia, virgola = decimali)
+Una virgola o un punto isolato seguito da 3 cifre, come 1,234
+Arrotonda a (decimali, -1 = mantieni)
+Aggiungi una colonna di valuta
+Colonne con gli importi
+Aggiungi il segno %
+Colonna del valore precedente
+Colonna del nuovo valore
+Riduci gli spazi ripetuti nelle celle
+Tratta gli spazi non separabili come spazi
+Rimuovi i caratteri a larghezza zero
+
+
+
+Stile
+Lunghezza massima (0 = nessuna)
+Abbina le colonne per nome dell'intestazione
+I file hanno intestazioni identiche
+Senza intestazioni: impila semplicemente le righe
+Aggiungi una colonna «source_file»
+Trascina qui più file CSV, oppure
+Scegli file CSV
+Come combinare
+Svuota i file
+Lascia vuoto se molto grande
+Dimensione della popolazione
+Livello di confidenza
+Margine di errore (± %)
+Proporzione attesa (%)
+50 = il più prudente
+Dimensione del campione richiesta
+Senza correzione per la popolazione
+Punteggio z
+
+
+
+
+
+
+
+
+
+Ripara anche il testo già illeggibile (MÃ¼ller → Müller)
+Salva con BOM UTF-8 (per Excel)
+Apri un file, oppure incolla testo illeggibile (es. MÃ¼ller, GrÃ¶ÃŸe)
+Testo corretto
+Codifica del file
+Originale (come letto)
+Corretto (UTF-8)
+Scarica il file UTF-8
+
+Formula tradotta
+La formula è scritta in
+Traduci in
+⇄ Inverti
+Tradotto
+Nomi delle funzioni, separatori degli argomenti (, o ;) e segni decimali vengono convertiti. Fogli Google usa i nomi inglesi con i separatori della tua lingua. Le costanti matriciali {…} e il testo tra virgolette non vengono modificati.
+mese
+Nome della nuova colonna «attributo»
+importo
+Nome della nuova colonna «valore»
+Salta le celle vuote
+Colonne da mantenere come identificatori
+
+
+
+
+Esadecimale maiuscolo
+Incolla un checksum da confrontare
+Checksum atteso
+oppure scrivi o incolla testo di cui calcolare l'hash
+Trascina qui un file per calcolarne l'hash, oppure
+Confronta con un checksum pubblicato
+Indirizzo IP e prefisso o maschera
+Dividi in subnet con prefisso (facoltativo)
+Rete
+Host utilizzabili
+Intervallo
+Maschera
+Espressione cron (5 campi: minuto ora giorno-del-mese mese giorno-della-settimana)
+la mia ora locale
+Mostra le prossime esecuzioni in
+Numero di esecuzioni
+Ogni 5 minuti
+Ogni ora
+Nei giorni feriali alle 9:00
+Ogni giorno a mezzanotte
+La domenica alle 2:30
+Il primo giorno di ogni mese
+Nei giorni feriali alle 8:00 e alle 17:00
+Ogni Capodanno
+In linguaggio semplice
+Alle 09:00, nei giorni feriali
+Campi: minuto 0–59, ora 0–23, giorno del mese 1–31, mese 1–12 o JAN–DEC, giorno della settimana 0–6 o SUN–SAT (anche 7 significa domenica). * = ogni, */n = ogni n, a-b = intervallo, a,b = elenco. Quando giorno del mese e giorno della settimana sono entrambi limitati, l'esecuzione avviene se uno dei due corrisponde (comportamento standard di cron).
+Cerca per codice o testo, es. 404, redirect, rate limit
+Cerca codici di stato
+Tutte le classi
+1xx Informativo
+2xx Successo
+3xx Reindirizzamento
+4xx Errore del client
+5xx Errore del server
+Classe
+
+Il server ha ricevuto le intestazioni della richiesta; il client deve inviare il corpo.
+Cosa fare: Di norma invisibile. Rilevante solo quando usi «Expect: 100-continue».
+
+Il server accetta di cambiare protocollo, ad esempio passando a WebSocket.
+Cosa fare: Se un WebSocket non si apre, controlla le intestazioni Upgrade e Connection attraverso eventuali proxy.
+
+WebDAV: il server ha accettato la richiesta e sta ancora lavorando.
+Cosa fare: Raro; trattalo come «attendi».
+
+Permette al browser di precaricare risorse mentre il server prepara la risposta finale.
+Cosa fare: Usato con le intestazioni Link per pagine più veloci.
+La richiesta è riuscita.
+Cosa fare: Per GET il corpo contiene la risorsa; per POST il risultato dell'azione.
+
+La richiesta è riuscita e ha creato una nuova risorsa.
+Cosa fare: Cerca un'intestazione Location con l'URL della nuova risorsa.
+
+La richiesta è stata accettata per l'elaborazione, ma il lavoro non è finito.
+Cosa fare: Interroga l'URL di stato fornito dall'API.
+
+La risposta è stata modificata da un proxy.
+Cosa fare: Di solito innocuo.
+
+Successo senza corpo della risposta.
+Cosa fare: Tipico di DELETE e di PUT senza risultato. Non provare a interpretare JSON.
+
+Successo; il client deve reimpostare il modulo o la vista.
+Cosa fare: Raro.
+
+Il server restituisce solo l'intervallo di byte richiesto.
+Cosa fare: Usato per lo streaming video e i download riprendibili (intestazione Range).
+
+Ci sono più risposte possibili.
+Cosa fare: Raro; scegli uno dei link offerti.
+
+La risorsa ha un nuovo URL permanente.
+Cosa fare: Aggiorna link e segnalibri. I motori di ricerca trasferiscono il posizionamento al nuovo URL.
+Reindirizzamento temporaneo a un altro URL.
+Cosa fare: Continua a usare l'URL originale; i browser possono cambiare POST in GET.
+
+Reindirizza a un altro URL con GET dopo un POST.
+Cosa fare: Il classico schema post/redirect/get.
+
+La versione in cache è ancora valida.
+Cosa fare: Non è un errore: il browser usa la cache (ETag o Last-Modified coincidono).
+
+Reindirizzamento temporaneo che mantiene il metodo HTTP.
+Cosa fare: Come il 302, ma POST resta POST.
+
+Reindirizzamento permanente che mantiene il metodo HTTP.
+Cosa fare: Come il 301, ma POST resta POST.
+
+Il server non può comprendere la richiesta a causa di un errore del client.
+Cosa fare: Controlla la sintassi JSON, i campi obbligatori, la codifica dell'URL e la dimensione delle intestazioni.
+
+È richiesta un'autenticazione, oppure è fallita.
+Cosa fare: Invia credenziali valide o un token aggiornato. Controlla l'intestazione Authorization.
+
+Riservato ai sistemi di pagamento.
+Cosa fare: Alcune API lo usano quando manca un limite di piano o un pagamento.
+
+Sei autenticato ma non hai il permesso di accedere a questo.
+Cosa fare: Controlla permessi, elenchi di IP consentiti, CORS e regole del firewall (WAF).
+
+La risorsa non esiste a questo URL.
+Cosa fare: Controlla l'URL per refusi, barre finali e maiuscole/minuscole; la risorsa potrebbe essere stata rimossa.
+
+Il metodo HTTP non è supportato per questo URL.
+Cosa fare: Guarda l'intestazione Allow; potrebbe servirti POST al posto di GET.
+
+Il server non può produrre una risposta che corrisponda alle intestazioni Accept.
+Cosa fare: Allenta l'intestazione Accept.
+
+Un proxy richiede l'autenticazione.
+Cosa fare: Configura le credenziali del proxy.
+
+Il server è andato in timeout in attesa della richiesta.
+Cosa fare: Riprova; controlla le reti lente e i caricamenti pesanti.
+
+La richiesta è in conflitto con lo stato attuale della risorsa.
+Cosa fare: Tipico dei conflitti di modifica e delle voci duplicate. Aggiorna e riprova.
+
+La risorsa è stata rimossa in modo permanente.
+Cosa fare: Rimuovi i link; i motori di ricerca eliminano la pagina più in fretta che con un 404.
+
+È richiesta un'intestazione Content-Length.
+Cosa fare: Aggiungila oppure invia con un corpo che il client possa misurare.
+
+Una condizione nelle intestazioni della richiesta non è soddisfatta (If-Match ecc.).
+Cosa fare: La risorsa è cambiata; recupera la versione più recente.
+
+Il corpo della richiesta è più grande di quanto il server consenta.
+Cosa fare: Riduci il caricamento o alza client_max_body_size / il limite.
+
+L'URL è più lungo di quanto il server accetti.
+Cosa fare: Usa POST con un corpo invece di una lunga query string.
+
+Il server non supporta il tipo di contenuto della richiesta.
+Cosa fare: Imposta il Content-Type corretto, es. application/json.
+
+L'intervallo di byte richiesto è fuori dalla risorsa.
+Cosa fare: Controlla l'intestazione Range rispetto alla dimensione del file.
+
+L'intestazione Expect non può essere soddisfatta.
+Cosa fare: Rimuovi «Expect: 100-continue».
+
+Pesce d'aprile della RFC 2324.
+Cosa fare: Alcuni server lo usano per respingere i bot.
+
+La richiesta è stata inviata a un server che non può rispondere.
+Cosa fare: Tipico del riuso delle connessioni HTTP/2 con un host TLS sbagliato.
+
+La sintassi è corretta ma il contenuto non ha superato la convalida.
+Cosa fare: Leggi il corpo dell'errore per i messaggi a livello di campo.
+
+La risorsa è bloccata (WebDAV).
+Cosa fare: Attendi oppure sblocca.
+
+Il server non elaborerà una richiesta che potrebbe essere ripetuta.
+Cosa fare: Riprova dopo l'handshake.
+
+Il client deve passare a un altro protocollo.
+Cosa fare: Usa HTTPS o una versione HTTP più recente.
+
+Il server richiede una richiesta condizionale.
+Cosa fare: Aggiungi If-Match.
+
+Sei soggetto a limitazione della frequenza.
+Cosa fare: Rallenta e rispetta l'intestazione Retry-After; aggiungi un back-off esponenziale.
+
+Le intestazioni (spesso i cookie) sono troppo grandi.
+Cosa fare: Cancella i cookie o riduci la dimensione delle intestazioni.
+
+Il contenuto è bloccato per motivi legali.
+Cosa fare: Non risolvibile lato client.
+
+Il server ha incontrato una condizione imprevista.
+Cosa fare: Un bug o una configurazione errata sul server; controlla i log del server.
+
+Il server non supporta la funzionalità richiesta.
+Cosa fare: Il metodo o la funzione non è disponibile.
+
+Un gateway o proxy ha ricevuto una risposta non valida dal server a monte.
+Cosa fare: L'applicazione dietro il proxy è andata in crash o è irraggiungibile; controlla lo stato dell'upstream e i timeout.
+
+Il server non è temporaneamente in grado di gestire la richiesta.
+Cosa fare: Sovraccarico o manutenzione; riprova più tardi e rispetta Retry-After.
+
+Il gateway non ha ricevuto una risposta in tempo dal server a monte.
+Cosa fare: Aumenta i timeout del proxy o velocizza il backend.
+
+La versione HTTP non è supportata.
+Cosa fare: Usa HTTP/1.1.
+
+Il server non può memorizzare la rappresentazione (WebDAV).
+Cosa fare: Libera spazio su disco.
+
+Il server ha rilevato un ciclo infinito (WebDAV).
+Cosa fare: Controlla reindirizzamenti o link.
+
+Devi autenticarti per accedere alla rete.
+Cosa fare: Tipico dei captive portal (Wi-Fi degli hotel); apri un browser ed effettua l'accesso.
+
+Comando curl
+Comando curl (copialo dalla scheda Rete del browser: Copia come cURL)
+Incolla una stringa user-agent
+User agent
+Usa il mio browser
+Browser
+
+Versione
+Sistema operativo
+
+Tipo di dispositivo
+Bot / script
+Motore di rendering
+
+Bot o script
+sì
+Sembra un crawler o un client automatizzato. Tieni presente che qualsiasi client può spacciarsi per Googlebot; verifica con una ricerca DNS inversa se è importante.
+Le stringhe user-agent sono inaffidabili per loro natura: i browser si imitano a vicenda per compatibilità e Chrome sta congelando parti della stringa. Usa il rilevamento delle funzionalità nel codice e considera questo uno strumento diagnostico.
+Codifica (testo → entità)
+Decodifica (entità → testo)
+Direzione
+Solo & < > " '
+Anche i caratteri non ASCII, come entità con nome quando possibile (é → &eacute;)
+Anche i caratteri non ASCII, come numeri (é → &#233;)
+Codifica
+Decimale &#233;
+Esadecimale &#xE9;
+Stile numerico
+Scrivi testo da codificare, oppure incolla Base64 / un URL data: da decodificare
+Alfabeto sicuro per URL (- e _)
+Mantieni il riempimento =
+Senza a capo
+Ogni 64 caratteri
+Ogni 76 caratteri (MIME)
+Codifica testo
+Decodifica in testo
+Scarica il file decodificato
+Modalità
+Lunghezza della riga
+Codifica un file
+Colore
+Scegli un colore
+Scegli dallo schermo
+Colore (HEX, RGB, HSL o CMYK)
+Selettore
+CMYK (formula semplice)
+Variabile CSS
+Il CMYK qui è la conversione ingenua da sRGB. I colori stampati dipendono da inchiostro, carta e profilo colore; chiedi una prova al tipografo per i colori del marchio.
+UUID v4 (casuale)
+UUID v7 (ordinato per tempo, adatto alle chiavi di database)
+Quanti
+Standard (minuscolo)
+MAIUSCOLO
+Senza trattini
+{Stile Microsoft}
+'tra apici', per elenchi SQL
+Formato
+Clicca su «Genera» o cambia un'impostazione per un nuovo lotto
+L'UUID v4 ha 122 bit casuali da crypto.getRandomValues. La probabilità che due coincidano è trascurabile anche con miliardi di ID.
+Genera un nuovo lotto
+Numero
+Sono accettati i prefissi 0x, 0b, 0o e i trattini bassi. Qualsiasi dimensione.
+Binario (2)
+Ottale (8)
+Decimale (10)
+Esadecimale (16)
+Base 3
+Base 4
+Base 5
+Base 6
+Base 7
+Base 9
+Base 11
+Base 12
+Base 13
+Base 14
+Base 15
+Base 17
+Base 18
+Base 19
+Base 20
+Base 21
+Base 22
+Base 23
+Base 24
+Base 25
+Base 26
+Base 27
+Base 28
+Base 29
+Base 30
+Base 31
+Base 32
+Base 33
+Base 34
+Base 35
+Base 36
+Base dell'input
+Base di output aggiuntiva (2–36)
+Binario
+Ottale
+Decimale
+Esadecimale
+Servono 8 bit. La conversione usa interi a precisione arbitraria, quindi i valori a 64 bit e oltre sono esatti.
+
+Nome utente
+open sesame
+Password
+Il valore è il Base64 di «nome utente:password». Base64 è una codifica, non una cifratura: chiunque veda l'intestazione può leggere la password, quindi usa l'autenticazione Basic solo su HTTPS.
+curl: curl -u "Aladdin:open sesame" https://example.com   ·   oppure   -H "Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+Opacità (%)
+Colore (facoltativo, per costruire il codice completo)
+Suffisso alfa
+Colore esadecimale a 8 cifre
+Alfa = arrotonda(opacità ÷ 100 × 255) scritto in due cifre esadecimali: 50% → 128 → 80. CSS accetta #RRGGBBAA in tutti i browser moderni; Android usa #AARRGGBB (alfa per primo).
+device-width (consigliato)
+Larghezza fissa in pixel…
+Larghezza
+Larghezza (px)
+Scala iniziale
+Consenti lo zoom a pizzico (accessibilità)
+viewport-fit=cover (usa l'intero schermo sui telefoni con notch)
+Colore dell'interfaccia del browser (theme-color, facoltativo)
+Lo zoom a pizzico resta abilitato, come richiesto dalle WCAG per l'accessibilità.
+Senza questo tag, i browser mobili renderizzano la pagina a circa 980 px di larghezza e la rimpiccioliscono.
+Cartella contenente le icone
+Icona SVG (favicon.svg)
+Favicon classica favicon.ico (16/32 px)
+Icone PNG 32 px (favicon-32x32.png)
+Apple touch icon 180 px
+Manifest dell'app web (icone da 192 e 512 px)
+Colore del tema
+Metti i tag nell'<head>. I browser usano l'SVG dove supportato e ripiegano sul .ico; l'icona Apple deve essere 180×180 px senza trasparenza. Usa il Generatore di favicon e icone per app per creare i file immagine.
+URL di base (facoltativo)
+Parametri: chiave=valore, uno per riga
+Codifica gli spazi come + (stile modulo) invece di %20
+
+
+
+Chiavi ripetute
+Chiavi e valori sono codificati in percentuale come UTF-8 (i caratteri riservati come & = ? # e gli spazi vengono preceduti da escape). Non codificare una seconda volta l'intero URL.
+URL (uno per riga)
+Nome del parametro
+Timestamp attuale (cambia ogni volta)
+Stringa casuale
+Versione fissa…
+Valore
+Una query string modificata fa sì che browser e CDN trattino il file come nuovo, così durante i test vedi la versione più recente. In produzione preferisci una versione o un hash del contenuto nel nome del file.
+Il certificato (PEM)
+Solo la data di scadenza
+Ho
+Certificato (-----BEGIN CERTIFICATE-----)
+Copialo dal file .crt / .pem del tuo server o dal visualizzatore di certificati del browser. Non lascia mai questa pagina.
+Data di scadenza
+
+Dominio (per il titolo del promemoria)
+Incolla un certificato per vederne la validità.
+Scarica i promemoria (.ics): 30, 14 e 7 giorni prima
+Incolla le intestazioni complete e grezze dell'e-mail (in Gmail: ⋮ → Mostra originale; in Outlook: File → Proprietà → Intestazioni Internet)
+Intestazioni dell'e-mail
+Intestazioni grezze
+Controlla un robots.txt esistente
+Crea un nuovo robots.txt
+
+/admin/⏎/tmp/
+
+Blocca i crawler per l'addestramento di IA (GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot, Bytespider)
+Cosa vuoi fare?
+Gruppi
+Sitemap
+Errori
+Avvisi
+✓ Nessun problema trovato.
+Incolla la tua sitemap.xml
+Sitemap XML
+
+
+Strumenti gratuiti che girano nel tuo browser. Nulla viene caricato.
+
+Immagine di anteprima
+URL dell'immagine per i tag
+Titolo della pagina
+Descrizione
+URL della pagina
+Nome del sito
+URL dell'immagine (per i tag)
+Immagine di anteprima (resta sul tuo dispositivo)
+Titolo
+
+
+
+Aggiungi un'immagine di anteprima (1200 × 630 px)
+
+
+
+
+
+HTML per il tuo <head>
+Sfondo
+Colore del riquadro
+Aggiungi livello
+Pagina
+Riquadro
+Raggio degli angoli (px)
+Livello 1
+Interna
+Colore dell'ombra
+
+
+
+Livello 2
+
+Espressione regolare
+Flag
+Testo di prova (una o più righe)
+Espressione regolare (JavaScript)
+Cosa significa
+Testo di prova
+
+
+
+
+
+
+
+
+
+
+
+non è un'e-mail
+
+Cerca per porta o servizio, es. 3306, ssh, database
+Cerca porte
+
+Estensione (.docx), nome del file o tipo MIME (image/png)
+I tipi di testo di solito richiedono un charset, ad esempio «text/html; charset=utf-8». Invia sempre il tipo che il tuo server serve davvero; i browser analizzano anche il contenuto per alcuni tipi.
+
+es. _spf.google.com, sendgrid.net (separati da virgole)
+Consenti ai miei server MX di inviare (mx)
+Consenti al mio record A di inviare (a)
+~all (soft fail: segna come sospetto, consigliato per iniziare)
+-all (hard fail: rifiuta tutto il resto)
+?all (neutro)
++all (consenti tutto, sconsigliato)
+none (solo monitoraggio)
+quarantine (invia nello spam)
+reject (blocca)
+Uguale alla policy principale
+
+
+
+
+indirizzo facoltativo per i rapporti forensi
+Rilassato
+Rigoroso
+SPF: chi può inviare e-mail per il tuo dominio
+Includi altri mittenti (domini)
+Indirizzi o intervalli IPv4
+Indirizzi o intervalli IPv6
+Tutto il resto
+DMARC: cosa fanno i destinatari in caso di errore
+Policy
+Policy per i sottodomini
+Applica al % delle e-mail
+Rapporti aggregati a (rua)
+Rapporti forensi a (ruf)
+Allineamento DKIM
+Allineamento SPF
+Le chiavi DKIM sono create dal tuo provider di posta; aggiungi il record DKIM che ti fornisce. Dopo la pubblicazione, attendi l'aggiornamento del DNS e invia un messaggio di prova per controllare SPF, DKIM e DMARC nelle intestazioni.
+Record SPF
+Record TXT su: 
+
+Record DMARC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flex-direction
+
+
+flex-wrap
+
+gap (px)
+Numero di elementi
+Payload
+
+Segreto
+Timestamp
+Incolla l'intestazione della firma ricevuta per confrontarla
+Firma ricevuta
+Corpo grezzo della richiesta (esattamente come ricevuto)
+Segreto di firma
+Timestamp (secondi Unix, per Stripe e Slack)
+Firma ricevuta (facoltativa)
+La firma è un HMAC dei byte grezzi del corpo. Riformattare il JSON, togliere un a capo o analizzarlo prima cambia il risultato. Confronta le firme in tempo costante e rifiuta i timestamp vecchi (ad esempio più vecchi di 5 minuti) per evitare i replay. Il segreto e il payload vengono elaborati solo nel browser; usa comunque un segreto di prova, non quello di produzione.
+GitHub / generico (X-Hub-Signature-256)
+GitHub legacy SHA-1 (X-Hub-Signature)
+Stripe (Stripe-Signature, firmato «timestamp.payload»)
+Slack (X-Slack-Signature, firmato «v0:timestamp:payload»)
+HMAC-SHA256 esadecimale
+HMAC-SHA256 in Base64 (Shopify e molti altri)
+HMAC-SHA512 esadecimale
+Quel vituperabile xenofobo zelante assaggia il whisky ed esclama: alleluja! 0123456789
+Testo di anteprima
+Frammento CSS
+Trascina qui un font TTF, OTF o WOFF, oppure
+CSS per il tuo sito web
+Copia il CSS
+I font TTF e OTF vengono convertiti in WOFF (più piccolo, per i siti web); i font WOFF vengono decompressi in TTF o OTF. Le forme dei glifi non vengono modificate. Il WOFF2, il formato web più piccolo, richiede la compressione Brotli e non è supportato. Controlla la licenza del font prima di metterlo su un sito web. Nulla viene caricato.
+2 spazi
+4 spazi
+Rientro
+Minimizza (una riga)
+Ordina le chiavi A–Z
+Consenti commenti e virgole finali
+Da
+SQL standard
+
+
+
+
+
+
+Dialetto
+MAIUSCOLO
+minuscolo
+Come scritto
+Parole chiave
+SQL formattato
+
+Sostituzione
+Sostituzione, es. <$1>
+g (tutte le corrispondenze)
+i (ignora maiuscole/minuscole)
+m (^ $ per riga)
+s (. corrisponde all'a capo)
+u (Unicode)
+Testo da provare
+Risultato della sostituzione
+Risultato della sostituzione
+Sostituzione (facoltativa, $1 $<nome> $&)
+Corrispondenze evidenziate
+Espressioni regolari JavaScript (lo stesso motore del tuo browser). Il test gira in un worker in background e viene interrotto dopo 2 secondi, così uno schema errato non può bloccare questa pagina. Nulla viene caricato.
+Corrispondenze
+
+Anteprima (il pulsante copia copia l'HTML)
+Parole
+Caratteri
+Tipo
+CSS, HTML o JSON
+Minimizzato
+Paragrafi
+Frasi
+Inizia con «Lorem ipsum dolor sit amet»
+Racchiudi i paragrafi in tag <p>
+Testo generato
+Quantità
+Unità
+Genera nuovo testo
+Testo segnaposto fatto di parole dall'aspetto latino, senza significato. Le stesse impostazioni danno sempre lo stesso testo finché non premi «Genera nuovo testo».
+Trascina qui uno o più file, oppure
+Il tipo viene letto dai primi byte del file (il suo «numero magico»), non dal nome, quindi funziona anche per file con estensione errata o mancante. Vengono letti solo i primi 70 KB di ogni file. I file di testo sono identificati dal contenuto (JSON, HTML, XML, SVG, script, testo semplice); vengono riconosciuti circa 60 formati binari comuni. Nulla viene caricato.
+Albero di cartelle
+Oppure incolla un elenco di percorsi, uno per riga:⏎src/app.js⏎src/lib/util.js⏎README.md
+Percorsi
+Mostra le dimensioni dei file
+Solo cartelle
+
+Ignora
+Per nome
+Per dimensione (prima i più grandi)
+Trascina qui una cartella, oppure
+Scegli una cartella
+Profondità massima (0 = tutto)
+Ignora (separati da virgole, * consentito)
+Ordina
+Copia come blocco di codice Markdown
+Vengono letti solo nomi e dimensioni di file e cartelle, mai il contenuto, e nulla viene caricato. Le cartelle vuote vengono mostrate quando il browser le segnala.
+Due pagine affiancate (automatico)
+US Letter
+Tabloid
+Formato del foglio (orizzontale)
+Rilegatura da destra a sinistra (arabo, ebraico, manga)
+Crea PDF a opuscolo
+Trascina qui un PDF, oppure
+Stampa fronte-retro, gira sul lato corto, poi piega la pila a metà. Il numero di pagine viene completato con pagine bianche fino a un multiplo di 4.
+Colonne
+Righe
+Letter
+Legal
+Formato del foglio
+Automatico
+Verticale
+Orizzontale
+Orientamento
+Margine esterno (mm)
+Spazio tra le pagine (mm)
+Disegna un sottile bordo attorno a ogni pagina
+Crea PDF n-up
+
+
+Prefisso
+Numero iniziale
+Cifre (con zeri iniziali)
+Suffisso
+In basso a destra
+In basso al centro
+In basso a sinistra
+In alto a destra
+In alto al centro
+In alto a sinistra
+Posizione
+Dimensione del carattere (pt)
+Distanza dal bordo (mm)
+Sfondo bianco dietro il numero
+Aggiungi numeri Bates
+Alto (mm)
+Destra (mm)
+Basso (mm)
+Sinistra (mm)
+Disegna righe per gli appunti nei margini aggiunti
+Aggiungi margini
+Dimensione di un formato carta in mm, pollici e pixel
+Dimensione di stampa di un'immagine con pixel dati
+Cosa vuoi sapere?
+Executive
+Half Letter
+Biglietto da visita (UE)
+Biglietto da visita (USA)
+Foto 10×15
+Foto 13×18
+Dimensione personalizzata (mm)
+Formato carta
+Larghezza (mm)
+Altezza (mm)
+72 (punti PDF, schermo)
+96 (pixel CSS)
+150 (stampa bozza)
+300 (foto / rivista)
+600 (disegno al tratto fine)
+Risoluzione (pixel per pollice)
+Larghezza dell'immagine (pixel)
+Altezza dell'immagine (pixel)
+Millimetri
+Pollici
+Punti PDF
+Pixel a 300 ppi
+Rapporto d'aspetto
+Area
+I formati della serie A mantengono il rapporto 1 : √2, quindi dimezzando un foglio si ottiene il formato inferiore con le stesse proporzioni.
+Avery 5160 / 8160 (US Letter, 30 etichette, 1″ × 2⅝″)
+Avery 5163 / 8163 (US Letter, 10 etichette, 2″ × 4″)
+Avery 5167 / 8167 (US Letter, 80 etichette per il mittente, ½″ × 1¾″)
+Avery L7160 / J8160 (A4, 21 etichette, 63,5 × 38,1 mm)
+Avery L7163 / J8163 (A4, 14 etichette, 99,1 × 38,1 mm)
+Avery L7161 / J8161 (A4, 18 etichette, 63,5 × 46,6 mm)
+Avery L7162 / J8162 (A4, 16 etichette, 99,1 × 33,9 mm)
+Disegna sottili contorni delle etichette (per prove di stampa su carta comune)
+Anna Esempio⏎Via Roma 12⏎00184 Roma⏎⏎Marco Modello⏎Corso Italia 3⏎20122 Milano
+Indirizzi
+Carica un file di testo/CSV
+Foglio di etichette
+Salta le etichette già usate
+Inizia su un foglio parzialmente usato
+Copie di ciascuna
+Dimensione massima del carattere (pt)
+Si riduce automaticamente per adattarsi
+Indirizzi (riga vuota tra le etichette)
+Crea PDF del foglio di etichette
+Stampa sempre un foglio di prova su carta comune al 100 % di scala («Dimensioni effettive», non «Adatta alla pagina») e appoggialo a un foglio di etichette per controllare l'allineamento. Altre marche di etichette con la stessa dimensione usano lo stesso layout.
+Attestato di merito
+Un nome per riga (un attestato ciascuno)
+Giulia Rossi, Direttrice
+La tua organizzazione
+Blu
+Bordeaux
+Verde
+Antracite
+Oro
+A4 orizzontale
+US Letter orizzontale
+Data
+Firmato da
+Organizzazione
+Carta
+Destinatari (uno per riga)
+Testo
+Crea attestati (PDF)
+
+# Titolo⏎⏎Scrivi o incolla qui il Markdown…
+Documento
+
+
+
+
+Titolo del documento
+Carattere
+Crea documento Word
+Supportati: titoli, grassetto, corsivo, codice in linea, link, elenchi puntati e numerati (annidati), citazioni, blocchi di codice, tabelle e linee. Le immagini non sono incluse.
+Output Markdown
+Trascina qui un file Word (.docx), oppure
+Titoli, grassetto, corsivo, link, elenchi, tabelle e citazioni vengono mantenuti. Immagini, commenti, note a piè di pagina e caselle di testo non vengono convertiti.
+Evidenziazioni, sottolineature, barrati
+Note e caselle di testo
+Trascina qui un PDF con evidenziazioni e commenti, oppure
+Il testo segnato è il testo che si trova sotto ogni evidenziazione, quindi è disponibile solo per i PDF con uno strato di testo. Le annotazioni fatte da alcune app (ad esempio i disegni a inchiostro) non sono elencate. Tutto gira nel tuo browser.
+100 dpi (il più piccolo)
+150 dpi (schermo e stampa d'ufficio)
+200 dpi (buona stampa)
+300 dpi (nitido, grande)
+Scala di grigi
+Bianco e nero (scansioni di testo)
+Aumenta il contrasto (aiuta le scansioni sbiadite)
+Converti in scala di grigi
+Risoluzione
+Qualità JPEG (%)
+Ogni pagina viene resa come immagine e ricostruita in un PDF dello stesso formato di pagina, quindi il risultato non ha più testo selezionabile, link né campi dei moduli. Passa poi dallo strumento OCR se ti serve testo ricercabile. Il colore viene tolto da testo, immagini e sfondi allo stesso modo; la grafica vettoriale diventa pixel.
+Aggiungi una seconda pagina per controllare l'allineamento fronte-retro
+Crea foglio di prova (PDF)
+Stampa al 100 % senza scalare, poi controlla con un righello la barra della scala, la cornice sui quattro lati, i gradini di grigio, il testo e la barra nera. Per una pagina di prova rapida a schermo puoi usare anche test.institute.
+
+FOGLIO SEPARATORE
+Aggiungi un codice QR con l'etichetta (per software di scansione che leggono i codici)
+Numero di fogli
+Titolo sulla fascia nera
+Prefisso dell'etichetta
+Primo numero
+Cifre
+Crea fogli separatori (PDF)
+Se puoi, stampa su carta colorata: la pila si divide poi facilmente a occhio. La grande etichetta (ad esempio DOC-001) indica il lotto; il codice QR contiene lo stesso testo per scanner e software che dividono i documenti ai codici a barre.
+Filtra i file…
+Filtra i file
+Salva la selezione come ZIP
+Seleziona tutto
+Deseleziona tutto
+Trascina qui un file ZIP, TAR o GZ, oppure
+L'elenco viene letto senza decomprimere nulla; un file viene decompresso solo quando lo salvi. Gli ZIP protetti da password e gli archivi RAR e 7z non sono supportati. Tutto resta nel tuo browser.
+archivio
+Nome dell'archivio
+Archivia (nessuna compressione, il più veloce)
+Veloce
+Normale (consigliato)
+Il più piccolo
+Scegli file
+Trascina qui i file, oppure
+Compressione
+I file già compressi (JPG, MP3, MP4, PDF, DOCX …) vengono archiviati così come sono, perché ricomprimerli fa solo perdere tempo. I file ZIP creati qui non hanno password, perché la protezione classica con password del formato è debole; usa «Proteggi PDF» o una nota cifrata per i segreti. Nulla viene caricato.
+Codice HTML
+Rileva i titoli dalla dimensione del carattere
+Segna le interruzioni di pagina
+Pagina HTML completa (con <head> e stile di base)
+Il risultato è HTML pulito e semplice con titoli, paragrafi ed elenchi, non una copia del layout della pagina. Tabelle, colonne, immagini e font esatti non vengono riprodotti; i PDF scansionati richiedono prima l'OCR. Tutto gira nel tuo browser.
+Includi note a piè di pagina e note di chiusura
+Includi intestazioni e piè di pagina
+Trascina qui un documento Word (.docx), oppure
+Conta il testo del documento principale; caselle di testo, commenti ed eliminazioni tracciate non sono inclusi. Il numero di pagine è solo una stima (500 parole per pagina), perché il layout reale dipende da font e margini, che solo Word conosce.
+Dimensione obiettivo
+Comprimi a questa dimensione
+per esempio 2 MB, 500 KB o 10 MB
+Lo strumento comprime passo dopo passo, da delicato (solo la struttura del file) a forte (immagini ridotte a 48 dpi), e si ferma al primo risultato che rientra. Il testo resta selezionabile. Se l'obiettivo è inferiore a ciò che si può raggiungere, ottieni il risultato più piccolo e una nota. Tutto gira nel tuo browser.
+Ancora nessun file
+Scegli il PDF A (originale)
+Scegli il PDF B (modificato)
+La vista testo confronta le parole di ogni pagina e trova clausole, numeri e nomi modificati, anche se il layout si è spostato. La vista visiva confronta le pagine renderizzate pixel per pixel e trova modifiche a immagini, colori e layout. I PDF scansionati non hanno testo; usa prima OCR PDF. Nulla viene caricato.
+Cerca
+Cerca…
+Distingui maiuscole e minuscole
+Solo parole intere
+Cerca nello strato di testo del PDF nel tuo browser ed elenca ogni corrispondenza con il numero di pagina e le parole intorno. Il testo memorizzato come immagine (scansioni) non si trova senza OCR. Le parole spezzate da un a capo possono non essere trovate attraverso l'a capo.
+A5 (libro)
+Numeri di pagina
+Trascina qui un e-book EPUB, oppure
+Formato della pagina
+Margine (mm)
+Il testo del libro viene impaginato come un semplice PDF: titoli, paragrafi, elenchi e citazioni, un frontespizio e numeri di pagina. Immagini, copertine, tabelle e font originali non vengono riportati; gli e-book protetti da DRM non si possono aprire. Cambia le impostazioni, poi trascina di nuovo il file per creare una nuova versione. Tutto gira nel tuo browser.
+
+
+Valuta
+Mittente
+Destinatario
+Articoli
+Note
+Articoli (descrizione; quantità; unità, uno per riga)
+Riferimento dell'ordine
+Nota (facoltativa)
+Lingua del documento
+Simbolo della valuta
+Mittente (tu)
+Indirizzo di consegna
+Crea PDF
+Un documento di trasporto elenca ciò che è stato consegnato e permette al destinatario di confermare il ricevimento. Non riporta prezzi. Nulla viene caricato.
+Servizi di consulenza, marzo
+Contanti
+Bonifico bancario
+Carta
+Importo totale (lordo)
+% IVA inclusa (0 = nessuna)
+Per (cosa è stato pagato)
+Metodo di pagamento
+Luogo (facoltativo)
+Emittente (tu)
+Pagato da
+Una ricevuta conferma un pagamento; controlla cosa richiede il tuo paese (ad esempio dati IVA o un numero progressivo). Questo strumento impagina il documento; non dà consulenza fiscale. Nulla viene caricato.
+Costo e prezzo di vendita
+Costo e margine %
+Costo e ricarico %
+Prezzo di vendita e margine %
+Prezzo di vendita e ricarico %
+So
+Costo
+Prezzo di vendita
+Margine lordo %
+Ricarico %
+Profitto
+Margine lordo
+Ricarico
+Margine = profitto ÷ prezzo. Ricarico = profitto ÷ costo. Un ricarico del 50% è solo un margine del 33,3%; un margine del 50% richiede un ricarico del 100%.
+Importo iniziale
+Versamento mensile
+Tasso di interesse annuo (%)
+Anni
+Annuale
+Trimestrale
+Mensile
+Giornaliera
+Capitalizzazione
+alla fine di ogni mese
+all'inizio di ogni mese
+I versamenti vengono effettuati
+Usato solo per la visualizzazione
+Saldo finale
+Totale versato
+Interessi maturati
+Saldo
+Versato
+Liquidità in banca
+Costi mensili
+Ricavi mensili attuali
+Crescita mensile dei ricavi (%)
+Burn netto attuale
+
+Runway al burn di oggi
+
+Runway con crescita
+
+Saldo di cassa
+Ricavo medio per account al mese
+Margine lordo (%)
+Churn mensile (%)
+Costo di acquisizione clienti (CAC)
+Durata del cliente
+
+Valore del cliente nel tempo (LTV)
+LTV : CAC
+Recupero del CAC
+
+Un rapporto di 3:1 o migliore è il parametro abituale di un'attività in abbonamento in salute.
+Costi fissi per periodo
+Prezzo per unità
+Costo variabile per unità
+Profitto obiettivo (facoltativo)
+Unità attese per periodo (facoltativo)
+Unità al punto di pareggio
+Ricavi al punto di pareggio
+Contributo per unità
+Margine di contribuzione
+Margine di sicurezza
+
+Ricavi
+Costi totali
+lordo (IVA inclusa)
+netto (senza IVA)
+L'importo è
+Paese (suggerisce le aliquote)
+Aliquota IVA (%)
+Importo netto
+
+Importo lordo
+Aliquote ordinaria e ridotta in DE: 19%, 7%. Le aliquote cambiano; conferma quella attuale con l'autorità fiscale.
+Netto = lordo ÷ (1 + aliquota). IVA = lordo − netto.
+Tasso di sconto (% per periodo)
+Flussi di cassa, uno per periodo (primo = oggi, negativo = investimento)
+Valore attuale netto
+Tasso interno di rendimento
+Payback attualizzato
+
+Il progetto rende più del tuo tasso di sconto.
+Come XNPV di Excel con periodi uguali, il primo flusso di cassa è al tempo 0 e non viene attualizzato. NPV() di Excel attualizza il primo valore di un periodo, quindi aggiungi l'investimento iniziale fuori dalla funzione.
+Rendimento annuo o tasso di crescita (%)
+Regola del 72
+
+Tempo di raddoppio esatto
+
+Regola del 69,3 (continua)
+
+Errore della regola del 72
+72 diviso per il tasso di interesse stima in quanti anni raddoppia il tuo denaro. È più accurata per tassi tra il 6% e il 10%. Tempo esatto = ln 2 ÷ ln(1 + tasso).
+Scaglioni: quantità iniziale e prezzo unitario, uno per riga
+Formato: «da, prezzo»
+Progressivo (ogni scaglione si applica solo alle unità al suo interno)
+Volume (lo scaglione raggiunto determina il prezzo di TUTTE le unità)
+Modello
+Quantità
+Prezzo totale
+Prezzo medio per unità
+Prezzo totale per quantità
+Vendite realizzate
+Obiettivo
+Fasce di commissione: «fino a % dell'obiettivo, aliquota %», una per riga (usa * per nessun limite)
+Raggiungimento dell'obiettivo
+Commissione
+Aliquota effettiva
+Importo tipico del pagamento
+Pagamenti al mese
+Processori: «nome, percentuale, commissione fissa» per riga
+Precompilato con i prezzi di listino 2024; modificali per adattarli al tuo contratto.
+Il più economico
+
+Commissione per pagamento
+Risparmio annuo rispetto al più caro
+Commissione = importo × percentuale + commissione fissa. Le tariffe variano per paese, tipo di carta e contratto, quindi modifica l'elenco per adattarlo ai tuoi prezzi.
+Retribuzione annua (lorda)
+Ore contrattuali a settimana
+Ore extra non pagate a settimana
+Tragitto al giorno, solo andata (minuti)
+Giorni sul posto di lavoro a settimana
+Settimane di assenza all'anno (ferie + festività)
+Costi legati al lavoro all'anno (viaggi, abbigliamento, assistenza ai figli…)
+Tariffa oraria nominale
+Tariffa oraria effettiva
+Ore realmente impiegate all'anno
+di cui tragitto
+Tariffa persa per gli extra
+Tariffa effettiva = (retribuzione − costi legati al lavoro) ÷ (ore contrattuali + ore extra non pagate + ore di tragitto).
+Stipendio da dipendente da eguagliare (all'anno)
+Benefit e oneri del datore di lavoro (% dello stipendio)
+I tuoi costi annui di attività (assicurazione, software, commercialista)
+Settimane di assenza all'anno
+Ore di lavoro a settimana
+Quota fatturabile delle ore di lavoro (%)
+Margine extra per tasse o rischio (%)
+Tariffa oraria da addebitare
+Tariffa giornaliera (8 h)
+Costo annuo totale da coprire
+Ore fatturabili all'anno
+Tariffa = (stipendio × (1 + benefit %) + costi propri) ÷ ore fatturabili ÷ (1 − margine fiscale). Ore fatturabili = settimane lavorate × ore a settimana × quota fatturabile, perché un freelance non può fatturare amministrazione, vendite e tempi morti.
+Importo investito (costo)
+Valore restituito (ricavi o valore finale)
+Periodo in anni (facoltativo)
+Ritorno sull'investimento
+Guadagno netto
+ROI annualizzato
+ROI = (valore restituito − costo) ÷ costo. ROI annualizzato = (valore ÷ costo)^(1/anni) − 1, che rende confrontabili progetti di durata diversa.
+Importo mensile intero
+Data di trasloco o di inizio
+Giorni effettivi di quel mese
+Mese di 30 giorni (comune nei contratti di locazione)
+Affitto annuo ÷ 365
+Addebito del primo mese
+Giorni del mese
+Giorni di occupazione
+Tariffa giornaliera
+
+Controlla il tuo contratto: alcuni calcolano il pro rata su un mese di 30 giorni, altri sui giorni effettivi.
+Anna, Marco, Chiara
+Persone
+Persone (separate da virgole)
+Tasse (importo)
+Mancia (% delle voci)
+
+Nome della voce
+Prezzo
+Anna
+Marco
+Chiara
+Rimuovi la voce
+
+Vino
+Aggiungi voce
+Tasse e mancia vengono divise in proporzione a ciò che ciascuno ha ordinato. Le quote sono arrotondate al centesimo in modo che la somma dia esattamente il totale.
+Costo di acquisto
+Valore residuo
+Vita utile (anni)
+A quote costanti
+A saldo decrescente
+Somma delle cifre degli anni
+Fattore del saldo decrescente (2 = doppio)
+Importo ammortizzabile
+Spesa del primo anno
+Valore contabile finale
+Quote costanti = (costo − valore residuo) ÷ vita utile. Saldo decrescente = valore contabile × fattore ÷ vita utile, passando all'importo rimanente nell'ultimo anno. La somma delle cifre degli anni anticipa: l'anno n riceve (vita utile − n + 1) ÷ Σ(1…vita utile). Le norme fiscali (MACRS, AfA) hanno le proprie tabelle; confermale con il tuo commercialista.
+Ammortamento annuo
+Debiti: «nome, saldo, interesse % annuo, pagamento minimo» per riga
+Pagamento mensile totale che puoi permetterti
+Valanga (prima il tasso più alto)
+
+Palla di neve (prima il saldo più piccolo)
+
+La valanga fa risparmiare
+Entrambi i metodi pagano i minimi di ogni debito e destinano tutto il resto a un unico obiettivo. La valanga punta al tasso di interesse più alto e costa sempre meno; la palla di neve punta prima al saldo più piccolo, il che dà vittorie più rapide.
+Clienti oggi
+Ricavo per cliente al mese
+Nuovi clienti al mese
+Espansione mensile del ricavo per cliente (%)
+Mesi da proiettare
+Clienti dopo 24 mesi
+Ricavo mensile allora
+Quota dei clienti di oggi rimasti dopo un anno
+Metà di una coorte è persa dopo
+
+
+Clienti
+
+
+
+
+
+
+
+Tariffa ufficiale
+Distanza
+Andata e ritorno (distanza doppia)
+Oppure usa una tua tariffa per unità
+Sostituisce la tariffa ufficiale
+Rimborso
+
+Distanza conteggiata
+Tariffa usata
+
+Le tariffe ufficiali cambiano ogni anno e hanno condizioni (solo uso professionale, importi massimi, imponibile oltre il limite). Le tariffe nell'elenco sono indicative; controlla il valore attuale con l'autorità fiscale.
+Totale del conto
+Dividi tra
+Percentuali di mancia da confrontare (%)
+Le usanze variano: 15–20% è normale negli Stati Uniti, in gran parte d'Europa 5–10% o l'arrotondamento per eccesso, e in molti paesi, tra cui l'Italia, il servizio o il coperto è già incluso.
+Attività correnti (cassa, crediti, magazzino…)
+Passività correnti (debiti verso fornitori, debiti a breve termine…)
+di cui magazzino
+di cui cassa e mezzi equivalenti
+Capitale circolante netto
+Indice di liquidità corrente
+Indice di liquidità immediata
+Indice di cassa
+Indice di liquidità corrente = attività correnti ÷ passività correnti (sopra 1,2–2 di solito è confortevole). L'indice di liquidità immediata esclude il magazzino. L'indice di cassa usa solo la cassa. I livelli sani variano per settore.
+Prezzo precedente
+Unità vendute al prezzo precedente
+Nuovo prezzo
+Unità vendute al nuovo prezzo
+Elasticità della domanda al prezzo
+La domanda è
+elastica
+Ricavi prima
+Ricavi dopo
+Variazione dei ricavi
+Formula del punto medio: variazione % della quantità ÷ variazione % del prezzo, entrambe misurate rispetto alla media del valore vecchio e nuovo. Sotto −1 (elastica) un aumento di prezzo riduce i ricavi; tra −1 e 0 (anelastica) li aumenta.
+Costi generali condivisi da ripartire (affitto, utenze, software…)
+Reparti: «nome, persone, superficie, ricavi» per riga
+Numero di persone
+Superficie
+Ripartisci per
+Ogni reparto riceve la quota del totale in proporzione alla sua parte del parametro scelto. Scegli il parametro che spiega meglio perché il costo esiste: il numero di persone per le licenze software, la superficie per l'affitto, i ricavi per il tempo di gestione.
+Round di finanziamento: «nome, investimento, valutazione pre-money» per riga
+Fondatori dopo tutti i round
+Valore di quella quota
+I nuovi investitori ricevono investimento ÷ valutazione post-money dell'azienda; i soci esistenti vengono diluiti pro rata. Pool di opzioni, note convertibili e SAFE non sono modellati.
+Quota dei fondatori (%)
+Invia un importo e vedi cosa arriva
+Ricevi un importo e vedi cosa inviare
+Voglio
+Importo (valuta di origine se invii, valuta di destinazione se ricevi)
+Tasso di cambio interbancario (unità di destinazione per 1 unità di origine)
+Cercalo su un sito di cambi; 1 EUR = 1,09 USD significa 1,09
+Margine del fornitore sul tasso (%)
+Le banche spesso 2–5 %, i servizi specializzati 0,3–1 %
+Commissione fissa (valuta di origine)
+Margine di sicurezza per le oscillazioni del cambio (%)
+Invii
+
+Ricevono
+
+Tasso inclusa la commissione fissa
+Perso in margine e commissioni
+
+Budget con margine di sicurezza del 2 %
+
+Il tasso interbancario è il tasso «vero» tra acquirenti e venditori. I fornitori guadagnano abbassandolo (il margine) e applicando commissioni; l'importo perso è il vero costo del trasferimento. Confronta l'importo finale che arriva, non la commissione pubblicizzata.
+Piedi quadrati
+Metri quadrati
+Unità di superficie
+Superficie locabile
+Affitto base per unità all'ANNO
+Costi operativi / spese condominiali / NNN per unità all'anno
+Altri costi fissi al mese (parcheggio, utenze, assicurazione)
+Adeguamento annuo dell'affitto (%)
+Durata del contratto (anni)
+Affitto gratuito (mesi)
+Costo mensile, anno 1
+Totale sulla durata
+Costo medio per piede quadrato all'anno
+Quota dell'affitto base nell'anno 1
+Gli affitti pubblicizzati spesso escludono i costi operativi: i contratti «triple net» (NNN) aggiungono tasse, assicurazione e manutenzione. Confronta il costo tutto compreso per piede quadrato. Controlla come il contratto definisce la superficie locabile e chi paga le riparazioni e gli aumenti al rinnovo.
+Quanto costerà in futuro un importo
+Quanto vale oggi un importo del passato
+Il tasso medio di inflazione tra due prezzi
+Inflazione media annua (%)
+Numero di anni
+Prezzo all'inizio
+Prezzo alla fine
+
+Potere d'acquisto dell'importo di oggi a quel momento
+Aumento di prezzo
+Usa una media di lungo periodo: l'area dell'euro e gli Stati Uniti hanno puntato a circa il 2% per molti anni ma hanno avuto tassi molto più alti nel 2022–23. L'inflazione reale varia da voce a voce.
+Importo atteso
+Importo atteso (fondo cassa + vendite)
+Fondo cassa iniziale più incassi in contanti
+Conta ogni taglio una volta, inserisci il numero di banconote o monete e confronta con l'importo atteso. Gli importi sono calcolati in centesimi interi per evitare errori di arrotondamento. La pagina non memorizza nulla.
+Numero da 100
+Numero da 50
+Numero da 20
+Numero da 10
+Numero da 5
+Numero da 2
+Numero da 1
+Numero da 0,5
+Numero da 0,25
+Numero da 0,1
+Numero da 0,05
+Numero da 0,01
+Contato
+
+Atteso
+
+Ammanco di
+Banconote e monete
+
+Converti in
+Qualità (JPG, WebP, AVIF)
+Sfondo per le aree trasparenti (JPG)
+Scarica tutto (ZIP)
+Scegli immagini
+Converte JPG, PNG, WebP, GIF, BMP, SVG nel formato che scegli. L'output AVIF non è disponibile in questo browser.
+Adatta entro una larghezza / altezza massima
+Larghezza e altezza esatte (può deformare)
+Percentuale dell'originale
+Ridimensiona per
+Altezza (px, 0 = automatica)
+Scala (%)
+Consenti di ingrandire le immagini piccole
+Mantieni il formato originale
+Qualità
+Le immagini vengono elaborate sul tuo dispositivo e non vengono mai caricate.
+WebP (il più piccolo)
+JPG (il più compatibile)
+PNG (senza perdita, riduce solo un po')
+Limita anche il lato più lungo a (px, 0 = mantieni)
+Confronta il risultato con l'originale sotto ogni immagine. Abbassa la qualità finché non vedi una differenza, poi fai un passo indietro.
+Mantieni il profilo colore (consigliato, così i colori non cambiano)
+Mantieni l'indicatore di rotazione (consigliato, così la foto non viene ruotata)
+JPG, PNG e WebP vengono ripuliti senza ricodifica: i dati dell'immagine vengono copiati invariati, quindi la qualità è identica. Gli altri formati vengono salvati di nuovo come PNG.
+Immagine da modificare
+Sfocatura
+Pixelizza
+Riquadro nero (il più sicuro)
+Intensità
+Trascina qui uno screenshot o una foto, oppure
+Scegli un'immagine
+Effetto
+Annulla
+Scarica PNG
+Altra immagine
+Trascina un rettangolo sulla parte che vuoi nascondere. Pixelizzare e sfocare riducono i dettagli, ma per password, volti o numeri di conto un riquadro nero è l'unico metodo che non si può invertire. Il download è un nuovo PNG senza metadati.
+Sfondo trasparente
+Libero
+Trascina qui un'immagine, oppure
+Forma del ritaglio
+Ruota di (gradi)
+Colore di riempimento
+Capovolgi in orizzontale
+Capovolgi in verticale
+Scarica JPG
+Scarica WebP
+Trascina sull'immagine per selezionare l'area da mantenere. Rotazione e capovolgimento vengono applicati prima del ritaglio.
+© Il tuo nome
+Testo della filigrana
+Ripetuto su tutta l'immagine
+In diagonale sull'immagine
+Dimensione del testo (% della larghezza dell'immagine)
+Opacità
+Contorno scuro per la leggibilità
+Stesso formato
+Spaziatura interna
+Angoli arrotondati
+Trascina qui un logo quadrato (PNG, SVG o JPG, di almeno 512 × 512 px), oppure
+Spaziatura attorno al logo
+Colore di sfondo
+Colore del testo
+
+Esempio di testo grande
+Normale testo del corpo: quel vituperabile xenofobo zelante assaggia il whisky.
+Rapporto di contrasto
+
+
+
+
+
+Contrasto WCAG 2.1 = (L1 + 0,05) ÷ (L2 + 0,05), dove L è la luminanza relativa del colore più chiaro e di quello più scuro. Il testo grande è almeno 24 px, o 18,66 px in grassetto. I colori semitrasparenti vengono controllati così come sono, non miscelati con lo sfondo.
+Scegli un colore dallo schermo
+Numero di colori
+I colori si trovano raggruppando pixel simili e facendo la media di ogni gruppo (k-means), pesata per il numero di pixel che condividono ciascun colore; la quota mostra quanta parte dell'immagine copre ogni colore.
+1:1 (quadrato)
+9:16 (storie)
+1,91:1 (anteprima del link)
+4:5 (ritratto Instagram)
+Rapporto d'aspetto desiderato
+Bordo trasparente (PNG)
+Colore del bordo
+Riempi con una copia sfocata dell'immagine
+Data URI
+Tag HTML <img>
+CSS background-image
+Solo Base64
+Oppure incolla un data URI o una stringa Base64 per vedere l'immagine
+Da Base64 a immagine
+Zoom
+Trasparente fuori dal cerchio
+Trascina qui una foto di ritratto, oppure
+Spessore dell'anello (px)
+Colore dell'anello
+Dimensione di output
+Trascina l'immagine per centrare il volto e usa il cursore dello zoom. Il PNG scaricato ha lo sfondo trasparente fuori dal cerchio.
+Finestra macOS
+Finestra Windows
+Finestra del browser
+Senza cornice
+Ombra
+Testo della barra degli indirizzi
+Trascina qui uno screenshot, oppure
+Scegli uno screenshot
+Suggerimento: incolla uno screenshot con Ctrl+V / ⌘V.
+Cornice della finestra
+Spaziatura interna (px)
+Inizio della sfumatura
+Fine della sfumatura
+Angolo della sfumatura (°)
+Testo dell'indirizzo
+Copia immagine
+Altro screenshot
+Immagine A (originale)
+Scegli
+Immagine B (modificata)
+Soglia di sensibilità (0 = ogni modifica)
+Colore dell'evidenziazione
+Ogni pixel di A viene confrontato con lo stesso pixel di B. I pixel il cui colore differisce più della soglia vengono dipinti nel colore dell'evidenziazione; le aree invariate sono mostrate sbiadite.
+Bianco e nero (scala di grigi)
+Duotone (due colori)
+Seppia (vintage caldo)
+Inverti i colori (negativo)
+Anteprima in modalità scura (inverti, mantieni le tinte)
+Bianco e nero puro (soglia)
+Solo luminosità e contrasto
+Soglia
+Luminosità
+Contrasto
+Salva come
+Bianco e nero, duotone, seppia, inversione, modalità scura e luminosità/contrasto. Le immagini vengono elaborate sul tuo dispositivo.
+Rileva dal bordo dell'immagine (automatico)
+Bianco
+Nero
+Colore da rimuovere
+Tolleranza
+Bordo sfumato
+Funziona meglio su uno sfondo uniforme e illuminato in modo omogeneo (foglio bianco, fondale da studio, green screen). Rimuove un colore, non una persona: per scene complesse usa un rimuovitore basato su IA.
+Incolla il codice SVG oppure apri un file .svg
+Input SVG
+SVG ottimizzato
+Rimuovi <title> e <desc> (danneggia l'accessibilità)
+Rimuovi gli attributi id inutilizzati
+Cifre decimali per le coordinate
+2 bastano per la maggior parte delle icone
+Codice SVG
+Ottimizzato
+Solo ottimizzazioni sicure: metadati degli editor, commenti, namespace e spazi vengono rimossi e i numeri arrotondati. I tracciati non vengono riscritti, quindi il disegno resta lo stesso. Controlla l'anteprima prima di usare il risultato; icone molto piccole possono richiedere più decimali.
+Tedesco
+Polacco
+Ceco
+Inglese + tedesco
+Inglese + polacco
+Inglese + ceco
+Testo riconosciuto
+Trascina qui un'immagine con testo (screenshot, foto di un documento, scansione), oppure
+Lingua del testo
+Il motore di riconoscimento (Tesseract, compilato in WebAssembly) e i dati linguistici vengono caricati da questo sito e girano nel tuo browser: l'immagine non viene caricata. La prima esecuzione richiede qualche secondo in più. I risultati migliori vengono da testo dritto, nitido e ad alto contrasto; la scrittura a mano non è supportata.
+Affiancate
+Impilate
+Griglia (2 × 2)
+Schermo diviso con separatore (2 immagini)
+Quadrato 1:1
+Verticale 9:16
+Aggiungi le immagini nell'ordine in cui devono apparire
+Aggiungi immagini
+Layout
+Forma della tela
+Spazio (px)
+Scarica JPEG
+Le immagini vengono ritagliate per riempire la loro cella (cover). Usa il layout a schermo diviso per i confronti prima/dopo.
+QUANDO IL CODICE FUNZIONA
+Testo in alto
+AL PRIMO TENTATIVO
+Testo in basso
+Colore del contorno
+Lettere maiuscole
+Scegli l'immagine per il tuo meme
+Dimensione del testo (% della larghezza)
+L'immagine resta sul tuo dispositivo. Impact viene usato se il tuo sistema ce l'ha; altrimenti un sans-serif in grassetto. Usa solo immagini che hai il diritto di condividere.
+2 (bianco e nero)
+256 (massimo per PNG-8)
+Dithering (sfumature più morbide, file più grande)
+Riduci le immagini molto grandi a una larghezza massima di (px, 0 = mantieni)
+Riduce il numero di colori e salva un piccolo PNG indicizzato (come pngquant). Ottimo per loghi, icone, screenshot e illustrazioni; le foto possono mostrare bande a meno che tu non usi il dithering.
+Trascina qui una foto (JPEG, PNG o WebP), oppure
+I metadati vengono letti dal file nel tuo browser; la foto non viene caricata. Messenger e social network spesso li eliminano, ma gli allegati e-mail e i link cloud di solito li mantengono.
+JPG (funziona ovunque)
+PNG (senza perdita, più grande)
+WebP (piccolo)
+Qualità (JPG, WebP)
+Larghezza massima (px, 0 = originale)
+Foto HEIC/HEIF di iPhone e di alcuni telefoni Android. Vengono decodificate sul tuo dispositivo (libheif, WebAssembly); nulla viene caricato. Vengono convertiti anche altri tipi di immagine.
+Per sempre
+Ripeti una volta
+Riproduci una volta
+256 (migliore)
+32 (più piccolo)
+16 (il più piccolo)
+Grigio
+Trascina qui due o più immagini (nell'ordine dell'animazione), oppure
+Tempo per immagine (ms)
+Ripetizione
+Colori
+Sfondo (per aree trasparenti e bordi)
+Le immagini di forme diverse vengono adattate alla cornice della prima immagine senza deformarle. Ogni fotogramma ha una propria tavolozza di colori. Tutto avviene nel tuo browser.
+Sinusoidale (tono puro)
+Quadra
+Triangolare
+Dente di sega
+Frequenza (logaritmica)
+Volume
+Entrambi gli altoparlanti
+Solo sinistro
+Solo destro
+Riproduci
+Sweep 20 Hz → 20 kHz (30 s)
+Basso 100 Hz
+
+
+
+Frequenza (Hz)
+Cursore (logaritmico)
+Onda
+Canale
+⚠ Parti con il volume basso e alzalo lentamente. I toni puri, soprattutto quelli acuti, possono essere forti e stancanti, e 15–20 kHz possono fare male con le cuffie.
+Il tono viene generato dal vivo da un oscillatore della Web Audio API. Usa il selettore del canale per controllare gli altoparlanti sinistro/destro e lo sweep per trovare la frequenza di una vibrazione, di un ronzio o di un fischio della bobina: ascolta il momento in cui il rumore diventa forte. La maggior parte degli adulti non sente oltre i 16 kHz circa, e gli altoparlanti dei portatili non riproducono sotto i 100 Hz circa.
+Incolla qui il tuo copione
+Copione
+Velocità
+Dimensione del testo
+Testo speculare (per teleprompter a vetro)
+Linea di lettura
+Pausa / riprendi
+Chiudi
+Avvia il teleprompter
+Alla velocità predefinita un copione di 150 parole impiega circa due minuti a scorrere. Il tuo copione resta nel tuo browser. Posiziona la fotocamera sopra la linea di lettura così i tuoi occhi restano vicini all'obiettivo.
+Tocca il pulsante (o premi la barra spaziatrice) a tempo
+Click di metronomo al tempo battuto
+BPM = 60.000 ÷ il tempo medio tra i tocchi (in millisecondi) sugli ultimi 12 tocchi. I tocchi distanziati di oltre 2,5 secondi avviano una nuova misurazione. Batti almeno 8 tempi per una lettura stabile. Il tempo è misurato dai tuoi tocchi, non da un file audio.
+Picco: il punto più forte come obiettivo
+Volume (RMS): livello medio come obiettivo
+Livello obiettivo (dBFS)
+Picco: −1 è comune. RMS: circa −16 per i podcast.
+
+
+Qualità WAV
+Trascina qui un file audio, oppure
+La normalizzazione di picco fa raggiungere l'obiettivo al campione più forte; la normalizzazione del volume (RMS) uguaglia il livello medio e mantiene i picchi sotto −1 dBFS. Il file viene decodificato dal browser, elaborato qui e salvato come file WAV (44,1 kHz). Nulla viene caricato. I file WAV sono più grandi degli MP3.
+Soglia di silenzio (dBFS)
+Tutto ciò che è più debole di questo conta come silenzio.
+Margine da conservare (ms)
+Accorcia anche le pause lunghe all'interno della registrazione
+Pause più lunghe di (ms)
+Il file viene decodificato dal browser, elaborato qui e salvato come file WAV (44,1 kHz). Nulla viene caricato. I file WAV sono più grandi degli MP3.
+Mixa in mono
+Scambia sinistra e destra
+Silenzia il canale sinistro
+Silenzia il canale destro
+Inverti la polarità del canale sinistro
+Inverti la polarità del canale destro
+Inverti entrambi i canali
+Pan del mix mono a sinistra / destra
+Operazione
+Pan (−100 sinistra … +100 destra)
+Usa «Inverti la polarità» per verificare se due altoparlanti o microfoni sono in fase. Il file viene decodificato dal browser, elaborato qui e salvato come file WAV (44,1 kHz). Nulla viene caricato. I file WAV sono più grandi degli MP3.
+Semitoni
+Velocità in percentuale
+Cambia per
+Semitoni (−12 = un'ottava sotto, +12 = un'ottava sopra)
+Velocità (%)
+Questo cambia insieme tonalità e velocità, come accelerare un nastro: le note acute vanno più veloci, quelle gravi più lente. La durata non viene mantenuta costante. Il file viene decodificato dal browser, elaborato qui e salvato come file WAV (44,1 kHz). Nulla viene caricato. I file WAV sono più grandi degli MP3.
+● Registra
+■ Ferma
+Mantieni da (secondi)
+Mantieni fino a (secondi)
+La registrazione resta nel tuo browser. Scaricala prima di chiudere la pagina. Il microfono si spegne non appena premi Ferma.
+Includi l'audio di sistema / della scheda (se il browser lo offre)
+Includi il mio microfono
+● Avvia la registrazione
+Il browser ti chiede quale schermo, finestra o scheda condividere. Il video viene registrato localmente in memoria; le registrazioni molto lunghe usano molta RAM, quindi scaricale a parti. L'audio di sistema è disponibile solo registrando una scheda o, in alcuni browser, l'intero schermo.
+Fotocamera predefinita
+Predefinito
+1920 × 1080 (Full HD)
+
+
+
+Avvia la fotocamera
+Fotocamera
+Risoluzione richiesta
+Frame rate richiesto
+I browser danno la modalità più vicina supportata dalla fotocamera; i valori «attuali» sono ciò che ottieni davvero. La scarsa luce spesso costringe le fotocamere a un frame rate più basso. L'immagine viene mostrata solo in questa pagina e non viene mai registrata né inviata.
+Misura 8 secondi di silenzio
+Resta in silenzio e mantieni la stanza com'è durante una normale registrazione. Il test misura il livello medio del rumore di fondo.
+Din
+Buzzer
+Rullo di tamburi
+Trombone triste
+Applausi
+Whoosh
+Tromba da stadio
+Passaggio di livello
+Risposta sbagliata
+Risposta corretta
+Bip del timer
+Aggiungi i tuoi suoni
+I suoni vengono sintetizzati dal vivo dal tuo browser. Premi 1–9 e 0 per riprodurre i primi dieci. Per riprodurre suoni in una videochiamata, condividi la scheda del browser con l'audio oppure instrada questa scheda attraverso un cavo audio virtuale. I suoni personalizzati restano sul tuo dispositivo e si perdono alla chiusura della pagina.
+Mantieni naturale l'altezza della voce
+Scegli un video da vedere in anteprima a un'altra velocità
+L'anteprima cambia solo la velocità di riproduzione. L'esportazione registra il video mentre viene riprodotto, quindi dura quanto il video accelerato e viene salvata come WebM.
+Scheda colore
+Livello di grigio
+Usa la scheda per il bilanciamento del bianco (tienila davanti a una webcam), per valutare la luminosità dello schermo, per cercare pixel colorati o bloccati, o come luce veloce. Lo schermo intero riempie tutto il display.
+Grigio neutro (18 %)
+Bianco luce diurna 6500 K
+Bianco caldo 3200 K
+Bianco freddo 7500 K
+Rosso
+Schermo intero
+Qualsiasi colore
+Livello di grigio 0–255
+Valore esadecimale
+Ripeti il controllo
+Il tuo browser sta rendendo la grafica via software. Abilita l'accelerazione hardware nelle impostazioni del browser (Chrome/Edge: Impostazioni → Sistema → «Usa l'accelerazione grafica quando disponibile»; Firefox: Impostazioni → Generale → Prestazioni) e aggiorna il driver della scheda grafica, poi riavvia il browser.
+Misura per 5 secondi
+Osserva la barra in movimento per vedere eventuali scatti mentre il browser conta i fotogrammi.
+Altezza (px)
+Diagonale dello schermo in pollici (facoltativa)
+Scala alla larghezza (px, facoltativa)
+Rapporto esatto
+Standard più vicino
+16:9 · Widescreen (HD, Full HD, 4K)
+Megapixel
+Densità di pixel
+
+Dimensione fisica
+A una larghezza di 1280 px
+Ritaglio comune: per portare l'immagine a 16:9 alla stessa larghezza usa un'altezza di 1080 px.
+Larghezza del monitor 1 (px)
+Altezza del monitor 1 (px)
+Diagonale del monitor 1 (pollici)
+Larghezza del monitor 2 (px)
+Altezza del monitor 2 (px)
+Diagonale del monitor 2 (pollici)
+Densità del monitor 1
+
+Densità del monitor 2
+
+Rapporto di densità
+Dimensione fisica del monitor 1
+Dimensione fisica del monitor 2
+Differenza di altezza
+Imposta la scala di visualizzazione del monitor 1 a circa il 119 % di quella dell'altro (ad esempio 100 % sullo schermo a densità minore e 119 % su quello più denso) in modo che il testo appaia della stessa dimensione fisica.
+I sistemi operativi offrono solo passi di scala fissi (100, 125, 150, 175, 200 %); scegli il più vicino.
+Scegli un video da cui estrarre fotogrammi
+◀ 1 fotogramma
+1 fotogramma ▶
+Frame rate 
+Salva il fotogramma (PNG)
+Salva il fotogramma (JPEG)
+Il fotogramma viene preso alla risoluzione originale del video. L'avanzamento fotogramma per fotogramma presume il frame rate che inserisci (30 per impostazione predefinita); i browser non comunicano alle pagine il frame rate esatto. Nulla viene caricato.
+Mantieni la parte tra inizio e fine
+Rimuovi la parte tra inizio e fine
+Inizio (secondi)
+Fine (secondi, 0 = fine del file)
+Dissolvenza in entrata (ms)
+Dissolvenza in uscita (ms)
+WAV (senza perdita, grande)
+MP3 (piccolo)
+
+
+
+
+
+
+
+Bitrate MP3
+Inserisci inizio e fine in secondi (fine 0 = fino alla fine del file). «Mantieni» salva solo quella parte; «Rimuovi» la taglia e unisce il resto. Il file viene decodificato dal browser, elaborato qui e salvato come file WAV o MP3 (44,1 kHz). Nulla viene caricato. L'MP3 è molto più piccolo del WAV; il WAV mantiene ogni dettaglio.
+Trascina qui due o più file audio, oppure
+Dissolvenza incrociata tra le tracce (ms)
+0 = riproduci una dopo l'altra
+I file vengono decodificati dal browser a 44,1 kHz, quindi tracce con frequenze di campionamento diverse si uniscono senza cambiare tonalità. Le tracce mono vengono allargate a stereo quando le mixi con tracce stereo. Nulla viene caricato.
+Variazione di volume (dB)
+Positivo = più forte, negativo = più basso
+Evita il clipping (limita il picco più alto a 0 dBFS)
++6 dB è circa il doppio del volume, −6 dB circa la metà. Con «evita il clipping» il risultato viene ridotto se altrimenti distorcerebbe. Il file viene decodificato dal browser, elaborato qui e salvato come file WAV o MP3 (44,1 kHz). Nulla viene caricato. L'MP3 è molto più piccolo del WAV; il WAV mantiene ogni dettaglio.
+L'intera registrazione viene riprodotta al contrario, sia il canale sinistro sia quello destro. Il file viene decodificato dal browser, elaborato qui e salvato come file WAV o MP3 (44,1 kHz). Nulla viene caricato. L'MP3 è molto più piccolo del WAV; il WAV mantiene ogni dettaglio.
+
+
+
+Piatto (nessuna modifica)
+Enfasi sui bassi
+Enfasi sugli alti
+Chiarezza della voce
+Loudness (curva «sorriso»)
+Caldo e morbido
+Preset
+Cinque bande: shelf dei bassi (60 Hz), medio-bassi (250 Hz), medi (1 kHz), medio-alti (4 kHz) e shelf degli alti (12 kHz). Ognuna può essere alzata o abbassata fino a 12 dB; il risultato è protetto dal clipping. Il file viene decodificato dal browser, elaborato qui e salvato come file WAV o MP3 (44,1 kHz). Nulla viene caricato. L'MP3 è molto più piccolo del WAV; il WAV mantiene ogni dettaglio.
+Converti in mono (metà delle dimensioni)
+Qualsiasi audio che il tuo browser sappia riprodurre (MP3, M4A/AAC, OGG, FLAC, WAV, Opus, o la colonna sonora di un video) può essere salvato come WAV o MP3. Convertire di nuovo in MP3 un file con perdita fa perdere ancora un po' di qualità. Il file viene decodificato dal browser, elaborato qui e salvato come file WAV o MP3 (44,1 kHz). Nulla viene caricato. L'MP3 è molto più piccolo del WAV; il WAV mantiene ogni dettaglio.
+Registra l'audio dal microfono
+Accendi la fotocamera
+L'anteprima è specchiata come in uno specchio; il video salvato no. La registrazione resta in memoria, non viene mai caricata, e la fotocamera si spegne quando lasci la pagina. I browser salvano WebM (Chrome, Firefox, Edge) o MP4 (Safari).
+Scrivi o incolla il testo da leggere ad alta voce
+Voce predefinita
+Nessuna voce installata
+▶ Leggi ad alta voce
+Pausa
+Voce
+Velocità (0,5–2)
+Tonalità (0,5–2)
+Volume (%)
+Le voci provengono dal tuo dispositivo o dal browser, quindi differiscono tra computer e telefoni, e la lingua della voce deve corrispondere a quella del testo. La lettura avviene in locale; il testo non viene inviato da nessuna parte. I browser non permettono alle pagine di salvare il parlato come file audio; per registrarlo usa il Registratore dello schermo con l'audio di sistema.
+Riduzione del rumore (dB)
+Più alto rimuove di più ma può rendere la voce sottile
+Sensibilità (1–5)
+Più alto tratta più suono come rumore
+Parte con solo rumore: da (secondi)
+a (secondi, 0 = rileva automaticamente)
+Funziona meglio con rumore costante come fruscio, ronzio, ventola o rumore del traffico. Per impostazione predefinita il rumore viene appreso dal decimo più silenzioso della registrazione; se conosci un tratto con solo rumore (ad esempio il primo secondo), inseriscilo qui sotto per un risultato migliore. Il file viene decodificato dal browser, elaborato qui e salvato come file WAV o MP3 (44,1 kHz). Nulla viene caricato. L'MP3 è molto più piccolo del WAV; il WAV mantiene ogni dettaglio.
+Trascina qui un brano o una registrazione, oppure
+Il tempo deriva dal ritmo del suono (attacchi) e la tonalità dall'intensità delle dodici note nel tempo. Entrambi funzionano meglio con musica dal ritmo chiaro e costante e dalla tonalità stabile; parlato, musica ambient e brani con cambi di tempo o tonalità danno risultati inaffidabili. La metà o il doppio del tempo è un'ambiguità comune, quindi controlla le alternative. Tutto viene analizzato nel tuo browser.
+Lunghezza
+Evita caratteri simili (I l 1 O 0)
+Genera nuova
+Le password vengono create nel tuo browser con crypto.getRandomValues (la stessa fonte sicura che i browser usano per le chiavi di cifratura) e non vengono mai inviate da nessuna parte. Entropia = lunghezza × log₂(dimensione dell'insieme); il tempo di forza bruta presume un attacco offline su un hash veloce ed è solo una stima approssimativa.
+
+
+
+Insieme di caratteri
+Trattino -
+Spazio
+Punto .
+Trattino basso _
+Nessuno
+Parole con l'iniziale maiuscola
+Aggiungi una cifra a una parola
+Separatore
+Le parole vengono estratte a caso dalla EFF Large Wordlist (© Electronic Frontier Foundation, CC BY 3.0). Ogni parola aggiunge 12,9 bit di entropia, quindi cinque parole danno circa 65 bit e sei circa 78 bit: lunga, ma facile da ricordare. Non riutilizzare mai una passphrase.
+
+
+Elenco di parole
+7.776 parole (EFF)
+
+Facoltativo: segreto per verificare HS256 / HS384 / HS512
+JSON Web Token
+Segreto (facoltativo)
+La verifica avviene in locale con Web Crypto; il segreto non viene inviato da nessuna parte.
+Wi-Fi ospiti
+Nome della rete (SSID)
+WPA / WPA2 / WPA3
+WEP (vecchio)
+Senza password
+Sicurezza
+
+Rete nascosta
+Piccolo (256 px)
+Medio (512 px)
+Grande (1024 px)
+Stampa (2048 px)
+Bassa (7%)
+Media (15%)
+Quartile (25%)
+Alta (30%)
+Colore del QR
+Correzione degli errori
+Dimensione del PNG
+Scarica SVG
+Copia il contenuto
+Gli ospiti inquadrano il codice con la fotocamera del telefono e toccano per collegarsi. Stampalo e mettilo in una cornice. La password è memorizzata solo nel codice QR stesso, nulla viene caricato.
+Nome
+
+Cognome
+Acme S.r.l.
+Azienda
+Ruolo
+Telefono
+Cellulare
+
+E-mail
+Sito web
+Via
+Città
+Paese
+Inquadrando il codice si può salvare il contatto nella rubrica del telefono (vCard 3.0). Più campi producono un codice più denso e più difficile da leggere; sii breve per le stampe piccole.
+Link a un sito web
+Testo semplice
+Messaggio SMS
+Contenuto
+Link, testo, indirizzo e-mail o numero di telefono
+Oggetto
+Messaggio
+Il codice contiene i dati stessi, quindi non scade mai e non dipende da un servizio. Provalo con un telefono prima di stampare e lascia un margine bianco intorno.
+Scrivi il messaggio privato (sii breve: viaggia dentro il link)
+Chiave casuale (invia la chiave separatamente)
+La mia password
+Il tuo messaggio
+Proteggi con
+La nota viene cifrata nel tuo browser con AES-256-GCM. Il testo cifrato si trova nella parte del link dopo il #, che non viene mai inviata a un server web, e questo sito non memorizza nulla. Siamo onesti sui limiti: il link non può «autodistruggersi», perché non c'è un server che lo cancelli. Chiunque abbia sia il link sia la chiave o la password può leggere la nota, per sempre.
+Scrivi qui. Tutto viene salvato automaticamente in questo browser.
+Blocco appunti
+Scarica .txt
+Le note vivono solo in questo browser (localStorage). Sopravvivono a riavvii e crash, ma non alla cancellazione dei dati del sito, alla modalità privata né a un altro dispositivo. Non conservare qui password.
++ Nuovo blocco
+Rinomina
+Salvato
+✓ in questo browser
+Aggiungi una voce e premi Invio
+Nuova voce
+Copia come testo
+Deseleziona tutto
+Rimuovi i completati
+La tua lista viene salvata solo in questo browser.
+Scrivere la bozza
+Sposta su
+Elimina voce
+Rivedere con il team
+Pubblicare
+Copia come Markdown
+Reimposta la lavagna
+Trascina le carte tra le colonne o usa le frecce. La lavagna viene salvata solo in questo browser, il che ne fa una lavagna personale privata, non uno strumento di team.
+Pianificare il progetto
+Sposta a sinistra
+Sposta a destra
+Elimina carta
++ Aggiungi carta
+Aggiungi una carta a Da fare
+In corso (0)
+Aggiungi una carta a In corso
+Fatto (0)
+Aggiungi una carta a Fatto
+Conta di 1
+Conta di 2
+Conta di 5
+Conta di 10
+Sottrai
+Tastiera: Spazio, ↑ o + conta in avanti; ↓ o − conta all'indietro. Il numero viene ricordato in questo browser.
+Incolla il tuo documento Markdown
+Elenco numerato
+Inserisci l'indice nel documento
+Indice
+Dal livello di titolo
+Al livello
+Le ancore seguono le regole di GitHub: minuscolo, punteggiatura rimossa, gli spazi diventano trattini, i titoli duplicati ricevono -1, -2. I titoli nei blocchi di codice vengono ignorati.
+Ciao {{name}}, il tuo ordine {{order_id}} verrà spedito il {{date}}.
+Modello
+Testo compilato
+Modello con {{segnaposto}}
+Scrivi {{name}} ovunque nel testo, poi compila i campi che compaiono. I segnaposto lasciati vuoti restano visibili così li noti. Funziona per modelli di e-mail, risposte predefinite e prompt per IA.
++ Criterio
+Dai a ogni opzione un punteggio da 0 a 10 per criterio e dai a ogni criterio un peso. Il risultato è la media ponderata: Σ(punteggio × peso) ÷ Σ pesi. Lo strumento struttura la discussione; non sostituisce il giudizio.
+Opzione A
+Nome dell'opzione
+Opzione B
+Opzione C
++ Opzione
+Criterio
+Rimuovi criterio
+🏆 Punteggio ponderato più alto
+I primi due sono molto vicini. Controlla pesi e punteggi prima di decidere.
+Cosa hai fatto ieri? Una voce per riga
+Cosa farai oggi?
+Ostacoli (lascia vuoto se non ce ne sono)
+Slack / Teams (grassetto, elenco puntato)
+Aggiornamento daily
+Ieri
+Oggi
+Ostacoli
+Pronto da incollare
+Incolla qui (Ctrl+V). Font, colori, link e formattazione vengono rimossi.
+Area per testo semplice
+Togli spazi e righe vuote alle estremità
+Riduci più righe vuote consecutive
+Sostituisci virgolette curve e spazi speciali
+Copia come testo semplice
+
+# Ciao⏎⏎Scrivi qui il **Markdown**…
+Copia per e-mail
+Copia HTML
+
+Cerca frammenti…
+Cerca frammenti
+Titolo (es. IBAN, indirizzo, risposta)
+Titolo del frammento
+Testo da copiare con un clic
+Testo del frammento
+Aggiungi frammento
+Esporta tutto (JSON)
+Importa
+
+Firma e-mail
+Modifica
+Elimina
+Frammenti
+Memorizzato
+solo in questo browser
+Incolla qui il testo formattato
+Mantieni i link
+Mantieni le tabelle
+Mantieni i titoli
+Pulisci HTML
+Copia testo da Word, Documenti Google, una pagina web o un'e-mail, clicca sulla casella e incolla (Ctrl+V).
+
+Testo → Braille
+Braille → Testo
+Scrivi testo, oppure incolla caratteri braille (⠓⠑⠇⠇⠕)…
+
+Famiglia Rossi
+Nucleo familiare o persona
+Indirizzo
+Contatti (uno per riga: nome; telefono)
+Informazioni mediche (allergie, farmaci, gruppo sanguigno)
+Note (chiavi, animali, indizi sul codice dell'allarme)
+Crea scheda stampabile (PDF)
+
+Avvia lo sprint, poi scrivi senza fermarti né correggere…
+Area di scrittura
+Avvia sprint
+Termina ora
+Durata dello sprint (minuti)
+Obiettivo di parole (0 = nessuno)
+Prima scrivi, poi correggi. Il testo viene conservato solo in questa pagina: copialo o scaricalo prima di chiudere. Nulla viene caricato.
+Compiti: «nome, ottimistica, più probabile, pessimistica» per riga
+Qualsiasi unità (giorni, ore, story point).
+Totale obiettivo (stessa unità, facoltativo)
+Totale atteso
+Deviazione standard
+80% di confidenza entro
+95% di confidenza entro
+
+
+Un nome per riga
+Nomi
+Rimuovi il vincitore dopo ogni giro
+Suono del ticchettio
+Ruota dei nomi
+Mescola i nomi
+Fai girare la ruota
+
+Partecipanti
+Anna != Marco   (Anna non deve fare il regalo a Marco)⏎Chiara != Davide
+Esclusioni
+Nascondimi gli abbinamenti (mostra solo i link privati)
+Esclusioni (facoltativo)
+Coppie, persone che si conoscono già…
+
+Link privati: invia a ciascuno il suo
+apri
+Copia tutto (nome: link)
+Estrai di nuovo
+Una squadra o un giocatore per riga, prima la testa di serie migliore
+Partecipanti
+Eliminazione diretta
+All'italiana (tutti contro tutti)
+Partecipanti (prima la testa di serie migliore)
+Turni
+Bye
+
+CEO⏎  CTO⏎    Sviluppatore⏎  CFO
+Struttura dell'organizzazione
+Larghezza dei riquadri (px)
+Colore d'accento
+Struttura (rientro = risponde a)
+
+Incolla l'e-mail o il messaggio che stai per inviare
+Scrivi tutto ciò che hai in testa, un pensiero per riga o a frasi…
+Svuotamento mentale
+Il tuo svuotamento mentale
+Copia come checklist Markdown
+Scarica .md
+
+Compiti
+Domande
+Idee
+Preoccupazioni
+Sostituisci gli spazi non separabili con spazi normali
+Mantieni i giunzioni dentro le emoji (ZWJ)
+Testo con caratteri nascosti
+Testo ripulito
+
+
+
+
+
+
+
+
+
+Ignora maiuscole/minuscole
+Togli gli spazi attorno alle righe
+Scarta le righe vuote
+Mantieni l'ordine originale
+Prima le più frequenti
+Ordine
+Mostra quante volte compare ogni riga
+Righe uniche
+Uniche
+Rimosse
+a capo
+virgola
+punto e virgola
+tabulazione
+spazio
+barra verticale
+virgola e spazio
+niente
+
+
+
+Racchiudi ogni elemento in
+testo semplice
+array [ … ]
+elenco SQL ( … )
+Restituisci il risultato come
+Indirizzi e-mail
+URL
+Numeri di telefono
+UUID
+Indirizzi IPv4
+Colori esadecimali
+Hashtag
+@menzioni
+Date (ISO o G.M.A)
+Numeri
+IBAN
+Espressione regolare personalizzata…
+Trova
+Schema personalizzato (regex JavaScript)
+Rimuovi i duplicati
+Mostrate
+Testo originale
+Testo modificato
+Riga per riga
+Parola per parola
+Carattere per carattere
+Ignora gli spazi
+Ignora maiuscole/minuscole
+Confronta
+Inverti
+Copia patch
+Scarica .patch
+Righe aggiunte
+Righe rimosse
+Invariato
+Incolla celle copiate da Excel, Fogli Google, CSV o da una tabella Markdown
+Dati della tabella
+Tabella Markdown
+Tabella HTML
+Rileva automaticamente
+Virgola
+Punto e virgola
+2 o più spazi
+La prima riga è l'intestazione
+Allinea le colonne nel sorgente
+Allineamento
+Limiti delle piattaforme
+Senza spazi
+Simboli visibili (grafemi)
+Byte UTF-8
+Post su X / Twitter
+Post su LinkedIn
+Titolo di LinkedIn
+Didascalia di Instagram
+Post su Facebook (consigliato)
+Titolo di Google Ads
+Descrizione di Google Ads
+Meta title (≈ 600 px)
+Meta description
+Titolo di YouTube
+Didascalia di TikTok
+SMS (GSM-7, 160 per parte)
+
+Incolla qui il tuo discorso o copione
+Il tuo ritmo (parole al minuto)
+Pausa per paragrafo (secondi)
+Aggiunta dopo ogni riga vuota
+Lento · 110 ppm
+Naturale · 150 ppm
+Energico · 180 ppm
+Il tuo ritmo · 140 ppm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tabella
+Dati generati
+Lingua dei nomi
+Genera nuovi dati
+Le e-mail usano il dominio riservato example.com e i numeri di telefono usano intervalli fittizi, quindi nulla arriva a una vera casella di posta o a un vero telefono.
+Trattini: – → -  e — → --
+Puntini di sospensione … → ...
+Legature ﬁ ﬂ æ → fi fl ae
+Spazi speciali → spazio normale, elimina quelli a larghezza zero
+Elenchi puntati • → *
+Mantieni le interruzioni di paragrafo (righe vuote)
+Riunisci le parole spezzate da un trattino a fine riga
+Mantieni le voci di elenchi puntati e numerati su righe proprie
+Testo prima di ogni riga
+Testo dopo ogni riga
+Inserisci un contatore dove compare {n}
+Il contatore parte da
+Cifre del contatore (con zeri iniziali)
+Salta le righe vuote
+Alfabetico (A–Z)
+Numeri naturali (v2 prima di v10)
+Valore numerico nella riga
+Ordina per
+Ordine inverso
+Incolla un testo qualsiasi, sorgente HTML o un'esportazione di casella di posta
+Raggruppa per dominio
+E-mail
+E-mail uniche
+Domini
+Incolla testo con link, oppure un singolo URL disordinato
+Rimuovi l'intera query string
+Rimuovi i #frammenti
+Ripulisci i link all'interno del mio testo
+Elenca solo gli URL puliti unici
+URL trovati
+Con il tracciamento rimosso
+Parametri eliminati
+Minuscolo
+Scarta le parole piccole (a, il, di …)
+Lunghezza massima (0 = nessun limite)
+Titoli (uno per riga)
+Slug
+Spostamento (13 = ROT13, uguale per codificare e decodificare)
+Ruota anche le cifre (ROT5)
+Converti anche in ASCII semplice (caffè → caffe, scarta tutto il resto)
+Sostituisci con
+Mostra le lettere minuscole in minuscolo
+Testo da scandire
+Compitazione fonetica NATO
+Righe mescolate
+Mescola di nuovo
+errore
+contiene
+inizia con
+finisce con
+è uguale a
+Riga…
+Mantieni le righe che NON corrispondono
+Usa espressione regolare
+Righe mantenute
+Elenco A (un elemento per riga)
+Elenco B (un elemento per riga)
+Virgola + spazio
+Barra verticale
+Trattino
+Riempi la colonna A per allineare le colonne
+Unito
+Elenco A
+Elenco B
+Tabulazioni → spazi
+Spazi → tabulazioni
+Converti
+Spazi per tabulazione
+Rimuovi gli spazi finali
+Cambia solo il rientro (non le tabulazioni all'interno delle righe)
+Parole singole
+Espressioni di due parole
+Espressioni di tre parole
+Conteggio
+Ignora le parole comuni in
+Conteggio minimo
+Scarica CSV
+Termini totali
+Distinti
+Parole nel testo
+Incolla il testo lungo da dividere
+Preferisci i confini dei paragrafi
+Non tagliare mai dentro una parola
+Numero massimo di caratteri per blocco
+Sovrapposizione (caratteri)
+Scarica tutto (.txt)
+Blocchi
+Il più lungo
+Incolla la tua e-mail, il tuo rapporto o un annuncio di lavoro
+Evidenziato
+Alternative in linguaggio semplice
+Paroloni
+Ogni 100 parole
+Nessun gergo trovato.
+Elenco HTML annidato
+Elenco Markdown
+Schema rientrato
+testo
+esadecimale
+binario
+decimale
+ottale
+
+
+a capo
+Separatore tra i byte
+Scrivi testo, oppure incolla codice Morse (punti, linee, / tra le parole)
+Testo → Morse
+Morse → testo
+Riproduci come suono
+Velocità (parole al minuto)
+Tonalità (Hz)
+Un'altra lingua (solo punteggi indipendenti dalla lingua)
+Segnala le frasi più lunghe di (parole)
+Punteggi
+Frasi nel riassunto
+Lingua
+Testo da riassumere
+Riassunto
+Testo A (ad esempio l'originale)
+Testo A
+Testo B (ad esempio il testo da controllare)
+Testo B
+Passaggio condiviso più breve (parole di fila)
+
+Ora Unix attuale (secondi)
+Timestamp o date (uno per riga)
+Secondi, millisecondi, microsecondi, ISO 8601 o AAAA-MM-GG hh:mm:ss (UTC)
+Mostra l'ora locale in
+Differenza
+
+Giorni totali
+Settimane
+Giorni lavorativi (lun–ven)
+Ore
+Minuti
+Una data dopo N giorni lavorativi
+Giorni lavorativi tra due date
+Data di inizio
+Giorni lavorativi da aggiungere (negativo = tornare indietro)
+Data di fine
+Nessuna festività
+Stati Uniti (federali)
+Regno Unito (Inghilterra e Galles)
+Germania (a livello nazionale)
+Polonia
+Cechia
+Austria
+Festività
+Sabato e domenica
+Venerdì e sabato
+Solo domenica
+Nessun fine settimana (settimana di 7 giorni)
+Fine settimana
+Giorni di riposo aggiuntivi (AAAA-MM-GG, uno per riga)
+Chiusure aziendali, giorni di ferie…
+Conta il giorno di inizio e quello di fine
+
+Giorni di calendario
+Conteggio in avanti da 2026-11-04; il giorno di inizio stesso non viene contato.
+Avvio del progetto
+Titolo dell'evento
+Evento di un'intera giornata
+Inizio
+Fine
+Fuso orario
+Luogo o link della videochiamata
+Partecipanti (e-mail, una per riga)
+5 minuti prima
+15 minuti prima
+1 ora prima
+1 giorno prima
+Promemoria
+Non si ripete
+Settimanale
+Numero di occorrenze
+Scarica il file .ics
+Apri in Google Calendar
+Aggiungi una città o un fuso orario…
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Inizio del lavoro (ora)
+Fine del lavoro (ora)
+
+
+
+
+
+
+Le barre mostrano le 24 ore UTC (a sinistra = 00:00). Verde scuro: tutti sono in orario di lavoro. Verde chiaro: questa città lavora. Grigio: fine settimana.
+In questa data non c'è alcun orario che vada bene per tutti entro quegli orari di lavoro. Prova orari più ampi o un'altra data.
+Chiamata del team
+Titolo della riunione
+Data e ora
+Fuso orario di quell'ora
+Nel fuso del tuo browser
+
+
+Avvia la riunione
+Persone alla riunione
+Stipendio annuo medio (benefit inclusi)
+Ore di lavoro all'anno
+1.800 ≈ 225 giorni × 8 h
+Durata prevista (minuti)
+Nessun suono
+Rumore bianco
+Rumore rosa
+Rumore marrone (rombo profondo)
+Pioggia
+Brusio di caffetteria
+Concentrazione
+Salta
+Concentrazione (min)
+Pausa breve (min)
+Pausa lunga (min)
+Sessioni prima della pausa lunga
+Suono di sottofondo
+I suoni vengono generati nel tuo browser con la Web Audio API; nulla viene scaricato. Il conto alla rovescia compare anche nel titolo della scheda del browser.
+Nessun arrotondamento
+1 minuto
+5 minuti
+6 minuti (0,1 h)
+15 minuti (0,25 h)
+30 minuti
+Arrotonda a
+Al più vicino
+Per difetto
+Arrotondamento
+Ore e minuti, oppure ore decimali (uno per riga)
+Ore decimali  ·  h:mm
+Totale h:mm
+Lun inizio
+Lun fine
+Lun minuti di pausa
+Mar inizio
+Mar fine
+Mar minuti di pausa
+Mer inizio
+Mer fine
+Mer minuti di pausa
+Gio inizio
+Gio fine
+Gio minuti di pausa
+Ven inizio
+Ven fine
+Ven minuti di pausa
+Sab inizio
+Sab fine
+Sab minuti di pausa
+Dom inizio
+Dom fine
+Dom minuti di pausa
+facoltativo
+Straordinari settimanali dopo (ore)
+Straordinari giornalieri dopo (ore, 0 = disattivati)
+Tariffa oraria (facoltativa)
+Moltiplicatore degli straordinari
+Ore totali
+Ordinarie
+Straordinari
+Calcoli (uno per riga)
+Risultati
+Gennaio
+Febbraio
+Marzo
+Aprile
+Maggio
+Giugno
+Luglio
+Agosto
+Settembre
+Ottobre
+Novembre
+Dicembre
+L'anno fiscale inizia a
+Settimana ISO
+Giorno della settimana
+Mercoledì
+Giorno dell'anno
+Giorni rimasti nell'anno
+Trimestre di calendario
+Trimestre fiscale
+Settimane nell'anno ISO
+Anno bisestile
+Prima data
+ogni N giorni
+ogni N settimane
+ogni N mesi
+ogni N anni
+es. lun, mer
+Nei giorni feriali (solo settimanale)
+Lascia vuoto per usare il giorno della settimana della prima data
+stesso giorno del mese
+primo giorno della settimana del mese
+secondo giorno della settimana
+terzo giorno della settimana
+quarto giorno della settimana
+ultimo giorno della settimana
+Mensilmente il
+Quante date
+Sposta al lunedì le date di fine settimana
+Salta anche le festività
+Data di calendario (UTC)
+oppure numero di giorno giuliano
+Se compilato, viene convertito in una data
+
+Giorno giuliano (JD)
+JD modificato
+Data ordinale
+Secondi Unix
+
+Secondi
+1 min
+2 min
+3 min
+5 min
+10 min
+15 min
+20 min
+30 min
+45 min
+60 min
+Schermo intero
+L'orologio diventa arancione nell'ultimo quarto e rosso nell'ultimo 10 per cento, e suona a zero. Usa lo schermo intero per mostrarlo su un proiettore.
+Giro
+Esporta i giri (CSV)
+Tastiera: Spazio avvia e ferma, L registra un giro. La precisione viene da performance.now(), un orologio monotono che non è influenzato dalle modifiche all'ora di sistema.
+Premi Giro (o il tasto L) per registrare i tempi parziali.
+Orologio a 24 ore
+
+
+
+
+
+
+
+Inizio del primo sprint
+Giorni lavorativi per sprint
+Numero di sprint
+Festività (per tua informazione)
+Gli sprint contano solo i giorni lavorativi (dal lunedì al venerdì). Le festività sono elencate perché tu possa adattare l'ambito; non accorciano automaticamente lo sprint.
+Coordinate personalizzate
+
+Londra
+
+Praga
+Varsavia
+Vienna
+
+Roma
+
+
+
+
+
+Città del Messico
+
+Il Cairo
+
+
+
+Singapore
+
+
+
+Luogo
+Latitudine (°N)
+Longitudine (°E)
+Mostra gli orari in
+Usa la mia posizione
+Alba
+Tramonto
+Mezzogiorno solare
+Durata del giorno
+
+Rispetto a ieri
+
+Ora d'oro (sera)
+
+Fase
+🌘 Luna calante (falcetto)
+Illuminata
+Età della Luna
+
+Prossima luna nuova
+
+Prossime lune nuove e piene
+
+Festività per i giorni lavorativi
+Anno 2026
+
+Trimestre T4
+
+Mese
+
+Settimana (lun–dom)
+
+Giorni rimasti nell'anno
+Settimane rimaste
+Giorni lavorativi rimasti (oggi incluso)
+
+I conteggi dei giorni includono il giorno scelto. I giorni lavorativi vanno dal lunedì al venerdì meno le festività del paese selezionato.
+inizia (FY2025 = apr 2025–mar 2026)
+termina (FY2025 = apr 2024–mar 2025)
+L'anno fiscale prende il nome dall'anno solare in cui
+USA federale (ott)
+Regno Unito / India (apr)
+Anno solare
+Australia (lug)
+Anno fiscale
+L'anno va dal
+Avanzamento
+
+
+America/New_York, Europe/London
+es. America/New_York, Asia/Tokyo
+Il tuo fuso orario
+Mostra anche in (separati da virgole)
+Fasce di tempo libero (una per riga)
+Incolla il testo in un'e-mail o in una chat. L'ora legale viene gestita per la data scelta e un diverso giorno di calendario in un altro fuso viene segnalato.
+
+Data di partenza
+Ora di partenza (locale)
+Fuso orario di partenza
+Durata del volo (hh:mm)
+Fuso orario di arrivo
+Scalo (hh:mm, facoltativo)
+Secondo volo (hh:mm, facoltativo)
+Fuso orario finale (se c'è un secondo volo)
+Arrivo
+
+Differenza di fuso orario
+Durata del volo
+
+
+Gli orari usano le regole dell'ora legale dei fusi per le date mostrate. Usa la durata prevista del volo riportata sul tuo biglietto; il calcolatore non conosce la tua compagnia aerea.
+Ore disponibili a settimana
+Riserva per riunioni, e-mail e imprevisti (%)
+Lavoro pianificato: «nome, ore» per riga
+Pianificato
+Utilizzabile dopo la riserva
+Capacità libera
+Per giorno lavorativo (5 giorni)
+Il piano ci sta. I piani di solito richiedono più tempo del previsto, ed è a questo che serve la riserva.
+Il trimestre inizia il
+Durata in settimane
+Lunedì
+Martedì
+Giovedì
+Venerdì
+Giorno del check-in settimanale
+Eventi
+Check-in
+Il trimestre termina
+
+◷ usa la posizione attuale
+Fine (secondi, 0 = fino alla fine)
+Modalità veloce (senza ricodifica, taglia sui fotogrammi chiave)
+Veloce (file più grande)
+Bilanciata
+Alta qualità (più lenta)
+Qualità / velocità
+Taglia video
+Annulla
+Trascina qui un video, oppure
+
+Come la prima clip
+1080 × 1920 (verticale)
+Dimensione del fotogramma
+Unisci video
+Trascina qui due o più video, oppure
+
+MP4 (H.264, si riproduce ovunque)
+WebM (VP8, per il web)
+GIF animata (senza audio)
+MP3 (solo audio)
+M4A / AAC (solo audio)
+WAV (solo audio, grande)
+Mantieni la dimensione originale
+Larghezza massima
+Fotogrammi al secondo della GIF
+Rimuovi l'audio
+
+Qualità (CRF, 18–38)
+Più alto = file più piccolo
+Altezza massima
+Il più veloce (file più grande)
+Lenta (file più piccolo)
+Comprimi video
+
+Nessun ritaglio
+A un rapporto d'aspetto (centrato)
+Rettangolo (pixel)
+Ritaglia
+16:9 (orizzontale)
+9:16 (verticale, Stories/Reels)
+4:5 (ritratto)
+21:9 (cinema)
+Sinistra (px)
+Alto (px)
+Nessuna rotazione
+90° in senso orario
+90° in senso antiorario
+Ruota
+Capovolgi in orizzontale (specchio)
+Applica
+
+Altezza (dimensioni standard)
+Larghezza e altezza esatte
+1080 p (Full HD)
+Altezza
+Ridimensiona video
+
+Velocità (×)
+0,5 = metà velocità, 2 = il doppio
+Cambia velocità
+
+Quante volte riprodurre in totale
+Modalità veloce (senza ricodifica)
+Crea loop
+
+Positivo = più forte
+Rimuovi completamente l'audio
+
+Sostituisci l'audio originale
+Mixa con l'audio originale
+Cosa fare
+Volume dell'audio originale (%)
+Volume del nuovo audio (%)
+Termina con il più breve dei due (altrimenti l'audio può continuare)
+Aggiungi audio
+Scegli il file audio
+
+Il tuo testo
+Dimensione del carattere (px)
+Giallo
+Colore (esadecimale)
+Centro a sinistra
+Centro a destra
+Riquadro scuro dietro il testo
+Mostra da (secondi)
+Mostra fino a (secondi, 0 = fine)
+Aggiungi testo
+
+Dimensione (% della larghezza del video)
+Margine dal bordo (px)
+Aggiungi immagine
+Scegli l'immagine o il logo
+
+Rimuovi logo
+
+Durata (secondi, 0 = fino alla fine)
+Fotogrammi al secondo
+Ancora una volta
+Non ripetere
+Crea GIF
+
+Raggio di ricerca (px, 4–64)
+Più grande = corregge scosse maggiori, ma può derivare
+Riempi per specchio
+Lascia nero
+Bordi
+Stabilizza
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Il testo è troppo lungo per il test dal vivo (limite di 300.000 caratteri).
+Lo schema ha impiegato troppo tempo (oltre 2 secondi). Può causare un backtracking catastrofico, ad esempio ripetizioni annidate come (a+)+. Rendilo più specifico.
+I file oltre 2 GB sono troppo grandi per questo generatore di hash nel browser
+Inserisci un'opacità
+Inserisci una data valida
+Questo è un font WOFF2. Il WOFF2 usa la compressione Brotli, che questo strumento non sa decomprimere. Usa il file TTF, OTF o WOFF originale.
+Le raccolte di font (.ttc) non sono supportate. Estrai prima un singolo font.
+Questo non sembra un file di font (TTF, OTF o WOFF).
+Non è stato possibile caricare il formattatore SQL.
+La tua Azienda S.r.l.⏎Via Esempio 1⏎00100 Città di Esempio
+Nome del cliente⏎Via del Cliente 5⏎20100 Città del Cliente
+Lampada da scrivania LED; 2; pz⏎Sedia da ufficio; 4; pz⏎Set di cavi; 1; set
+Alex Esempio⏎Sam Modello
+in riconoscimento di un impegno straordinario e di un lavoro ben fatto.
+Nessun testo trovato. Questo PDF potrebbe essere una scansione: passalo prima da OCR PDF.
+Inserisci una dimensione obiettivo come 2 MB o 500 KB.
+Aggiungi almeno una voce.
+Inserisci un importo maggiore di zero.
+Inserisci almeno un indirizzo. Separa le etichette con una riga vuota.
+Questo non è un file .docx (manca word/document.xml). I vecchi file .doc devono prima essere salvati come .docx.
+Questo non sembra un archivio ZIP, TAR o GZ.
+Nessun testo leggibile trovato in questo EPUB.
+Compila tutti i campi
+Compila entrambi i valori
+Inserisci almeno due flussi di cassa numerici
+Controlla le fasce di commissione
+Aggiungi almeno un processore
+L'investimento deve essere maggiore di zero
+Scegli una data
+Il valore residuo non può superare il costo
+Controlla l'elenco dei debiti
+I due prezzi devono essere diversi
+Controlla i round
+Il tasso deve essere maggiore di zero
+Inserisci un prezzo iniziale positivo e un numero di anni
+Scegli file immagine (JPG, PNG, WebP, GIF, AVIF, BMP, SVG).
+Immagine A ✓
+Immagine B ✓
+Questo non sembra codice SVG (nessun elemento <svg>).
+L'SVG ottimizzato non è XML valido: l'input potrebbe essere già malformato.
+Caricamento del motore di riconoscimento del testo…
+Codifica non riuscita
+Questo browser non può codificare quel formato
+Non è stato possibile avviare il decodificatore HEIC.
+Questo file HEIC non ha potuto essere decodificato (danneggiato o variante non supportata).
+Decodifica non riuscita
+Ferma
+
+Fine del copione
+Continua a battere…
+Il tuo browser non può registrare lo schermo (manca getDisplayMedia). Usa un browser desktop aggiornato.
+Il tuo browser non può riprodurre questo formato video. MP4 (H.264), WebM e MOV dei telefoni di solito funzionano.
+Questo browser non può catturare la riproduzione video per l'esportazione. Usa invece la velocità dell'anteprima.
+Il tuo browser non può riprodurre questo formato video. Funzionano MP4 (H.264), WebM e la maggior parte dei video dei telefoni.
+Il tuo browser non può accedere a una fotocamera (manca mediaDevices). Apri questa pagina tramite https in un browser aggiornato.
+Il tuo browser non ha la sintesi vocale. Prova un Chrome, Edge, Safari o Firefox aggiornato.
+Finito.
+Inserisci prima del testo.
+Riprendi
+Questo file audio non ha potuto essere decodificato dal tuo browser. Prova WAV, MP3, M4A, OGG o FLAC.
+Inserisci una larghezza e un'altezza.
+Compila tutti e sei i valori.
+La fine deve essere dopo l'inizio.
+Sono troppi dati per un solo codice QR. Accorcia il contenuto o abbassa la correzione degli errori.
+
+
+
+Ciao {{name}},⏎⏎Grazie per il tuo ordine {{order_id}}. Verrà spedito il {{date}}.⏎⏎Cordiali saluti,⏎{{sender}}
+Corretto il bug del login⏎Rivisto 2 pull request
+Avviare la funzione di esportazione⏎Pianificazione del team
+In attesa delle credenziali API
+
+Aggiorna frammento
+Via Esempio 12⏎00100 Città di Esempio
+
+Allergie: penicillina⏎Gruppo sanguigno: A+⏎Farmaci: nessuno
+Chiave di scorta dal vicino al n. 14.⏎Centro antiveleni: 112
+Inserisci il contenuto del codice
+non è un elenco
+
+
+
+🏆 Campione
+
+
+Aggiungi almeno un compito
+
+
+
+
+
+
+
+
+
+
+SOS Aiuto
+Inizio
+Inserisci una latitudine tra −90 e 90, una longitudine tra −180 e 180 e una data.
+personalizzato
+Inserisci due date valide
+Inserisci una data di inizio valida
+Inserisci il numero di giorni lavorativi
+Inserisci una data di fine valida
+Dai un titolo all'evento
+Scegli una data e un'ora
+Inserisci una prima data valida
+Inserisci una data o un giorno giuliano valido
+Inserisci una data valida.
+Scegli una data.
+Inserisci almeno una fascia oraria.
+Una fascia oraria deve finire dopo il suo inizio.
+Scegli la data di partenza.
+Inserisci la durata del volo.
+Inserisci le ore disponibili a settimana.
+Aggiungi almeno un compito.
+Scegli la data di inizio.
+Caricamento del motore video (circa 31 MB, solo una volta)…
+Elaborazione…
+Annullato.
+Un nome per riga, abilità facoltativa: «Anna: 4»
+Numero di squadre
+Persone per squadra
+Squadra
+Totale abilità
+Copia le squadre
+Le persone vengono distribuite a caso; con i numeri di abilità un draft a serpentina mantiene equilibrate le squadre. I nomi non lasciano mai questa pagina.
+Tieni separati (facoltativo, una coppia per riga)
+Un giocatore per riga
+Redesign della pagina di checkout
+Fibonacci (0, 1, 2, 3, 5, 8 …)
+Taglie di maglietta
+Potenze di due
+Aggiungi almeno due giocatori.
+Hanno votato tutti.
+Svela le carte
+Passa il dispositivo a
+Scegli una carta in segreto; il giocatore successivo non può vederla.
+Ha votato
+Più voti
+Dispersione
+Consenso: tutti hanno scelto la stessa carta.
+Nessun consenso: lascia spiegare chi ha votato più basso e più alto, poi vota di nuovo.
+Nuovo round
+Copia il risultato
+Storia o compito
+Mazzo di carte
+Planning poker a turni: un solo dispositivo, ognuno vota a turno. Nulla viene inviato da nessuna parte.
+Giocatori
+Storia
+Andato bene
+Da migliorare
+Azioni
+Mantenere
+Problema
+Provare
+Piaciuto
+Imparato
+Mancato
+Desiderato
+Andato bene / Da migliorare / Azioni
+Iniziare / Smettere / Continuare
+Mantenere / Problema / Provare
+Quattro L
+Aggiungi una carta e premi Invio
+Rimuovere tutte le carte?
+Svuota la lavagna
+La lavagna viene salvata solo in questo browser. Usala su uno schermo durante la riunione, oppure copia il Markdown per condividere il risultato.
+Compito;Anna;Marco;Chiara⏎Scrivere il brief;A;R;C⏎Costruire il prototipo;I;A;R⏎Test con gli utenti;C;A;R⏎Lancio;A;R;I
+non ha nessun Accountable (A)
+ha più di un Accountable (A)
+non ha nessun Responsible (R)
+Compito
+Ogni compito ha esattamente una A e almeno una R.
+R = Responsible (fa il lavoro), A = Accountable (decide, una sola persona), C = Consulted (consultato), I = Informed (informato).
+Matrice: prima riga = ruoli, poi un compito per riga (separa con ; , o una tabulazione)
+Matrice
+Ora di inizio
+Punti dell'ordine del giorno
+Benvenuto e obiettivi; 5⏎Giro di aggiornamenti; 15⏎Tema principale: prezzi; 25⏎Decisioni e responsabili; 10⏎Chiusura; 5
+Fino a
+Punto
+Termina alle
+Minuti totali
+L'ordine del giorno è più lungo del tempo che hai di
+minuti.
+Rientra nel tempo che hai:
+minuti avanzati.
+Copia l'ordine del giorno
+Tempo disponibile (minuti, 0 = ignora)
+Punti: «titolo; minuti», uno per riga
+Inserisci un'ora di inizio come 09:30.
+Punti di forza
+Punti di debolezza
+Opportunità
+Minacce
+Il nostro prodotto
+Onboarding rapido⏎Marchio forte
+Piccolo team⏎Un fornitore chiave
+Nuovo mercato in Europa⏎Programma partner
+Nuovo concorrente⏎Costi in aumento
+Stampa
+Impatto e sforzo
+Urgente e importante (Eisenhower)
+Filtro di ricerca; 5; 2⏎Nuovo checkout; 5; 5⏎Correggere i refusi; 1; 1⏎Riscrivere il backend; 2; 5⏎E-mail di benvenuto; 4; 2
+Il server è giù; sì; sì⏎Pianificare il prossimo trimestre; no; sì⏎Rispondere a un'e-mail di routine; sì; no⏎Scorrere i social media; no; no
+Vittorie rapide (alto impatto, poco sforzo): da fare per prime
+Grandi scommesse (alto impatto, molto sforzo): da pianificare con cura
+Riempitivi (basso impatto, poco sforzo): da fare nei tempi morti
+Pozzi senza fondo (basso impatto, molto sforzo): da evitare
+Da fare subito (urgente e importante)
+Da pianificare (importante, non urgente)
+Da delegare (urgente, non importante)
+Da eliminare (né l'uno né l'altro)
+Voci: «nome; impatto 1–5; sforzo 1–5» (Eisenhower: «nome; urgente sì/no; importante sì/no»)
+Primo giorno
+Ogni due settimane
+Assente
+Di turno
+Copia il calendario dei turni
+Persone a rotazione (una per riga)
+Durata di un turno
+Numero di turni
+Assenze (facoltativo): «Nome: 2026-01-12 to 2026-01-18»
+Marco: 2026-01-12 to 2026-01-18
+Anna⏎Marco⏎Chiara⏎Davide
+Anna: 5⏎Marco: 3⏎Chiara: 4⏎Davide: 2⏎Elisa: 3⏎Fabio: 5⏎Giulio: 1⏎Irene: 4
+Tieni separati
+# mesi
+# anni
+# giorni
+Clienti dopo # mesi
+#% di confidenza entro
+Anteprima del primo di # attestati.
+# minuti prima
+# fascia/e in # fuso/i
+# messaggi · # unità
+Settimana #: check-in (aggiorna la confidenza, segnala i rischi)
+Sprint #
+# di # completati (# %)
+Squadra #
+Totale abilità: #
+Hanno votato: # / #
+# caratteri ✓
+# caratteri (un po' pochi)
+Giorno # di #
+Passa il dispositivo a: 
+Da fare per primo
+Urgente e importante: occupatene subito.
+Pianifica
+Importante, non urgente: fissa una data.
+Delega
+Urgente, non importante: passalo a qualcun altro.
+Elimina
+Né l'uno né l'altro: smetti di farlo.
+Urgente
+Non urgente
+Importante
+Non importante
+Correggere il bug del checkout
+Inviare i documenti fiscali
+Pianificare il prossimo trimestre
+Imparare il nuovo strumento
+Prenotare la sala riunioni
+Controllare i social media
+Partner chiave
+Chi sono i nostri partner e fornitori chiave?
+Attività chiave
+Cosa dobbiamo fare per offrire il valore?
+Risorse chiave
+Di quali risorse abbiamo bisogno?
+Proposte di valore
+Quale valore offriamo, quale problema risolviamo?
+Relazioni con i clienti
+Come acquisiamo, manteniamo e facciamo crescere i clienti?
+Canali
+Come raggiungiamo i nostri clienti?
+Segmenti di clientela
+Per chi stiamo creando valore?
+Struttura dei costi
+Quali sono i costi più importanti?
+Flussi di ricavi
+Per cosa pagano davvero i clienti, e come?
+Fornitore di pagamenti
+Torrefattori
+Torrefazione
+Negozio online
+Torrefazione propria
+Marchio
+Caffè fresco consegnato ogni mese
+Commercio equo
+Abbonamento
+Newsletter
+Mercato contadino
+Appassionati di caffè a casa
+Piccoli uffici
+Chicchi
+Spedizione
+Personale
+Abbonamenti mensili
+Ordini singoli
+I primi 1–3 problemi. Alternative esistenti?
+Soluzione
+Le 3 funzioni principali che li risolvono.
+Metriche chiave
+Quali numeri mostrano che funziona?
+Proposta di valore unica
+Messaggio unico, chiaro e convincente. Concetto di alto livello?
+Vantaggio sleale
+Cosa non si può copiare o comprare facilmente?
+Percorso verso i clienti.
+Clienti target e early adopter.
+Acquisizione clienti, distribuzione, hosting, persone.
+Modello di ricavi, valore nel tempo, margine.
+Pianificare i pasti richiede troppo tempo
+Il cibo viene sprecato
+Piano settimanale con ciò che c'è in frigo
+Lista della spesa
+Utenti attivi settimanali
+Piani cucinati
+Cucina stasera con ciò che hai già
+Dati di ricette da 10.000 utenti
+App store
+Blog di cucina
+Genitori impegnati
+Studenti
+Sviluppatori
+Hosting
+Piano premium a 4 € al mese
+Scopo
+Perché siamo qui? Qual è la nostra ragione di esistere?
+Obiettivi e criteri di successo
+Cosa vogliamo ottenere e come lo sapremo?
+Per cosa ci battiamo, come ci trattiamo?
+Ruoli e competenze
+Chi fa cosa, quali competenze abbiamo?
+Obiettivi ed esigenze personali
+Cosa vuole e di cosa ha bisogno ciascuno dal team?
+Punti di forza e risorse
+In cosa siamo bravi, di quali risorse disponiamo?
+Punti deboli e rischi
+Cosa potrebbe fermarci?
+Regole e attività
+Come lavoriamo insieme: riunioni, comunicazione, decisioni?
+Rendere semplice l'onboarding per i nuovi clienti
+Ridurre il tempo di configurazione a 10 minuti entro giugno
+Feedback sincero
+Rilasciare in piccolo
+Anna: design
+Marco: backend
+Chiara vuole imparare a lavorare con i dati
+Decisioni rapide
+Solo una persona conosce la fatturazione
+Daily in piedi alle 9:30
+Le decisioni vengono messe per iscritto
+Pensa e prova
+Cosa gli importa? Preoccupazioni e sogni?
+Vede
+Cosa vede nel suo ambiente?
+Sente
+Cosa gli dicono amici, capi e media?
+Dice e fa
+Cosa dice, come si comporta?
+Problemi
+Paure, frustrazioni, ostacoli.
+Vantaggi
+Desideri, bisogni, misure del successo.
+Non ho mai abbastanza tempo
+Colleghi che usano molti strumenti
+«Usa semplicemente un foglio di calcolo»
+«Lo faccio domani»
+Passare da un'app all'altra
+Perdere file
+Un unico posto per tutto
+Sentirsi in controllo
+Politico
+Governo, tasse, regole commerciali, stabilità.
+Economico
+Crescita, inflazione, tassi di interesse, potere d'acquisto.
+Sociale
+Demografia, valori, stile di vita, tendenze.
+Tecnologico
+Nuove tecnologie, automazione, ricerca.
+Ambientale
+Clima, risorse, norme sulla sostenibilità.
+Leggi, protezione dei dati, lavoro, standard.
+Elezioni nel mercato principale
+Tassi di interesse in aumento
+Più lavoro da remoto
+Gli strumenti di IA riducono i costi
+Si inaspriscono le norme sugli imballaggi
+Nuove norme sulla protezione dei dati
+Minaccia di nuovi entranti
+Quanto è facile entrare nel mercato?
+Potere contrattuale dei fornitori
+Quanto possono dettare le condizioni i fornitori?
+Rivalità nel settore
+Quanto è intensa la concorrenza?
+Potere contrattuale degli acquirenti
+Quanto possono spingere al ribasso i prezzi i clienti?
+Minaccia di prodotti sostitutivi
+Cos'altro risolve lo stesso bisogno?
+Poco capitale necessario
+Pochi fornitori specializzati
+Tre grandi operatori, guerre dei prezzi
+I clienti possono cambiare facilmente
+Kit fai da te
+Il Business Model Canvas è stato creato da Alexander Osterwalder e Yves Pigneur (Strategyzer AG) ed è concesso in licenza Creative Commons Attribuzione - Condividi allo stesso modo (CC BY-SA). Questa lavagna è una versione adattata e ridisegnata.
+Il Lean Canvas è stato creato da Ash Maurya come adattamento del Business Model Canvas di Alexander Osterwalder (CC BY-SA). Questa lavagna è una versione ridisegnata.
+Il Team Canvas è stato creato da Alex Ivanov (theteamcanvas.com) ed è concesso in licenza CC BY-SA 4.0. Questa lavagna è una versione adattata e ridisegnata.
+La mappa dell'empatia risale a Dave Gray e XPLANE (Gamestorming). Qui viene usata solo l'idea generale; il layout e la formulazione sono nostri.
+Un metodo di pianificazione generico; il layout e la formulazione sono nostri.
+Nome di questa lavagna (facoltativo)
+Nome della lavagna
+Cambia colore
+Sposta in
+Elimina nota
+Aggiungi nota
+Apri lavagna salvata
+Lavagna caricata
+Rimuovere tutte le note e ripartire da una lavagna vuota?
+La tua lavagna viene salvata solo in questo browser. Trascina le note tra i riquadri o usa il menu di una nota per spostarla.
+Trascina per spostare
+Questo file non è una lavagna salvata.
+Salva come file
+Ricomincia
+Carica l'esempio
+Copiato
+Scarica PDF

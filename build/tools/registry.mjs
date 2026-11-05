@@ -132,7 +132,7 @@ export const LINKS = {
   'test:qr': ['test', 'qr-code-test/', ['QR code test', 'QR-Code-Test', 'Test kodu QR', 'Test QR kódu']],
   'test:pitch': ['test', 'pitch-detector/', ['Pitch detector', 'Tonhöhen-Erkennung', 'Detektor wysokości dźwięku', 'Detektor výšky tónu']],
 };
-export const LI = { en: 0, de: 1, pl: 2, cs: 3, es: 4, fr: 5, pt: 6, nl: 7, sv: 8, da: 9 };
+export const LI = { en: 0, de: 1, pl: 2, cs: 3, es: 4, fr: 5, pt: 6, nl: 7, sv: 8, da: 9, it: 10 };
 
 /**
  * Define one tool.

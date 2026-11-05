@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM=' 'sha256-b6Uv3UZaE2auCzUskhUrTDMBRhq4y5093pMSXRmlk+g='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM=' 'sha256-u1bY/7yKQ/DmfYPp/lrJKVASMdAckCB9CH3iFE7qRck='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
   <title>Ohfis – PDF &amp; file tools · PDF- &amp; Datei-Tools · Narzędzia PDF · PDF nástroje</title>
-  <meta name="description" content="Free tools for PDFs, text, spreadsheets, images, time and finance that run in your browser. Nothing is uploaded. · Kostenlose Tools für PDFs, Text, Tabellen, Bilder, Zeit und Finanzen im Browser. Nichts wird hochgeladen. · Darmowe narzędzia do PDF, tekstu, arkuszy, obrazów, czasu i finansów w przeglądarce. Nic nie jest przesyłane. · Bezplatné nástroje pro PDF, text, tabulky, obrázky, čas a finance v prohlížeči. Nic se nenahrává. · Herramientas gratuitas para PDF, texto, hojas de cálculo, imágenes, tiempo y finanzas que funcionan en tu navegador. Nada se sube. · Outils gratuits pour PDF, texte, tableurs, images, temps et finance, qui s'exécutent dans votre navigateur. Rien n'est envoyé. · Ferramentas grátis para PDF, texto, planilhas, imagens, tempo e finanças que rodam no seu navegador. Nada é enviado.">
+  <meta name="description" content="Free tools for PDFs, text, spreadsheets, images, time and finance that run in your browser. Nothing is uploaded. · Kostenlose Tools für PDFs, Text, Tabellen, Bilder, Zeit und Finanzen im Browser. Nichts wird hochgeladen. · Darmowe narzędzia do PDF, tekstu, arkuszy, obrazów, czasu i finansów w przeglądarce. Nic nie jest przesyłane. · Bezplatné nástroje pro PDF, text, tabulky, obrázky, čas a finance v prohlížeči. Nic se nenahrává. · Herramientas gratuitas para PDF, texto, hojas de cálculo, imágenes, tiempo y finanzas que funcionan en tu navegador. Nada se sube. · Outils gratuits pour PDF, texte, tableurs, images, temps et finance, qui s'exécutent dans votre navigateur. Rien n'est envoyé. · Ferramentas grátis para PDF, texto, planilhas, imagens, tempo e finanças que rodam no seu navegador. Nada é enviado. · Strumenti gratuiti per PDF, testo, fogli di calcolo, immagini, tempo e finanza che girano nel tuo browser. Nulla viene caricato.">
   <link rel="canonical" href="https://ohfis.com/">
   <link rel="alternate" hreflang="en" href="https://ohfis.com/en/">
   <link rel="alternate" hreflang="de" href="https://ohfis.com/de/">
@@ -14,11 +14,12 @@
   <link rel="alternate" hreflang="es" href="https://ohfis.com/es/">
   <link rel="alternate" hreflang="fr" href="https://ohfis.com/fr/">
   <link rel="alternate" hreflang="pt" href="https://ohfis.com/pt/">
+  <link rel="alternate" hreflang="it" href="https://ohfis.com/it/">
   <link rel="alternate" hreflang="x-default" href="https://ohfis.com/">
   <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
   <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
   <link rel="stylesheet" href="/assets/css/site.css?v=1fe54eb2">
-  <script>var L=["en","de","pl","cs","es","fr","pt"],l='en';try{var v=localStorage.getItem('ohfis-lang');if(L.indexOf(v)>-1){l=v}else{var n=navigator.languages||[navigator.language||l];for(var i=0;i<n.length;i++){var c=String(n[i]).slice(0,2).toLowerCase();if(L.indexOf(c)>-1){l=c;break}}}}catch(e){}if(location.hash!=='#choose'){location.replace('/'+l+'/'+location.search+location.hash)}</script>
+  <script>var L=["en","de","pl","cs","es","fr","pt","it"],l='en';try{var v=localStorage.getItem('ohfis-lang');if(L.indexOf(v)>-1){l=v}else{var n=navigator.languages||[navigator.language||l];for(var i=0;i<n.length;i++){var c=String(n[i]).slice(0,2).toLowerCase();if(L.indexOf(c)>-1){l=c;break}}}}catch(e){}if(location.hash!=='#choose'){location.replace('/'+l+'/'+location.search+location.hash)}</script>
 </head>
 <body class="s-page">
   <main class="s-chooser">
@@ -34,6 +35,7 @@
         <li><a href="/es/" hreflang="es" lang="es" data-set-lang="es">Español<small>Herramientas gratuitas para PDF, texto, hojas de cálculo, imágenes, tiempo y finanzas que funcionan en tu navegador. Nada se sube.</small></a></li>
         <li><a href="/fr/" hreflang="fr" lang="fr" data-set-lang="fr">Français<small>Outils gratuits pour PDF, texte, tableurs, images, temps et finance, qui s'exécutent dans votre navigateur. Rien n'est envoyé.</small></a></li>
         <li><a href="/pt/" hreflang="pt" lang="pt" data-set-lang="pt">Português<small>Ferramentas grátis para PDF, texto, planilhas, imagens, tempo e finanças que rodam no seu navegador. Nada é enviado.</small></a></li>
+        <li><a href="/it/" hreflang="it" lang="it" data-set-lang="it">Italiano<small>Strumenti gratuiti per PDF, testo, fogli di calcolo, immagini, tempo e finanza che girano nel tuo browser. Nulla viene caricato.</small></a></li>
       </ul>
     </div>
   </main>

@@ -1,7 +1,7 @@
 // Files Online — Service Worker
 // Cache-first for app shell, network-first for CDN resources.
 
-const CACHE_VERSION = '1c9945525c';
+const CACHE_VERSION = '306b3d3fd2';
 const SHELL_CACHE = `files-online-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `files-online-runtime-${CACHE_VERSION}`;
 
@@ -30,6 +30,7 @@ const SHELL_FILES = [
   "/assets/i18n/routes.en.js",
   "/assets/i18n/routes.es.js",
   "/assets/i18n/routes.fr.js",
+  "/assets/i18n/routes.it.js",
   "/assets/i18n/routes.pl.js",
   "/assets/i18n/routes.pt.js",
   "/assets/i18n/search.cs.js",
@@ -37,6 +38,7 @@ const SHELL_FILES = [
   "/assets/i18n/search.en.js",
   "/assets/i18n/search.es.js",
   "/assets/i18n/search.fr.js",
+  "/assets/i18n/search.it.js",
   "/assets/i18n/search.pl.js",
   "/assets/i18n/search.pt.js",
   "/assets/i18n/tr.cs.data.js",
@@ -87,6 +89,18 @@ const SHELL_FILES = [
   "/assets/i18n/tr.fr.text.js",
   "/assets/i18n/tr.fr.time.js",
   "/assets/i18n/tr.fr.video.js",
+  "/assets/i18n/tr.it.data.js",
+  "/assets/i18n/tr.it.dev.js",
+  "/assets/i18n/tr.it.documents.js",
+  "/assets/i18n/tr.it.finance.js",
+  "/assets/i18n/tr.it.images.js",
+  "/assets/i18n/tr.it.js",
+  "/assets/i18n/tr.it.media.js",
+  "/assets/i18n/tr.it.notes.js",
+  "/assets/i18n/tr.it.team.js",
+  "/assets/i18n/tr.it.text.js",
+  "/assets/i18n/tr.it.time.js",
+  "/assets/i18n/tr.it.video.js",
   "/assets/i18n/tr.pl.data.js",
   "/assets/i18n/tr.pl.dev.js",
   "/assets/i18n/tr.pl.documents.js",
@@ -116,6 +130,7 @@ const SHELL_FILES = [
   "/assets/i18n/ut.en.js",
   "/assets/i18n/ut.es.js",
   "/assets/i18n/ut.fr.js",
+  "/assets/i18n/ut.it.js",
   "/assets/i18n/ut.pl.js",
   "/assets/i18n/ut.pt.js",
   "/assets/js/pdf/lib.js",
