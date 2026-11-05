@@ -2,6 +2,7 @@
 // saved in this browser and exported as PNG, Markdown or a file. Definitions and pure helpers: lib/canvas.js.
 import { tr, h, btn, copyText, download, toast, wrap, filePicker, readText } from './kit.js';
 import * as C from './lib/canvas.js';
+import { pdfLib } from '../pdf/lib.js';
 
 const store = { get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* private mode */ } } };
 
@@ -51,12 +52,20 @@ export function boardTool(root, id) {
     for (const s of spec.sections) {
       const [c, r, cs, rs] = s.at; const x = (c - 1) * cw, y = top + (r - 1) * rh, w = cs * cw, hh = rs * rh;
       g.strokeStyle = '#98a0b0'; g.lineWidth = 2; g.strokeRect(x + 1, y + 1, w - 2, hh - 2); g.fillStyle = '#171b24'; g.font = '700 26px Inter, Arial, sans-serif'; g.fillText(tr(s.title), x + 14, y + 36);
-      g.fillStyle = '#6b7385'; g.font = '400 18px Inter, Arial, sans-serif'; wrapText(tr(s.hint), x + 14, y + 62, w - 28, 22, y + 62);
-      const boxes = C.placeNotes({ x, y: y + 78, w, h: hh - 78 }, board.notes.filter(n => n.sec === s.key && n.text.trim()));
+      g.fillStyle = '#6b7385'; g.font = '400 18px Inter, Arial, sans-serif'; wrapText(tr(s.hint), x + 14, y + 62, w - 28, 22, y + 84);
+      const boxes = C.placeNotes({ x, y: y + 98, w, h: hh - 98 }, board.notes.filter(n => n.sec === s.key && n.text.trim()));
       for (const { note, x: bx, y: by, w: bw, h: bh } of boxes) { g.fillStyle = note.color; g.fillRect(bx, by, bw, bh); g.strokeStyle = 'rgba(0,0,0,.12)'; g.lineWidth = 1; g.strokeRect(bx + .5, by + .5, bw - 1, bh - 1); const fs = Math.max(11, Math.min(24, Math.floor(bh / 4.2))); g.fillStyle = '#171b24'; g.font = `500 ${fs}px Inter, Arial, sans-serif`; wrapText(note.text.trim(), bx + 8, by + fs + 6, bw - 16, fs * 1.25, by + bh - 6); }
     }
-    g.fillStyle = '#6b7385'; g.font = '400 17px Inter, Arial, sans-serif'; const cr = C.CREDITS[spec.credit]; wrapText(`${cr.text}${cr.url ? ` ${cr.link}: ${cr.url}` : ''}`, 30, H - 46, W - 60, 22, H - 8);
+    g.fillStyle = '#6b7385'; g.font = '400 17px Inter, Arial, sans-serif'; const cr = C.CREDITS[spec.credit]; wrapText(`${tr(cr.text)}${cr.url ? ` ${cr.link}: ${cr.url}` : ''}`, 30, H - 46, W - 60, 22, H - 8);
     return cv;
+  }
+  // One page, as large as the paper allows: the PNG rendering placed on A4 (landscape for wide boards)
+  async function pdf() {
+    const cv = png(), PL = await pdfLib(), doc = await PL.PDFDocument.create(), img = await doc.embedPng(await new Promise(r => cv.toBlob(b => b.arrayBuffer().then(r), 'image/png')));
+    const wide = cv.width >= cv.height, [pw, ph] = wide ? [841.89, 595.28] : [595.28, 841.89], m = 24, k = Math.min((pw - 2 * m) / cv.width, (ph - 2 * m) / cv.height), w = cv.width * k, hh = cv.height * k;
+    doc.addPage([pw, ph]).drawImage(img, { x: (pw - w) / 2, y: (ph - hh) / 2, width: w, height: hh });
+    doc.setTitle(board.title || tr(root.closest('main')?.querySelector('h1')?.textContent || id)); doc.setProducer('Ohfis');
+    download(`${slug()}.pdf`, new Blob([await doc.save()], { type: 'application/pdf' }), 'application/pdf');
   }
   const slug = () => (board.title || id).toLowerCase().replace(/[^a-z0-9À-ɏ]+/g, '-').replace(/^-|-$/g, '') || id;
   const importer = filePicker({ accept: '.json,application/json', label: tr('Open saved board'), onFiles: async ([f]) => { try { board = C.parseBoard(id, await readText(f)); title.value = board.title; save(); draw(); toast(tr('Board loaded')); } catch (e) { toast(tr(e.message)); } } });
@@ -65,6 +74,7 @@ export function boardTool(root, id) {
     h('div', { class: 'ut-options cv-toolbar' }, h('div', { class: 'ut-field' }, h('label', {}, tr('Board name')), title),
       btn('Copy as Markdown', () => copyText(C.toMarkdown(id, board, tr)).then(() => toast(tr('Copied'))), 'primary'),
       btn('Download PNG', () => png().toBlob(b => download(`${slug()}.png`, b, 'image/png')), 'secondary'),
+      btn('Download PDF', () => pdf().catch(e => toast(tr(e.message))), 'secondary'),
       btn('Save as file', () => download(`${slug()}.json`, JSON.stringify(board, null, 1), 'application/json'), 'secondary'), importer,
       btn('Print', () => window.print(), 'ghost'),
       btn('Start over', () => { if (confirm(tr('Remove all notes and start with an empty board?'))) { board = { title: '', notes: [] }; title.value = ''; save(); draw(); } }, 'ghost'),
