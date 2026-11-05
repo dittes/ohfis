@@ -8,7 +8,7 @@ import { mkdirSync, readFileSync, writeFileSync, rmSync, existsSync, readdirSync
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
-  SITE, LANGS, LANG_NAMES, LOCALES, PAGES, CATEGORIES, TOOLS, SISTER_SITES, CONVERT_TO_PDF,
+  SITE, LANGS, CORE_LANGS, LANG_NAMES, LOCALES, PAGES, CATEGORIES, TOOLS, SISTER_SITES, CONVERT_TO_PDF,
   sisterUrl, pagePath, toolPath,
 } from './registry.mjs';
 import { ICONS, LOGO, LOGO_SVG } from './icons.mjs';
@@ -18,6 +18,7 @@ import UTOOLS from './tools/index.mjs';
 import UI, { PAGE } from './content/ui.mjs';
 import { disclaimerFor, imprintExtras } from './content/legal-notes.mjs';
 import { synonymsFor } from './content/synonyms.mjs';
+import { OVERLAYS } from './langs/apply.mjs';
 
 const BUILD = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(BUILD, '..');
@@ -76,7 +77,7 @@ for (const t of UTOOLS) if (pdfSlugs.has(t.id)) throw new Error(`Tool id collide
 const usedSlugs = Object.fromEntries(LANGS.map(l => [l, new Set([...TOOLS.map(t => t.slugs[l]), ...Object.values(PAGES).map(p => p[l]).filter(Boolean), ...Object.values(GROUPS).map(g => g.slug?.[LI[l]]).filter(Boolean)])]));
 for (const t of UTOOLS) { t.slugs = { en: t.id }; usedSlugs.en.add(t.id); }
 const slugName = (name, l) => slugify((l === 'de' ? name.replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/Ä/g, 'Ae').replace(/Ö/g, 'Oe').replace(/Ü/g, 'Ue') : name), { maxLen: 56 });
-for (const l of ['de', 'pl', 'cs']) for (const t of UTOOLS) {
+for (const l of LANGS.filter(x => x !== 'en')) for (const t of UTOOLS) {
   const name = t.names[LI[l]];
   const short = slugName(name.replace(/\s*\([^)]*\)/g, ''), l), full = slugName(name, l);
   let n = [short, full].find(x => x && !usedSlugs[l].has(x)) || `${short || t.id}`, i = 2; const base = n;
@@ -464,8 +465,8 @@ const exists = id => !!(toolById(id) || utilById(id));
 
 function linkKeyUrl(key, lang) {
   const [site, path] = LINKS[key];
-  const p = typeof path === 'string' ? path : path[lang];
-  return `${SITES[site]}/${lang}/${p}`;
+  const p = typeof path === 'string' ? path : (path[lang] ?? path.en);
+  return `${SITES[site]}/${CORE_LANGS.includes(lang) ? lang : 'en'}/${p}`;
 }
 function utilLinksSection(lang, keys) {
   const list = (keys || []).filter(k => LINKS[k]);
@@ -485,7 +486,7 @@ function utilTitle(lang, t) {
 }
 
 const I18N = {};
-for (const l of ['de', 'pl', 'cs']) { I18N[l] = {}; const d = new URL(`./tools/i18n/${l}/`, import.meta.url); if (existsSync(d)) for (const f of readdirSync(d).filter(x => x.endsWith('.mjs')).sort()) Object.assign(I18N[l], (await import(new URL(f, d).href)).default); }
+for (const l of LANGS.filter(x => x !== 'en')) { I18N[l] = {}; const d = new URL(`./tools/i18n/${l}/`, import.meta.url); if (existsSync(d)) for (const f of readdirSync(d).filter(x => x.endsWith('.mjs')).sort()) Object.assign(I18N[l], (await import(new URL(f, d).href)).default); }
 
 function utilityPage(lang, tool0) {
   const c = content[lang];
@@ -787,9 +788,9 @@ for (const lang of LANGS) {
   for (const tool of UTOOLS) { write(`${lang}/${tool.slugs[lang]}/index.html`, utilityPage(lang, tool)); pages++; }
   // Old URLs (English tool id in every language, the ten former category hubs) forward to the new ones
   const taken = new Set([...UTOOLS.map(t => t.slugs[lang]), ...GROUP_ORDER.filter(g => g !== 'pdf').map(g => GROUPS[g].slug[LI[lang]])]);
-  for (const t of UTOOLS) if (!taken.has(t.id) && !NEVER_PUBLISHED_AT_OLD_URL.has(t.id) && t.cat !== 'video') write(`${lang}/${t.id}/index.html`, redirectPage(utilPath(t, lang)));
-  for (const [slugs, g] of OLD_HUBS) if (!taken.has(slugs[LI[lang]])) { write(`${lang}/${slugs[LI[lang]]}/index.html`, redirectPage(hubPath(g, lang))); taken.add(slugs[LI[lang]]); }
-  for (const cat of UCAT_ORDER) if (!taken.has(UCATS[cat].slug)) write(`${lang}/${UCATS[cat].slug}/index.html`, redirectPage(hubPath(GROUP_OF[cat], lang)));
+  for (const t of UTOOLS) if (CORE_LANGS.includes(lang) && !taken.has(t.id) && !NEVER_PUBLISHED_AT_OLD_URL.has(t.id) && t.cat !== 'video') write(`${lang}/${t.id}/index.html`, redirectPage(utilPath(t, lang)));
+  for (const [slugs, g] of OLD_HUBS) if (CORE_LANGS.includes(lang) && !taken.has(slugs[LI[lang]])) { write(`${lang}/${slugs[LI[lang]]}/index.html`, redirectPage(hubPath(g, lang))); taken.add(slugs[LI[lang]]); }
+  for (const cat of UCAT_ORDER) if (CORE_LANGS.includes(lang) && !taken.has(UCATS[cat].slug)) write(`${lang}/${UCATS[cat].slug}/index.html`, redirectPage(hubPath(GROUP_OF[cat], lang)));
   pages += TOOLS.length + 4;
 }
 

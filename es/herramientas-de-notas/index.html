@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Notes, passwords and privacy tools – Herramienta en línea gratuita</title>
+  <meta name="description" content="Scratchpads, checklists, passwords, QR codes and encrypted notes. Gratis, funciona en tu navegador, no se sube nada.">
+  
+  <link rel="canonical" href="https://ohfis.com/es/herramientas-de-notas/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/notes-tools/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/notizen-werkzeuge/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/narzedzia-do-notatek/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/nastroje-pro-poznamky/">
+  <link rel="alternate" hreflang="es" href="https://ohfis.com/es/herramientas-de-notas/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/notes-tools/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohfis">
+  <meta property="og:url" content="https://ohfis.com/es/herramientas-de-notas/">
+  <meta property="og:title" content="Notes, passwords and privacy tools – Herramienta en línea gratuita">
+  <meta property="og:description" content="Scratchpads, checklists, passwords, QR codes and encrypted notes. Gratis, funciona en tu navegador, no se sube nada.">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=1fe54eb2">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://ohfis.com/es/"},{"@type":"ListItem","position":2,"name":"Notas"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se suben mis archivos?","acceptedAnswer":{"@type":"Answer","text":"No. El archivo lo abre y procesa tu propio navegador. Puedes comprobarlo tú mismo: abre la pestaña de red de tu navegador mientras usas la herramienta, o desconéctate de internet después de cargar la página."}},{"@type":"Question","name":"¿Es gratis esta herramienta?","acceptedAnswer":{"@type":"Answer","text":"Sí, por completo. No hay registro, ni plan de pago, ni marca de agua en tus archivos."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Notes, passwords and privacy tools","description":"Scratchpads, checklists, passwords, QR codes and encrypted notes. Gratis, funciona en tu navegador, no se sube nada.","url":"https://ohfis.com/es/herramientas-de-notas/","inLanguage":"es","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://ohfis.com/es/generador-de-contrasenas/","name":"Generador de contraseñas"},{"@type":"ListItem","position":2,"url":"https://ohfis.com/es/generador-de-frases-de-contrasena/","name":"Generador de frases de contraseña (Diceware)"},{"@type":"ListItem","position":3,"url":"https://ohfis.com/es/decodificador-y-verificador-de-jwt/","name":"Decodificador y verificador de JWT"},{"@type":"ListItem","position":4,"url":"https://ohfis.com/es/generador-de-codigo-qr-de-wi-fi/","name":"Generador de código QR de Wi-Fi"},{"@type":"ListItem","position":5,"url":"https://ohfis.com/es/generador-de-codigo-qr-vcard/","name":"Generador de código QR vCard (QR de contacto)"},{"@type":"ListItem","position":6,"url":"https://ohfis.com/es/generador-de-codigos-qr/","name":"Generador de códigos QR"},{"@type":"ListItem","position":7,"url":"https://ohfis.com/es/enlace-de-nota-cifrada/","name":"Enlace de nota cifrada (mensaje privado)"},{"@type":"ListItem","position":8,"url":"https://ohfis.com/es/bloc-de-notas-en-linea/","name":"Bloc de notas en línea (con guardado automático)"},{"@type":"ListItem","position":9,"url":"https://ohfis.com/es/lista-de-comprobacion-con-barra-de-progreso/","name":"Lista de comprobación con barra de progreso"},{"@type":"ListItem","position":10,"url":"https://ohfis.com/es/tablero-kanban/","name":"Tablero Kanban (por hacer, en curso, hecho)"},{"@type":"ListItem","position":11,"url":"https://ohfis.com/es/contador-manual/","name":"Contador manual (contador de clics)"},{"@type":"ListItem","position":12,"url":"https://ohfis.com/es/generador-de-indice-para-markdown/","name":"Generador de índice para Markdown"},{"@type":"ListItem","position":13,"url":"https://ohfis.com/es/rellenador-de-variables-de-plantilla/","name":"Rellenador de variables de plantilla ({{nombre}})"},{"@type":"ListItem","position":14,"url":"https://ohfis.com/es/matriz-de-decision/","name":"Matriz de decisión (puntuación ponderada)"},{"@type":"ListItem","position":15,"url":"https://ohfis.com/es/formateador-de-actualizacion-de-stand-up-diario/","name":"Formateador de actualización de stand-up diario"},{"@type":"ListItem","position":16,"url":"https://ohfis.com/es/pegar-como-texto-sin-formato/","name":"Pegar como texto sin formato (quitar formato)"},{"@type":"ListItem","position":17,"url":"https://ohfis.com/es/markdown-a-correo-con-formato/","name":"Markdown a correo con formato"},{"@type":"ListItem","position":18,"url":"https://ohfis.com/es/caja-de-fragmentos/","name":"Caja de fragmentos (textos para copiar con un clic)"},{"@type":"ListItem","position":19,"url":"https://ohfis.com/es/conversor-de-texto-enriquecido-a-html-limpio/","name":"Conversor de texto enriquecido a HTML limpio"},{"@type":"ListItem","position":20,"url":"https://ohfis.com/es/traductor-de-braille/","name":"Traductor de braille (texto a braille)"},{"@type":"ListItem","position":21,"url":"https://ohfis.com/es/hoja-de-contactos-de-emergencia/","name":"Hoja de contactos de emergencia (PDF imprimible)"},{"@type":"ListItem","position":22,"url":"https://ohfis.com/es/temporizador-de-sprint-de-escritura-con-recuento-de/","name":"Temporizador de sprint de escritura con recuento de palabras"}]}}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Saltar al contenido</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/es/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>Ohfis</span></a>
+      <nav class="s-nav" aria-label="Navegación principal">
+        <a class="s-navlink" href="/es/herramientas-pdf/">PDF</a><a class="s-navlink" href="/es/documentos-e-impresion/">Documentos</a><a class="s-navlink" href="/es/herramientas-de-texto/">Texto</a><a class="s-navlink" href="/es/herramientas-de-notas/" aria-current="page">Notas</a><a class="s-navlink" href="/es/herramientas-de-hojas-de-calculo-y-csv/">Tablas</a><a class="s-navlink" href="/es/herramientas-de-imagen/">Imágenes</a><a class="s-navlink" href="/es/herramientas-de-video/">Vídeo</a><a class="s-navlink" href="/es/herramientas-de-audio/">Audio</a><a class="s-navlink" href="/es/herramientas-de-tiempo-y-calendario/">Tiempo</a><a class="s-navlink" href="/es/herramientas-de-negocios-y-finanzas/">Negocios</a><a class="s-navlink" href="/es/herramientas-de-equipo-y-reuniones/">Equipo</a><a class="s-navlink" href="/es/herramientas-de-ti-y-web/">TI</a>
+      </nav>
+      <div class="s-actions">
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.es.js" data-ph="Buscar herramientas…" data-empty="No se encontró ninguna herramienta. Prueba con otra palabra." data-hint="Escribe para buscar · ↑↓ para elegir · Intro para abrir · Esc para cerrar" data-sections="Explorar por área" data-fav-add="Añadir a favoritos" data-fav-remove="Quitar de favoritos" data-fav-title="Favoritos" data-recent-title="Usadas recientemente" data-mine-hint="Guardado solo en este navegador." aria-label="Buscar en todas las herramientas"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">Buscar herramientas…</span><kbd>/</kbd></button>
+        <details class="s-lang">
+          <summary aria-label="Idioma">es</summary>
+          <ul>
+            <li><a href="/en/notes-tools/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/notizen-werkzeuge/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/narzedzia-do-notatek/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/nastroje-pro-poznamky/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li><li><a href="/es/herramientas-de-notas/" hreflang="es" lang="es" data-set-lang="es" aria-current="true">Español</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Cambiar entre claro y oscuro" title="Cambiar entre claro y oscuro">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menú" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/es/">Inicio</a></li><li><span aria-current="page">Notas</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Notes, passwords and privacy tools</h1>
+        <p>Scratchpads, checklists, passwords, QR codes and encrypted notes. Cada herramienta funciona en tu navegador. Nada de lo que pegas o abres se sube.</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cat">
+        
+        <div class="s-cards"><a class="s-card" data-cat="notes" href="/es/generador-de-contrasenas/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generador de contraseñas</span>
+          <span class="s-card__desc">Crea contraseñas aleatorias seguras con reglas personalizadas, en tu navegador.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/generador-de-frases-de-contrasena/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generador de frases de contraseña (Diceware)</span>
+          <span class="s-card__desc">Frases de contraseña memorizables como correct-horse-battery-staple a partir de la lista de palabras de la EFF.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/decodificador-y-verificador-de-jwt/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Decodificador y verificador de JWT</span>
+          <span class="s-card__desc">Lee la cabecera, la carga y la caducidad de un JSON Web Token sin enviarlo a ningún sitio.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/generador-de-codigo-qr-de-wi-fi/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generador de código QR de Wi-Fi</span>
+          <span class="s-card__desc">Crea un código QR imprimible con el que los invitados se unen a tu Wi-Fi con un escaneo.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/generador-de-codigo-qr-vcard/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generador de código QR vCard (QR de contacto)</span>
+          <span class="s-card__desc">Crea un código QR que guarda tus datos de contacto en la agenda del móvil.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/generador-de-codigos-qr/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generador de códigos QR</span>
+          <span class="s-card__desc">Crea códigos QR para enlaces, texto, correo y SMS, gratis y sin seguimiento.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/enlace-de-nota-cifrada/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Enlace de nota cifrada (mensaje privado)</span>
+          <span class="s-card__desc">Cifra un mensaje corto en tu navegador y compártelo como un enlace más una clave aparte.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/bloc-de-notas-en-linea/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Bloc de notas en línea (con guardado automático)</span>
+          <span class="s-card__desc">Un bloc de notas sencillo que se guarda automáticamente en tu navegador, con varios blocs.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/lista-de-comprobacion-con-barra-de-progreso/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Lista de comprobación con barra de progreso</span>
+          <span class="s-card__desc">Marca elementos y mira el porcentaje completado, guardado en tu navegador.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/tablero-kanban/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Tablero Kanban (por hacer, en curso, hecho)</span>
+          <span class="s-card__desc">Un tablero personal de tareas de tres columnas con arrastrar y soltar, guardado en local.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/contador-manual/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Contador manual (contador de clics)</span>
+          <span class="s-card__desc">Un contador grande en pantalla para asistentes, votos o existencias, con atajos de teclado.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/generador-de-indice-para-markdown/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Generador de índice para Markdown</span>
+          <span class="s-card__desc">Genera un índice con enlaces a partir de los títulos de un documento Markdown.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/rellenador-de-variables-de-plantilla/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Rellenador de variables de plantilla ({{nombre}})</span>
+          <span class="s-card__desc">Rellena {{marcadores}} en plantillas de correo, respuestas predefinidas y prompts de IA.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/matriz-de-decision/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Matriz de decisión (puntuación ponderada)</span>
+          <span class="s-card__desc">Puntúa opciones frente a criterios ponderados para decidir de forma objetiva.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/formateador-de-actualizacion-de-stand-up-diario/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Formateador de actualización de stand-up diario</span>
+          <span class="s-card__desc">Convierte notas sueltas en una actualización limpia de Ayer / Hoy / Bloqueos para Slack.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/pegar-como-texto-sin-formato/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Pegar como texto sin formato (quitar formato)</span>
+          <span class="s-card__desc">Una caja de paso que elimina fuentes, colores y enlaces antes de pegar en otro sitio.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/markdown-a-correo-con-formato/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Markdown a correo con formato</span>
+          <span class="s-card__desc">Escribe en Markdown y pega texto enriquecido con estilo directamente en Gmail u Outlook.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/caja-de-fragmentos/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Caja de fragmentos (textos para copiar con un clic)</span>
+          <span class="s-card__desc">Guarda los textos que pegas cada día y cópialos con un clic.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/conversor-de-texto-enriquecido-a-html-limpio/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Conversor de texto enriquecido a HTML limpio</span>
+          <span class="s-card__desc">Pega desde Word o Google Docs y obtén HTML ordenado sin estilos, fuentes ni basura.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/traductor-de-braille/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Traductor de braille (texto a braille)</span>
+          <span class="s-card__desc">Convierte texto a braille Unicode y viceversa, con signos de mayúscula y de número.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/hoja-de-contactos-de-emergencia/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Hoja de contactos de emergencia (PDF imprimible)</span>
+          <span class="s-card__desc">Crea una hoja de una página con teléfonos, datos médicos y notas para la nevera.</span>
+        </a><a class="s-card" data-cat="notes" href="/es/temporizador-de-sprint-de-escritura-con-recuento-de/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></svg>
+          <span class="s-card__title">Temporizador de sprint de escritura con recuento de palabras</span>
+          <span class="s-card__desc">Escribe durante un tiempo fijado con recuento de palabras en vivo, ritmo y seguimiento de objetivos.</span>
+        </a></div>
+      </div></div>
+    </section>
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Preguntas frecuentes</h2>
+      <div class="s-faq">
+        <details open><summary>¿Se suben mis archivos?</summary><p>No. El archivo lo abre y procesa tu propio navegador. Puedes comprobarlo tú mismo: abre la pestaña de red de tu navegador mientras usas la herramienta, o desconéctate de internet después de cargar la página.</p></details>
+        <details><summary>¿Es gratis esta herramienta?</summary><p>Sí, por completo. No hay registro, ni plan de pago, ni marca de agua en tus archivos.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/es/privacidad/">Privacidad</a>
+        <a href="/es/aviso-legal/">Aviso legal</a>
+        <span class="s-footer__note">Funciona en tu navegador. Sin subida, sin cuenta, sin seguimiento.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=605e750f" defer></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Time, date and calendar tools – Herramienta en línea gratuita</title>
+  <meta name="description" content="Time zones, working days, timestamps, calendar files and timers. Gratis, funciona en tu navegador, no se sube nada.">
+  
+  <link rel="canonical" href="https://ohfis.com/es/herramientas-de-tiempo-y-calendario/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/time-calendar-tools/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/zeit-und-kalender-werkzeuge/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/czas-i-kalendarz/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/cas-a-kalendar/">
+  <link rel="alternate" hreflang="es" href="https://ohfis.com/es/herramientas-de-tiempo-y-calendario/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/time-calendar-tools/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohfis">
+  <meta property="og:url" content="https://ohfis.com/es/herramientas-de-tiempo-y-calendario/">
+  <meta property="og:title" content="Time, date and calendar tools – Herramienta en línea gratuita">
+  <meta property="og:description" content="Time zones, working days, timestamps, calendar files and timers. Gratis, funciona en tu navegador, no se sube nada.">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=1fe54eb2">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://ohfis.com/es/"},{"@type":"ListItem","position":2,"name":"Tiempo"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se suben mis archivos?","acceptedAnswer":{"@type":"Answer","text":"No. El archivo lo abre y procesa tu propio navegador. Puedes comprobarlo tú mismo: abre la pestaña de red de tu navegador mientras usas la herramienta, o desconéctate de internet después de cargar la página."}},{"@type":"Question","name":"¿Es gratis esta herramienta?","acceptedAnswer":{"@type":"Answer","text":"Sí, por completo. No hay registro, ni plan de pago, ni marca de agua en tus archivos."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Time, date and calendar tools","description":"Time zones, working days, timestamps, calendar files and timers. Gratis, funciona en tu navegador, no se sube nada.","url":"https://ohfis.com/es/herramientas-de-tiempo-y-calendario/","inLanguage":"es","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://ohfis.com/es/conversor-de-marcas-de-tiempo-unix/","name":"Conversor de marcas de tiempo Unix"},{"@type":"ListItem","position":2,"url":"https://ohfis.com/es/calculadora-de-diferencia-entre-fechas/","name":"Calculadora de diferencia entre fechas"},{"@type":"ListItem","position":3,"url":"https://ohfis.com/es/calculadora-de-dias-laborables/","name":"Calculadora de días laborables"},{"@type":"ListItem","position":4,"url":"https://ohfis.com/es/generador-de-eventos-de-calendario/","name":"Generador de eventos de calendario (.ics)"},{"@type":"ListItem","position":5,"url":"https://ohfis.com/es/planificador-de-reuniones-entre-zonas-horarias/","name":"Planificador de reuniones entre zonas horarias"},{"@type":"ListItem","position":6,"url":"https://ohfis.com/es/generador-de-enlaces-de-hora-de-reunion/","name":"Generador de enlaces de hora de reunión"},{"@type":"ListItem","position":7,"url":"https://ohfis.com/es/calculadora-del-coste-de-una-reunion/","name":"Calculadora del coste de una reunión"},{"@type":"ListItem","position":8,"url":"https://ohfis.com/es/temporizador-pomodoro-con-sonidos-de-concentracion/","name":"Temporizador Pomodoro con sonidos de concentración"},{"@type":"ListItem","position":9,"url":"https://ohfis.com/es/conversor-de-horas-y-minutos-a-decimal/","name":"Conversor de horas y minutos a decimal"},{"@type":"ListItem","position":10,"url":"https://ohfis.com/es/calculadora-de-hoja-de-horas-y-horas-extra/","name":"Calculadora de hoja de horas y horas extra"},{"@type":"ListItem","position":11,"url":"https://ohfis.com/es/calculadora-de-tiempo/","name":"Calculadora de tiempo (sumar y restar horas)"},{"@type":"ListItem","position":12,"url":"https://ohfis.com/es/calculadora-de-semana-iso-y-trimestre/","name":"Calculadora de semana ISO y trimestre"},{"@type":"ListItem","position":13,"url":"https://ohfis.com/es/generador-de-listas-de-fechas-recurrentes/","name":"Generador de listas de fechas recurrentes"},{"@type":"ListItem","position":14,"url":"https://ohfis.com/es/conversor-de-fecha-juliana-y-fecha-ordinal/","name":"Conversor de fecha juliana y fecha ordinal"},{"@type":"ListItem","position":15,"url":"https://ohfis.com/es/cuenta-atras-para-presentaciones/","name":"Cuenta atrás para presentaciones"},{"@type":"ListItem","position":16,"url":"https://ohfis.com/es/cronometro-con-vueltas/","name":"Cronómetro con vueltas (exportación CSV)"},{"@type":"ListItem","position":17,"url":"https://ohfis.com/es/reloj-mundial/","name":"Reloj mundial"},{"@type":"ListItem","position":18,"url":"https://ohfis.com/es/generador-de-calendario-de-sprints/","name":"Generador de calendario de sprints"},{"@type":"ListItem","position":19,"url":"https://ohfis.com/es/calculadora-de-amanecer-y-atardecer/","name":"Calculadora de amanecer y atardecer"},{"@type":"ListItem","position":20,"url":"https://ohfis.com/es/calculadora-de-fases-lunares/","name":"Calculadora de fases lunares"},{"@type":"ListItem","position":21,"url":"https://ohfis.com/es/barra-de-progreso-del-ano/","name":"Barra de progreso del año (días que quedan del año)"},{"@type":"ListItem","position":22,"url":"https://ohfis.com/es/calculadora-de-ano-fiscal/","name":"Calculadora de año fiscal (trimestre y período fiscal)"},{"@type":"ListItem","position":23,"url":"https://ohfis.com/es/formateador-de-disponibilidad/","name":"Formateador de disponibilidad (franjas horarias en varias zonas)"},{"@type":"ListItem","position":24,"url":"https://ohfis.com/es/calculadora-de-hora-de-llegada-de-vuelo-y-jet-lag/","name":"Calculadora de hora de llegada de vuelo y jet lag"},{"@type":"ListItem","position":25,"url":"https://ohfis.com/es/planificador-de-presupuesto-semanal-de-horas-de-trabajo/","name":"Planificador de presupuesto semanal de horas de trabajo"},{"@type":"ListItem","position":26,"url":"https://ohfis.com/es/calendario-trimestral-de-okr-y-revisiones/","name":"Calendario trimestral de OKR y revisiones"}]}}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Saltar al contenido</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/es/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>Ohfis</span></a>
+      <nav class="s-nav" aria-label="Navegación principal">
+        <a class="s-navlink" href="/es/herramientas-pdf/">PDF</a><a class="s-navlink" href="/es/documentos-e-impresion/">Documentos</a><a class="s-navlink" href="/es/herramientas-de-texto/">Texto</a><a class="s-navlink" href="/es/herramientas-de-notas/">Notas</a><a class="s-navlink" href="/es/herramientas-de-hojas-de-calculo-y-csv/">Tablas</a><a class="s-navlink" href="/es/herramientas-de-imagen/">Imágenes</a><a class="s-navlink" href="/es/herramientas-de-video/">Vídeo</a><a class="s-navlink" href="/es/herramientas-de-audio/">Audio</a><a class="s-navlink" href="/es/herramientas-de-tiempo-y-calendario/" aria-current="page">Tiempo</a><a class="s-navlink" href="/es/herramientas-de-negocios-y-finanzas/">Negocios</a><a class="s-navlink" href="/es/herramientas-de-equipo-y-reuniones/">Equipo</a><a class="s-navlink" href="/es/herramientas-de-ti-y-web/">TI</a>
+      </nav>
+      <div class="s-actions">
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.es.js" data-ph="Buscar herramientas…" data-empty="No se encontró ninguna herramienta. Prueba con otra palabra." data-hint="Escribe para buscar · ↑↓ para elegir · Intro para abrir · Esc para cerrar" data-sections="Explorar por área" data-fav-add="Añadir a favoritos" data-fav-remove="Quitar de favoritos" data-fav-title="Favoritos" data-recent-title="Usadas recientemente" data-mine-hint="Guardado solo en este navegador." aria-label="Buscar en todas las herramientas"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">Buscar herramientas…</span><kbd>/</kbd></button>
+        <details class="s-lang">
+          <summary aria-label="Idioma">es</summary>
+          <ul>
+            <li><a href="/en/time-calendar-tools/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/zeit-und-kalender-werkzeuge/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/czas-i-kalendarz/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/cas-a-kalendar/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li><li><a href="/es/herramientas-de-tiempo-y-calendario/" hreflang="es" lang="es" data-set-lang="es" aria-current="true">Español</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Cambiar entre claro y oscuro" title="Cambiar entre claro y oscuro">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menú" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/es/">Inicio</a></li><li><span aria-current="page">Tiempo</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Time, date and calendar tools</h1>
+        <p>Time zones, working days, timestamps, calendar files and timers. Cada herramienta funciona en tu navegador. Nada de lo que pegas o abres se sube.</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cat">
+        
+        <div class="s-cards"><a class="s-card" data-cat="time" href="/es/conversor-de-marcas-de-tiempo-unix/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Conversor de marcas de tiempo Unix</span>
+          <span class="s-card__desc">Convierte segundos o milisegundos de época en una fecha y viceversa, en cualquier zona horaria.</span>
+        </a><a class="s-card" data-cat="time" href="/es/calculadora-de-diferencia-entre-fechas/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Calculadora de diferencia entre fechas</span>
+          <span class="s-card__desc">Tiempo exacto entre dos fechas en años, meses, días, semanas, horas y días laborables.</span>
+        </a><a class="s-card" data-cat="time" href="/es/calculadora-de-dias-laborables/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Calculadora de días laborables</span>
+          <span class="s-card__desc">Suma o resta días laborables y cuéntalos entre fechas, saltando fines de semana y festivos.</span>
+        </a><a class="s-card" data-cat="time" href="/es/generador-de-eventos-de-calendario/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Generador de eventos de calendario (.ics)</span>
+          <span class="s-card__desc">Crea un archivo de calendario para una invitación por correo, sin necesidad de cuenta de Outlook o Google.</span>
+        </a><a class="s-card" data-cat="time" href="/es/planificador-de-reuniones-entre-zonas-horarias/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Planificador de reuniones entre zonas horarias</span>
+          <span class="s-card__desc">Encuentra las horas en que todos están en horario laboral entre ciudades y zonas horarias.</span>
+        </a><a class="s-card" data-cat="time" href="/es/generador-de-enlaces-de-hora-de-reunion/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+          <span class="s-card__title">Generador de enlaces de hora de reunión</span>
+          <span class="s-card__desc">Crea un enlace que muestra la hora de la reunión en la zona horaria de cada destinatario.</span>
+        </a><a class="s-card" data-cat="time" href="/es/calculadora-del-coste-de-una-reunion/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M15 9.2a6 6 0 1 1-5.8 5.8"/><path d="M8 7.5h2.2a1.3 1.3 0 0 1 0 2.6H8.4a1.3 1.3 0 0 0 0 2.6H11"/></svg>
+          <span class="s-card__title">Calculadora del coste de una reunión</span>
+          <span class="s-card__desc">Mira en tiempo real lo que cuesta una reunión según el número de asistentes y los salarios.</span>
+        </a><a class="s-card" data-cat="time" href="/es/temporizador-pomodoro-con-sonidos-de-concentracion/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Temporizador Pomodoro con sonidos de concentración</span>
+          <span class="s-card__desc">Ciclos de concentración y descanso con ruido blanco, lluvia y sonidos de cafetería integrados.</span>
+        </a><a class="s-card" data-cat="time" href="/es/conversor-de-horas-y-minutos-a-decimal/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Conversor de horas y minutos a decimal</span>
+          <span class="s-card__desc">Convierte 7:45 en 7,75 para hojas de horas y facturas, con reglas de redondeo.</span>
+        </a><a class="s-card" data-cat="time" href="/es/calculadora-de-hoja-de-horas-y-horas-extra/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Calculadora de hoja de horas y horas extra</span>
+          <span class="s-card__desc">Suma una semana de horas de entrada y salida, con descansos y horas extra.</span>
+        </a><a class="s-card" data-cat="time" href="/es/calculadora-de-tiempo/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Calculadora de tiempo (sumar y restar horas)</span>
+          <span class="s-card__desc">Suma y resta duraciones como 4h 12m + 1h 55m o 2:30 - 0:45.</span>
+        </a><a class="s-card" data-cat="time" href="/es/calculadora-de-semana-iso-y-trimestre/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Calculadora de semana ISO y trimestre</span>
+          <span class="s-card__desc">Encuentra la semana ISO, el día del año y el trimestre fiscal de cualquier fecha.</span>
+        </a><a class="s-card" data-cat="time" href="/es/generador-de-listas-de-fechas-recurrentes/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Generador de listas de fechas recurrentes</span>
+          <span class="s-card__desc">Lista las fechas de un evento que se repite, como un martes sí y otro no.</span>
+        </a><a class="s-card" data-cat="time" href="/es/conversor-de-fecha-juliana-y-fecha-ordinal/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Conversor de fecha juliana y fecha ordinal</span>
+          <span class="s-card__desc">Convierte fechas del calendario en números de día juliano y fechas ordinales AAAA-DDD.</span>
+        </a><a class="s-card" data-cat="time" href="/es/cuenta-atras-para-presentaciones/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Cuenta atrás para presentaciones</span>
+          <span class="s-card__desc">Una cuenta atrás grande que se vuelve naranja y roja cuando queda poco tiempo, con modo pantalla completa.</span>
+        </a><a class="s-card" data-cat="time" href="/es/cronometro-con-vueltas/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Cronómetro con vueltas (exportación CSV)</span>
+          <span class="s-card__desc">Cronómetro de milisegundos que registra vueltas y las exporta como CSV.</span>
+        </a><a class="s-card" data-cat="time" href="/es/reloj-mundial/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Reloj mundial</span>
+          <span class="s-card__desc">Una cuadrícula personalizada de relojes en vivo para tus oficinas y contactos de todo el mundo.</span>
+        </a><a class="s-card" data-cat="time" href="/es/generador-de-calendario-de-sprints/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Generador de calendario de sprints</span>
+          <span class="s-card__desc">Organiza fechas de sprints, días de planificación y revisiones para un trimestre o un año.</span>
+        </a><a class="s-card" data-cat="time" href="/es/calculadora-de-amanecer-y-atardecer/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Calculadora de amanecer y atardecer</span>
+          <span class="s-card__desc">Amanecer, atardecer, duración del día y crepúsculo para cualquier lugar y fecha.</span>
+        </a><a class="s-card" data-cat="time" href="/es/calculadora-de-fases-lunares/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Calculadora de fases lunares</span>
+          <span class="s-card__desc">Mira la fase de la luna en cualquier fecha y las próximas lunas nuevas y llenas.</span>
+        </a><a class="s-card" data-cat="time" href="/es/barra-de-progreso-del-ano/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Barra de progreso del año (días que quedan del año)</span>
+          <span class="s-card__desc">Cuánto del año, trimestre, mes y semana ha pasado, y cuántos días quedan.</span>
+        </a><a class="s-card" data-cat="time" href="/es/calculadora-de-ano-fiscal/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Calculadora de año fiscal (trimestre y período fiscal)</span>
+          <span class="s-card__desc">Encuentra el año y el trimestre fiscal de una fecha y asigna meses a trimestres fiscales.</span>
+        </a><a class="s-card" data-cat="time" href="/es/formateador-de-disponibilidad/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Formateador de disponibilidad (franjas horarias en varias zonas)</span>
+          <span class="s-card__desc">Convierte tus rangos de tiempo libre en un mensaje que muestra cada zona horaria.</span>
+        </a><a class="s-card" data-cat="time" href="/es/calculadora-de-hora-de-llegada-de-vuelo-y-jet-lag/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Calculadora de hora de llegada de vuelo y jet lag</span>
+          <span class="s-card__desc">Calcula la hora local de llegada entre zonas horarias, con una escala y un segundo vuelo opcionales.</span>
+        </a><a class="s-card" data-cat="time" href="/es/planificador-de-presupuesto-semanal-de-horas-de-trabajo/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Planificador de presupuesto semanal de horas de trabajo</span>
+          <span class="s-card__desc">Comprueba si tu trabajo planificado cabe en las horas que realmente tienes esta semana.</span>
+        </a><a class="s-card" data-cat="time" href="/es/calendario-trimestral-de-okr-y-revisiones/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Calendario trimestral de OKR y revisiones</span>
+          <span class="s-card__desc">Obtén las fechas de arranque, revisiones semanales, revisión de mitad de trimestre y evaluación.</span>
+        </a></div>
+      </div></div>
+    </section>
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Preguntas frecuentes</h2>
+      <div class="s-faq">
+        <details open><summary>¿Se suben mis archivos?</summary><p>No. El archivo lo abre y procesa tu propio navegador. Puedes comprobarlo tú mismo: abre la pestaña de red de tu navegador mientras usas la herramienta, o desconéctate de internet después de cargar la página.</p></details>
+        <details><summary>¿Es gratis esta herramienta?</summary><p>Sí, por completo. No hay registro, ni plan de pago, ni marca de agua en tus archivos.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/es/privacidad/">Privacidad</a>
+        <a href="/es/aviso-legal/">Aviso legal</a>
+        <span class="s-footer__note">Funciona en tu navegador. Sin subida, sin cuenta, sin seguimiento.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=605e750f" defer></script>
+</body>
+</html>

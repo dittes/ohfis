@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>IT and web helper tools – Herramienta en línea gratuita</title>
+  <meta name="description" content="Hashes, encoders, cron, JWT, colours, networks and web snippets. Gratis, funciona en tu navegador, no se sube nada.">
+  
+  <link rel="canonical" href="https://ohfis.com/es/herramientas-de-ti-y-web/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/it-web-tools/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/it-und-web-werkzeuge/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/narzedzia-it-i-web/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/it-a-web-nastroje/">
+  <link rel="alternate" hreflang="es" href="https://ohfis.com/es/herramientas-de-ti-y-web/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/it-web-tools/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohfis">
+  <meta property="og:url" content="https://ohfis.com/es/herramientas-de-ti-y-web/">
+  <meta property="og:title" content="IT and web helper tools – Herramienta en línea gratuita">
+  <meta property="og:description" content="Hashes, encoders, cron, JWT, colours, networks and web snippets. Gratis, funciona en tu navegador, no se sube nada.">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=1fe54eb2">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://ohfis.com/es/"},{"@type":"ListItem","position":2,"name":"TI"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se suben mis archivos?","acceptedAnswer":{"@type":"Answer","text":"No. El archivo lo abre y procesa tu propio navegador. Puedes comprobarlo tú mismo: abre la pestaña de red de tu navegador mientras usas la herramienta, o desconéctate de internet después de cargar la página."}},{"@type":"Question","name":"¿Es gratis esta herramienta?","acceptedAnswer":{"@type":"Answer","text":"Sí, por completo. No hay registro, ni plan de pago, ni marca de agua en tus archivos."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"IT and web helper tools","description":"Hashes, encoders, cron, JWT, colours, networks and web snippets. Gratis, funciona en tu navegador, no se sube nada.","url":"https://ohfis.com/es/herramientas-de-ti-y-web/","inLanguage":"es","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://ohfis.com/es/generador-de-sumas-de-comprobacion/","name":"Generador de sumas de comprobación (SHA-256, MD5, SHA-1)"},{"@type":"ListItem","position":2,"url":"https://ohfis.com/es/calculadora-de-subredes/","name":"Calculadora de subredes (CIDR, máscara, rango IP)"},{"@type":"ListItem","position":3,"url":"https://ohfis.com/es/traductor-de-expresiones-cron/","name":"Traductor de expresiones cron"},{"@type":"ListItem","position":4,"url":"https://ohfis.com/es/referencia-de-codigos-de-estado-http/","name":"Referencia de códigos de estado HTTP"},{"@type":"ListItem","position":5,"url":"https://ohfis.com/es/conversor-de-curl-a-javascript-y-python/","name":"Conversor de cURL a JavaScript y Python"},{"@type":"ListItem","position":6,"url":"https://ohfis.com/es/decodificador-de-cadenas-user-agent/","name":"Decodificador de cadenas User-Agent"},{"@type":"ListItem","position":7,"url":"https://ohfis.com/es/codificador-y-decodificador-de-entidades-html/","name":"Codificador y decodificador de entidades HTML"},{"@type":"ListItem","position":8,"url":"https://ohfis.com/es/codificador-y-decodificador-base64/","name":"Codificador y decodificador Base64 (texto y archivos)"},{"@type":"ListItem","position":9,"url":"https://ohfis.com/es/conversor-de-colores/","name":"Conversor de colores (HEX, RGB, HSL, CMYK)"},{"@type":"ListItem","position":10,"url":"https://ohfis.com/es/generador-de-uuid-guid/","name":"Generador de UUID / GUID (v4 y v7)"},{"@type":"ListItem","position":11,"url":"https://ohfis.com/es/conversor-de-bases-numericas/","name":"Conversor de bases numéricas (binario, octal, decimal, hex)"},{"@type":"ListItem","position":12,"url":"https://ohfis.com/es/generador-de-cabecera-basic-auth/","name":"Generador de cabecera Basic Auth"},{"@type":"ListItem","position":13,"url":"https://ohfis.com/es/calculadora-de-alfa-hexadecimal/","name":"Calculadora de alfa hexadecimal (opacidad a hex)"},{"@type":"ListItem","position":14,"url":"https://ohfis.com/es/generador-de-etiqueta-meta-viewport/","name":"Generador de etiqueta meta viewport"},{"@type":"ListItem","position":15,"url":"https://ohfis.com/es/generador-de-etiquetas-html-de-favicon/","name":"Generador de etiquetas HTML de favicon"},{"@type":"ListItem","position":16,"url":"https://ohfis.com/es/constructor-de-cadenas-de-consulta-de-url/","name":"Constructor de cadenas de consulta de URL"},{"@type":"ListItem","position":17,"url":"https://ohfis.com/es/generador-de-url-anticache/","name":"Generador de URL anticaché"},{"@type":"ListItem","position":18,"url":"https://ohfis.com/es/comprobador-de-caducidad-de-certificados-ssl-y/","name":"Comprobador de caducidad de certificados SSL y recordatorio"},{"@type":"ListItem","position":19,"url":"https://ohfis.com/es/analizador-de-cabeceras-de-correo/","name":"Analizador de cabeceras de correo"},{"@type":"ListItem","position":20,"url":"https://ohfis.com/es/generador-y-validador-de-robots-txt/","name":"Generador y validador de robots.txt"},{"@type":"ListItem","position":21,"url":"https://ohfis.com/es/validador-y-formateador-de-sitemap-xml/","name":"Validador y formateador de Sitemap XML"},{"@type":"ListItem","position":22,"url":"https://ohfis.com/es/vista-previa-de-open-graph-y-redes-sociales/","name":"Vista previa de Open Graph y redes sociales"},{"@type":"ListItem","position":23,"url":"https://ohfis.com/es/generador-de-sombras-css/","name":"Generador de sombras CSS (box-shadow)"},{"@type":"ListItem","position":24,"url":"https://ohfis.com/es/explicador-y-probador-de-expresiones-regulares/","name":"Explicador y probador de expresiones regulares"},{"@type":"ListItem","position":25,"url":"https://ohfis.com/es/busqueda-de-numeros-de-puerto/","name":"Búsqueda de números de puerto (puertos TCP/UDP comunes)"},{"@type":"ListItem","position":26,"url":"https://ohfis.com/es/busqueda-de-tipos-mime/","name":"Búsqueda de tipos MIME (extensión de archivo a Content-Type)"},{"@type":"ListItem","position":27,"url":"https://ohfis.com/es/generador-de-registros-spf-y-dmarc/","name":"Generador de registros SPF y DMARC"},{"@type":"ListItem","position":28,"url":"https://ohfis.com/es/zona-de-pruebas-y-chuleta-de-css-flexbox/","name":"Zona de pruebas y chuleta de CSS Flexbox"},{"@type":"ListItem","position":29,"url":"https://ohfis.com/es/probador-de-firmas-de-webhook/","name":"Probador de firmas de webhook (HMAC SHA-256)"},{"@type":"ListItem","position":30,"url":"https://ohfis.com/es/conversor-de-fuentes/","name":"Conversor de fuentes (TTF/OTF a WOFF y viceversa)"},{"@type":"ListItem","position":31,"url":"https://ohfis.com/es/formateador-y-validador-de-json/","name":"Formateador y validador de JSON"},{"@type":"ListItem","position":32,"url":"https://ohfis.com/es/conversor-de-json-yaml-y-xml/","name":"Conversor de JSON, YAML y XML"},{"@type":"ListItem","position":33,"url":"https://ohfis.com/es/formateador-y-embellecedor-de-sql/","name":"Formateador y embellecedor de SQL"},{"@type":"ListItem","position":34,"url":"https://ohfis.com/es/probador-de-regex/","name":"Probador de regex (JavaScript)"},{"@type":"ListItem","position":35,"url":"https://ohfis.com/es/vista-previa-de-markdown/","name":"Vista previa de Markdown (en vivo)"},{"@type":"ListItem","position":36,"url":"https://ohfis.com/es/minimizador-de-css-html-y-json/","name":"Minimizador de CSS, HTML y JSON"},{"@type":"ListItem","position":37,"url":"https://ohfis.com/es/generador-de-lorem-ipsum/","name":"Generador de Lorem Ipsum"},{"@type":"ListItem","position":38,"url":"https://ohfis.com/es/detector-de-tipo-de-archivo/","name":"Detector de tipo de archivo (identifica cualquier archivo)"},{"@type":"ListItem","position":39,"url":"https://ohfis.com/es/generador-de-arbol-de-carpetas/","name":"Generador de árbol de carpetas (estructura de directorios como texto)"}]}}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Saltar al contenido</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/es/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>Ohfis</span></a>
+      <nav class="s-nav" aria-label="Navegación principal">
+        <a class="s-navlink" href="/es/herramientas-pdf/">PDF</a><a class="s-navlink" href="/es/documentos-e-impresion/">Documentos</a><a class="s-navlink" href="/es/herramientas-de-texto/">Texto</a><a class="s-navlink" href="/es/herramientas-de-notas/">Notas</a><a class="s-navlink" href="/es/herramientas-de-hojas-de-calculo-y-csv/">Tablas</a><a class="s-navlink" href="/es/herramientas-de-imagen/">Imágenes</a><a class="s-navlink" href="/es/herramientas-de-video/">Vídeo</a><a class="s-navlink" href="/es/herramientas-de-audio/">Audio</a><a class="s-navlink" href="/es/herramientas-de-tiempo-y-calendario/">Tiempo</a><a class="s-navlink" href="/es/herramientas-de-negocios-y-finanzas/">Negocios</a><a class="s-navlink" href="/es/herramientas-de-equipo-y-reuniones/">Equipo</a><a class="s-navlink" href="/es/herramientas-de-ti-y-web/" aria-current="page">TI</a>
+      </nav>
+      <div class="s-actions">
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.es.js" data-ph="Buscar herramientas…" data-empty="No se encontró ninguna herramienta. Prueba con otra palabra." data-hint="Escribe para buscar · ↑↓ para elegir · Intro para abrir · Esc para cerrar" data-sections="Explorar por área" data-fav-add="Añadir a favoritos" data-fav-remove="Quitar de favoritos" data-fav-title="Favoritos" data-recent-title="Usadas recientemente" data-mine-hint="Guardado solo en este navegador." aria-label="Buscar en todas las herramientas"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">Buscar herramientas…</span><kbd>/</kbd></button>
+        <details class="s-lang">
+          <summary aria-label="Idioma">es</summary>
+          <ul>
+            <li><a href="/en/it-web-tools/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/it-und-web-werkzeuge/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/narzedzia-it-i-web/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/it-a-web-nastroje/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li><li><a href="/es/herramientas-de-ti-y-web/" hreflang="es" lang="es" data-set-lang="es" aria-current="true">Español</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Cambiar entre claro y oscuro" title="Cambiar entre claro y oscuro">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menú" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/es/">Inicio</a></li><li><span aria-current="page">TI</span></li></ol>
+      <div class="s-toolhead">
+        <h1>IT and web helper tools</h1>
+        <p>Hashes, encoders, cron, JWT, colours, networks and web snippets. Cada herramienta funciona en tu navegador. Nada de lo que pegas o abres se sube.</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cat">
+        
+        <div class="s-cards"><a class="s-card" data-cat="dev" href="/es/generador-de-sumas-de-comprobacion/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generador de sumas de comprobación (SHA-256, MD5, SHA-1)</span>
+          <span class="s-card__desc">Calcula y compara hashes de archivos en tu navegador para verificar descargas.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/calculadora-de-subredes/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Calculadora de subredes (CIDR, máscara, rango IP)</span>
+          <span class="s-card__desc">Red, difusión, hosts utilizables y división en subredes para cualquier rango IPv4.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/traductor-de-expresiones-cron/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Traductor de expresiones cron</span>
+          <span class="s-card__desc">Traduce programaciones cron a lenguaje sencillo y consulta las próximas ejecuciones.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/referencia-de-codigos-de-estado-http/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Referencia de códigos de estado HTTP</span>
+          <span class="s-card__desc">Busca cada código de estado HTTP con una explicación sencilla y una solución.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/conversor-de-curl-a-javascript-y-python/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Conversor de cURL a JavaScript y Python</span>
+          <span class="s-card__desc">Convierte un comando curl en código fetch y Python requests que funciona.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/decodificador-de-cadenas-user-agent/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Decodificador de cadenas User-Agent</span>
+          <span class="s-card__desc">Averigua navegador, sistema operativo, dispositivo y motor a partir de una cadena user-agent.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/codificador-y-decodificador-de-entidades-html/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Codificador y decodificador de entidades HTML</span>
+          <span class="s-card__desc">Convierte caracteres especiales en entidades HTML y viceversa.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/codificador-y-decodificador-base64/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Codificador y decodificador Base64 (texto y archivos)</span>
+          <span class="s-card__desc">Codifica o decodifica Base64 y URL de datos, para texto y para archivos.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/conversor-de-colores/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Conversor de colores (HEX, RGB, HSL, CMYK)</span>
+          <span class="s-card__desc">Convierte colores entre HEX, RGB, HSL, HSV y CMYK, con selector y cuentagotas.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/generador-de-uuid-guid/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generador de UUID / GUID (v4 y v7)</span>
+          <span class="s-card__desc">Genera lotes de UUID aleatorios seguros, incluido el v7 ordenable por tiempo.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/conversor-de-bases-numericas/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Conversor de bases numéricas (binario, octal, decimal, hex)</span>
+          <span class="s-card__desc">Convierte enteros entre las bases 2 a 36, de cualquier tamaño.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/generador-de-cabecera-basic-auth/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generador de cabecera Basic Auth</span>
+          <span class="s-card__desc">Crea la cabecera Authorization: Basic a partir de un usuario y una contraseña.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/calculadora-de-alfa-hexadecimal/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Calculadora de alfa hexadecimal (opacidad a hex)</span>
+          <span class="s-card__desc">Convierte porcentajes de opacidad en valores alfa hexadecimales de dos dígitos, como 50 % = 80.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/generador-de-etiqueta-meta-viewport/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generador de etiqueta meta viewport</span>
+          <span class="s-card__desc">Crea una etiqueta viewport correcta para páginas adaptables.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/generador-de-etiquetas-html-de-favicon/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generador de etiquetas HTML de favicon</span>
+          <span class="s-card__desc">Genera las etiquetas link y el manifiesto para iconos de escritorio y móvil.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/constructor-de-cadenas-de-consulta-de-url/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Constructor de cadenas de consulta de URL</span>
+          <span class="s-card__desc">Convierte pares clave-valor en una cadena de consulta de URL correctamente codificada.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/generador-de-url-anticache/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generador de URL anticaché</span>
+          <span class="s-card__desc">Añade un parámetro de versión o marca de tiempo para que los navegadores descarguen el archivo más reciente.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/comprobador-de-caducidad-de-certificados-ssl-y/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Comprobador de caducidad de certificados SSL y recordatorio</span>
+          <span class="s-card__desc">Lee un certificado, mira cuántos días quedan y descarga recordatorios de calendario.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/analizador-de-cabeceras-de-correo/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Analizador de cabeceras de correo</span>
+          <span class="s-card__desc">Rastrea la ruta de un correo, los retrasos y los resultados de SPF, DKIM y DMARC.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/generador-y-validador-de-robots-txt/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generador y validador de robots.txt</span>
+          <span class="s-card__desc">Crea un robots.txt o comprueba uno existente en busca de errores de sintaxis.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/validador-y-formateador-de-sitemap-xml/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Validador y formateador de Sitemap XML</span>
+          <span class="s-card__desc">Valida un sitemap según el estándar y dale formato legible.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/vista-previa-de-open-graph-y-redes-sociales/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Vista previa de Open Graph y redes sociales</span>
+          <span class="s-card__desc">Previsualiza cómo se ve un enlace en Facebook, X, LinkedIn y Slack y obtén las metaetiquetas.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/generador-de-sombras-css/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generador de sombras CSS (box-shadow)</span>
+          <span class="s-card__desc">Diseña sombras en capas de forma visual y copia CSS limpio.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/explicador-y-probador-de-expresiones-regulares/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Explicador y probador de expresiones regulares</span>
+          <span class="s-card__desc">Divide una expresión regular en partes en lenguaje sencillo y pruébala en vivo.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/busqueda-de-numeros-de-puerto/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Búsqueda de números de puerto (puertos TCP/UDP comunes)</span>
+          <span class="s-card__desc">Encuentra qué servicio usa un puerto y qué puerto usa un servicio.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/busqueda-de-tipos-mime/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Búsqueda de tipos MIME (extensión de archivo a Content-Type)</span>
+          <span class="s-card__desc">Encuentra el Content-Type correcto para una extensión de archivo, o la extensión de un tipo MIME.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/generador-de-registros-spf-y-dmarc/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generador de registros SPF y DMARC</span>
+          <span class="s-card__desc">Crea los registros TXT de DNS que impiden que otros suplanten el correo de tu dominio.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/zona-de-pruebas-y-chuleta-de-css-flexbox/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Zona de pruebas y chuleta de CSS Flexbox</span>
+          <span class="s-card__desc">Recorre los ajustes de flexbox, mira el resultado en vivo y copia el CSS.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/probador-de-firmas-de-webhook/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Probador de firmas de webhook (HMAC SHA-256)</span>
+          <span class="s-card__desc">Calcula firmas de webhook al estilo GitHub, Stripe y Slack y comprueba la que recibiste.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/conversor-de-fuentes/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Conversor de fuentes (TTF/OTF a WOFF y viceversa)</span>
+          <span class="s-card__desc">Convierte un archivo de fuente a WOFF para sitios web, o desempaqueta WOFF a TTF/OTF.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/formateador-y-validador-de-json/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Formateador y validador de JSON</span>
+          <span class="s-card__desc">Formatea, minimiza, ordena y valida JSON, con la posición exacta del error.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/conversor-de-json-yaml-y-xml/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Conversor de JSON, YAML y XML</span>
+          <span class="s-card__desc">Convierte entre JSON, YAML y XML en cualquier dirección.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/formateador-y-embellecedor-de-sql/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Formateador y embellecedor de SQL</span>
+          <span class="s-card__desc">Haz legibles las consultas SQL con sangrías y saltos de línea.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/probador-de-regex/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Probador de regex (JavaScript)</span>
+          <span class="s-card__desc">Prueba una expresión regular en vivo: coincidencias, grupos y reemplazo.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/vista-previa-de-markdown/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Vista previa de Markdown (en vivo)</span>
+          <span class="s-card__desc">Mira el Markdown renderizado mientras escribes y copia el HTML.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/minimizador-de-css-html-y-json/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Minimizador de CSS, HTML y JSON</span>
+          <span class="s-card__desc">Quita comentarios y espacios en blanco para hacer más pequeño el CSS, el HTML o el JSON.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/generador-de-lorem-ipsum/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Generador de Lorem Ipsum</span>
+          <span class="s-card__desc">Genera texto de relleno por párrafos, frases o palabras.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/detector-de-tipo-de-archivo/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/></svg>
+          <span class="s-card__title">Detector de tipo de archivo (identifica cualquier archivo)</span>
+          <span class="s-card__desc">Averigua qué es realmente un archivo, por su contenido y no por su nombre.</span>
+        </a><a class="s-card" data-cat="dev" href="/es/generador-de-arbol-de-carpetas/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generador de árbol de carpetas (estructura de directorios como texto)</span>
+          <span class="s-card__desc">Convierte una carpeta o una lista de rutas en un árbol de texto para documentación.</span>
+        </a></div>
+      </div></div>
+    </section>
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Preguntas frecuentes</h2>
+      <div class="s-faq">
+        <details open><summary>¿Se suben mis archivos?</summary><p>No. El archivo lo abre y procesa tu propio navegador. Puedes comprobarlo tú mismo: abre la pestaña de red de tu navegador mientras usas la herramienta, o desconéctate de internet después de cargar la página.</p></details>
+        <details><summary>¿Es gratis esta herramienta?</summary><p>Sí, por completo. No hay registro, ni plan de pago, ni marca de agua en tus archivos.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/es/privacidad/">Privacidad</a>
+        <a href="/es/aviso-legal/">Aviso legal</a>
+        <span class="s-footer__note">Funciona en tu navegador. Sin subida, sin cuenta, sin seguimiento.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=605e750f" defer></script>
+</body>
+</html>

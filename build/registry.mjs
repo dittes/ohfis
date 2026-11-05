@@ -3,9 +3,11 @@
 // Copy lives in content/<lang>.mjs; this file holds what is the same in every language.
 
 export const SITE = 'https://ohfis.com';
-export const LANGS = ['en', 'de', 'pl', 'cs'];
-export const LANG_NAMES = { en: 'English', de: 'Deutsch', pl: 'Polski', cs: 'Čeština' };
-export const LOCALES = { en: 'en_US', de: 'de_DE', pl: 'pl_PL', cs: 'cs_CZ' };
+/** Languages that exist on the site and the original four, whose texts live inside the registries; the others come from build/langs/<lang>.mjs. */
+export const CORE_LANGS = ['en', 'de', 'pl', 'cs'];
+export const LANGS = ['en', 'de', 'pl', 'cs', 'es'];
+export const LANG_NAMES = { en: 'English', de: 'Deutsch', pl: 'Polski', cs: 'Čeština', es: 'Español', fr: 'Français', pt: 'Português', nl: 'Nederlands', sv: 'Svenska', da: 'Dansk' };
+export const LOCALES = { en: 'en_US', de: 'de_DE', pl: 'pl_PL', cs: 'cs_CZ', es: 'es_ES', fr: 'fr_FR', pt: 'pt_BR', nl: 'nl_NL', sv: 'sv_SE', da: 'da_DK' };
 
 /** Localized slug of the non-tool pages. */
 export const PAGES = {
@@ -192,7 +194,7 @@ export const CONVERT_TO_PDF = [];
 
 export function sisterUrl(key, lang) {
   const [site] = key.split(':');
-  return `${SISTER_SITES[site].host}/${lang}/${SISTER_PATHS[key]}`;
+  return `${SISTER_SITES[site].host}/${CORE_LANGS.includes(lang) ? lang : 'en'}/${SISTER_PATHS[key]}`;
 }
 
 export function pagePath(key, lang) {

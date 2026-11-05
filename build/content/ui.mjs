@@ -29,7 +29,7 @@ const rows = {
   result: ['Result', 'Ergebnis', 'Wynik', 'Výsledek'],
   total: ['Total', 'Gesamt', 'Razem', 'Celkem'],
 };
-const LANGS = ['en', 'de', 'pl', 'cs'];
+const LANGS = ['en', 'de', 'pl', 'cs']; // other languages are added by build/langs/apply.mjs
 export default Object.fromEntries(LANGS.map((l, i) => [l, Object.fromEntries(Object.entries(rows).map(([k, v]) => [k, v[i]]))]));
 
 /** Page-level strings for generated utility pages. [en, de, pl, cs] */

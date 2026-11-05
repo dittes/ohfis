@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>CSV and spreadsheet tools – Herramienta en línea gratuita</title>
+  <meta name="description" content="Fix, convert, merge, compare and reshape CSV and spreadsheet data. Gratis, funciona en tu navegador, no se sube nada.">
+  
+  <link rel="canonical" href="https://ohfis.com/es/herramientas-de-hojas-de-calculo-y-csv/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/spreadsheet-csv-tools/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/tabellen-csv-werkzeuge/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/arkusze-i-csv/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/tabulky-a-csv/">
+  <link rel="alternate" hreflang="es" href="https://ohfis.com/es/herramientas-de-hojas-de-calculo-y-csv/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/spreadsheet-csv-tools/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohfis">
+  <meta property="og:url" content="https://ohfis.com/es/herramientas-de-hojas-de-calculo-y-csv/">
+  <meta property="og:title" content="CSV and spreadsheet tools – Herramienta en línea gratuita">
+  <meta property="og:description" content="Fix, convert, merge, compare and reshape CSV and spreadsheet data. Gratis, funciona en tu navegador, no se sube nada.">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=1fe54eb2">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://ohfis.com/es/"},{"@type":"ListItem","position":2,"name":"Tablas"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se suben mis archivos?","acceptedAnswer":{"@type":"Answer","text":"No. El archivo lo abre y procesa tu propio navegador. Puedes comprobarlo tú mismo: abre la pestaña de red de tu navegador mientras usas la herramienta, o desconéctate de internet después de cargar la página."}},{"@type":"Question","name":"¿Es gratis esta herramienta?","acceptedAnswer":{"@type":"Answer","text":"Sí, por completo. No hay registro, ni plan de pago, ni marca de agua en tus archivos."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"CSV and spreadsheet tools","description":"Fix, convert, merge, compare and reshape CSV and spreadsheet data. Gratis, funciona en tu navegador, no se sube nada.","url":"https://ohfis.com/es/herramientas-de-hojas-de-calculo-y-csv/","inLanguage":"es","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://ohfis.com/es/conversor-de-delimitador-csv/","name":"Conversor de delimitador CSV"},{"@type":"ListItem","position":2,"url":"https://ohfis.com/es/visor-de-archivos-csv-grandes/","name":"Visor de archivos CSV grandes"},{"@type":"ListItem","position":3,"url":"https://ohfis.com/es/restaurar-ceros-a-la-izquierda-en-csv/","name":"Restaurar ceros a la izquierda en CSV"},{"@type":"ListItem","position":4,"url":"https://ohfis.com/es/generador-de-formulas-buscarv-y-buscarx/","name":"Generador de fórmulas BUSCARV y BUSCARX"},{"@type":"ListItem","position":5,"url":"https://ohfis.com/es/conversor-de-numeros-de-serie-de-fecha-de-excel/","name":"Conversor de números de serie de fecha de Excel"},{"@type":"ListItem","position":6,"url":"https://ohfis.com/es/conversor-de-json-a-csv/","name":"Conversor de JSON a CSV"},{"@type":"ListItem","position":7,"url":"https://ohfis.com/es/conversor-de-csv-a-json/","name":"Conversor de CSV a JSON"},{"@type":"ListItem","position":8,"url":"https://ohfis.com/es/transponer-tabla/","name":"Transponer tabla (filas a columnas)"},{"@type":"ListItem","position":9,"url":"https://ohfis.com/es/generador-de-tablas-dinamicas/","name":"Generador de tablas dinámicas"},{"@type":"ListItem","position":10,"url":"https://ohfis.com/es/dividir-una-columna-en-varias/","name":"Dividir una columna en varias"},{"@type":"ListItem","position":11,"url":"https://ohfis.com/es/comparar-dos-archivos-csv/","name":"Comparar dos archivos CSV"},{"@type":"ListItem","position":12,"url":"https://ohfis.com/es/conversor-de-csv-a-instrucciones-sql-insert/","name":"Conversor de CSV a instrucciones SQL INSERT"},{"@type":"ListItem","position":13,"url":"https://ohfis.com/es/formateador-de-tablas-markdown/","name":"Formateador de tablas Markdown"},{"@type":"ListItem","position":14,"url":"https://ohfis.com/es/probador-de-formatos-de-numero-personalizados-de-excel/","name":"Probador de formatos de número personalizados de Excel"},{"@type":"ListItem","position":15,"url":"https://ohfis.com/es/conversor-de-csv-a-geojson/","name":"Conversor de CSV a GeoJSON"},{"@type":"ListItem","position":16,"url":"https://ohfis.com/es/reordenar-y-eliminar-columnas-de-csv/","name":"Reordenar y eliminar columnas de CSV"},{"@type":"ListItem","position":17,"url":"https://ohfis.com/es/normalizador-de-puntuacion-z-y-min-max/","name":"Normalizador de puntuación Z y mín-máx"},{"@type":"ListItem","position":18,"url":"https://ohfis.com/es/formateador-de-numeros-de-telefono/","name":"Formateador de números de teléfono (E.164)"},{"@type":"ListItem","position":19,"url":"https://ohfis.com/es/rellenar-celdas-vacias-en-datos-de-hoja-de-calculo/","name":"Rellenar celdas vacías en datos de hoja de cálculo"},{"@type":"ListItem","position":20,"url":"https://ohfis.com/es/formateador-de-formulas-de-excel/","name":"Formateador de fórmulas de Excel"},{"@type":"ListItem","position":21,"url":"https://ohfis.com/es/analizador-de-direcciones/","name":"Analizador de direcciones (calle, ciudad, código postal)"},{"@type":"ListItem","position":22,"url":"https://ohfis.com/es/conversor-de-moneda-a-numero/","name":"Conversor de moneda a número"},{"@type":"ListItem","position":23,"url":"https://ohfis.com/es/calculadora-de-variacion-porcentual-para-columnas/","name":"Calculadora de variación porcentual para columnas"},{"@type":"ListItem","position":24,"url":"https://ohfis.com/es/quitar-espacios-en-celdas-de-csv-y-hojas-de-calculo/","name":"Quitar espacios en celdas de CSV y hojas de cálculo"},{"@type":"ListItem","position":25,"url":"https://ohfis.com/es/limpiador-de-encabezados-csv/","name":"Limpiador de encabezados CSV (snake_case)"},{"@type":"ListItem","position":26,"url":"https://ohfis.com/es/unir-archivos-csv/","name":"Unir archivos CSV"},{"@type":"ListItem","position":27,"url":"https://ohfis.com/es/calculadora-de-tamano-de-muestra/","name":"Calculadora de tamaño de muestra"},{"@type":"ListItem","position":28,"url":"https://ohfis.com/es/reparador-de-codificacion-csv/","name":"Reparador de codificación CSV (UTF-8, mojibake)"},{"@type":"ListItem","position":29,"url":"https://ohfis.com/es/traductor-de-formulas-de-excel/","name":"Traductor de fórmulas de Excel (EN ⇄ DE, FR, ES)"},{"@type":"ListItem","position":30,"url":"https://ohfis.com/es/despivotar-tabla/","name":"Despivotar tabla (tabla cruzada a lista)"}]}}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Saltar al contenido</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/es/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>Ohfis</span></a>
+      <nav class="s-nav" aria-label="Navegación principal">
+        <a class="s-navlink" href="/es/herramientas-pdf/">PDF</a><a class="s-navlink" href="/es/documentos-e-impresion/">Documentos</a><a class="s-navlink" href="/es/herramientas-de-texto/">Texto</a><a class="s-navlink" href="/es/herramientas-de-notas/">Notas</a><a class="s-navlink" href="/es/herramientas-de-hojas-de-calculo-y-csv/" aria-current="page">Tablas</a><a class="s-navlink" href="/es/herramientas-de-imagen/">Imágenes</a><a class="s-navlink" href="/es/herramientas-de-video/">Vídeo</a><a class="s-navlink" href="/es/herramientas-de-audio/">Audio</a><a class="s-navlink" href="/es/herramientas-de-tiempo-y-calendario/">Tiempo</a><a class="s-navlink" href="/es/herramientas-de-negocios-y-finanzas/">Negocios</a><a class="s-navlink" href="/es/herramientas-de-equipo-y-reuniones/">Equipo</a><a class="s-navlink" href="/es/herramientas-de-ti-y-web/">TI</a>
+      </nav>
+      <div class="s-actions">
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.es.js" data-ph="Buscar herramientas…" data-empty="No se encontró ninguna herramienta. Prueba con otra palabra." data-hint="Escribe para buscar · ↑↓ para elegir · Intro para abrir · Esc para cerrar" data-sections="Explorar por área" data-fav-add="Añadir a favoritos" data-fav-remove="Quitar de favoritos" data-fav-title="Favoritos" data-recent-title="Usadas recientemente" data-mine-hint="Guardado solo en este navegador." aria-label="Buscar en todas las herramientas"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">Buscar herramientas…</span><kbd>/</kbd></button>
+        <details class="s-lang">
+          <summary aria-label="Idioma">es</summary>
+          <ul>
+            <li><a href="/en/spreadsheet-csv-tools/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/tabellen-csv-werkzeuge/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/arkusze-i-csv/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/tabulky-a-csv/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li><li><a href="/es/herramientas-de-hojas-de-calculo-y-csv/" hreflang="es" lang="es" data-set-lang="es" aria-current="true">Español</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Cambiar entre claro y oscuro" title="Cambiar entre claro y oscuro">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menú" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/es/">Inicio</a></li><li><span aria-current="page">Tablas</span></li></ol>
+      <div class="s-toolhead">
+        <h1>CSV and spreadsheet tools</h1>
+        <p>Fix, convert, merge, compare and reshape CSV and spreadsheet data. Cada herramienta funciona en tu navegador. Nada de lo que pegas o abres se sube.</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cat">
+        
+        <div class="s-cards"><a class="s-card" data-cat="data" href="/es/conversor-de-delimitador-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Conversor de delimitador CSV</span>
+          <span class="s-card__desc">Detecta el separador de un CSV y conviértelo a coma, punto y coma, tabulador o barra vertical.</span>
+        </a><a class="s-card" data-cat="data" href="/es/visor-de-archivos-csv-grandes/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Visor de archivos CSV grandes</span>
+          <span class="s-card__desc">Abre archivos CSV de cientos de megabytes, desplázate por millones de filas y búscalas.</span>
+        </a><a class="s-card" data-cat="data" href="/es/restaurar-ceros-a-la-izquierda-en-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Restaurar ceros a la izquierda en CSV</span>
+          <span class="s-card__desc">Repara códigos postales e identificadores que perdieron sus ceros iniciales en Excel.</span>
+        </a><a class="s-card" data-cat="data" href="/es/generador-de-formulas-buscarv-y-buscarx/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Generador de fórmulas BUSCARV y BUSCARX</span>
+          <span class="s-card__desc">Crea fórmulas de búsqueda correctas a partir de letras de columna, en inglés, alemán, francés o español.</span>
+        </a><a class="s-card" data-cat="data" href="/es/conversor-de-numeros-de-serie-de-fecha-de-excel/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <span class="s-card__title">Conversor de números de serie de fecha de Excel</span>
+          <span class="s-card__desc">Convierte números de serie de Excel como 45231 en fechas y fechas en números de serie.</span>
+        </a><a class="s-card" data-cat="data" href="/es/conversor-de-json-a-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Conversor de JSON a CSV</span>
+          <span class="s-card__desc">Aplana matrices JSON y objetos anidados en una tabla CSV para Excel.</span>
+        </a><a class="s-card" data-cat="data" href="/es/conversor-de-csv-a-json/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Conversor de CSV a JSON</span>
+          <span class="s-card__desc">Convierte un CSV en objetos JSON, con valores tipados y anidación opcional.</span>
+        </a><a class="s-card" data-cat="data" href="/es/transponer-tabla/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Transponer tabla (filas a columnas)</span>
+          <span class="s-card__desc">Intercambia filas y columnas de celdas de hoja de cálculo pegadas.</span>
+        </a><a class="s-card" data-cat="data" href="/es/generador-de-tablas-dinamicas/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Generador de tablas dinámicas</span>
+          <span class="s-card__desc">Agrupa datos y calcula sumas, promedios y recuentos sin Excel.</span>
+        </a><a class="s-card" data-cat="data" href="/es/dividir-una-columna-en-varias/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Dividir una columna en varias</span>
+          <span class="s-card__desc">Divide nombres completos, direcciones o códigos en columnas separadas por delimitador, posición o patrón.</span>
+        </a><a class="s-card" data-cat="data" href="/es/comparar-dos-archivos-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Comparar dos archivos CSV</span>
+          <span class="s-card__desc">Encuentra filas y celdas añadidas, eliminadas y cambiadas entre dos archivos CSV.</span>
+        </a><a class="s-card" data-cat="data" href="/es/conversor-de-csv-a-instrucciones-sql-insert/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Conversor de CSV a instrucciones SQL INSERT</span>
+          <span class="s-card__desc">Convierte filas de hoja de cálculo en instrucciones INSERT o UPDATE para MySQL, PostgreSQL, SQLite o SQL Server.</span>
+        </a><a class="s-card" data-cat="data" href="/es/formateador-de-tablas-markdown/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Formateador de tablas Markdown</span>
+          <span class="s-card__desc">Alinea tablas Markdown irregulares en cuadrículas ordenadas y legibles.</span>
+        </a><a class="s-card" data-cat="data" href="/es/probador-de-formatos-de-numero-personalizados-de-excel/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Probador de formatos de número personalizados de Excel</span>
+          <span class="s-card__desc">Prueba códigos de formato como #,##0.00 o [&gt;=1000]0.0,&quot;K&quot; con valores de ejemplo.</span>
+        </a><a class="s-card" data-cat="data" href="/es/conversor-de-csv-a-geojson/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Conversor de CSV a GeoJSON</span>
+          <span class="s-card__desc">Convierte una lista de coordenadas en una FeatureCollection GeoJSON de puntos.</span>
+        </a><a class="s-card" data-cat="data" href="/es/reordenar-y-eliminar-columnas-de-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Reordenar y eliminar columnas de CSV</span>
+          <span class="s-card__desc">Arrastra columnas a un nuevo orden o quítalas antes de compartir una tabla.</span>
+        </a><a class="s-card" data-cat="data" href="/es/normalizador-de-puntuacion-z-y-min-max/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Normalizador de puntuación Z y mín-máx</span>
+          <span class="s-card__desc">Estandariza columnas numéricas a puntuaciones z o escálalas de 0 a 1.</span>
+        </a><a class="s-card" data-cat="data" href="/es/formateador-de-numeros-de-telefono/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Formateador de números de teléfono (E.164)</span>
+          <span class="s-card__desc">Normaliza los números de teléfono de una lista a E.164 o a un estilo internacional legible.</span>
+        </a><a class="s-card" data-cat="data" href="/es/rellenar-celdas-vacias-en-datos-de-hoja-de-calculo/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Rellenar celdas vacías en datos de hoja de cálculo</span>
+          <span class="s-card__desc">Rellena celdas vacías con el valor de arriba, un valor fijo o el promedio de la columna.</span>
+        </a><a class="s-card" data-cat="data" href="/es/formateador-de-formulas-de-excel/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Formateador de fórmulas de Excel</span>
+          <span class="s-card__desc">Divide fórmulas anidadas largas de Excel en líneas con sangría y legibles.</span>
+        </a><a class="s-card" data-cat="data" href="/es/analizador-de-direcciones/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Analizador de direcciones (calle, ciudad, código postal)</span>
+          <span class="s-card__desc">Divide direcciones de una línea en calle, número, piso, ciudad, provincia y código postal.</span>
+        </a><a class="s-card" data-cat="data" href="/es/conversor-de-moneda-a-numero/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M15 9.2a6 6 0 1 1-5.8 5.8"/><path d="M8 7.5h2.2a1.3 1.3 0 0 1 0 2.6H8.4a1.3 1.3 0 0 0 0 2.6H11"/></svg>
+          <span class="s-card__title">Conversor de moneda a número</span>
+          <span class="s-card__desc">Convierte «$1,234.56», «1.234,56 €» y «(500)» en números simples.</span>
+        </a><a class="s-card" data-cat="data" href="/es/calculadora-de-variacion-porcentual-para-columnas/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Calculadora de variación porcentual para columnas</span>
+          <span class="s-card__desc">Añade una columna de variación porcentual que compara dos columnas numéricas.</span>
+        </a><a class="s-card" data-cat="data" href="/es/quitar-espacios-en-celdas-de-csv-y-hojas-de-calculo/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Quitar espacios en celdas de CSV y hojas de cálculo</span>
+          <span class="s-card__desc">Elimina los espacios iniciales, finales y ocultos de cada celda.</span>
+        </a><a class="s-card" data-cat="data" href="/es/limpiador-de-encabezados-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Limpiador de encabezados CSV (snake_case)</span>
+          <span class="s-card__desc">Convierte títulos de columna desordenados en nombres limpios y seguros para bases de datos.</span>
+        </a><a class="s-card" data-cat="data" href="/es/unir-archivos-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Unir archivos CSV</span>
+          <span class="s-card__desc">Combina varios archivos CSV en uno, emparejando columnas por nombre.</span>
+        </a><a class="s-card" data-cat="data" href="/es/calculadora-de-tamano-de-muestra/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M15 9.2a6 6 0 1 1-5.8 5.8"/><path d="M8 7.5h2.2a1.3 1.3 0 0 1 0 2.6H8.4a1.3 1.3 0 0 0 0 2.6H11"/></svg>
+          <span class="s-card__title">Calculadora de tamaño de muestra</span>
+          <span class="s-card__desc">¿Cuántos encuestados necesitas para tu nivel de confianza y margen de error?</span>
+        </a><a class="s-card" data-cat="data" href="/es/reparador-de-codificacion-csv/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Reparador de codificación CSV (UTF-8, mojibake)</span>
+          <span class="s-card__desc">Repara caracteres corruptos como MÃ¼ller y convierte archivos a UTF-8.</span>
+        </a><a class="s-card" data-cat="data" href="/es/traductor-de-formulas-de-excel/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Traductor de fórmulas de Excel (EN ⇄ DE, FR, ES)</span>
+          <span class="s-card__desc">Convierte fórmulas entre Excel en inglés, alemán, francés y español, incluidos los separadores.</span>
+        </a><a class="s-card" data-cat="data" href="/es/despivotar-tabla/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v16H3z"/><path d="M3 10h18M3 15h18M9 4v16M15 4v16"/></svg>
+          <span class="s-card__title">Despivotar tabla (tabla cruzada a lista)</span>
+          <span class="s-card__desc">Convierte una tabla cruzada ancha con una columna por mes en una lista larga y ordenada.</span>
+        </a></div>
+      </div></div>
+    </section>
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Preguntas frecuentes</h2>
+      <div class="s-faq">
+        <details open><summary>¿Se suben mis archivos?</summary><p>No. El archivo lo abre y procesa tu propio navegador. Puedes comprobarlo tú mismo: abre la pestaña de red de tu navegador mientras usas la herramienta, o desconéctate de internet después de cargar la página.</p></details>
+        <details><summary>¿Es gratis esta herramienta?</summary><p>Sí, por completo. No hay registro, ni plan de pago, ni marca de agua en tus archivos.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/es/privacidad/">Privacidad</a>
+        <a href="/es/aviso-legal/">Aviso legal</a>
+        <span class="s-footer__note">Funciona en tu navegador. Sin subida, sin cuenta, sin seguimiento.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=605e750f" defer></script>
+</body>
+</html>

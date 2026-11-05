@@ -1,6 +1,6 @@
 # Ohfis
 
-Free online tools that run entirely in the browser: 26 PDF tools and 293 utilities for documents, text, CSV and spreadsheets, images, time and calendars, business maths, notes and privacy, IT and web work, teams and audio/video. Nothing is uploaded. English, German, Polish and Czech (`/en`, `/de`, `/pl`, `/cs`).
+Free online tools that run entirely in the browser: 26 PDF tools and 293 utilities for documents, text, CSV and spreadsheets, images, time and calendars, business maths, notes and privacy, IT and web work, teams and audio/video. Nothing is uploaded. English, German, Polish, Czech and Spanish (`/en`, `/de`, `/pl`, `/cs`, `/es`); French, Portuguese, Dutch, Swedish and Danish are being added the same way.
 
 Live at https://ohfis.com (GitHub Pages serves the committed output). What exists compared with the original request list is in [TOOLS_COVERAGE.md](TOOLS_COVERAGE.md).
 
@@ -52,3 +52,7 @@ Pages under `en/ de/ pl/ cs/`, `sitemap.xml`, `llms*.txt`, `robots.txt`, `servic
 - Content-Security-Policy allows only this origin (plus `wasm-unsafe-eval`, `blob:` and `data:`), so tools cannot send data elsewhere. Features that need a server (URL unshortening, network jitter tests) are therefore not part of the site.
 - Links to files-online.com, open-online.com, test.institute and culators.com are placed where they help (hardware tests, file viewers, standard calculators), not on every page.
 - Sunrise and moon calculations follow NOAA and Meeus; tests compare against published almanac values.
+
+## Adding a language
+
+Core languages (en, de, pl, cs) keep their texts inline in the registries. Further languages are overlays: `build/langs/<lang>.mjs` (page slugs, PDF slugs, group/category names, links), `build/langs/<lang>-tools.mjs` (name and short text of every tool), `build/content/<lang>.mjs` (site copy) and `build/tools/ui/<lang>.txt` (interface strings, one line per key of `keys.json`). Add the code to `LANGS` in `build/registry.mjs`. Anything missing falls back to English. Tool explanation texts (how it works, steps, FAQs) and OCR language data exist only for the core languages.

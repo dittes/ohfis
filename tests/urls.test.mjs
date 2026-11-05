@@ -7,7 +7,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const LANGS = ['en', 'de', 'pl', 'cs'];
+const LANGS = ['en', 'de', 'pl', 'cs', 'es'];
 const read = p => readFileSync(join(ROOT, p), 'utf8');
 const pagesOf = lang => readdirSync(join(ROOT, lang)).filter(d => statSync(join(ROOT, lang, d)).isDirectory() && existsSync(join(ROOT, lang, d, 'index.html')));
 const isRedirect = html => html.includes('http-equiv="refresh"');
@@ -27,7 +27,7 @@ test('every real page has a unique canonical URL that matches its folder', () =>
 
 test('translated pages use translated URLs (no English tool slugs outside /en/)', () => {
   const en = new Set(pagesOf('en').filter(d => !isRedirect(read(`en/${d}/index.html`))));
-  for (const lang of ['de', 'pl', 'cs']) {
+  for (const lang of ['de', 'pl', 'cs', 'es']) {
     const real = pagesOf(lang).filter(d => !isRedirect(read(`${lang}/${d}/index.html`)));
     const same = real.filter(d => en.has(d));
     // international loan words (e.g. "ocr-pdf", "qr-code-generator", "kanban-board") are legitimately identical
