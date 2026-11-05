@@ -3081,3 +3081,22 @@ Ben: 2026-01-12 to 2026-01-18
 Anna⏎Ben⏎Clara⏎Dirk
 Anna: 5⏎Ben: 3⏎Clara: 4⏎Dirk: 2⏎Eva: 3⏎Fiona: 5⏎Gero: 1⏎Hanna: 4
 Getrennt halten
+# Monate
+# Jahre
+# Tage
+Kunden nach # Monaten
+Zu #% sicher innerhalb von
+Vorschau der ersten von # Urkunde(n).
+# Minuten vorher
+# Zeitfenster in # Zonen
+# Nachrichten · # Einheiten
+Woche #: Check-in (Zuversicht aktualisieren, Risiken melden)
+Sprint #
+# von # erledigt (# %)
+Team #
+Könnenssumme: #
+Abgestimmt: # / #
+# Zeichen ✓
+# Zeichen (etwas kurz)
+Tag # von #
+Gib das Gerät weiter an: 

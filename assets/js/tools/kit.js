@@ -9,10 +9,19 @@ export async function loadDict() {
   if (LANG === 'en') { DICT = (await import('/assets/i18n/ut.en.js')).default; return; }
   try { DICT = (await import(`/assets/i18n/ut.${LANG}.js`)).default; } catch { DICT = (await import('/assets/i18n/ut.en.js')).default; }
   // Per-language table of the English interface and sample texts written inside the tools (English text → translation)
-  try { TR = (await import(`/assets/i18n/tr.${LANG}.js`)).default; } catch { TR = {}; }
+  const cat = document.getElementById('tool-root')?.dataset.cat;
+  const load = name => import(`/assets/i18n/tr.${LANG}${name}.js`).then(m => m.default).catch(() => ({}));
+  TR = Object.assign({}, ...(await Promise.all([load(''), cat ? load(`.${cat}`) : {}])));
 }
 /** Translate an English interface string; unknown strings (and anything that is not a string) come back unchanged. */
-export const tr = s => { if (typeof s !== 'string') return s; globalThis.__trSeen?.add(s); return TR[s] ?? s; };
+const NUM = /\d[\d.,]*\d|\d/g;
+export const tr = s => {
+  if (typeof s !== 'string') return s; globalThis.__trSeen?.add(s);
+  if (TR[s] != null) return TR[s];
+  // Texts with numbers ("Team 2", "9 months"): look the pattern up with every number replaced by # and put the numbers back
+  if (/\d/.test(s) && s.length < 160) { const nums = []; const t = TR[s.replace(NUM, m => { nums.push(m); return '#'; })]; if (t) { let i = 0; return t.replace(/#/g, () => nums[i++] ?? '#'); } }
+  return s;
+};
 export const t = (key, vars) => {
   let s = DICT[key] ?? key;
   if (vars) for (const [k, v] of Object.entries(vars)) s = s.replaceAll(`{${k}}`, v);

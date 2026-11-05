@@ -3081,3 +3081,22 @@ Ben: 2026-01-12 to 2026-01-18
 Anna⏎Ben⏎Klára⏎David
 Anna: 5⏎Ben: 3⏎Klára: 4⏎David: 2⏎Eva: 3⏎Fiona: 5⏎Gustav: 1⏎Hana: 4
 Oddělit
+# měs.
+# let
+# dní
+Zákazníci po # měsících
+S #% jistotou do
+Náhled prvního z # diplomů.
+# minut předem
+# oken v # pásmech
+# zpráv · # jednotek
+Týden #: kontrola (aktualizujte jistotu, nahlaste rizika)
+Sprint #
+# z # hotovo (# %)
+Tým #
+Součet dovedností: #
+Odhlasovalo: # / #
+# znaků ✓
+# znaků (trochu krátké)
+Den # z #
+Předejte zařízení hráči: 

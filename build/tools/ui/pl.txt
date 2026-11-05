@@ -3081,3 +3081,22 @@ Bartek: 2026-01-12 to 2026-01-18
 Ania⏎Bartek⏎Celina⏎Darek
 Ania: 5⏎Bartek: 3⏎Celina: 4⏎Darek: 2⏎Ela: 3⏎Fiona: 5⏎Grzegorz: 1⏎Hania: 4
 Rozdziel
+# mies.
+# lat
+# dni
+Klienci po # miesiącach
+W #% pewności w ciągu
+Podgląd pierwszego z # dyplomów.
+# minut wcześniej
+# przedziałów w # strefach
+# wiadomości · # jednostek
+Tydzień #: przegląd (zaktualizuj pewność, zgłoś ryzyka)
+Sprint #
+# z # ukończono (# %)
+Zespół #
+Suma umiejętności: #
+Zagłosowało: # / #
+# znaków ✓
+# znaków (trochę krótko)
+Dzień # z #
+Przekaż urządzenie do: 
