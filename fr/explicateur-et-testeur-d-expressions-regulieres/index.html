@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Explicateur et testeur d'expressions régulières – Outil en ligne gratuit</title>
+  <meta name="description" content="Décomposez une expression régulière en parties en langage courant et testez-la en direct. Gratuit, fonctionne dans votre navigateur, rien n'est envoyé.">
+  
+  <link rel="canonical" href="https://ohfis.com/fr/explicateur-et-testeur-d-expressions-regulieres/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/regex-explainer/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/regulaeren-ausdruck-erklaeren-testen/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/wyjasnianie-i-testowanie-wyrazen-regularnych/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/vysvetleni-a-testovani-regularnich-vyrazu/">
+  <link rel="alternate" hreflang="es" href="https://ohfis.com/es/explicador-y-probador-de-expresiones-regulares/">
+  <link rel="alternate" hreflang="fr" href="https://ohfis.com/fr/explicateur-et-testeur-d-expressions-regulieres/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/regex-explainer/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohfis">
+  <meta property="og:url" content="https://ohfis.com/fr/explicateur-et-testeur-d-expressions-regulieres/">
+  <meta property="og:title" content="Explicateur et testeur d'expressions régulières – Outil en ligne gratuit">
+  <meta property="og:description" content="Décomposez une expression régulière en parties en langage courant et testez-la en direct. Gratuit, fonctionne dans votre navigateur, rien n'est envoyé.">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="cs_CZ">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=1fe54eb2">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Explicateur et testeur d'expressions régulières","url":"https://ohfis.com/fr/explicateur-et-testeur-d-expressions-regulieres/","description":"Décomposez une expression régulière en parties en langage courant et testez-la en direct. Gratuit, fonctionne dans votre navigateur, rien n'est envoyé.","inLanguage":"fr","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://ohfis.com/fr/"},{"@type":"ListItem","position":2,"name":"Informatique","item":"https://ohfis.com/fr/outils-informatiques-et-web/"},{"@type":"ListItem","position":3,"name":"Explicateur et testeur d'expressions régulières"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Mode d'emploi: Explicateur et testeur d'expressions régulières","step":[{"@type":"HowToStep","position":1,"text":"Paste your regular expression and set flags."},{"@type":"HowToStep","position":2,"text":"Read the explanation of each part."},{"@type":"HowToStep","position":3,"text":"Edit the test text to check matches and non-matches."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which regex flavour is explained?","acceptedAnswer":{"@type":"Answer","text":"JavaScript (ECMAScript). Most syntax is shared with PCRE, Python and Java, but details such as lookbehind and named groups differ."}},{"@type":"Question","name":"What does the g flag do?","acceptedAnswer":{"@type":"Answer","text":"It finds all matches instead of stopping at the first one; the tester always shows all matches."}},{"@type":"Question","name":"Mes fichiers sont-ils envoyés ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le fichier est ouvert et traité par votre propre navigateur. Vous pouvez le vérifier vous-même : ouvrez l'onglet réseau de votre navigateur pendant l'utilisation de l'outil, ou coupez internet après le chargement de la page."}},{"@type":"Question","name":"Cet outil est-il gratuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui, entièrement. Pas d'inscription, pas d'offre payante et pas de filigrane sur vos fichiers."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Aller au contenu</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/fr/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>Ohfis</span></a>
+      <nav class="s-nav" aria-label="Navigation principale">
+        <a class="s-navlink" href="/fr/outils-pdf/">PDF</a><a class="s-navlink" href="/fr/documents-et-impression/">Documents</a><a class="s-navlink" href="/fr/outils-de-texte/">Texte</a><a class="s-navlink" href="/fr/outils-de-notes/">Notes</a><a class="s-navlink" href="/fr/outils-de-tableur-et-csv/">Tableaux</a><a class="s-navlink" href="/fr/outils-d-image/">Images</a><a class="s-navlink" href="/fr/outils-video/">Vidéo</a><a class="s-navlink" href="/fr/outils-audio/">Audio</a><a class="s-navlink" href="/fr/outils-de-temps-et-calendrier/">Temps</a><a class="s-navlink" href="/fr/outils-d-entreprise-et-finance/">Entreprise</a><a class="s-navlink" href="/fr/outils-d-equipe-et-reunions/">Équipe</a><a class="s-navlink" href="/fr/outils-informatiques-et-web/" aria-current="page">Informatique</a>
+      </nav>
+      <div class="s-actions">
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.fr.js" data-ph="Rechercher des outils…" data-empty="Aucun outil trouvé. Essayez un autre mot." data-hint="Tapez pour chercher · ↑↓ pour choisir · Entrée pour ouvrir · Échap pour fermer" data-sections="Parcourir par domaine" data-fav-add="Ajouter aux favoris" data-fav-remove="Retirer des favoris" data-fav-title="Favoris" data-recent-title="Utilisés récemment" data-mine-hint="Enregistré uniquement dans ce navigateur." aria-label="Rechercher dans tous les outils"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">Rechercher des outils…</span><kbd>/</kbd></button>
+        <details class="s-lang">
+          <summary aria-label="Langue">fr</summary>
+          <ul>
+            <li><a href="/en/regex-explainer/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/regulaeren-ausdruck-erklaeren-testen/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/wyjasnianie-i-testowanie-wyrazen-regularnych/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/vysvetleni-a-testovani-regularnich-vyrazu/" hreflang="cs" lang="cs" data-set-lang="cs">Čeština</a></li><li><a href="/es/explicador-y-probador-de-expresiones-regulares/" hreflang="es" lang="es" data-set-lang="es">Español</a></li><li><a href="/fr/explicateur-et-testeur-d-expressions-regulieres/" hreflang="fr" lang="fr" data-set-lang="fr" aria-current="true">Français</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Basculer entre clair et sombre" title="Basculer entre clair et sombre">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/fr/">Accueil</a></li><li><a href="/fr/outils-informatiques-et-web/">Informatique</a></li><li><span aria-current="page">Explicateur et testeur d'expressions régulières</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Explicateur et testeur d'expressions régulières</h1>
+        <p>Décomposez une expression régulière en parties en langage courant et testez-la en direct.</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="regex-explainer" data-cat="dev"><p class="pt-hint">Chargement de l'outil…</p><noscript><p class="pt-drop__error">Cet outil a besoin de JavaScript, car votre fichier est traité dans votre navigateur.</p></noscript></div>
+        <ul class="s-trust"><li>Aucun envoi</li><li>Gratuit</li><li>Sans compte</li><li>Fonctionne hors ligne une fois chargé</li></ul>
+        
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>Comment fonctionne Explicateur et testeur d'expressions régulières</h2>
+        <p class="pt-hint"></p>
+        <p lang="en">Paste a regular expression and see it explained token by token in nested form: what each group, class, quantifier and anchor means. A test area highlights the matches line by line, so you can see whether it does what you think.</p><p lang="en">The expression is parsed by a small recursive reader that understands groups (capturing, non-capturing, named, lookahead and lookbehind), alternation, character classes, escapes such as \d \w \s \b, back-references and quantifiers (* + ? {n,m}, including lazy versions) and prints each part with its meaning, indented by nesting depth. Testing uses your browser's own JavaScript RegExp engine, so results match what your code will do. Syntax errors are reported with the engine's message.</p>
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>Mode d'emploi</h2>
+        <ol class="s-steps"><li><p lang="en">Paste your regular expression and set flags.</p></li><li><p lang="en">Read the explanation of each part.</p></li><li><p lang="en">Edit the test text to check matches and non-matches.</p></li></ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>Questions fréquentes</h2>
+        <div class="s-faq">
+          <details open><summary lang="en">Which regex flavour is explained?</summary><p lang="en">JavaScript (ECMAScript). Most syntax is shared with PCRE, Python and Java, but details such as lookbehind and named groups differ.</p></details>
+          <details><summary lang="en">What does the g flag do?</summary><p lang="en">It finds all matches instead of stopping at the first one; the tester always shows all matches.</p></details>
+          <details><summary>Mes fichiers sont-ils envoyés ?</summary><p>Non. Le fichier est ouvert et traité par votre propre navigateur. Vous pouvez le vérifier vous-même : ouvrez l'onglet réseau de votre navigateur pendant l'utilisation de l'outil, ou coupez internet après le chargement de la page.</p></details>
+          <details><summary>Cet outil est-il gratuit ?</summary><p>Oui, entièrement. Pas d'inscription, pas d'offre payante et pas de filigrane sur vos fichiers.</p></details>
+        </div>
+      </div>
+    </section>
+    
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>Vous pourriez aussi avoir besoin de</h2>
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="text" href="/fr/extraire-e-mails-telephones-et-url-d-un-texte/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Extraire e-mails, téléphones et URL d'un texte</span>
+          <span class="s-card__desc">Extrayez e-mails, numéros de téléphone, UUID, IP, dates et plus d'un texte brut.</span>
+        </a><a class="s-card" data-cat="text" href="/fr/comparateur-de-textes/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Comparateur de textes</span>
+          <span class="s-card__desc">Comparez deux textes côte à côte et voyez chaque mot ou ligne ajouté et supprimé.</span>
+        </a><a class="s-card" data-cat="dev" href="/fr/traducteur-d-expressions-cron/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          <span class="s-card__title">Traducteur d'expressions cron</span>
+          <span class="s-card__desc">Traduisez des planifications cron en langage courant et voyez les prochaines exécutions.</span>
+        </a><a class="s-card" data-cat="text" href="/fr/filtrer-les-lignes/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span class="s-card__title">Filtrer les lignes (grep de texte)</span>
+          <span class="s-card__desc">Gardez ou supprimez les lignes qui contiennent, commencent ou finissent par un terme de recherche.</span>
+        </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/fr/confidentialite/">Confidentialité</a>
+        <a href="/fr/mentions-legales/">Mentions légales</a>
+        <span class="s-footer__note">Fonctionne dans votre navigateur. Sans envoi, sans compte, sans suivi.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=605e750f" defer></script>
+  <script type="module" src="/assets/js/tools/main.js?v=143e144b"></script>
+</body>
+</html>

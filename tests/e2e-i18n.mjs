@@ -14,8 +14,8 @@ const base = `http://localhost:${server.address().port}`;
 const sitemap = await readFile(join(ROOT, 'sitemap.xml'), 'utf8');
 const pathOf = (lang, id) => { const m = [...sitemap.matchAll(/<xhtml:link rel="alternate" hreflang="(\w+)" href="https:\/\/ohfis\.com([^"]+)"/g)]; const en = `/en/${id}/`; const block = sitemap.split('<url>').find(b => b.includes(`<loc>https://ohfis.com${en}</loc>`)); return new RegExp(`hreflang="${lang}" href="https://ohfis\\.com([^"]+)"`).exec(block)[1]; };
 // tool id → what must be visible in each language
-const CASES = { 'certificate-generator': { de: ['Titel', 'Unterzeichnet von', 'Urkunden erstellen'], pl: ['Tytuł', 'Podpisał(a)', 'Utwórz dyplomy'], cs: ['Název', 'Podepsal(a)', 'Vytvořit diplomy'], es: ['Título', 'Firmado por', 'Crear diplomas'] },
-  'random-team-generator': { de: ['Anzahl der Teams', 'Teams kopieren', 'Team 1', 'Könnenssumme:'], pl: ['Liczba zespołów', 'Kopiuj zespoły', 'Zespół 1', 'Suma umiejętności:'], cs: ['Počet týmů', 'Kopírovat týmy', 'Tým 1', 'Součet dovedností:'], es: ['Número de equipos', 'Copiar equipos', 'Equipo 1', 'Total de habilidad:'] },
+const CASES = { 'certificate-generator': { de: ['Titel', 'Unterzeichnet von', 'Urkunden erstellen'], pl: ['Tytuł', 'Podpisał(a)', 'Utwórz dyplomy'], cs: ['Název', 'Podepsal(a)', 'Vytvořit diplomy'], es: ['Título', 'Firmado por', 'Crear diplomas'], fr: ['Titre', 'Signé par', 'Créer les diplômes'] },
+  'random-team-generator': { de: ['Anzahl der Teams', 'Teams kopieren', 'Team 1', 'Könnenssumme:'], pl: ['Liczba zespołów', 'Kopiuj zespoły', 'Zespół 1', 'Suma umiejętności:'], cs: ['Počet týmů', 'Kopírovat týmy', 'Tým 1', 'Součet dovedností:'], es: ['Número de equipos', 'Copiar equipos', 'Equipo 1', 'Total de habilidad:'], fr: ['Nombre d\'équipes', 'Copier les équipes', 'Équipe 1', 'Total des compétences'] },
   'vat-calculator': { de: ['Nettobetrag'], pl: ['Kwota netto'], cs: ['Částka bez DPH'] } };
 const browser = await chromium.launch(); const errors = [];
 try {
