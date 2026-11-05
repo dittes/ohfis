@@ -12,11 +12,12 @@ import {
   sisterUrl, pagePath, toolPath,
 } from './registry.mjs';
 import { ICONS, LOGO, LOGO_SVG } from './icons.mjs';
-import { UCATS, UCAT_ORDER, GROUPS, GROUP_ORDER, GROUP_OF, LINKS, SITES, SITE_NAMES, LI } from './tools/registry.mjs';
+import { UCATS, UCAT_ORDER, GROUPS, GROUP_ORDER, GROUP_OF, OLD_HUBS, LINKS, SITES, SITE_NAMES, LI } from './tools/registry.mjs';
 import { slugify } from '../assets/js/tools/lib/text.js';
 import UTOOLS from './tools/index.mjs';
 import UI, { PAGE } from './content/ui.mjs';
 import { disclaimerFor, imprintExtras } from './content/legal-notes.mjs';
+import { synonymsFor } from './content/synonyms.mjs';
 
 const BUILD = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(BUILD, '..');
@@ -143,11 +144,11 @@ function header(lang, paths, current) {
   <header class="s-header">
     <div class="s-wrap s-header__row">
       <a class="s-logo" href="/${lang}/">${LOGO}<span>Ohfis</span></a>
-      <nav class="s-nav" aria-label="${e(c.nav.main)}" data-menu="/assets/i18n/menu.${lang}.js">
-        ${GROUP_ORDER.map(g => `<div class="s-navitem" data-group="${g}"><a class="s-navlink" href="${hubPath(g, lang)}"${current === g ? ' aria-current="page"' : ''}>${e(groupName(g, lang))}</a><button class="s-navtoggle" type="button" aria-expanded="false" aria-controls="drop-${g}" aria-label="${e(P('menuOf', lang, { name: groupName(g, lang) }))}">${CARET}</button><div class="s-drop" id="drop-${g}" hidden></div></div>`).join('')}
+      <nav class="s-nav" aria-label="${e(c.nav.main)}">
+        ${GROUP_ORDER.map(g => `<a class="s-navlink" href="${hubPath(g, lang)}"${current === g ? ' aria-current="page"' : ''}>${e(groupName(g, lang))}</a>`).join('')}
       </nav>
       <div class="s-actions">
-        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.${lang}.js" data-ph="${e(P('searchPlaceholder', lang))}" data-empty="${e(P('searchEmpty', lang))}" data-hint="${e(P('searchHint', lang))}" data-sections="${e(P('searchSections', lang))}" aria-label="${e(P('searchOpen', lang))}"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">${e(P('searchPlaceholder', lang))}</span><kbd>/</kbd></button>
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.${lang}.js" data-ph="${e(P('searchPlaceholder', lang))}" data-empty="${e(P('searchEmpty', lang))}" data-hint="${e(P('searchHint', lang))}" data-sections="${e(P('searchSections', lang))}" data-fav-add="${e(P('favAdd', lang))}" data-fav-remove="${e(P('favRemove', lang))}" data-fav-title="${e(P('favTitle', lang))}" data-recent-title="${e(P('recentTitle', lang))}" data-mine-hint="${e(P('mineHint', lang))}" aria-label="${e(P('searchOpen', lang))}"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">${e(P('searchPlaceholder', lang))}</span><kbd>/</kbd></button>
         <details class="s-lang">
           <summary aria-label="${e(c.nav.language)}">${lang}</summary>
           <ul>
@@ -361,7 +362,7 @@ function hubPage(lang) {
   const h = c.hub;
   const paths = pathsFor('pdfTools');
   const crumbs = [[c.nav.home, `/${lang}/`], [h.name]];
-  return `${head({ lang, title: h.title, desc: h.desc, paths, jsonLd: [ldApp(lang, h.name, h.desc, paths[lang], [...TOOLS.map(t => c.tools[t.id].name), ...groupTools('pdf').map(t => t.names[LI[lang]])]), ldCrumbs(crumbs), ldFaq(h.faqs)] })}
+  return `${head({ lang, title: h.title, desc: h.desc, paths, jsonLd: [ldApp(lang, h.name, h.desc, paths[lang], [...TOOLS.map(t => c.tools[t.id].name)]), ldCrumbs(crumbs), ldFaq(h.faqs)] })}
 <body class="s-page">
   ${header(lang, paths, 'pdf')}
   <main id="main">
@@ -374,10 +375,7 @@ function hubPage(lang) {
     </div>
     <section class="s-section" style="border-top:0;padding-top:0">
       <div class="s-wrap">${toolGrid(lang, 'h2')}
-        <div class="s-cat">
-          <div class="s-cat__head"><h2>${e(UCATS.documents.name[LI[lang]])}</h2></div>
-          <div class="s-cards">${groupTools('pdf').map(t => ucard(lang, t)).join('')}</div>
-        </div>
+        <p class="s-more"><a href="${hubPath('documents', lang)}">${e(UCATS.documents.name[LI[lang]])} →</a></p>
       </div>
     </section>
     ${CONVERT_TO_PDF.length ? `<section class="s-section s-section--tint">
@@ -790,6 +788,7 @@ for (const lang of LANGS) {
   // Old URLs (English tool id in every language, the ten former category hubs) forward to the new ones
   const taken = new Set([...UTOOLS.map(t => t.slugs[lang]), ...GROUP_ORDER.filter(g => g !== 'pdf').map(g => GROUPS[g].slug[LI[lang]])]);
   for (const t of UTOOLS) if (!taken.has(t.id) && !NEVER_PUBLISHED_AT_OLD_URL.has(t.id) && t.cat !== 'video') write(`${lang}/${t.id}/index.html`, redirectPage(utilPath(t, lang)));
+  for (const [slugs, g] of OLD_HUBS) if (!taken.has(slugs[LI[lang]])) { write(`${lang}/${slugs[LI[lang]]}/index.html`, redirectPage(hubPath(g, lang))); taken.add(slugs[LI[lang]]); }
   for (const cat of UCAT_ORDER) if (!taken.has(UCATS[cat].slug)) write(`${lang}/${UCATS[cat].slug}/index.html`, redirectPage(hubPath(GROUP_OF[cat], lang)));
   pages += TOOLS.length + 4;
 }
@@ -797,8 +796,8 @@ for (const lang of LANGS) {
 // Search index for the tool finder on the home page
 for (const lang of LANGS) {
   const li = LI[lang]; const idx = [
-    ...TOOLS.map(t => ({ n: content[lang].tools[t.id].name, d: content[lang].tools[t.id].short, u: toolPath(t, lang), c: content[lang].nav.pdfTools })),
-    ...UTOOLS.map(t => ({ n: t.names[li], d: t.shorts[li], u: utilPath(t, lang), c: groupName(GROUP_OF[t.cat], lang), k: t.names[0] })),
+    ...TOOLS.map(t => ({ n: content[lang].tools[t.id].name, d: content[lang].tools[t.id].short, u: toolPath(t, lang), c: content[lang].nav.pdfTools, k: synonymsFor(t.id) })),
+    ...UTOOLS.map(t => ({ n: t.names[li], d: t.shorts[li], u: utilPath(t, lang), c: groupName(GROUP_OF[t.cat], lang), k: `${t.names[0]} ${synonymsFor(t.id)}` })),
   ];
   write(`assets/i18n/search.${lang}.js`, `// Generated by build/build.mjs\nexport default ${JSON.stringify(idx)};\n`);
 }
@@ -816,25 +815,6 @@ for (const lang of LANGS) write(`assets/i18n/ut.${lang}.js`, `// Generated by bu
   }
 }
 
-// Content of the navigation dropdowns, loaded on first open: { group: { all, url, cols: [[heading, [[name, url], …]], …] } }
-for (const lang of LANGS) {
-  const li = LI[lang], c = content[lang], menu = {};
-  for (const g of GROUP_ORDER) {
-    const cols = [];
-    if (g === 'pdf') {
-      for (const cat of CATEGORIES) cols.push([c.cats[cat], TOOLS.filter(t => t.cat === cat).map(t => [c.tools[t.id].name, toolPath(t, lang)])]);
-      cols.push([UCATS.documents.name[li], utilsOf('documents').map(t => [t.names[li], utilPath(t, lang)])]);
-    } else {
-      const multi = GROUPS[g].cats.length > 1;
-      for (const cat of GROUPS[g].cats) cols.push([multi ? UCATS[cat].name[li] : '', utilsOf(cat).map(t => [t.names[li], utilPath(t, lang)])]);
-    }
-    const short = nm => nm.replace(/\s*\([^)]*\)\s*$/, '');
-    for (const col of cols) col[1] = col[1].map(([nm, u]) => [short(nm), u]);
-    const n = cols.reduce((k, x) => k + x[1].length, 0);
-    menu[g] = { all: P('showAll', lang, { n }), url: hubPath(g, lang), cols: cols.filter(x => x[1].length) };
-  }
-  write(`assets/i18n/menu.${lang}.js`, `// Generated by build/build.mjs\nexport default ${JSON.stringify(menu)};\n`);
-}
 write('llms.txt', llmsText(false));
 write('llms-full.txt', llmsText(true));
 // Related ids that point nowhere yet (tools planned but not built)

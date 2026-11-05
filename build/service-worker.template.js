@@ -50,12 +50,6 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // CDN resources (vendor libraries): network-first, cache as fallback
-  if (url.hostname === 'cdn.jsdelivr.net' || url.hostname === 'cdnjs.cloudflare.com') {
-    event.respondWith(networkFirstWithCache(request, RUNTIME_CACHE));
-    return;
-  }
-
   // Same-origin: cache-first
   if (url.origin === self.location.origin) {
     // For navigation requests always try network first so the latest HTML is served

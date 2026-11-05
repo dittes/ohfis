@@ -41,7 +41,7 @@
 
 ## Documents & Print
 
-Booklets, labels, Bates numbers and Word conversion. Hub: https://ohfis.com/en/pdf-tools/
+Booklets, labels, Bates numbers and Word conversion. Hub: https://ohfis.com/en/documents-print/
 
 - [PDF Booklet Maker (Print as Folded Booklet)](https://ohfis.com/en/booklet-maker/): Rearrange PDF pages so a duplex printout folds into a booklet.
 - [PDF Multiple Pages per Sheet (N-up)](https://ohfis.com/en/n-up-pdf/): Put 2, 4, 6 or 9 PDF pages on one sheet to save paper.
@@ -142,7 +142,7 @@ Fix, convert, merge, compare and reshape CSV and spreadsheet data. Hub: https://
 
 ## Image Tools
 
-Resize, convert, blur, crop and clean images without uploading them. Hub: https://ohfis.com/en/image-media-tools/
+Resize, convert, blur, crop and clean images without uploading them. Hub: https://ohfis.com/en/image-tools/
 
 - [Image Converter (JPG, PNG, WebP, AVIF)](https://ohfis.com/en/image-converter/): Convert images between JPG, PNG, WebP and AVIF in your browser, in batches.
 - [Bulk Image Resizer](https://ohfis.com/en/image-resizer/): Resize many images to a width, height or percentage and download them as a ZIP.
@@ -203,7 +203,7 @@ Time zones, working days, timestamps, calendar files and timers. Hub: https://oh
 
 ## Business & Finance
 
-Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.com/en/business-team-tools/
+Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.com/en/business-finance-tools/
 
 - [Margin vs Markup Calculator](https://ohfis.com/en/margin-markup-calculator/): Convert between gross margin and markup and find the price from cost.
 - [Compound Interest Calculator with Chart](https://ohfis.com/en/compound-interest-calculator/): Growth chart for a starting amount, monthly savings, rate and time.
@@ -281,7 +281,7 @@ Hashes, encoders, cron, JWT, colours, networks and web snippets. Hub: https://oh
 
 ## Notes & Privacy
 
-Scratchpads, checklists, passwords, QR codes and encrypted notes. Hub: https://ohfis.com/en/text-tools/
+Scratchpads, checklists, passwords, QR codes and encrypted notes. Hub: https://ohfis.com/en/notes-tools/
 
 - [Password Generator](https://ohfis.com/en/password-generator/): Create strong random passwords with custom rules, right in your browser.
 - [Passphrase Generator (Diceware)](https://ohfis.com/en/passphrase-generator/): Memorable passphrases like correct-horse-battery-staple from the EFF word list.
@@ -308,7 +308,7 @@ Scratchpads, checklists, passwords, QR codes and encrypted notes. Hub: https://o
 
 ## Team & Meetings
 
-Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.com/en/business-team-tools/
+Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.com/en/team-meeting-tools/
 
 - [PERT Estimator (Three-Point Estimate)](https://ohfis.com/en/pert-estimator/): Combine optimistic, likely and pessimistic estimates into expected time and confidence ranges.
 - [Random Name Picker Wheel](https://ohfis.com/en/name-picker-wheel/): Spin a wheel to pick a name for a meeting, a giveaway or a presentation order.
@@ -320,7 +320,7 @@ Estimates, decision tools, brackets, pickers and org charts. Hub: https://ohfis.
 
 ## Audio & Video
 
-Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.com/en/image-media-tools/
+Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.com/en/audio-tools/
 
 - [Online Tone Generator (Sine, Square, Sweep)](https://ohfis.com/en/audio-tone-generator/): Play pure tones and frequency sweeps to test speakers and find hums or rattles.
 - [Online Teleprompter](https://ohfis.com/en/teleprompter/): A full-screen scrolling script with adjustable speed, size and mirror mode.
@@ -354,7 +354,7 @@ Tone generators, teleprompter, recorders and display tests. Hub: https://ohfis.c
 
 ## Video Tools
 
-Trim, join, convert, compress, crop, resize and edit videos without uploading them. Hub: https://ohfis.com/en/image-media-tools/
+Trim, join, convert, compress, crop, resize and edit videos without uploading them. Hub: https://ohfis.com/en/video-tools/
 
 - [Video Trimmer (Cut Video Online)](https://ohfis.com/en/video-trimmer/): Cut a video to the part you need, with or without re-encoding.
 - [Video Merger (Join Videos Online)](https://ohfis.com/en/video-merger/): Join several clips into one video, in the order you choose.

@@ -1,7 +1,7 @@
 // Files Online — Service Worker
 // Cache-first for app shell, network-first for CDN resources.
 
-const CACHE_VERSION = '17a2337d29';
+const CACHE_VERSION = '153e31483a';
 const SHELL_CACHE = `files-online-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `files-online-runtime-${CACHE_VERSION}`;
 
@@ -136,12 +136,6 @@ self.addEventListener('fetch', event => {
   try {
     url = new URL(request.url);
   } catch {
-    return;
-  }
-
-  // CDN resources (vendor libraries): network-first, cache as fallback
-  if (url.hostname === 'cdn.jsdelivr.net' || url.hostname === 'cdnjs.cloudflare.com') {
-    event.respondWith(networkFirstWithCache(request, RUNTIME_CACHE));
     return;
   }
 

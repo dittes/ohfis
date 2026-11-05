@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Bezplatné online audio nástroje – Online zdarma</title>
+  <meta name="description" content="Generátory tónů, teleprompter, rekordéry, úpravy zvuku a testy displeje. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  
+  <link rel="canonical" href="https://ohfis.com/cs/audio-nastroje/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/audio-tools/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/audio-werkzeuge/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/narzedzia-audio/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/audio-nastroje/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/audio-tools/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohfis">
+  <meta property="og:url" content="https://ohfis.com/cs/audio-nastroje/">
+  <meta property="og:title" content="Bezplatné online audio nástroje – Online zdarma">
+  <meta property="og:description" content="Generátory tónů, teleprompter, rekordéry, úpravy zvuku a testy displeje. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=d4e171d5">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Audio"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Bezplatné online audio nástroje","description":"Generátory tónů, teleprompter, rekordéry, úpravy zvuku a testy displeje. Zdarma, běží v prohlížeči, nic se nenahrává.","url":"https://ohfis.com/cs/audio-nastroje/","inLanguage":"cs","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://ohfis.com/cs/online-generator-tonu/","name":"Online generátor tónů (sinus, obdélník, sweep)"},{"@type":"ListItem","position":2,"url":"https://ohfis.com/cs/online-teleprompter/","name":"Online teleprompter"},{"@type":"ListItem","position":3,"url":"https://ohfis.com/cs/pocitadlo-bpm/","name":"Počítadlo BPM (ťukání tempa)"},{"@type":"ListItem","position":4,"url":"https://ohfis.com/cs/normalizace-zvuku/","name":"Normalizace zvuku (zesílení nahrávky)"},{"@type":"ListItem","position":5,"url":"https://ohfis.com/cs/odstraneni-ticha-ze-zvuku/","name":"Odstranění ticha ze zvuku"},{"@type":"ListItem","position":6,"url":"https://ohfis.com/cs/nastroj-pro-audiokanaly/","name":"Nástroj pro audiokanály (ztlumit, prohodit, invertovat, pan, mono)"},{"@type":"ListItem","position":7,"url":"https://ohfis.com/cs/zmena-vysky-tonu-a-rychlosti-zvuku/","name":"Změna výšky tónu a rychlosti zvuku"},{"@type":"ListItem","position":8,"url":"https://ohfis.com/cs/online-diktafon/","name":"Online diktafon (s ořezem)"},{"@type":"ListItem","position":9,"url":"https://ohfis.com/cs/online-zaznam-obrazovky/","name":"Online záznam obrazovky"},{"@type":"ListItem","position":10,"url":"https://ohfis.com/cs/kontrola-rozliseni-a-snimkove-frekvence-webkamery/","name":"Kontrola rozlišení a snímkové frekvence webkamery"},{"@type":"ListItem","position":11,"url":"https://ohfis.com/cs/test-sumu-mikrofonu/","name":"Test šumu mikrofonu"},{"@type":"ListItem","position":12,"url":"https://ohfis.com/cs/online-soundboard/","name":"Online soundboard (potlesk, bzučák, bubnový virbl)"},{"@type":"ListItem","position":13,"url":"https://ohfis.com/cs/zmena-rychlosti-videa/","name":"Změna rychlosti videa (zpomalení a zrychlení)"},{"@type":"ListItem","position":14,"url":"https://ohfis.com/cs/barevna-karta-obrazovky/","name":"Barevná karta obrazovky (vyvážení bílé a jas)"},{"@type":"ListItem","position":15,"url":"https://ohfis.com/cs/kontrola-hardwarove-akcelerace-prohlizece/","name":"Kontrola hardwarové akcelerace prohlížeče (GPU, WebGL, video)"},{"@type":"ListItem","position":16,"url":"https://ohfis.com/cs/test-obnovovaci-frekvence-a-ztracenych-snimku/","name":"Test obnovovací frekvence a ztracených snímků"},{"@type":"ListItem","position":17,"url":"https://ohfis.com/cs/kalkulacka-pomeru-stran/","name":"Kalkulačka poměru stran (16:9, 4:3, změna velikosti)"},{"@type":"ListItem","position":18,"url":"https://ohfis.com/cs/sladeni-velikosti-a-skalovani-dvou-monitoru/","name":"Sladění velikosti a škálování dvou monitorů"},{"@type":"ListItem","position":19,"url":"https://ohfis.com/cs/ulozeni-snimku-z-videa/","name":"Uložení snímku z videa (screenshot z videa)"},{"@type":"ListItem","position":20,"url":"https://ohfis.com/cs/strih-zvuku/","name":"Střih zvuku (oříznutí MP3 a WAV online)"},{"@type":"ListItem","position":21,"url":"https://ohfis.com/cs/spojeni-zvuku/","name":"Spojení zvuku (sloučení souborů MP3)"},{"@type":"ListItem","position":22,"url":"https://ohfis.com/cs/zmena-hlasitosti-zvuku/","name":"Změna hlasitosti zvuku (MP3 hlasitěji nebo tišeji)"},{"@type":"ListItem","position":23,"url":"https://ohfis.com/cs/obraceni-zvuku/","name":"Obrácení zvuku (přehrání pozpátku)"},{"@type":"ListItem","position":24,"url":"https://ohfis.com/cs/ekvalizer-zvuku/","name":"Ekvalizér zvuku (basy a výšky online)"},{"@type":"ListItem","position":25,"url":"https://ohfis.com/cs/prevodnik-zvuku/","name":"Převodník zvuku (do MP3 nebo WAV)"},{"@type":"ListItem","position":26,"url":"https://ohfis.com/cs/nahravani-videa-z-webkamery/","name":"Nahrávání videa z webkamery"},{"@type":"ListItem","position":27,"url":"https://ohfis.com/cs/predcitani-textu/","name":"Předčítání textu (převod textu na řeč)"},{"@type":"ListItem","position":28,"url":"https://ohfis.com/cs/odstraneni-sumu-ze-zvuku/","name":"Odstranění šumu ze zvuku (potlačení hluku pozadí)"},{"@type":"ListItem","position":29,"url":"https://ohfis.com/cs/detektor-bpm-a-toniny/","name":"Detektor BPM a tóniny (tempo a tónina písně)"}]}}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Přejít na obsah</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/cs/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>Ohfis</span></a>
+      <nav class="s-nav" aria-label="Hlavní navigace">
+        <a class="s-navlink" href="/cs/pdf-nastroje/">PDF</a><a class="s-navlink" href="/cs/dokumenty-a-tisk/">Dokumenty</a><a class="s-navlink" href="/cs/textove-nastroje/">Text</a><a class="s-navlink" href="/cs/nastroje-pro-poznamky/">Poznámky</a><a class="s-navlink" href="/cs/tabulky-a-csv/">Tabulky</a><a class="s-navlink" href="/cs/obrazove-nastroje/">Obrázky</a><a class="s-navlink" href="/cs/video-nastroje/">Video</a><a class="s-navlink" href="/cs/audio-nastroje/" aria-current="page">Audio</a><a class="s-navlink" href="/cs/cas-a-kalendar/">Čas</a><a class="s-navlink" href="/cs/byznys-a-finance/">Byznys</a><a class="s-navlink" href="/cs/tym-a-schuzky/">Tým</a><a class="s-navlink" href="/cs/it-a-web-nastroje/">IT</a>
+      </nav>
+      <div class="s-actions">
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.cs.js" data-ph="Hledat nástroj…" data-empty="Nic nenalezeno. Zkuste jiné slovo." data-hint="Pište pro hledání · ↑↓ výběr · Enter otevřít · Esc zavřít" data-sections="Procházet podle oblasti" data-fav-add="Přidat do oblíbených" data-fav-remove="Odebrat z oblíbených" data-fav-title="Oblíbené" data-recent-title="Naposledy použité" data-mine-hint="Uloženo jen v tomto prohlížeči." aria-label="Hledat v nástrojích"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">Hledat nástroj…</span><kbd>/</kbd></button>
+        <details class="s-lang">
+          <summary aria-label="Jazyk">cs</summary>
+          <ul>
+            <li><a href="/en/audio-tools/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/audio-werkzeuge/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/narzedzia-audio/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/audio-nastroje/" hreflang="cs" lang="cs" data-set-lang="cs" aria-current="true">Čeština</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Přepnout světlý a tmavý režim" title="Přepnout světlý a tmavý režim">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Nabídka" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/cs/">Domů</a></li><li><span aria-current="page">Audio</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Bezplatné online audio nástroje</h1>
+        <p>Generátory tónů, teleprompter, rekordéry, úpravy zvuku a testy displeje. Každý nástroj běží v prohlížeči. Nic, co vložíte nebo otevřete, se nenahrává.</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cat">
+        
+        <div class="s-cards"><a class="s-card" data-cat="media" href="/cs/online-generator-tonu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Online generátor tónů (sinus, obdélník, sweep)</span>
+          <span class="s-card__desc">Přehrávejte čisté tóny a rozmítání frekvencí pro test reproduktorů a hledání brumu či chrastění.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/online-teleprompter/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Online teleprompter</span>
+          <span class="s-card__desc">Posouvající se skript na celou obrazovku s nastavitelnou rychlostí, velikostí a zrcadlením.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/pocitadlo-bpm/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Počítadlo BPM (ťukání tempa)</span>
+          <span class="s-card__desc">Ťukejte do rytmu a zjistěte tempo písně v úderech za minutu.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/normalizace-zvuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Normalizace zvuku (zesílení nahrávky)</span>
+          <span class="s-card__desc">Zesilte tichou nahrávku na standardní špičkovou hladinu nebo hlasitost.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/odstraneni-ticha-ze-zvuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Odstranění ticha ze zvuku</span>
+          <span class="s-card__desc">Odstraňte ticho ze začátku a konce nahrávky nebo zkraťte dlouhé pauzy.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/nastroj-pro-audiokanaly/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Nástroj pro audiokanály (ztlumit, prohodit, invertovat, pan, mono)</span>
+          <span class="s-card__desc">Smíchejte do mono, prohoďte nebo ztlumte levý/pravý kanál, invertujte fázi nebo panoramujte.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/zmena-vysky-tonu-a-rychlosti-zvuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Změna výšky tónu a rychlosti zvuku</span>
+          <span class="s-card__desc">Udělejte nahrávku vyšší, nižší, rychlejší nebo pomalejší jako na pásce.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/online-diktafon/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Online diktafon (s ořezem)</span>
+          <span class="s-card__desc">Nahrávejte z mikrofonu, kontrolujte hladinu, ořízněte a stáhněte.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/online-zaznam-obrazovky/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Online záznam obrazovky</span>
+          <span class="s-card__desc">Nahrajte obrazovku, okno nebo kartu, volitelně se zvukem, a uložte jako video.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/kontrola-rozliseni-a-snimkove-frekvence-webkamery/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Kontrola rozlišení a snímkové frekvence webkamery</span>
+          <span class="s-card__desc">Zjistěte, jaké rozlišení a snímkovou frekvenci kamera skutečně dává.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/test-sumu-mikrofonu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Test šumu mikrofonu</span>
+          <span class="s-card__desc">Změřte hluk pozadí místnosti a mikrofonu v dBFS.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/online-soundboard/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Online soundboard (potlesk, bzučák, bubnový virbl)</span>
+          <span class="s-card__desc">Dvanáct okamžitých zvuků pro schůzky, kvízy a ukázky, plus vlastní.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/zmena-rychlosti-videa/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Změna rychlosti videa (zpomalení a zrychlení)</span>
+          <span class="s-card__desc">Přehrajte video rychlostí 0,25× až 4× a exportujte zrychlenou verzi.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/barevna-karta-obrazovky/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Barevná karta obrazovky (vyvážení bílé a jas)</span>
+          <span class="s-card__desc">Celoobrazovková šedá, bílá nebo barevná karta pro vyvážení bílé a testy displeje.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/kontrola-hardwarove-akcelerace-prohlizece/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Kontrola hardwarové akcelerace prohlížeče (GPU, WebGL, video)</span>
+          <span class="s-card__desc">Zjistěte, zda prohlížeč opravdu používá grafickou kartu.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/test-obnovovaci-frekvence-a-ztracenych-snimku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Test obnovovací frekvence a ztracených snímků</span>
+          <span class="s-card__desc">Změřte skutečnou obnovovací frekvenci, jitter a zahozené snímky v prohlížeči.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/kalkulacka-pomeru-stran/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Kalkulačka poměru stran (16:9, 4:3, změna velikosti)</span>
+          <span class="s-card__desc">Zjistěte poměr stran rozlišení, přepočítejte na novou šířku a spočítejte PPI.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/sladeni-velikosti-a-skalovani-dvou-monitoru/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Sladění velikosti a škálování dvou monitorů</span>
+          <span class="s-card__desc">Porovnejte dvě obrazovky a najděte škálování, při kterém je text stejně velký.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/ulozeni-snimku-z-videa/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Uložení snímku z videa (screenshot z videa)</span>
+          <span class="s-card__desc">Vyberte přesný snímek videa a uložte ho jako PNG nebo JPEG v plném rozlišení.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/strih-zvuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Střih zvuku (oříznutí MP3 a WAV online)</span>
+          <span class="s-card__desc">Vystřihněte část nahrávky nebo ponechte jen tu, kterou potřebujete.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/spojeni-zvuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Spojení zvuku (sloučení souborů MP3)</span>
+          <span class="s-card__desc">Spojte několik zvukových souborů do jednoho v zvoleném pořadí.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/zmena-hlasitosti-zvuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Změna hlasitosti zvuku (MP3 hlasitěji nebo tišeji)</span>
+          <span class="s-card__desc">Zesilte nebo zeslabte nahrávku o zadaný počet decibelů.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/obraceni-zvuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Obrácení zvuku (přehrání pozpátku)</span>
+          <span class="s-card__desc">Otočte nahrávku tak, aby se přehrávala pozpátku.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/ekvalizer-zvuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Ekvalizér zvuku (basy a výšky online)</span>
+          <span class="s-card__desc">Upravte zvuk nahrávky pěti pásmy a předvolbami.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/prevodnik-zvuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Převodník zvuku (do MP3 nebo WAV)</span>
+          <span class="s-card__desc">Převeďte M4A, OGG, FLAC, Opus nebo zvuk z videa na MP3 nebo WAV.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/nahravani-videa-z-webkamery/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Nahrávání videa z webkamery</span>
+          <span class="s-card__desc">Natočte video z webkamery a uložte ho bez instalace.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/predcitani-textu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Předčítání textu (převod textu na řeč)</span>
+          <span class="s-card__desc">Nechte prohlížeč přečíst text nahlas zvoleným hlasem a tempem.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/odstraneni-sumu-ze-zvuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Odstranění šumu ze zvuku (potlačení hluku pozadí)</span>
+          <span class="s-card__desc">Potlačte stálé syčení, brum a hluk ventilátoru v nahrávce.</span>
+        </a><a class="s-card" data-cat="media" href="/cs/detektor-bpm-a-toniny/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h2M7 7v10M11 4v16M15 8v8M19 10v4M21.5 12h-1"/></svg>
+          <span class="s-card__title">Detektor BPM a tóniny (tempo a tónina písně)</span>
+          <span class="s-card__desc">Zjistěte tempo v BPM a hudební tóninu zvukového souboru.</span>
+        </a></div>
+      </div></div>
+    </section>
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Časté dotazy</h2>
+      <div class="s-faq">
+        <details open><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
+        <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/cs/soukromi/">Soukromí</a>
+        <a href="/cs/tiraz/">Tiráž</a>
+        <span class="s-footer__note">Běží ve vašem prohlížeči. Bez nahrávání, bez účtu, bez sledování.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=605e750f" defer></script>
+</body>
+</html>

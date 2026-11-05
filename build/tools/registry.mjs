@@ -53,46 +53,35 @@ export const UCAT_ORDER = ['documents', 'text', 'data', 'images', 'time', 'finan
 
 
 /**
- * The seven top-level sections shown in the navigation. Each groups one or more of the
- * finer categories above; "pdf" is the PDF-tools hub (its URL lives in PAGES.pdfTools).
- * slug = URL segment per language (en, de, pl, cs).
+ * The twelve top-level sections of the navigation: PDF plus one per tool category. Each is a plain link to its hub page.
+ * "pdf" is the PDF-tools hub (its URL lives in PAGES.pdfTools). slug = URL segment per language (en, de, pl, cs).
  */
+const G = (cat, slug, name, extra = {}) => ({ icon: UCATS[cat].icon, cats: [cat], slug, name, short: UCATS[cat].short, h1: UCATS[cat].h1, ...extra });
 export const GROUPS = {
-  pdf: { icon: 'merge', cats: ['documents'],
-    name: ['PDF & Documents', 'PDF & Dokumente', 'PDF i dokumenty', 'PDF a dokumenty'] },
-  text: { icon: 'text', cats: ['text', 'notes'],
-    slug: ['text-tools', 'text-werkzeuge', 'narzedzia-tekstowe', 'textove-nastroje'],
-    name: ['Text & Notes', 'Text & Notizen', 'Tekst i notatki', 'Text a poznámky'],
-    short: ['Clean, convert, count and compare text; scratchpads, checklists, passwords, QR codes and encrypted notes.', 'Text bereinigen, umwandeln, zählen und vergleichen; Notizblöcke, Checklisten, Passwörter, QR-Codes und verschlüsselte Notizen.', 'Czyść, konwertuj, licz i porównuj tekst; notatniki, listy kontrolne, hasła, kody QR i szyfrowane notatki.', 'Čistěte, převádějte, počítejte a porovnávejte text; poznámkové bloky, checklisty, hesla, QR kódy a šifrované poznámky.'],
-    h1: ['Free online text and notes tools', 'Kostenlose Text- und Notiz-Tools online', 'Darmowe narzędzia do tekstu i notatek online', 'Bezplatné online nástroje pro text a poznámky'] },
-  data: { icon: 'table', cats: ['data'],
-    slug: ['spreadsheet-csv-tools', 'tabellen-csv-werkzeuge', 'arkusze-i-csv', 'tabulky-a-csv'],
-    name: ['Spreadsheets & CSV', 'Tabellen & CSV', 'Arkusze i CSV', 'Tabulky a CSV'],
-    short: UCATS.data.short,
-    h1: ['CSV and spreadsheet tools', 'CSV- und Tabellen-Tools', 'Narzędzia do CSV i arkuszy', 'Nástroje pro CSV a tabulky'] },
-  images: { icon: 'image', cats: ['images', 'video', 'media'],
-    slug: ['image-media-tools', 'bild-und-medien-werkzeuge', 'grafika-i-media', 'obrazky-a-media'],
-    name: ['Images & Media', 'Bilder & Medien', 'Grafika i media', 'Obrázky a média'],
-    short: ['Resize, convert, blur and crop images; edit, trim and convert videos; audio tools, recorders and display tests.', 'Bilder skalieren, umwandeln, verpixeln und zuschneiden; Videos schneiden und umwandeln; Audio-Tools, Rekorder und Display-Tests.', 'Zmieniaj rozmiar, konwertuj, rozmywaj i przycinaj obrazy; edytuj i konwertuj wideo; narzędzia audio, rejestratory i testy ekranu.', 'Měňte velikost, převádějte, rozmazávejte a ořezávejte obrázky; upravujte a převádějte videa; zvukové nástroje, rekordéry a testy displeje.'],
-    h1: ['Free online image and media tools', 'Kostenlose Bild- und Medien-Tools online', 'Darmowe narzędzia graficzne i medialne online', 'Bezplatné online nástroje pro obrázky a média'] },
-  time: { icon: 'clock', cats: ['time'],
-    slug: ['time-calendar-tools', 'zeit-und-kalender-werkzeuge', 'czas-i-kalendarz', 'cas-a-kalendar'],
-    name: ['Time & Calendar', 'Zeit & Kalender', 'Czas i kalendarz', 'Čas a kalendář'],
-    short: UCATS.time.short,
-    h1: ['Time, date and calendar tools', 'Tools für Zeit, Datum und Kalender', 'Narzędzia czasu, dat i kalendarza', 'Nástroje pro čas, datum a kalendář'] },
-  business: { icon: 'coins', cats: ['finance', 'team'],
-    slug: ['business-team-tools', 'business-und-team-werkzeuge', 'biznes-i-zespol', 'byznys-a-tym'],
-    name: ['Business & Team', 'Business & Team', 'Biznes i zespół', 'Byznys a tým'],
-    short: ['Margins, runway, VAT and pricing; estimates, decision tools, brackets, pickers and org charts.', 'Margen, Runway, MwSt. und Preise; Schätzungen, Entscheidungshilfen, Turnierbäume, Zufallsauswahl und Organigramme.', 'Marże, runway, VAT i ceny; szacowanie, decyzje, drabinki, losowanie i schematy organizacyjne.', 'Marže, runway, DPH a ceny; odhady, rozhodovací nástroje, pavouky, losování a organigramy.'],
-    h1: ['Business and team tools', 'Business- und Team-Tools', 'Narzędzia biznesowe i zespołowe', 'Byznys a týmové nástroje'] },
-  dev: { icon: 'code', cats: ['dev'],
-    slug: ['it-web-tools', 'it-und-web-werkzeuge', 'narzedzia-it-i-web', 'it-a-web-nastroje'],
-    name: ['IT & Web', 'IT & Web', 'IT i web', 'IT a web'],
-    short: UCATS.dev.short,
-    h1: ['IT and web helper tools', 'Hilfs-Tools für IT und Web', 'Narzędzia pomocnicze IT i web', 'Pomocné nástroje pro IT a web'] },
+  pdf: { icon: 'merge', cats: [], name: ['PDF', 'PDF', 'PDF', 'PDF'] },
+  documents: G('documents', ['documents-print', 'dokumente-und-druck', 'dokumenty-i-druk', 'dokumenty-a-tisk'], ['Documents', 'Dokumente', 'Dokumenty', 'Dokumenty']),
+  text: G('text', ['text-tools', 'text-werkzeuge', 'narzedzia-tekstowe', 'textove-nastroje'], ['Text', 'Text', 'Tekst', 'Text']),
+  notes: G('notes', ['notes-tools', 'notizen-werkzeuge', 'narzedzia-do-notatek', 'nastroje-pro-poznamky'], ['Notes', 'Notizen', 'Notatki', 'Poznámky']),
+  data: G('data', ['spreadsheet-csv-tools', 'tabellen-csv-werkzeuge', 'arkusze-i-csv', 'tabulky-a-csv'], ['Spreadsheets', 'Tabellen', 'Arkusze', 'Tabulky']),
+  images: G('images', ['image-tools', 'bild-werkzeuge', 'narzedzia-graficzne', 'obrazove-nastroje'], ['Images', 'Bilder', 'Obrazy', 'Obrázky']),
+  video: G('video', ['video-tools', 'video-werkzeuge', 'narzedzia-wideo', 'video-nastroje'], ['Video', 'Video', 'Wideo', 'Video']),
+  audio: G('media', ['audio-tools', 'audio-werkzeuge', 'narzedzia-audio', 'audio-nastroje'], ['Audio', 'Audio', 'Audio', 'Audio'], {
+    short: ['Tone generators, teleprompter, recorders, audio editing and display tests.', 'Tongeneratoren, Teleprompter, Rekorder, Audio-Bearbeitung und Display-Tests.', 'Generatory tonu, teleprompter, rejestratory, edycja audio i testy ekranu.', 'Generátory tónů, teleprompter, rekordéry, úpravy zvuku a testy displeje.'],
+    h1: ['Free online audio tools', 'Kostenlose Audio-Tools online', 'Darmowe narzędzia audio online', 'Bezplatné online audio nástroje'] }),
+  time: G('time', ['time-calendar-tools', 'zeit-und-kalender-werkzeuge', 'czas-i-kalendarz', 'cas-a-kalendar'], ['Time', 'Zeit', 'Czas', 'Čas']),
+  business: G('finance', ['business-finance-tools', 'business-und-finanz-werkzeuge', 'biznes-i-finanse', 'byznys-a-finance'], ['Business', 'Business', 'Biznes', 'Byznys']),
+  team: G('team', ['team-meeting-tools', 'team-und-meeting-werkzeuge', 'zespol-i-spotkania', 'tym-a-schuzky'], ['Team', 'Team', 'Zespół', 'Tým']),
+  dev: G('dev', ['it-web-tools', 'it-und-web-werkzeuge', 'narzedzia-it-i-web', 'it-a-web-nastroje'], ['IT', 'IT', 'IT', 'IT']),
 };
-export const GROUP_ORDER = ['pdf', 'text', 'data', 'images', 'time', 'business', 'dev'];
+export const GROUP_ORDER = ['pdf', 'documents', 'text', 'notes', 'data', 'images', 'video', 'audio', 'time', 'business', 'team', 'dev'];
 export const GROUP_OF = Object.fromEntries(Object.entries(GROUPS).flatMap(([g, v]) => v.cats.map(c => [c, g])));
+/** Hub addresses of the earlier, coarser sections; they redirect to the section that now holds most of their tools. */
+export const OLD_HUBS = [
+  [['image-media-tools', 'bild-und-medien-werkzeuge', 'grafika-i-media', 'obrazky-a-media'], 'images'],
+  [['business-team-tools', 'business-und-team-werkzeuge', 'biznes-i-zespol', 'byznys-a-tym'], 'business'],
+  [['audio-video-tools', 'audio-video-tools', 'audio-i-wideo', 'audio-a-video'], 'audio'],
+  [['notes-privacy-tools', 'notizen-und-privatsphaere', 'notatki-i-prywatnosc', 'poznamky-a-soukromi'], 'notes'],
+];
 
 /** Links to the sister sites. key → [site, path, labels (en, de, pl, cs)] */
 export const SITES = {
