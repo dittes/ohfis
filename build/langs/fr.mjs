@@ -24,6 +24,7 @@ export default {
     pdfShort: 'Fusionnez, divisez, compressez, convertissez, modifiez, signez et protégez des PDF.', loading: 'Chargement de l\'outil…', hubLede: 'Chaque outil fonctionne dans votre navigateur. Rien de ce que vous collez ou ouvrez n\'est envoyé.',
   },
   cats: {
+    calc: { name: "Calculateurs du quotidien", short: "Pourcentages, fractions, moyennes, âge, IMC, calories, allure et une calculatrice scientifique.", h1: "Calculateurs en ligne gratuits" },
     documents: { name: 'Documents et impression', short: 'Livrets, étiquettes, numérotation Bates et conversion en Word.', h1: 'Outils pour documents et impression' },
     text: { name: 'Outils de texte', short: 'Nettoyez, convertissez, comptez, comparez et extrayez du texte.', h1: 'Outils de texte en ligne gratuits' },
     data: { name: 'Outils de tableur et de CSV', short: 'Corrigez, convertissez, fusionnez, comparez et réorganisez des données CSV et de tableur.', h1: 'Outils pour CSV et tableurs' },
@@ -37,6 +38,7 @@ export default {
     video: { name: 'Outils vidéo', short: 'Découpez, fusionnez, convertissez, compressez, rognez, redimensionnez et modifiez des vidéos sans les envoyer.', h1: 'Outils vidéo en ligne gratuits' },
   },
   groups: {
+    calc: { name: "Calculateurs", slug: "calculateurs" },
     pdf: { name: 'PDF' },
     documents: { name: 'Documents', slug: 'documents-et-impression' },
     text: { name: 'Texte', slug: 'outils-de-texte' },

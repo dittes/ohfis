@@ -3282,3 +3282,228 @@ Zacznij od nowa
 Wczytaj przykład
 Skopiowano
 Pobierz PDF
+Ile to X % z Y?
+Ile procent z Y to X?
+X to Y % czego?
+Zmiana procentowa z X na Y
+Y zwiększone o X %
+Y zmniejszone o X %
+Pytanie
+Wynik
+Kwota całkowita
+Udziały: jeden w wierszu, „Nazwa: 50” lub samo 50
+Kopiuj
+CSV
+Pierwszy ułamek (3/4, 1 1/2, 0,75)
++  dodawanie
+−  odejmowanie
+×  mnożenie
+÷  dzielenie
+Drugi ułamek
+D (zostaw puste, by obliczyć)
+Skróć: pierwsza liczba
+Skróć: druga liczba
+Skrócona proporcja
+Liczby (oddzielone spacjami, przecinkami lub wierszami)
+Średnia
+Odchylenie standardowe z próby
+Odchylenie standardowe populacji
+Wariancja z próby
+Wariancja populacji
+Liczby (jedna w wierszu)
+Matematyczne (od 5 w górę)
+Do parzystej (bankierskie)
+Zawsze w górę
+Zawsze w dół
+W kierunku zera
+Miejsca po przecinku
+Krok (5, 0,5, 0,05…)
+Miejsca po przecinku (ujemne = dziesiątki, setki)
+Krok
+Wyrażenie
+Stopnie
+Radiany
+Kąty w
+Ile liczb
+Bez powtórzeń
+Posortuj wynik
+Kostka 1–6
+Lotto 6 z 49
+Data urodzenia
+Wiek w dniu
+lat
+miesięcy
+dni
+Wiek
+Tygodni łącznie
+Miesięcy łącznie
+Najbliższe urodziny
+Pierwszy dzień ostatniej miesiączki
+Średnia długość cyklu (dni)
+Oblicz dla
+Szacunek orientacyjny, nie porada medyczna. Termin potwierdzi położna lub lekarz.
+Szacowany termin porodu
+Tydzień ciąży
+Trymestr
+Dni do końca
+Metryczne (kg, cm)
+Imperialne (lb, in)
+Jednostki
+Waga (kg lub lb)
+Wzrost (cm lub in)
+Waga prawidłowa
+BMI to orientacyjny wskaźnik, który pomija masę mięśniową, wiek i płeć. Nie jest diagnozą.
+BMI
+Kategoria
+BMI Prime
+Zdrowy zakres masy ciała
+Duża niedowaga
+Mężczyzna
+Kobieta
+Płeć
+dzień
+Podstawowa przemiana materii
+Energia w kJ
+Mała aktywność lub brak ćwiczeń
+Lekkie ćwiczenia 1–3 dni w tygodniu
+Umiarkowane ćwiczenia 3–5 dni w tygodniu
+Intensywne ćwiczenia 6–7 dni w tygodniu
+Bardzo intensywne ćwiczenia lub praca fizyczna
+Poziom aktywności
+Nie jedz znacznie mniej niż wynosi Twoja podstawowa przemiana materii bez porady lekarza.
+Utrzymanie wagi
+Schudnąć ok. 0,5 kg tygodniowo
+Schudnąć ok. 1 kg tygodniowo
+Przytyć ok. 0,5 kg tygodniowo
+Obwód szyi (cm lub in)
+Obwód talii (cm lub in)
+Obwód bioder (cm lub in, kobiety)
+Sprawność
+Przybliżony szacunek (ok. ±3–4 punkty). Najlepiej do śledzenia zmian, nie jako diagnoza.
+Tkanka tłuszczowa
+Otyłość
+Ćwiczenia dziennie (minuty)
+Upalna pogoda
+Liczą się też jedzenie i inne napoje. Przy chorobach nerek lub serca stosuj zalecenia lekarza.
+Litrów dziennie
+Uncje płynu
+Szklanki po 250 ml
+Przedmioty: „nazwa; punkty; ocena” w wierszu (A, B+, 3,7 …)
+GPA
+Suma punktów
+Półmaraton
+Maraton
+Kilometry
+Mile
+Mój czas (g:mm:ss)
+Moje tempo na jednostkę (mm:ss)
+Tempo na jednostkę
+Czas na mecie
+Kwota kredytu
+Okres (lata)
+Nadpłata miesięczna
+Rata miesięczna
+Odsetki łącznie
+Koszt całkowity
+Liczba rat
+Cena nieruchomości
+Wkład własny
+Podatek od nieruchomości rocznie
+Ubezpieczenie rocznie
+Opłaty miesięczne (czynsz, administracja)
+Miesięcznie łącznie z podatkiem i opłatami
+Wskaźnik LTV
+Kapitał
+Miesiące
+Dni
+Jednostka czasu
+Odsetki
+Razem
+Odsetki = kapitał × stopa × czas
+Wartość początkowa
+Późniejsze wpłaty łącznie
+Wartość końcowa
+Zysk
+Całkowity zwrot
+Zannualizowany zwrot (CAGR)
+Wpłacone środki
+Cena pierwotna
+Rabat (%)
+Drugi rabat (%, opcjonalnie)
+Cena końcowa
+Oszczędzasz
+Rabat efektywny
+Stawka podatku (%)
+przed podatkiem (dolicz podatek)
+z podatkiem (wyłącz podatek)
+Podatek
+Kwota wynagrodzenia
+Godzina
+Dzień
+Tydzień
+Dwa tygodnie
+Rok
+Za
+Godzin w tygodniu
+Dni w tygodniu
+Płatne tygodnie w roku
+Za godzinę
+Za dzień
+Za tydzień
+Za dwa tygodnie
+Za miesiąc
+Za rok
+Produkty: „nazwa; cena; ilość” w wierszu (ta sama jednostka, np. g lub ml)
+Pokaż cenę za
+Najlepszy
+Opakowanie rodzinne
+Dystans (km lub mile)
+km na litr
+mile na galon amerykański
+Spalanie w
+Spalanie
+Cena paliwa za litr
+Podziel między osoby
+Koszt paliwa
+Potrzebne paliwo
+Na osobę
+Wynik (A)
+Wynik (B)
+Wynik (C)
+Umiarkowana niedowaga
+Lekka niedowaga
+Otyłość I stopnia
+Otyłość II stopnia
+Otyłość III stopnia
+Tłuszcz niezbędny
+Sportowcy
+Nadwaga
+Sprawdź udziały
+Wpisz wyrażenie
+Wynik nie jest liczbą skończoną
+Sprawdź ten wiersz
+Wpisz czas w formacie 1:05:30 lub 5:00
+Sprawdź produkty
+Wpisz co najmniej jedną liczbę
+Zostaw puste dokładnie jedno pole
+Małe opakowanie
+Duże opakowanie
+Analiza matematyczna
+Historia
+Chemia
+Seminarium
+Czynsz
+Jedzenie
+Oszczędności
+Udział
+Nazwa
+Przedmiot
+Punkty
+Punkty oceny
+Produkt
+W porównaniu z najlepszym
+Wpłata
+Zaokrąglone
+Wynik (D)
+Tempo na km
+Tempo na milę

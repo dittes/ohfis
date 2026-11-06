@@ -3282,3 +3282,228 @@ Začít znovu
 Načíst příklad
 Zkopírováno
 Stáhnout PDF
+Kolik je X % z Y?
+Kolik procent z Y je X?
+X je Y % čeho?
+Procentuální změna z X na Y
+Y zvýšené o X %
+Y sníženo o X %
+Otázka
+Výsledek
+Celková částka
+Podíly: jeden na řádek, „Název: 50“ nebo jen 50
+Kopírovat
+CSV
+První zlomek (3/4, 1 1/2, 0,75)
++  sčítání
+−  odčítání
+×  násobení
+÷  dělení
+Druhý zlomek
+D (nechte prázdné pro výpočet)
+Zkrátit: první číslo
+Zkrátit: druhé číslo
+Zkrácený poměr
+Čísla (oddělená mezerami, čárkami nebo řádky)
+Průměr
+Výběrová směrodatná odchylka
+Základní směrodatná odchylka
+Výběrový rozptyl
+Základní rozptyl
+Čísla (jedno na řádek)
+Běžné (od 5 nahoru)
+K sudému (bankéřské)
+Vždy nahoru
+Vždy dolů
+Směrem k nule
+Desetinná místa
+Krok (5, 0,5, 0,05…)
+Desetinná místa (záporná = desítky, stovky)
+Krok
+Výraz
+Stupně
+Radiány
+Úhly v
+Kolik čísel
+Bez opakování
+Seřadit výsledek
+Kostka 1–6
+Loterie 6 ze 49
+Datum narození
+Věk ke dni
+let
+měsíců
+dní
+Věk
+Týdnů celkem
+Měsíců celkem
+Příští narozeniny
+První den poslední menstruace
+Průměrná délka cyklu (dny)
+Vypočítat pro
+Odhad pro orientaci, nikoli lékařská rada. Termín potvrdí porodní asistentka nebo lékař.
+Odhadovaný termín porodu
+Týden těhotenství
+Trimestr
+Zbývá dní
+Metrické (kg, cm)
+Imperiální (lb, in)
+Jednotky
+Hmotnost (kg nebo lb)
+Výška (cm nebo in)
+Normální hmotnost
+BMI je orientační ukazatel, který nebere v úvahu svalovou hmotu, věk ani pohlaví. Není to diagnóza.
+BMI
+Kategorie
+BMI Prime
+Zdravé rozmezí hmotnosti
+Těžká podváha
+Muž
+Žena
+Pohlaví
+den
+Bazální metabolismus
+Energie v kJ
+Málo nebo žádný pohyb
+Lehké cvičení 1–3 dny v týdnu
+Střední cvičení 3–5 dnů v týdnu
+Intenzivní cvičení 6–7 dnů v týdnu
+Velmi intenzivní cvičení nebo fyzická práce
+Úroveň aktivity
+Nejezte výrazně méně, než je váš bazální metabolismus, bez porady s lékařem.
+Udržení hmotnosti
+Zhubnout asi 0,5 kg týdně
+Zhubnout asi 1 kg týdně
+Přibrat asi 0,5 kg týdně
+Obvod krku (cm nebo in)
+Obvod pasu (cm nebo in)
+Obvod boků (cm nebo in, ženy)
+Fit
+Hrubý odhad (asi ±3–4 body). Nejlepší pro sledování vývoje, nikoli jako diagnóza.
+Tělesný tuk
+Obezita
+Cvičení za den (minuty)
+Horké počasí
+Počítá se i jídlo a další nápoje. Při onemocnění ledvin nebo srdce se řiďte radou lékaře.
+Litrů za den
+Tekuté unce
+Sklenice po 250 ml
+Předměty: „název; kredity; známka“ na řádek (A, B+, 3,7 …)
+GPA
+Kredity celkem
+Půlmaraton
+Maraton
+Kilometry
+Míle
+Můj čas (h:mm:ss)
+Moje tempo na jednotku (mm:ss)
+Tempo na jednotku
+Cílový čas
+Výše úvěru
+Doba (roky)
+Mimořádná splátka měsíčně
+Měsíční splátka
+Úroky celkem
+Celkové náklady
+Počet splátek
+Cena nemovitosti
+Vlastní vklad
+Daň z nemovitosti ročně
+Pojištění ročně
+Poplatky měsíčně (fond oprav, služby)
+Měsíčně celkem s daní a poplatky
+Poměr úvěru k hodnotě (LTV)
+Jistina
+Měsíce
+Dny
+Časová jednotka
+Úrok
+Celkem
+Úrok = jistina × sazba × čas
+Počáteční hodnota
+Pozdější vklady celkem
+Konečná hodnota
+Zisk
+Celkový výnos
+Anualizovaný výnos (CAGR)
+Vložené peníze
+Původní cena
+Sleva (%)
+Druhá sleva (%, volitelně)
+Konečná cena
+Ušetříte
+Efektivní sleva
+Sazba daně (%)
+před daní (přičíst daň)
+včetně daně (vyjmout daň)
+Daň
+Výše mzdy
+Hodina
+Den
+Týden
+Dva týdny
+Rok
+Za
+Hodin týdně
+Dnů týdně
+Placených týdnů ročně
+Za hodinu
+Za den
+Za týden
+Za dva týdny
+Za měsíc
+Za rok
+Produkty: „název; cena; množství“ na řádek (stejná jednotka, např. g nebo ml)
+Zobrazit cenu za
+Nejlepší
+Výhodné balení
+Vzdálenost (km nebo míle)
+km na litr
+míle na americký galon
+Spotřeba v
+Spotřeba
+Cena paliva za litr
+Rozdělit mezi osoby
+Náklady na palivo
+Potřebné palivo
+Na osobu
+Výsledek (A)
+Výsledek (B)
+Výsledek (C)
+Středně těžká podváha
+Mírná podváha
+Obezita 1. stupně
+Obezita 2. stupně
+Obezita 3. stupně
+Nezbytný tuk
+Sportovci
+Nadváha
+Zkontrolujte podíly
+Zadejte výraz
+Výsledek není konečné číslo
+Zkontrolujte tento řádek
+Zadejte čas ve tvaru 1:05:30 nebo 5:00
+Zkontrolujte produkty
+Zadejte alespoň jedno číslo
+Nechte prázdné právě jedno pole
+Malé balení
+Velké balení
+Matematická analýza
+Dějepis
+Chemie
+Seminář
+Nájem
+Jídlo
+Úspory
+Podíl
+Název
+Předmět
+Kredity
+Bodové hodnoty
+Produkt
+Oproti nejlepšímu
+Platba
+Zaokrouhleno
+Výsledek (D)
+Tempo na km
+Tempo na míli

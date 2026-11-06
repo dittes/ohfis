@@ -3282,3 +3282,228 @@ Recomeçar
 Carregar o exemplo
 Copiado
 Baixar PDF
+Quanto é X % de Y?
+X é quantos por cento de Y?
+X é Y % de quê?
+Variação percentual de X para Y
+Y aumentado em X %
+Y reduzido em X %
+Pergunta
+Resultado
+Valor total
+Partes: uma por linha, «Nome: 50» ou só 50
+Copiar
+CSV
+Primeira fração (3/4, 1 1/2, 0,75)
++  somar
+−  subtrair
+×  multiplicar
+÷  dividir
+Segunda fração
+D (deixe vazio para calcular)
+Simplificar: primeiro número
+Simplificar: segundo número
+Razão simplificada
+Números (separados por espaços, vírgulas ou linhas)
+Média
+Desvio padrão amostral
+Desvio padrão populacional
+Variância amostral
+Variância populacional
+Números (um por linha)
+Ao mais próximo (0,5 para cima)
+Para o par (arredondamento bancário)
+Sempre para cima
+Sempre para baixo
+Em direção a zero
+Casas decimais
+Um passo (5, 0,5, 0,05…)
+Casas decimais (negativo = dezenas, centenas)
+Passo
+Expressão
+Graus
+Radianos
+Ângulos em
+Quantos números
+Sem repetição
+Ordenar o resultado
+Dado 1–6
+Loteria 6 de 49
+Data de nascimento
+Idade em
+anos
+meses
+dias
+Idade
+Semanas no total
+Meses no total
+Próximo aniversário
+Primeiro dia da última menstruação
+Duração média do ciclo (dias)
+Calcular para
+Uma estimativa para orientação, não aconselhamento médico. Sua obstetra ou médico confirma a data.
+Data provável do parto
+Semana de gestação
+Trimestre
+Dias restantes
+Métrico (kg, cm)
+Imperial (lb, in)
+Unidades
+Peso (kg ou lb)
+Altura (cm ou in)
+Peso normal
+O IMC é um número de triagem aproximado e ignora massa muscular, idade e sexo. Não é um diagnóstico.
+IMC
+Categoria
+IMC prime
+Faixa de peso saudável
+Magreza grave
+Homem
+Mulher
+Sexo
+dia
+TMB
+Energia em kJ
+Pouco ou nenhum exercício
+Exercício leve 1–3 dias por semana
+Exercício moderado 3–5 dias por semana
+Exercício intenso 6–7 dias por semana
+Exercício muito intenso ou trabalho físico
+Nível de atividade
+Não coma muito menos que a sua TMB sem orientação médica.
+Manter o peso
+Perder cerca de 0,5 kg por semana
+Perder cerca de 1 kg por semana
+Ganhar cerca de 0,5 kg por semana
+Circunferência do pescoço (cm ou in)
+Circunferência da cintura (cm ou in)
+Circunferência do quadril (cm ou in, mulheres)
+Em forma
+Uma estimativa aproximada (cerca de ±3–4 pontos). Melhor para acompanhar uma tendência, não como diagnóstico.
+Gordura corporal
+Obesidade
+Exercício por dia (minutos)
+Tempo quente
+Comida e outras bebidas também contam. Siga a orientação do seu médico se tiver doença renal ou cardíaca.
+Litros por dia
+Onças fluidas
+Copos de 250 ml
+Disciplinas: «nome; créditos; nota» por linha (A, B+, 3,7 …)
+GPA
+Total de créditos
+Meia maratona
+Maratona
+Quilômetros
+Milhas
+Meu tempo (h:mm:ss)
+Meu pace por unidade (mm:ss)
+Pace por unidade
+Tempo final
+Valor do empréstimo
+Prazo (anos)
+Pagamento extra por mês
+Parcela mensal
+Juros totais
+Custo total
+Número de pagamentos
+Preço do imóvel
+Entrada
+Imposto predial por ano
+Seguro por ano
+Taxas por mês (condomínio, serviços)
+Total mensal com impostos e taxas
+Relação empréstimo/valor
+Capital
+Meses
+Dias
+Unidade de tempo
+Juros
+Total
+Juros = capital × taxa × tempo
+Valor inicial
+Aportes posteriores no total
+Valor final
+Ganho
+Retorno total
+Retorno anualizado (CAGR)
+Dinheiro aportado
+Preço original
+Desconto (%)
+Segundo desconto (%, opcional)
+Preço final
+Você economiza
+Desconto efetivo
+Alíquota (%)
+antes do imposto (somar imposto)
+com imposto incluído (retirar imposto)
+Imposto
+Valor da remuneração
+Hora
+Dia
+Semana
+Duas semanas
+Ano
+Por
+Horas por semana
+Dias por semana
+Semanas pagas por ano
+Por hora
+Por dia
+Por semana
+Por quinzena
+Por mês
+Por ano
+Produtos: «nome; preço; quantidade» por linha (mesma unidade, ex.: g ou ml)
+Mostrar o preço por
+O melhor
+Embalagem econômica
+Distância (km ou milhas)
+km por litro
+milhas por galão americano
+Consumo em
+Consumo
+Preço do combustível por litro
+Dividir entre pessoas
+Custo de combustível
+Combustível necessário
+Por pessoa
+Resultado (A)
+Resultado (B)
+Resultado (C)
+Magreza moderada
+Magreza leve
+Obesidade grau I
+Obesidade grau II
+Obesidade grau III
+Gordura essencial
+Atletas
+Sobrepeso
+Confira as partes
+Digite uma expressão
+O resultado não é um número finito
+Confira esta linha
+Digite o tempo como 1:05:30 ou 5:00
+Confira os produtos
+Digite pelo menos um número
+Deixe exatamente um campo vazio
+Pacote pequeno
+Pacote grande
+Cálculo
+História
+Química
+Seminário
+Aluguel
+Alimentação
+Poupança
+Parte
+Nome
+Disciplina
+Créditos
+Pontos da nota
+Produto
+Em relação ao melhor
+Pagamento
+Arredondado
+Resultado (D)
+Pace por km
+Pace por milha

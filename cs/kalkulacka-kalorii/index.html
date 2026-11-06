@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Kalkulačka kalorií (denní potřeba) – Online zdarma</title>
+  <meta name="description" content="Denní kalorie k udržení, snížení nebo zvýšení hmotnosti podle aktivity. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  
+  <link rel="canonical" href="https://ohfis.com/cs/kalkulacka-kalorii/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/calorie-calculator/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/kalorienrechner/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/kalkulator-kalorii/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/kalkulacka-kalorii/">
+  <link rel="alternate" hreflang="es" href="https://ohfis.com/es/calculadora-de-calorias/">
+  <link rel="alternate" hreflang="fr" href="https://ohfis.com/fr/calculateur-de-calories/">
+  <link rel="alternate" hreflang="pt" href="https://ohfis.com/pt/calculadora-de-calorias/">
+  <link rel="alternate" hreflang="it" href="https://ohfis.com/it/calcolatore-di-calorie/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/calorie-calculator/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohfis">
+  <meta property="og:url" content="https://ohfis.com/cs/kalkulacka-kalorii/">
+  <meta property="og:title" content="Kalkulačka kalorií (denní potřeba) – Online zdarma">
+  <meta property="og:description" content="Denní kalorie k udržení, snížení nebo zvýšení hmotnosti podle aktivity. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=1fe54eb2">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["SoftwareApplication","WebApplication"],"name":"Kalkulačka kalorií (denní potřeba)","url":"https://ohfis.com/cs/kalkulacka-kalorii/","description":"Denní kalorie k udržení, snížení nebo zvýšení hmotnosti podle aktivity. Zdarma, běží v prohlížeči, nic se nenahrává.","inLanguage":"cs","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, Android, iOS","browserRequirements":"Requires a modern web browser with JavaScript enabled","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@id":"https://ohfis.com/#org"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Kalkulačky","item":"https://ohfis.com/cs/kalkulacky/"},{"@type":"ListItem","position":3,"name":"Kalkulačka kalorií (denní potřeba)"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Jak to použít: Kalkulačka kalorií (denní potřeba)","step":[{"@type":"HowToStep","position":1,"text":"Enter sex, age, weight and height."},{"@type":"HowToStep","position":2,"text":"Choose your activity level."},{"@type":"HowToStep","position":3,"text":"Read the calories for each goal."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many calories per day for weight loss?","acceptedAnswer":{"@type":"Answer","text":"Maintenance minus 300–500 kcal is a common moderate deficit."}},{"@type":"Question","name":"Why do other sites give other numbers?","acceptedAnswer":{"@type":"Answer","text":"Different equations and activity factors; all are estimates."}},{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Přejít na obsah</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/cs/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>Ohfis</span></a>
+      <nav class="s-nav" aria-label="Hlavní navigace">
+        <a class="s-navlink" href="/cs/pdf-nastroje/">PDF</a><a class="s-navlink" href="/cs/dokumenty-a-tisk/">Dokumenty</a><a class="s-navlink" href="/cs/textove-nastroje/">Text</a><a class="s-navlink" href="/cs/nastroje-pro-poznamky/">Poznámky</a><a class="s-navlink" href="/cs/tabulky-a-csv/">Tabulky</a><a class="s-navlink" href="/cs/obrazove-nastroje/">Obrázky</a><a class="s-navlink" href="/cs/video-nastroje/">Video</a><a class="s-navlink" href="/cs/audio-nastroje/">Audio</a><a class="s-navlink" href="/cs/cas-a-kalendar/">Čas</a><a class="s-navlink" href="/cs/byznys-a-finance/">Byznys</a><a class="s-navlink" href="/cs/kalkulacky/" aria-current="page">Kalkulačky</a><a class="s-navlink" href="/cs/tym-a-schuzky/">Tým</a><a class="s-navlink" href="/cs/it-a-web-nastroje/">IT</a>
+      </nav>
+      <div class="s-actions">
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.cs.js" data-ph="Hledat nástroj…" data-empty="Nic nenalezeno. Zkuste jiné slovo." data-hint="Pište pro hledání · ↑↓ výběr · Enter otevřít · Esc zavřít" data-sections="Procházet podle oblasti" data-fav-add="Přidat do oblíbených" data-fav-remove="Odebrat z oblíbených" data-fav-title="Oblíbené" data-recent-title="Naposledy použité" data-mine-hint="Uloženo jen v tomto prohlížeči." aria-label="Hledat v nástrojích"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">Hledat nástroj…</span><kbd>/</kbd></button>
+        <details class="s-lang">
+          <summary aria-label="Jazyk">cs</summary>
+          <ul>
+            <li><a href="/en/calorie-calculator/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/kalorienrechner/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/kalkulator-kalorii/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/kalkulacka-kalorii/" hreflang="cs" lang="cs" data-set-lang="cs" aria-current="true">Čeština</a></li><li><a href="/es/calculadora-de-calorias/" hreflang="es" lang="es" data-set-lang="es">Español</a></li><li><a href="/fr/calculateur-de-calories/" hreflang="fr" lang="fr" data-set-lang="fr">Français</a></li><li><a href="/pt/calculadora-de-calorias/" hreflang="pt" lang="pt" data-set-lang="pt">Português</a></li><li><a href="/it/calcolatore-di-calorie/" hreflang="it" lang="it" data-set-lang="it">Italiano</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Přepnout světlý a tmavý režim" title="Přepnout světlý a tmavý režim">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Nabídka" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/cs/">Domů</a></li><li><a href="/cs/kalkulacky/">Kalkulačky</a></li><li><span aria-current="page">Kalkulačka kalorií (denní potřeba)</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Kalkulačka kalorií (denní potřeba)</h1>
+        <p>Denní kalorie k udržení, snížení nebo zvýšení hmotnosti podle aktivity.</p>
+      </div>
+      <div class="pt">
+        <div id="tool-root" data-tool="calorie-calculator" data-cat="calc"><p class="pt-hint">Načítání nástroje…</p><noscript><p class="pt-drop__error">Tento nástroj potřebuje JavaScript, protože se soubor zpracovává ve vašem prohlížeči.</p></noscript></div>
+        <ul class="s-trust"><li>Bez nahrávání</li><li>Zdarma</li><li>Bez účtu</li><li>Po načtení funguje offline</li></ul>
+        
+      </div>
+    </div>
+
+    <section class="s-section">
+      <div class="s-wrap s-prose">
+        <h2>Jak funguje: Kalkulačka kalorií (denní potřeba)</h2>
+        <p class="pt-hint">Podrobné vysvětlení je v angličtině.</p>
+        <p lang="en">Your total daily energy expenditure is the basal metabolic rate multiplied by an activity factor from 1.2 (little exercise) to 1.9 (hard physical work). Eating about 500 kcal less per day loses roughly 0.5 kg a week; 500 more gains about the same.</p><p lang="en">The numbers are population averages. Do not eat much less than your basal metabolic rate without medical advice.</p>
+      </div>
+    </section>
+    <section class="s-section s-section--tint" id="how">
+      <div class="s-wrap">
+        <h2>Jak to použít</h2>
+        <ol class="s-steps"><li><p lang="en">Enter sex, age, weight and height.</p></li><li><p lang="en">Choose your activity level.</p></li><li><p lang="en">Read the calories for each goal.</p></li></ol>
+      </div>
+    </section>
+    <section class="s-section" id="faq">
+      <div class="s-wrap">
+        <h2>Časté dotazy</h2>
+        <div class="s-faq">
+          <details open><summary lang="en">How many calories per day for weight loss?</summary><p lang="en">Maintenance minus 300–500 kcal is a common moderate deficit.</p></details>
+          <details><summary lang="en">Why do other sites give other numbers?</summary><p lang="en">Different equations and activity factors; all are estimates.</p></details>
+          <details><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
+          <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
+        </div>
+      </div>
+    </section>
+    
+    <section class="s-section s-section--tint">
+      <div class="s-wrap">
+        <h2>Mohlo by se vám hodit</h2>
+        <div class="s-cards" style="margin-top:16px"><a class="s-card" data-cat="calc" href="/cs/kalkulacka-bmr/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka BMR (bazální metabolismus)</span>
+          <span class="s-card__desc">Kalorie spálené v klidu podle rovnice Mifflin–St Jeor.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-bmi/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka BMI</span>
+          <span class="s-card__desc">Index tělesné hmotnosti, BMI prime a zdravé rozmezí hmotnosti pro vaši výšku.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-telesneho-tuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka tělesného tuku (metoda US Navy)</span>
+          <span class="s-card__desc">Odhadněte procento tělesného tuku z obvodu krku, pasu a boků.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-pitneho-rezimu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka pitného režimu</span>
+          <span class="s-card__desc">Denní potřeba vody podle hmotnosti, cvičení a horka.</span>
+        </a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/cs/soukromi/">Soukromí</a>
+        <a href="/cs/tiraz/">Tiráž</a>
+        <span class="s-footer__note">Běží ve vašem prohlížeči. Bez nahrávání, bez účtu, bez sledování.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=605e750f" defer></script>
+  <script type="module" src="/assets/js/tools/main.js?v=143e144b"></script>
+</body>
+</html>

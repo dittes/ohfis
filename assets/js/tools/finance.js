@@ -3,6 +3,7 @@ import { tr, h, t, area, btn, select, check, field, numInput, textInput, copyTex
 import { boardTool } from './canvasboard.js';
 import { calcTool, money, pct } from './calctool.js';
 import * as F from './lib/fin.js';
+import * as C from './lib/calc.js';
 import { utc, parseYMD } from './lib/time.js';
 
 const need = (v, ...keys) => { for (const k of keys) if (v[k] === null || !Number.isFinite(v[k])) throw new Error(tr('Fill in all fields')); };
@@ -11,6 +12,48 @@ const today = () => new Date().toISOString().slice(0, 10);
 const yearsLabel = m => m === Infinity ? 'never' : m >= 24 ? `${fmtNum(m / 12, 1)} years` : `${fmtNum(m, 1)} months`;
 
 export const tools = {
+  'loan-calculator'(root) {
+    calcTool(root, { fields: [{ key: 'amount', label: 'Loan amount', type: 'number', value: 200000 }, { key: 'rate', label: 'Annual interest rate (%)', type: 'number', value: 5, step: 0.01 }, { key: 'years', label: 'Term (years)', type: 'number', value: 25, step: 0.5 }, { key: 'extra', label: 'Extra payment per month', type: 'number', value: 0 }, cur],
+      run: v => { need(v, 'amount', 'rate', 'years'); const base = C.loan({ amount: v.amount, rate: v.rate, months: Math.round(v.years * 12) }); const r = C.loan({ amount: v.amount, rate: v.rate, months: Math.round(v.years * 12), extra: v.extra ?? 0 }); const c = v.cur;
+        const cards = [['Monthly payment', money(r.payment, c), 'good'], ['Total interest', money(r.interest, c, 0)], ['Total cost', money(r.total, c, 0)], ['Number of payments', String(r.months)]]; if (v.extra > 0) cards.push(['Interest saved', money(base.interest - r.interest, c, 0), 'good']);
+        return { cards, rows: [['Month', 'Payment', 'Interest', 'Principal', 'Balance'], ...r.rows.map(x => [x.month, money(x.payment, '', 2), money(x.interest, '', 2), money(x.principal, '', 2), money(x.balance, '', 2)])] }; } });
+  },
+  'mortgage-calculator'(root) {
+    calcTool(root, { fields: [{ key: 'price', label: 'Property price', type: 'number', value: 300000 }, { key: 'down', label: 'Down payment', type: 'number', value: 60000 }, { key: 'rate', label: 'Annual interest rate (%)', type: 'number', value: 4, step: 0.01 }, { key: 'years', label: 'Term (years)', type: 'number', value: 30, step: 1 },
+      { key: 'tax', label: 'Property tax per year', type: 'number', value: 3600 }, { key: 'ins', label: 'Insurance per year', type: 'number', value: 1200 }, { key: 'hoa', label: 'Fees per month (HOA, service charge)', type: 'number', value: 0 }, cur],
+      run: v => { need(v, 'price', 'down', 'rate', 'years'); const r = C.mortgage({ price: v.price, down: v.down, rate: v.rate, years: v.years, tax: v.tax ?? 0, insurance: v.ins ?? 0, hoa: v.hoa ?? 0 }); const c = v.cur;
+        return { cards: [['Monthly payment', money(r.payment, c), 'good'], ['Monthly total with tax and fees', money(r.monthlyTotal, c)], ['Loan amount', money(r.amount, c, 0)], ['Loan to value', pct(r.ltv, 1)], ['Total interest', money(r.interest, c, 0)]], rows: [['Month', 'Payment', 'Interest', 'Principal', 'Balance'], ...r.rows.map(x => [x.month, money(x.payment, '', 2), money(x.interest, '', 2), money(x.principal, '', 2), money(x.balance, '', 2)])] }; } });
+  },
+  'simple-interest-calculator'(root) {
+    calcTool(root, { fields: [{ key: 'p', label: 'Principal', type: 'number', value: 5000 }, { key: 'r', label: 'Annual interest rate (%)', type: 'number', value: 4.5, step: 0.01 }, { key: 't', label: 'Time', type: 'number', value: 3 }, { key: 'unit', label: 'Time unit', type: 'select', value: 'years', choices: [['years', 'Years'], ['months', 'Months'], ['days', 'Days']] }, cur],
+      run: v => { need(v, 'p', 'r', 't'); const years = v.unit === 'years' ? v.t : v.unit === 'months' ? v.t / 12 : v.t / 365; const r = C.simpleInterest({ principal: v.p, rate: v.r, years }); const c = v.cur; return { cards: [['Interest', money(r.interest, c), 'good'], ['Total', money(r.total, c)]], notes: ['Interest = principal × rate × time'] }; } });
+  },
+  'investment-return-calculator'(root) {
+    calcTool(root, { fields: [{ key: 'start', label: 'Starting value', type: 'number', value: 10000 }, { key: 'add', label: 'Later contributions in total', type: 'number', value: 0 }, { key: 'end', label: 'Final value', type: 'number', value: 16000 }, { key: 'years', label: 'Years', type: 'number', value: 5, step: 0.5 }, cur],
+      run: v => { need(v, 'start', 'end', 'years'); const r = C.investmentReturn({ start: v.start, end: v.end, years: v.years, contributions: v.add ?? 0 }); const c = v.cur; return { cards: [['Gain', money(r.gain, c, 0), r.gain >= 0 ? 'good' : 'bad'], ['Total return', pct(r.total, 2)], ['Annualised return (CAGR)', r.cagr === null ? '–' : pct(r.cagr, 2)], ['Money paid in', money(r.invested, c, 0)]] }; } });
+  },
+  'discount-calculator'(root) {
+    calcTool(root, { fields: [{ key: 'price', label: 'Original price', type: 'number', value: 100 }, { key: 'pct', label: 'Discount (%)', type: 'number', value: 20, step: 0.1 }, { key: 'extra', label: 'Second discount (%, optional)', type: 'number', value: 0, step: 0.1 }, cur],
+      run: v => { need(v, 'price', 'pct'); const r = C.discount({ price: v.price, percent: v.pct, extra: v.extra ?? 0 }); const c = v.cur; return { cards: [['Final price', money(r.final, c), 'good'], ['You save', money(r.saved, c)], ['Effective discount', pct(r.effective, 2)]] }; } });
+  },
+  'sales-tax-calculator'(root) {
+    calcTool(root, { fields: [{ key: 'amount', label: 'Amount', type: 'number', value: 100 }, { key: 'rate', label: 'Tax rate (%)', type: 'number', value: 8.25, step: 0.01 }, { key: 'mode', label: 'The amount is', type: 'select', value: 'add', choices: [['add', 'before tax (add tax)'], ['remove', 'including tax (take tax out)']] }, cur],
+      run: v => { need(v, 'amount', 'rate'); const r = C.salesTax({ amount: v.amount, rate: v.rate, mode: v.mode }); const c = v.cur; return { cards: [['Net amount', money(r.net, c)], ['Tax', money(r.tax, c)], ['Total', money(r.gross, c), 'good']] }; } });
+  },
+  'salary-converter'(root) {
+    calcTool(root, { fields: [{ key: 'amount', label: 'Pay amount', type: 'number', value: 50000 }, { key: 'per', label: 'Per', type: 'select', value: 'year', choices: [['hour', 'Hour'], ['day', 'Day'], ['week', 'Week'], ['biweek', 'Two weeks'], ['month', 'Month'], ['year', 'Year']] }, { key: 'hours', label: 'Hours per week', type: 'number', value: 40 }, { key: 'days', label: 'Days per week', type: 'number', value: 5 }, { key: 'weeks', label: 'Paid weeks per year', type: 'number', value: 52 }, cur],
+      run: v => { need(v, 'amount', 'hours', 'days', 'weeks'); const r = C.salaryTable(v.amount, v.per, { hours: v.hours, days: v.days, weeks: v.weeks }); const c = v.cur; return { cards: [['Per hour', money(r.hour, c)], ['Per day', money(r.day, c)], ['Per week', money(r.week, c)], ['Per two weeks', money(r.biweek, c)], ['Per month', money(r.month, c)], ['Per year', money(r.year, c, 0), 'good']] }; } });
+  },
+  'unit-price-calculator'(root) {
+    calcTool(root, { fields: [{ key: 'lines', label: 'Products: "name; price; quantity" per line (same unit, e.g. g or ml)', type: 'textarea', value: 'Small pack; 3.20; 500\nLarge pack; 5.50; 1000\nValue pack; 9.80; 2000', rows: 6 }, { key: 'per', label: 'Show price per', type: 'number', value: 100, min: 1 }, cur],
+      run: v => { need(v, 'per'); const items = v.lines.split('\n').map(l => l.trim()).filter(Boolean).map(l => { const [name, price, qty] = l.split(/\s*;\s*/); return { name, price: Number((price ?? '').replace(',', '.')), qty: Number((qty ?? '').replace(',', '.')) }; }); if (items.some(i => !Number.isFinite(i.price) || !Number.isFinite(i.qty))) throw new Error(tr('Check the products')); const rows = C.unitPrice(items);
+        return { cards: [['Best', rows.find(r => r.best).name, 'good']], rows: [['Product', 'Price', 'Quantity', `Price per ${v.per}`, 'Compared with best'], ...rows.map(r => [r.name, money(r.price, v.cur), fmtNum(r.qty, 2), money(r.unit * v.per, v.cur, 3), r.best ? '★' : '+' + fmtNum(r.extra, 1) + ' %'])] }; } });
+  },
+  'fuel-cost-calculator'(root) {
+    calcTool(root, { fields: [{ key: 'dist', label: 'Distance (km or miles)', type: 'number', value: 350 }, { key: 'unit', label: 'Consumption in', type: 'select', value: 'l100', choices: [['l100', 'L / 100 km'], ['kml', 'km per litre'], ['mpg', 'miles per US gallon']] }, { key: 'cons', label: 'Consumption', type: 'number', value: 6.5, step: 0.1 }, { key: 'price', label: 'Fuel price per litre', type: 'number', value: 1.85, step: 0.01 },
+      { key: 'rt', label: 'Round trip (double the distance)', type: 'check', value: false }, { key: 'people', label: 'Share between people', type: 'number', value: 1, min: 1, step: 1 }, cur],
+      run: v => { need(v, 'dist', 'cons', 'price'); const r = C.fuelCost({ distance: v.dist * (v.rt ? 2 : 1), consumption: v.cons, price: v.price, unit: v.unit }); const c = v.cur; const n = Math.max(1, v.people ?? 1); return { cards: [['Fuel cost', money(r.cost, c), 'good'], ['Fuel needed', `${fmtNum(r.litres, 1)} L`], ['Per person', money(r.cost / n, c)]] }; } });
+  },
   'margin-markup-calculator'(root) {
     calcTool(root, { fields: [{ key: 'known', label: 'I know', type: 'select', value: 'cp', choices: [['cp', 'Cost and selling price'], ['cm', 'Cost and margin %'], ['ck', 'Cost and markup %'], ['pm', 'Selling price and margin %'], ['pk', 'Selling price and markup %']] },
       { key: 'cost', label: 'Cost', type: 'number', value: 60, show: v => v.known[0] === 'c' }, { key: 'price', label: 'Selling price', type: 'number', value: 100, show: v => v.known === 'cp' || v.known[0] === 'p' }, { key: 'margin', label: 'Gross margin %', type: 'number', value: 40, show: v => v.known[1] === 'm' }, { key: 'markup', label: 'Markup %', type: 'number', value: 66.67, show: v => v.known[1] === 'k' }],

@@ -3282,3 +3282,228 @@ Recommencer
 Charger l'exemple
 Copié
 Télécharger le PDF
+Combien font X % de Y ?
+X représente quel pourcentage de Y ?
+X est Y % de quoi ?
+Variation en pourcentage de X à Y
+Y augmenté de X %
+Y diminué de X %
+Question
+Résultat
+Montant total
+Parts : une par ligne, « Nom : 50 » ou simplement 50
+Copier
+CSV
+Première fraction (3/4, 1 1/2, 0,75)
++  additionner
+−  soustraire
+×  multiplier
+÷  diviser
+Seconde fraction
+D (laisser vide pour calculer)
+Simplifier : premier nombre
+Simplifier : second nombre
+Rapport simplifié
+Nombres (séparés par des espaces, virgules ou lignes)
+Moyenne
+Écart-type d'échantillon
+Écart-type de population
+Variance d'échantillon
+Variance de population
+Nombres (un par ligne)
+Au plus proche (0,5 vers le haut)
+Vers le pair (arrondi bancaire)
+Toujours vers le haut
+Toujours vers le bas
+Vers zéro
+Décimales
+Un pas (5, 0,5, 0,05…)
+Décimales (négatif = dizaines, centaines)
+Pas
+Expression
+Degrés
+Radians
+Angles en
+Combien de nombres
+Sans répétition
+Trier le résultat
+Dé 1–6
+Loto 6 sur 49
+Date de naissance
+Âge au
+ans
+mois
+jours
+Âge
+Semaines au total
+Mois au total
+Prochain anniversaire
+Premier jour des dernières règles
+Durée moyenne du cycle (jours)
+Calculer pour
+Estimation indicative, pas un avis médical. Votre sage-femme ou médecin confirme la date.
+Date prévue d'accouchement
+Semaine de grossesse
+Trimestre
+Jours restants
+Métrique (kg, cm)
+Impérial (lb, in)
+Unités
+Poids (kg ou lb)
+Taille (cm ou in)
+Poids normal
+L'IMC est un repère approximatif qui ignore la masse musculaire, l'âge et le sexe. Ce n'est pas un diagnostic.
+IMC
+Catégorie
+IMC prime
+Fourchette de poids sain
+Maigreur sévère
+Homme
+Femme
+Sexe
+jour
+MB
+Énergie en kJ
+Peu ou pas d'exercice
+Exercice léger 1–3 jours par semaine
+Exercice modéré 3–5 jours par semaine
+Exercice intense 6–7 jours par semaine
+Exercice très intense ou travail physique
+Niveau d'activité
+Ne mangez pas bien moins que votre MB sans avis médical.
+Maintenir son poids
+Perdre environ 0,5 kg par semaine
+Perdre environ 1 kg par semaine
+Prendre environ 0,5 kg par semaine
+Tour de cou (cm ou in)
+Tour de taille (cm ou in)
+Tour de hanches (cm ou in, femmes)
+En forme
+Estimation approximative (environ ±3–4 points). À utiliser pour suivre une tendance, pas comme diagnostic.
+Masse grasse
+Obésité
+Exercice par jour (minutes)
+Temps chaud
+Les aliments et les autres boissons comptent aussi. Suivez l'avis de votre médecin en cas de maladie rénale ou cardiaque.
+Litres par jour
+Onces liquides
+Verres de 250 ml
+Matières : « nom ; crédits ; note » par ligne (A, B+, 3,7 …)
+GPA
+Total des crédits
+Semi-marathon
+Marathon
+Kilomètres
+Miles
+Mon temps (h:mm:ss)
+Mon allure par unité (mm:ss)
+Allure par unité
+Temps d'arrivée
+Montant du prêt
+Durée (années)
+Remboursement supplémentaire par mois
+Mensualité
+Intérêts totaux
+Coût total
+Nombre de paiements
+Prix du bien
+Apport
+Taxe foncière par an
+Assurance par an
+Charges par mois (copropriété, services)
+Total mensuel avec taxes et charges
+Ratio prêt/valeur
+Capital
+Mois
+Jours
+Unité de temps
+Intérêts
+Total
+Intérêts = capital × taux × durée
+Valeur de départ
+Versements ultérieurs au total
+Valeur finale
+Gain
+Rendement total
+Rendement annualisé (TCAC)
+Argent versé
+Prix d'origine
+Remise (%)
+Seconde remise (%, facultative)
+Prix final
+Vous économisez
+Remise effective
+Taux de taxe (%)
+avant taxe (ajouter la taxe)
+taxe comprise (retirer la taxe)
+Taxe
+Montant de la rémunération
+Heure
+Jour
+Semaine
+Deux semaines
+Année
+Par
+Heures par semaine
+Jours par semaine
+Semaines payées par an
+Par heure
+Par jour
+Par semaine
+Par quinzaine
+Par mois
+Par an
+Produits : « nom ; prix ; quantité » par ligne (même unité, p. ex. g ou ml)
+Afficher le prix par
+Le meilleur
+Format familial
+Distance (km ou miles)
+km par litre
+miles par gallon américain
+Consommation en
+Consommation
+Prix du carburant par litre
+Partager entre personnes
+Coût du carburant
+Carburant nécessaire
+Par personne
+Résultat (A)
+Résultat (B)
+Résultat (C)
+Maigreur modérée
+Maigreur légère
+Obésité de classe I
+Obésité de classe II
+Obésité de classe III
+Graisse essentielle
+Athlètes
+Surpoids
+Vérifiez les parts
+Saisissez une expression
+Le résultat n'est pas un nombre fini
+Vérifiez cette ligne
+Saisissez le temps comme 1:05:30 ou 5:00
+Vérifiez les produits
+Saisissez au moins un nombre
+Laissez exactement un champ vide
+Petit paquet
+Grand paquet
+Analyse
+Histoire
+Chimie
+Séminaire
+Loyer
+Alimentation
+Épargne
+Part
+Nom
+Matière
+Crédits
+Points de note
+Produit
+Par rapport au meilleur
+Paiement
+Arrondi
+Résultat (D)
+Allure par km
+Allure par mile

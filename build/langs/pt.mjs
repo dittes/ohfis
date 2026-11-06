@@ -24,6 +24,7 @@ export default {
     pdfShort: 'Junte, divida, comprima, converta, edite, assine e proteja PDFs.', loading: 'Carregando ferramenta…', hubLede: 'Cada ferramenta funciona no seu navegador. Nada do que você cola ou abre é enviado.',
   },
   cats: {
+    calc: { name: "Calculadoras do dia a dia", short: "Porcentagens, frações, médias, idade, IMC, calorias, pace e uma calculadora científica.", h1: "Calculadoras on-line grátis" },
     documents: { name: 'Documentos e impressão', short: 'Livretos, etiquetas, numeração Bates e conversão para Word.', h1: 'Ferramentas para documentos e impressão' },
     text: { name: 'Ferramentas de texto', short: 'Limpe, converta, conte, compare e extraia texto.', h1: 'Ferramentas de texto on-line grátis' },
     data: { name: 'Ferramentas de planilha e CSV', short: 'Corrija, converta, junte, compare e reorganize dados de CSV e planilhas.', h1: 'Ferramentas para CSV e planilhas' },
@@ -37,6 +38,7 @@ export default {
     video: { name: 'Ferramentas de vídeo', short: 'Corte, junte, converta, comprima, redimensione e edite vídeos sem enviá-los.', h1: 'Ferramentas de vídeo on-line grátis' },
   },
   groups: {
+    calc: { name: "Calculadoras", slug: "calculadoras" },
     pdf: { name: 'PDF' },
     documents: { name: 'Documentos', slug: 'documentos-e-impressao' },
     text: { name: 'Texto', slug: 'ferramentas-de-texto' },

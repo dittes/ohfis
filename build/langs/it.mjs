@@ -24,6 +24,7 @@ export default {
     pdfShort: 'Unisci, dividi, comprimi, converti, modifica, firma e proteggi PDF.', loading: 'Caricamento dello strumento…', hubLede: 'Ogni strumento funziona nel tuo browser. Nulla di ciò che incolli o apri viene caricato.',
   },
   cats: {
+    calc: { name: "Calcolatori di tutti i giorni", short: "Percentuali, frazioni, medie, età, BMI, calorie, passo e una calcolatrice scientifica.", h1: "Calcolatori online gratuiti" },
     documents: { name: 'Documenti e stampa', short: 'Opuscoli, etichette, numerazione Bates e conversione in Word.', h1: 'Strumenti per documenti e stampa' },
     text: { name: 'Strumenti per il testo', short: 'Pulisci, converti, conta, confronta ed estrai testo.', h1: 'Strumenti di testo online gratuiti' },
     data: { name: 'Strumenti per fogli di calcolo e CSV', short: 'Correggi, converti, unisci, confronta e riorganizza dati CSV e di fogli di calcolo.', h1: 'Strumenti per CSV e fogli di calcolo' },
@@ -37,6 +38,7 @@ export default {
     video: { name: 'Strumenti video', short: 'Taglia, unisci, converti, comprimi, ritaglia, ridimensiona e modifica video senza caricarli.', h1: 'Strumenti video online gratuiti' },
   },
   groups: {
+    calc: { name: "Calcolatori", slug: "calcolatori" },
     pdf: { name: 'PDF' },
     documents: { name: 'Documenti', slug: 'documenti-e-stampa' },
     text: { name: 'Testo', slug: 'strumenti-per-il-testo' },

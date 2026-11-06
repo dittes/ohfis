@@ -45,11 +45,15 @@ export const UCATS = {
     short: ['Tone generators, teleprompter, recorders and display tests.', 'Tongeneratoren, Teleprompter, Rekorder und Display-Tests.', 'Generatory tonu, teleprompter, rejestratory i testy ekranu.', 'Generátory tónů, teleprompter, rekordéry a testy displeje.'],
     h1: ['Audio, video and hardware tools', 'Audio-, Video- und Hardware-Tools', 'Narzędzia audio, wideo i sprzętowe', 'Audio, video a hardwarové nástroje'] },
 };
+UCATS.calc = { slug: 'calculators', icon: 'numbers',
+  name: ['Everyday Calculators', 'Alltagsrechner', 'Kalkulatory codzienne', 'Každodenní kalkulačky'],
+  short: ['Percentages, fractions, averages, age, BMI, calories, pace and a scientific calculator.', 'Prozente, Brüche, Durchschnitt, Alter, BMI, Kalorien, Pace und ein wissenschaftlicher Taschenrechner.', 'Procenty, ułamki, średnie, wiek, BMI, kalorie, tempo i kalkulator naukowy.', 'Procenta, zlomky, průměry, věk, BMI, kalorie, tempo a vědecká kalkulačka.'],
+  h1: ['Free online calculators', 'Kostenlose Rechner online', 'Darmowe kalkulatory online', 'Bezplatné online kalkulačky'] };
 UCATS.video = { slug: 'video-tools', icon: 'film',
   name: ['Video Tools', 'Video-Tools', 'Narzędzia wideo', 'Video nástroje'],
   short: ['Trim, join, convert, compress, crop, resize and edit videos without uploading them.', 'Videos schneiden, verbinden, umwandeln, komprimieren, zuschneiden und bearbeiten, ohne Upload.', 'Przycinaj, łącz, konwertuj, kompresuj i edytuj wideo bez przesyłania.', 'Stříhejte, spojujte, převádějte, komprimujte a upravujte videa bez nahrávání.'],
   h1: ['Free online video tools', 'Kostenlose Video-Tools online', 'Darmowe narzędzia wideo online', 'Bezplatné online video nástroje'] };
-export const UCAT_ORDER = ['documents', 'text', 'data', 'images', 'time', 'finance', 'dev', 'notes', 'team', 'media', 'video'];
+export const UCAT_ORDER = ['documents', 'text', 'data', 'images', 'time', 'finance', 'calc', 'dev', 'notes', 'team', 'media', 'video'];
 
 
 /**
@@ -70,10 +74,11 @@ export const GROUPS = {
     h1: ['Free online audio tools', 'Kostenlose Audio-Tools online', 'Darmowe narzędzia audio online', 'Bezplatné online audio nástroje'] }),
   time: G('time', ['time-calendar-tools', 'zeit-und-kalender-werkzeuge', 'czas-i-kalendarz', 'cas-a-kalendar'], ['Time', 'Zeit', 'Czas', 'Čas']),
   business: G('finance', ['business-finance-tools', 'business-und-finanz-werkzeuge', 'biznes-i-finanse', 'byznys-a-finance'], ['Business', 'Business', 'Biznes', 'Byznys']),
+  calc: G('calc', ['calculators', 'rechner', 'kalkulatory', 'kalkulacky'], ['Calculators', 'Rechner', 'Kalkulatory', 'Kalkulačky']),
   team: G('team', ['team-meeting-tools', 'team-und-meeting-werkzeuge', 'zespol-i-spotkania', 'tym-a-schuzky'], ['Team', 'Team', 'Zespół', 'Tým']),
   dev: G('dev', ['it-web-tools', 'it-und-web-werkzeuge', 'narzedzia-it-i-web', 'it-a-web-nastroje'], ['IT', 'IT', 'IT', 'IT']),
 };
-export const GROUP_ORDER = ['pdf', 'documents', 'text', 'notes', 'data', 'images', 'video', 'audio', 'time', 'business', 'team', 'dev'];
+export const GROUP_ORDER = ['pdf', 'documents', 'text', 'notes', 'data', 'images', 'video', 'audio', 'time', 'business', 'calc', 'team', 'dev'];
 export const GROUP_OF = Object.fromEntries(Object.entries(GROUPS).flatMap(([g, v]) => v.cats.map(c => [c, g])));
 /** Hub addresses of the earlier, coarser sections; they redirect to the section that now holds most of their tools. */
 export const OLD_HUBS = [

@@ -24,6 +24,7 @@ export default {
     pdfShort: 'Une, divide, comprime, convierte, edita, firma y protege PDF.', loading: 'Cargando herramienta…', hubLede: 'Cada herramienta funciona en tu navegador. Nada de lo que pegas o abres se sube.',
   },
   cats: {
+    calc: { name: "Calculadoras cotidianas", short: "Porcentajes, fracciones, promedios, edad, IMC, calorías, ritmo y una calculadora científica.", h1: "Calculadoras en línea gratuitas" },
     documents: { name: 'Documentos e impresión', short: 'Folletos, etiquetas, numeración Bates y conversión a Word.', h1: 'Herramientas para documentos e impresión' },
     text: { name: 'Herramientas de texto', short: 'Limpia, convierte, cuenta, compara y extrae texto.', h1: 'Herramientas de texto en línea gratuitas' },
     data: { name: 'Herramientas de hojas de cálculo y CSV', short: 'Arregla, convierte, une, compara y reorganiza datos de CSV y hojas de cálculo.', h1: 'Herramientas para CSV y hojas de cálculo' },
@@ -37,6 +38,7 @@ export default {
     video: { name: 'Herramientas de vídeo', short: 'Recorta, une, convierte, comprime, corta, redimensiona y edita vídeos sin subirlos.', h1: 'Herramientas de vídeo en línea gratuitas' },
   },
   groups: {
+    calc: { name: "Calculadoras", slug: "calculadoras" },
     pdf: { name: 'PDF' },
     documents: { name: 'Documentos', slug: 'documentos-e-impresion' },
     text: { name: 'Texto', slug: 'herramientas-de-texto' },

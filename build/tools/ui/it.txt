@@ -3282,3 +3282,228 @@ Ricomincia
 Carica l'esempio
 Copiato
 Scarica PDF
+Quanto fa il X % di Y?
+X è quale percentuale di Y?
+X è il Y % di cosa?
+Variazione percentuale da X a Y
+Y aumentato del X %
+Y diminuito del X %
+Domanda
+Risultato
+Importo totale
+Quote: una per riga, «Nome: 50» oppure solo 50
+Copia
+CSV
+Prima frazione (3/4, 1 1/2, 0,75)
++  somma
+−  sottrazione
+×  moltiplicazione
+÷  divisione
+Seconda frazione
+D (lascia vuoto per calcolare)
+Semplifica: primo numero
+Semplifica: secondo numero
+Rapporto semplificato
+Numeri (separati da spazi, virgole o righe)
+Media
+Deviazione standard campionaria
+Deviazione standard della popolazione
+Varianza campionaria
+Varianza della popolazione
+Numeri (uno per riga)
+Al più vicino (0,5 per eccesso)
+Al pari (arrotondamento bancario)
+Sempre per eccesso
+Sempre per difetto
+Verso lo zero
+Cifre decimali
+Un passo (5, 0,5, 0,05…)
+Cifre decimali (negativo = decine, centinaia)
+Passo
+Espressione
+Gradi
+Radianti
+Angoli in
+Quanti numeri
+Senza ripetizioni
+Ordina il risultato
+Dado 1–6
+Lotto 6 su 49
+Data di nascita
+Età al
+anni
+mesi
+giorni
+Età
+Settimane totali
+Mesi totali
+Prossimo compleanno
+Primo giorno dell'ultima mestruazione
+Durata media del ciclo (giorni)
+Calcola per
+Una stima indicativa, non un parere medico. La tua ostetrica o il tuo medico conferma la data.
+Data presunta del parto
+Settimana di gravidanza
+Trimestre
+Giorni mancanti
+Metrico (kg, cm)
+Imperiale (lb, in)
+Unità
+Peso (kg o lb)
+Altezza (cm o in)
+Normopeso
+Il BMI è un valore di screening approssimativo e ignora massa muscolare, età e sesso. Non è una diagnosi.
+BMI
+Categoria
+BMI prime
+Fascia di peso sano
+Magrezza grave
+Uomo
+Donna
+Sesso
+giorno
+BMR
+Energia in kJ
+Poco o nessun esercizio
+Esercizio leggero 1–3 giorni a settimana
+Esercizio moderato 3–5 giorni a settimana
+Esercizio intenso 6–7 giorni a settimana
+Esercizio molto intenso o lavoro fisico
+Livello di attività
+Non mangiare molto meno del tuo BMR senza un parere medico.
+Mantenere il peso
+Perdere circa 0,5 kg a settimana
+Perdere circa 1 kg a settimana
+Aumentare circa 0,5 kg a settimana
+Circonferenza del collo (cm o in)
+Circonferenza della vita (cm o in)
+Circonferenza dei fianchi (cm o in, donne)
+In forma
+Una stima approssimativa (circa ±3–4 punti). Meglio per seguire un andamento, non come diagnosi.
+Massa grassa
+Obesità
+Esercizio al giorno (minuti)
+Clima caldo
+Contano anche il cibo e le altre bevande. Segui il parere del tuo medico se hai una malattia renale o cardiaca.
+Litri al giorno
+Once fluide
+Bicchieri da 250 ml
+Corsi: «nome; crediti; voto» per riga (A, B+, 3,7 …)
+GPA
+Crediti totali
+Mezza maratona
+Maratona
+Chilometri
+Miglia
+Il mio tempo (h:mm:ss)
+Il mio passo per unità (mm:ss)
+Passo per unità
+Tempo finale
+Importo del prestito
+Durata (anni)
+Pagamento extra al mese
+Rata mensile
+Interessi totali
+Costo totale
+Numero di pagamenti
+Prezzo dell'immobile
+Anticipo
+Imposta sull'immobile all'anno
+Assicurazione all'anno
+Spese al mese (condominio, servizi)
+Totale mensile con imposte e spese
+Rapporto prestito/valore
+Capitale
+Mesi
+Giorni
+Unità di tempo
+Interessi
+Totale
+Interessi = capitale × tasso × tempo
+Valore iniziale
+Versamenti successivi in totale
+Valore finale
+Guadagno
+Rendimento totale
+Rendimento annualizzato (CAGR)
+Denaro versato
+Prezzo originale
+Sconto (%)
+Secondo sconto (%, facoltativo)
+Prezzo finale
+Risparmi
+Sconto effettivo
+Aliquota (%)
+prima dell'imposta (aggiungi l'imposta)
+imposta inclusa (scorpora l'imposta)
+Imposta
+Importo della retribuzione
+Ora
+Giorno
+Settimana
+Due settimane
+Anno
+Per
+Ore a settimana
+Giorni a settimana
+Settimane retribuite all'anno
+All'ora
+Al giorno
+A settimana
+Ogni due settimane
+Al mese
+All'anno
+Prodotti: «nome; prezzo; quantità» per riga (stessa unità, es. g o ml)
+Mostra il prezzo per
+Il migliore
+Confezione convenienza
+Distanza (km o miglia)
+km per litro
+miglia per gallone USA
+Consumo in
+Consumo
+Prezzo del carburante al litro
+Dividi tra persone
+Costo del carburante
+Carburante necessario
+A persona
+Risultato (A)
+Risultato (B)
+Risultato (C)
+Magrezza moderata
+Magrezza lieve
+Obesità di classe I
+Obesità di classe II
+Obesità di classe III
+Grasso essenziale
+Atleti
+Sovrappeso
+Controlla le quote
+Inserisci un'espressione
+Il risultato non è un numero finito
+Controlla questa riga
+Inserisci il tempo come 1:05:30 o 5:00
+Controlla i prodotti
+Inserisci almeno un numero
+Lascia vuoto esattamente un campo
+Confezione piccola
+Confezione grande
+Analisi
+Storia
+Chimica
+Seminario
+Affitto
+Cibo
+Risparmi
+Quota
+Nome
+Corso
+Crediti
+Punti del voto
+Prodotto
+Rispetto al migliore
+Pagamento
+Arrotondato
+Risultato (D)
+Passo per km
+Passo per miglio

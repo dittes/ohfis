@@ -1,7 +1,7 @@
 // Files Online — Service Worker
 // Cache-first for app shell, network-first for CDN resources.
 
-const CACHE_VERSION = '306b3d3fd2';
+const CACHE_VERSION = 'd76dca0fc3';
 const SHELL_CACHE = `files-online-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `files-online-runtime-${CACHE_VERSION}`;
 
@@ -41,6 +41,7 @@ const SHELL_FILES = [
   "/assets/i18n/search.it.js",
   "/assets/i18n/search.pl.js",
   "/assets/i18n/search.pt.js",
+  "/assets/i18n/tr.cs.calc.js",
   "/assets/i18n/tr.cs.data.js",
   "/assets/i18n/tr.cs.dev.js",
   "/assets/i18n/tr.cs.documents.js",
@@ -53,6 +54,7 @@ const SHELL_FILES = [
   "/assets/i18n/tr.cs.text.js",
   "/assets/i18n/tr.cs.time.js",
   "/assets/i18n/tr.cs.video.js",
+  "/assets/i18n/tr.de.calc.js",
   "/assets/i18n/tr.de.data.js",
   "/assets/i18n/tr.de.dev.js",
   "/assets/i18n/tr.de.documents.js",
@@ -65,6 +67,7 @@ const SHELL_FILES = [
   "/assets/i18n/tr.de.text.js",
   "/assets/i18n/tr.de.time.js",
   "/assets/i18n/tr.de.video.js",
+  "/assets/i18n/tr.es.calc.js",
   "/assets/i18n/tr.es.data.js",
   "/assets/i18n/tr.es.dev.js",
   "/assets/i18n/tr.es.documents.js",
@@ -77,6 +80,7 @@ const SHELL_FILES = [
   "/assets/i18n/tr.es.text.js",
   "/assets/i18n/tr.es.time.js",
   "/assets/i18n/tr.es.video.js",
+  "/assets/i18n/tr.fr.calc.js",
   "/assets/i18n/tr.fr.data.js",
   "/assets/i18n/tr.fr.dev.js",
   "/assets/i18n/tr.fr.documents.js",
@@ -89,6 +93,7 @@ const SHELL_FILES = [
   "/assets/i18n/tr.fr.text.js",
   "/assets/i18n/tr.fr.time.js",
   "/assets/i18n/tr.fr.video.js",
+  "/assets/i18n/tr.it.calc.js",
   "/assets/i18n/tr.it.data.js",
   "/assets/i18n/tr.it.dev.js",
   "/assets/i18n/tr.it.documents.js",
@@ -101,6 +106,7 @@ const SHELL_FILES = [
   "/assets/i18n/tr.it.text.js",
   "/assets/i18n/tr.it.time.js",
   "/assets/i18n/tr.it.video.js",
+  "/assets/i18n/tr.pl.calc.js",
   "/assets/i18n/tr.pl.data.js",
   "/assets/i18n/tr.pl.dev.js",
   "/assets/i18n/tr.pl.documents.js",
@@ -113,6 +119,7 @@ const SHELL_FILES = [
   "/assets/i18n/tr.pl.text.js",
   "/assets/i18n/tr.pl.time.js",
   "/assets/i18n/tr.pl.video.js",
+  "/assets/i18n/tr.pt.calc.js",
   "/assets/i18n/tr.pt.data.js",
   "/assets/i18n/tr.pt.dev.js",
   "/assets/i18n/tr.pt.documents.js",
@@ -141,6 +148,7 @@ const SHELL_FILES = [
   "/assets/js/pdf/ui.js",
   "/assets/js/search.js",
   "/assets/js/site.js",
+  "/assets/js/tools/calc.js",
   "/assets/js/tools/calctool.js",
   "/assets/js/tools/canvasboard.js",
   "/assets/js/tools/csv-worker.js",
@@ -155,6 +163,7 @@ const SHELL_FILES = [
   "/assets/js/tools/lib/astro.js",
   "/assets/js/tools/lib/audio.js",
   "/assets/js/tools/lib/bizdocs.js",
+  "/assets/js/tools/lib/calc.js",
   "/assets/js/tools/lib/canvas.js",
   "/assets/js/tools/lib/csv.js",
   "/assets/js/tools/lib/data.js",

@@ -16,7 +16,7 @@ try {
   let page = await browser.newPage({ viewport: { width: 1280, height: 800 } }); page.on('pageerror', e => errors.push(e.message));
   await page.goto(`${base}/de/`);
   // twelve plain links, no dropdowns, no horizontal overflow
-  assert.deepEqual(await page.locator('.s-nav > a').allInnerTexts(), ['PDF', 'Dokumente', 'Text', 'Notizen', 'Tabellen', 'Bilder', 'Video', 'Audio', 'Zeit', 'Business', 'Team', 'IT']);
+  assert.deepEqual(await page.locator('.s-nav > a').allInnerTexts(), ['PDF', 'Dokumente', 'Text', 'Notizen', 'Tabellen', 'Bilder', 'Video', 'Audio', 'Zeit', 'Business', 'Rechner', 'Team', 'IT']);
   assert.equal(await page.locator('.s-drop, .s-navtoggle').count(), 0, 'no dropdowns');
   assert.ok(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'no overflow at 1280');
   await page.locator('.s-nav > a', { hasText: 'Notizen' }).click(); await page.waitForLoadState('load'); assert.match(page.url(), /\/de\/notizen-werkzeuge\/$/); assert.ok((await page.locator('.s-card').count()) > 10, 'hub lists tools');
@@ -25,7 +25,7 @@ try {
   for (const l of await page.locator('.s-nav > a').evaluateAll(a => a.map(x => x.href))) { await page.goto(l); assert.ok((await page.locator('.s-card').count()) >= 3, l); }
   await page.goto(`${base}/de/bild-und-medien-werkzeuge/`); await page.waitForURL(/bild-werkzeuge/);
   // quick search: "/" opens, typing finds, typos and synonyms work, Escape closes, Ctrl+K opens
-  await page.goto(`${base}/de/`); await page.waitForLoadState('load'); await page.waitForTimeout(300); await page.keyboard.press('/'); await page.waitForSelector('dialog.s-sq[open]'); assert.equal(await page.locator('.s-sq__item').count(), 12, 'twelve sections shown first');
+  await page.goto(`${base}/de/`); await page.waitForLoadState('load'); await page.waitForTimeout(300); await page.keyboard.press('/'); await page.waitForSelector('dialog.s-sq[open]'); assert.equal(await page.locator('.s-sq__item').count(), 13, 'thirteen sections shown first');
   await page.keyboard.type('zeichenz'); await page.waitForSelector('.s-sq__item strong'); assert.match(await page.locator('.s-sq__item strong').first().innerText(), /Zeichenzähler/);
   await page.fill('.s-sq__input', 'zusamenfügen'); await page.waitForTimeout(250); assert.match(await page.locator('.s-sq__item strong').first().innerText(), /zusammenfügen/i, 'one typo tolerated');
   await page.fill('.s-sq__input', 'unterschrift'); await page.waitForTimeout(250); assert.match((await page.locator('.s-sq__item strong').allInnerTexts()).join('|'), /unterschreiben/i, 'synonym');
@@ -37,7 +37,7 @@ try {
   await page.close();
   // mobile: burger shows the twelve links
   page = await browser.newPage({ viewport: { width: 390, height: 800 } }); page.on('pageerror', e => errors.push(e.message)); await page.goto(`${base}/pl/`);
-  assert.ok(await page.locator('.s-nav > a').first().isHidden()); await page.locator('.s-burger').click(); assert.equal(await page.locator('.s-nav > a:visible').count(), 12);
+  assert.ok(await page.locator('.s-nav > a').first().isHidden()); await page.locator('.s-burger').click(); assert.equal(await page.locator('.s-nav > a:visible').count(), 13);
   assert.ok(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'no overflow on mobile');
   assert.equal(errors.length, 0, errors.join(' | ')); console.log('✓ navigation, search, favourites');
 } catch (e) { console.log('✗ ' + e.message.split('\n').slice(0, 3).join(' ')); process.exitCode = 1; } finally { await browser.close(); server.close(); }

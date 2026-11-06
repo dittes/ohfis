@@ -62,11 +62,11 @@ test('all internal links on all pages resolve', () => {
   assert.deepEqual(broken.slice(0, 10), []);
 });
 
-test('navigation has 12 plain section links, the footer only legal links and no language links', () => {
+test('navigation has 13 plain section links, the footer only legal links and no language links', () => {
   for (const lang of LANGS) {
     const html = read(`${lang}/index.html`);
     const nav = /<nav class="s-nav"[^>]*>([\s\S]*?)<\/nav>/.exec(html)[1];
-    assert.equal((nav.match(/<a /g) || []).length, 12, lang);
+    assert.equal((nav.match(/<a /g) || []).length, 13, lang);
     assert.ok(!/<details/.test(nav));
     const footer = /<footer[\s\S]*?<\/footer>/.exec(html)[0];
     assert.equal((footer.match(/<a /g) || []).length, 2, `${lang} footer links`);

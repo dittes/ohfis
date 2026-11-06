@@ -3282,3 +3282,228 @@ Neu beginnen
 Beispiel laden
 Kopiert
 PDF herunterladen
+Was sind X % von Y?
+X sind wie viel % von Y?
+X sind Y % wovon?
+Prozentuale Änderung von X zu Y
+Y erhöht um X %
+Y verringert um X %
+Frage
+Ergebnis
+Gesamtbetrag
+Anteile: eine pro Zeile, „Name: 50“ oder nur 50
+Kopieren
+CSV
+Erster Bruch (3/4, 1 1/2, 0,75)
++  addieren
+−  subtrahieren
+×  multiplizieren
+÷  dividieren
+Zweiter Bruch
+D (zum Berechnen leer lassen)
+Kürzen: erste Zahl
+Kürzen: zweite Zahl
+Gekürztes Verhältnis
+Zahlen (getrennt durch Leerzeichen, Kommas oder Zeilen)
+Mittelwert
+Stichproben-Standardabweichung
+Grundgesamtheits-Standardabweichung
+Stichprobenvarianz
+Varianz der Grundgesamtheit
+Zahlen (eine pro Zeile)
+Kaufmännisch (ab 5 auf)
+Gerade Zahl („Bankers Rounding“)
+Immer aufrunden
+Immer abrunden
+In Richtung Null
+Nachkommastellen
+Ein Schritt (5, 0,5, 0,05…)
+Nachkommastellen (negativ = Zehner, Hunderter)
+Schritt
+Ausdruck
+Grad
+Bogenmaß
+Winkel in
+Wie viele Zahlen
+Keine Wiederholungen
+Ergebnis sortieren
+Würfel 1–6
+Lotto 6 aus 49
+Geburtsdatum
+Alter am
+Jahre
+Monate
+Tage
+Alter
+Wochen insgesamt
+Monate insgesamt
+Nächster Geburtstag
+Erster Tag der letzten Periode
+Durchschnittliche Zykluslänge (Tage)
+Berechnen für
+Eine Schätzung zur Orientierung, keine medizinische Beratung. Hebamme oder Arzt bestätigen den Termin.
+Voraussichtlicher Geburtstermin
+Schwangerschaftswoche
+Trimester
+Noch Tage
+Metrisch (kg, cm)
+Imperial (lb, in)
+Einheiten
+Gewicht (kg oder lb)
+Größe (cm oder in)
+Normalgewicht
+Der BMI ist ein grober Richtwert und ignoriert Muskelmasse, Alter und Geschlecht. Er ist keine Diagnose.
+BMI
+Kategorie
+BMI Prime
+Gesunder Gewichtsbereich
+Starkes Untergewicht
+Männlich
+Weiblich
+Geschlecht
+Tag
+Grundumsatz
+Energie in kJ
+Wenig oder keine Bewegung
+Leichte Bewegung 1–3 Tage pro Woche
+Mäßige Bewegung 3–5 Tage pro Woche
+Harte Bewegung 6–7 Tage pro Woche
+Sehr harte Bewegung oder körperliche Arbeit
+Aktivitätslevel
+Iss nicht deutlich weniger als deinen Grundumsatz, ohne ärztlichen Rat.
+Gewicht halten
+Etwa 0,5 kg pro Woche abnehmen
+Etwa 1 kg pro Woche abnehmen
+Etwa 0,5 kg pro Woche zunehmen
+Halsumfang (cm oder in)
+Taillenumfang (cm oder in)
+Hüftumfang (cm oder in, Frauen)
+Fit
+Eine grobe Schätzung (etwa ±3–4 Punkte). Am besten, um einen Verlauf zu beobachten, keine Diagnose.
+Körperfett
+Adipös
+Sport pro Tag (Minuten)
+Heißes Wetter
+Auch Essen und andere Getränke zählen. Folge dem Rat deines Arztes bei Nieren- oder Herzerkrankungen.
+Liter pro Tag
+Flüssigunzen
+Gläser à 250 ml
+Kurse: „Name; Credits; Note“ pro Zeile (A, B+, 3,7 …)
+GPA
+Credits insgesamt
+Halbmarathon
+Marathon
+Kilometer
+Meilen
+Meine Zeit (h:mm:ss)
+Mein Tempo pro Einheit (mm:ss)
+Tempo pro Einheit
+Zielzeit
+Kreditbetrag
+Laufzeit (Jahre)
+Sonderzahlung pro Monat
+Monatsrate
+Zinsen insgesamt
+Gesamtkosten
+Anzahl der Raten
+Kaufpreis der Immobilie
+Eigenkapital
+Grundsteuer pro Jahr
+Versicherung pro Jahr
+Gebühren pro Monat (Hausgeld, Nebenkosten)
+Monatlich insgesamt mit Steuer und Gebühren
+Beleihungsauslauf
+Kapital
+Monate
+Tage
+Zeiteinheit
+Zinsen
+Gesamt
+Zinsen = Kapital × Zinssatz × Zeit
+Startwert
+Spätere Einzahlungen insgesamt
+Endwert
+Gewinn
+Gesamtrendite
+Annualisierte Rendite (CAGR)
+Eingezahltes Geld
+Originalpreis
+Rabatt (%)
+Zweiter Rabatt (%, optional)
+Endpreis
+Du sparst
+Effektiver Rabatt
+Steuersatz (%)
+vor Steuer (Steuer addieren)
+inklusive Steuer (Steuer herausrechnen)
+Steuer
+Gehaltsbetrag
+Stunde
+Tag
+Woche
+Zwei Wochen
+Jahr
+Pro
+Stunden pro Woche
+Tage pro Woche
+Bezahlte Wochen pro Jahr
+Pro Stunde
+Pro Tag
+Pro Woche
+Pro zwei Wochen
+Pro Monat
+Pro Jahr
+Produkte: „Name; Preis; Menge“ pro Zeile (gleiche Einheit, z. B. g oder ml)
+Preis anzeigen pro
+Beste
+Vorteilspackung
+Strecke (km oder Meilen)
+km pro Liter
+Meilen pro US-Gallone
+Verbrauch in
+Verbrauch
+Spritpreis pro Liter
+Auf Personen aufteilen
+Spritkosten
+Benötigter Kraftstoff
+Pro Person
+Ergebnis (A)
+Ergebnis (B)
+Ergebnis (C)
+Mäßiges Untergewicht
+Leichtes Untergewicht
+Adipositas Grad I
+Adipositas Grad II
+Adipositas Grad III
+Essenzielles Fett
+Athleten
+Übergewicht
+Prüfe die Anteile
+Gib einen Ausdruck ein
+Das Ergebnis ist keine endliche Zahl
+Prüfe diese Zeile
+Gib die Zeit wie 1:05:30 oder 5:00 ein
+Prüfe die Produkte
+Gib mindestens eine Zahl ein
+Lass genau ein Feld leer
+Kleine Packung
+Große Packung
+Analysis
+Geschichte
+Chemie
+Seminar
+Miete
+Essen
+Sparen
+Anteil
+Name
+Kurs
+Credits
+Notenpunkte
+Produkt
+Im Vergleich zum Besten
+Zahlung
+Gerundet
+Ergebnis (D)
+Tempo pro km
+Tempo pro Meile

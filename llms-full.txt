@@ -479,6 +479,33 @@ Time zones, working days, timestamps, calendar files and timers. Hub: https://oh
 
 Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.com/en/business-finance-tools/
 
+- [Loan Calculator with Amortization Table](https://ohfis.com/en/loan-calculator/): Monthly payment, total interest and a full repayment schedule, with optional extra payments.
+  Enter the loan amount, the yearly interest rate and the term. You get the monthly payment, the total interest, the total cost and a month-by-month table of interest, principal and remaining balance. Add an extra monthly payment to see how much interest and time you save.
+  How to use: Enter amount, rate and term. Optionally add an extra monthly payment. Read the payment and copy the schedule.
+- [Mortgage Calculator](https://ohfis.com/en/mortgage-calculator/): Monthly mortgage payment with down payment, tax, insurance and fees, plus the schedule.
+  Enter the price, the down payment, the interest rate and the term to see the monthly principal-and-interest payment, the loan-to-value ratio and the total interest over the life of the loan. Add yearly property tax, insurance and monthly fees to see the full monthly cost.
+  How to use: Enter price, down payment, rate and years. Add tax, insurance and fees if you want the full cost. Read the payment and the schedule.
+- [Simple Interest Calculator](https://ohfis.com/en/simple-interest-calculator/): Interest and total for a principal, a yearly rate and a time in years, months or days.
+  Simple interest is calculated on the original amount only: interest = principal × rate × time. Enter the principal, the yearly rate and the time as years, months or days (days use a 365-day year).
+  How to use: Enter principal and yearly rate. Enter the time and its unit. Read interest and total.
+- [Investment Return Calculator (CAGR)](https://ohfis.com/en/investment-return-calculator/): Total return, gain and annualised return (CAGR) between a start and an end value.
+  Enter what you invested, what it is worth now and for how many years. You get the gain, the total return in percent and the compound annual growth rate: CAGR = (end ÷ start)^(1 ÷ years) − 1. Add contributions made later to see the gain after all money paid in.
+  How to use: Enter start value, end value and years. Optionally add later contributions. Read gain, return and CAGR.
+- [Discount Calculator](https://ohfis.com/en/discount-calculator/): Sale price, amount saved and the effective discount, also for a second discount on top.
+  Enter the original price and the discount percentage to see the price you pay and how much you save. A second discount is applied to the already reduced price, so 20% plus 10% off is 28% in total, not 30%.
+  How to use: Enter the original price. Enter the discount (and a second one if you have it). Read the final price and savings.
+- [Sales Tax Calculator](https://ohfis.com/en/sales-tax-calculator/): Add sales tax to a price or take it out of a total, for any rate.
+  Type the price and the tax rate. Choose whether to add the tax to the price or to extract it from a total that already includes tax. State and local rates in the US are added up by you; enter the combined rate.
+  How to use: Enter amount and rate. Choose add tax or remove tax. Read net, tax and total.
+- [Salary Converter (Hourly, Monthly, Yearly)](https://ohfis.com/en/salary-converter/): Convert pay between hourly, daily, weekly, monthly and yearly with your own working hours.
+  Enter one pay figure and say whether it is per hour, day, week, two weeks, month or year. The table shows the equivalent in every other period based on your hours per week, days per week and paid weeks per year.
+  How to use: Enter the amount and its period. Set hours, days and weeks. Read every other period.
+- [Unit Price Calculator](https://ohfis.com/en/unit-price-calculator/): Compare products by price per unit, kilogram or litre and see the best deal.
+  Enter the price and size of up to six products, in any consistent unit (g, kg, ml, l, pieces). The calculator works out the price per unit and per 100 and marks the cheapest, showing how much more every other product costs.
+  How to use: Enter price and quantity for each product. Read the unit prices. Pick the best deal.
+- [Fuel Cost Calculator](https://ohfis.com/en/fuel-cost-calculator/): Trip fuel cost and litres from distance, consumption and price, in L/100 km or mpg.
+  Enter the distance, your car's consumption and the fuel price. Consumption can be L/100 km, km per litre or miles per US gallon. The result is the fuel needed and the cost, also split between passengers and for a round trip.
+  How to use: Enter the distance and choose the units. Enter consumption and price per litre. Read fuel and cost; tick round trip if needed.
 - [Margin vs Markup Calculator](https://ohfis.com/en/margin-markup-calculator/): Convert between gross margin and markup and find the price from cost.
   Margin and markup both describe profit, but against different bases, and mixing them up is a classic pricing error: a 50% markup gives only a 33% margin. Enter any two of cost, price, margin and markup and see all the others.
   How to use: Choose which two values you know. Enter them. Read the price, profit, margin and markup.
@@ -584,6 +611,65 @@ Margins, runway, NPV, VAT, pricing and other business maths. Hub: https://ohfis.
 - [Empathy Map Canvas (Sticky Notes)](https://ohfis.com/en/empathy-map-canvas/): Understand a customer or user: what they see, hear, say, do, think and feel, with their pains and gains.
   An empathy map puts you in the shoes of one customer or user. Write what this person sees, hears, says and does, what they think and feel, and what hurts them (pains) and what they want (gains). Use real observations from interviews instead of assumptions, and give the board the name of the persona.
   How to use: Name the person or persona in the board name. Fill the boxes with observations from interviews and research. Look for patterns in the pains and gains and export the board.
+
+## Everyday Calculators
+
+Percentages, fractions, averages, age, BMI, calories, pace and a scientific calculator. Hub: https://ohfis.com/en/calculators/
+
+- [Percentage Calculator](https://ohfis.com/en/percentage-calculator/): Percent of a number, percentage change, what percent is X of Y, add or subtract a percentage.
+  Six everyday percentage questions in one place: what is 15% of 200, what percent is 30 of 200, by how much did a value change from 80 to 100, which number is 15% of what, and what is 100 plus or minus 19%.
+  How to use: Choose the question you want answered. Enter the two numbers. Read the result and the formula.
+- [Percentage Allocation Calculator](https://ohfis.com/en/percentage-allocation-calculator/): Split an amount by percentages or weights, rounded so the parts add up to the cent.
+  Divide a total between people, budget lines or categories. Enter the amount and one share per line, either as percentages (50, 30, 20) or as any weights (2, 1, 1); the parts are scaled to 100% automatically.
+  How to use: Enter the total amount. List one share per line, optionally with a name. Copy the resulting amounts.
+- [Fraction Calculator](https://ohfis.com/en/fraction-calculator/): Add, subtract, multiply and divide fractions and mixed numbers, always reduced.
+  Type fractions like 3/4, mixed numbers like 1 1/2 or decimals like 0.75 and choose an operation. The result is reduced to lowest terms and shown as a fraction, a mixed number and a decimal.
+  How to use: Enter the first and second fraction. Choose +, −, × or ÷. Read the reduced result.
+- [Ratio Calculator](https://ohfis.com/en/ratio-calculator/): Solve A : B = C : X, and simplify a ratio such as 1920 : 1080 to 16 : 9.
+  Use it for recipes, scale drawings, screen sizes and mixing ratios. Fill three of the four fields of A : B = C : D and the fourth is calculated by cross-multiplication. The second part simplifies any ratio to its smallest whole numbers.
+  How to use: Fill three of the four fields. Read the missing value. Or enter two numbers to simplify their ratio.
+- [Average Calculator (Mean, Median, Mode)](https://ohfis.com/en/average-calculator/): Mean, median, mode, range, sum and count of a list of numbers.
+  Paste numbers separated by spaces, commas, semicolons or new lines. You get the arithmetic mean, the median, the mode(s), the minimum, maximum and range, the sum and the count.
+  How to use: Paste or type your numbers. Read the statistics. Copy the result.
+- [Standard Deviation Calculator](https://ohfis.com/en/standard-deviation-calculator/): Sample and population standard deviation and variance of a list of numbers.
+  Enter your data and see both the sample standard deviation (divides by n − 1, used when the data is a sample) and the population standard deviation (divides by n, used when you have every value), together with the variances and the mean.
+  How to use: Paste your numbers. Read the sample and population values. Copy the figures.
+- [Rounding Calculator](https://ohfis.com/en/rounding-calculator/): Round to decimals, tens or hundreds, to the nearest 5 or 0.05, with up, down, nearest or banker's rounding.
+  Pick how to round (to the nearest value, always up, always down, toward zero, or half to even) and to what precision: a number of decimal places (negative for tens and hundreds) or a step such as 5, 0.5 or 0.05.
+  How to use: Enter the numbers, one per line. Choose the method and the precision. Copy the rounded values.
+- [Scientific Calculator](https://ohfis.com/en/scientific-calculator/): Type an expression with brackets, powers, roots, logarithms, trigonometry and factorials.
+  Type a whole expression such as (2+3)*4^2 − sqrt(81) and press Enter. Supported are + − × ÷ % ^, brackets, !, pi and e, sin cos tan and their inverses (degrees or radians), sinh cosh tanh, sqrt cbrt, ln log exp, abs floor ceil round.
+  How to use: Type an expression. Choose degrees or radians. Read the result; use a preset to try an example.
+- [Random Number Generator](https://ohfis.com/en/random-number-generator/): Draw random integers in a range, with or without repeats, using your browser's secure random source.
+  Set a minimum, a maximum and how many numbers you want. Tick "no repeats" to draw without replacement, as for a lottery or a raffle. Numbers come from crypto.getRandomValues, the same secure source browsers use for keys.
+  How to use: Enter the minimum, maximum and the count. Choose whether numbers may repeat. Click draw again for a new set.
+- [Age Calculator](https://ohfis.com/en/age-calculator/): Exact age in years, months and days, days lived and the countdown to the next birthday.
+  Enter a date of birth and (optionally) another date to find the exact age, the total number of days, weeks and months lived, and the days until the next birthday. Leave the second date as today to see your age now.
+  How to use: Enter the date of birth. Leave "age at" as today or pick another date. Read the result.
+- [Pregnancy Due Date Calculator](https://ohfis.com/en/pregnancy-due-date-calculator/): Estimate the due date and current week from the first day of the last period.
+  Enter the first day of your last menstrual period and the usual cycle length. The estimated due date is 280 days (40 weeks) after the period start, adjusted if your cycle is longer or shorter than 28 days (Naegele's rule).
+  How to use: Enter the first day of the last period. Set your average cycle length. Read the due date and current week.
+- [BMI Calculator (Body Mass Index)](https://ohfis.com/en/bmi-calculator/): Body mass index, BMI prime and the healthy weight range for your height.
+  Enter weight and height in metric or imperial units. BMI = weight (kg) ÷ height (m)². The result is placed in the WHO categories from underweight to obesity, with BMI Prime (BMI ÷ 25) and the weight range that corresponds to a BMI of 18.5–24.9 for your height.
+  How to use: Choose metric or imperial. Enter weight and height. Read BMI, category and healthy range.
+- [BMR Calculator (Basal Metabolic Rate)](https://ohfis.com/en/bmr-calculator/): Calories your body burns at rest, with the Mifflin–St Jeor equation.
+  Your basal metabolic rate is the energy you use at complete rest. Enter sex, age, weight and height. The Mifflin–St Jeor equation is: 10 × kg + 6.25 × cm − 5 × age + 5 (men) or − 161 (women).
+  How to use: Choose sex and units. Enter age, weight and height. Read the BMR in kcal and kJ.
+- [Calorie Calculator (Daily Calorie Needs)](https://ohfis.com/en/calorie-calculator/): Daily calories to maintain, lose or gain weight from your activity level.
+  Your total daily energy expenditure is the basal metabolic rate multiplied by an activity factor from 1.2 (little exercise) to 1.9 (hard physical work). Eating about 500 kcal less per day loses roughly 0.5 kg a week; 500 more gains about the same.
+  How to use: Enter sex, age, weight and height. Choose your activity level. Read the calories for each goal.
+- [Body Fat Calculator (US Navy Method)](https://ohfis.com/en/body-fat-calculator/): Estimate body fat percentage from neck, waist and hip measurements.
+  Measure your neck and waist (and hips for women) with a tape measure and enter your height. The US Navy formula estimates body fat from the logarithm of these circumferences. The result is shown with the usual category ranges.
+  How to use: Choose sex and units. Enter height, neck, waist and (women) hip. Read the percentage and category.
+- [Water Intake Calculator](https://ohfis.com/en/water-intake-calculator/): Daily water needs from body weight, exercise and hot weather.
+  A common rule of thumb is about 33 ml per kg of body weight per day, plus roughly 350 ml for every 30 minutes of exercise and an extra half litre in hot weather. The result is shown in litres, fluid ounces and 250 ml glasses.
+  How to use: Enter your weight. Add exercise minutes and hot weather. Read the daily amount.
+- [GPA Calculator](https://ohfis.com/en/gpa-calculator/): Weighted grade point average from courses, credits and letter grades.
+  Add one line per course with its credit hours and letter grade (A to F with plus and minus) or a numeric grade point. The GPA is the sum of credits × grade points divided by the total credits, on the usual 4.0 scale.
+  How to use: Add a line per course. Pick the grade and enter the credits. Read the GPA and total credits.
+- [Running Pace Calculator](https://ohfis.com/en/pace-calculator/): Pace, speed or finish time from distance and time, with race distance presets.
+  Enter a distance and the time you ran to get the pace per kilometre or mile and the speed, or enter a target pace to see the finish time. Presets cover 5K, 10K, the half marathon and the marathon, with split times for every unit.
+  How to use: Choose km or miles and a distance. Enter your time or a target pace. Read pace, speed and splits.
 
 ## IT & Web Tools
 

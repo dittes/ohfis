@@ -1,6 +1,6 @@
 # Ohfis
 
-Free online tools that run entirely in the browser: 26 PDF tools and 293 utilities for documents, text, CSV and spreadsheets, images, time and calendars, business maths, notes and privacy, IT and web work, teams and audio/video. Nothing is uploaded. English, German, Polish, Czech, Spanish, French, Portuguese, Italian (`/en`, `/de`, `/pl`, `/cs`, `/es`, `/fr`, `/pt`, `/it`); Dutch, Swedish and Danish are being added the same way.
+Free online tools that run entirely in the browser: 26 PDF tools and 320 utilities for documents, text, CSV and spreadsheets, images, time and calendars, business maths, notes and privacy, IT and web work, teams and audio/video. Nothing is uploaded. English, German, Polish, Czech, Spanish, French, Portuguese, Italian (`/en`, `/de`, `/pl`, `/cs`, `/es`, `/fr`, `/pt`, `/it`); Dutch, Swedish and Danish are being added the same way.
 
 Live at https://ohfis.com (GitHub Pages serves the committed output). What exists compared with the original request list is in [TOOLS_COVERAGE.md](TOOLS_COVERAGE.md).
 
@@ -41,7 +41,7 @@ Pages under `en/ de/ pl/ cs/`, `sitemap.xml`, `llms*.txt`, `robots.txt`, `servic
 
 ## Design notes
 
-- All 293 utility tools have their explanations (how it works, steps, FAQs) translated into German, Polish and Czech by hand, in `build/tools/i18n/<lang>/NN.mjs`. A tool without a translation falls back to the English text (marked `lang="en"` with a note). Interface strings that are not tool-specific are localised in `build/content`.
+- All 320 utility tools have their explanations (how it works, steps, FAQs) translated into German, Polish and Czech by hand, in `build/tools/i18n/<lang>/NN.mjs`. A tool without a translation falls back to the English text (marked `lang="en"` with a note). Interface strings that are not tool-specific are localised in `build/content`.
 - The translations are written by an AI model without a native-speaker review; corrections are welcome as edits to those files.
 - Navigation: twelve plain links with no dropdowns (PDF, Documents, Text, Notes, Spreadsheets, Images, Video, Audio, Time, Business, Team, IT), defined as `GROUPS` in `build/tools/registry.mjs`; each leads to a hub page that lists its tools. A quick-search palette (`/` or Ctrl/Cmd+K, in `assets/js/site.js`) finds every tool by name, synonym (`build/content/synonyms.mjs`) or with one typo, and shows favourites and recently used tools, which are stored only in this browser. Old section addresses forward to the new hubs (`OLD_HUBS`).
 - Tool interface texts: tools write English labels, options, hints and messages in code; `tr()` in `assets/js/tools/kit.js` translates them at runtime from `assets/i18n/tr.<lang>.js`, generated from `build/tools/ui/keys.json` (the English strings) and `build/tools/ui/<lang>.txt` (one translation per line, same order; append new keys at the end only). Texts with numbers are matched with each number replaced by `#` (for example `Team #`); long tool-specific texts are split into one file per category (`build/tools/ui/cats.json`), everything else is in the common file. Text that is assembled in other ways at runtime stays English.

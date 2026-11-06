@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-P+vrRWCyktqV17B/ARARWtOwde7NSLiUSaLNZjbHzvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Bezplatné online kalkulačky – Online zdarma</title>
+  <meta name="description" content="Procenta, zlomky, průměry, věk, BMI, kalorie, tempo a vědecká kalkulačka. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  
+  <link rel="canonical" href="https://ohfis.com/cs/kalkulacky/">
+  <link rel="alternate" hreflang="en" href="https://ohfis.com/en/calculators/">
+  <link rel="alternate" hreflang="de" href="https://ohfis.com/de/rechner/">
+  <link rel="alternate" hreflang="pl" href="https://ohfis.com/pl/kalkulatory/">
+  <link rel="alternate" hreflang="cs" href="https://ohfis.com/cs/kalkulacky/">
+  <link rel="alternate" hreflang="es" href="https://ohfis.com/es/calculadoras/">
+  <link rel="alternate" hreflang="fr" href="https://ohfis.com/fr/calculateurs/">
+  <link rel="alternate" hreflang="pt" href="https://ohfis.com/pt/calculadoras/">
+  <link rel="alternate" hreflang="it" href="https://ohfis.com/it/calcolatori/">
+  <link rel="alternate" hreflang="x-default" href="https://ohfis.com/en/calculators/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohfis">
+  <meta property="og:url" content="https://ohfis.com/cs/kalkulacky/">
+  <meta property="og:title" content="Bezplatné online kalkulačky – Online zdarma">
+  <meta property="og:description" content="Procenta, zlomky, průměry, věk, BMI, kalorie, tempo a vědecká kalkulačka. Zdarma, běží v prohlížeči, nic se nenahrává.">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:image" content="https://ohfis.com/assets/icons/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem('ohfis-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <link rel="stylesheet" href="/assets/css/site.css?v=1fe54eb2">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://ohfis.com/cs/"},{"@type":"ListItem","position":2,"name":"Kalkulačky"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Nahrávají se moje soubory?","acceptedAnswer":{"@type":"Answer","text":"Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu."}},{"@type":"Question","name":"Je tento nástroj zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Bezplatné online kalkulačky","description":"Procenta, zlomky, průměry, věk, BMI, kalorie, tempo a vědecká kalkulačka. Zdarma, běží v prohlížeči, nic se nenahrává.","url":"https://ohfis.com/cs/kalkulacky/","inLanguage":"cs","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://ohfis.com/cs/procentni-kalkulacka/","name":"Procentní kalkulačka"},{"@type":"ListItem","position":2,"url":"https://ohfis.com/cs/kalkulacka-procentualniho-rozdeleni/","name":"Kalkulačka procentuálního rozdělení"},{"@type":"ListItem","position":3,"url":"https://ohfis.com/cs/kalkulacka-zlomku/","name":"Kalkulačka zlomků"},{"@type":"ListItem","position":4,"url":"https://ohfis.com/cs/kalkulacka-pomeru/","name":"Kalkulačka poměru"},{"@type":"ListItem","position":5,"url":"https://ohfis.com/cs/kalkulacka-prumeru/","name":"Kalkulačka průměru (průměr, medián, modus)"},{"@type":"ListItem","position":6,"url":"https://ohfis.com/cs/kalkulacka-smerodatne-odchylky/","name":"Kalkulačka směrodatné odchylky"},{"@type":"ListItem","position":7,"url":"https://ohfis.com/cs/kalkulacka-zaokrouhlovani/","name":"Kalkulačka zaokrouhlování"},{"@type":"ListItem","position":8,"url":"https://ohfis.com/cs/vedecka-kalkulacka/","name":"Vědecká kalkulačka"},{"@type":"ListItem","position":9,"url":"https://ohfis.com/cs/generator-nahodnych-cisel/","name":"Generátor náhodných čísel"},{"@type":"ListItem","position":10,"url":"https://ohfis.com/cs/kalkulacka-veku/","name":"Kalkulačka věku"},{"@type":"ListItem","position":11,"url":"https://ohfis.com/cs/kalkulacka-terminu-porodu/","name":"Kalkulačka termínu porodu"},{"@type":"ListItem","position":12,"url":"https://ohfis.com/cs/kalkulacka-bmi/","name":"Kalkulačka BMI"},{"@type":"ListItem","position":13,"url":"https://ohfis.com/cs/kalkulacka-bmr/","name":"Kalkulačka BMR (bazální metabolismus)"},{"@type":"ListItem","position":14,"url":"https://ohfis.com/cs/kalkulacka-kalorii/","name":"Kalkulačka kalorií (denní potřeba)"},{"@type":"ListItem","position":15,"url":"https://ohfis.com/cs/kalkulacka-telesneho-tuku/","name":"Kalkulačka tělesného tuku (metoda US Navy)"},{"@type":"ListItem","position":16,"url":"https://ohfis.com/cs/kalkulacka-pitneho-rezimu/","name":"Kalkulačka pitného režimu"},{"@type":"ListItem","position":17,"url":"https://ohfis.com/cs/kalkulacka-gpa/","name":"Kalkulačka GPA"},{"@type":"ListItem","position":18,"url":"https://ohfis.com/cs/kalkulacka-bezeckeho-tempa/","name":"Kalkulačka běžeckého tempa"}]}}</script>
+</head>
+<body class="s-page">
+  <a class="s-skip" href="#main">Přejít na obsah</a>
+  <header class="s-header">
+    <div class="s-wrap s-header__row">
+      <a class="s-logo" href="/cs/"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#2557D6"/><path d="M10.5 6h8.2l4.8 4.8v13.2a2 2 0 0 1-2 2H10.5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" fill="#fff"/><path d="M18.7 6v3.4a1.4 1.4 0 0 0 1.4 1.4h3.4z" fill="#A9C0F5"/><circle cx="16" cy="18.4" r="3.9" fill="none" stroke="#2557D6" stroke-width="2.4"/></svg><span>Ohfis</span></a>
+      <nav class="s-nav" aria-label="Hlavní navigace">
+        <a class="s-navlink" href="/cs/pdf-nastroje/">PDF</a><a class="s-navlink" href="/cs/dokumenty-a-tisk/">Dokumenty</a><a class="s-navlink" href="/cs/textove-nastroje/">Text</a><a class="s-navlink" href="/cs/nastroje-pro-poznamky/">Poznámky</a><a class="s-navlink" href="/cs/tabulky-a-csv/">Tabulky</a><a class="s-navlink" href="/cs/obrazove-nastroje/">Obrázky</a><a class="s-navlink" href="/cs/video-nastroje/">Video</a><a class="s-navlink" href="/cs/audio-nastroje/">Audio</a><a class="s-navlink" href="/cs/cas-a-kalendar/">Čas</a><a class="s-navlink" href="/cs/byznys-a-finance/">Byznys</a><a class="s-navlink" href="/cs/kalkulacky/" aria-current="page">Kalkulačky</a><a class="s-navlink" href="/cs/tym-a-schuzky/">Tým</a><a class="s-navlink" href="/cs/it-a-web-nastroje/">IT</a>
+      </nav>
+      <div class="s-actions">
+        <button class="s-searchbtn" type="button" data-search="/assets/i18n/search.cs.js" data-ph="Hledat nástroj…" data-empty="Nic nenalezeno. Zkuste jiné slovo." data-hint="Pište pro hledání · ↑↓ výběr · Enter otevřít · Esc zavřít" data-sections="Procházet podle oblasti" data-fav-add="Přidat do oblíbených" data-fav-remove="Odebrat z oblíbených" data-fav-title="Oblíbené" data-recent-title="Naposledy použité" data-mine-hint="Uloženo jen v tomto prohlížeči." aria-label="Hledat v nástrojích"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="s-searchbtn__t">Hledat nástroj…</span><kbd>/</kbd></button>
+        <details class="s-lang">
+          <summary aria-label="Jazyk">cs</summary>
+          <ul>
+            <li><a href="/en/calculators/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/de/rechner/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li><li><a href="/pl/kalkulatory/" hreflang="pl" lang="pl" data-set-lang="pl">Polski</a></li><li><a href="/cs/kalkulacky/" hreflang="cs" lang="cs" data-set-lang="cs" aria-current="true">Čeština</a></li><li><a href="/es/calculadoras/" hreflang="es" lang="es" data-set-lang="es">Español</a></li><li><a href="/fr/calculateurs/" hreflang="fr" lang="fr" data-set-lang="fr">Français</a></li><li><a href="/pt/calculadoras/" hreflang="pt" lang="pt" data-set-lang="pt">Português</a></li><li><a href="/it/calcolatori/" hreflang="it" lang="it" data-set-lang="it">Italiano</a></li>
+          </ul>
+        </details>
+        <button class="s-icon-btn" type="button" data-action="toggle-theme" aria-label="Přepnout světlý a tmavý režim" title="Přepnout světlý a tmavý režim">
+          <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true" width="16" height="16"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="s-icon-btn s-burger" type="button" aria-label="Nabídka" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="s-wrap">
+      <ol class="s-crumbs"><li><a href="/cs/">Domů</a></li><li><span aria-current="page">Kalkulačky</span></li></ol>
+      <div class="s-toolhead">
+        <h1>Bezplatné online kalkulačky</h1>
+        <p>Procenta, zlomky, průměry, věk, BMI, kalorie, tempo a vědecká kalkulačka. Každý nástroj běží v prohlížeči. Nic, co vložíte nebo otevřete, se nenahrává.</p>
+      </div>
+    </div>
+    <section class="s-section" style="border-top:0;padding-top:0">
+      <div class="s-wrap"><div class="s-cat">
+        
+        <div class="s-cards"><a class="s-card" data-cat="calc" href="/cs/procentni-kalkulacka/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Procentní kalkulačka</span>
+          <span class="s-card__desc">Procento z čísla, procentuální změna, kolik procent je X z Y, přičtení a odečtení procenta.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-procentualniho-rozdeleni/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka procentuálního rozdělení</span>
+          <span class="s-card__desc">Rozdělte částku podle procent nebo vah, přesně na haléře.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-zlomku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka zlomků</span>
+          <span class="s-card__desc">Sčítejte, odčítejte, násobte a dělte zlomky a smíšená čísla, vždy zkrácené.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-pomeru/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka poměru</span>
+          <span class="s-card__desc">Vyřešte A : B = C : X a zkraťte poměr, např. 1920 : 1080 na 16 : 9.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-prumeru/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka průměru (průměr, medián, modus)</span>
+          <span class="s-card__desc">Průměr, medián, modus, rozpětí, součet a počet čísel v seznamu.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-smerodatne-odchylky/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka směrodatné odchylky</span>
+          <span class="s-card__desc">Výběrová a základní směrodatná odchylka a rozptyl seznamu čísel.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-zaokrouhlovani/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka zaokrouhlování</span>
+          <span class="s-card__desc">Zaokrouhlujte na desetinná místa, desítky, stovky nebo 0,05 nahoru, dolů, běžně či bankéřsky.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/vedecka-kalkulacka/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Vědecká kalkulačka</span>
+          <span class="s-card__desc">Zadejte výraz se závorkami, mocninami, odmocninami, logaritmy, goniometrií a faktoriály.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/generator-nahodnych-cisel/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Generátor náhodných čísel</span>
+          <span class="s-card__desc">Losujte celá čísla z rozsahu, s opakováním i bez, z bezpečného zdroje náhody.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-veku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka věku</span>
+          <span class="s-card__desc">Přesný věk v letech, měsících a dnech, prožité dny a odpočet do narozenin.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-terminu-porodu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka termínu porodu</span>
+          <span class="s-card__desc">Odhadněte termín porodu a aktuální týden těhotenství od prvního dne poslední menstruace.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-bmi/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka BMI</span>
+          <span class="s-card__desc">Index tělesné hmotnosti, BMI prime a zdravé rozmezí hmotnosti pro vaši výšku.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-bmr/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka BMR (bazální metabolismus)</span>
+          <span class="s-card__desc">Kalorie spálené v klidu podle rovnice Mifflin–St Jeor.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-kalorii/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka kalorií (denní potřeba)</span>
+          <span class="s-card__desc">Denní kalorie k udržení, snížení nebo zvýšení hmotnosti podle aktivity.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-telesneho-tuku/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka tělesného tuku (metoda US Navy)</span>
+          <span class="s-card__desc">Odhadněte procento tělesného tuku z obvodu krku, pasu a boků.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-pitneho-rezimu/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka pitného režimu</span>
+          <span class="s-card__desc">Denní potřeba vody podle hmotnosti, cvičení a horka.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-gpa/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka GPA</span>
+          <span class="s-card__desc">Vážený studijní průměr z předmětů, kreditů a známek.</span>
+        </a><a class="s-card" data-cat="calc" href="/cs/kalkulacka-bezeckeho-tempa/">
+          <svg class="s-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v4h4"/><path d="M10.5 14l1.5-1v5.5M10.5 18.5h3"/></svg>
+          <span class="s-card__title">Kalkulačka běžeckého tempa</span>
+          <span class="s-card__desc">Tempo, rychlost nebo cílový čas z vzdálenosti a času, s předvolbami závodů.</span>
+        </a></div>
+      </div></div>
+    </section>
+    <section class="s-section" id="faq">
+    <div class="s-wrap">
+      <h2>Časté dotazy</h2>
+      <div class="s-faq">
+        <details open><summary>Nahrávají se moje soubory?</summary><p>Ne. Soubor otevírá a zpracovává váš vlastní prohlížeč. Můžete si to ověřit: při práci otevřete v prohlížeči kartu Síť nebo se po načtení stránky odpojte od internetu.</p></details>
+        <details><summary>Je tento nástroj zdarma?</summary><p>Ano, zcela. Není potřeba registrace, neexistuje placená verze a na souborech není vodoznak.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="s-footer">
+    <div class="s-wrap">
+      <div class="s-footer__bottom">
+        <a href="/cs/soukromi/">Soukromí</a>
+        <a href="/cs/tiraz/">Tiráž</a>
+        <span class="s-footer__note">Běží ve vašem prohlížeči. Bez nahrávání, bez účtu, bez sledování.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js?v=605e750f" defer></script>
+</body>
+</html>

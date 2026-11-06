@@ -11,7 +11,7 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - ◐ partly built: 15
 - 🔗 link-out or covered elsewhere: 8
 - ❌ not built: 13
-- Utility tools on the site: 293 (plus 26 PDF tools from the first redesign)
+- Utility tools on the site: 320 (plus 26 PDF tools from the first redesign)
 
 ## PDF, documents & print
 
@@ -342,6 +342,24 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 
 ## Additional tools not on the request list
 
+- [percentage-calculator](/en/percentage-calculator/)
+- [percentage-allocation-calculator](/en/percentage-allocation-calculator/)
+- [fraction-calculator](/en/fraction-calculator/)
+- [ratio-calculator](/en/ratio-calculator/)
+- [average-calculator](/en/average-calculator/)
+- [standard-deviation-calculator](/en/standard-deviation-calculator/)
+- [rounding-calculator](/en/rounding-calculator/)
+- [scientific-calculator](/en/scientific-calculator/)
+- [random-number-generator](/en/random-number-generator/)
+- [age-calculator](/en/age-calculator/)
+- [pregnancy-due-date-calculator](/en/pregnancy-due-date-calculator/)
+- [bmi-calculator](/en/bmi-calculator/)
+- [bmr-calculator](/en/bmr-calculator/)
+- [calorie-calculator](/en/calorie-calculator/)
+- [body-fat-calculator](/en/body-fat-calculator/)
+- [water-intake-calculator](/en/water-intake-calculator/)
+- [gpa-calculator](/en/gpa-calculator/)
+- [pace-calculator](/en/pace-calculator/)
 - [font-converter](/en/font-converter/)
 - [json-formatter](/en/json-formatter/)
 - [data-format-converter](/en/data-format-converter/)
@@ -361,6 +379,15 @@ Legend: ✅ built · ◐ partly built (see note) · 🔗 link-out to a sister si
 - [pdf-text-search](/en/pdf-text-search/)
 - [epub-to-pdf](/en/epub-to-pdf/)
 - [delivery-note-generator](/en/delivery-note-generator/)
+- [loan-calculator](/en/loan-calculator/)
+- [mortgage-calculator](/en/mortgage-calculator/)
+- [simple-interest-calculator](/en/simple-interest-calculator/)
+- [investment-return-calculator](/en/investment-return-calculator/)
+- [discount-calculator](/en/discount-calculator/)
+- [sales-tax-calculator](/en/sales-tax-calculator/)
+- [salary-converter](/en/salary-converter/)
+- [unit-price-calculator](/en/unit-price-calculator/)
+- [fuel-cost-calculator](/en/fuel-cost-calculator/)
 - [business-model-canvas](/en/business-model-canvas/)
 - [lean-canvas](/en/lean-canvas/)
 - [eisenhower-matrix-board](/en/eisenhower-matrix-board/)
